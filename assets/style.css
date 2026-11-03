@@ -37,6 +37,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .nav a{text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500;font-size:15px;white-space:nowrap;position:relative}
 .nav a:hover{background:var(--soft)}
 .nav a[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.nav .lang{margin-left:6px;font:inherit;font-weight:700;font-size:13px;letter-spacing:.04em;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer;min-height:34px}
+.nav .lang:hover{background:var(--soft)}
+/* Google Çeviri'nin üst çubuğunu ve açılır kutularını gizle */
+.goog-te-banner-frame,iframe.skiptranslate,#goog-gt-tt,.goog-te-balloon-frame,.VIpgJd-ZVi9od-ORHb-OEVmcd,.VIpgJd-ZVi9od-aZ2wEe-wOHMyf{display:none!important}
+body{top:0!important}
+font[style]{background:none!important;box-shadow:none!important}
 .badge{position:absolute;top:2px;right:2px;min-width:17px;height:17px;border-radius:9px;background:var(--seal);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center;padding:0 4px}
 @media (max-width:600px){.nav a{padding:8px 8px;font-size:14px}.nav .hide-s{display:none}.brand span{display:none}}
 

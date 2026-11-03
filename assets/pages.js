@@ -16,7 +16,9 @@ async function layout(page) {
       <a ${link("destekler")}${cur("destekler")}>Tüm destekler</a>
       <a ${link("bul")}${cur("bul")} class="hide-s">Uygunluk testi</a>
       <a ${link("hesap")}${cur("hesap")} id="nav-hesap">${u ? "Hesabım" : "Giriş yap"}</a>
+      <button type="button" class="lang" id="lang" translate="no" aria-label="${D.lang() === "en" ? "Türkçeye geç" : "Switch to English"}">${D.lang() === "en" ? "TR" : "EN"}</button>
     </nav></div>`;
+  $("#lang").onclick = () => D.setLang(D.lang() === "en" ? "tr" : "en");
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");

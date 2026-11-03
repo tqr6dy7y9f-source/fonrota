@@ -81,6 +81,22 @@ const LS = {
   del(k) { try { localStorage.removeItem("db." + k); } catch {} }
 };
 
+/* ---------- Dil: İngilizce, Google Çeviri ile otomatik (yeni eklenen içerik de çevrilir) ---------- */
+function lang() { return /(?:^|;\s*)googtrans=\/tr\/en/.test(document.cookie) ? "en" : "tr"; }
+function setLang(l) {
+  const exp = l === "en" ? "" : ";expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  document.cookie = "googtrans=" + (l === "en" ? "/tr/en" : "") + ";path=/" + exp;
+  document.cookie = "googtrans=" + (l === "en" ? "/tr/en" : "") + ";path=" + location.pathname.replace(/[^/]*$/, "") + exp;
+  location.reload();
+}
+if (lang() === "en") {
+  document.documentElement.lang = "en";
+  const box = document.createElement("div"); box.id = "gt"; box.style.display = "none";
+  (document.body || document.documentElement).appendChild(box);
+  window.gtInit = () => new google.translate.TranslateElement({ pageLanguage: "tr", includedLanguages: "en", autoDisplay: false }, "gt");
+  loadScript("https://translate.google.com/translate_a/element.js?cb=gtInit").catch(() => {});
+}
+
 /* ---------- Hesap ve kayıtlar: Supabase varsa orada, yoksa tarayıcıda (demo) ---------- */
 let sb = null;
 async function supa() {
@@ -345,5 +361,5 @@ async function enablePush() {
   return true;
 }
 
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, checkNew, enablePush, asset };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, checkNew, enablePush, asset, lang, setLang };
 })();
