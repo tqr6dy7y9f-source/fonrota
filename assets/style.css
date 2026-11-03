@@ -93,14 +93,14 @@ textarea.input{min-height:110px;resize:vertical}
 @media (max-width:600px){.compare{grid-template-columns:1fr}}
 
 /* Video oynatıcı */
-.player{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#12343B;color:#F3F6F4;font-family:"Bricolage Grotesque",Figtree,sans-serif;container-type:inline-size;user-select:none}
+.player{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#D6336C 0%,#7B4FD6 50%,#2F6BE0 100%);color:#FFFFFF;font-family:"Bricolage Grotesque",Figtree,sans-serif;container-type:inline-size;user-select:none}
 .player .scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;padding:7cqw 7cqw 14cqw;opacity:0;transition:opacity .5s}
 .player .scene.on{opacity:1}
 .player .cap{position:absolute;left:0;right:0;bottom:9cqw;text-align:center;font:500 2.6cqw/1.3 Figtree,sans-serif;padding:0 6cqw;color:#F3F6F4;text-shadow:0 1px 2px rgba(0,0,0,.4)}
 .player .t1{font-size:6cqw;font-weight:700;line-height:1.08;max-width:16ch}
 .player .t2{font-size:3cqw;opacity:.85;margin-top:1.5cqw;font-family:Figtree,sans-serif}
 .player .bar{position:absolute;left:0;bottom:0;height:5px;background:#E0AE57;width:0}
-.player .ctrl{position:absolute;inset:0;display:grid;place-items:center;background:rgba(18,52,59,.55);border:none;cursor:pointer;color:#fff}
+.player .ctrl{position:absolute;inset:0;display:grid;place-items:center;background:rgba(30,20,70,.35);border:none;cursor:pointer;color:#fff}
 .player .ctrl span{width:72px;height:72px;border-radius:50%;background:#E0AE57;display:grid;place-items:center;font-size:28px;color:#1b1305;padding-left:5px}
 .player .pause{position:absolute;top:2.5cqw;right:2.5cqw;background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:8px;padding:4px 10px;cursor:pointer;font:600 13px Figtree,sans-serif}
 .player .time{position:absolute;top:2.5cqw;left:3cqw;font:600 13px Figtree,sans-serif;opacity:.7}
