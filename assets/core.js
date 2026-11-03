@@ -86,7 +86,7 @@ let sb = null;
 async function supa() {
   if (!C.SUPABASE_URL || !C.SUPABASE_ANON_KEY) return null;
   if (sb) return sb;
-  await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js");
+  await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js");
   sb = window.supabase.createClient(C.SUPABASE_URL, C.SUPABASE_ANON_KEY); return sb;
 }
 const Store = {

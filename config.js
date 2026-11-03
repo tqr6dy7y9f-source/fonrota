@@ -3,8 +3,8 @@
 window.CONFIG = {
   SITE_ADI: "Destek Bulucu",
   // Supabase (hesaplar, kayıtlı başvurular, bildirimler) – supabase.com > Project Settings > API
-  SUPABASE_URL: "",
-  SUPABASE_ANON_KEY: "",
+  SUPABASE_URL: "https://gebuzyferpvlzturxoyu.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_pI798Yv3sQ47VMbJE7yuhw_-y-ct6TF",
   // AI uç noktası (api/ai.js Vercel'e yüklendiğinde): ör. "/api/ai"
   AI_ENDPOINT: "",
   // Web Push için VAPID açık anahtarı (npx web-push generate-vapid-keys)
