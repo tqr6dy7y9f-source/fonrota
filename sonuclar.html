@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sana uygun destekler – Destek Bulucu</title>
+<meta name="description" content="Şirketine ve KOBİ’ne uygun hibe, kredi ve teşvikleri bul; başvuru formunu otomatik doldur.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="sonuclar">
+<header class="top" id="top"></header>
+<main data-page="sonuclar">
+<div class="wrap" id="res">
+  <div class="res-head"><div><h1 id="baslik"></h1><p class="profile-line" id="profil"></p></div>
+    <div class="seg" id="view" role="group" aria-label="Görünüm"><button type="button" data-v="harita">Zihin haritası</button><button type="button" data-v="liste">Liste</button></div></div>
+  <div id="notice"></div>
+  <div class="ai-box" id="ai" hidden><h3>Yapay zekâ önerisi</h3><div id="ai-out"><p class="small muted">Profiline göre öncelik vermen gereken 3 desteği seçsin.</p></div><button class="btn sm seal" type="button" id="ai-btn">Yapay zekâ yorumlasın</button></div>
+  <div class="mm-legend" id="mm-legend" hidden><span><i style="background:var(--ok)"></i>Uygun</span><span><i style="background:var(--mid)"></i>Kısmen uygun</span><span>Bir desteğe tıklayınca ayrıntısı açılır.</span></div>
+  <div class="mindmap" id="mm" hidden></div>
+  <div id="liste" hidden></div>
+  <div class="actions"><button class="btn seal" type="button" id="rapor-btn">Başvuru özet raporu oluştur</button><a class="btn ghost" href="destekler.html">Tüm desteklere bak</a></div>
+</div>
+</main>
+<footer class="site" id="footer"></footer>
+<script src="config.js"></script>
+<script src="assets/prompts.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/pages.js"></script>
+</body>
+</html>

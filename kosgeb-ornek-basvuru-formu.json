@@ -1,0 +1,22 @@
+{
+ "firma_unvani": "firmaUnvani",
+ "vergi_no": "vkn",
+ "vergi_dairesi": "vergiDairesi",
+ "sirket_turu": "sirketTuru",
+ "kurulus_yili": "kurulusYili",
+ "nace_kodu": "naceKodu",
+ "calisan_sayisi": "calisan",
+ "yillik_ciro": "ciro",
+ "olcek": "olcekAdi",
+ "yetkili_adi": "yetkili",
+ "telefon": "telefon",
+ "eposta": "eposta",
+ "il": "il",
+ "adres": "adres",
+ "proje_adi": "projeAdi",
+ "proje_suresi": "projeSuresi",
+ "proje_butcesi": "projeButcesi",
+ "talep_tutari": "talepTutari",
+ "proje_ozeti": "projeOzeti",
+ "tarih": "bugun"
+}

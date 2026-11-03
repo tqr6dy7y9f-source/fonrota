@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tüm destekler – Destek Bulucu</title>
+<meta name="description" content="Şirketine ve KOBİ’ne uygun hibe, kredi ve teşvikleri bul; başvuru formunu otomatik doldur.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="destekler">
+<header class="top" id="top"></header>
+<main data-page="destekler">
+<div class="wrap">
+  <h1 style="margin:28px 0 6px">Tüm destekler</h1>
+  <p class="muted">Mevcut şirketler ve KOBİ’ler için hibe, kredi ve teşvikler.</p>
+  <div id="notice"></div>
+  <div class="notice" id="cta-test" hidden>Hangi desteklere uygun olduğunu görmek için <a href="bul.html"><strong>3 adımlık uygunluk testini</strong></a> yap.</div>
+  <div class="bar-filters" role="group" aria-label="Filtreler">
+    <div class="chips" id="f-tur"><button class="chip" aria-pressed="true" data-v="">Hepsi</button><button class="chip" aria-pressed="false" data-v="hibe">Hibe</button><button class="chip" aria-pressed="false" data-v="kredi">Kredi</button><button class="chip" aria-pressed="false" data-v="vergi">Vergi ve prim</button></div>
+    <label>İl <select class="input" id="f-il"></select></label>
+    <label>Ölçek <select class="input" id="f-olcek"></select></label>
+    <label>Ara <input class="input" type="search" id="f-q" placeholder="ör. makine, ihracat"></label>
+    <label>Sırala <select class="input" id="f-sort"><option value="uygun">En uygun önce</option><option value="tarih">Son başvuru yakın</option><option value="tutar">Tutar yüksek</option></select></label>
+  </div>
+  <p class="small muted" id="count" aria-live="polite" style="padding-top:14px"></p>
+  <ul class="list" id="list"></ul>
+</div>
+</main>
+<footer class="site" id="footer"></footer>
+<script src="config.js"></script>
+<script src="assets/prompts.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/pages.js"></script>
+</body>
+</html>

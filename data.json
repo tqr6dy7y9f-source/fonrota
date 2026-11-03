@@ -1,0 +1,3834 @@
+{
+ "guncelleme": "2026-11-03T07:00",
+ "ornek": true,
+ "destekler": [
+  {
+   "id": "kosgeb-girisimcilik",
+   "ad": "Girişimcilik Destek Programı",
+   "kurum": "KOSGEB",
+   "url": "https://www.kosgeb.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "kurulus"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": 2,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Yeni kurulmuş işletmelerin kuruluş, makine-teçhizat ve işletme giderlerine hibe ve geri ödemeli destek.",
+   "kosullar": [
+    "İşletmenin yeni kurulmuş olması",
+    "Uygulamalı Girişimcilik Eğitimi sertifikası",
+    "İş planı"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Girişimcilik eğitimi sertifikası"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "pdf",
+    "form": "forms/kosgeb-ornek-basvuru-formu.pdf",
+    "online": "https://www.kosgeb.gov.tr",
+    "adimlar": [
+     "e-Devlet şifrenle KOSGEB e-Hizmetler’e gir",
+     "KOBİ Bilgi Beyannameni güncelle",
+     "Destek programını seç ve başvuru formunu yükle",
+     "Gerekli belgeleri ekleyip başvuruyu tamamla"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kosgeb-isletme-gelistirme",
+   "ad": "İşletme Geliştirme Destek Programı",
+   "kurum": "KOSGEB",
+   "url": "https://www.kosgeb.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "kurulus",
+    "istihdam",
+    "dijital"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 60,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Nitelikli personel, eğitim, danışmanlık, belgelendirme ve tanıtım giderlerine destek.",
+   "kosullar": [
+    "KOSGEB veri tabanına kayıtlı olma",
+    "Güncel KOBİ Bilgi Beyannamesi"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "pdf",
+    "form": "forms/kosgeb-ornek-basvuru-formu.pdf",
+    "online": "https://www.kosgeb.gov.tr",
+    "adimlar": [
+     "e-Devlet şifrenle KOSGEB e-Hizmetler’e gir",
+     "KOBİ Bilgi Beyannameni güncelle",
+     "Destek programını seç ve başvuru formunu yükle",
+     "Gerekli belgeleri ekleyip başvuruyu tamamla"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kosgeb-arge",
+   "ad": "Ar-Ge, Ür-Ge ve İnovasyon Destek Programı",
+   "kurum": "KOSGEB",
+   "url": "https://www.kosgeb.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "arge"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "imalat",
+    "bilisim",
+    "enerji",
+    "saglik"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 75,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Yeni ürün, süreç veya hizmet geliştiren KOBİ’lerin personel, malzeme ve makine giderlerine destek.",
+   "kosullar": [
+    "Ar-Ge niteliği taşıyan proje",
+    "Proje bütçesi"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "pdf",
+    "form": "forms/kosgeb-ornek-basvuru-formu.pdf",
+    "online": "https://www.kosgeb.gov.tr",
+    "adimlar": [
+     "e-Devlet şifrenle KOSGEB e-Hizmetler’e gir",
+     "KOBİ Bilgi Beyannameni güncelle",
+     "Destek programını seç ve başvuru formunu yükle",
+     "Gerekli belgeleri ekleyip başvuruyu tamamla"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kosgeb-teknoyatirim",
+   "ad": "KOBİ Teknolojik Ürün Yatırım Destek Programı",
+   "kurum": "KOSGEB",
+   "url": "https://www.kosgeb.gov.tr",
+   "tur": "kredi",
+   "amac": [
+    "yatirim"
+   ],
+   "olcek": [
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "imalat"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Orta-yüksek ve yüksek teknolojili ürünlerin üretimine yönelik yatırımlar için geri ödemeli destek.",
+   "kosullar": [
+    "Çağrıda belirtilen ürün listesinde yer alma",
+    "Yatırım projesi ve fizibilite",
+    "Teminat"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler",
+    "Fizibilite raporu"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "pdf",
+    "form": "forms/kosgeb-ornek-basvuru-formu.pdf",
+    "online": "https://www.kosgeb.gov.tr",
+    "adimlar": [
+     "e-Devlet şifrenle KOSGEB e-Hizmetler’e gir",
+     "KOBİ Bilgi Beyannameni güncelle",
+     "Destek programını seç ve başvuru formunu yükle",
+     "Gerekli belgeleri ekleyip başvuruyu tamamla"
+    ]
+   },
+   "kredi": {
+    "vade_ay": 48,
+    "geri_odemesiz_ay": 12,
+    "faiz_yillik": 0
+   }
+  },
+  {
+   "id": "kosgeb-tematik",
+   "ad": "Tematik Proje Destek Programı",
+   "kurum": "KOSGEB",
+   "url": "https://www.kosgeb.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "yatirim",
+    "dijital",
+    "yesil"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Çağrıda belirlenen temalarda (dijital dönüşüm, yeşil dönüşüm vb.) yatırım ve proje giderlerine destek.",
+   "kosullar": [
+    "Çağrının temasına uygun proje",
+    "Çağrı süresi içinde başvuru"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "pdf",
+    "form": "forms/kosgeb-ornek-basvuru-formu.pdf",
+    "online": "https://www.kosgeb.gov.tr",
+    "adimlar": [
+     "e-Devlet şifrenle KOSGEB e-Hizmetler’e gir",
+     "KOBİ Bilgi Beyannameni güncelle",
+     "Destek programını seç ve başvuru formunu yükle",
+     "Gerekli belgeleri ekleyip başvuruyu tamamla"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kosgeb-isbirligi",
+   "ad": "İş Birliği-Güç Birliği Destek Programı",
+   "kurum": "KOSGEB",
+   "url": "https://www.kosgeb.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "En az birkaç işletmenin birlikte yürüttüğü ortak üretim, tedarik veya pazarlama projelerine destek.",
+   "kosullar": [
+    "En az 5 işletmenin iş birliği",
+    "Ortak proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler",
+    "İş birliği protokolü"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "pdf",
+    "form": "forms/kosgeb-ornek-basvuru-formu.pdf",
+    "online": "https://www.kosgeb.gov.tr",
+    "adimlar": [
+     "e-Devlet şifrenle KOSGEB e-Hizmetler’e gir",
+     "KOBİ Bilgi Beyannameni güncelle",
+     "Destek programını seç ve başvuru formunu yükle",
+     "Gerekli belgeleri ekleyip başvuruyu tamamla"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kosgeb-finansman",
+   "ad": "KOBİ Finansman Desteği (faiz destekli kredi)",
+   "kurum": "KOSGEB ve anlaşmalı bankalar",
+   "url": "https://www.kosgeb.gov.tr",
+   "tur": "kredi",
+   "amac": [
+    "finansman"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Banka kredisinin faizinin bir kısmını KOSGEB’in karşıladığı işletme ve yatırım kredisi.",
+   "kosullar": [
+    "Bankanın kredi değerlendirmesinden geçme",
+    "Vergi ve SGK borcu olmaması"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "online": "https://www.kosgeb.gov.tr",
+    "adimlar": [
+     "KOSGEB çağrısını takip et",
+     "Anlaşmalı bankanın şubesine başvur",
+     "Banka onayından sonra KOSGEB onayı beklenir"
+    ]
+   },
+   "kredi": {
+    "vade_ay": 24,
+    "geri_odemesiz_ay": 6,
+    "faiz_yillik": 0
+   }
+  },
+  {
+   "id": "tubitak-1501",
+   "ad": "1501 Sanayi Ar-Ge Projeleri Destekleme Programı",
+   "kurum": "TÜBİTAK",
+   "url": "https://www.tubitak.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "arge"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 60,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Her ölçekten şirketin Ar-Ge projelerine proje bütçesi üzerinden hibe desteği.",
+   "kosullar": [
+    "Türkiye’de yerleşik sermaye şirketi",
+    "Ar-Ge niteliği taşıyan proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://eteydeb.tubitak.gov.tr",
+    "adimlar": [
+     "TÜBİTAK TEYDEB başvuru sistemine firma yetkilisi olarak gir",
+     "Yeni proje başvurusu oluştur",
+     "Proje önerisi formundaki bölümleri doldur",
+     "Bütçe ve personel bilgilerini girip gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "tubitak-1507",
+   "ad": "1507 KOBİ Ar-Ge Başlangıç Destek Programı",
+   "kurum": "TÜBİTAK",
+   "url": "https://www.tubitak.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "arge"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 75,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "İlk kez Ar-Ge projesi yapacak KOBİ’lere yönelik başlangıç desteği.",
+   "kosullar": [
+    "Daha önce sınırlı sayıda TÜBİTAK desteği almış olma",
+    "KOBİ tanımına uyma"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://eteydeb.tubitak.gov.tr",
+    "adimlar": [
+     "TÜBİTAK TEYDEB başvuru sistemine firma yetkilisi olarak gir",
+     "Yeni proje başvurusu oluştur",
+     "Proje önerisi formundaki bölümleri doldur",
+     "Bütçe ve personel bilgilerini girip gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "tubitak-1505",
+   "ad": "1505 Üniversite-Sanayi İşbirliği Destek Programı",
+   "kurum": "TÜBİTAK",
+   "url": "https://www.tubitak.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "arge"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Şirketlerin üniversite ve araştırma kurumlarıyla birlikte yürüttüğü uygulamalı projelere destek.",
+   "kosullar": [
+    "Bir üniversite veya araştırma kurumuyla iş birliği"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler",
+    "İş birliği protokolü"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://eteydeb.tubitak.gov.tr",
+    "adimlar": [
+     "TÜBİTAK TEYDEB başvuru sistemine firma yetkilisi olarak gir",
+     "Yeni proje başvurusu oluştur",
+     "Proje önerisi formundaki bölümleri doldur",
+     "Bütçe ve personel bilgilerini girip gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "tubitak-1602",
+   "ad": "1602 Patent Destek Programı",
+   "kurum": "TÜBİTAK",
+   "url": "https://www.tubitak.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "arge"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Şirketlerin yurt içi ve yurt dışı patent başvuru ve tescil masraflarına destek.",
+   "kosullar": [
+    "Patent başvurusunun yapılmış olması"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "Patent başvuru belgeleri"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://eteydeb.tubitak.gov.tr",
+    "adimlar": [
+     "TÜBİTAK TEYDEB başvuru sistemine firma yetkilisi olarak gir",
+     "Yeni proje başvurusu oluştur",
+     "Proje önerisi formundaki bölümleri doldur",
+     "Bütçe ve personel bilgilerini girip gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "tubitak-eurostars",
+   "ad": "Eurostars / EUREKA Uluslararası Ar-Ge Projeleri",
+   "kurum": "TÜBİTAK",
+   "url": "https://www.tubitak.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "arge",
+    "ihracat"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Avrupalı ortaklarla yürütülen uluslararası Ar-Ge projelerinin Türk ortağına destek.",
+   "kosullar": [
+    "En az bir yabancı ortak",
+    "Uluslararası çağrıda başarılı olma"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://eteydeb.tubitak.gov.tr",
+    "adimlar": [
+     "TÜBİTAK TEYDEB başvuru sistemine firma yetkilisi olarak gir",
+     "Yeni proje başvurusu oluştur",
+     "Proje önerisi formundaki bölümleri doldur",
+     "Bütçe ve personel bilgilerini girip gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "ticaret-pazara-giris",
+   "ad": "Pazara Giriş Belgeleri Desteği",
+   "kurum": "Ticaret Bakanlığı",
+   "url": "https://www.ticaret.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "ihracat"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": true,
+   "son_basvuru": null,
+   "ozet": "İhracat için gereken sertifika, test ve belgelendirme giderlerinin bir kısmının karşılanması.",
+   "kosullar": [
+    "İhracatçı birliğine üyelik",
+    "Belge alındıktan sonra süresinde başvuru"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "Harcama belgeleri"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.ticaret.gov.tr/ihracat/devlet-destekleri",
+    "adimlar": [
+     "Ticaret Bakanlığı destek başvuru sistemine e-Devlet ile gir",
+     "İlgili destek kalemini seç",
+     "Harcama belgelerini yükle",
+     "Başvuruyu ihracatçı birliğine gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "ticaret-pazar-arastirma",
+   "ad": "Yurt Dışı Pazar Araştırması ve Pazara Giriş Desteği",
+   "kurum": "Ticaret Bakanlığı",
+   "url": "https://www.ticaret.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "ihracat"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 60,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Yeni pazarlar için yurt dışı pazar araştırması, rapor ve ziyaret giderlerine destek.",
+   "kosullar": [
+    "İhracatçı birliğine üyelik",
+    "Ziyaret öncesi veya sonrası süresinde başvuru"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "Seyahat ve rapor belgeleri"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.ticaret.gov.tr/ihracat/devlet-destekleri",
+    "adimlar": [
+     "Ticaret Bakanlığı destek başvuru sistemine e-Devlet ile gir",
+     "İlgili destek kalemini seç",
+     "Harcama belgelerini yükle",
+     "Başvuruyu ihracatçı birliğine gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "ticaret-fuar",
+   "ad": "Yurt Dışı Fuar Katılım Desteği",
+   "kurum": "Ticaret Bakanlığı",
+   "url": "https://www.ticaret.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "ihracat"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Yurt dışı fuarlarda stand, nakliye ve tanıtım giderlerine destek.",
+   "kosullar": [
+    "Destek kapsamındaki fuarlara katılım"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "Fuar katılım belgeleri ve faturalar"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.ticaret.gov.tr/ihracat/devlet-destekleri",
+    "adimlar": [
+     "Ticaret Bakanlığı destek başvuru sistemine e-Devlet ile gir",
+     "İlgili destek kalemini seç",
+     "Harcama belgelerini yükle",
+     "Başvuruyu ihracatçı birliğine gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "ticaret-e-ihracat",
+   "ad": "E-İhracat Destekleri",
+   "kurum": "Ticaret Bakanlığı",
+   "url": "https://www.ticaret.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "ihracat",
+    "dijital"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 60,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "E-ticaret siteleri üyeliği, dijital pazarlama ve yurt dışı e-ticaret giderlerine destek.",
+   "kosullar": [
+    "Desteklenen e-ticaret platformlarına üyelik"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "Üyelik ve reklam faturaları"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.ticaret.gov.tr/ihracat/devlet-destekleri",
+    "adimlar": [
+     "Ticaret Bakanlığı destek başvuru sistemine e-Devlet ile gir",
+     "İlgili destek kalemini seç",
+     "Harcama belgelerini yükle",
+     "Başvuruyu ihracatçı birliğine gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "eximbank-sevk-oncesi",
+   "ad": "İhracata Hazırlık Kredileri",
+   "kurum": "Türk Eximbank",
+   "url": "https://www.eximbank.gov.tr",
+   "tur": "kredi",
+   "amac": [
+    "finansman",
+    "ihracat"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": true,
+   "son_basvuru": null,
+   "ozet": "İhracat taahhüdü karşılığında uygun maliyetli işletme kredisi.",
+   "kosullar": [
+    "İhracat taahhüdü",
+    "Banka teminat koşulları"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "online": "https://www.eximbank.gov.tr",
+    "adimlar": [
+     "Eximbank veya aracı bankaya başvur",
+     "İhracat taahhüdü ve teminatı belirle"
+    ]
+   },
+   "kredi": {
+    "vade_ay": 12,
+    "geri_odemesiz_ay": 0,
+    "faiz_yillik": 30
+   }
+  },
+  {
+   "id": "sanayi-tesvik-belgesi",
+   "ad": "Yatırım Teşvik Belgesi",
+   "kurum": "Sanayi ve Teknoloji Bakanlığı",
+   "url": "https://www.sanayi.gov.tr",
+   "tur": "vergi",
+   "amac": [
+    "vergi",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "imalat",
+    "enerji",
+    "turizm",
+    "saglik",
+    "tarim"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Yatırımlarda KDV istisnası, gümrük muafiyeti ve vergi indirimi gibi ayrıcalıklar.",
+   "kosullar": [
+    "Asgari yatırım tutarını aşma",
+    "Teşvik sistemine uygun yatırım konusu"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "Yatırım bilgileri ve makine listesi"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://etuys.sanayi.gov.tr",
+    "adimlar": [
+     "E-TUYS sistemine e-imza ile gir",
+     "Yatırım bilgilerini ve makine listesini gir",
+     "Başvuruyu gönder"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "sanayi-arge-merkezi",
+   "ad": "Ar-Ge ve Tasarım Merkezi Teşvikleri",
+   "kurum": "Sanayi ve Teknoloji Bakanlığı",
+   "url": "https://www.sanayi.gov.tr",
+   "tur": "vergi",
+   "amac": [
+    "vergi",
+    "arge"
+   ],
+   "olcek": [
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Ar-Ge ve tasarım merkezi belgesi alan şirketlere gelir vergisi stopajı, SGK prim ve damga vergisi avantajları.",
+   "kosullar": [
+    "Asgari Ar-Ge personeli sayısı",
+    "Merkez belgesi başvurusu"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Ar-Ge personel listesi"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.sanayi.gov.tr",
+    "adimlar": [
+     "Ar-Ge merkezi başvuru sistemine gir",
+     "Personel ve faaliyet bilgilerini gir",
+     "Değerlendirme kurulunu bekle"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "sanayi-teknopark",
+   "ad": "Teknopark Vergi İstisnaları",
+   "kurum": "Sanayi ve Teknoloji Bakanlığı",
+   "url": "https://www.sanayi.gov.tr",
+   "tur": "vergi",
+   "amac": [
+    "vergi",
+    "arge"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "bilisim",
+    "imalat",
+    "saglik",
+    "enerji"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Teknoparkta yürütülen Ar-Ge ve yazılım faaliyetlerinden elde edilen kazançlarda vergi ve SGK avantajları.",
+   "kosullar": [
+    "Teknopark yönetimine kabul",
+    "Ar-Ge veya yazılım projesi"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "Proje önerisi"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "online": "https://www.sanayi.gov.tr",
+    "adimlar": [
+     "Bölgendeki teknopark yönetimine proje başvurusu yap",
+     "Kabulden sonra teknoparkta ofis aç"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "tkdk-ipard",
+   "ad": "IPARD III Kırsal Kalkınma Hibeleri",
+   "kurum": "TKDK",
+   "url": "https://www.tkdk.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "yatirim",
+    "yesil"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tarim"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 65,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Tarım, gıda işleme ve kırsal ekonomiye yönelik yatırımlara AB katkılı hibe.",
+   "kosullar": [
+    "Programın uygulandığı illerden birinde yatırım",
+    "Çağrıda belirtilen tedbir kapsamında proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler",
+    "İş planı"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.tkdk.gov.tr",
+    "adimlar": [
+     "TKDK başvuru sistemine kaydol",
+     "Tedbiri seç ve iş planını yükle",
+     "İl koordinatörlüğüne başvuruyu teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "tarim-kkydp",
+   "ad": "Kırsal Kalkınma Yatırımlarının Desteklenmesi (KKYDP)",
+   "kurum": "Tarım ve Orman Bakanlığı",
+   "url": "https://www.tarimorman.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tarim"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Tarımsal ürünlerin işlenmesi, depolanması ve paketlenmesine yönelik yatırımlara hibe.",
+   "kosullar": [
+    "Kırsal alanda yatırım",
+    "İl müdürlüğü çağrısına başvuru"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "online": "https://www.tarimorman.gov.tr",
+    "adimlar": [
+     "İl Tarım ve Orman Müdürlüğü’nün çağrısını takip et",
+     "Proje dosyasını il müdürlüğüne teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "sgk-5-puan",
+   "ad": "5 Puanlık SGK İşveren Prim Teşviki",
+   "kurum": "SGK",
+   "url": "https://www.sgk.gov.tr",
+   "tur": "vergi",
+   "amac": [
+    "istihdam",
+    "vergi"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Primlerini zamanında ödeyen işverenlerin prim yükünde indirim.",
+   "kosullar": [
+    "Vergi ve SGK borcu olmaması",
+    "Primlerin zamanında ödenmesi"
+   ],
+   "belgeler": [
+    "SGK işyeri sicil bilgileri"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "online": "https://www.sgk.gov.tr",
+    "adimlar": [
+     "Mali müşavirin aylık prim bildiriminde ilgili teşvik kodunu seçer"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "sgk-ilave-istihdam",
+   "ad": "İlave İstihdam Teşviki",
+   "kurum": "SGK / İŞKUR",
+   "url": "https://www.sgk.gov.tr",
+   "tur": "vergi",
+   "amac": [
+    "istihdam",
+    "vergi"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "İşsizler arasından yapılan yeni işe alımlarda işveren prim maliyetinin karşılanması.",
+   "kosullar": [
+    "İşe alınan kişinin İŞKUR’a kayıtlı işsiz olması",
+    "Ortalama çalışan sayısına ilave olması"
+   ],
+   "belgeler": [
+    "SGK işyeri sicil bilgileri",
+    "İşe giriş bildirgeleri"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "online": "https://www.sgk.gov.tr",
+    "adimlar": [
+     "Yeni çalışanı İŞKUR kaydından seç",
+     "Mali müşavir teşviki bildirgede tanımlar"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "iskur-iep",
+   "ad": "İşbaşı Eğitim Programı",
+   "kurum": "İŞKUR",
+   "url": "https://www.iskur.gov.tr",
+   "tur": "hibe",
+   "amac": [
+    "istihdam"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Yeni personeli işbaşında eğitirken katılımcının giderlerinin İŞKUR tarafından karşılanması.",
+   "kosullar": [
+    "En az 2 sigortalı çalışan",
+    "Program sonrası istihdam taahhüdü"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.iskur.gov.tr",
+    "adimlar": [
+     "İŞKUR işveren sistemine gir",
+     "İşbaşı eğitim programı talebi oluştur",
+     "İş ve meslek danışmanınla görüş"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kgf-kefalet",
+   "ad": "Kredi Garanti Fonu Kefaleti",
+   "kurum": "Kredi Garanti Fonu",
+   "url": "https://www.kgf.com.tr",
+   "tur": "kredi",
+   "amac": [
+    "finansman"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Teminatı yetersiz işletmelerin banka kredilerine KGF’nin kefil olması.",
+   "kosullar": [
+    "Banka kredi değerlendirmesi",
+    "Teminat eksikliği"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "online": "https://www.kgf.com.tr",
+    "adimlar": [
+     "Bankana KGF kefaletli kredi talep et",
+     "Banka başvuruyu KGF’ye iletir"
+    ]
+   },
+   "kredi": {
+    "vade_ay": 36,
+    "geri_odemesiz_ay": 6,
+    "faiz_yillik": 35
+   }
+  },
+  {
+   "id": "ab-eic-accelerator",
+   "ad": "EIC Accelerator (Avrupa Ufuk Programı)",
+   "kurum": "Avrupa Komisyonu / TÜBİTAK Ulusal İrtibat",
+   "url": "https://eic.ec.europa.eu",
+   "tur": "hibe",
+   "amac": [
+    "arge",
+    "ihracat"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "bilisim",
+    "saglik",
+    "enerji",
+    "imalat"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "ust_limit": null,
+   "destek_orani": null,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Çığır açan yenilikleri olan KOBİ’lere hibe ve öz sermaye yatırımı.",
+   "kosullar": [
+    "Yüksek riskli ve yüksek etkili yenilik",
+    "İngilizce proje önerisi"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://eic.ec.europa.eu",
+    "adimlar": [
+     "EU Funding & Tenders portalında hesap aç",
+     "Kısa başvuruyu gönder",
+     "Tam başvuruya davet edilirsen proje önerisini hazırla"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "istka-mali-destek",
+   "ad": "İstanbul Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "İstanbul Kalkınma Ajansı",
+   "url": "https://www.istka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "İstanbul"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.istka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "trakyaka-mali-destek",
+   "ad": "Trakya Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Trakya Kalkınma Ajansı",
+   "url": "https://www.trakyaka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Tekirdağ",
+    "Edirne",
+    "Kırklareli"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.trakyaka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "gmka-mali-destek",
+   "ad": "Güney Marmara Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Güney Marmara Kalkınma Ajansı",
+   "url": "https://www.gmka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Balıkesir",
+    "Çanakkale"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.gmka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "izka-mali-destek",
+   "ad": "İzmir Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "İzmir Kalkınma Ajansı",
+   "url": "https://www.izka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "İzmir"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.izka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "geka-mali-destek",
+   "ad": "Güney Ege Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Güney Ege Kalkınma Ajansı",
+   "url": "https://www.geka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Aydın",
+    "Denizli",
+    "Muğla"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.geka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "zafer-mali-destek",
+   "ad": "Zafer Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Zafer Kalkınma Ajansı",
+   "url": "https://www.zafer.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Manisa",
+    "Afyonkarahisar",
+    "Kütahya",
+    "Uşak"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.zafer.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "bebka-mali-destek",
+   "ad": "Bursa Eskişehir Bilecik Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Bursa Eskişehir Bilecik Kalkınma Ajansı",
+   "url": "https://www.bebka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Bursa",
+    "Eskişehir",
+    "Bilecik"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.bebka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "marka-mali-destek",
+   "ad": "Doğu Marmara Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Doğu Marmara Kalkınma Ajansı",
+   "url": "https://www.marka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Kocaeli",
+    "Sakarya",
+    "Düzce",
+    "Bolu",
+    "Yalova"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.marka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "ankaraka-mali-destek",
+   "ad": "Ankara Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Ankara Kalkınma Ajansı",
+   "url": "https://www.ankaraka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Ankara"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.ankaraka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "mevka-mali-destek",
+   "ad": "Mevlana Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Mevlana Kalkınma Ajansı",
+   "url": "https://www.mevka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Konya",
+    "Karaman"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.mevka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "baka-mali-destek",
+   "ad": "Batı Akdeniz Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Batı Akdeniz Kalkınma Ajansı",
+   "url": "https://www.baka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Antalya",
+    "Isparta",
+    "Burdur"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.baka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "cka-mali-destek",
+   "ad": "Çukurova Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Çukurova Kalkınma Ajansı",
+   "url": "https://www.cka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Adana",
+    "Mersin"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.cka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "dogaka-mali-destek",
+   "ad": "Doğu Akdeniz Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Doğu Akdeniz Kalkınma Ajansı",
+   "url": "https://www.dogaka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Hatay",
+    "Kahramanmaraş",
+    "Osmaniye"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.dogaka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "ahika-mali-destek",
+   "ad": "Ahiler Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Ahiler Kalkınma Ajansı",
+   "url": "https://www.ahika.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Kırıkkale",
+    "Aksaray",
+    "Niğde",
+    "Nevşehir",
+    "Kırşehir"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.ahika.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "oran-mali-destek",
+   "ad": "Orta Anadolu Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Orta Anadolu Kalkınma Ajansı",
+   "url": "https://www.oran.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Kayseri",
+    "Sivas",
+    "Yozgat"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.oran.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "bakka-mali-destek",
+   "ad": "Batı Karadeniz Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Batı Karadeniz Kalkınma Ajansı",
+   "url": "https://www.bakka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Zonguldak",
+    "Karabük",
+    "Bartın"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.bakka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kuzka-mali-destek",
+   "ad": "Kuzey Anadolu Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Kuzey Anadolu Kalkınma Ajansı",
+   "url": "https://www.kuzka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Kastamonu",
+    "Çankırı",
+    "Sinop"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.kuzka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "oka-mali-destek",
+   "ad": "Orta Karadeniz Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Orta Karadeniz Kalkınma Ajansı",
+   "url": "https://www.oka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Samsun",
+    "Tokat",
+    "Çorum",
+    "Amasya"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.oka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "doka-mali-destek",
+   "ad": "Doğu Karadeniz Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Doğu Karadeniz Kalkınma Ajansı",
+   "url": "https://www.doka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Trabzon",
+    "Ordu",
+    "Giresun",
+    "Rize",
+    "Artvin",
+    "Gümüşhane"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.doka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "kudaka-mali-destek",
+   "ad": "Kuzeydoğu Anadolu Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Kuzeydoğu Anadolu Kalkınma Ajansı",
+   "url": "https://www.kudaka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Erzurum",
+    "Erzincan",
+    "Bayburt"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.kudaka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "serka-mali-destek",
+   "ad": "Serhat Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Serhat Kalkınma Ajansı",
+   "url": "https://www.serka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Ağrı",
+    "Kars",
+    "Iğdır",
+    "Ardahan"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.serka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "fka-mali-destek",
+   "ad": "Fırat Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Fırat Kalkınma Ajansı",
+   "url": "https://www.fka.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Malatya",
+    "Elazığ",
+    "Bingöl",
+    "Tunceli"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.fka.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "daka-mali-destek",
+   "ad": "Doğu Anadolu Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Doğu Anadolu Kalkınma Ajansı",
+   "url": "https://www.daka.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Van",
+    "Muş",
+    "Bitlis",
+    "Hakkari"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.daka.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "ika-mali-destek",
+   "ad": "İpekyolu Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "İpekyolu Kalkınma Ajansı",
+   "url": "https://www.ika.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Gaziantep",
+    "Adıyaman",
+    "Kilis"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.ika.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "karacadag-mali-destek",
+   "ad": "Karacadağ Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Karacadağ Kalkınma Ajansı",
+   "url": "https://www.karacadag.gov.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Şanlıurfa",
+    "Diyarbakır"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.karacadag.gov.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  },
+  {
+   "id": "dika-mali-destek",
+   "ad": "Dicle Kalkınma Ajansı Mali Destek Programı",
+   "kurum": "Dicle Kalkınma Ajansı",
+   "url": "https://www.dika.org.tr/",
+   "tur": "hibe",
+   "amac": [
+    "bolgesel",
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "Mardin",
+    "Batman",
+    "Şırnak",
+    "Siirt"
+   ],
+   "ust_limit": null,
+   "destek_orani": 50,
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "son_basvuru": null,
+   "ozet": "Bölgedeki işletmelerin rekabet gücünü, üretimini ve istihdamını artıran projelere eş finansmanlı hibe.",
+   "kosullar": [
+    "Faaliyet yerinin ajansın bölgesinde olması",
+    "Eş finansmanın karşılanması",
+    "Çağrı rehberine uygun proje"
+   ],
+   "belgeler": [
+    "Vergi levhası",
+    "Ticaret sicil gazetesi",
+    "İmza sirküleri",
+    "Vergi ve SGK borcu yoktur yazısı",
+    "KOBİ Bilgi Beyannamesi",
+    "Son yıl bilanço ve gelir tablosu",
+    "Proje bütçesi",
+    "Proforma faturalar / teklifler"
+   ],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro",
+    "projeAdi",
+    "projeOzeti",
+    "projeSuresi",
+    "projeButcesi",
+    "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "online": "https://www.dika.org.tr/",
+    "adimlar": [
+     "Ajansın güncel çağrı rehberini oku",
+     "KAYS (Kalkınma Ajansları Yönetim Sistemi) üzerinden başvuru oluştur",
+     "Islak imzalı belgeleri ajansa teslim et"
+    ]
+   },
+   "kredi": null
+  }
+ ]
+}
