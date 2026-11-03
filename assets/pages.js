@@ -85,6 +85,14 @@ P.index = async () => {
   const d = await D.data(); const kurum = new Set(d.destekler.map(x => x.kurum)).size;
   $("#stat").textContent = `${d.destekler.length} destek programı, ${kurum} kurum`;
   const pl = player($("#video"), { autoplay: params().get("oynat") === "1" });
+  // Sayfa açılınca kendiliğinden başlasın: video ekranda görünür olduğu an (telefonda aşağı kaydırınca) bir kez oynar.
+  // "Hareketi azalt" ayarı açık olanlarda başlatılmaz; onlar ▶ ile başlatır.
+  if (params().get("oynat") !== "1" && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); pl.start(); } }, { threshold: 0.5 });
+      io.observe($("#video"));
+    } else pl.start();
+  }
   window.__player = pl;
 };
 
