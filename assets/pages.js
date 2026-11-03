@@ -416,7 +416,8 @@ P.hesap = async () => {
       try {
         if (kayit) {
           const prof = { ...draft, ...Object.fromEntries(kayitAlan.map(k => [k, v[k] || ""])), eposta: v.email, yetkili: v.yetkili || v.ad, bildirimAnlik: $("#bAnlik").checked, bildirimEposta: $("#bEposta").checked };
-          await Store.signUp({ email: v.email, password: v.password, ad: v.ad, profil: prof });
+          const r = await Store.signUp({ email: v.email, password: v.password, ad: v.ad, profil: prof });
+          if (r && r.onayGerekli) { box.innerHTML = `<div class="narrow" style="margin-top:26px"><h1>E-postanı kontrol et</h1><p>Hesabın oluşturuldu. <b>${esc(v.email)}</b> adresine bir onay bağlantısı gönderdik. Bağlantıya tıkladıktan sonra giriş yapabilirsin.</p><a class="btn seal" ${link("hesap", "sekme=giris")}>Giriş sayfasına git</a></div>`; return; }
           if (prof.bildirimAnlik) await D.enablePush();
           toast("Hesabın oluşturuldu."); go(prof.sektorler ? "sonuclar" : "bul");
         } else { await Store.signIn(v); toast("Hoş geldin."); go("hesap"); }

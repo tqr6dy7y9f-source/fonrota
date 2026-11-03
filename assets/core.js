@@ -98,13 +98,20 @@ const Store = {
   async signUp({ email, password, ad, profil }) {
     const s = await supa();
     if (!s) { const accounts = LS.get("accounts", {}); if (accounts[email]) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap."); accounts[email] = { ad, password }; LS.set("accounts", accounts); LS.set("user", { email, ad }); await this.saveProfile(profil); return; }
-    const { error } = await s.auth.signUp({ email, password, options: { data: { ad } } }); if (error) throw error;
-    await this.saveProfile(profil);
+    const p = { ...profil }; const c = classify(num(p.calisan), num(p.ciro), num(p.bilanco)); if (c) { p.olcek = c.olcek; p.olcekAdi = OLCEK[c.olcek]; }
+    LS.set("profile", p);
+    // Profil, kayıtla birlikte gönderilir; veritabanındaki tetikleyici hesabı ve profili birlikte kaydeder.
+    const { data, error } = await s.auth.signUp({ email, password, options: { data: { ad, profil: p }, emailRedirectTo: location.origin + location.pathname.replace(/[^/]*$/, "") + "hesap.html" } });
+    if (error) throw new Error(/registered|exists/i.test(error.message) ? "Bu e-posta ile zaten bir hesap var. Giriş yap." : /password/i.test(error.message) ? "Şifre çok zayıf. Daha uzun bir şifre seç." : error.message);
+    if (data.user && !(data.user.identities || []).length) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap.");
+    if (!data.session) return { onayGerekli: true };
+    await this.saveProfile(p);
   },
   async signIn({ email, password }) {
     const s = await supa();
     if (!s) { const a = LS.get("accounts", {})[email]; if (!a || a.password !== password) throw new Error("E-posta veya şifre hatalı."); LS.set("user", { email, ad: a.ad }); return; }
-    const { error } = await s.auth.signInWithPassword({ email, password }); if (error) throw new Error("E-posta veya şifre hatalı.");
+    const { error } = await s.auth.signInWithPassword({ email, password });
+    if (error) throw new Error(/confirm/i.test(error.message) ? "Önce e-postana gelen onay bağlantısına tıkla." : "E-posta veya şifre hatalı.");
   },
   async signOut() { const s = await supa(); if (s) await s.auth.signOut(); LS.del("user"); },
   async profile() {
