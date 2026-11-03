@@ -73,10 +73,11 @@ textarea.input{min-height:110px;resize:vertical}
 
 /* Ana sayfa */
 .hero h1{font-size:clamp(28px,4vw,42px)}
-.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;padding:48px 0 40px}
-.hero p.lead{font-size:19px;color:var(--muted);max-width:34ch}
+.hero{display:grid;grid-template-columns:1fr;gap:32px;padding:48px 0 40px}
+.hero h1{max-width:22ch}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:52ch}
 .hero .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-@media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:28px}}
+@media (max-width:820px){.hero{padding-top:28px;gap:24px}}
 .sources{display:flex;flex-wrap:wrap;gap:8px 18px;font-weight:600;color:var(--muted);font-size:15px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:36px 0;counter-reset:s}
 .steps li{list-style:none;counter-increment:s}
