@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 ENV = os.environ.get
 SB, KEY = ENV("SUPABASE_URL"), ENV("SUPABASE_SERVICE_KEY")
 H = {"apikey": KEY or "", "Authorization": f"Bearer {KEY}", "Content-Type": "application/json"}
-SITE = (ENV("SITE_URL") or "").rstrip("/")
+SITE = (ENV("SITE_URL") or "https://tqr6dy7y9f-source.github.io/fonrota").rstrip("/")
 
 
 def fits(x, p):
