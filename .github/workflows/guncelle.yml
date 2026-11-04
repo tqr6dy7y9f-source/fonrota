@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data.json forms scraper/new_ids.json scraper/platform.json
+          git add data.json forms scraper/new_ids.json scraper/platform.json scraper/platform_kapali.json
           git diff --cached --quiet || git commit -m "Destekler güncellendi $(date +%F)"
           git pull --rebase -X theirs origin main || true
           git push

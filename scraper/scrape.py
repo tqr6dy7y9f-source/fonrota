@@ -22,6 +22,9 @@ from urllib import robotparser
 import requests
 from bs4 import BeautifulSoup
 
+import eleme
+from yatirimadestek import ratios, tur_bul
+
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT.parent / "data.json"
 FORMS = ROOT.parent / "forms"
@@ -194,8 +197,20 @@ def download_forms(soup, url, item_id):
     return None
 
 
+def page_text(soup):
+    """Sayfanın ana içeriğindeki paragraf ve maddeler, değiştirilmeden (en fazla ~2000 karakter)."""
+    root = soup.find("main") or soup.find("article") or soup.find(class_=re.compile("content|icerik|detay", re.I)) or soup.body or soup
+    parts, n = [], 0
+    for el in root.find_all(["p", "li", "h2", "h3"]):
+        t = " ".join(el.get_text(" ").split())
+        if len(t) < 30 or t in parts: continue
+        parts.append(("• " if el.name == "li" else "") + t); n += len(t)
+        if n > 2000: break
+    return "\n".join(parts)
+
+
 def parse_item(title, url, src):
-    if any(w in low(title) for w in HARIC):
+    if any(w in low(title) for w in HARIC) or not eleme.is_program(title, None, date.today().isoformat()):
         return None
     soup = get(url)
     if not soup:
@@ -204,7 +219,9 @@ def parse_item(title, url, src):
         tag.decompose()
     text = " ".join(soup.get_text(" ").split())
     t = low(title + " " + text)
-    tur = next((k for k, words in TUR_KURALLARI if any(w in t for w in words)), "hibe")
+    metin = page_text(soup)
+    tur = tur_bul(title, metin)
+    oran = ratios(metin)
     paras = [p.get_text(" ", strip=True) for p in soup.find_all("p")]
     ozet = next((p for p in paras if len(p) > 80), text[:300])[:300]
     if any(w in low(title + " " + text[:400]) for w in HARIC) and "işletme" not in t:
@@ -218,22 +235,24 @@ def parse_item(title, url, src):
         "kurum": src["kurum"],
         "url": url,
         "tur": tur,
-        "ust_limit": amount(text),
-        "destek_orani": ratio(text),
+        "ust_limit": None,                        # tahmin yok: resmi metinde okunur
+        "destek_orani": oran[0] if oran else None,
+        "oran_metin": f"%{oran[0]}–%{oran[-1]}" if len(oran) > 1 else None,
         "amac": match_rules(t, AMAC_KURALLARI, ["bolgesel"] if src.get("ajans") else ["yatirim"]),
-        "olcek": match_rules(t, OLCEK_KURALLARI, ["mikro", "kucuk", "orta"]),
-        "sektor": match_rules(t, SEKTOR_KURALLARI, ["tumu"]),
-        "il": src.get("il", ["tumu"]),
-        "son_basvuru": deadline(text),
+        "olcek": ["mikro", "kucuk", "orta"] if "kobi" in low(metin) and "büyük" not in low(metin) else ["mikro", "kucuk", "orta", "buyuk"],
+        "sektor": ["tumu"],                       # sektör şartı tahmin edilmez
+        "il": src.get("il", ["tumu"]),            # kalkınma ajansları için bölgesi (sources.json)
+        "son_basvuru": None,                      # sayfadaki tarihler güvenilir değil (haber/menü tarihleri)
         "ozet": ozet,
         "firma_yasi_max": None,
         "ihracat_gerekli": "ihracatçı" in t and "birlik" in t,
         "kosullar": [],
-        "belgeler": B_TEMEL + (["Proje bütçesi", "Proforma faturalar / teklifler"] if tur == "hibe" else []),
+        "belgeler": [],
+        "sayfa": {"kaynak": src["kurum"], "url": url, "kontrol": date.today().isoformat(), "metin": metin},
         "alanlar": A_PROJE if tur == "hibe" else A_TEMEL,
         "basvuru": {"yontem": yontem, "form": form, "online": src["url"], "adimlar": []},
         "kredi": None,
-        "kaynak": "otomatik",
+        "kaynak": "kurum-sitesi",
     }
 
 
@@ -265,12 +284,20 @@ def main():
         plat = json.loads(platform_path.read_text(encoding="utf-8"))
         keys = {key(p["ad"]) for p in plat}
         items = {k: v for k, v in items.items() if key(v["ad"]) not in keys}
-        # Kurum sitelerinden kurallarla çıkarılan kayıtlar menü sayfası/haber içerebiliyor ve şartları
-        # yorumlanmış oluyor. Platform verisi varken yalnızca resmi (platform) ve doğrulanmış kayıtlar yayımlanır.
-        items = {}
+        # Kurum sitelerinden gelen kayıtlar: platformda (açık ya da kapalı) olan programın kopyasını alma,
+        # aynı programı iki kez alma (ör. 1501 hem TÜBİTAK hem KOSGEB sitesinde).
+        kp = ROOT / "platform_kapali.json"
+        kapali = json.loads(kp.read_text(encoding="utf-8")) if kp.exists() else []
+        tum = [p["ad"] for p in plat] + kapali
+        site = []
+        for v in items.values():
+            if any(eleme.benzer(v["ad"], a) for a in tum): continue
+            if any(eleme.benzer(v["ad"], o["ad"]) for o in site): continue
+            site.append(v)
+        items = {v["id"]: v for v in site}
         for p in plat:
             items[p["id"]] = p
-        print(len(plat), "program Destekler Platformu'ndan eklendi (kurum sitelerinden otomatik kayıtlar kullanılmadı)")
+        print(len(plat), "program Destekler Platformu'ndan,", len(site), "program kurum sitelerinden eklendi")
 
     manual_path = ROOT / "manual.json"
     if manual_path.exists():

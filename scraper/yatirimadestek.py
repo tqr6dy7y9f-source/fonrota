@@ -270,7 +270,7 @@ def build(url, info, sec, docs):
 def main():
     from playwright.sync_api import sync_playwright
     today = date.today().isoformat()
-    items, seen = [], 0
+    items, seen, kapali = [], 0, []
     with sync_playwright() as p:
         b = p.chromium.launch(); page = b.new_page(user_agent=UA)
         for url in program_urls():
@@ -281,6 +281,8 @@ def main():
                 print("  açılamadı:", url, e); continue
             finally:
                 time.sleep(DELAY)
+            if info and (info.get("durum") == "Kapalı" or (info.get("son_basvuru") and info["son_basvuru"] < today)):
+                kapali.append(info["ad"])
             if not info or info.get("durum") != "Açık" or (info.get("son_basvuru") and info["son_basvuru"] < today):
                 continue
             docs = info["belgeler"]
@@ -300,6 +302,7 @@ def main():
     if not items and OUT.exists():
         print("Platformdan kayıt alınamadı, önceki platform.json korunuyor."); return
     OUT.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
+    (ROOT / "platform_kapali.json").write_text(json.dumps(sorted(set(kapali)), ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{seen} sayfa tarandı, {len(items)} açık program -> {OUT}")
 
 

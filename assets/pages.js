@@ -22,13 +22,13 @@ async function layout(page) {
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
-  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Bilgiler T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan her hafta otomatik toplanır. Başvurmadan önce koşulları kurumun sayfasından kontrol et.</span><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span></div>`; }
+  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Bilgiler T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan ve kurumların (KOSGEB, TÜBİTAK, kalkınma ajansları…) sitelerinden her hafta otomatik toplanır. Başvurmadan önce koşulları kurumun sayfasından kontrol et.</span><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span></div>`; }
 }
 // Sürüm numarası: sayfadaki script bağlantısının ?v= değeri (tools/surum.py yeniler)
 function surum() { const m = [...document.scripts].map(x => x.src.match(/pages\.js\?v=(\d+)/)).find(Boolean); return m ? m[1] : ""; }
 function sampleNotice(d) { return d.ornek ? `<div class="notice">Şu an örnek veri gösteriliyor. Haftalık güncelleme çalıştığında kurumların sitelerindeki güncel ilanlar burada yer alır.</div>` : ""; }
 function money(x) { return x.ust_limit ? `<span class="money">${short(x.ust_limit)}’ye kadar</span>` : x.destek_orani ? `<span class="money">%${x.destek_orani} destek</span>` : ""; }
-function due(x) { const d = D.daysLeft(x.son_basvuru); return x.son_basvuru ? `<span class="due ${d <= 21 ? "soon" : ""}">Son başvuru: ${d <= 0 ? "bugün" : d + " gün kaldı"}</span>` : `<span class="due">Sürekli açık veya çağrıya bağlı</span>`; }
+function due(x) { const d = D.daysLeft(x.son_basvuru); return x.son_basvuru ? `<span class="due ${d <= 21 ? "soon" : ""}">Son başvuru: ${d <= 0 ? "bugün" : d + " gün kaldı"}</span>` : `<span class="due">${x.sayfa ? "Tarih için kurumun sayfasına bak" : "Sürekli açık veya çağrıya bağlı"}</span>`; }
 function itemRow(x, c) {
   return `<li class="item"><a ${link("destek", "id=" + x.id)}>
     <h3>${esc(x.ad)}</h3><span class="meta">${esc(x.kurum)}, ${D.low(TUR[x.tur] || x.tur)}</span>
@@ -297,16 +297,19 @@ P.destek = async () => {
         <div><dt>Destek türü</dt><dd>${TUR[x.tur] || x.tur}</dd></div>
         <div><dt>Üst limit</dt><dd>${x.ust_limit ? tl(x.ust_limit) : x.resmi ? "Resmi metne bak" : "Projeye göre"}</dd></div>
         <div><dt>Destek oranı</dt><dd>${x.oran_metin || (x.destek_orani ? "%" + x.destek_orani : "Belirtilmemiş")}${x.geri_odemeli ? " (geri ödemeli)" : ""}</dd></div>
-        <div><dt>Son başvuru</dt><dd>${x.son_basvuru ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : "Sürekli / çağrıya bağlı"}</dd></div>
+        <div><dt>Son başvuru</dt><dd>${x.son_basvuru ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : x.sayfa ? "Kurumun sayfasına bak" : "Sürekli / çağrıya bağlı"}</dd></div>
       </dl>
       <p style="font-size:17px">${esc(x.ozet)}</p>
+      ${x.sayfa ? `<section class="sec resmi"><h2>Kurumun sayfasından</h2>
+        <p class="small muted">Bu program Bakanlığın Destekler Platformu’nda yok; bilgiler <a href="${esc(x.sayfa.url)}" target="_blank" rel="noopener">${esc(x.sayfa.kaynak)} sayfasından</a> otomatik alındı ve <strong>değiştirilmeden</strong> gösteriliyor. Başvuru tarihleri ve şartlar için kurumun sayfasını mutlaka kontrol et. Son kontrol: ${new Date(x.sayfa.kontrol).toLocaleDateString("tr-TR")}.</p>
+        ${x.sayfa.metin ? `<div class="resmi-metin">${esc(x.sayfa.metin)}</div>` : ""}</section>` : ""}
       ${x.resmi ? `<section class="sec resmi"><h2>Resmi özet bilgi formu</h2>
         <p class="small muted">Aşağıdaki metin <a href="${esc(x.resmi.sayfa)}" target="_blank" rel="noopener">${esc(x.resmi.kaynak)}</a> sayfasındaki özet bilgi formundan <strong>değiştirilmeden</strong> alınmıştır.${x.resmi.guncelleme ? ` Kaynağın güncellenme tarihi: ${new Date(x.resmi.guncelleme).toLocaleDateString("tr-TR")}.` : ""} Son kontrol: ${new Date(x.resmi.kontrol).toLocaleDateString("tr-TR")}.</p>
         ${x.resmi.bolumler.length ? x.resmi.bolumler.map(b => `<h3>${esc(b.baslik)}</h3><div class="resmi-metin">${esc(b.metin)}</div>`).join("") : `<p>Bu program için platformda özet bilgi formu yok. Ayrıntılar için aşağıdaki resmi belgelere bak.</p>`}
         ${x.resmi.belgeler.length ? `<h3>Resmi belgeler</h3><ul class="docs">${x.resmi.belgeler.map(d => `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.ad)}</a></li>`).join("")}</ul>` : ""}</section>` : ""}
       <section class="sec"><h2>${p ? "Sana uygunluk" : "Başvuru koşulları"}</h2>
-        <ul class="fit">${c.r.map(r => `<li class="${r.ok ? "y" : "n"}">${esc(r.t)}</li>`).join("")}${x.resmi ? "" : (x.kosullar || []).map(k => `<li class="q">${esc(k)}</li>`).join("")}</ul>
-        ${x.resmi ? `<p class="small muted">Ölçek ve tür bilgisi resmi metinden otomatik okundu. Kesin şartlar için yukarıdaki resmi metni esas al.</p>` : ""}
+        <ul class="fit">${c.r.map(r => `<li class="${r.ok ? "y" : "n"}">${esc(r.t)}</li>`).join("")}${x.resmi || x.sayfa ? "" : (x.kosullar || []).map(k => `<li class="q">${esc(k)}</li>`).join("")}</ul>
+        ${x.resmi || x.sayfa ? `<p class="small muted">Ölçek ve tür bilgisi metinden otomatik okundu. Kesin şartlar için yukarıdaki metni ve kurumun sayfasını esas al.</p>` : ""}
         ${!p ? `<p class="small muted">Uygunluğunu görmek için <a ${link("bul")}>uygunluk testini</a> yap.</p>` : ""}</section>
       ${(x.belgeler || []).length ? `<section class="sec"><h2>Hazırlaman gereken belgeler</h2><ul>${x.belgeler.map(b => `<li>${esc(b)}</li>`).join("")}</ul></section>` : ""}
       <section class="sec"><h2>Nasıl başvurulur?</h2><ol class="how">${(x.basvuru.adimlar || []).map(a => `<li>${esc(a)}</li>`).join("")}</ol></section>
