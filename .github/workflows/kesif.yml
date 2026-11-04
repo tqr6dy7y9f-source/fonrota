@@ -9,17 +9,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Ozet bilgi formlarini indir
+      - name: 2209-A cagri belgelerini indir
         run: |
           sudo apt-get install -y poppler-utils >/dev/null 2>&1
-          mkdir -p kesif4
-          B=https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar
-          for f in ozet-1711_yapay_zeka_ekosistem_cagrisi_2025_1.pdf ozet-era_net_cofund_araci_destekleme_programi1.pdf ozet-1501_sanayi_ar-ge_projeleri_destekleme_programi_2025_2.pdf ozet_yesil_sanayi_destek_programi.pdf; do
-            curl -sSL -m 60 -A "Mozilla/5.0 (compatible; DestekBulucu/1.0)" "$B/$f" -o "kesif4/$f" && pdftotext -layout "kesif4/$f" "kesif4/$f.txt"; sleep 2
+          mkdir -p k2209
+          UA="Mozilla/5.0 (compatible; FonRota/1.0)"
+          for u in \
+            "https://tubitak.gov.tr/en/announcement/2209-research-project-support-programme-undergraduate-students-and-2209-b-industry-oriented-research-project-support-programme-undergraduate-students-2026-calls-are-open-application" \
+            "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi" \
+            "https://tubitak.gov.tr/tr/duyuru" ; do
+            f="k2209/$(echo "$u" | md5sum | cut -c1-8).html"; curl -sSL -m 60 -A "$UA" "$u" -o "$f"; echo "$u -> $f" >> k2209/index.txt
           done
-          rm -f kesif4/*.pdf; ls -la kesif4
+          grep -ohE 'href="[^"]*2209[^"]*\.(pdf|docx?)"' k2209/*.html | sed 's/href="//;s/"$//' | sort -u > k2209/linkler.txt || true
+          grep -ohE 'href="[^"]*(2209|ogrenci)[^"]*"' k2209/*.html | sed 's/href="//;s/"$//' | sort -u > k2209/tum-linkler.txt || true
+          echo "https://tubitak.gov.tr/sites/default/files/2026-10/2209-A_2026_Yili_Cagri_Duyurusu.pdf" >> k2209/linkler.txt
+          n=0; while read l; do case "$l" in http*) u="$l";; /*) u="https://tubitak.gov.tr$l";; *) continue;; esac; n=$((n+1)); curl -sSL -m 60 -A "$UA" "$u" -o "k2209/doc$n.bin" && echo "$u -> doc$n" >> k2209/index.txt; if head -c4 "k2209/doc$n.bin" | grep -q '%PDF'; then pdftotext -layout "k2209/doc$n.bin" "k2209/doc$n.txt"; fi; rm -f "k2209/doc$n.bin"; sleep 1; done < k2209/linkler.txt
+          for f in k2209/*.html; do python3 -c "import sys,re,html;s=open(sys.argv[1],errors='ignore').read();s=re.sub(r'(?s)<(script|style).*?</\1>','',s);t=html.unescape(re.sub(r'<[^>]+>','\n',s));print('\n'.join(l.strip() for l in t.split('\n') if l.strip()))" "$f" > "$f.txt"; done
+          rm -f k2209/*.html; ls -la k2209
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A kesif4 && git commit -m "kesif 4" && git push
+          git add -A k2209 && git commit -m "kesif 2209" && git push
