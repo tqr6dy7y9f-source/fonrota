@@ -3,8 +3,12 @@
 window.CONFIG = {
   SITE_ADI: "FonRota",
   // Supabase (hesaplar, kayıtlı başvurular, bildirimler) – supabase.com > Project Settings > API
-  SUPABASE_URL: "https://gebuzyferpvlzturxoyu.supabase.co",
-  SUPABASE_ANON_KEY: "sb_publishable_pI798Yv3sQ47VMbJE7yuhw_-y-ct6TF",
+  // ŞU AN DEMO MODU: Supabase projesi durduruldu; hesaplar ziyaretçinin kendi tarayıcısında saklanır.
+  // Supabase'i yeniden açınca aşağıdaki iki değeri geri yaz:
+  //   SUPABASE_URL: "https://gebuzyferpvlzturxoyu.supabase.co"
+  //   SUPABASE_ANON_KEY: "sb_publishable_pI798Yv3sQ47VMbJE7yuhw_-y-ct6TF"
+  SUPABASE_URL: "",
+  SUPABASE_ANON_KEY: "",
   // AI uç noktası (api/ai.js Vercel'e yüklendiğinde): ör. "/api/ai"
   AI_ENDPOINT: "",
   // Web Push için VAPID açık anahtarı (npx web-push generate-vapid-keys)
