@@ -76,16 +76,21 @@ session = requests.Session()
 session.headers["User-Agent"] = UA
 
 
+_ROBOTS = {}
+
+
 def allowed(url: str) -> bool:
-    """robots.txt kurallarına uy."""
-    rp = robotparser.RobotFileParser()
-    p = urlparse(url)
-    rp.set_url(f"{p.scheme}://{p.netloc}/robots.txt")
-    try:
-        rp.read()
-        return rp.can_fetch(UA, url)
-    except Exception:
-        return True
+    """robots.txt kurallarına uy (her site için bir kez okunur)."""
+    p = urlparse(url); host = f"{p.scheme}://{p.netloc}"
+    if host not in _ROBOTS:
+        rp = robotparser.RobotFileParser()
+        try:
+            r = session.get(host + "/robots.txt", timeout=10)
+            rp.parse(r.text.splitlines() if r.ok else [])
+        except Exception:
+            rp.parse([])
+        _ROBOTS[host] = rp
+    return _ROBOTS[host].can_fetch(UA, url)
 
 
 def get(url: str):
@@ -93,7 +98,7 @@ def get(url: str):
         print("  robots.txt izin vermiyor:", url)
         return None
     try:
-        r = session.get(url, timeout=20)
+        r = session.get(url, timeout=15)
         r.raise_for_status()
         r.encoding = r.apparent_encoding or "utf-8"
         time.sleep(DELAY)
