@@ -220,7 +220,8 @@ function terim(t) {
   return esc(t).replace(_SOZ_RE, (m, on, w) => {
     const key = Object.keys(SOZLUK).find(k => k.toLocaleLowerCase("tr") === w.toLocaleLowerCase("tr"));
     if (!key || kul.has(key)) return m; kul.add(key);
-    return `${on}<span class="terim" tabindex="0" data-tip="${esc(SOZLUK[key])}">${w}</span>`;
+    // Açıklama öznitelikte değil sayfa metninde: Google Çeviri (EN) yalnızca metni çevirir
+    return `${on}<span class="terim" tabindex="0">${w}<span class="terim-tip" role="tooltip">${esc(SOZLUK[key])}</span></span>`;
   });
 }
 

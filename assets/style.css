@@ -299,7 +299,10 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 
 /* Terim sözlüğü */
 .terim{border-bottom:1.5px dotted var(--seal-ink);cursor:help;position:relative;outline:none}
-.terim:hover::after,.terim:focus::after{content:attr(data-tip);position:absolute;left:0;top:calc(100% + 6px);z-index:40;width:max-content;max-width:min(300px,78vw);background:var(--ink);color:var(--bg);padding:8px 10px;border-radius:8px;font:400 13px/1.45 Figtree,sans-serif;white-space:normal;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+/* gizliyken yer kaplamaz (sayfayı taşırmaz) ama metin sayfada kalır, böylece çeviri ona da uygulanır */
+.terim-tip{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;left:0;top:100%}
+.terim:hover .terim-tip,.terim:focus .terim-tip,.terim:focus-within .terim-tip{width:max-content;height:auto;overflow:visible;clip-path:none;white-space:normal;top:calc(100% + 6px);z-index:40;max-width:min(300px,78vw);background:var(--ink);color:var(--bg);padding:8px 10px;border-radius:8px;font:400 13px/1.45 Figtree,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.25);pointer-events:none}
+@media (max-width:600px){.terim:hover .terim-tip,.terim:focus .terim-tip,.terim:focus-within .terim-tip{position:fixed;left:16px;right:16px;top:auto;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:auto;max-width:none}}
 .terim:focus-visible{outline:2px solid var(--seal);outline-offset:1px}
 /* İlk adım */
 .ilk-adim{background:var(--seal-soft);border-left:4px solid var(--seal);border-radius:10px;padding:10px 14px;margin:14px 0}
