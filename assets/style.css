@@ -139,7 +139,7 @@ textarea.input{min-height:110px;resize:vertical}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
 .seg button{border:none;background:transparent;padding:8px 14px;cursor:pointer;font-weight:600;font-size:14px}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-.mindmap{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:auto}
+.mindmap{border-radius:16px}
 .mindmap svg{display:block;margin:0 auto}
 .mm-node{cursor:pointer}
 .mm-node:focus-visible rect{stroke:var(--seal);stroke-width:3}
@@ -242,3 +242,30 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 .resmi h3{margin:16px 0 6px;font-size:16px}
 .resmi-metin{white-space:pre-line;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--seal);border-radius:8px;padding:12px 14px;font-size:15px;line-height:1.6}
 .docs{padding-left:18px}.docs a{word-break:break-all}
+
+/* Kurumlara göre sütunlar */
+.k-ozet{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:var(--ink);color:var(--bg);border-radius:12px;padding:12px 16px;margin:10px 0 12px}
+.k-ozet b{font-family:"Bricolage Grotesque",sans-serif;font-size:18px}.k-ozet span{font-size:14px;opacity:.85}
+.kolonlar{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,1fr);gap:12px;overflow-x:auto;padding:2px 2px 12px;scroll-snap-type:x proximity;align-items:start}
+.kolon{background:var(--soft);border-radius:12px;padding:10px;scroll-snap-align:start}
+.kolon h3{font-size:15px;margin:2px 4px 10px;display:flex;justify-content:space-between;gap:8px}
+.kolon h3 small{background:var(--surface);border-radius:99px;padding:0 8px;font-size:12px;color:var(--muted);align-self:center}
+.kart{display:flex;flex-direction:column;gap:3px;width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:9px;padding:9px 11px;margin-bottom:8px;cursor:pointer}
+.kart:hover{border-color:var(--seal)}.kart:focus-visible{outline:3px solid var(--seal);outline-offset:1px}
+.k-ad{font-weight:600;font-size:14px;line-height:1.3}.k-tutar{font-weight:700;font-size:13px;color:var(--seal-ink)}.k-alt{font-size:12px;color:var(--muted)}
+.k-daha{width:100%;font:inherit;font-size:13px;font-weight:600;background:none;border:1px dashed var(--line);border-radius:8px;padding:7px;color:var(--muted);cursor:pointer}
+.kolonlar.mm-anim .kolon{opacity:0;animation:mmIn .35s ease-out forwards;animation-delay:calc(var(--d) * .06s)}
+@media (max-width:600px){.kolonlar{grid-auto-columns:82%}}
+/* Gerekenler penceresi */
+#gerekenler{border:none;border-radius:16px;padding:0;width:min(720px,94vw);max-height:88vh;background:var(--bg);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+#gerekenler::backdrop{background:rgba(10,20,25,.55)}
+#g-icerik{padding:22px 22px 18px;overflow:auto;max-height:88vh}
+#g-icerik h2{font-size:clamp(20px,3vw,26px);margin:2px 34px 6px 0}#g-icerik h3{margin:18px 0 8px;font-size:16px}
+.g-kapat{position:sticky;float:right;top:10px;margin:10px 10px 0 0;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:22px;cursor:pointer;z-index:2}
+.soru{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0 0 8px;background:var(--surface)}
+.soru.alt{margin-left:18px}.soru legend{font-size:14.5px;line-height:1.45;padding:0 4px}
+.soru label{display:inline-flex;gap:6px;align-items:center;margin:6px 14px 0 0;font-size:14px;cursor:pointer}
+.s-baslik{font-weight:600;margin:12px 0 6px;font-size:14.5px}
+.g-durum{border-radius:10px;padding:10px 12px;margin:10px 0;background:var(--soft);font-size:14.5px}
+.g-durum.ok{background:var(--ok-soft)}.g-durum.mid{background:var(--mid-soft)}.g-durum.no{background:var(--no-soft)}
+@media (max-width:600px){#gerekenler{width:100vw;max-width:100vw;max-height:100dvh;height:100dvh;border-radius:0}#g-icerik{max-height:100dvh}}

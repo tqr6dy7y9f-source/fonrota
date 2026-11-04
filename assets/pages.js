@@ -28,7 +28,9 @@ async function layout(page) {
 function surum() { const m = [...document.scripts].map(x => x.src.match(/pages\.js\?v=(\d+)/)).find(Boolean); return m ? m[1] : ""; }
 function sampleNotice(d) { return d.ornek ? `<div class="notice">Şu an örnek veri gösteriliyor. Haftalık güncelleme çalıştığında kurumların sitelerindeki güncel ilanlar burada yer alır.</div>` : ""; }
 function money(x) { return x.ust_limit ? `<span class="money">${short(x.ust_limit)}’ye kadar</span>` : x.destek_orani ? `<span class="money">%${x.destek_orani} destek</span>` : ""; }
-function due(x) { const d = D.daysLeft(x.son_basvuru); return x.son_basvuru ? `<span class="due ${d <= 21 ? "soon" : ""}">Son başvuru: ${d <= 0 ? "bugün" : d + " gün kaldı"}</span>` : `<span class="due">${x.sayfa ? "Tarih için kurumun sayfasına bak" : "Sürekli açık veya çağrıya bağlı"}</span>`; }
+// Destekler Platformu "sürekli açık" programlar için 30.12.2030 gibi uzak bir yer tutucu tarih kullanıyor
+const tarihli = x => x.son_basvuru && x.son_basvuru < "2030-01-01";
+function due(x) { const d = D.daysLeft(x.son_basvuru); return tarihli(x) ? `<span class="due ${d <= 21 ? "soon" : ""}">Son başvuru: ${d <= 0 ? "bugün" : d + " gün kaldı"}</span>` : `<span class="due">${x.sayfa ? "Tarih için kurumun sayfasına bak" : "Sürekli açık veya çağrıya bağlı"}</span>`; }
 function itemRow(x, c) {
   return `<li class="item"><a ${link("destek", "id=" + x.id)}>
     <h3>${esc(x.ad)}</h3><span class="meta">${esc(x.kurum)}, ${D.low(TUR[x.tur] || x.tur)}</span>
@@ -200,36 +202,56 @@ function amount(x, butce) {
   if (x.kredi) return x.kredi.faiz_yillik === 0 ? `Faizsiz kredi · ${x.kredi.vade_ay} ay vade` : `Kredi · ${x.kredi.vade_ay} ay vade`;
   return TUR[x.tur] || "Tutar ilanda";
 }
-function mindmap(root, goal, groups, wide, butce) {
+/* Kurumlara göre sütunlar: her sütun bir kurum, kartlar fırsatlar. Uzun sütunlar ilk 5 kartla başlar. */
+function kolonlar(root, goal, groups, butce, acik) {
   const total = groups.reduce((a, g) => a + g.items.length, 0);
-  if (!total) return `<div class="empty"><h2>Bu filtreyle destek kalmadı.</h2><p>Filtrelerden birini kapatınca harita yeniden dolar.</p></div>`;
-  const col = { ok: "var(--ok)", mid: "var(--mid)", none: "var(--muted)", no: "var(--no)" };
-  if (!wide) {
-    return `<div class="tree mm-anim"><div class="tree-root"><b>${esc(root)}</b><span>${esc(goal)}</span></div>${groups.map((g, gi) => `<details open style="--d:${gi}"><summary>${esc(g.k)} <small>(${g.items.length})</small></summary>${g.items.map(({ x, c }) => `<a ${link("destek", "id=" + x.id)} style="border-left:4px solid ${col[c.level]}"><span>${esc(x.ad)}<small>${esc(amount(x, butce))}</small></span>${LEVEL_TAG[c.level]}</a>`).join("")}</details>`).join("")}</div>`;
-  }
-  const LEAF_W = 250, ROW = 50, GAP = 22;
-  const sides = [[], []]; const h = [0, 0];
-  groups.forEach(g => { const s = h[0] <= h[1] ? 0 : 1; sides[s].push(g); h[s] += g.items.length * ROW + GAP; });
-  const H = Math.max(300, Math.max(...h) + 40), W = 1070, cx = W / 2, cy = H / 2;
-  const trunc = (s, n) => s.length > n ? s.slice(0, n - 2) + "…" : s;
-  let lines = "", kurum = "", leaves = "", gi = 0;
-  sides.forEach((list, si) => {
-    const dir = si === 0 ? 1 : -1; let y = (H - h[si]) / 2 + 20;
-    list.forEach(g => {
-      const top = y, bh = g.items.length * ROW; const gy = top + bh / 2 - ROW / 2 + 20;
-      const gx = cx + dir * 172, lx = cx + dir * 272; const d1 = 0.3 + gi * 0.1;
-      lines += `<path class="mm-l1" style="--d:${d1}s" pathLength="1" d="M${cx + dir * 95} ${cy} C ${cx + dir * 150} ${cy}, ${gx - dir * 70} ${gy}, ${gx - dir * 93} ${gy}" stroke="var(--seal)" stroke-width="2.5" fill="none"/>`;
-      g.items.forEach(({ x, c }, i) => {
-        const ly = top + i * ROW + 20; const bx = dir > 0 ? lx : lx - LEAF_W; const d2 = d1 + 0.4 + i * 0.07;
-        lines += `<path class="mm-l2" style="--d:${d2}s" pathLength="1" d="M${gx + dir * 93} ${gy} C ${gx + dir * 105} ${gy}, ${lx - dir * 28} ${ly}, ${lx} ${ly}" stroke="var(--line)" stroke-width="1.5" fill="none"/>`;
-        leaves += `<a class="mm-node mm-n2" style="--d:${(d2 + .2).toFixed(2)}s" ${link("destek", "id=" + x.id)}><title>${esc(x.ad)} – ${esc(x.kurum)}: ${esc(amount(x, butce))}</title><rect x="${bx}" y="${ly - 20}" width="${LEAF_W}" height="40" rx="8" fill="var(--surface)" stroke="var(--line)"/><rect x="${dir > 0 ? bx : bx + LEAF_W - 5}" y="${ly - 20}" width="5" height="40" rx="2" fill="${col[c.level]}"/><text x="${bx + 14}" y="${ly - 3}" font-size="13" fill="var(--ink)" font-family="Figtree, sans-serif">${esc(trunc(x.ad, 32))}</text><text x="${bx + 14}" y="${ly + 13}" font-size="13" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(amount(x, butce))}</text></a>`;
-      });
-      kurum += `<g class="mm-n1" style="--d:${(d1 + .25).toFixed(2)}s"><rect x="${gx - 93}" y="${gy - 19}" width="186" height="38" rx="19" fill="var(--seal-soft)" stroke="var(--seal)"/><text x="${gx}" y="${gy + 5}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(trunc(g.k, 23))} (${g.items.length})</text></g>`;
-      y += bh + GAP; gi++;
-    });
-  });
-  const center = `<g class="mm-n0"><rect x="${cx - 95}" y="${cy - 36}" width="190" height="72" rx="16" fill="var(--ink)"/><text x="${cx}" y="${cy - 8}" text-anchor="middle" font-size="16" font-weight="700" fill="var(--bg)" font-family="'Bricolage Grotesque', Figtree, sans-serif">${esc(trunc(root, 20))}</text><text x="${cx}" y="${cy + 11}" text-anchor="middle" font-size="12" fill="var(--bg)" font-family="Figtree, sans-serif">${esc(trunc(goal, 26))}</text><text x="${cx}" y="${cy + 27}" text-anchor="middle" font-size="11" fill="var(--bg)" opacity=".75" font-family="Figtree, sans-serif">${total} fırsat · ${groups.length} kurum</text></g>`;
-  return `<svg class="mm-anim" width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px" role="img" aria-label="${esc(root)} için ${total} destek fırsatının kurumlara göre haritası">${lines}${kurum}${leaves}${center}</svg>`;
+  if (!total) return `<div class="empty"><h2>Bu filtreyle destek kalmadı.</h2><p>Filtrelerden birini kapatınca sütunlar yeniden dolar.</p></div>`;
+  const col = { ok: "var(--ok)", mid: "var(--mid)", none: "var(--line)", no: "var(--no)" };
+  const ILK = 5;
+  return `<div class="k-ozet"><b>${esc(root)}</b><span>${esc(goal)}</span><span>${total} fırsat · ${groups.length} kurum</span></div>
+    <div class="kolonlar mm-anim" role="list">${groups.map((g, gi) => {
+      const hepsi = acik.includes(g.k), gor = hepsi ? g.items : g.items.slice(0, ILK);
+      return `<section class="kolon" role="listitem" style="--d:${gi}" aria-label="${esc(g.k)}">
+        <h3>${esc(g.k)} <small>${g.items.length}</small></h3>
+        ${gor.map(({ x, c }) => `<button type="button" class="kart" data-id="${esc(x.id)}" style="border-left-color:${col[c.level]}">
+          <span class="k-ad">${esc(x.ad)}</span><span class="k-tutar">${esc(amount(x, butce))}</span>
+          <span class="k-alt">${x.resmi ? "Resmi özet var" : x.sayfa ? "Kurum sayfasından" : ""}${tarihli(x) ? ` · ${D.daysLeft(x.son_basvuru)} gün kaldı` : x.resmi ? " · Sürekli açık" : ""}</span></button>`).join("")}
+        ${g.items.length > ILK ? `<button type="button" class="k-daha" data-k="${esc(g.k)}">${hepsi ? "Daha az göster" : `+${g.items.length - ILK} tane daha`}</button>` : ""}
+      </section>`; }).join("")}</div>`;
+}
+
+/* Bir başvuru için gerekenler: resmi metindeki "Kimler yararlanabilir?" maddeleri tek tek sorulur (metin aynen). */
+function sartSatirlari(x) {
+  const kimler = x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith("Kimler")) || {}).metin;
+  return (kimler || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => ({ metin: l.replace(/^[•–]\s*/, ""), alt: l.startsWith("–"), baslik: /[:;]$/.test(l) }));
+}
+function gerekenlerHTML(x) {
+  const satir = sartSatirlari(x); const cev = D.LS.get("sart:" + x.id, {});
+  const bolum = ad => x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith(ad)) || {}).metin;
+  const sorular = satir.map((r, i) => r.baslik ? `<p class="s-baslik">${esc(r.metin)}</p>` :
+    `<fieldset class="soru${r.alt ? " alt" : ""}"><legend>${esc(r.metin)}</legend>${[["e", "Evet"], ["h", "Hayır"], ["b", "Emin değilim"]].map(([v, t]) => `<label><input type="radio" name="s${i}" value="${v}"${cev[i] === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>`).join("");
+  return `<p class="crumb">${esc(x.kurum)}</p><h2 id="g-baslik">${esc(x.ad)}</h2>
+    <p class="small muted">${x.resmi ? `Sorular Bakanlığın özet bilgi formundaki “Kimler yararlanabilir?” maddelerinden <strong>aynen</strong> alındı.` : `Bu program için Bakanlığın özet formu yok; şartları kurumun sayfasından kontrol et.`}</p>
+    ${satir.length ? `<h3>Bu şartları karşılıyor musun?</h3><form id="g-form">${sorular}</form><div id="g-sonuc" aria-live="polite"></div>` : ""}
+    ${!satir.length && x.sayfa && x.sayfa.metin ? `<h3>Kurumun sayfasından</h3><div class="resmi-metin">${esc(x.sayfa.metin)}</div>` : ""}
+    ${bolum("Başvuru dönemi") ? `<h3>Başvuru dönemi</h3><div class="resmi-metin">${esc(bolum("Başvuru dönemi"))}</div>` : ""}
+    ${bolum("Başvuru yeri") ? `<h3>Nereye başvurulur?</h3><div class="resmi-metin">${esc(bolum("Başvuru yeri"))}</div>` : ""}
+    ${x.resmi && x.resmi.belgeler.length ? `<h3>Resmi belgeler</h3><ul class="docs">${x.resmi.belgeler.map(d => `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.ad)}</a></li>`).join("")}</ul>` : ""}
+    <div class="actions"><a class="btn seal" ${link("destek", "id=" + x.id)}>Tüm ayrıntılar</a><a class="btn ghost" href="${esc((x.resmi && x.resmi.sayfa) || (x.sayfa && x.sayfa.url) || x.url)}" target="_blank" rel="noopener">Resmi sayfa ↗</a></div>`;
+}
+function gerekenlerBagla(x, kutu) {
+  const f = $("#g-form", kutu); if (!f) return;
+  const satir = sartSatirlari(x);
+  const ozet = () => {
+    const cev = {}; satir.forEach((r, i) => { const v = f.querySelector(`input[name=s${i}]:checked`); if (v) cev[i] = v.value; });
+    D.LS.set("sart:" + x.id, cev);
+    const n = satir.filter(r => !r.baslik).length, e = Object.values(cev).filter(v => v === "e").length, h = Object.values(cev).filter(v => v === "h").length, b = Object.values(cev).filter(v => v === "b").length;
+    $("#g-sonuc", kutu).innerHTML = !Object.keys(cev).length ? "" : h ? `<div class="g-durum no"><b>${h} şartı karşılamadığını belirttin.</b> Bu desteğe şu an uygun görünmüyorsun; şartın tam metnini resmi formdan kontrol et.</div>`
+      : e + b < n ? `<div class="g-durum">${n - e - b} şart daha cevaplanmadı.</div>`
+      : b ? `<div class="g-durum mid"><b>${b} şarttan emin değilsin.</b> Bunları kurumdan veya resmi metinden teyit et.</div>`
+      : `<div class="g-durum ok"><b>Tüm şartları karşıladığını belirttin.</b> Kesin karar kurumun değerlendirmesiyle verilir. <a ${link("basvuru", "id=" + x.id)}>Başvuruya hazırla →</a></div>`;
+  };
+  f.onchange = ozet; ozet();
 }
 P.sonuclar = async () => {
   const p = await Store.profile(); const d = await D.data();
@@ -252,14 +274,22 @@ P.sonuclar = async () => {
     const F = { hedef: true, tam: false, kredisiz: false, hibe: false, ...D.LS.get("mmFiltre", {}) };
     const hedefe = r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a));
     const filtered = () => all.filter(r => (!F.hedef || hedefe(r)) && (!F.tam || r.c.level === "ok") && (!F.kredisiz || r.x.tur !== "kredi") && (!F.hibe || r.x.tur === "hibe"));
-    const draw = () => { const wide = $("#mm").clientWidth > 760; $("#mm").innerHTML = mindmap(p.firmaUnvani || "İşletmen", goal, groupBy(filtered()), wide, num($("#mm-butce").value)); };
+    const acik = [];
+    const draw = () => {
+      $("#mm").innerHTML = kolonlar(p.firmaUnvani || "İşletmen", goal, groupBy(filtered()), num($("#mm-butce").value), acik);
+      $$("#mm .k-daha").forEach(b => b.onclick = () => { const k = b.dataset.k; const i = acik.indexOf(k); i < 0 ? acik.push(k) : acik.splice(i, 1); draw(); });
+      $$("#mm .kart").forEach(b => b.onclick = () => gerekenlerAc(d.destekler.find(z => z.id === b.dataset.id)));
+    };
+    const dlg = $("#gerekenler");
+    const gerekenlerAc = x => { $("#g-icerik").innerHTML = gerekenlerHTML(x); gerekenlerBagla(x, $("#g-icerik")); dlg.showModal(); $("#g-icerik").scrollTop = 0; };
+    $("#g-kapat").onclick = () => dlg.close();
+    dlg.onclick = e => { if (e.target === dlg) dlg.close(); };
     $("#mm-butce").value = p.projeButce || ""; let bt; $("#mm-butce").oninput = () => { clearTimeout(bt); bt = setTimeout(() => { Store.saveProfile({ projeButce: $("#mm-butce").value }); draw(); }, 350); };
     const fb = $("#mm-filtre"); fb.hidden = false; $("#mm-butce-box").hidden = false;
     const sync = () => $$("button", fb).forEach(b => b.setAttribute("aria-pressed", !!F[b.dataset.f]));
     $$("button", fb).forEach(b => b.onclick = () => { const k = b.dataset.f; F[k] = !F[k]; if (k === "hibe" && F.hibe) F.kredisiz = false; if (k === "kredisiz" && F.kredisiz) F.hibe = false; D.LS.set("mmFiltre", F); sync(); draw(); });
     sync();
     $("#mm").hidden = false; $("#mm-legend").hidden = false; draw();
-    let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(draw, 200); });
   } else {
     $("#liste").hidden = false;
     $("#liste").innerHTML = (fit.length ? `<h2 style="margin:18px 0 4px">Uygun</h2><ul class="list">${fit.map(r => itemRow(r.x, r.c)).join("")}</ul>` : "") +
@@ -297,7 +327,7 @@ P.destek = async () => {
         <div><dt>Destek türü</dt><dd>${TUR[x.tur] || x.tur}</dd></div>
         <div><dt>Üst limit</dt><dd>${x.ust_limit ? tl(x.ust_limit) : x.resmi ? "Resmi metne bak" : "Projeye göre"}</dd></div>
         <div><dt>Destek oranı</dt><dd>${x.oran_metin || (x.destek_orani ? "%" + x.destek_orani : "Belirtilmemiş")}${x.geri_odemeli ? " (geri ödemeli)" : ""}</dd></div>
-        <div><dt>Son başvuru</dt><dd>${x.son_basvuru ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : x.sayfa ? "Kurumun sayfasına bak" : "Sürekli / çağrıya bağlı"}</dd></div>
+        <div><dt>Son başvuru</dt><dd>${tarihli(x) ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : x.sayfa ? "Kurumun sayfasına bak" : "Sürekli / çağrıya bağlı"}</dd></div>
       </dl>
       <p style="font-size:17px">${esc(x.ozet)}</p>
       ${x.sayfa ? `<section class="sec resmi"><h2>Kurumun sayfasından</h2>

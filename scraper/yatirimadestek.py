@@ -249,7 +249,8 @@ def build(url, info, sec, docs):
         "geri_odemeli": "geri ödemeli" in t,
         "oran_metin": (f"%{r[0]}–%{r[-1]}" if len(r) > 1 else None),
         "amac": amac, "olcek": olcek, "sektor": ["tumu"], "il": ["tumu"],
-        "son_basvuru": info.get("son_basvuru"), "ozet": ozet[:300],
+        # platform sürekli açık programlara 30.12.2030 gibi yer tutucu tarih yazıyor
+        "son_basvuru": info.get("son_basvuru") if (info.get("son_basvuru") or "9999") < "2030-01-01" else None, "ozet": ozet[:300],
         "firma_yasi_max": None, "ihracat_gerekli": False,
         "kosullar": kosullar,
         "belgeler": [],  # resmi metinde yoksa uydurma belge listesi gösterme; resmi belgeler "resmi.belgeler"de

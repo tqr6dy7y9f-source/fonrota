@@ -7,28 +7,29 @@
 <meta name="description" content="Şirketine ve KOBİ’ne uygun hibe, kredi ve teşvikleri bul; başvuru formunu otomatik doldur.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611040758">
+<link rel="stylesheet" href="assets/style.css?v=202611040803">
 </head>
 <body data-page="sonuclar">
 <header class="top" id="top"></header>
 <main data-page="sonuclar">
 <div class="wrap" id="res">
   <div class="res-head"><div><h1 id="baslik"></h1><p class="profile-line" id="profil"></p></div>
-    <div class="seg" id="view" role="group" aria-label="Görünüm"><button type="button" data-v="harita">Zihin haritası</button><button type="button" data-v="liste">Liste</button></div></div>
+    <div class="seg" id="view" role="group" aria-label="Görünüm"><button type="button" data-v="harita">Kurumlara göre</button><button type="button" data-v="liste">Liste</button></div></div>
   <div id="notice"></div>
   <div class="ai-box" id="ai" hidden><h3>Yapay zekâ önerisi</h3><div id="ai-out"><p class="small muted">Profiline göre öncelik vermen gereken 3 desteği seçsin.</p></div><button class="btn sm seal" type="button" id="ai-btn">Yapay zekâ yorumlasın</button></div>
-  <div class="mm-legend" id="mm-legend" hidden><span><i style="background:var(--ok)"></i>Uygun olabilir</span><span><i style="background:var(--mid)"></i>Kısmen uygun</span><span>Bir desteğe tıklayınca ayrıntısı açılır.</span></div>
+  <div class="mm-legend" id="mm-legend" hidden><span><i style="background:var(--ok)"></i>Uygun olabilir</span><span><i style="background:var(--mid)"></i>Kısmen uygun</span><span>Bir desteğe tıkla: o başvuru için gerekenleri ve şartları gör.</span></div>
   <div class="mm-filtre" id="mm-filtre" role="group" aria-label="Haritayı sadeleştir" hidden><button type="button" class="chip" data-f="hedef">Sadece hedefime uyanlar</button><button type="button" class="chip" data-f="tam">Sadece %100 uygun olanlar</button><button type="button" class="chip" data-f="hibe">Sadece hibeler</button><button type="button" class="chip" data-f="kredisiz">Kredileri gizle</button></div>
   <label class="field mm-butce" for="mm-butce" id="mm-butce-box" hidden><span>Planladığın yatırım tutarı (TL)</span><input class="input" id="mm-butce" type="number" inputmode="numeric" min="0" step="10000" placeholder="ör. 500000"><small>Yazınca her fırsatın altında tahmini tutar çıkar. Oran aralıklıysa en düşük oran kullanılır; programın üst limitleri hesaba katılmaz, resmi metinden kontrol et.</small></label>
   <div class="mindmap" id="mm" hidden></div>
+  <dialog id="gerekenler" aria-labelledby="g-baslik"><button type="button" class="g-kapat" id="g-kapat" aria-label="Kapat">×</button><div id="g-icerik"></div></dialog>
   <div id="liste" hidden></div>
   <div class="actions"><button class="btn seal" type="button" id="rapor-btn">Başvuru özet raporu oluştur</button><a class="btn ghost" href="destekler.html">Tüm desteklere bak</a></div>
 </div>
 </main>
 <footer class="site" id="footer"></footer>
-<script src="config.js?v=202611040758"></script>
-<script src="assets/prompts.js?v=202611040758"></script>
-<script src="assets/core.js?v=202611040758"></script>
-<script src="assets/pages.js?v=202611040758"></script>
+<script src="config.js?v=202611040803"></script>
+<script src="assets/prompts.js?v=202611040803"></script>
+<script src="assets/core.js?v=202611040803"></script>
+<script src="assets/pages.js?v=202611040803"></script>
 </body>
 </html>
