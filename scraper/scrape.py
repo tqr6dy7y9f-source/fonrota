@@ -206,6 +206,14 @@ def page_text(soup):
         if len(t) < 30 or t in parts: continue
         parts.append(("• " if el.name == "li" else "") + t); n += len(t)
         if n > 2000: break
+    if not parts:  # içerik <p>/<li> yerine <div> içinde: satır satır al
+        for tag in root(["script", "style", "nav", "header", "footer", "aside", "form"]):
+            tag.decompose()
+        for line in root.get_text("\n").split("\n"):
+            t = " ".join(line.split())
+            if len(t) < 40 or t in parts: continue
+            parts.append(t); n += len(t)
+            if n > 2000: break
     return "\n".join(parts)
 
 
@@ -231,7 +239,7 @@ def parse_item(title, url, src):
     yontem = "pdf" if form else src.get("basvuru", "online")
     return {
         "id": item_id,
-        "ad": title[:140],
+        "ad": re.sub(r"\s*(devamı için|…|\.\.\.)$", "", title.strip())[:140],
         "kurum": src["kurum"],
         "url": url,
         "tur": tur,
