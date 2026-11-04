@@ -28,8 +28,22 @@ Mevcut şirketlerin ve KOBİ'lerin kendilerine uygun hibe, kredi ve teşvikleri 
 
 Servisler bağlanmadan site **demo modunda** çalışır: hesaplar tarayıcıda saklanır, yapay zekâ yerine anahtar kelime analizi kullanılır.
 
+## Sürüm numarası (önbellek)
+Her sayfada CSS/JS bağlantılarının sonunda `?v=YYYYAAGGSSDD` var (ör. `assets/core.js?v=202611040752`).
+Bu numara değişince ziyaretçilerin tarayıcısı yeni dosyayı indirir; değişmezse eski tasarım görünmeye devam edebilir.
+`assets/` altındaki bir dosyayı veya `config.js`'i değiştirdikten sonra, yayına göndermeden önce:
+
+    python tools/surum.py
+
+`tools/build.py` artık sayfaları yeniden üretmez (içindeki kopya eski; üretirse son değişiklikleri siler), yalnızca `dist/onizleme.html` üretir.
+
+## Veri kaynağı
+- `scraper/yatirimadestek.py`: Sanayi ve Teknoloji Bakanlığı Destekler Platformu'ndaki (yatirimadestek.gov.tr) açık programları ve resmi özet bilgi formlarını **değiştirmeden** alır. Sitede yalnızca bu kayıtlar (ve `scraper/manual.json`'daki doğrulanmış kayıtlar) yayımlanır.
+- Destek oranı yalnızca kesin kalıplardan ("%X oranında desteklenir", "destek oranı %X") okunur; üst limit otomatik çıkarılmaz (resmi metinde okunur).
+- Güncelleme: her pazartesi 07:00 (Türkiye saati), GitHub Actions ile. Elle: Actions > "Destekleri güncelle ve bildir" > Run workflow.
+
 ## Önemli notlar
-- `data.json` şu an **temsili örnek veridir** (`tools/seed.py`). Toplayıcı çalışınca gerçek ilanlarla değişir. Doğrulanmış kayıtları `scraper/manual.json`'a koy; otomatik çıkarımın üzerine yazar.
+- `data.json` Destekler Platformu'ndan gelen gerçek kayıtlardır. Doğrulanmış kayıtları `scraper/manual.json`'a koy; otomatik kaydın üzerine yazar.
 - `forms/kosgeb-ornek-basvuru-formu.pdf` test için üretilmiş örnek formdur. Gerçek formların alan adları farklıysa `forms/maps/<form-adı>.json` ile eşle (`{"pdf_alan_adi": "firmaUnvani"}`).
 - Taranmış (doldurulamaz) PDF'lerde bilgiler forma ek sayfa olarak eklenir.
 - Yerelde deneme: `python -m http.server` → http://localhost:8000

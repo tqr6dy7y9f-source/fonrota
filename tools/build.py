@@ -121,7 +121,13 @@ def bundle():
     (ROOT / "dist/onizleme.html").write_text(html, encoding="utf-8")
 
 
-for n in MAINS:
-    page(n)
+# DİKKAT: *.html sayfaları artık doğrudan düzenleniyor (filtreler, yatırım tutarı kutusu vb. yalnızca orada).
+# Buradaki MAINS eski kopyadır; sayfaları bundan üretmek son değişiklikleri SİLER. Bu yüzden varsayılan olarak
+# yalnızca önizleme (dist/onizleme.html) üretilir. Sürüm numarası için: python tools/surum.py
+import sys
+if "--sayfalari-ezerek-uret" in sys.argv:
+    for n in MAINS:
+        page(n)
+    print("UYARI: sayfalar eski kopyadan yeniden üretildi; python tools/surum.py çalıştır.")
 bundle()
-print("Sayfalar ve dist/onizleme.html hazır")
+print("dist/onizleme.html hazır")
