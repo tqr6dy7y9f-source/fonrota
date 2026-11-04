@@ -9,23 +9,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: JS ve program sayfalarini indir
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Program sayfalarini tarayicida ac
         run: |
-          mkdir -p kesif2/js
-          B=https://yatirimadestek.gov.tr
-          UA="Mozilla/5.0 (compatible; DestekBulucu/1.0)"
-          curl -sSL -m 40 -A "$UA" $B/ -o kesif2/index.html
-          for j in $(grep -o '/assets/[A-Za-z0-9_-]*\.js' kesif2/index.html | sort -u); do curl -sSL -m 40 -A "$UA" "$B$j" -o "kesif2/js/$(basename $j)"; done
-          # ikinci seviye importlar
-          for j in $(cat kesif2/js/*.js | grep -o '"\./[A-Za-z0-9_-]*\.js"\|/assets/[A-Za-z0-9_-]*\.js' | tr -d '"' | sed 's#^\./#/assets/#' | sort -u | head -150); do f="kesif2/js/$(basename $j)"; [ -f "$f" ] || curl -sSL -m 30 -A "$UA" "$B$j" -o "$f"; done
-          ls kesif2/js | wc -l
-          grep -ohE '"(/api|https?://[a-z0-9.-]*(api|gov\.tr)[^"]*)[^"]{0,120}"' kesif2/js/*.js | sort -u > kesif2/api-adresleri.txt || true
-          grep -ohE '`[^`]{0,40}(api|/program|/support|/destek)[^`]{0,120}`' kesif2/js/*.js | sort -u >> kesif2/api-adresleri.txt || true
-          grep -ohE '(fetch|axios[.a-z]*|get|post)\("[^"]{3,160}"' kesif2/js/*.js | sort -u >> kesif2/api-adresleri.txt || true
-          wc -l kesif2/api-adresleri.txt
-          for id in 02c405c5-a85d-4d95-9054-7746681c519a 036f0e8c-ada2-4b4f-ac9e-834bd4cd4a63; do curl -sSL -m 40 -A "$UA" "$B/program/$id" -o "kesif2/program-$id.html"; done
+          npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+          mkdir -p kesif3
+          cat > r.js <<'JS'
+          const { chromium } = require('playwright');
+          const ids = ['02c405c5-a85d-4d95-9054-7746681c519a','03b816d6-0474-40b8-9582-4571a16725da'];
+          (async () => {
+            const b = await chromium.launch(); const p = await b.newPage({ userAgent: 'Mozilla/5.0 (compatible; DestekBulucu/1.0)' });
+            for (const id of ids) for (const suf of ['', '/ozet']) {
+              await p.goto('https://yatirimadestek.gov.tr/program/' + id + suf, { waitUntil: 'networkidle', timeout: 60000 }).catch(e => console.log(e.message));
+              await p.waitForTimeout(3000);
+              const n = id.slice(0, 8) + (suf ? '-ozet' : '');
+              require('fs').writeFileSync('kesif3/' + n + '.txt', await p.evaluate(() => document.body.innerText));
+              require('fs').writeFileSync('kesif3/' + n + '.html', await p.content());
+              const links = await p.evaluate(() => [...document.querySelectorAll('a[href]')].map(a => a.innerText.trim().slice(0, 60) + ' -> ' + a.href).filter(s => /pdf|doc|form|başvuru|basvuru|http/i.test(s)));
+              require('fs').writeFileSync('kesif3/' + n + '-links.txt', links.join('\n'));
+              await p.waitForTimeout(2000);
+            }
+            await b.close();
+          })();
+          JS
+          node r.js; ls -la kesif3
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add kesif2 && git commit -m "kesif 2" && git push
+          git add -A kesif3 && git commit -m "kesif 3" && git push
