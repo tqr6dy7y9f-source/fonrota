@@ -10,7 +10,7 @@
 :root[data-theme="dark"]{
   --bg:#0F1C1F; --surface:#16272B; --ink:#E4EEEA; --muted:#93A9A1; --line:#2A3F44; --soft:#1C3136;
   --seal:#E0AE57; --seal-ink:#E0AE57; --seal-soft:#3A2F1B; --ok:#6FC79C; --ok-soft:#1C3A2D; --mid:#E5A160; --mid-soft:#3B2A1A; --no:#E28C8C; --no-soft:#3B2222; color-scheme:dark;}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
 *,*::before,*::after{box-sizing:inherit}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif}
 h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.15;margin:0;font-weight:700}
@@ -30,9 +30,9 @@ button,select,input,textarea{font:inherit;color:inherit}
 /* Üst menü */
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
-.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:8px}
-.brand i{width:22px;height:22px;border-radius:50%;background:var(--seal);display:inline-block;box-shadow:inset 0 0 0 5px var(--seal-soft)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:28px;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:10px;line-height:1}
+.brand i{width:28px;height:28px;border-radius:50%;background:var(--seal);display:inline-block;box-shadow:inset 0 0 0 6px var(--seal-soft);flex:none}
 .nav{display:flex;gap:4px;align-items:center}
 .nav a{text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:500;font-size:15px;white-space:nowrap;position:relative}
 .nav a:hover{background:var(--soft)}
@@ -44,7 +44,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 body{top:0!important}
 font[style]{background:none!important;box-shadow:none!important}
 .badge{position:absolute;top:2px;right:2px;min-width:17px;height:17px;border-radius:9px;background:var(--seal);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center;padding:0 4px}
-@media (max-width:600px){.nav a{padding:8px 8px;font-size:14px}.nav .hide-s{display:none}.brand span{display:none}}
+@media (max-width:600px){.nav a{padding:8px 6px;font-size:14px}.nav .hide-s{display:none}.brand{font-size:22px;gap:7px}.brand i{width:22px;height:22px;box-shadow:inset 0 0 0 5px var(--seal-soft)}.top .wrap{height:60px}}
+@media (max-width:360px){.brand span{display:none}}
 
 /* Butonlar ve form öğeleri */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;background:var(--ink);color:var(--bg);border-radius:var(--r);padding:12px 20px;font-weight:600;cursor:pointer;text-decoration:none;font-size:16px}
