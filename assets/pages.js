@@ -214,13 +214,13 @@ function mindmap(root, goal, groups, wide, butce) {
     list.forEach(g => {
       const top = y, bh = g.items.length * ROW; const gy = top + bh / 2 - ROW / 2 + 20;
       const gx = cx + dir * 172, lx = cx + dir * 272; const d1 = 0.3 + gi * 0.1;
-      lines += `<path class="mm-l1" style="--d:${d1}s" pathLength="1" d="M${cx + dir * 95} ${cy} C ${cx + dir * 150} ${cy}, ${gx - dir * 60} ${gy}, ${gx - dir * 82} ${gy}" stroke="var(--seal)" stroke-width="2.5" fill="none"/>`;
+      lines += `<path class="mm-l1" style="--d:${d1}s" pathLength="1" d="M${cx + dir * 95} ${cy} C ${cx + dir * 150} ${cy}, ${gx - dir * 70} ${gy}, ${gx - dir * 93} ${gy}" stroke="var(--seal)" stroke-width="2.5" fill="none"/>`;
       g.items.forEach(({ x, c }, i) => {
         const ly = top + i * ROW + 20; const bx = dir > 0 ? lx : lx - LEAF_W; const d2 = d1 + 0.4 + i * 0.07;
-        lines += `<path class="mm-l2" style="--d:${d2}s" pathLength="1" d="M${gx + dir * 82} ${gy} C ${gx + dir * 105} ${gy}, ${lx - dir * 28} ${ly}, ${lx} ${ly}" stroke="var(--line)" stroke-width="1.5" fill="none"/>`;
+        lines += `<path class="mm-l2" style="--d:${d2}s" pathLength="1" d="M${gx + dir * 93} ${gy} C ${gx + dir * 105} ${gy}, ${lx - dir * 28} ${ly}, ${lx} ${ly}" stroke="var(--line)" stroke-width="1.5" fill="none"/>`;
         leaves += `<a class="mm-node mm-n2" style="--d:${(d2 + .2).toFixed(2)}s" ${link("destek", "id=" + x.id)}><title>${esc(x.ad)} – ${esc(x.kurum)}: ${esc(amount(x, butce))}</title><rect x="${bx}" y="${ly - 20}" width="${LEAF_W}" height="40" rx="8" fill="var(--surface)" stroke="var(--line)"/><rect x="${dir > 0 ? bx : bx + LEAF_W - 5}" y="${ly - 20}" width="5" height="40" rx="2" fill="${col[c.level]}"/><text x="${bx + 14}" y="${ly - 3}" font-size="13" fill="var(--ink)" font-family="Figtree, sans-serif">${esc(trunc(x.ad, 32))}</text><text x="${bx + 14}" y="${ly + 13}" font-size="13" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(amount(x, butce))}</text></a>`;
       });
-      kurum += `<g class="mm-n1" style="--d:${(d1 + .25).toFixed(2)}s"><rect x="${gx - 82}" y="${gy - 19}" width="164" height="38" rx="19" fill="var(--seal-soft)" stroke="var(--seal)"/><text x="${gx}" y="${gy + 5}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(trunc(g.k, 20))} (${g.items.length})</text></g>`;
+      kurum += `<g class="mm-n1" style="--d:${(d1 + .25).toFixed(2)}s"><rect x="${gx - 93}" y="${gy - 19}" width="186" height="38" rx="19" fill="var(--seal-soft)" stroke="var(--seal)"/><text x="${gx}" y="${gy + 5}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(trunc(g.k, 23))} (${g.items.length})</text></g>`;
       y += bh + GAP; gi++;
     });
   });
@@ -244,8 +244,9 @@ P.sonuclar = async () => {
   $$("#view button").forEach(b => { b.setAttribute("aria-pressed", b.dataset.v === view); b.onclick = () => go("sonuclar", "gorunum=" + b.dataset.v); });
   const all = [...fit, ...mid];
   if (view === "harita") {
-    const F = { tam: false, kredisiz: false, hibe: false, ...D.LS.get("mmFiltre", {}) };
-    const filtered = () => all.filter(r => (!F.tam || r.c.level === "ok") && (!F.kredisiz || r.x.tur !== "kredi") && (!F.hibe || r.x.tur === "hibe"));
+    const F = { hedef: true, tam: false, kredisiz: false, hibe: false, ...D.LS.get("mmFiltre", {}) };
+    const hedefe = r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a));
+    const filtered = () => all.filter(r => (!F.hedef || hedefe(r)) && (!F.tam || r.c.level === "ok") && (!F.kredisiz || r.x.tur !== "kredi") && (!F.hibe || r.x.tur === "hibe"));
     const draw = () => { const wide = $("#mm").clientWidth > 760; $("#mm").innerHTML = mindmap(p.firmaUnvani || "İşletmen", goal, groupBy(filtered()), wide, num($("#mm-butce").value)); };
     $("#mm-butce").value = p.projeButce || ""; let bt; $("#mm-butce").oninput = () => { clearTimeout(bt); bt = setTimeout(() => { Store.saveProfile({ projeButce: $("#mm-butce").value }); draw(); }, 350); };
     const fb = $("#mm-filtre"); fb.hidden = false; $("#mm-butce-box").hidden = false;
@@ -289,7 +290,7 @@ P.destek = async () => {
       <p class="muted">${esc(x.kurum)} ${LEVEL_TAG[c.level]}</p>
       <dl class="facts">
         <div><dt>Destek türü</dt><dd>${TUR[x.tur] || x.tur}</dd></div>
-        <div><dt>Üst limit</dt><dd>${x.ust_limit ? tl(x.ust_limit) : "Projeye göre"}</dd></div>
+        <div><dt>Üst limit</dt><dd>${x.ust_limit ? tl(x.ust_limit) : x.resmi ? "Resmi metne bak" : "Projeye göre"}</dd></div>
         <div><dt>Destek oranı</dt><dd>${x.oran_metin || (x.destek_orani ? "%" + x.destek_orani : "Belirtilmemiş")}${x.geri_odemeli ? " (geri ödemeli)" : ""}</dd></div>
         <div><dt>Son başvuru</dt><dd>${x.son_basvuru ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : "Sürekli / çağrıya bağlı"}</dd></div>
       </dl>

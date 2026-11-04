@@ -265,9 +265,12 @@ def main():
         plat = json.loads(platform_path.read_text(encoding="utf-8"))
         keys = {key(p["ad"]) for p in plat}
         items = {k: v for k, v in items.items() if key(v["ad"]) not in keys}
+        # Kurum sitelerinden kurallarla çıkarılan kayıtlar menü sayfası/haber içerebiliyor ve şartları
+        # yorumlanmış oluyor. Platform verisi varken yalnızca resmi (platform) ve doğrulanmış kayıtlar yayımlanır.
+        items = {}
         for p in plat:
             items[p["id"]] = p
-        print(len(plat), "program Destekler Platformu'ndan eklendi")
+        print(len(plat), "program Destekler Platformu'ndan eklendi (kurum sitelerinden otomatik kayıtlar kullanılmadı)")
 
     manual_path = ROOT / "manual.json"
     if manual_path.exists():
@@ -287,6 +290,11 @@ def main():
         "ornek": False,
         "destekler": sorted(active, key=lambda i: i.get("son_basvuru") or "9999"),
     }, ensure_ascii=False, indent=1), encoding="utf-8")
+    # Artık hiçbir kaydın kullanmadığı indirilmiş formları sil
+    used = {i["basvuru"].get("form") for i in active}
+    for f in FORMS.glob("*.pdf"):
+        if f"forms/{f.name}" not in used and not f.name.startswith("kosgeb-ornek"):
+            f.unlink()
     new_ids = [i["id"] for i in active if i["id"] not in old_ids] if old_ids else []
     NEW_IDS.write_text(json.dumps(new_ids), encoding="utf-8")
     print(f"{len(active)} aktif destek yazıldı, {len(new_ids)} yeni -> {OUT}")

@@ -37,6 +37,8 @@ session = requests.Session()
 session.headers["User-Agent"] = UA
 
 HARIC = ["öğrenci", "burs", "akademisyen", "araştırmacı", "lisansüstü", "doktora", "lise", "stajyer"]
+ISLETME = ["işletme", "şirket", "firma", "kobi", "girişimci", "sanayici", "ihracatçı", "işveren", "kooperatif", "üretici",
+           "yatırımcı", "tacir", "esnaf", "sermaye", "tüzel kişi", "gerçek kişi", "müteahhit", "kuruluş", "çiftçi", "yetiştirici"]
 BOLUMLER = [  # özet bilgi formundaki standart başlıklar
     ("kimler", r"Kimler\s+Yararlanabilir"),
     ("destek", r"Desteklenen\s+Alanlar|Destek\s+Unsurlar|Destek\s+Kapsam"),
@@ -60,6 +62,23 @@ AMAC_KURALLARI = {
 
 def low(s):
     return s.replace("I", "ı").replace("İ", "i").lower()
+
+
+KISALTMA = {"TÜBİTAK", "KOSGEB", "SGK", "İŞKUR", "KGF", "A.Ş.", "TKDK", "İLBANK", "EXİMBANK", "AB", "TÜRKİYE"}
+
+
+def kurum_adi(s):
+    """'TİCARET BAKANLIĞI' -> 'Ticaret Bakanlığı'; kısaltmalar korunur."""
+    ozel = {"TÜRK EXİMBANK": "Türk Eximbank", "KGF (KREDİ GARANTİ FONU A.Ş.)": "Kredi Garanti Fonu (KGF)",
+            "İŞKUR (TÜRKİYE İŞ KURUMU)": "İŞKUR", "TÜRKİYE KALKINMA VE YATIRIM BANKASI": "Türkiye Kalkınma ve Yatırım Bankası"}
+    if s.upper() in ozel or s in ozel: return ozel.get(s, ozel.get(s.upper()))
+    def w(x):
+        if x.upper() in KISALTMA - {"TÜRKİYE", "EXİMBANK"} or "(" in x and x.strip("()").upper() in KISALTMA: return x
+        if x.lower() in ("ve", "ile"): return x.lower()
+        if x != x.upper(): return x
+        t = x.replace("I", "ı").replace("İ", "i").lower()
+        return (t[0].replace("i", "İ").upper() if t[0] == "i" else t[0].upper()) + t[1:]
+    return " ".join(w(x) for x in s.split())
 
 
 def tr_date(s):
@@ -106,7 +125,7 @@ def pdf_text(url):
 def clean(text):
     """Sayfa üst/alt bilgilerini at, satır sonlarını birleştir; içeriği değiştirme."""
     keep = []
-    raw = [re.sub(r"\s{2,}", " ", l.strip()) for l in text.replace("\u200b", "").split("\n")]
+    raw = [re.sub(r"\s{2,}", " ", l.strip()) for l in re.sub("[\uf0b7\uf0a7\uf076\uf0d8\uf0fc]", "•", text.replace("\u200b", "")).split("\n")]
     tekrar = {l for l in raw if l and raw.count(l) > 1 and l == l.upper() and len(l) < 120}  # her sayfada tekrarlanan başlık
     tekrar |= set(PAGE_HEAD)
     for s in raw:
@@ -146,29 +165,64 @@ def sections(text):
     return out, ""
 
 
+ORAN_SOZ = ["destek oranı", "oranında destek", "hibe oranı", "oranında hibe", "desteklenir", "desteklenmektedir",
+            "karşılanır", "karşılanmaktadır", "geri ödemesiz", "destek sağlan"]
+ORAN_DEGIL = ["katkı", "faiz", "komisyon", "kesinti", "vergi", "matrah", "prim", "teminat", "kar payı", "kâr payı", "peşinat"]
+LIMIT_DEGIL = ["bütçe", "abd", "dolar", "avro", "euro", "usd", "ciro", "satış", "hasılat", "sermaye"]
+
+
+def cumleler(t):
+    return [c for c in re.split(r"(?<=[.;:])\s+|\n|\uf0b7|•", t) if c.strip()]
+
+
 def money(t):
-    """'üst limit' / 'en fazla' / 'kadar' yanındaki TL tutarlarından en büyüğü."""
+    """Yalnızca destek/hibe/kredi üst limitini açıkça söyleyen cümledeki TL tutarı (proje bütçesi, döviz vb. hariç)."""
     best = None
-    for m in re.finditer(r"(\d{1,3}(?:\.\d{3})+|\d+(?:,\d+)?)\s*(milyar|milyon|bin)?\s*(?:TL|₺|Türk Lirası)", t):
-        ctx = low(t[max(0, m.start() - 90):m.end() + 40])
-        if not any(w in ctx for w in ["üst limit", "en fazla", "azami", "limit"]) or "bütçe" in ctx: continue
-        n = float(m[1].replace(".", "").replace(",", "."))
-        n *= {"milyar": 1e9, "milyon": 1e6, "bin": 1e3}.get(m[2] or "", 1)
-        if n >= 1000: best = max(best or 0, n)
+    for c in cumleler(t):
+        lc = low(c)
+        if not any(w in lc for w in ["üst limit", "en fazla", "azami", "kadar destek", "kadar hibe", "kadar kredi"]): continue
+        if not any(w in lc for w in ["destek", "hibe", "kredi"]) or any(w in lc for w in LIMIT_DEGIL): continue
+        for m in re.finditer(r"(\d{1,3}(?:\.\d{3})+|\d+(?:,\d+)?)\s*(milyar|milyon|bin)?\s*(?:TL|₺|Türk Lirası)", c):
+            n = float(m[1].replace(".", "").replace(",", "."))
+            n *= {"milyar": 1e9, "milyon": 1e6, "bin": 1e3}.get(m[2] or "", 1)
+            if n >= 1000: best = max(best or 0, n)
     return int(best) if best else None
 
 
 def ratios(t):
-    vals = sorted({int(x) for x in re.findall(r"%\s?(\d{1,3})(?![\d.,])", t) if 5 <= int(x) <= 100})
-    return vals
+    """Yalnızca kesin kalıplardaki destek oranları: '%X oranında ... desteklenir/karşılanır' veya 'destek oranı ... %X'.
+    Firmanın kendi payı, ilave puanlar, tavanlar ve faiz/vergi yüzdeleri alınmaz. Emin olunamazsa boş kalır."""
+    vals = set()
+    for c in cumleler(t):
+        lc = low(c)
+        if any(w in lc for w in ORAN_DEGIL + ["ilave", "aşmamak", "geçmeyecek", "kalan", "tarafından karşılan"]): continue
+        for m in re.finditer(r"%\s?(\d{1,3})(?:[’'][a-zçğıöşü]+)?\s+oranında(?:[^.;]|\.(?=\d)){0,160}?(desteklen|karşılan|hibe)", lc):
+            vals.add(int(m[1]))
+        for m in re.finditer(r"destek oranı[^.;%]{0,40}%\s?(\d{1,3})(?![\d.,])", lc):
+            vals.add(int(m[1]))
+    return sorted(v for v in vals if 5 <= v <= 100)
+
+
+def tur_bul(ad, destek):
+    """Tür önce program adından, sonra destek metninin başından belirlenir (metnin içinde geçen tek bir kelimeye bakılmaz)."""
+    a, d = low(ad), low(destek[:600])
+    if any(w in a for w in ["kredi", "finansman", "kefalet", "teminat", "iskonto", "reeskont", "sigorta programı"]): return "kredi"
+    if any(w in a for w in ["teşvik", "muafiyet", "istisna", "indirim", "prim", "vergi", "serbest bölge", "dahilde işleme", "statülü"]) and "destek programı" not in a: return "vergi"
+    if "geri ödemeli" in d or "kredi kullandırıl" in d: return "kredi"
+    if ratios(destek): return "hibe"  # açık bir destek oranı varsa harcamaya destektir
+    if any(w in d for w in ["vergi", "matrah", "prim desteği", "muafiyet", "istisna"]) and not any(w in d for w in ["hibe", "oranında destek"]): return "vergi"
+    return "hibe"
 
 
 def build(url, info, sec, docs):
     kimler, destek = sec.get("kimler", ""), sec.get("destek", "") or sec.get("tum", "")
     t = low(info["ad"] + " " + kimler + " " + destek)
     if any(w in low(info["ad"]) for w in HARIC): return None
-    tur = "kredi" if any(w in t for w in ["kredi", "geri ödemeli", "faiz desteği"]) and "hibe" not in low(info["ad"]) else \
-          "vergi" if any(w in t for w in ["vergi indirimi", "istisna", "muafiyet", "sgk prim", "teşvik belgesi"]) else "hibe"
+    # Sitenin kitlesi işletmeler: "Kimler yararlanabilir?" metninde işletme türünden biri geçmiyorsa
+    # (yalnızca dernek, belediye, araştırmacı vb.) programı alma.
+    hedef = low(kimler or " ".join(sec.values()))
+    if hedef and not any(w in hedef for w in ISLETME): return None
+    tur = tur_bul(info["ad"], destek)
     k = low(kimler)
     kobi = "kobi" in k or "küçük ve orta" in k or "orta ölçekli" in k
     buyuk = any(w in k for w in ["büyük ölçekli", "büyük işletme", "büyük kuruluş", "tüm işletme", "her ölçek"])
@@ -190,8 +244,8 @@ def build(url, info, sec, docs):
             print("  form indirilemedi:", e)
     ozet = (destek.split("\n")[0] if destek else kimler.split("\n")[0] if kimler else info["ad"]).lstrip("•– ")
     return {
-        "id": pid, "ad": info["ad"][:160], "kurum": info["kurum"], "url": url, "tur": tur,
-        "ust_limit": money(sec.get("destek", "")), "destek_orani": r[0] if r else None,  # en düşük oran: iyimser olmayan tahmin
+        "id": pid, "ad": info["ad"][:160], "kurum": kurum_adi(info["kurum"]), "url": url, "tur": tur,
+        "ust_limit": None,  # programlarda çoğu zaman kalem kalem birden çok limit var; tek sayıya indirmek yanıltır. Resmi metinde okunur. "destek_orani": r[0] if r else None,  # en düşük oran: iyimser olmayan tahmin
         "geri_odemeli": "geri ödemeli" in t,
         "oran_metin": (f"%{r[0]}–%{r[-1]}" if len(r) > 1 else None),
         "amac": amac, "olcek": olcek, "sektor": ["tumu"], "il": ["tumu"],
