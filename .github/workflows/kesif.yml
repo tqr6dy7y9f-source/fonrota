@@ -9,25 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: 2209-A cagri belgelerini indir
+      - name: 2209-A sablonunu indir
         run: |
-          sudo apt-get install -y poppler-utils >/dev/null 2>&1
-          mkdir -p k2209
+          mkdir -p sablon
           UA="Mozilla/5.0 (compatible; FonRota/1.0)"
-          for u in \
-            "https://tubitak.gov.tr/en/announcement/2209-research-project-support-programme-undergraduate-students-and-2209-b-industry-oriented-research-project-support-programme-undergraduate-students-2026-calls-are-open-application" \
-            "https://tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi" \
-            "https://tubitak.gov.tr/tr/duyuru" ; do
-            f="k2209/$(echo "$u" | md5sum | cut -c1-8).html"; curl -sSL -m 60 -A "$UA" "$u" -o "$f"; echo "$u -> $f" >> k2209/index.txt
-          done
-          grep -ohE 'href="[^"]*2209[^"]*\.(pdf|docx?)"' k2209/*.html | sed 's/href="//;s/"$//' | sort -u > k2209/linkler.txt || true
-          grep -ohE 'href="[^"]*(2209|ogrenci)[^"]*"' k2209/*.html | sed 's/href="//;s/"$//' | sort -u > k2209/tum-linkler.txt || true
-          echo "https://tubitak.gov.tr/sites/default/files/2026-10/2209-A_2026_Yili_Cagri_Duyurusu.pdf" >> k2209/linkler.txt
-          n=0; while read l; do case "$l" in http*) u="$l";; /*) u="https://tubitak.gov.tr$l";; *) continue;; esac; n=$((n+1)); curl -sSL -m 60 -A "$UA" "$u" -o "k2209/doc$n.bin" && echo "$u -> doc$n" >> k2209/index.txt; if head -c4 "k2209/doc$n.bin" | grep -q '%PDF'; then pdftotext -layout "k2209/doc$n.bin" "k2209/doc$n.txt"; fi; rm -f "k2209/doc$n.bin"; sleep 1; done < k2209/linkler.txt
-          for f in k2209/*.html; do python3 -c "import sys,re,html;s=open(sys.argv[1],errors='ignore').read();s=re.sub(r'(?s)<(script|style).*?</\1>','',s);t=html.unescape(re.sub(r'<[^>]+>','\n',s));print('\n'.join(l.strip() for l in t.split('\n') if l.strip()))" "$f" > "$f.txt"; done
-          rm -f k2209/*.html; ls -la k2209
+          curl -sSL -m 60 -A "$UA" "https://tubitak.gov.tr/sites/default/files/2025-10/2209-A_arastirma_onerisi_formu_09102025.docx" -o sablon/form2025.docx
+          curl -sSL -m 60 -A "$UA" "https://tubitak.gov.tr/sites/default/files/2024-04/ek-1_2209-a_arastirma_onerisi_formu_28.09.2022.docx" -o sablon/form2022.docx
+          file sablon/*; ls -la sablon
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A k2209 && git commit -m "kesif 2209" && git push
+          git add -A sablon && git commit -m "sablon 2209" && git push
