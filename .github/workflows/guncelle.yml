@@ -1,7 +1,7 @@
 name: Destekleri güncelle ve bildir
 on:
   schedule:
-    - cron: "0 4 * * *"   # her gün 07:00 (Türkiye saati)
+    - cron: "0 4 * * 1"   # her pazartesi 07:00 (Türkiye saati)
   workflow_dispatch:       # elle çalıştırma düğmesi
 permissions:
   contents: write
