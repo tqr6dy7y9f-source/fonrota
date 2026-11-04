@@ -1,0 +1,41 @@
+name: Kesif - Destekler Platformu
+on:
+  push:
+    branches: [kesif-yatirimadestek]
+permissions:
+  contents: write
+jobs:
+  kesif:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sayfalari indir
+        run: |
+          mkdir -p kesif
+          UA="Mozilla/5.0 (compatible; DestekBulucu/1.0)"
+          for u in \
+            "https://www.yatirimadestek.gov.tr/" \
+            "https://www.yatirimadestek.gov.tr/destekler" \
+            "https://www.yatirimadestek.gov.tr/robots.txt" \
+            "https://www.yatirimadestek.gov.tr/sitemap.xml" \
+            "https://argedestek.sanayi.gov.tr/" \
+            "https://www.sanayi.gov.tr/destek-ve-tesvikler" ; do
+            f="kesif/$(echo "$u" | sed 's#https://##; s#[/?=&]#_#g').html"
+            curl -sSL -m 40 -A "$UA" -D "$f.headers" -o "$f" "$u" || echo "HATA $u" >> kesif/hatalar.txt
+          done
+          ls -la kesif
+      - name: Linkleri cikar
+        run: |
+          python3 - <<'PY'
+          import re,glob,html,json
+          out={}
+          for f in glob.glob("kesif/*.html"):
+              s=open(f,errors="ignore").read()
+              out[f]=sorted(set(re.findall(r'(?:href|src|action|data-url)=["\']([^"\'#]+)', s)))[:600]
+          json.dump(out,open("kesif/linkler.json","w"),ensure_ascii=False,indent=1)
+          PY
+      - name: Kaydet
+        run: |
+          git config user.name "destek-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add kesif && git commit -m "kesif ciktilari" && git push
