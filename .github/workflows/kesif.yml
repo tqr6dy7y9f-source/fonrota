@@ -9,33 +9,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Sayfalari indir
+      - name: JS ve program sayfalarini indir
         run: |
-          mkdir -p kesif
+          mkdir -p kesif2/js
+          B=https://yatirimadestek.gov.tr
           UA="Mozilla/5.0 (compatible; DestekBulucu/1.0)"
-          for u in \
-            "https://www.yatirimadestek.gov.tr/" \
-            "https://www.yatirimadestek.gov.tr/destekler" \
-            "https://www.yatirimadestek.gov.tr/robots.txt" \
-            "https://www.yatirimadestek.gov.tr/sitemap.xml" \
-            "https://argedestek.sanayi.gov.tr/" \
-            "https://www.sanayi.gov.tr/destek-ve-tesvikler" ; do
-            f="kesif/$(echo "$u" | sed 's#https://##; s#[/?=&]#_#g').html"
-            curl -sSL -m 40 -A "$UA" -D "$f.headers" -o "$f" "$u" || echo "HATA $u" >> kesif/hatalar.txt
-          done
-          ls -la kesif
-      - name: Linkleri cikar
-        run: |
-          python3 - <<'PY'
-          import re,glob,html,json
-          out={}
-          for f in glob.glob("kesif/*.html"):
-              s=open(f,errors="ignore").read()
-              out[f]=sorted(set(re.findall(r'(?:href|src|action|data-url)=["\']([^"\'#]+)', s)))[:600]
-          json.dump(out,open("kesif/linkler.json","w"),ensure_ascii=False,indent=1)
-          PY
+          curl -sSL -m 40 -A "$UA" $B/ -o kesif2/index.html
+          for j in $(grep -o '/assets/[A-Za-z0-9_-]*\.js' kesif2/index.html | sort -u); do curl -sSL -m 40 -A "$UA" "$B$j" -o "kesif2/js/$(basename $j)"; done
+          # ikinci seviye importlar
+          for j in $(cat kesif2/js/*.js | grep -o '"\./[A-Za-z0-9_-]*\.js"\|/assets/[A-Za-z0-9_-]*\.js' | tr -d '"' | sed 's#^\./#/assets/#' | sort -u | head -150); do f="kesif2/js/$(basename $j)"; [ -f "$f" ] || curl -sSL -m 30 -A "$UA" "$B$j" -o "$f"; done
+          ls kesif2/js | wc -l
+          grep -ohE '"(/api|https?://[a-z0-9.-]*(api|gov\.tr)[^"]*)[^"]{0,120}"' kesif2/js/*.js | sort -u > kesif2/api-adresleri.txt || true
+          grep -ohE '`[^`]{0,40}(api|/program|/support|/destek)[^`]{0,120}`' kesif2/js/*.js | sort -u >> kesif2/api-adresleri.txt || true
+          grep -ohE '(fetch|axios[.a-z]*|get|post)\("[^"]{3,160}"' kesif2/js/*.js | sort -u >> kesif2/api-adresleri.txt || true
+          wc -l kesif2/api-adresleri.txt
+          for id in 02c405c5-a85d-4d95-9054-7746681c519a 036f0e8c-ada2-4b4f-ac9e-834bd4cd4a63; do curl -sSL -m 40 -A "$UA" "$B/program/$id" -o "kesif2/program-$id.html"; done
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add kesif && git commit -m "kesif ciktilari" && git push
+          git add kesif2 && git commit -m "kesif 2" && git push
