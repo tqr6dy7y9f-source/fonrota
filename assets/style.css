@@ -246,7 +246,8 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 #g-icerik h2{font-size:clamp(20px,3vw,26px);margin:2px 34px 6px 0}#g-icerik h3{margin:18px 0 8px;font-size:16px}
 .g-kapat{position:sticky;float:right;top:10px;margin:10px 10px 0 0;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:22px;cursor:pointer;z-index:2}
 .soru{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0 0 8px;background:var(--surface)}
-.soru.alt{margin-left:18px}.soru legend{font-size:14.5px;line-height:1.45;padding:0 4px}
+.soru.alt{margin-left:18px}.s-metin{margin:0 0 2px;font-size:14.5px;line-height:1.45;overflow-wrap:anywhere}
+.soru.zorunlu{border-color:var(--seal)}.s-zor{display:inline-block;font-size:11.5px;font-weight:700;color:var(--seal-ink);background:var(--seal-soft);border-radius:99px;padding:1px 8px;margin-right:4px;vertical-align:1px}
 .soru label{display:inline-flex;gap:6px;align-items:center;margin:6px 14px 0 0;font-size:14px;cursor:pointer}
 .s-baslik{font-weight:600;margin:12px 0 6px;font-size:14.5px}
 .g-durum{border-radius:10px;padding:10px 12px;margin:10px 0;background:var(--soft);font-size:14.5px}

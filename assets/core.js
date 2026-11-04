@@ -491,7 +491,7 @@ async function infoPdf(x, values, p) {
     { small: "Bu belge kurumun resmi başvuru formu değildir. Başvuruyu hazırlaman ve kurumun sisteminde istenen bilgileri hızlıca doldurman için bilgilerinle hazırlandı." },
     { h2: "1. Başvuru sahibi ve firma bilgileri" }, { kv: x.alanlar.map(k => [ALANLAR[k]?.e || k, ["ciro", "projeButcesi", "talepTutari"].includes(k) && num(values[k]) != null ? tl(num(values[k])) : values[k]]) },
     ...(eksik.length ? [{ small: "Boş alanlar: " + eksik.map(k => ALANLAR[k]?.e || k).join(", ") }] : []),
-    ...(sartlar.length ? [{ h2: "2. Kimler yararlanabilir? (resmi metin) ve cevapların" }, { ul: sartlar }, { small: "Maddeler Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndaki özet bilgi formundan değiştirilmeden alındı. Cevaplar senin işaretlemelerindir." }]
+    ...(sartlar.length ? [{ h2: "2. Kimler yararlanabilir? (resmi metin) ve cevapların" }, { ul: sartlar }, { small: "Maddeler Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndaki özet bilgi formundan değiştirilmeden alındı. Bu maddeler çoğunlukla alternatif başvuru sahibi türleridir; birine uymak yeterlidir, açıkça zorunluluk bildiren maddeler ise mutlaka karşılanmalıdır. Cevaplar senin işaretlemelerindir." }]
       : x.kosullar?.length ? [{ h2: "2. Koşullar" }, { ul: x.kosullar }] : []),
     ...(onKosullar(x).length ? [{ h2: "Başvurmadan önce hazır olması gerekenler" }, { ul: onKosullar(x).map(id => `${(values.hazirlik || p?.hazirlik || {})[id] ? "[Hazır]" : "[Eksik]"}  ${ON_KOSUL[id].ad}: ${ON_KOSUL[id].nasil}`) }] : []),
     ...(donem ? [{ h2: "3. Başvuru dönemi" }, { p: donem }] : []),

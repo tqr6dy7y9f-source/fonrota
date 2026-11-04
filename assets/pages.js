@@ -253,8 +253,8 @@ function ilkAdim(x, p) {
   const h = (p && p.hazirlik) || {}; const eks = D.onKosullar(x).find(id => !h[id]);
   if (eks) return { t: "Önce: " + D.ON_KOSUL[eks].ad, d: D.ON_KOSUL[eks].nasil.split(/(?<=\.)\s/)[0] };
   const s = sartDurum(x);
-  if (s === "hayir") return { t: "Bu desteğin bir şartına “Hayır” dedin", d: "Şu an uymuyor görünüyorsun. Şartın tam metnini kontrol et ya da başka desteklere bak.", kotu: true };
-  if (sartSatirlari(x).length && s !== "tam") return { t: "Resmi şartları cevapla", d: "“Kimler yararlanabilir?” maddelerini Evet / Hayır ile işaretle; bu desteğe uyup uymadığın netleşsin." };
+  if (s === "hayir") return { t: "Bu desteğe uymadığını belirttin", d: "Cevaplarına göre şu an uygun görünmüyorsun. Tam metni kontrol et ya da başka desteklere bak.", kotu: true };
+  if (sartSatirlari(x).length && s !== "tam") return { t: "Sana uyan maddeyi işaretle", d: "“Kimler yararlanabilir?” listesinde seni tanımlayan maddeye “Evet” de; zorunlu şart varsa onu da cevapla." };
   return { t: "Hazırlık formunu indir ve başvur", d: `Bilgilerinle doldurulmuş formu indir, başvuruyu ${x.kurum} sisteminden yap.` };
 }
 function ilkAdimHTML(x, p) { const a = ilkAdim(x, p); return `<div class="ilk-adim${a.kotu ? " kotu" : ""}"><span>Bugün yapabileceğin ilk adım</span><b>${esc(a.t)}</b><p>${D.terim(a.d)}</p></div>`; }
@@ -299,7 +299,7 @@ async function karsBar() {
       ["Son başvuru", x => tarihli(x) ? new Date(x.son_basvuru).toLocaleDateString("tr-TR") : x.resmi ? "Sürekli açık" : "Kurumun sayfasına bak"],
       ["Kimler başvurabilir", x => esc(D.kitleMetni(x) || "Genel (şirketler / tüm işletmeler)")],
       ["Ön koşullar", x => D.onKosullar(x).map(id => esc(D.ON_KOSUL[id].ad)).join("<br>") || "—"],
-      ["Sana uygunluk", x => p ? (D.LEVEL_TAG[D.check(x, p).level] || "—") + (sartDurum(x) === "tam" ? "<br><small>Tüm şartlara evet dedin</small>" : sartDurum(x) === "hayir" ? "<br><small>Bir şarta hayır dedin</small>" : "") : "Uygunluk testini yap"],
+      ["Sana uygunluk", x => p ? (D.LEVEL_TAG[D.check(x, p).level] || "—") + (sartDurum(x) === "tam" ? "<br><small>Uyduğunu belirttin</small>" : sartDurum(x) === "hayir" ? "<br><small>Uymadığını belirttin</small>" : "") : "Uygunluk testini yap"],
       ["Nereye başvurulur", x => { const t = (bolum(x, "Başvuru yeri") || x.basvuru.online || "").split("\n")[0]; return D.terim(t.length > 240 ? t.slice(0, 240).replace(/\s+\S*$/, "") + "…" : t); }],
       ["", x => `<a class="btn sm seal" ${link("destek", "id=" + x.id)}>Ayrıntı</a>`]];
     const dl = document.getElementById("kars-dlg");
@@ -311,16 +311,33 @@ async function karsBar() {
 /* Bir başvuru için gerekenler: resmi metindeki "Kimler yararlanabilir?" maddeleri tek tek sorulur (metin aynen). */
 function sartSatirlari(x) {
   const kimler = x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith("Kimler")) || {}).metin;
-  return (kimler || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => ({ metin: l.replace(/^[•–]\s*/, ""), alt: l.startsWith("–"), baslik: /[:;]$/.test(l) }));
+  // "Kimler yararlanabilir?" maddeleri çoğunlukla ALTERNATİF başvuru sahibi türleridir (birine uymak yeterli).
+  // Yalnızca açıkça zorunluluk bildiren maddeler (zorunlu, gerekir, şartı aranmaktadır...) zorunlu şart sayılır.
+  const ZORUNLU = /zorunlu|gerekir|gerekmektedir|aranmaktadır|aranır|verilmemektedir|verilmez|yararlanamaz|başvuramaz|şartı/;
+  return (kimler || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => { const metin = l.replace(/^[•–]\s*/, ""); return { metin, alt: l.startsWith("–"), baslik: /[:;]$/.test(l), zorunlu: ZORUNLU.test(D.low(metin)) }; });
+}
+// Cevaplara göre sonuç: { durum: "tam" | "hayir" | "mid" | null, neden }
+function sartSonuc(satir, cev) {
+  const idx = satir.map((r, i) => i).filter(i => !satir[i].baslik);
+  const kim = idx.filter(i => !satir[i].zorunlu), zor = idx.filter(i => satir[i].zorunlu);
+  if (!Object.keys(cev).length) return { durum: null, neden: "" };
+  if (zor.some(i => cev[i] === "h")) return { durum: "hayir", neden: "zorunlu" };
+  const kimE = kim.some(i => cev[i] === "e"), kimHepsiHayir = kim.length && kim.every(i => cev[i] === "h");
+  if (kimHepsiHayir) return { durum: "hayir", neden: "kim" };
+  const zorTamam = zor.every(i => cev[i] === "e"), zorEmin = zor.some(i => cev[i] === "b");
+  if ((kimE || !kim.length) && zorTamam) return { durum: "tam", neden: "" };
+  if ((kimE || !kim.length) && zorEmin) return { durum: "mid", neden: "zorunlu" };
+  if (!kimE && kim.some(i => cev[i] === "b") && kim.every(i => cev[i])) return { durum: "mid", neden: "kim" };
+  return { durum: null, neden: kimE ? "zor-eksik" : "kim-eksik" };
 }
 function gerekenlerHTML(x) {
   const satir = sartSatirlari(x); const cev = D.LS.get("sart:" + x.id, {});
   const bolum = ad => x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith(ad)) || {}).metin;
   const sorular = satir.map((r, i) => r.baslik ? `<p class="s-baslik">${esc(r.metin)}</p>` :
-    `<fieldset class="soru${r.alt ? " alt" : ""}"><legend>${D.terim(r.metin)}</legend>${[["e", "Evet"], ["h", "Hayır"], ["b", "Emin değilim"]].map(([v, t]) => `<label><input type="radio" name="s${i}" value="${v}"${cev[i] === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>`).join("");
+    `<fieldset class="soru${r.alt ? " alt" : ""}${r.zorunlu ? " zorunlu" : ""}" aria-labelledby="sq${i}"><p class="s-metin" id="sq${i}">${r.zorunlu ? `<span class="s-zor">Zorunlu şart</span> ` : ""}${D.terim(r.metin)}</p>${[["e", "Evet"], ["h", "Hayır"], ["b", "Emin değilim"]].map(([v, t]) => `<label><input type="radio" name="s${i}" value="${v}"${cev[i] === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>`).join("");
   return `<p class="crumb">${esc(x.kurum)}</p><h2 id="g-baslik">${esc(x.ad)}</h2><div id="g-ilk"></div>
     <p class="small muted">${x.resmi ? `Sorular Bakanlığın özet bilgi formundaki “Kimler yararlanabilir?” maddelerinden <strong>aynen</strong> alındı.` : `Bu program için Bakanlığın özet formu yok; şartları kurumun sayfasından kontrol et.`}</p>
-    ${satir.length ? `<h3>Bu şartları karşılıyor musun?</h3><form id="g-form">${sorular}</form><div id="g-sonuc" aria-live="polite"></div>` : ""}
+    ${satir.length ? `<h3>Hangileri sana uyuyor?</h3><p class="small muted">Bu listedeki maddeler çoğunlukla alternatif başvuru sahibi türleridir: <strong>birine uyman yeterli</strong>. “Zorunlu şart” diye işaretli maddeleri ise mutlaka karşılaman gerekir.</p><form id="g-form">${sorular}</form><div id="g-sonuc" aria-live="polite"></div>` : ""}
     <div id="g-hazir"></div>
     ${!satir.length && x.sayfa && x.sayfa.metin ? `<h3>Kurumun sayfasından</h3><div class="resmi-metin">${D.terim(x.sayfa.metin)}</div>` : ""}
     ${bolum("Başvuru dönemi") ? `<h3>Başvuru dönemi</h3><div class="resmi-metin">${D.terim(bolum("Başvuru dönemi"))}</div>` : ""}
@@ -331,9 +348,9 @@ function gerekenlerHTML(x) {
 }
 // Kullanıcının resmi şartlara verdiği cevaplara göre durum: "tam" (hepsine evet), "hayir" (en az bir hayır) veya null
 function sartDurum(x) {
-  const n = sartSatirlari(x).filter(r => !r.baslik).length; const cev = Object.values(D.LS.get("sart:" + x.id, {}));
-  if (cev.includes("h")) return "hayir";
-  return n && cev.length >= n && cev.every(v => v === "e") ? "tam" : null;
+  const satir = sartSatirlari(x); if (!satir.length) return null;
+  const d = sartSonuc(satir, D.LS.get("sart:" + x.id, {})).durum;
+  return d === "tam" || d === "hayir" ? d : null;
 }
 function kaydolHTML(n, kalan) {
   const say = t => kalan.filter(r => r.x.tur === t).length;
@@ -354,11 +371,12 @@ function gerekenlerBagla(x, kutu) {
     const cev = {}; satir.forEach((r, i) => { const v = f.querySelector(`input[name=s${i}]:checked`); if (v) cev[i] = v.value; });
     D.LS.set("sart:" + x.id, cev);
     Store.user().then(async u => { if (!u) return; const pr = await Store.profile() || {}; Store.saveProfile({ sartlar: { ...(pr.sartlar || {}), [x.id]: cev } }); });
-    const n = satir.filter(r => !r.baslik).length, e = Object.values(cev).filter(v => v === "e").length, h = Object.values(cev).filter(v => v === "h").length, b = Object.values(cev).filter(v => v === "b").length;
-    $("#g-sonuc", kutu).innerHTML = !Object.keys(cev).length ? "" : h ? `<div class="g-durum no"><b>${h} şartı karşılamadığını belirttin.</b> Bu desteğe şu an uygun görünmüyorsun; şartın tam metnini resmi formdan kontrol et.</div>`
-      : e + b < n ? `<div class="g-durum">${n - e - b} şart daha cevaplanmadı.</div>`
-      : b ? `<div class="g-durum mid"><b>${b} şarttan emin değilsin.</b> Bunları kurumdan veya resmi metinden teyit et.</div>`
-      : `<div class="g-durum ok"><b>Tüm şartları karşıladığını belirttin.</b> Kesin karar kurumun değerlendirmesiyle verilir. <a ${link("basvuru", "id=" + x.id)}>Başvuruya hazırla →</a></div>`;
+    const r = sartSonuc(satir, cev);
+    $("#g-sonuc", kutu).innerHTML = r.durum === "tam" ? `<div class="g-durum ok"><b>Listede sana uyan bir madde var${satir.some(s => s.zorunlu) ? " ve zorunlu şartları karşılıyorsun" : ""}.</b> Kesin karar kurumun değerlendirmesiyle verilir. <a ${link("basvuru", "id=" + x.id)}>Başvuruya hazırla →</a></div>`
+      : r.durum === "hayir" ? `<div class="g-durum no"><b>${r.neden === "zorunlu" ? "Zorunlu bir şartı karşılamadığını belirttin." : "Listedeki başvuru sahibi türlerinin hiçbirine uymadığını belirttin."}</b> Bu desteğe şu an uygun görünmüyorsun; tam metni resmi formdan kontrol et.</div>`
+      : r.durum === "mid" ? `<div class="g-durum mid"><b>${r.neden === "zorunlu" ? "Zorunlu bir şarttan emin değilsin." : "Sana uyan maddeden emin değilsin."}</b> Kurumdan veya resmi metinden teyit et.</div>`
+      : r.neden === "zor-eksik" ? `<div class="g-durum">Zorunlu şartları da cevapla.</div>`
+      : r.neden === "kim-eksik" ? `<div class="g-durum">Sana uyan maddeye “Evet” de. Hiçbiri uymuyorsa hepsine “Hayır” de.</div>` : "";
   };
   f.onchange = () => { ozet(); Store.profile().then(pr => { const ilk = $("#g-ilk", kutu); if (ilk) ilk.innerHTML = ilkAdimHTML(x, pr); }); }; ozet();
 }
@@ -419,8 +437,8 @@ P.sonuclar = async () => {
         $("#onayli").hidden = false;
         $("#onayli").innerHTML = `<h2>Şartlarını karşıladığın destekler <small>${tam.length}</small></h2>` + (tam.length
           ? `<div class="onayli-liste">${tam.map(({ x }) => `<button type="button" class="kart" data-id="${esc(x.id)}" style="border-left-color:var(--ok)"><span class="k-ad">${esc(x.ad)}</span><span class="k-tutar">${esc(amount(x, num($("#mm-butce").value)))}</span><span class="k-alt">${esc(x.kurum)}</span><span class="k-adim">→ ${esc(ilkAdim(x, p).t)}</span></button>`).join("")}</div>`
-          : `<p class="small muted">Henüz yok. Aşağıdan bir desteğe tıkla ve resmi şartlarını cevapla; tüm şartlara “Evet” dediğin destekler burada toplanır.</p>`)
-          + (hayir ? `<p class="small muted">Şartlarına “Hayır” dediğin ${hayir} destek sütunlardan kaldırıldı. <a href="#" id="hayir-goster">${F.hayirGoster ? "Gizle" : "Göster"}</a></p>` : "");
+          : `<p class="small muted">Henüz yok. Aşağıdan bir desteğe tıkla ve “Kimler yararlanabilir?” listesinde sana uyan maddeyi işaretle; uyduğun destekler burada toplanır.</p>`)
+          + (hayir ? `<p class="small muted">Cevaplarına göre uymadığın ${hayir} destek sütunlardan kaldırıldı. <a href="#" id="hayir-goster">${F.hayirGoster ? "Gizle" : "Göster"}</a></p>` : "");
         const hg = $("#hayir-goster"); if (hg) hg.onclick = e => { e.preventDefault(); F.hayirGoster = !F.hayirGoster; draw(); };
         $$("#onayli .kart").forEach(b => b.onclick = () => gerekenlerAc(d.destekler.find(z => z.id === b.dataset.id)));
       }
