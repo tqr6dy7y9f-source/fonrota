@@ -203,7 +203,7 @@ function amount(x, butce) {
   return TUR[x.tur] || "Tutar ilanda";
 }
 /* Kurumlara göre sütunlar: her sütun bir kurum, kartlar fırsatlar. Uzun sütunlar ilk 5 kartla başlar. */
-function kolonlar(root, goal, groups, butce, acik) {
+function kolonlar(root, goal, groups, butce, acik, kilit = new Set()) {
   const total = groups.reduce((a, g) => a + g.items.length, 0);
   if (!total) return `<div class="empty"><h2>Bu filtreyle destek kalmadı.</h2><p>Filtrelerden birini kapatınca sütunlar yeniden dolar.</p></div>`;
   const col = { ok: "var(--ok)", mid: "var(--mid)", none: "var(--line)", no: "var(--no)" };
@@ -213,7 +213,9 @@ function kolonlar(root, goal, groups, butce, acik) {
       const hepsi = acik.includes(g.k), gor = hepsi ? g.items : g.items.slice(0, ILK);
       return `<section class="kolon" role="listitem" style="--d:${gi}" aria-label="${esc(g.k)}">
         <h3>${esc(g.k)} <small>${g.items.length}</small></h3>
-        ${gor.map(({ x, c }) => `<button type="button" class="kart" data-id="${esc(x.id)}" style="border-left-color:${col[c.level]}">
+        ${gor.map(({ x, c }) => kilit.has(x.id) ? `<button type="button" class="kart kilitli" data-kilit="1" aria-label="Kilitli destek: görmek için ücretsiz hesap aç">
+          <span class="k-ad" aria-hidden="true">${esc(x.ad)}</span><span class="k-tutar" aria-hidden="true">${esc(amount(x, butce))}</span>
+          <span class="k-kilit">🔒 Hesap açınca görünür</span></button>` : `<button type="button" class="kart" data-id="${esc(x.id)}" style="border-left-color:${col[c.level]}">
           <span class="k-ad">${esc(x.ad)}</span><span class="k-tutar">${esc(amount(x, butce))}</span>
           <span class="k-alt">${x.resmi ? "Resmi özet var" : x.sayfa ? "Kurum sayfasından" : ""}${tarihli(x) ? ` · ${D.daysLeft(x.son_basvuru)} gün kaldı` : x.resmi ? " · Sürekli açık" : ""}</span></button>`).join("")}
         ${g.items.length > ILK ? `<button type="button" class="k-daha" data-k="${esc(g.k)}">${hepsi ? "Daha az göster" : `+${g.items.length - ILK} tane daha`}</button>` : ""}
@@ -239,12 +241,27 @@ function gerekenlerHTML(x) {
     ${x.resmi && x.resmi.belgeler.length ? `<h3>Resmi belgeler</h3><ul class="docs">${x.resmi.belgeler.map(d => `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.ad)}</a></li>`).join("")}</ul>` : ""}
     <div class="actions"><a class="btn seal" ${link("destek", "id=" + x.id)}>Tüm ayrıntılar</a><a class="btn ghost" href="${esc((x.resmi && x.resmi.sayfa) || (x.sayfa && x.sayfa.url) || x.url)}" target="_blank" rel="noopener">Resmi sayfa ↗</a></div>`;
 }
+// Kullanıcının resmi şartlara verdiği cevaplara göre durum: "tam" (hepsine evet), "hayir" (en az bir hayır) veya null
+function sartDurum(x) {
+  const n = sartSatirlari(x).filter(r => !r.baslik).length; const cev = Object.values(D.LS.get("sart:" + x.id, {}));
+  if (cev.includes("h")) return "hayir";
+  return n && cev.length >= n && cev.every(v => v === "e") ? "tam" : null;
+}
+function kaydolHTML(n, kalan) {
+  const say = t => kalan.filter(r => r.x.tur === t).length;
+  const parca = [["hibe", "hibe"], ["kredi", "kredi"], ["vergi", "vergi/prim avantajı"]].map(([t, ad]) => say(t) ? `${say(t)} ${ad}` : "").filter(Boolean).join(", ");
+  return `<h2 id="g-baslik">🔒 Hedefine uyan ${n} destekten 2’sini görüyorsun</h2>
+    <p style="font-size:17px">${kalan.length} destek daha${parca ? ` (${parca})` : ""} seni bekliyor. Tamamını görmek ve başvuru için gerekenleri tek tek kontrol etmek için <strong>ücretsiz hesap aç</strong>.</p>
+    <div class="g-durum"><b>Neden hesap?</b> Hesap açarsan daha net ve doğru sonuç veririz. Bazı desteklerin şartları (kuruluş yılı, ihracat yapmış olmak, Ar-Ge personeli çalıştırmak gibi) genel bilgilerle kesinleşmiyor. Hesabında bu şartları tek tek cevaplarsın; sana uymayanları eleyip yalnızca uyanları gösteririz. Girdiğin bilgiler kaybolmaz, hesabına aktarılır.</div>
+    <div class="actions"><a class="btn seal" id="k-kayit" ${link("hesap", "sekme=kayit")}>Ücretsiz hesap aç</a><a class="btn ghost" id="k-giris" ${link("hesap", "sekme=giris")}>Hesabım var, giriş yap</a><button type="button" class="btn ghost" id="k-sonra">Şimdilik 2 desteğe bak</button></div>`;
+}
 function gerekenlerBagla(x, kutu) {
   const f = $("#g-form", kutu); if (!f) return;
   const satir = sartSatirlari(x);
   const ozet = () => {
     const cev = {}; satir.forEach((r, i) => { const v = f.querySelector(`input[name=s${i}]:checked`); if (v) cev[i] = v.value; });
     D.LS.set("sart:" + x.id, cev);
+    Store.user().then(async u => { if (!u) return; const pr = await Store.profile() || {}; Store.saveProfile({ sartlar: { ...(pr.sartlar || {}), [x.id]: cev } }); });
     const n = satir.filter(r => !r.baslik).length, e = Object.values(cev).filter(v => v === "e").length, h = Object.values(cev).filter(v => v === "h").length, b = Object.values(cev).filter(v => v === "b").length;
     $("#g-sonuc", kutu).innerHTML = !Object.keys(cev).length ? "" : h ? `<div class="g-durum no"><b>${h} şartı karşılamadığını belirttin.</b> Bu desteğe şu an uygun görünmüyorsun; şartın tam metnini resmi formdan kontrol et.</div>`
       : e + b < n ? `<div class="g-durum">${n - e - b} şart daha cevaplanmadı.</div>`
@@ -270,20 +287,52 @@ P.sonuclar = async () => {
   const view = params().get("gorunum") || "harita";
   $$("#view button").forEach(b => { b.setAttribute("aria-pressed", b.dataset.v === view); b.onclick = () => go("sonuclar", "gorunum=" + b.dataset.v); });
   const all = [...fit, ...mid];
+  const u = await Store.user(); const misafir = !u;
+  Object.entries(p.sartlar || {}).forEach(([id, c]) => { if (!D.LS.get("sart:" + id)) D.LS.set("sart:" + id, c); });
+  const hedefeUy = r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a));
+  // Misafire hedefine uyanlardan en uyumlu 2 tanesi açık gösterilir (resmi özeti olanlar önce)
+  const acikIki = new Set(all.filter(hedefeUy).sort((a, b) => b.c.score - a.c.score || !!b.x.resmi - !!a.x.resmi).slice(0, 2).map(r => r.x.id));
+  const kilit = new Set(misafir ? all.map(r => r.x.id).filter(id => !acikIki.has(id)) : []);
+  const dlg = $("#gerekenler");
+  $("#g-kapat").onclick = () => dlg.close();
+  dlg.onclick = e => { if (e.target === dlg) dlg.close(); };
+  const kaydolAc = () => {
+    const hedefli = all.filter(hedefeUy);
+    $("#g-icerik").innerHTML = kaydolHTML(hedefli.length, hedefli.filter(r => !acikIki.has(r.x.id)));
+    ["#k-kayit", "#k-giris"].forEach(sel => $(sel).addEventListener("click", () => D.LS.set("geri", "sonuclar")));
+    $("#k-sonra").onclick = () => dlg.close();
+    dlg.showModal();
+  };
+  if (misafir) {
+    $("#kilit-bant").hidden = false;
+    $("#kilit-bant").innerHTML = `<span>🔒 Hedefine uyan <b>${all.filter(hedefeUy).length}</b> destekten <b>2</b>’sini görüyorsun. Hesap açarsan şartları tek tek kontrol edip sana uymayanları eleriz.</span><button type="button" class="btn sm seal" id="bant-ac">Tamamını gör</button>`;
+    $("#bant-ac").onclick = kaydolAc;
+    let gosterildi = false; try { gosterildi = sessionStorage.getItem("kaydolGosterildi"); sessionStorage.setItem("kaydolGosterildi", "1"); } catch {}
+    if (!gosterildi) setTimeout(kaydolAc, 900);
+  }
   if (view === "harita") {
     const F = { hedef: true, tam: false, kredisiz: false, hibe: false, ...D.LS.get("mmFiltre", {}) };
     const hedefe = r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a));
-    const filtered = () => all.filter(r => (!F.hedef || hedefe(r)) && (!F.tam || r.c.level === "ok") && (!F.kredisiz || r.x.tur !== "kredi") && (!F.hibe || r.x.tur === "hibe"));
+    const filtered = () => all.filter(r => (!F.hedef || hedefe(r)) && (!F.tam || r.c.level === "ok") && (!F.kredisiz || r.x.tur !== "kredi") && (!F.hibe || r.x.tur === "hibe") && (misafir || F.hayirGoster || sartDurum(r.x) !== "hayir"));
     const acik = [];
     const draw = () => {
-      $("#mm").innerHTML = kolonlar(p.firmaUnvani || "İşletmen", goal, groupBy(filtered()), num($("#mm-butce").value), acik);
+      // Kayıtlı kullanıcı: tüm şartlarına "Evet" dediği destekler en üstte; "Hayır" dedikleri gizlenir
+      if (!misafir) {
+        const tam = all.filter(r => sartDurum(r.x) === "tam"), hayir = all.filter(r => sartDurum(r.x) === "hayir").length;
+        $("#onayli").hidden = false;
+        $("#onayli").innerHTML = `<h2>Şartlarını karşıladığın destekler <small>${tam.length}</small></h2>` + (tam.length
+          ? `<div class="onayli-liste">${tam.map(({ x }) => `<button type="button" class="kart" data-id="${esc(x.id)}" style="border-left-color:var(--ok)"><span class="k-ad">${esc(x.ad)}</span><span class="k-tutar">${esc(amount(x, num($("#mm-butce").value)))}</span><span class="k-alt">${esc(x.kurum)}</span></button>`).join("")}</div>`
+          : `<p class="small muted">Henüz yok. Aşağıdan bir desteğe tıkla ve resmi şartlarını cevapla; tüm şartlara “Evet” dediğin destekler burada toplanır.</p>`)
+          + (hayir ? `<p class="small muted">Şartlarına “Hayır” dediğin ${hayir} destek sütunlardan kaldırıldı. <a href="#" id="hayir-goster">${F.hayirGoster ? "Gizle" : "Göster"}</a></p>` : "");
+        const hg = $("#hayir-goster"); if (hg) hg.onclick = e => { e.preventDefault(); F.hayirGoster = !F.hayirGoster; draw(); };
+        $$("#onayli .kart").forEach(b => b.onclick = () => gerekenlerAc(d.destekler.find(z => z.id === b.dataset.id)));
+      }
+      $("#mm").innerHTML = kolonlar(p.firmaUnvani || "İşletmen", goal, groupBy(filtered()), num($("#mm-butce").value), acik, kilit);
+      $$("#mm .kart[data-kilit]").forEach(b => b.onclick = kaydolAc);
       $$("#mm .k-daha").forEach(b => b.onclick = () => { const k = b.dataset.k; const i = acik.indexOf(k); i < 0 ? acik.push(k) : acik.splice(i, 1); draw(); });
-      $$("#mm .kart").forEach(b => b.onclick = () => gerekenlerAc(d.destekler.find(z => z.id === b.dataset.id)));
+      $$("#mm .kart[data-id]").forEach(b => b.onclick = () => gerekenlerAc(d.destekler.find(z => z.id === b.dataset.id)));
     };
-    const dlg = $("#gerekenler");
-    const gerekenlerAc = x => { $("#g-icerik").innerHTML = gerekenlerHTML(x); gerekenlerBagla(x, $("#g-icerik")); dlg.showModal(); $("#g-icerik").scrollTop = 0; };
-    $("#g-kapat").onclick = () => dlg.close();
-    dlg.onclick = e => { if (e.target === dlg) dlg.close(); };
+    const gerekenlerAc = x => { $("#g-icerik").innerHTML = gerekenlerHTML(x); gerekenlerBagla(x, $("#g-icerik")); dlg.showModal(); $("#g-icerik").scrollTop = 0; dlg.onclose = () => { dlg.onclose = null; if (!misafir) draw(); }; };
     $("#mm-butce").value = p.projeButce || ""; let bt; $("#mm-butce").oninput = () => { clearTimeout(bt); bt = setTimeout(() => { Store.saveProfile({ projeButce: $("#mm-butce").value }); draw(); }, 350); };
     const fb = $("#mm-filtre"); fb.hidden = false; $("#mm-butce-box").hidden = false;
     const sync = () => $$("button", fb).forEach(b => b.setAttribute("aria-pressed", !!F[b.dataset.f]));
@@ -292,9 +341,11 @@ P.sonuclar = async () => {
     $("#mm").hidden = false; $("#mm-legend").hidden = false; draw();
   } else {
     $("#liste").hidden = false;
-    $("#liste").innerHTML = (fit.length ? `<h2 style="margin:18px 0 4px">Uygun</h2><ul class="list">${fit.map(r => itemRow(r.x, r.c)).join("")}</ul>` : "") +
-      (mid.length ? `<h2 style="margin:28px 0 4px">Kısmen uygun</h2><p class="muted small">Bir koşulu karşılamıyorsun ama yakınsın. Ayrıntıya bakarak ne gerektiğini görebilirsin.</p><ul class="list">${mid.map(r => itemRow(r.x, r.c)).join("")}</ul>` : "");
+    const satir = r => kilit.has(r.x.id) ? `<li class="item kilitli-satir"><button type="button" data-kilit="1"><span aria-hidden="true">${esc(r.x.ad)}</span><span class="k-kilit">🔒 Hesap açınca görünür</span></button></li>` : itemRow(r.x, r.c);
+    $("#liste").innerHTML = (fit.length ? `<h2 style="margin:18px 0 4px">Uygun olabilir</h2><ul class="list">${fit.map(satir).join("")}</ul>` : "") +
+      (mid.length ? `<h2 style="margin:28px 0 4px">Kısmen uygun</h2><p class="muted small">Bir koşulu karşılamıyorsun ama yakınsın. Ayrıntıya bakarak ne gerektiğini görebilirsin.</p><ul class="list">${mid.map(satir).join("")}</ul>` : "");
   }
+  $$("#liste [data-kilit]").forEach(b => b.onclick = kaydolAc);
   // Yapay zekâ yorumu
   if (await D.aiAvailable()) {
     $("#ai").hidden = false;
@@ -488,6 +539,8 @@ P.rapor = async () => {
 /* ---------- Hesap: giriş, kayıt, profil, başvurular, bildirimler ---------- */
 P.hesap = async () => {
   const u = await Store.user(); const box = $("#hesap"); const sekme = params().get("sekme");
+  const sonra = varsayilan => { const g = D.LS.get("geri"); D.LS.del("geri"); go(g || varsayilan); };
+  if (u && D.LS.get("geri")) { sonra("hesap"); return; }  // e-posta onay bağlantısından dönüş
   if (!u) {
     const kayit = sekme === "kayit"; const draft = { ...(await Store.profile() || {}), ...D.LS.get("draft", {}) };
     const kayitAlan = ["firmaUnvani", "vkn", "vergiDairesi", "sirketTuru", "kurulusYili", "naceKodu", "calisan", "ciro", "yetkili", "telefon", "il", "adres"];
@@ -513,8 +566,8 @@ P.hesap = async () => {
           const r = await Store.signUp({ email: v.email, password: v.password, ad: v.ad, profil: prof });
           if (r && r.onayGerekli) { box.innerHTML = `<div class="narrow" style="margin-top:26px"><h1>E-postanı kontrol et</h1><p>Hesabın oluşturuldu. <b>${esc(v.email)}</b> adresine bir onay bağlantısı gönderdik. Bağlantıya tıkladıktan sonra giriş yapabilirsin.</p><a class="btn seal" ${link("hesap", "sekme=giris")}>Giriş sayfasına git</a></div>`; return; }
           if (prof.bildirimAnlik) await D.enablePush();
-          toast("Hesabın oluşturuldu."); go(prof.sektorler ? "sonuclar" : "bul");
-        } else { await Store.signIn(v); toast("Hoş geldin."); go("hesap"); }
+          toast("Hesabın oluşturuldu."); sonra(prof.olcek || prof.sektorler ? "sonuclar" : "bul");
+        } else { await Store.signIn(v); toast("Hoş geldin."); sonra("hesap"); }
       } catch (err) { $("#err").textContent = err.message || "Bir şey ters gitti. Tekrar dene."; }
     };
     return;
