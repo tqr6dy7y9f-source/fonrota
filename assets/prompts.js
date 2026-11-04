@@ -1,3 +1,4 @@
+/*! FonRota — © 2026 [Ad Soyad]. Tüm hakları saklıdır. İzinsiz kopyalanamaz ve dağıtılamaz. */
 // Yapay zekâ görev tanımları. Hem tarayıcı (önizleme) hem sunucu (api/ai.js) aynı metinleri kullanır.
 (function (root) {
   const SEKTORLER = "imalat, tarim, bilisim, turizm, enerji, saglik, ticaret, hizmet, insaat, lojistik";

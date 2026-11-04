@@ -2,6 +2,9 @@
 // hesaplar ve bildirimler tarayıcıda saklanır, AI yerine kural tabanlı analiz kullanılır.
 window.CONFIG = {
   SITE_ADI: "FonRota",
+  // Sitenin sahibi: telif notlarında, sayfa üst bilgisinde (görünmez) ve indirilen PDF'lerin dosya bilgilerinde kullanılır.
+  // Değiştirince "python tools/imza.py" çalıştırın; HTML sayfalarındaki görünmez telif bilgisi de güncellenir.
+  SAHIP: "[Ad Soyad]",
   // Supabase (hesaplar, kayıtlı başvurular, bildirimler) – supabase.com > Project Settings > API
   // ŞU AN DEMO MODU: Supabase projesi durduruldu; hesaplar ziyaretçinin kendi tarayıcısında saklanır.
   // Supabase'i yeniden açınca aşağıdaki iki değeri geri yaz:

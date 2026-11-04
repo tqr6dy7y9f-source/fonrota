@@ -1,3 +1,4 @@
+/*! FonRota — © 2026 [Ad Soyad]. Tüm hakları saklıdır. İzinsiz kopyalanamaz ve dağıtılamaz. */
 :root{
   --bg:#F3F6F4; --surface:#FFFFFF; --ink:#12343B; --muted:#5B7068; --line:#D3DCD8; --soft:#E7EEEB;
   --seal:#B9832A; --seal-ink:#8A5F17; --seal-soft:#F4E7CF; --ok:#2F7D5B; --ok-soft:#DCEFE5; --mid:#A8641C; --mid-soft:#F5E6D4; --no:#8F3A3A; --no-soft:#F2DEDE;
@@ -333,3 +334,7 @@ table.kars{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
 table.kars th,table.kars td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
 table.kars thead th{font-size:15px;background:var(--soft)}table.kars tbody th{width:150px;color:var(--muted);font-weight:600}
 @media (max-width:600px){#kars-dlg{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0}.kars-icerik{max-height:100dvh}}
+
+/* Alt bilgi: sorumluluk reddi ve telif */
+footer.site .yasal{flex-basis:100%;margin:10px 0 0;font-size:12.5px;line-height:1.55;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+footer.site .telif{flex-basis:100%;margin:4px 0 0;font-size:12px;color:var(--muted)}

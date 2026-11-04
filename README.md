@@ -37,6 +37,12 @@ Bu numara değişince ziyaretçilerin tarayıcısı yeni dosyayı indirir; deği
 
 `tools/build.py` artık sayfaları yeniden üretmez (içindeki kopya eski; üretirse son değişiklikleri siler), yalnızca `dist/onizleme.html` üretir.
 
+## Sahiplik izi (görünmez)
+`config.js` içindeki `SAHIP` adı; her sayfanın `<head>` bölümünde `author`/`copyright` bilgisi, `assets/*.js` ve `style.css` başında telif notu, `LICENSE` dosyası, indirilen PDF'lerin dosya bilgileri (Yazar/Üreten) ve tarayıcı konsolundaki imza olarak yer alır. Adı değiştirince:
+
+    python tools/imza.py
+    python tools/surum.py
+
 ## Veri kaynağı
 - `scraper/yatirimadestek.py`: Sanayi ve Teknoloji Bakanlığı Destekler Platformu'ndaki (yatirimadestek.gov.tr) açık programları ve resmi özet bilgi formlarını **değiştirmeden** alır. Sitede yalnızca bu kayıtlar (ve `scraper/manual.json`'daki doğrulanmış kayıtlar) yayımlanır.
 - Destek oranı yalnızca kesin kalıplardan ("%X oranında desteklenir", "destek oranı %X") okunur; üst limit otomatik çıkarılmaz (resmi metinde okunur).

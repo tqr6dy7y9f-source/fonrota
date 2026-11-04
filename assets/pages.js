@@ -1,3 +1,4 @@
+/*! FonRota — © 2026 [Ad Soyad]. Tüm hakları saklıdır. İzinsiz kopyalanamaz ve dağıtılamaz. */
 /* FonRota – sayfalar */
 (function () {
 const D = window.DB; let ROOT = document;
@@ -25,7 +26,9 @@ async function layout(page) {
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
-  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Bilgiler T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan ve kurumların (KOSGEB, TÜBİTAK, kalkınma ajansları…) sitelerinden her hafta otomatik toplanır. Başvurmadan önce koşulları kurumun sayfasından kontrol et.</span><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span></div>`; }
+  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Bilgiler T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan ve kurumların (KOSGEB, TÜBİTAK, kalkınma ajansları…) sitelerinden her hafta otomatik toplanır. Başvurmadan önce koşulları kurumun sayfasından kontrol et.</span><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span>
+      <p class="yasal"><strong>Sorumluluk reddi:</strong> ${esc(C.SITE_ADI)} bağımsız bir bilgilendirme platformudur; KOSGEB, TÜBİTAK, bakanlıklar, kalkınma ajansları veya herhangi bir kamu kurumuyla resmi bağı yoktur ve onların adına hareket etmez. Destek bilgileri kurumların herkese açık resmi kaynaklarından alınır ve yalnızca bilgilendirme amaçlıdır. Sitedeki uygunluk değerlendirmeleri ön elemedir; bir başvurunun kabul edileceği anlamına gelmez, hukuki veya mali danışmanlık yerine geçmez. Kesin bilgi için ilgili kurumun güncel duyurusunu esas alın.</p>
+      <p class="telif">© ${new Date().getFullYear()} ${esc(C.SITE_ADI)}${C.SAHIP && !/^\[/.test(C.SAHIP) ? " · " + esc(C.SAHIP) : ""}. Tüm hakları saklıdır.</p></div>`; }
 }
 // Sürüm numarası: sayfadaki script bağlantısının ?v= değeri (tools/surum.py yeniler)
 function surum() { const m = [...document.scripts].map(x => x.src.match(/pages\.js\?v=(\d+)/)).find(Boolean); return m ? m[1] : ""; }

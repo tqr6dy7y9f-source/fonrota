@@ -1,3 +1,4 @@
+/*! FonRota — © 2026 [Ad Soyad]. Tüm hakları saklıdır. İzinsiz kopyalanamaz ve dağıtılamaz. */
 /* FonRota – çekirdek: yardımcılar, veri, hesap, uygunluk, yapay zekâ, PDF */
 (function () {
 const C = window.CONFIG || {};
@@ -429,7 +430,13 @@ const GUESS = [["unvan", "firmaUnvani"], ["vergi_no", "vkn"], ["vkn", "vkn"], ["
 const ascii = s => low(s).replace(/ı/g, "i").replace(/ş/g, "s").replace(/ğ/g, "g").replace(/ü/g, "u").replace(/ö/g, "o").replace(/ç/g, "c");
 
 /* Akan metinle çok sayfalı PDF yazar. blocks: {h1|h2|p|small|kv|ul} */
+// Görünmez sahiplik izi: üretilen PDF'lerin dosya bilgileri (Dosya > Özellikler)
+function pdfImza(doc, kendi = true) {
+  const sahip = C.SAHIP || C.SITE_ADI || "FonRota";
+  try { doc.setProducer(`${C.SITE_ADI || "FonRota"} © ${new Date().getFullYear()} ${sahip}`); if (kendi) { doc.setCreator(C.SITE_ADI || "FonRota"); doc.setAuthor(sahip); doc.setKeywords([C.SITE_ADI || "FonRota", sahip]); } } catch {}
+}
 async function writePdf(doc, f, blocks, title) {
+  pdfImza(doc, !doc.getAuthor || !doc.getAuthor());
   const { rgb } = window.PDFLib; const W = 595.28, H = 841.89, M = 50; const ink = rgb(.07, .2, .23), mut = rgb(.36, .44, .41), seal = rgb(.72, .51, .16);
   let page, y;
   const newPage = () => { page = doc.addPage([W, H]); page.drawRectangle({ x: 0, y: H - 6, width: W, height: 6, color: seal }); page.drawText((C.SITE_ADI || "FonRota") + "  |  " + title, { x: M, y: H - 30, size: 8.5, font: f.r, color: mut }); y = H - 62; };
@@ -469,6 +476,7 @@ async function fillForm(x, values) {
     fld.setText(String(val)); filled++;
   }
   if (form.getFields().length) form.updateFieldAppearances(f.r);
+  pdfImza(doc, false);  // kurumun resmi formu: yalnızca "üreten" bilgisi, yazar alanına dokunulmaz
   // Doldurulamayan (taranmış) formlarda bilgileri ek sayfa olarak ekle
   if (!filled) await writePdf(doc, f, [{ h1: "Başvuru bilgileri (form eki)" }, { small: "Bu form otomatik doldurulamadı. Aşağıdaki bilgileri forma elle aktarın." }, { kv: x.alanlar.map(k => [ALANLAR[k]?.e || k, values[k]]) }], x.ad);
   return { bytes: await doc.save(), filled };
@@ -571,5 +579,6 @@ async function enablePush() {
   return true;
 }
 
+try { console.info(`%c${C.SITE_ADI || "FonRota"}%c © ${new Date().getFullYear()} ${C.SAHIP || ""}. Tüm hakları saklıdır.`, "font-weight:700;color:#B9832A", "color:inherit"); } catch {}
 window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
 })();
