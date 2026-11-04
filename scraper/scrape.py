@@ -250,6 +250,20 @@ def main():
             if item:
                 items[item["id"]] = item
 
+    # Destekler Platformu (yatirimadestek.py): resmi özet bilgi formlarıyla en güvenilir kaynak.
+    # Aynı programın kurum sitesinden otomatik çıkarılmış kopyasını platform kaydıyla değiştir.
+    platform_path = ROOT / "platform.json"
+    if platform_path.exists():
+        def key(t):
+            n = re.search(r"\b(1\d{3}|2\d{3})\b", t)
+            return n[1] if n else re.sub(r"[^a-zçğıöşü0-9]", "", low(t))[:40]
+        plat = json.loads(platform_path.read_text(encoding="utf-8"))
+        keys = {key(p["ad"]) for p in plat}
+        items = {k: v for k, v in items.items() if key(v["ad"]) not in keys}
+        for p in plat:
+            items[p["id"]] = p
+        print(len(plat), "program Destekler Platformu'ndan eklendi")
+
     manual_path = ROOT / "manual.json"
     if manual_path.exists():
         for m in json.loads(manual_path.read_text(encoding="utf-8")):

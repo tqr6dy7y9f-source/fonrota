@@ -190,8 +190,9 @@ P.bul = async () => {
 function amount(x, butce) {
   const ad = x.tur === "kredi" ? "kredi" : x.tur === "vergi" ? "avantaj" : "hibe";
   if (butce > 0 && x.destek_orani && x.tur !== "vergi") { const n = Math.min(butce * x.destek_orani / 100, x.ust_limit || Infinity); return `${short(Math.round(n))} ${ad} (%${x.destek_orani})`; }
-  if (x.ust_limit) return short(x.ust_limit) + "’ye kadar" + (x.destek_orani ? ` · %${x.destek_orani}` : "");
-  if (x.destek_orani) return `%${x.destek_orani} ${x.tur === "kredi" ? "kredi" : x.tur === "vergi" ? "avantaj" : "hibe"}`;
+  if (x.ust_limit) return short(x.ust_limit) + "’ye kadar" + (x.oran_metin ? ` · ${x.oran_metin}` : x.destek_orani ? ` · %${x.destek_orani}` : "");
+  if (x.oran_metin) return `${x.oran_metin} ${x.geri_odemeli ? "geri ödemeli destek" : ad}`;
+  if (x.destek_orani) return `%${x.destek_orani} ${x.geri_odemeli ? "geri ödemeli destek" : ad}`;
   if (x.kredi) return x.kredi.faiz_yillik === 0 ? `Faizsiz kredi · ${x.kredi.vade_ay} ay vade` : `Kredi · ${x.kredi.vade_ay} ay vade`;
   return TUR[x.tur] || "Tutar ilanda";
 }
@@ -289,14 +290,19 @@ P.destek = async () => {
       <dl class="facts">
         <div><dt>Destek türü</dt><dd>${TUR[x.tur] || x.tur}</dd></div>
         <div><dt>Üst limit</dt><dd>${x.ust_limit ? tl(x.ust_limit) : "Projeye göre"}</dd></div>
-        <div><dt>Destek oranı</dt><dd>${x.destek_orani ? "%" + x.destek_orani : "Belirtilmemiş"}</dd></div>
+        <div><dt>Destek oranı</dt><dd>${x.oran_metin || (x.destek_orani ? "%" + x.destek_orani : "Belirtilmemiş")}${x.geri_odemeli ? " (geri ödemeli)" : ""}</dd></div>
         <div><dt>Son başvuru</dt><dd>${x.son_basvuru ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : "Sürekli / çağrıya bağlı"}</dd></div>
       </dl>
       <p style="font-size:17px">${esc(x.ozet)}</p>
+      ${x.resmi ? `<section class="sec resmi"><h2>Resmi özet bilgi formu</h2>
+        <p class="small muted">Aşağıdaki metin <a href="${esc(x.resmi.sayfa)}" target="_blank" rel="noopener">${esc(x.resmi.kaynak)}</a> sayfasındaki özet bilgi formundan <strong>değiştirilmeden</strong> alınmıştır.${x.resmi.guncelleme ? ` Kaynağın güncellenme tarihi: ${new Date(x.resmi.guncelleme).toLocaleDateString("tr-TR")}.` : ""} Son kontrol: ${new Date(x.resmi.kontrol).toLocaleDateString("tr-TR")}.</p>
+        ${x.resmi.bolumler.length ? x.resmi.bolumler.map(b => `<h3>${esc(b.baslik)}</h3><div class="resmi-metin">${esc(b.metin)}</div>`).join("") : `<p>Bu program için platformda özet bilgi formu yok. Ayrıntılar için aşağıdaki resmi belgelere bak.</p>`}
+        ${x.resmi.belgeler.length ? `<h3>Resmi belgeler</h3><ul class="docs">${x.resmi.belgeler.map(d => `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.ad)}</a></li>`).join("")}</ul>` : ""}</section>` : ""}
       <section class="sec"><h2>${p ? "Sana uygunluk" : "Başvuru koşulları"}</h2>
-        <ul class="fit">${c.r.map(r => `<li class="${r.ok ? "y" : "n"}">${esc(r.t)}</li>`).join("")}${(x.kosullar || []).map(k => `<li class="q">${esc(k)}</li>`).join("")}</ul>
+        <ul class="fit">${c.r.map(r => `<li class="${r.ok ? "y" : "n"}">${esc(r.t)}</li>`).join("")}${x.resmi ? "" : (x.kosullar || []).map(k => `<li class="q">${esc(k)}</li>`).join("")}</ul>
+        ${x.resmi ? `<p class="small muted">Ölçek ve tür bilgisi resmi metinden otomatik okundu. Kesin şartlar için yukarıdaki resmi metni esas al.</p>` : ""}
         ${!p ? `<p class="small muted">Uygunluğunu görmek için <a ${link("bul")}>uygunluk testini</a> yap.</p>` : ""}</section>
-      <section class="sec"><h2>Hazırlaman gereken belgeler</h2><ul>${(x.belgeler || []).map(b => `<li>${esc(b)}</li>`).join("")}</ul></section>
+      ${(x.belgeler || []).length ? `<section class="sec"><h2>Hazırlaman gereken belgeler</h2><ul>${x.belgeler.map(b => `<li>${esc(b)}</li>`).join("")}</ul></section>` : ""}
       <section class="sec"><h2>Nasıl başvurulur?</h2><ol class="how">${(x.basvuru.adimlar || []).map(a => `<li>${esc(a)}</li>`).join("")}</ol></section>
       ${x.destek_orani && x.tur !== "vergi" ? `<section class="sec calc" id="oz"><h2>Öz kaynak hesaplayıcı</h2>
         <p class="small muted">Hibeler çoğunlukla harcamayı sen yaptıktan sonra geri ödenir. Projeyi başlatmak için ne kadar paran olması gerektiğini ve sonunda cebinden ne kadar çıkacağını gör.</p>
@@ -326,7 +332,7 @@ P.destek = async () => {
       const hibe = Math.min(butce * x.destek_orani / 100, x.ust_limit || Infinity), bas = butce + kdv, net = bas - hibe;
       $("#oz-bv").textContent = tl(butce); $("#oz-bas").textContent = tl(Math.round(bas)); $("#oz-hibe").textContent = tl(Math.round(hibe)); $("#oz-net").textContent = tl(Math.round(net));
       $("#oz-chart").innerHTML = D.ozChart({ hibe, oz: butce - hibe, kdv, ay });
-      $("#oz-not").textContent = (x.ust_limit && butce * x.destek_orani / 100 > x.ust_limit ? `Üst limit ${tl(x.ust_limit)} olduğu için hibe bu tutarda sabitlenir. ` : "") + `Hibe ödenene kadar (${ay} ay) ${tl(Math.round(bas))} nakit veya kredi gerekir. Oranlar ve limitler ilana göre değişebilir; kurumun sayfasından kontrol et.`;
+      $("#oz-not").textContent = (x.ust_limit && butce * x.destek_orani / 100 > x.ust_limit ? `Üst limit ${tl(x.ust_limit)} olduğu için hibe bu tutarda sabitlenir. ` : "") + `Hibe ödenene kadar (${ay} ay) ${tl(Math.round(bas))} nakit veya kredi gerekir. ` + (x.oran_metin ? `Oran ${x.oran_metin} arasında değişiyor; hesap en düşük oranla (%${x.destek_orani}) yapıldı. ` : "") + (x.geri_odemeli ? "Bu destek geri ödemeli: kurumdan gelen tutarı daha sonra geri ödersin. " : "") + `Oranlar ve limitler ilana göre değişebilir; kurumun sayfasından kontrol et.`;
     };
     B.oninput = upd; $("#oz-kdv").onchange = upd; $("#oz-ay").onchange = upd; upd();
   }

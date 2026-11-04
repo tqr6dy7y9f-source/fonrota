@@ -238,3 +238,7 @@ table.apps th,table.apps td{text-align:left;padding:10px 8px;border-bottom:1px s
 footer.site{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 44px;font-size:14px;color:var(--muted)}
 footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.resmi h3{margin:16px 0 6px;font-size:16px}
+.resmi-metin{white-space:pre-line;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--seal);border-radius:8px;padding:12px 14px;font-size:15px;line-height:1.6}
+.docs{padding-left:18px}.docs a{word-break:break-all}
