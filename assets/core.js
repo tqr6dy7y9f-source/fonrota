@@ -181,6 +181,72 @@ function classify(calisan, ciro, bilanco) {
 }
 
 /* ---------- Uygunluk ---------- */
+/* ---------- Terim sözlüğü (resmi metinlerdeki terimlerin üzerine gelince açıklama) ---------- */
+const SOZLUK = {
+  "KOBİ": "Küçük ve orta büyüklükteki işletme. Bu sitede güncel yönetmeliğe göre: 250 kişiden az çalışanı olan ve yıllık net satışı veya bilançosu 1 milyar TL’yi aşmayan işletmeler.",
+  "hibe": "Geri ödenmeyen destek. Genellikle harcamayı önce sen yaparsın, kurum desteklenen kısmı sonra öder.",
+  "geri ödemeli": "Faizsiz veya düşük faizli kredi gibi çalışan destek: kurumdan gelen tutarı belirli bir süre sonra geri ödersin.",
+  "geri ödemesiz": "Geri ödenmeyen destek (hibe).",
+  "destek oranı": "Uygun harcamaların yüzde kaçının kurum tarafından karşılandığı.",
+  "üst limit": "Bir başvuruda veya bir gider kaleminde alınabilecek en yüksek destek tutarı.",
+  "öz katkı": "Proje bütçesinin destek dışında kalan ve senin karşılaman gereken kısmı.",
+  "eş finansman": "Proje bütçesinin destek dışında kalan ve senin karşılaman gereken kısmı.",
+  "işbirliği kuruluş": "TİM, TOBB, ihracatçı birlikleri, ticaret ve sanayi odaları, OSB’ler, teknoparklar gibi kuruluşlar. Bazı desteklere yalnızca bunlar başvurabilir.",
+  "ihracatçı birliği": "Aynı sektördeki ihracatçıların üye olduğu, Türkiye İhracatçılar Meclisi’ne (TİM) bağlı birlik.",
+  "ÇKS": "Çiftçi Kayıt Sistemi: tarım desteklerinden yararlanmak için çiftçilerin kayıtlı olması gereken sistem.",
+  "Çiftçi Kayıt Sistemi": "Tarım desteklerinden yararlanmak için çiftçilerin kayıtlı olması gereken sistem (ÇKS).",
+  "DYS": "Destek Yönetim Sistemi: Ticaret Bakanlığı’nın ihracat desteklerine başvurulan sistem.",
+  "Destek Yönetim Sistemi": "Ticaret Bakanlığı’nın ihracat desteklerine başvurulan sistem (DYS).",
+  "PRODİS": "TÜBİTAK’ın proje başvuru ve takip sistemi. Proje göndermeden önce kuruluş ön kaydı gerekir.",
+  "PRODIS": "TÜBİTAK’ın proje başvuru ve takip sistemi. Proje göndermeden önce kuruluş ön kaydı gerekir.",
+  "KAYS": "Kalkınma Ajansları Yönetim Sistemi: kalkınma ajansı desteklerine başvurulan sistem.",
+  "KEP": "Kayıtlı Elektronik Posta: resmi yazışmalarda kullanılan, hukuken geçerli e-posta.",
+  "e-imza": "Elektronik imza: ıslak imzanın yerine geçen, kişiye özel dijital imza.",
+  "NACE": "Ekonomik faaliyet sınıflaması. İşletmenin faaliyet kodu vergi levhasında yazar.",
+  "teşvik belgesi": "Yatırım teşvik sistemi kapsamında verilen, vergi ve prim avantajları sağlayan belge.",
+  "döviz kazandırıcı": "Yurt dışına mal veya hizmet satarak ülkeye döviz getiren faaliyetler (ör. yazılım, müşavirlik, turizm).",
+  "sermaye şirket": "Anonim şirket (A.Ş.) ve limited şirket (Ltd. Şti.) gibi şirketler. Şahıs işletmeleri bu kapsama girmez.",
+  "tüzel kişi": "Şirket, dernek, vakıf, kooperatif gibi kendi adına hak ve borç sahibi olabilen kuruluşlar.",
+  "gerçek kişi": "Bireyler. Şahıs işletmeleri de gerçek kişi sayılır.",
+  "fizibilite": "Bir yatırımın yapılabilir ve kârlı olup olmadığını inceleyen ön çalışma.",
+  "KOBİ Bilgi Beyannamesi": "İşletmenin KOBİ olduğunu ve ölçeğini gösteren, KOSGEB sistemine verilen beyan. Her mali yıl sonrası güncellenir."
+};
+// Metni (önce HTML güvenli hale getirip) terimleri açıklamalı işaretler; her terim yalnızca ilk geçtiği yerde işaretlenir
+const _SOZ_RE = (() => { const v = []; Object.keys(SOZLUK).forEach(k => { v.push(k); const u = k[0].toLocaleUpperCase("tr") + k.slice(1); if (u !== k) v.push(u); });
+  v.sort((a, b) => b.length - a.length);
+  return new RegExp("(^|[^\\p{L}])(" + v.map(s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + (s === s.toLocaleUpperCase("tr") ? "(?![\\p{Lu}])" : "")).join("|") + ")", "gu"); })();
+function terim(t) {
+  const kul = new Set();
+  return esc(t).replace(_SOZ_RE, (m, on, w) => {
+    const key = Object.keys(SOZLUK).find(k => k.toLocaleLowerCase("tr") === w.toLocaleLowerCase("tr"));
+    if (!key || kul.has(key)) return m; kul.add(key);
+    return `${on}<span class="terim" tabindex="0" data-tip="${esc(SOZLUK[key])}">${w}</span>`;
+  });
+}
+
+/* ---------- Takvime ekle (.ics): son başvurudan 7 gün önce hatırlatır ---------- */
+function icsDosya(x, url) {
+  const d = x.son_basvuru.replace(/-/g, ""), d2 = new Date(Date.parse(x.son_basvuru + "T00:00:00Z") + 864e5).toISOString().slice(0, 10).replace(/-/g, "");
+  const e = s => String(s).replace(/([,;\\])/g, "\\$1");
+  return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//FonRota//TR", "CALSCALE:GREGORIAN", "BEGIN:VEVENT", `UID:${x.id}@fonrota`,
+    `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0, 15)}Z`, `DTSTART;VALUE=DATE:${d}`, `DTEND;VALUE=DATE:${d2}`,
+    `SUMMARY:${e("Son başvuru: " + x.ad)}`, `DESCRIPTION:${e(x.kurum + " – " + url)}`, `URL:${url}`,
+    "BEGIN:VALARM", "TRIGGER:-P7D", "ACTION:DISPLAY", `DESCRIPTION:${e("Son başvuruya 7 gün kaldı: " + x.ad)}`, "END:VALARM", "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+}
+function indir(ad, icerik, tip) { const url = URL.createObjectURL(new Blob([icerik], { type: tip })); const a = Object.assign(document.createElement("a"), { href: url, download: ad }); document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000); }
+function siteUrl(yol) { return location.href.split("#")[0].split("?")[0].replace(/[^/]*$/, "") + yol; }
+
+/* ---------- Profil doluluğu ---------- */
+const DOLULUK_ALAN = ["firmaUnvani", "vkn", "vergiDairesi", "sirketTuru", "kurulusYili", "naceKodu", "calisan", "ciro", "yetkili", "telefon", "eposta", "il", "adres"];
+function profilDoluluk(p) {
+  p = p || {};
+  const eksik = DOLULUK_ALAN.filter(k => p[k] == null || p[k] === "").map(k => ALANLAR[k].e);
+  if (!p.isletmeTipi) eksik.push("Başvuruyu kim yapacak (uygunluk testi)");
+  if (!(p.amaclar || []).length) eksik.push("Hedeflerin (uygunluk testi)");
+  const top = DOLULUK_ALAN.length + 2;
+  return { yuzde: Math.round((top - eksik.length) / top * 100), eksik };
+}
+
 /* ---------- Başvuru öncesi ön koşullar (beyanname, kayıtlar) ----------
    Kaynaklar: KOSGEB KOBİ Bilgi Sistemi, Ticaret Bakanlığı DYS genelgeleri, TÜBİTAK PRODİS ön kayıt kılavuzu,
    kalkınma ajansları KAYS başvuru rehberleri, Çiftçi Kayıt Sistemi Yönetmeliği. Yalnızca resmi kaynaklarda doğrulanan genel bilgiler. */
@@ -432,7 +498,8 @@ async function infoPdf(x, values, p) {
     { h2: (donem ? "4" : "3") + ". Nereye ve nasıl başvurulur?" },
     ...(yer ? [{ p: yer }] : []), ...((x.basvuru.adimlar || []).length && !yer ? [{ ol: x.basvuru.adimlar }] : []),
     { p: (x.resmi && x.basvuru.online === x.resmi.sayfa ? "Resmi program sayfası: " : "Başvuru adresi: ") + (x.basvuru.online || x.url) },
-    ...((x.belgeler || []).length ? [{ h2: "Hazırlanması gereken belgeler" }, { ul: x.belgeler }] : []),
+    { h2: "Temel belgeler (çoğu başvuruda istenir)" }, { ul: TEMEL_BELGE.map(b => `${(values.belgeler || p?.belgeler || {})[b] ? "[Hazır]" : "[Eksik]"}  ${b}`) },
+    ...((x.belgeler || []).length ? [{ h2: "Bu destek için hazırlanacak belgeler" }, { ul: x.belgeler }] : []),
     ...(resmiBelge.length ? [{ h2: "Resmi belgeler (çağrı metni, genelge, özet form)" }, { ul: resmiBelge }] : []),
     ...(x.sayfa?.metin ? [{ h2: "Kurumun sayfasından" }, { p: x.sayfa.metin }, { small: "Kaynak: " + x.sayfa.url }] : []),
     { small: "Güncel koşulları ve son başvuru tarihini kurumun resmi sayfasından kontrol et. FonRota kamu kurumlarıyla resmi bağı olmayan bağımsız bir bilgilendirme platformudur." }
@@ -503,5 +570,5 @@ async function enablePush() {
   return true;
 }
 
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
 })();

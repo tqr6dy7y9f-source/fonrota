@@ -21,6 +21,7 @@ async function layout(page) {
       <button type="button" class="lang" id="lang" translate="no" aria-label="${D.lang() === "en" ? "Türkçeye geç" : "Switch to English"}">${D.lang() === "en" ? "TR" : "EN"}</button>
     </nav></div>`;
   $("#lang").onclick = () => D.setLang(D.lang() === "en" ? "tr" : "en");
+  karsBar();
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
@@ -234,14 +235,77 @@ function hazirlikHTML(x, p) {
   const ids = D.onKosullar(x); const h = (p && p.hazirlik) || {};
   const n = ids.filter(id => h[id]).length;
   return `<section class="sec hazir" data-hazir="${esc(x.id)}"><h3>Başvurmadan önce hazır olması gerekenler ${ids.length ? `<small>${n}/${ids.length} hazır</small>` : ""}</h3>
-    ${ids.map(id => { const k = D.ON_KOSUL[id]; return `<details class="hz${h[id] ? " ok" : ""}"><summary><label><input type="checkbox" data-hz="${id}"${h[id] ? " checked" : ""}> ${esc(k.ad)}</label></summary><p>${esc(k.nasil)}${k.link ? ` <a href="${esc(k.link)}" target="_blank" rel="noopener">Resmi sayfa ↗</a>` : ""}</p></details>`; }).join("")}
-    <details class="hz"><summary>Çoğu başvuruda istenen temel belgeler</summary><p>${D.TEMEL_BELGE.map(esc).join(" · ")}. Kesin liste her desteğin resmi belgelerinde (evrak listesi, genelge) yazar.</p></details></section>`;
+    ${ids.map(id => { const k = D.ON_KOSUL[id]; return `<details class="hz${h[id] ? " ok" : ""}"><summary><label><input type="checkbox" data-hz="${id}"${h[id] ? " checked" : ""}> ${esc(k.ad)}</label></summary><p>${D.terim(k.nasil)}${k.link ? ` <a href="${esc(k.link)}" target="_blank" rel="noopener">Resmi sayfa ↗</a>` : ""}</p></details>`; }).join("")}
+    <details class="hz belge"><summary>Temel belgeler <small>${D.TEMEL_BELGE.filter(b => ((p && p.belgeler) || {})[b]).length}/${D.TEMEL_BELGE.length} hazır</small></summary>
+      <div class="belge-liste">${D.TEMEL_BELGE.map(b => `<label><input type="checkbox" data-belge="${esc(b)}"${((p && p.belgeler) || {})[b] ? " checked" : ""}> ${esc(b)}</label>`).join("")}</div>
+      <p>Çoğu başvuruda istenir. Kesin liste her desteğin resmi belgelerinde (evrak listesi, genelge) yazar.</p></details></section>`;
 }
 function hazirlikBagla(kutu, x, yenile) {
+  $$("[data-belge]", kutu).forEach(i => i.onchange = async () => { const pr = await Store.profile() || {}; const b = { ...(pr.belgeler || {}), [i.dataset.belge]: i.checked }; await Store.saveProfile({ belgeler: b }); if (yenile) { yenile({ ...pr, belgeler: b }); const d = $(".hz.belge", kutu); if (d) d.open = true; } });
   $$("[data-hz]", kutu).forEach(i => {
     i.onclick = e => e.stopPropagation();
     i.onchange = async () => { const pr = await Store.profile() || {}; const h = { ...(pr.hazirlik || {}), [i.dataset.hz]: i.checked }; await Store.saveProfile({ hazirlik: h }); if (yenile) yenile({ ...pr, hazirlik: h }); };
   });
+}
+
+/* Bugün yapabileceğin ilk adım: eksik ön koşul > cevaplanmamış şartlar > hazırlık formu */
+function ilkAdim(x, p) {
+  const h = (p && p.hazirlik) || {}; const eks = D.onKosullar(x).find(id => !h[id]);
+  if (eks) return { t: "Önce: " + D.ON_KOSUL[eks].ad, d: D.ON_KOSUL[eks].nasil.split(/(?<=\.)\s/)[0] };
+  const s = sartDurum(x);
+  if (s === "hayir") return { t: "Bu desteğin bir şartına “Hayır” dedin", d: "Şu an uymuyor görünüyorsun. Şartın tam metnini kontrol et ya da başka desteklere bak.", kotu: true };
+  if (sartSatirlari(x).length && s !== "tam") return { t: "Resmi şartları cevapla", d: "“Kimler yararlanabilir?” maddelerini Evet / Hayır ile işaretle; bu desteğe uyup uymadığın netleşsin." };
+  return { t: "Hazırlık formunu indir ve başvur", d: `Bilgilerinle doldurulmuş formu indir, başvuruyu ${x.kurum} sisteminden yap.` };
+}
+function ilkAdimHTML(x, p) { const a = ilkAdim(x, p); return `<div class="ilk-adim${a.kotu ? " kotu" : ""}"><span>Bugün yapabileceğin ilk adım</span><b>${esc(a.t)}</b><p>${D.terim(a.d)}</p></div>`; }
+function eylemHTML(x) {
+  const k = D.LS.get("kars", []);
+  return `<div class="eylemler">
+    <button type="button" class="btn ghost sm" data-eylem="kars">${k.includes(x.id) ? "✓ Karşılaştırmada" : "⇄ Karşılaştırmaya ekle"}</button>
+    <button type="button" class="btn ghost sm" data-eylem="paylas">↗ Muhasebecime gönder</button>
+    ${tarihli(x) ? `<button type="button" class="btn ghost sm" data-eylem="takvim">📅 Takvime ekle</button>` : ""}
+  </div><div class="paylas-sec" hidden></div>`;
+}
+async function paylasMetni(x) { const p = await Store.profile() || {}; const url = D.siteUrl("destek.html?id=" + encodeURIComponent(x.id));
+  return { url, text: `Merhaba, ${p.firmaUnvani ? p.firmaUnvani + " için " : ""}şu desteğe başvurmayı düşünüyoruz: ${x.ad} (${x.kurum}). Resmi şartlar ve ayrıntılar: ${url}` }; }
+function paylasSecenek(kutu, m) {
+  const s = $(".paylas-sec", kutu) || kutu; s.hidden = false;
+  s.innerHTML = `<a class="btn ghost sm" href="https://wa.me/?text=${encodeURIComponent(m.text)}" target="_blank" rel="noopener">WhatsApp</a><a class="btn ghost sm" href="mailto:?subject=${encodeURIComponent("Devlet desteği hakkında")}&body=${encodeURIComponent(m.text)}">E-posta</a><button type="button" class="btn ghost sm" data-kopya>Bağlantıyı kopyala</button>`;
+  $("[data-kopya]", s).onclick = async e => { try { await navigator.clipboard.writeText(m.text); e.target.textContent = "Kopyalandı"; } catch { toast("Kopyalanamadı."); } };
+}
+function eylemBagla(kutu, x) {
+  $$("[data-eylem]", kutu).forEach(b => b.onclick = async () => {
+    const e = b.dataset.eylem;
+    if (e === "kars") { let k = D.LS.get("kars", []); if (k.includes(x.id)) k = k.filter(i => i !== x.id); else { if (k.length >= 3) { toast("En fazla 3 destek karşılaştırılabilir."); return; } k.push(x.id); } D.LS.set("kars", k); b.textContent = k.includes(x.id) ? "✓ Karşılaştırmada" : "⇄ Karşılaştırmaya ekle"; karsBar(); }
+    if (e === "takvim") { D.indir(`${x.id}-son-basvuru.ics`, D.icsDosya(x, D.siteUrl("destek.html?id=" + encodeURIComponent(x.id))), "text/calendar"); toast("Takvim dosyası indirildi; açınca takvimine eklenir."); }
+    if (e === "paylas") { const m = await paylasMetni(x); if (navigator.share) { try { await navigator.share({ title: x.ad, text: m.text }); return; } catch (err) { if (err && err.name === "AbortError") return; } } paylasSecenek(kutu, m); }
+  });
+}
+
+/* Karşılaştırma: en fazla 3 destek yan yana (alt çubuk tüm sayfalarda) */
+async function karsBar() {
+  let bar = document.getElementById("kars-bar");
+  if (!bar) { bar = Object.assign(document.createElement("div"), { id: "kars-bar", className: "kars-bar" }); document.body.append(bar);
+    const dl = Object.assign(document.createElement("dialog"), { id: "kars-dlg" }); dl.innerHTML = `<button type="button" class="g-kapat" aria-label="Kapat">×</button><div class="kars-icerik"></div>`; document.body.append(dl);
+    dl.querySelector(".g-kapat").onclick = () => dl.close(); dl.onclick = e => { if (e.target === dl) dl.close(); }; }
+  const k = D.LS.get("kars", []);
+  bar.hidden = !k.length;
+  bar.innerHTML = `<span>⇄ ${k.length} destek seçildi</span><button type="button" class="btn sm seal" id="kars-ac"${k.length < 2 ? " disabled title=\"En az 2 destek seç\"" : ""}>Karşılaştır</button><button type="button" class="btn sm ghost" id="kars-sil">Temizle</button>`;
+  $("#kars-sil", bar).onclick = () => { D.LS.set("kars", []); karsBar(); $$("[data-eylem=kars]").forEach(b => b.textContent = "⇄ Karşılaştırmaya ekle"); };
+  $("#kars-ac", bar).onclick = async () => {
+    const d = await D.data(); const p = await Store.profile(); const L = k.map(id => d.destekler.find(z => z.id === id)).filter(Boolean);
+    const bolum = (x, ad) => x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith(ad)) || {}).metin;
+    const satir = [["Kurum", x => esc(x.kurum)], ["Tür", x => esc(TUR[x.tur] || x.tur)], ["Destek oranı", x => esc(x.oran_metin || (x.destek_orani ? "%" + x.destek_orani : "Resmi metne bak")) + (x.geri_odemeli ? " (geri ödemeli)" : "")],
+      ["Son başvuru", x => tarihli(x) ? new Date(x.son_basvuru).toLocaleDateString("tr-TR") : x.resmi ? "Sürekli açık" : "Kurumun sayfasına bak"],
+      ["Kimler başvurabilir", x => esc(D.kitleMetni(x) || "Genel (şirketler / tüm işletmeler)")],
+      ["Ön koşullar", x => D.onKosullar(x).map(id => esc(D.ON_KOSUL[id].ad)).join("<br>") || "—"],
+      ["Sana uygunluk", x => p ? (D.LEVEL_TAG[D.check(x, p).level] || "—") + (sartDurum(x) === "tam" ? "<br><small>Tüm şartlara evet dedin</small>" : sartDurum(x) === "hayir" ? "<br><small>Bir şarta hayır dedin</small>" : "") : "Uygunluk testini yap"],
+      ["Nereye başvurulur", x => { const t = (bolum(x, "Başvuru yeri") || x.basvuru.online || "").split("\n")[0]; return D.terim(t.length > 240 ? t.slice(0, 240).replace(/\s+\S*$/, "") + "…" : t); }],
+      ["", x => `<a class="btn sm seal" ${link("destek", "id=" + x.id)}>Ayrıntı</a>`]];
+    const dl = document.getElementById("kars-dlg");
+    dl.querySelector(".kars-icerik").innerHTML = `<h2>Karşılaştırma</h2><div class="scroll-x"><table class="kars"><thead><tr><th></th>${L.map(x => `<th>${esc(x.ad)}</th>`).join("")}</tr></thead><tbody>${satir.map(([ad, f]) => `<tr><th>${ad}</th>${L.map(x => `<td>${f(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    dl.showModal();
+  };
 }
 
 /* Bir başvuru için gerekenler: resmi metindeki "Kimler yararlanabilir?" maddeleri tek tek sorulur (metin aynen). */
@@ -253,15 +317,16 @@ function gerekenlerHTML(x) {
   const satir = sartSatirlari(x); const cev = D.LS.get("sart:" + x.id, {});
   const bolum = ad => x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith(ad)) || {}).metin;
   const sorular = satir.map((r, i) => r.baslik ? `<p class="s-baslik">${esc(r.metin)}</p>` :
-    `<fieldset class="soru${r.alt ? " alt" : ""}"><legend>${esc(r.metin)}</legend>${[["e", "Evet"], ["h", "Hayır"], ["b", "Emin değilim"]].map(([v, t]) => `<label><input type="radio" name="s${i}" value="${v}"${cev[i] === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>`).join("");
-  return `<p class="crumb">${esc(x.kurum)}</p><h2 id="g-baslik">${esc(x.ad)}</h2>
+    `<fieldset class="soru${r.alt ? " alt" : ""}"><legend>${D.terim(r.metin)}</legend>${[["e", "Evet"], ["h", "Hayır"], ["b", "Emin değilim"]].map(([v, t]) => `<label><input type="radio" name="s${i}" value="${v}"${cev[i] === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>`).join("");
+  return `<p class="crumb">${esc(x.kurum)}</p><h2 id="g-baslik">${esc(x.ad)}</h2><div id="g-ilk"></div>
     <p class="small muted">${x.resmi ? `Sorular Bakanlığın özet bilgi formundaki “Kimler yararlanabilir?” maddelerinden <strong>aynen</strong> alındı.` : `Bu program için Bakanlığın özet formu yok; şartları kurumun sayfasından kontrol et.`}</p>
     ${satir.length ? `<h3>Bu şartları karşılıyor musun?</h3><form id="g-form">${sorular}</form><div id="g-sonuc" aria-live="polite"></div>` : ""}
     <div id="g-hazir"></div>
-    ${!satir.length && x.sayfa && x.sayfa.metin ? `<h3>Kurumun sayfasından</h3><div class="resmi-metin">${esc(x.sayfa.metin)}</div>` : ""}
-    ${bolum("Başvuru dönemi") ? `<h3>Başvuru dönemi</h3><div class="resmi-metin">${esc(bolum("Başvuru dönemi"))}</div>` : ""}
-    ${bolum("Başvuru yeri") ? `<h3>Nereye başvurulur?</h3><div class="resmi-metin">${esc(bolum("Başvuru yeri"))}</div>` : ""}
+    ${!satir.length && x.sayfa && x.sayfa.metin ? `<h3>Kurumun sayfasından</h3><div class="resmi-metin">${D.terim(x.sayfa.metin)}</div>` : ""}
+    ${bolum("Başvuru dönemi") ? `<h3>Başvuru dönemi</h3><div class="resmi-metin">${D.terim(bolum("Başvuru dönemi"))}</div>` : ""}
+    ${bolum("Başvuru yeri") ? `<h3>Nereye başvurulur?</h3><div class="resmi-metin">${D.terim(bolum("Başvuru yeri"))}</div>` : ""}
     ${x.resmi && x.resmi.belgeler.length ? `<h3>Resmi belgeler</h3><ul class="docs">${x.resmi.belgeler.map(d => `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.ad)}</a></li>`).join("")}</ul>` : ""}
+    ${eylemHTML(x)}
     <div class="actions"><a class="btn seal" ${link("destek", "id=" + x.id)}>Tüm ayrıntılar</a><a class="btn ghost" href="${esc((x.resmi && x.resmi.sayfa) || (x.sayfa && x.sayfa.url) || x.url)}" target="_blank" rel="noopener">Resmi sayfa ↗</a></div>`;
 }
 // Kullanıcının resmi şartlara verdiği cevaplara göre durum: "tam" (hepsine evet), "hayir" (en az bir hayır) veya null
@@ -280,7 +345,9 @@ function kaydolHTML(n, kalan) {
 }
 function gerekenlerBagla(x, kutu) {
   const hz = $("#g-hazir", kutu);
-  if (hz) { const ciz = pr => { hz.innerHTML = hazirlikHTML(x, pr); hazirlikBagla(hz, x, ciz); }; Store.profile().then(ciz); }
+  const ilk = $("#g-ilk", kutu);
+  if (hz) { const ciz = pr => { hz.innerHTML = hazirlikHTML(x, pr); hazirlikBagla(hz, x, ciz); if (ilk) ilk.innerHTML = ilkAdimHTML(x, pr); }; Store.profile().then(ciz); }
+  eylemBagla(kutu, x);
   const f = $("#g-form", kutu); if (!f) return;
   const satir = sartSatirlari(x);
   const ozet = () => {
@@ -293,7 +360,7 @@ function gerekenlerBagla(x, kutu) {
       : b ? `<div class="g-durum mid"><b>${b} şarttan emin değilsin.</b> Bunları kurumdan veya resmi metinden teyit et.</div>`
       : `<div class="g-durum ok"><b>Tüm şartları karşıladığını belirttin.</b> Kesin karar kurumun değerlendirmesiyle verilir. <a ${link("basvuru", "id=" + x.id)}>Başvuruya hazırla →</a></div>`;
   };
-  f.onchange = ozet; ozet();
+  f.onchange = () => { ozet(); Store.profile().then(pr => { const ilk = $("#g-ilk", kutu); if (ilk) ilk.innerHTML = ilkAdimHTML(x, pr); }); }; ozet();
 }
 P.sonuclar = async () => {
   const p = await Store.profile(); const d = await D.data();
@@ -314,6 +381,10 @@ P.sonuclar = async () => {
   $$("#view button").forEach(b => { b.setAttribute("aria-pressed", b.dataset.v === view); b.onclick = () => go("sonuclar", "gorunum=" + b.dataset.v); });
   const all = [...fit, ...mid];
   const u = await Store.user(); const misafir = !u;
+  if (!misafir) { const dl = D.profilDoluluk(p); if (dl.yuzde < 100) $("#profil").insertAdjacentHTML("beforeend", `<div class="doluluk"><div class="dol-bar"><i style="width:${dl.yuzde}%"></i></div><span>Profilin %${dl.yuzde} dolu. Eksikler hazırlık formuna boş geçer: ${esc(dl.eksik.slice(0, 3).join(", "))}${dl.eksik.length > 3 ? " ve " + (dl.eksik.length - 3) + " alan daha" : ""}. <a ${link("hesap", "sekme=profil")}>Tamamla</a></span></div>`); }
+  // Neden elendi? (kayıtlı kullanıcıya elenen destekler ve sebepleri)
+  const elenen = rows.filter(r => r.c.level === "no");
+  if (!misafir && elenen.length) $("#elenen").innerHTML = `<details class="elenen"><summary>Elenen ${elenen.length} destek ve neden elendikleri</summary><ul>${elenen.map(r => `<li><a ${link("destek", "id=" + r.x.id)}>${esc(r.x.ad)}</a><span>${esc(r.c.r.filter(q => q.hard && !q.ok).map(q => q.t.replace(/^Kimler başvurabilir: /, "Yalnızca ")).join(" · "))}</span></li>`).join("")}</ul></details>`;
   Object.entries(p.sartlar || {}).forEach(([id, c]) => { if (!D.LS.get("sart:" + id)) D.LS.set("sart:" + id, c); });
   const hedefeUy = r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a));
   // Misafire hedefine uyanlardan en uyumlu 2 tanesi açık gösterilir (resmi özeti olanlar önce)
@@ -347,7 +418,7 @@ P.sonuclar = async () => {
         const tam = all.filter(r => sartDurum(r.x) === "tam"), hayir = all.filter(r => sartDurum(r.x) === "hayir").length;
         $("#onayli").hidden = false;
         $("#onayli").innerHTML = `<h2>Şartlarını karşıladığın destekler <small>${tam.length}</small></h2>` + (tam.length
-          ? `<div class="onayli-liste">${tam.map(({ x }) => `<button type="button" class="kart" data-id="${esc(x.id)}" style="border-left-color:var(--ok)"><span class="k-ad">${esc(x.ad)}</span><span class="k-tutar">${esc(amount(x, num($("#mm-butce").value)))}</span><span class="k-alt">${esc(x.kurum)}</span></button>`).join("")}</div>`
+          ? `<div class="onayli-liste">${tam.map(({ x }) => `<button type="button" class="kart" data-id="${esc(x.id)}" style="border-left-color:var(--ok)"><span class="k-ad">${esc(x.ad)}</span><span class="k-tutar">${esc(amount(x, num($("#mm-butce").value)))}</span><span class="k-alt">${esc(x.kurum)}</span><span class="k-adim">→ ${esc(ilkAdim(x, p).t)}</span></button>`).join("")}</div>`
           : `<p class="small muted">Henüz yok. Aşağıdan bir desteğe tıkla ve resmi şartlarını cevapla; tüm şartlara “Evet” dediğin destekler burada toplanır.</p>`)
           + (hayir ? `<p class="small muted">Şartlarına “Hayır” dediğin ${hayir} destek sütunlardan kaldırıldı. <a href="#" id="hayir-goster">${F.hayirGoster ? "Gizle" : "Göster"}</a></p>` : "");
         const hg = $("#hayir-goster"); if (hg) hg.onclick = e => { e.preventDefault(); F.hayirGoster = !F.hayirGoster; draw(); };
@@ -407,13 +478,14 @@ P.destek = async () => {
         <div><dt>Son başvuru</dt><dd>${tarihli(x) ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : x.sayfa ? "Kurumun sayfasına bak" : "Sürekli / çağrıya bağlı"}</dd></div>
       </dl>
       <p style="font-size:17px">${esc(x.ozet)}</p>
+      <div id="ilk-adim"></div>
       <div id="hazir-kutu"></div>
       ${x.sayfa ? `<section class="sec resmi"><h2>Kurumun sayfasından</h2>
         <p class="small muted">Bu program Bakanlığın Destekler Platformu’nda yok; bilgiler <a href="${esc(x.sayfa.url)}" target="_blank" rel="noopener">${esc(x.sayfa.kaynak)} sayfasından</a> otomatik alındı ve <strong>değiştirilmeden</strong> gösteriliyor. Başvuru tarihleri ve şartlar için kurumun sayfasını mutlaka kontrol et. Son kontrol: ${new Date(x.sayfa.kontrol).toLocaleDateString("tr-TR")}.</p>
-        ${x.sayfa.metin ? `<div class="resmi-metin">${esc(x.sayfa.metin)}</div>` : ""}</section>` : ""}
+        ${x.sayfa.metin ? `<div class="resmi-metin">${D.terim(x.sayfa.metin)}</div>` : ""}</section>` : ""}
       ${x.resmi ? `<section class="sec resmi"><h2>Resmi özet bilgi formu</h2>
         <p class="small muted">Aşağıdaki metin <a href="${esc(x.resmi.sayfa)}" target="_blank" rel="noopener">${esc(x.resmi.kaynak)}</a> sayfasındaki özet bilgi formundan <strong>değiştirilmeden</strong> alınmıştır.${x.resmi.guncelleme ? ` Kaynağın güncellenme tarihi: ${new Date(x.resmi.guncelleme).toLocaleDateString("tr-TR")}.` : ""} Son kontrol: ${new Date(x.resmi.kontrol).toLocaleDateString("tr-TR")}.</p>
-        ${x.resmi.bolumler.length ? x.resmi.bolumler.map(b => `<h3>${esc(b.baslik)}</h3><div class="resmi-metin">${esc(b.metin)}</div>`).join("") : `<p>Bu program için platformda özet bilgi formu yok. Ayrıntılar için aşağıdaki resmi belgelere bak.</p>`}
+        ${x.resmi.bolumler.length ? x.resmi.bolumler.map(b => `<h3>${esc(b.baslik)}</h3><div class="resmi-metin">${D.terim(b.metin)}</div>`).join("") : `<p>Bu program için platformda özet bilgi formu yok. Ayrıntılar için aşağıdaki resmi belgelere bak.</p>`}
         ${x.resmi.belgeler.length ? `<h3>Resmi belgeler</h3><ul class="docs">${x.resmi.belgeler.map(d => `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.ad)}</a></li>`).join("")}</ul>` : ""}</section>` : ""}
       <section class="sec"><h2>${p ? "Sana uygunluk" : "Başvuru koşulları"}</h2>
         <ul class="fit">${c.r.map(r => `<li class="${r.ok ? "y" : "n"}">${esc(r.t)}</li>`).join("")}${x.resmi || x.sayfa ? "" : (x.kosullar || []).map(k => `<li class="q">${esc(k)}</li>`).join("")}</ul>
@@ -440,8 +512,9 @@ P.destek = async () => {
         <a class="btn seal" ${link("basvuru", "id=" + x.id)}>Başvuruya hazırla</a>
         <button class="btn ghost" type="button" id="sec">${secim.includes(x.id) ? "Rapordan çıkar" : "Özet rapora ekle"}</button>
         <a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">Kurumun sayfası ↗</a>
-      </div></aside></div>`;
-  { const hk = $("#hazir-kutu"); const ciz = pr => { hk.innerHTML = hazirlikHTML(x, pr); hazirlikBagla(hk, x, ciz); }; ciz(p); }
+      </div><div id="eylem-kutu">${eylemHTML(x)}</div></aside></div>`;
+  { const hk = $("#hazir-kutu"); const ciz = pr => { hk.innerHTML = hazirlikHTML(x, pr); hazirlikBagla(hk, x, ciz); $("#ilk-adim").innerHTML = ilkAdimHTML(x, pr); }; ciz(p); }
+  eylemBagla($("#eylem-kutu"), x);
   $("#sec").onclick = () => { let s = D.LS.get("secim", []); s = s.includes(x.id) ? s.filter(i => i !== x.id) : [...s, x.id]; D.LS.set("secim", s); $("#sec").textContent = s.includes(x.id) ? "Rapordan çıkar" : "Özet rapora ekle"; toast(s.includes(x.id) ? "Özet rapora eklendi." : "Rapordan çıkarıldı."); };
   if ($("#oz")) {
     const B = $("#oz-b"); B.value = Math.min(+B.max, Math.max(50000, num(p && p.projeButce) || Math.min(1e6, +B.max / 2)));
@@ -492,6 +565,7 @@ P.basvuru = async () => {
       <div class="actions" style="flex-direction:column;margin:12px 0">
         ${pdfOk ? `<button class="btn seal" type="button" id="dl-form">Formu doldur ve indir (PDF)</button>` : ""}
         <button class="btn ${pdfOk ? "ghost" : "seal"}" type="button" id="dl-info">${pdfOk ? "Hazırlık formunu da indir (PDF)" : "Hazırlık formunu indir (PDF)"}</button>
+        <button class="btn ghost" type="button" id="muhasebe">↗ Muhasebecime gönder (PDF ile)</button><div class="paylas-sec" id="muh-sec" hidden></div>
         ${!pdfOk && mode !== "bilgi" ? `<a class="btn ghost" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">Kurumun başvuru sitesini aç ↗</a>` : ""}
       </div>
       <label class="small muted" for="durum">Başvuru durumu</label>
@@ -505,6 +579,15 @@ P.basvuru = async () => {
       try { await persist(); const { bytes, filled } = await D.fillForm(x, values); if (await D.saveFile(`${x.id}-basvuru-formu.pdf`, bytes)) { await persist("Form hazır"); app.durum = "Form hazır"; $("#durum").value = "Form hazır"; toast(filled ? `${filled} alan dolduruldu. İmzalayıp kuruma yükle.` : "Form doldurulamadı; bilgiler forma ek sayfa olarak eklendi."); } }
       catch (err) { pdfOk = false; renderAct(); toast("Form şu an alınamadı. Online başvuru rehberine geçtik."); }
       finally { if ($("#dl-form")) { $("#dl-form").disabled = false; $("#dl-form").textContent = "Formu doldur ve indir (PDF)"; } }
+    };
+    $("#muhasebe").onclick = async () => {
+      const b = $("#muhasebe"); b.disabled = true;
+      try { await persist(); const bytes = await D.infoPdf(x, values, p); const m = await paylasMetni(x);
+        const file = new File([bytes], `${x.id}-basvuru-hazirlik-formu.pdf`, { type: "application/pdf" });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) { try { await navigator.share({ title: x.ad, text: m.text, files: [file] }); b.disabled = false; return; } catch (err) { if (err && err.name === "AbortError") { b.disabled = false; return; } } }
+        await D.saveFile(file.name, bytes); paylasSecenek($("#muh-sec"), { ...m, text: m.text + " (Hazırlık formunu ekte gönderiyorum.)" }); toast("Form indirildi; mesajı gönderirken PDF’i ekle.");
+      } catch { toast("Gönderilemedi. Tekrar dene."); }
+      b.disabled = false;
     };
     $("#dl-info").onclick = async () => { const b = $("#dl-info"); b.disabled = true; try { await persist(); const bytes = await D.infoPdf(x, values, p); await D.saveFile(`${x.id}-basvuru-hazirlik-formu.pdf`, bytes); } catch { toast("Hazırlık formu oluşturulamadı. Tekrar dene."); } b.disabled = false; };
   };
@@ -608,7 +691,8 @@ P.hesap = async () => {
   const tab = $("#tab");
   if (s === "profil") {
     const alan = ["firmaUnvani", "vkn", "vergiDairesi", "sirketTuru", "kurulusYili", "naceKodu", "calisan", "ciro", "yetkili", "telefon", "eposta", "il", "adres"];
-    tab.innerHTML = `<form id="pf" class="narrow"><p class="muted">Ölçeğin: <strong>${esc(OLCEK[p.olcek] || "henüz belirlenmedi")}</strong>. Sektör ve ihtiyaçlarını değiştirmek için <a ${link("bul")}>uygunluk testini</a> tekrar yap.</p><div class="row">${alan.map(k => fieldHTML(k, p[k])).join("")}</div>
+    const dl = D.profilDoluluk(p);
+    tab.innerHTML = `<form id="pf" class="narrow"><div class="doluluk"><div class="dol-bar"><i style="width:${dl.yuzde}%"></i></div><span>Profilin %${dl.yuzde} dolu.${dl.eksik.length ? ` Eksik: ${esc(dl.eksik.join(", "))}. Eksik alanlar başvuru hazırlık formlarına boş geçer.` : " Tüm bilgiler tamam."}</span></div><p class="muted">Ölçeğin: <strong>${esc(OLCEK[p.olcek] || "henüz belirlenmedi")}</strong>. Sektör ve ihtiyaçlarını değiştirmek için <a ${link("bul")}>uygunluk testini</a> tekrar yap.</p><div class="row">${alan.map(k => fieldHTML(k, p[k])).join("")}</div>
       <div class="actions"><button class="btn seal" type="submit">Kaydet</button><button class="btn ghost" type="button" id="cikis">Çıkış yap</button></div></form>`;
     $("#pf").onsubmit = async e => { e.preventDefault(); await Store.saveProfile(formValues(e.target)); toast("Profilin kaydedildi."); };
     $("#cikis").onclick = async () => { await Store.signOut(); go("index"); };
@@ -623,7 +707,7 @@ P.hesap = async () => {
     tab.innerHTML = `<div class="panel" style="margin-bottom:18px"><h3>Bildirim ayarları</h3>
       <label class="check"><input type="checkbox" id="bAnlik" ${p.bildirimAnlik ? "checked" : ""}> Anlık bildirim (tarayıcı)${izin === "denied" ? ' <span class="missing small">Tarayıcıda engelli</span>' : ""}</label>
       <label class="check"><input type="checkbox" id="bEposta" ${p.bildirimEposta ? "checked" : ""}> E-posta (${esc(p.eposta || u.email)})</label>
-      <p class="small muted">Her sabah yeni destekler taranır; profiline uyan bir destek çıkınca haber veririz.</p></div>
+      <p class="small muted">Destekler her hafta taranır; profiline uyan yeni bir destek çıkınca haber veririz.</p></div>
       ${notifs.length ? notifs.map(n => { const x = d.destekler.find(z => z.id === n.id); return x ? `<div class="notif ${n.read ? "read" : "unread"}"><span class="dot"></span><div><b>Sana uygun yeni destek: ${esc(x.ad)}</b><div class="small muted">${esc(x.kurum)} · ${new Date(n.tarih).toLocaleDateString("tr-TR")}</div><a class="small" ${link("destek", "id=" + x.id)}>Ayrıntıya bak</a></div></div>` : ""; }).join("") : `<p class="muted">Henüz bildirim yok. Profiline uyan yeni bir destek yayımlandığında burada göreceksin.</p>`}`;
     $("#bAnlik").onchange = async e => { if (e.target.checked && !(await D.enablePush())) e.target.checked = false; await Store.saveProfile({ bildirimAnlik: e.target.checked }); };
     $("#bEposta").onchange = async e => { await Store.saveProfile({ bildirimEposta: e.target.checked }); toast(e.target.checked ? "E-posta bildirimleri açık." : "E-posta bildirimleri kapalı."); };
