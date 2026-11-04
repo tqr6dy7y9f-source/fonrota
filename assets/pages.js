@@ -13,9 +13,11 @@ async function layout(page) {
   top.innerHTML = `<div class="wrap">
     <a class="brand" ${link("index")}><i aria-hidden="true"></i><span>${esc(C.SITE_ADI)}</span></a>
     <nav class="nav" aria-label="Ana menü">
-      <a ${link("destekler")}${cur("destekler")}>Tüm destekler</a>
-      <a ${link("bul")}${cur("bul")} class="hide-s">Uygunluk testi</a>
-      <a ${link("hesap")}${cur("hesap")} id="nav-hesap">${u ? "Hesabım" : "Giriş yap"}</a>
+      <a ${D.BUNDLE ? link("index") : 'href="index.html#nasil"'} class="hide-m">Nasıl çalışır?</a>
+      <a ${link("destekler")}${cur("destekler")} class="hide-s">Tüm destekler</a>
+      <a ${link("bul")}${cur("bul")} class="hide-m">Uygunluk testi</a>
+      ${u ? `<a ${link("hesap")}${cur("hesap")} id="nav-hesap">Hesabım</a>`
+          : `<a ${link("hesap", "sekme=giris")}${cur("hesap")} id="nav-hesap">Giriş yap</a><a class="btn sm seal nav-cta" ${link("hesap", "sekme=kayit")}><span class="uzun">Ücretsiz hesap aç</span><span class="kisa">Hesap aç</span></a>`}
       <button type="button" class="lang" id="lang" translate="no" aria-label="${D.lang() === "en" ? "Türkçeye geç" : "Switch to English"}">${D.lang() === "en" ? "TR" : "EN"}</button>
     </nav></div>`;
   $("#lang").onclick = () => D.setLang(D.lang() === "en" ? "tr" : "en");

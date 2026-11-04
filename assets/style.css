@@ -280,3 +280,19 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 .onayli{background:var(--ok-soft);border-radius:12px;padding:12px 14px;margin:14px 0}
 .onayli h2{font-size:18px;margin:0 0 8px}.onayli h2 small{font-size:13px;background:var(--surface);border-radius:99px;padding:1px 9px;margin-left:6px}
 .onayli-liste{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+
+/* Üst menü: kayıt düğmesi */
+.nav .nav-cta{color:#1b1305;margin-left:4px;padding:8px 14px;white-space:nowrap}
+.nav .nav-cta:hover{background:var(--seal);filter:brightness(1.05)}
+.nav .nav-cta .kisa{display:none}
+@media (max-width:900px){.nav .hide-m{display:none}}
+@media (max-width:600px){.nav .nav-cta{padding:7px 10px;font-size:13.5px}.nav .nav-cta .uzun{display:none}.nav .nav-cta .kisa{display:inline}}
+/* Ana sayfa: kilitli sonuç vaadiyle kayıt bölümü */
+.kaydol-kutu{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:center;background:var(--surface);border:1px solid var(--seal);border-radius:16px;padding:26px 28px;margin:36px 0 10px;box-shadow:0 8px 30px rgba(18,52,59,.07)}
+.kaydol-kutu h2{margin:0 0 8px}.kaydol-kutu p{margin:0 0 12px;font-size:17px}
+.tik{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.tik li{padding-left:28px;position:relative;font-size:15.5px}
+.tik li::before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--ok-soft);color:var(--ok);font-weight:700;font-size:13px;display:grid;place-items:center}
+.kaydol-eylem{display:flex;flex-direction:column;gap:10px;align-items:stretch;text-align:center}
+.kaydol-eylem .btn{font-size:17px;padding:14px 20px}
+@media (max-width:760px){.kaydol-kutu{grid-template-columns:1fr;padding:22px 18px}}
