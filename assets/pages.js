@@ -107,7 +107,9 @@ P.destekler = async () => {
     const p = st.il || st.olcek ? { ...(prof || {}), il: st.il, olcek: st.olcek } : prof;
     let rows = d.destekler.map(x => ({ x, c: D.check(x, p) })).filter(({ x }) => (!st.tur || x.tur === st.tur) && (!st.q || D.low(x.ad + " " + x.kurum + " " + x.ozet).includes(D.low(st.q))));
     rows.sort((a, b) => st.sort === "tarih" ? (a.x.son_basvuru || "9999").localeCompare(b.x.son_basvuru || "9999") : st.sort === "tutar" ? (b.x.ust_limit || 0) - (a.x.ust_limit || 0) : b.c.score - a.c.score);
-    $("#count").textContent = `${rows.length} destek listeleniyor` + (p ? `, ${rows.filter(r => r.c.level === "ok").length} tanesi sana uygun.` : ".");
+    const hedefe = r => (prof?.amaclar || []).some(a => (r.x.amac || []).includes(a));
+    $("#count").innerHTML = `${rows.length} destek listeleniyor.` + (p ? ` Uygunluk testindeki bilgilerine göre <strong>${rows.filter(r => r.c.level === "ok" && hedefe(r)).length}</strong> tanesi hedefine uyuyor ve ölçeğin elenmiyor. Kesin şartlar her desteğin resmi metninde. <a href="#" id="profil-sil">Test bilgilerimi sil</a>` : "");
+    const ps = $("#profil-sil"); if (ps) ps.onclick = async e => { e.preventDefault(); D.LS.del("profile"); D.LS.del("draft"); D.LS.del("mmFiltre"); toast("Test bilgilerin bu tarayıcıdan silindi."); setTimeout(() => location.reload(), 600); };
     $("#list").innerHTML = rows.length ? rows.map(r => itemRow(r.x, r.c)).join("") : `<li class="empty">Bu filtrelerle eşleşen destek yok.</li>`;
   };
   $$("#f-tur .chip").forEach(b => b.onclick = () => { $$("#f-tur .chip").forEach(c => c.setAttribute("aria-pressed", c === b)); st.tur = b.dataset.v; render(); });
@@ -234,8 +236,9 @@ P.sonuclar = async () => {
   const rows = d.destekler.map(x => ({ x, c: D.check(x, p) })).sort((a, b) => b.c.score - a.c.score);
   const fit = rows.filter(r => r.c.level === "ok"), mid = rows.filter(r => r.c.level === "mid");
   const secim = D.LS.get("secim");
-  $("#baslik").textContent = `Sana uygun ${fit.length} destek bulduk.`;
-  $("#profil").innerHTML = `${esc(OLCEK[p.olcek])}, ${esc((p.sektorler || []).map(s => SEKTOR[s]).join(", ") || "tüm sektörler")}, ${esc(p.il)}. <a ${link("bul")}>Bilgileri değiştir</a>` + (mid.length ? `<br>${mid.length} destek de kısmen uygun: bir koşulu henüz karşılamıyorsun.` : "");
+  const hedefN = all => all.filter(r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a))).length;
+  $("#baslik").textContent = `Hedefine uyan ${hedefN(fit)} destek bulduk.`;
+  $("#profil").innerHTML = `${esc(OLCEK[p.olcek])}, ${esc((p.sektorler || []).map(s => SEKTOR[s]).join(", ") || "tüm sektörler")}, ${esc(p.il)}. <a ${link("bul")}>Bilgileri değiştir</a>` + (mid.length ? `<br>${mid.length} destek de kısmen uygun: bir koşulu henüz karşılamıyorsun.` : "") + `<br><span class="small">Ön eleme ölçek, il ve hedefe göre yapılır. Kesin başvuru şartları için her desteğin resmi metnine bak.</span>`;
   const kurumAdi = k => k.replace(/^Türk Eximbank$/, "Eximbank").replace(/ ve anlaşmalı bankalar$/, "").replace(/^SGK \/ İŞKUR$/, "SGK");
   const okN = g => g.items.filter(r => r.c.level === "ok").length;
   const groupBy = list => { const m = {}; list.forEach(r => { const k = kurumAdi(r.x.kurum); (m[k] = m[k] || []).push(r); }); return Object.entries(m).map(([k, items]) => ({ k, items: items.sort((a, b) => (a.c.level === "ok" ? 0 : 1) - (b.c.level === "ok" ? 0 : 1) || b.c.score - a.c.score) })).sort((a, b) => okN(b) - okN(a) || b.items.length - a.items.length); };

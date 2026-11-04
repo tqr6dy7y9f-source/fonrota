@@ -195,7 +195,7 @@ function check(x, p) {
   const overlap = (x.amac || []).filter(a => (p.amaclar || []).includes(a)).length;
   return { level, r, score: ({ ok: 100, mid: 60, none: 40, no: 0 })[level] + overlap * 12 + (x.il.includes("tumu") ? 0 : 6) };
 }
-const LEVEL_TAG = { ok: `<span class="tag t-ok">Uygun</span>`, mid: `<span class="tag t-mid">Kısmen uygun</span>`, no: `<span class="tag t-no">Uygun değil</span>`, none: "" };
+const LEVEL_TAG = { ok: `<span class="tag t-ok">Uygun olabilir</span>`, mid: `<span class="tag t-mid">Kısmen uygun</span>`, no: `<span class="tag t-no">Uygun değil</span>`, none: "" };
 function daysLeft(s) { return s ? Math.ceil((new Date(s + "T23:59") - new Date()) / 864e5) : null; }
 
 /* ---------- Kural tabanlı iş fikri analizi (yapay zekâ yoksa) ---------- */
