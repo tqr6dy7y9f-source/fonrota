@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Last-Modified: Mon, 02 Nov 2026 07:10:51 GMT
+Accept-Ranges: bytes
+ETag: "73d6464b996add1:0"
+Date: Wed, 04 Nov 2026 06:04:44 GMT
+Content-Length: 2496
+Set-Cookie: STB=!zFLkAE/KCVqyeFyt+CwBHklDhOphiKUSeHXCS6hK7f1fPSD18cje3uUsv/mH4eNpKpkgWSvWvWV0oQ==; expires=Wed, 04-Nov-2026 06:34:44 GMT; path=/; Httponly; Secure
+Set-Cookie: TS0161cd13=01f56eb35b69f6c39012f43a2b650ee42fc33ee189762a9c7734d99a104d57aa0019499c71bd4baca08d52932ca966438a3adb081f60fc67f5cc7d8e16477a0fd0595f8e98; Path=/; Domain=.www.sanayi.gov.tr; Secure; HttpOnly
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=157680000; includeSubDomains; preload
+

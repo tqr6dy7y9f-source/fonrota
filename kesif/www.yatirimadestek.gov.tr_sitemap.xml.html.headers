@@ -1,0 +1,14 @@
+HTTP/2 301 
+alt-svc: h3=":443"; ma=2592000
+location: https://yatirimadestek.gov.tr/sitemap.xml
+content-length: 17
+date: Wed, 04 Nov 2026 06:04:41 GMT
+
+HTTP/2 200 
+alt-svc: h3=":443"; ma=2592000
+cache-control: public, max-age=3600
+content-type: application/xml; charset=utf-8
+date: Wed, 04 Nov 2026 06:04:42 GMT
+server: nginx
+content-length: 668186
+
