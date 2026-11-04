@@ -101,9 +101,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
-   "finansman",
-   "kurulus"
+   "arge"
   ],
   "olcek": [
    "mikro",
@@ -192,8 +190,7 @@
   "oran_metin": null,
   "amac": [
    "ihracat",
-   "finansman",
-   "kurulus"
+   "finansman"
   ],
   "olcek": [
    "mikro",
@@ -357,8 +354,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "dijital",
    "ihracat"
   ],
   "olcek": [
@@ -461,8 +456,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "ihracat",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -552,8 +546,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "ihracat",
    "vergi"
   ],
   "olcek": [
@@ -890,9 +882,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "istihdam",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -1094,9 +1084,7 @@
   "oran_metin": "%10–%90",
   "amac": [
    "dijital",
-   "ihracat",
-   "istihdam",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -1192,10 +1180,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "arge",
-   "dijital",
-   "istihdam",
    "kurulus"
   ],
   "olcek": [
@@ -1304,11 +1288,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "arge",
-   "dijital",
-   "istihdam",
-   "kurulus"
+   "arge"
   ],
   "olcek": [
    "mikro",
@@ -1410,9 +1390,7 @@
   "amac": [
    "yatirim",
    "ihracat",
-   "istihdam",
-   "vergi",
-   "kurulus"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -1698,8 +1676,7 @@
   "oran_metin": "%50–%75",
   "amac": [
    "dijital",
-   "ihracat",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -2052,7 +2029,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
    "finansman"
   ],
   "olcek": [
@@ -2144,8 +2120,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "istihdam",
-   "kurulus"
+   "istihdam"
   ],
   "olcek": [
    "mikro",
@@ -2438,12 +2413,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "ihracat",
-   "istihdam",
-   "finansman",
-   "vergi",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -2637,10 +2607,8 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "arge",
    "finansman",
-   "yesil",
-   "kurulus"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -2739,7 +2707,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "kurulus"
+   "istihdam"
   ],
   "olcek": [
    "mikro",
@@ -2841,8 +2809,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "istihdam",
-   "kurulus"
+   "istihdam"
   ],
   "olcek": [
    "mikro",
@@ -2938,7 +2905,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
    "finansman",
    "kurulus"
   ],
@@ -3477,8 +3443,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
-   "dijital",
    "ihracat",
    "kurulus"
   ],
@@ -3751,8 +3715,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "istihdam",
-   "kurulus"
+   "istihdam"
   ],
   "olcek": [
    "mikro",
@@ -3943,7 +3906,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "kurulus"
+   "istihdam"
   ],
   "olcek": [
    "mikro",
@@ -4139,7 +4102,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "dijital",
    "ihracat",
    "yesil"
   ],
@@ -4485,8 +4447,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "finansman"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -4731,7 +4692,6 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "ihracat",
    "finansman"
   ],
   "olcek": [
@@ -4915,8 +4875,8 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "kurulus"
+   "istihdam",
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -5016,9 +4976,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
    "ihracat",
-   "vergi",
    "kurulus"
   ],
   "olcek": [
@@ -5120,8 +5078,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
-   "istihdam",
    "vergi"
   ],
   "olcek": [
@@ -5414,7 +5370,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
+   "istihdam",
    "finansman"
   ],
   "olcek": [
@@ -5504,8 +5460,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "finansman"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -5593,7 +5548,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "vergi",
+   "istihdam",
    "kurulus"
   ],
   "olcek": [
@@ -5695,8 +5650,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "istihdam",
-   "kurulus"
+   "istihdam"
   ],
   "olcek": [
    "mikro",
@@ -5798,12 +5752,8 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
    "arge",
-   "dijital",
-   "istihdam",
-   "yesil",
-   "kurulus"
+   "yesil"
   ],
   "olcek": [
    "mikro",
@@ -6093,8 +6043,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "vergi",
-   "kurulus"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -6195,7 +6144,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
    "ihracat"
   ],
   "olcek": [
@@ -6459,8 +6407,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "finansman"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -6561,10 +6508,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "arge",
-   "istihdam",
-   "kurulus"
+   "arge"
   ],
   "olcek": [
    "mikro",
@@ -6744,9 +6688,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "ihracat",
-   "finansman"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -6899,9 +6841,7 @@
   "oran_metin": null,
   "amac": [
    "arge",
-   "ihracat",
-   "istihdam",
-   "vergi"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -7195,9 +7135,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
-   "ihracat",
-   "istihdam"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -7299,8 +7237,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "yesil",
-   "kurulus"
+   "yesil"
   ],
   "olcek": [
    "mikro",
@@ -7471,7 +7408,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -7646,7 +7583,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "dijital",
    "ihracat",
    "finansman"
   ],
@@ -7739,7 +7675,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "kurulus"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -7864,9 +7800,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "arge",
-   "dijital",
    "ihracat",
    "istihdam",
    "kurulus"
@@ -7972,11 +7905,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "arge",
-   "istihdam",
-   "finansman",
-   "vergi",
-   "kurulus"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -8081,7 +8010,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
    "finansman"
   ],
   "olcek": [
@@ -8174,10 +8102,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "arge",
-   "dijital",
    "ihracat",
-   "yesil",
    "kurulus"
   ],
   "olcek": [
@@ -8282,9 +8207,7 @@
   "geri_odemeli": false,
   "oran_metin": "%25–%75",
   "amac": [
-   "arge",
-   "yesil",
-   "kurulus"
+   "arge"
   ],
   "olcek": [
    "mikro",
@@ -8402,10 +8325,8 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
    "ihracat",
-   "finansman",
-   "kurulus"
+   "finansman"
   ],
   "olcek": [
    "mikro",
@@ -8680,10 +8601,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "ihracat",
-   "istihdam",
-   "yesil",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -8835,11 +8753,7 @@
   "geri_odemeli": false,
   "oran_metin": "%50–%100",
   "amac": [
-   "dijital",
    "ihracat",
-   "istihdam",
-   "finansman",
-   "vergi",
    "kurulus"
   ],
   "olcek": [
@@ -8940,8 +8854,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -9196,10 +9109,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
-   "dijital",
-   "ihracat",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -9441,8 +9351,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "arge",
-   "kurulus"
+   "arge"
   ],
   "olcek": [
    "mikro",
@@ -9740,10 +9649,7 @@
   "geri_odemeli": true,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "arge",
    "finansman",
-   "vergi",
    "kurulus"
   ],
   "olcek": [
@@ -9926,8 +9832,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "kurulus"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -10029,7 +9934,7 @@
   "oran_metin": null,
   "amac": [
    "yatirim",
-   "vergi"
+   "istihdam"
   ],
   "olcek": [
    "mikro",
@@ -10141,8 +10046,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
-   "finansman"
+   "ihracat"
   ],
   "olcek": [
    "mikro",
@@ -10344,10 +10248,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "ihracat",
-   "istihdam",
-   "finansman"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -10441,7 +10342,7 @@
   "amac": [
    "arge",
    "ihracat",
-   "istihdam"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -10708,7 +10609,8 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim"
+   "yatirim",
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -10800,7 +10702,6 @@
   "oran_metin": null,
   "amac": [
    "ihracat",
-   "istihdam",
    "finansman"
   ],
   "olcek": [
@@ -10875,9 +10776,7 @@
   "amac": [
    "yatirim",
    "arge",
-   "vergi",
-   "yesil",
-   "kurulus"
+   "yesil"
   ],
   "olcek": [
    "mikro",
@@ -10999,7 +10898,6 @@
    "yatirim",
    "arge",
    "istihdam",
-   "vergi",
    "kurulus"
   ],
   "olcek": [
@@ -11110,9 +11008,7 @@
   "geri_odemeli": false,
   "oran_metin": "%40–%100",
   "amac": [
-   "yatirim",
    "arge",
-   "istihdam",
    "kurulus"
   ],
   "olcek": [
@@ -11328,11 +11224,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "ihracat",
-   "istihdam",
-   "vergi",
-   "kurulus"
+   "yatirim"
   ],
   "olcek": [
    "mikro",
@@ -11445,12 +11337,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "arge",
-   "ihracat",
-   "istihdam",
-   "vergi",
-   "kurulus"
+   "vergi"
   ],
   "olcek": [
    "mikro",
@@ -11696,8 +11583,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
-   "kurulus"
+   "arge"
   ],
   "olcek": [
    "mikro",
@@ -12259,7 +12145,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
    "ihracat"
   ],
   "olcek": [
@@ -12411,8 +12296,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "arge",
-   "dijital",
    "ihracat",
    "kurulus"
   ],
@@ -12613,7 +12496,6 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "ihracat",
    "kurulus"
   ],
   "olcek": [
@@ -12714,10 +12596,8 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
    "arge",
-   "finansman",
-   "kurulus"
+   "finansman"
   ],
   "olcek": [
    "mikro",
@@ -12892,8 +12772,7 @@
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
-   "yatirim",
-   "kurulus"
+   "yatirim"
   ],
   "olcek": [
    "mikro",

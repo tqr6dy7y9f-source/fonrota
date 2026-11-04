@@ -23,7 +23,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import eleme
-from yatirimadestek import ratios, tur_bul
+from yatirimadestek import ratios, tur_bul, AMAC_KURALLARI as PLATFORM_AMAC
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT.parent / "data.json"
@@ -246,7 +246,8 @@ def parse_item(title, url, src):
         "ust_limit": None,                        # tahmin yok: resmi metinde okunur
         "destek_orani": oran[0] if oran else None,
         "oran_metin": f"%{oran[0]}–%{oran[-1]}" if len(oran) > 1 else None,
-        "amac": match_rules(t, AMAC_KURALLARI, ["bolgesel"] if src.get("ajans") else ["yatirim"]),
+        # hedef: program adı ve sayfanın ilk paragrafından (tüm sayfadaki tek bir kelimeden değil)
+        "amac": (["bolgesel"] if src.get("ajans") else []) + (match_rules(low(title + " " + metin[:300]), PLATFORM_AMAC, []) or (["bolgesel"] if src.get("ajans") else ["yatirim"])),
         "olcek": ["mikro", "kucuk", "orta"] if "kobi" in low(metin) and "büyük" not in low(metin) else ["mikro", "kucuk", "orta", "buyuk"],
         "sektor": ["tumu"],                       # sektör şartı tahmin edilmez
         "il": src.get("il", ["tumu"]),            # kalkınma ajansları için bölgesi (sources.json)

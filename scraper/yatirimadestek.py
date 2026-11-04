@@ -48,15 +48,88 @@ BOLUMLER = [  # özet bilgi formundaki standart başlıklar
 BASLIK = {"tum": "Özet bilgi formu", "kimler": "Kimler yararlanabilir?", "destek": "Desteklenen alanlar ve destek unsurları",
           "donem": "Başvuru dönemi", "yer": "Başvuru yeri"}
 AMAC_KURALLARI = {
-    "yatirim": ["makine", "teçhizat", "yatırım", "kapasite", "tesis"],
-    "arge": ["ar-ge", "inovasyon", "ür-ge", "patent", "teknoloji geliştirme", "yenilik"],
-    "dijital": ["dijital", "yazılım", "e-ticaret", "otomasyon", "yapay zeka"],
-    "ihracat": ["ihracat", "yurt dışı", "fuar", "pazara giriş"],
-    "istihdam": ["istihdam", "personel", "işbaşı"],
-    "finansman": ["kredi", "faiz", "finansman", "kefalet"],
-    "vergi": ["vergi", "istisna", "sgk prim", "muafiyet"],
-    "yesil": ["enerji verimliliği", "yeşil", "yenilenebilir", "karbon", "atık"],
-    "kurulus": ["yeni kurulan", "girişimci", "kuruluş"],
+    "yatirim": [
+        "makine",
+        "teçhizat",
+        "yatırım",
+        "kapasite",
+        "tesis",
+        "yatırım kredisi",
+        "sulama",
+        "bahçe",
+        "tarıma dayalı"
+    ],
+    "arge": [
+        "ar-ge",
+        "inovasyon",
+        "ür-ge",
+        "patent",
+        "teknoloji geliştirme",
+        "yenilik"
+    ],
+    "dijital": [
+        "dijital",
+        "yazılım",
+        "e-ticaret",
+        "otomasyon",
+        "yapay zeka"
+    ],
+    "ihracat": [
+        "ihracat",
+        "yurt dışı",
+        "fuar",
+        "pazara giriş",
+        "ihracat",
+        "ihraç",
+        "döviz kazandırıcı",
+        "pazara giriş",
+        "marka",
+        "turquality",
+        "heyet",
+        "müteahhitlik"
+    ],
+    "istihdam": [
+        "istihdam",
+        "personel",
+        "işbaşı",
+        "sigortalı",
+        "istihdam",
+        "asgari ücret",
+        "işsizlik",
+        "prim teşvik",
+        "genç girişimci"
+    ],
+    "finansman": [
+        "kredi",
+        "faiz",
+        "finansman",
+        "kefalet"
+    ],
+    "vergi": [
+        "vergi",
+        "istisna",
+        "sgk prim",
+        "muafiyet",
+        "muafiyet",
+        "indirim",
+        "teşvik belgesi",
+        "serbest bölge",
+        "dahilde işleme",
+        "teşvik sistemi",
+        "teşvik kanunu"
+    ],
+    "yesil": [
+        "enerji verimliliği",
+        "yeşil",
+        "yenilenebilir",
+        "karbon",
+        "atık"
+    ],
+    "kurulus": [
+        "yeni kurulan",
+        "girişimci",
+        "kuruluş"
+    ]
 }
 
 
@@ -214,6 +287,11 @@ def tur_bul(ad, destek):
     return "hibe"
 
 
+def ozet_metin(sec, kimler, info):
+    destek = sec.get("destek", "") or sec.get("tum", "")
+    return (destek.split("\n")[0] if destek else kimler.split("\n")[0] if kimler else info["ad"]).lstrip("•– ")[:300]
+
+
 def build(url, info, sec, docs):
     kimler, destek = sec.get("kimler", ""), sec.get("destek", "") or sec.get("tum", "")
     t = low(info["ad"] + " " + kimler + " " + destek)
@@ -228,7 +306,10 @@ def build(url, info, sec, docs):
     buyuk = any(w in k for w in ["büyük ölçekli", "büyük işletme", "büyük kuruluş", "tüm işletme", "her ölçek"])
     olcek = ["mikro", "kucuk", "orta"] if kobi and not buyuk else ["mikro", "kucuk", "orta", "buyuk"]
     r = ratios(sec.get("destek", ""))  # oran yalnızca standart "destek" bölümünden; serbest metinden tahmin yok
-    amac = [k for k, ws in AMAC_KURALLARI.items() if any(w in t for w in ws)] or ["yatirim"]
+    # Hedef (amaç) program adı ve özetinden; metnin tamamında geçen tek bir kelime programı o hedefe bağlamaz
+    t2 = low(info["ad"] + " " + ozet_metin(sec, kimler, info))
+    amac = [k for k, ws in AMAC_KURALLARI.items() if any(w in t2 for w in ws)] or \
+        {"kredi": ["finansman"], "vergi": ["vergi"]}.get(tur) or [k for k, ws in AMAC_KURALLARI.items() if any(w in t for w in ws)][:2] or ["yatirim"]
     kosullar = [l.lstrip("•– ").strip() for l in kimler.split("\n") if l.strip()][:12]
     yer = sec.get("yer", "")
     online = next(iter(re.findall(r"https?://[^\s)]+", yer)), url)

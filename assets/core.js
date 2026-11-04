@@ -181,6 +181,76 @@ function classify(calisan, ciro, bilanco) {
 }
 
 /* ---------- Uygunluk ---------- */
+/* ---------- Hedef kitle: resmi "Kimler yararlanabilir?" metninden kimlerin başvurabileceği ---------- */
+/* Resmi "Kimler yararlanabilir?" metninden hedef kitle. Dönen küme: bu programa kimler başvurabilir.
+   null => metin genel ("Şirketler", "gerçek veya tüzel kişiler") ya da metin yok: herkese gösterilir. */
+function hedefKitle(x) {
+  const ham = x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith("Kimler")) || {}).metin;
+  if (!ham) return null;
+  const k = ham.replace(/I/g, "ı").replace(/İ/g, "i").toLowerCase();
+  const K = new Set();
+  const var_ = (...w) => w.some(s => k.includes(s));
+  // "İşbirliği kuruluşları (TİM, TOBB, ihracatçı birlikleri, OSB...)" ile başlayan programlara yalnızca bu kuruluşlar başvurur
+  if (/^[•\s]*(i̇|i)şbirliği kuruluşlar|^[•\s]*iş birliği kuruluşlar/.test(k)) return new Set(["isbirligi"]);
+  if (var_("işbirliği kuruluş", "iş birliği kuruluş")) K.add("isbirligi");
+  if (var_("çiftçi", "yetiştirici", "üretici belgesi", "hayvan bilgi sistemi", "su ürünleri bilgi sistemi", "orman köylü", "üretici örgüt", "tarımsal amaçlı örgüt")) K.add("ciftci");
+  if (var_("özel sektör işveren")) K.add("isveren");
+  if (var_("ihracatçı", "ihracata yönelik", "imalatçı-ihracatçı", "döviz kazandırıcı", "ihracat yapan", "ihraç", "döviz karşılığı", "yurt dışında yerleşiklere")) K.add("ihracatci");
+  if (var_("serbest bölge")) K.add("serbest");
+  if (var_("müteahhit")) K.add("muteahhit");
+  if (var_("turizm yatırım", "turizm sektör", "seyahat acenta", "konaklama", "turizm işletme")) K.add("turizm");
+  if (var_("film yönetmen", "yapımcı", "medya hizmet", "yayıncı", "yayımcı", "kültür girişimi", "senaryo")) K.add("medya");
+  if (var_("nakliyat", "lojistik işletme", "taşıma organizatör")) K.add("lojistik");
+  if (var_("gemi inşa")) K.add("gemi");
+  if (var_("dış ticaret sermaye", "sektörel dış ticaret")) K.add("dts");
+  if (var_("kooperatif")) K.add("kooperatif");
+  if (var_("kamu kurum", "üniversite", "yükseköğretim", "belediye", "araştırmacı", "doktora", "eğitim ve araştırma hastane", "köy tüzel", "dernek", "vakıf")) K.add("kamu");
+  // Genel ifade varsa (ör. "Şirketler", "gerçek veya tüzel kişiler", "firma") her işletme de başvurabilir
+  if (/(^|[\s•,;])(şirketler|tüzel firmalar)\b/.test(k) || var_("gerçek veya tüzel kişi", "gerçek ve tüzel kişi", "sermaye şirket", "özel kuruluş", "özel sektör kuruluş", "kobi", "sanayi kuruluş", "ticari faaliyette bulunan şirket", "yerleşik şirket", "yerleşik firma", "firmalar başvurabilir", "tasarımcı şirket", "gelir ve kurumlar vergisi mükellef")) K.add("genel");
+  return K.size && !K.has("genel") ? K : null;
+}
+/* İşletmenin özellikleri (uygunluk testi): hangi kitlelere giriyor? */
+function profilKitle(p) {
+  const S = new Set();
+  const tip = p.isletmeTipi || "sirket";
+  if (tip === "ciftci") S.add("ciftci");
+  if (tip === "kooperatif") { S.add("kooperatif"); S.add("ciftci"); }
+  if (tip === "isbirligi") S.add("isbirligi");
+  if (tip === "kamu") S.add("kamu");
+  if (p.ihracat) S.add("ihracatci");
+  if ((Number(String(p.calisan || 0).replace(/\D/g, "")) || 0) > 0) S.add("isveren");
+  (p.ozelDurum || []).forEach(d => S.add(d));
+  return S;
+}
+/* Bakanlığın alanı veya program adı belirli bir sektörü gösteriyorsa (ör. Tarım ve Orman Bakanlığı -> tarım) */
+function alanSektor(x) {
+  const k = (x.kurum || "").toLowerCase(), a = (x.ad || "").replace(/İ/g, "i").toLowerCase();
+  if (k.includes("tarım ve orman")) return ["tarim"];
+  if (/serbest bölge/.test(a)) return ["serbest"];
+  if (/tgb|teknopark|teknoloji geliştirme bölge|ar-ge ve tasarım merkez/.test(a)) return ["argemerkezi"];
+  if (/dernek|vakıf|belediye/.test(a)) return ["kamu"];
+  if (/turizm/.test(a)) return ["turizm"];
+  if (/sinema|film|dizi|yayım|yayın|eser|kültür varlığı/.test(a)) return ["medya"];
+  if (k.includes("kültür ve turizm")) return ["medya", "turizm"];
+  if (/gemi|yat sektör/.test(a)) return ["gemi"];
+  if (/bilişim/.test(a)) return ["bilisim"];
+  return null;
+}
+function kitleUyar(x, p) {
+  const S = profilKitle(p);
+  const sek = alanSektor(x);
+  if (sek && !sek.some(s => (p.sektorler || []).includes(s) || S.has(s) || (s === "tarim" && (S.has("ciftci") || S.has("kooperatif"))))) return false;
+  const K = hedefKitle(x); if (!K) return true;
+  for (const k of K) if (S.has(k)) return true;
+  return false;
+}
+const KITLE_AD = { isbirligi: "işbirliği kuruluşları (TİM, TOBB, OSB, ihracatçı birlikleri…)", ciftci: "çiftçi kayıt sistemine kayıtlı üreticiler",
+  isveren: "sigortalı çalışanı olan özel sektör işverenleri", ihracatci: "ihracatçılar ve ihracata yönelik üreticiler", serbest: "serbest bölge kullanıcıları",
+  muteahhit: "yurt dışında müteahhitlik yapan firmalar", turizm: "turizm belgeli işletmeler", medya: "film, medya, yayın ve kültür işletmeleri",
+  lojistik: "uluslararası nakliyat ve lojistik firmaları", gemi: "gemi inşa firmaları", dts: "dış ticaret şirketleri", kooperatif: "kooperatifler",
+  kamu: "kamu kurumları, üniversiteler, dernek ve vakıflar", argemerkezi: "Ar-Ge/tasarım merkezi veya teknopark firmaları", tarim: "tarım sektörü", bilisim: "bilişim sektörü" };
+function kitleMetni(x) { const s = new Set([...(alanSektor(x) || []), ...(hedefKitle(x) || [])]); return s.size ? [...s].map(k => KITLE_AD[k] || k).join("; ") : ""; }
+
 function check(x, p) {
   const r = []; if (!p) return { level: "none", r, score: 0 };
   const yil = new Date().getFullYear();
@@ -189,6 +259,7 @@ function check(x, p) {
   if (p.il) r.push({ hard: true, ok: x.il.includes("tumu") || x.il.includes(p.il), t: "Bölge: " + (x.il.includes("tumu") ? "Türkiye geneli" : x.il.join(", ")) });
   if (x.firma_yasi_max && num(p.kurulusYili)) r.push({ hard: true, ok: yil - num(p.kurulusYili) <= x.firma_yasi_max, t: `İşletmenin en fazla ${x.firma_yasi_max} yıllık olması` });
   if (x.ihracat_gerekli) r.push({ hard: false, ok: !!p.ihracat, t: "İhracat yapıyor olmak" });
+  if (p.isletmeTipi && kitleMetni(x)) r.push({ hard: true, ok: kitleUyar(x, p), kitle: true, t: "Kimler başvurabilir: " + kitleMetni(x) });
   if (p.borcYok === false) r.push({ hard: false, ok: false, t: "Vergi ve SGK borcu olmaması (çoğu destekte şart)" });
   const hardFail = r.some(c => c.hard && !c.ok), softFail = r.some(c => !c.hard && !c.ok);
   const level = !r.length ? "none" : hardFail ? "no" : softFail ? "mid" : "ok";
@@ -379,5 +450,5 @@ async function enablePush() {
   return true;
 }
 
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni };
 })();

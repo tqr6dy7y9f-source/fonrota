@@ -178,15 +178,20 @@ P.bul = async () => {
   }
   if (adim === 3) {
     box.innerHTML = `<h1>Son birkaç bilgi.</h1>
-      <p class="muted">Bölgesel destekler ve kuruluş yılına bağlı programlar için gerekli.</p>
+      <p class="muted">Desteklerin çoğu yalnızca belirli kuruluşlara açık (ör. ihracatçılar, çiftçiler, işbirliği kuruluşları). Bu bilgilerle sana uymayanları eleriz.</p>
       <div class="row">${fieldHTML("il", draft.il)}${fieldHTML("kurulusYili", draft.kurulusYili)}</div>
       ${fieldHTML("sirketTuru", draft.sirketTuru)}
+      <label class="field" for="f-tip"><span>Başvuruyu kim yapacak?</span><select class="input" id="f-tip">${[["sirket", "Şirket veya şahıs işletmesi"], ["ciftci", "Çiftçi / tarımsal üretici (ÇKS kayıtlı)"], ["kooperatif", "Kooperatif veya üretici birliği"], ["isbirligi", "Oda, borsa, ihracatçı birliği, OSB veya sektör derneği"], ["kamu", "Kamu kurumu, üniversite, dernek veya vakıf"]].map(([v, t]) => `<option value="${v}"${(draft.isletmeTipi || "sirket") === v ? " selected" : ""}>${t}</option>`).join("")}</select><small>Birçok desteğe yalnızca belirli kuruluşlar başvurabiliyor; buna göre eleriz.</small></label>
       <label class="check"><input type="checkbox" id="ihracat" ${draft.ihracat ? "checked" : ""}> İhracat yapıyoruz veya bu yıl başlayacağız</label>
+      <p class="small muted" style="margin:16px 0 6px">Sende hangileri var? (varsa işaretle)</p>
+      <div class="chips" id="ozel">${[["serbest", "Serbest bölgede faaliyet"], ["argemerkezi", "Ar-Ge/tasarım merkezi veya teknoparktayız"], ["turizm", "Turizm belgeli işletme"], ["medya", "Film, medya, yayıncılık veya kültür"], ["muteahhit", "Yurt dışında müteahhitlik"], ["lojistik", "Uluslararası nakliyat/lojistik"], ["gemi", "Gemi/yat inşa"], ["dts", "Dış ticaret şirketiyiz (DTSŞ/SDTŞ)"]].map(([v, t]) => `<button type="button" class="chip" data-v="${v}" aria-pressed="${(draft.ozelDurum || []).includes(v)}">${t}</button>`).join("")}</div>
       <label class="check"><input type="checkbox" id="borcYok" ${draft.borcYok !== false ? "checked" : ""}> Vergi ve SGK borcumuz yok (veya yapılandırılmış)</label>
       <div class="nav-btns"><a class="btn ghost" ${link("bul", "adim=2")}>Geri</a><button class="btn seal" type="button" id="bitir">Uygun destekleri göster</button></div>`;
+    $$("#ozel .chip").forEach(c => c.onclick = () => c.setAttribute("aria-pressed", c.getAttribute("aria-pressed") !== "true"));
     $("#bitir").onclick = async () => {
       if (!$("#f-il").value) { toast("İlini seç."); $("#f-il").focus(); return; }
-      save({ il: $("#f-il").value, kurulusYili: $("#f-kurulusYili").value, sirketTuru: $("#f-sirketTuru").value, ihracat: $("#ihracat").checked, borcYok: $("#borcYok").checked });
+      save({ il: $("#f-il").value, kurulusYili: $("#f-kurulusYili").value, sirketTuru: $("#f-sirketTuru").value, ihracat: $("#ihracat").checked, borcYok: $("#borcYok").checked,
+        isletmeTipi: $("#f-tip").value, ozelDurum: $$("#ozel .chip[aria-pressed=true]").map(c => c.dataset.v) });
       await Store.saveProfile(D.LS.get("draft")); go("sonuclar");
     };
   }
@@ -279,7 +284,8 @@ P.sonuclar = async () => {
   const secim = D.LS.get("secim");
   const hedefN = all => all.filter(r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a))).length;
   $("#baslik").textContent = `Hedefine uyan ${hedefN(fit)} destek bulduk.`;
-  $("#profil").innerHTML = `${esc(OLCEK[p.olcek])}, ${esc((p.sektorler || []).map(s => SEKTOR[s]).join(", ") || "tüm sektörler")}, ${esc(p.il)}. <a ${link("bul")}>Bilgileri değiştir</a>` + (mid.length ? `<br>${mid.length} destek de kısmen uygun: bir koşulu henüz karşılamıyorsun.` : "") + `<br><span class="small">Ön eleme ölçek, il ve hedefe göre yapılır. Kesin başvuru şartları için her desteğin resmi metnine bak.</span>`;
+  const kitleElenen = p.isletmeTipi ? rows.filter(r => r.c.r.some(q => q.kitle && !q.ok)).length : 0;
+  $("#profil").innerHTML = `${esc(OLCEK[p.olcek])}, ${esc((p.sektorler || []).map(s => SEKTOR[s]).join(", ") || "tüm sektörler")}, ${esc(p.il)}. <a ${link("bul")}>Bilgileri değiştir</a>` + (mid.length ? `<br>${mid.length} destek de kısmen uygun: bir koşulu henüz karşılamıyorsun.` : "") + `<br><span class="small">Ön eleme ölçek, il, hedef ve “Kimler yararlanabilir?” bilgisine göre yapılır${kitleElenen ? `; ${kitleElenen} destek yalnızca başka tür kuruluşlara (ör. çiftçiler, işbirliği kuruluşları, ihracatçılar) açık olduğu için elendi` : ""}. ${p.isletmeTipi ? "" : `<a ${link("bul", "adim=3")}>İşletme türünü belirt</a>, sonuçlar daralsın. `}Kesin başvuru şartları için her desteğin resmi metnine bak.</span>`;
   const kurumAdi = k => k.replace(/^Türk Eximbank$/, "Eximbank").replace(/ ve anlaşmalı bankalar$/, "").replace(/^SGK \/ İŞKUR$/, "SGK");
   const okN = g => g.items.filter(r => r.c.level === "ok").length;
   const groupBy = list => { const m = {}; list.forEach(r => { const k = kurumAdi(r.x.kurum); (m[k] = m[k] || []).push(r); }); return Object.entries(m).map(([k, items]) => ({ k, items: items.sort((a, b) => (a.c.level === "ok" ? 0 : 1) - (b.c.level === "ok" ? 0 : 1) || b.c.score - a.c.score) })).sort((a, b) => okN(b) - okN(a) || b.items.length - a.items.length); };
