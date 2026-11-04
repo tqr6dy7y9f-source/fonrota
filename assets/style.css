@@ -149,7 +149,21 @@ textarea.input{min-height:110px;resize:vertical}
 .tree details{border-left:3px solid var(--seal);margin:0 0 12px 8px;padding-left:14px}
 .tree summary{cursor:pointer;font-weight:700;font-family:"Bricolage Grotesque",sans-serif;font-size:18px;padding:4px 0}
 .tree a{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;padding:10px 12px;border-radius:8px;background:var(--bg);margin:6px 0}
-.tree-root{display:inline-block;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-weight:700;margin-bottom:14px}
+.tree-root{display:inline-flex;flex-direction:column;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-weight:700;margin-bottom:14px}
+.tree-root span{font-weight:500;font-size:13px;opacity:.85}
+.tree a span small{display:block;font-weight:700;color:var(--seal-ink);font-size:13px;margin-top:2px}
+.tree summary small{font-weight:500;color:var(--muted);font-size:14px}
+.mm-filtre{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 2px}
+.mm-butce{max-width:340px;margin:12px 0 10px}
+/* Harita animasyonu: merkez -> kurum dallari -> firsatlar */
+.mm-anim .mm-n0{animation:mmPop .5s cubic-bezier(.3,1.4,.6,1) both;transform-box:fill-box;transform-origin:center}
+.mm-anim .mm-l1,.mm-anim .mm-l2{stroke-dasharray:1;stroke-dashoffset:1;animation:mmDraw .55s ease-out forwards;animation-delay:var(--d)}
+.mm-anim .mm-n1,.mm-anim .mm-n2{opacity:0;animation:mmIn .4s ease-out forwards;animation-delay:var(--d)}
+.tree.mm-anim details{opacity:0;animation:mmIn .4s ease-out forwards;animation-delay:calc(var(--d) * .08s + .1s)}
+@keyframes mmPop{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
+@keyframes mmDraw{to{stroke-dashoffset:0}}
+@keyframes mmIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.mm-anim *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
 .list{list-style:none;margin:0;padding:0}
 .item{border-bottom:1px solid var(--line)}
 .item > a{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 4px;text-decoration:none}
@@ -183,6 +197,12 @@ textarea.input{min-height:110px;resize:vertical}
 .sticky{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}
 .calc input[type=range]{width:100%;accent-color:var(--seal)}
 .calc .big{font-family:"Bricolage Grotesque",sans-serif;font-size:30px;font-weight:700}
+.oz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.oz-grid div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.oz-grid span{display:block;font-size:13px;color:var(--muted)}
+.oz-grid b{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(18px,2.6vw,24px)}
+@media (max-width:600px){.oz-grid{grid-template-columns:1fr}}
+#oz-chart rect{transition:width .25s,height .25s,y .25s,x .25s}
 .chart{overflow-x:auto;margin-top:10px}
 ol.how{padding-left:20px} ol.how li{margin:6px 0}
 

@@ -71,7 +71,7 @@ function player(el, { autoplay = false } = {}) {
     S[i].tick(scenes[i], lt); $(".bar", el).style.width = (t / TOTAL * 100) + "%";
     $(".time", el).textContent = `0:${String(Math.floor(t)).padStart(2, "0")} / 1:00`;
   };
-  const loop = now => { if (!playing) return; t += (now - last) / 1000; last = now; if (t >= TOTAL) { t = TOTAL - .01; draw(); stop(true); return; } draw(); raf = requestAnimationFrame(loop); };
+  const loop = now => { if (!playing) return; t += Math.max(0, now - last) / 1000; last = now; if (t >= TOTAL) { t = TOTAL - .01; draw(); stop(true); return; } draw(); raf = requestAnimationFrame(loop); };
   const start = () => { if (t >= TOTAL - .1) { t = 0; cur = -1; } playing = true; last = performance.now(); $(".ctrl", el).hidden = true; $(".pause", el).hidden = false; raf = requestAnimationFrame(loop); };
   const stop = end => { playing = false; cancelAnimationFrame(raf); $(".ctrl", el).hidden = false; $(".pause", el).hidden = true; $(".ctrl span", el).textContent = end ? "↺" : "▶"; };
   $(".ctrl", el).onclick = start; $(".pause", el).onclick = () => stop(false);
@@ -186,35 +186,45 @@ P.bul = async () => {
   }
 };
 
-/* ---------- Sonuçlar: zihin haritası + liste ---------- */
-function mindmap(root, groups, wide) {
-  const LEAF_W = 230, ROW = 40, GAP = 18;
+/* ---------- Sonuçlar: hiyerarşik zihin haritası (merkez → kurumlar → net fırsatlar) ---------- */
+function amount(x, butce) {
+  const ad = x.tur === "kredi" ? "kredi" : x.tur === "vergi" ? "avantaj" : "hibe";
+  if (butce > 0 && x.destek_orani && x.tur !== "vergi") { const n = Math.min(butce * x.destek_orani / 100, x.ust_limit || Infinity); return `${short(Math.round(n))} ${ad} (%${x.destek_orani})`; }
+  if (x.ust_limit) return short(x.ust_limit) + "’ye kadar" + (x.destek_orani ? ` · %${x.destek_orani}` : "");
+  if (x.destek_orani) return `%${x.destek_orani} ${x.tur === "kredi" ? "kredi" : x.tur === "vergi" ? "avantaj" : "hibe"}`;
+  if (x.kredi) return x.kredi.faiz_yillik === 0 ? `Faizsiz kredi · ${x.kredi.vade_ay} ay vade` : `Kredi · ${x.kredi.vade_ay} ay vade`;
+  return TUR[x.tur] || "Tutar ilanda";
+}
+function mindmap(root, goal, groups, wide, butce) {
+  const total = groups.reduce((a, g) => a + g.items.length, 0);
+  if (!total) return `<div class="empty"><h2>Bu filtreyle destek kalmadı.</h2><p>Filtrelerden birini kapatınca harita yeniden dolar.</p></div>`;
+  const col = { ok: "var(--ok)", mid: "var(--mid)", none: "var(--muted)", no: "var(--no)" };
   if (!wide) {
-    return `<div class="tree"><div class="tree-root">${esc(root)}</div>${groups.map(g => `<details open><summary>${esc(AMAC[g.k])} (${g.items.length})</summary>${g.items.map(({ x, c }) => `<a ${link("destek", "id=" + x.id)}><span>${esc(x.ad)}</span>${LEVEL_TAG[c.level]}</a>`).join("")}</details>`).join("")}</div>`;
+    return `<div class="tree mm-anim"><div class="tree-root"><b>${esc(root)}</b><span>${esc(goal)}</span></div>${groups.map((g, gi) => `<details open style="--d:${gi}"><summary>${esc(g.k)} <small>(${g.items.length})</small></summary>${g.items.map(({ x, c }) => `<a ${link("destek", "id=" + x.id)} style="border-left:4px solid ${col[c.level]}"><span>${esc(x.ad)}<small>${esc(amount(x, butce))}</small></span>${LEVEL_TAG[c.level]}</a>`).join("")}</details>`).join("")}</div>`;
   }
+  const LEAF_W = 250, ROW = 50, GAP = 22;
   const sides = [[], []]; const h = [0, 0];
   groups.forEach(g => { const s = h[0] <= h[1] ? 0 : 1; sides[s].push(g); h[s] += g.items.length * ROW + GAP; });
-  const H = Math.max(260, Math.max(...h) + 40), W = 1040, cx = W / 2, cy = H / 2;
-  let out = "";
-  const trunc = s => s.length > 31 ? s.slice(0, 29) + "…" : s;
+  const H = Math.max(300, Math.max(...h) + 40), W = 1070, cx = W / 2, cy = H / 2;
+  const trunc = (s, n) => s.length > n ? s.slice(0, n - 2) + "…" : s;
+  let lines = "", kurum = "", leaves = "", gi = 0;
   sides.forEach((list, si) => {
     const dir = si === 0 ? 1 : -1; let y = (H - h[si]) / 2 + 20;
     list.forEach(g => {
-      const top = y, bh = g.items.length * ROW; const gy = top + bh / 2 - ROW / 2 + 14;
-      const gx = cx + dir * 175; const lx = cx + dir * 290;
-      out += `<path d="M${cx + dir * 70} ${cy} C ${cx + dir * 140} ${cy}, ${gx - dir * 70} ${gy}, ${gx - dir * 80} ${gy}" stroke="var(--seal)" stroke-width="2.5" fill="none"/>`;
+      const top = y, bh = g.items.length * ROW; const gy = top + bh / 2 - ROW / 2 + 20;
+      const gx = cx + dir * 172, lx = cx + dir * 272; const d1 = 0.3 + gi * 0.1;
+      lines += `<path class="mm-l1" style="--d:${d1}s" pathLength="1" d="M${cx + dir * 95} ${cy} C ${cx + dir * 150} ${cy}, ${gx - dir * 60} ${gy}, ${gx - dir * 82} ${gy}" stroke="var(--seal)" stroke-width="2.5" fill="none"/>`;
       g.items.forEach(({ x, c }, i) => {
-        const ly = top + i * ROW + 14; const bx = dir > 0 ? lx : lx - LEAF_W;
-        const col = { ok: "var(--ok)", mid: "var(--mid)", none: "var(--muted)", no: "var(--no)" }[c.level];
-        out += `<path d="M${gx + dir * 80} ${gy} C ${gx + dir * 110} ${gy}, ${lx - dir * 30} ${ly}, ${lx} ${ly}" stroke="var(--line)" stroke-width="1.5" fill="none"/>
-          <a class="mm-node" ${link("destek", "id=" + x.id)}><title>${esc(x.ad)} – ${esc(x.kurum)}</title><rect x="${bx}" y="${ly - 15}" width="${LEAF_W}" height="30" rx="7" fill="var(--surface)" stroke="var(--line)"/><rect x="${dir > 0 ? bx : bx + LEAF_W - 5}" y="${ly - 15}" width="5" height="30" rx="2" fill="${col}"/><text x="${bx + 14}" y="${ly + 5}" font-size="13" fill="var(--ink)" font-family="Figtree, sans-serif">${esc(trunc(x.ad))}</text></a>`;
+        const ly = top + i * ROW + 20; const bx = dir > 0 ? lx : lx - LEAF_W; const d2 = d1 + 0.4 + i * 0.07;
+        lines += `<path class="mm-l2" style="--d:${d2}s" pathLength="1" d="M${gx + dir * 82} ${gy} C ${gx + dir * 105} ${gy}, ${lx - dir * 28} ${ly}, ${lx} ${ly}" stroke="var(--line)" stroke-width="1.5" fill="none"/>`;
+        leaves += `<a class="mm-node mm-n2" style="--d:${(d2 + .2).toFixed(2)}s" ${link("destek", "id=" + x.id)}><title>${esc(x.ad)} – ${esc(x.kurum)}: ${esc(amount(x, butce))}</title><rect x="${bx}" y="${ly - 20}" width="${LEAF_W}" height="40" rx="8" fill="var(--surface)" stroke="var(--line)"/><rect x="${dir > 0 ? bx : bx + LEAF_W - 5}" y="${ly - 20}" width="5" height="40" rx="2" fill="${col[c.level]}"/><text x="${bx + 14}" y="${ly - 3}" font-size="13" fill="var(--ink)" font-family="Figtree, sans-serif">${esc(trunc(x.ad, 32))}</text><text x="${bx + 14}" y="${ly + 13}" font-size="13" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(amount(x, butce))}</text></a>`;
       });
-      out += `<g><rect x="${gx - 80}" y="${gy - 18}" width="160" height="36" rx="18" fill="var(--seal-soft)" stroke="var(--seal)"/><text x="${gx}" y="${gy + 5}" text-anchor="middle" font-size="13.5" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(AMAC[g.k])} (${g.items.length})</text></g>`;
-      y += bh + GAP;
+      kurum += `<g class="mm-n1" style="--d:${(d1 + .25).toFixed(2)}s"><rect x="${gx - 82}" y="${gy - 19}" width="164" height="38" rx="19" fill="var(--seal-soft)" stroke="var(--seal)"/><text x="${gx}" y="${gy + 5}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--seal-ink)" font-family="Figtree, sans-serif">${esc(trunc(g.k, 20))} (${g.items.length})</text></g>`;
+      y += bh + GAP; gi++;
     });
   });
-  out += `<rect x="${cx - 75}" y="${cy - 30}" width="150" height="60" rx="14" fill="var(--ink)"/><text x="${cx}" y="${cy - 3}" text-anchor="middle" font-size="15" font-weight="700" fill="var(--bg)" font-family="'Bricolage Grotesque', Figtree, sans-serif">${esc(trunc(root).slice(0, 18))}</text><text x="${cx}" y="${cy + 16}" text-anchor="middle" font-size="11.5" fill="var(--bg)" opacity=".8" font-family="Figtree, sans-serif">${groups.reduce((a, g) => a + g.items.length, 0)} destek</text>`;
-  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px" role="img" aria-label="Uygun desteklerin zihin haritası">${out}</svg>`;
+  const center = `<g class="mm-n0"><rect x="${cx - 95}" y="${cy - 36}" width="190" height="72" rx="16" fill="var(--ink)"/><text x="${cx}" y="${cy - 8}" text-anchor="middle" font-size="16" font-weight="700" fill="var(--bg)" font-family="'Bricolage Grotesque', Figtree, sans-serif">${esc(trunc(root, 20))}</text><text x="${cx}" y="${cy + 11}" text-anchor="middle" font-size="12" fill="var(--bg)" font-family="Figtree, sans-serif">${esc(trunc(goal, 26))}</text><text x="${cx}" y="${cy + 27}" text-anchor="middle" font-size="11" fill="var(--bg)" opacity=".75" font-family="Figtree, sans-serif">${total} fırsat · ${groups.length} kurum</text></g>`;
+  return `<svg class="mm-anim" width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px" role="img" aria-label="${esc(root)} için ${total} destek fırsatının kurumlara göre haritası">${lines}${kurum}${leaves}${center}</svg>`;
 }
 P.sonuclar = async () => {
   const p = await Store.profile(); const d = await D.data();
@@ -225,12 +235,22 @@ P.sonuclar = async () => {
   const secim = D.LS.get("secim");
   $("#baslik").textContent = `Sana uygun ${fit.length} destek bulduk.`;
   $("#profil").innerHTML = `${esc(OLCEK[p.olcek])}, ${esc((p.sektorler || []).map(s => SEKTOR[s]).join(", ") || "tüm sektörler")}, ${esc(p.il)}. <a ${link("bul")}>Bilgileri değiştir</a>` + (mid.length ? `<br>${mid.length} destek de kısmen uygun: bir koşulu henüz karşılamıyorsun.` : "");
-  const groupBy = list => { const m = {}; list.forEach(r => { const k = (r.x.amac || []).find(a => (p.amaclar || []).includes(a)) || r.x.amac[0]; (m[k] = m[k] || []).push(r); }); return Object.entries(m).map(([k, items]) => ({ k, items })).sort((a, b) => ((p.amaclar || []).includes(b.k) - (p.amaclar || []).includes(a.k)) || b.items.length - a.items.length); };
+  const kurumAdi = k => k.replace(/^Türk Eximbank$/, "Eximbank").replace(/ ve anlaşmalı bankalar$/, "").replace(/^SGK \/ İŞKUR$/, "SGK");
+  const okN = g => g.items.filter(r => r.c.level === "ok").length;
+  const groupBy = list => { const m = {}; list.forEach(r => { const k = kurumAdi(r.x.kurum); (m[k] = m[k] || []).push(r); }); return Object.entries(m).map(([k, items]) => ({ k, items: items.sort((a, b) => (a.c.level === "ok" ? 0 : 1) - (b.c.level === "ok" ? 0 : 1) || b.c.score - a.c.score) })).sort((a, b) => okN(b) - okN(a) || b.items.length - a.items.length); };
+  const goal = (p.amaclar || []).length ? AMAC[p.amaclar[0]].replace(/ ve .*$/, "") + " hedefi" + (p.amaclar.length > 1 ? ` +${p.amaclar.length - 1}` : "") : "Büyüme hedefi";
   const view = params().get("gorunum") || "harita";
   $$("#view button").forEach(b => { b.setAttribute("aria-pressed", b.dataset.v === view); b.onclick = () => go("sonuclar", "gorunum=" + b.dataset.v); });
   const all = [...fit, ...mid];
   if (view === "harita") {
-    const draw = () => { const wide = $("#mm").clientWidth > 760; $("#mm").innerHTML = mindmap(p.firmaUnvani || "İşletmen", groupBy(all), wide); };
+    const F = { tam: false, kredisiz: false, hibe: false, ...D.LS.get("mmFiltre", {}) };
+    const filtered = () => all.filter(r => (!F.tam || r.c.level === "ok") && (!F.kredisiz || r.x.tur !== "kredi") && (!F.hibe || r.x.tur === "hibe"));
+    const draw = () => { const wide = $("#mm").clientWidth > 760; $("#mm").innerHTML = mindmap(p.firmaUnvani || "İşletmen", goal, groupBy(filtered()), wide, num($("#mm-butce").value)); };
+    $("#mm-butce").value = p.projeButce || ""; let bt; $("#mm-butce").oninput = () => { clearTimeout(bt); bt = setTimeout(() => { Store.saveProfile({ projeButce: $("#mm-butce").value }); draw(); }, 350); };
+    const fb = $("#mm-filtre"); fb.hidden = false; $("#mm-butce-box").hidden = false;
+    const sync = () => $$("button", fb).forEach(b => b.setAttribute("aria-pressed", !!F[b.dataset.f]));
+    $$("button", fb).forEach(b => b.onclick = () => { const k = b.dataset.f; F[k] = !F[k]; if (k === "hibe" && F.hibe) F.kredisiz = false; if (k === "kredisiz" && F.kredisiz) F.hibe = false; D.LS.set("mmFiltre", F); sync(); draw(); });
+    sync();
     $("#mm").hidden = false; $("#mm-legend").hidden = false; draw();
     let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(draw, 200); });
   } else {
@@ -278,6 +298,14 @@ P.destek = async () => {
         ${!p ? `<p class="small muted">Uygunluğunu görmek için <a ${link("bul")}>uygunluk testini</a> yap.</p>` : ""}</section>
       <section class="sec"><h2>Hazırlaman gereken belgeler</h2><ul>${(x.belgeler || []).map(b => `<li>${esc(b)}</li>`).join("")}</ul></section>
       <section class="sec"><h2>Nasıl başvurulur?</h2><ol class="how">${(x.basvuru.adimlar || []).map(a => `<li>${esc(a)}</li>`).join("")}</ol></section>
+      ${x.destek_orani && x.tur !== "vergi" ? `<section class="sec calc" id="oz"><h2>Öz kaynak hesaplayıcı</h2>
+        <p class="small muted">Hibeler çoğunlukla harcamayı sen yaptıktan sonra geri ödenir. Projeyi başlatmak için ne kadar paran olması gerektiğini ve sonunda cebinden ne kadar çıkacağını gör.</p>
+        <label for="oz-b" class="small muted">Proje bütçesi (KDV hariç): <strong id="oz-bv"></strong></label>
+        <input type="range" id="oz-b" min="50000" max="${Math.max(1e6, Math.ceil((x.ust_limit ? x.ust_limit / x.destek_orani * 100 * 1.5 : 1e7) / 50000) * 50000)}" step="50000">
+        <div class="row" style="margin-top:8px"><label class="field" for="oz-ay"><span>Hibenin hesabına geçme süresi</span><select class="input" id="oz-ay">${[1, 2, 3, 4, 6, 9, 12].map(m => `<option value="${m}"${m === 3 ? " selected" : ""}>${m} ay</option>`).join("")}</select></label>
+          <label class="check" style="align-self:end"><input type="checkbox" id="oz-kdv" checked> KDV’yi ekle (%20, genelde desteklenmez)</label></div>
+        <div class="oz-grid"><div><span>Başta gereken nakit</span><b id="oz-bas"></b></div><div><span>Kurumdan geri gelecek</span><b id="oz-hibe" style="color:var(--ok)"></b></div><div><span>Net öz kaynağın</span><b id="oz-net" style="color:var(--seal-ink)"></b></div></div>
+        <div class="chart" id="oz-chart"></div><p class="small muted" id="oz-not"></p></section>` : ""}
       ${x.kredi ? `<section class="sec calc"><h2>Geri ödeme hesaplayıcı</h2>
         <label for="amt" class="small muted">Kullanmak istediğin tutar: <strong id="amtv"></strong></label>
         <input type="range" id="amt" min="${Math.min(100000, x.ust_limit || 5e6)}" max="${x.ust_limit || 5e6}" step="50000" value="${Math.round((x.ust_limit || 5e6) / 2 / 50000) * 50000}">
@@ -291,6 +319,17 @@ P.destek = async () => {
         <a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">Kurumun sayfası ↗</a>
       </div></aside></div>`;
   $("#sec").onclick = () => { let s = D.LS.get("secim", []); s = s.includes(x.id) ? s.filter(i => i !== x.id) : [...s, x.id]; D.LS.set("secim", s); $("#sec").textContent = s.includes(x.id) ? "Rapordan çıkar" : "Özet rapora ekle"; toast(s.includes(x.id) ? "Özet rapora eklendi." : "Rapordan çıkarıldı."); };
+  if ($("#oz")) {
+    const B = $("#oz-b"); B.value = Math.min(+B.max, Math.max(50000, num(p && p.projeButce) || Math.min(1e6, +B.max / 2)));
+    const upd = () => {
+      const butce = +B.value, kdv = $("#oz-kdv").checked ? butce * 0.2 : 0, ay = +$("#oz-ay").value;
+      const hibe = Math.min(butce * x.destek_orani / 100, x.ust_limit || Infinity), bas = butce + kdv, net = bas - hibe;
+      $("#oz-bv").textContent = tl(butce); $("#oz-bas").textContent = tl(Math.round(bas)); $("#oz-hibe").textContent = tl(Math.round(hibe)); $("#oz-net").textContent = tl(Math.round(net));
+      $("#oz-chart").innerHTML = D.ozChart({ hibe, oz: butce - hibe, kdv, ay });
+      $("#oz-not").textContent = (x.ust_limit && butce * x.destek_orani / 100 > x.ust_limit ? `Üst limit ${tl(x.ust_limit)} olduğu için hibe bu tutarda sabitlenir. ` : "") + `Hibe ödenene kadar (${ay} ay) ${tl(Math.round(bas))} nakit veya kredi gerekir. Oranlar ve limitler ilana göre değişebilir; kurumun sayfasından kontrol et.`;
+    };
+    B.oninput = upd; $("#oz-kdv").onchange = upd; $("#oz-ay").onchange = upd; upd();
+  }
   if (x.kredi) { const upd = () => { const P2 = +$("#amt").value, pl = D.plan(P2, x.kredi); $("#amtv").textContent = tl(P2); $("#taksit").textContent = tl(Math.round(pl.taksit)); $("#calcnote").textContent = `İlk ${x.kredi.geri_odemesiz_ay} ay ödeme yok, sonra ${x.kredi.vade_ay - x.kredi.geri_odemesiz_ay} taksit. Toplam geri ödeme ${tl(Math.round(pl.toplam))}` + (x.kredi.faiz_yillik ? ` (örnek yıllık %${x.kredi.faiz_yillik} faizle).` : " (faizsiz)."); $("#chart").innerHTML = D.chartSVG(pl, P2); }; $("#amt").oninput = upd; upd(); }
 };
 

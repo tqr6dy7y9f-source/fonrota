@@ -330,6 +330,24 @@ function chartSVG(p, P) {
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Aylara göre kalan borç">${bars}${ticks}</svg>`;
 }
 
+/* Öz kaynak grafiği: üstte bütçenin dağılımı, altta aylara göre nakit durumu */
+function ozChart({ hibe, oz, kdv, ay }) {
+  const W = 640, top = 34, tot = hibe + oz + kdv || 1, x0 = 0, bw = W;
+  const seg = [[hibe, "var(--ok)", "Hibe"], [oz, "var(--seal)", "Öz kaynak"], [kdv, "var(--mid)", "KDV"]];
+  let x = x0, bar = "", leg = "";
+  seg.forEach(([v, c, t], i) => { const w = v / tot * bw; if (w > 0) bar += `<rect x="${x}" y="0" width="${w}" height="${top}" fill="${c}"><title>${t}: ${tl(Math.round(v))}</title></rect>` + (w > 70 ? `<text x="${x + 8}" y="22" font-size="13" font-weight="700" fill="#fff">%${Math.round(v / tot * 100)}</text>` : ""); x += w;
+    leg += `<g transform="translate(${i * 150},${top + 20})"><rect width="11" height="11" rx="2" fill="${c}"/><text x="17" y="10" font-size="12.5" fill="var(--muted)">${t} ${tl(Math.round(v))}</text></g>`; });
+  const n = Math.max(ay + 2, 6), CH = 120, cy0 = top + 72, cw = W / n, lo = -(hibe + oz + kdv);
+  const yv = v => cy0 + 8 + (v / lo) * (CH - 30);
+  let cols = "";
+  for (let m = 0; m < n; m++) { const v = m < ay ? lo : lo + hibe; const y = yv(0), h = yv(v) - y;
+    cols += `<rect x="${m * cw + 3}" y="${y}" width="${cw - 6}" height="${Math.max(1, h)}" rx="3" fill="${m < ay ? "var(--no)" : "var(--seal)"}" opacity="${m < ay ? .75 : .9}"><title>${m}. ay: cebinden çıkmış ${tl(Math.round(-v))}</title></rect><text x="${m * cw + cw / 2}" y="${cy0 + CH + 4}" font-size="11" text-anchor="middle" fill="var(--muted)">${m === 0 ? "Başlangıç" : m + ". ay"}</text>`; }
+  const lab = (m, v, c) => `<text x="${m * cw + cw / 2}" y="${yv(0) + 18}" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">${short(Math.round(-v)).replace(" milyon", " mn")}</text>`;
+  cols += lab(0, lo) + (ay < n ? lab(ay, lo + hibe) : "");
+  const ok = `<text x="0" y="${top + 50}" font-size="11.5" fill="var(--muted)">Aylara göre cebinden çıkan para</text><text x="${ay * cw + 4}" y="${cy0 - 4}" font-size="11.5" font-weight="700" fill="var(--ok)">↑ hibe geldi</text>`;
+  return `<svg width="100%" viewBox="0 0 ${W} ${cy0 + CH + 12}" role="img" aria-label="Bütçenin hibe, öz kaynak ve KDV dağılımı ve aylara göre cebinden çıkan tutar"><g>${bar}</g>${leg}<line x1="0" x2="${W}" y1="${yv(0)}" y2="${yv(0)}" stroke="var(--line)"/>${cols}${ok}</svg>`;
+}
+
 /* ---------- Bildirimler: yeni ve uygun destekleri bul ---------- */
 async function checkNew() {
   const u = await Store.user(); const p = await Store.profile(); if (!u || !p) return 0;
@@ -361,5 +379,5 @@ async function enablePush() {
   return true;
 }
 
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, checkNew, enablePush, asset, lang, setLang };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang };
 })();
