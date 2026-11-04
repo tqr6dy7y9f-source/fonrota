@@ -1,5 +1,5 @@
 """
-Destek Bulucu – günlük veri toplayıcı.
+FonRota – haftalık veri toplayıcı.
 
 Her kaynağın liste sayfasını açar, destek/çağrı ilanlarına giden bağlantıları bulur,
 her ilanın sayfasından metni okuyup alanları (tür, ölçek, sektör, tarih, tutar, oran)
@@ -30,7 +30,7 @@ OUT = ROOT.parent / "data.json"
 FORMS = ROOT.parent / "forms"
 NEW_IDS = ROOT / "new_ids.json"
 MAX_PDF = 10 * 1024 * 1024
-UA = "DestekBulucu/1.0 (OMU universite projesi)"
+UA = "FonRota/1.0 (OMU universite projesi; +https://tqr6dy7y9f-source.github.io/fonrota/)"
 DELAY = 1.5          # saniye: kaynak sitelere nazik davranmak için
 MAX_LINKS = 40       # kaynak başına en fazla ilan sayfası
 

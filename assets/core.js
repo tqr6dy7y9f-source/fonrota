@@ -1,4 +1,4 @@
-/* Destek Bulucu – çekirdek: yardımcılar, veri, hesap, uygunluk, yapay zekâ, PDF */
+/* FonRota – çekirdek: yardımcılar, veri, hesap, uygunluk, yapay zekâ, PDF */
 (function () {
 const C = window.CONFIG || {};
 const BUNDLE = !!window.__BUNDLE__;
@@ -330,7 +330,7 @@ const ascii = s => low(s).replace(/ı/g, "i").replace(/ş/g, "s").replace(/ğ/g,
 async function writePdf(doc, f, blocks, title) {
   const { rgb } = window.PDFLib; const W = 595.28, H = 841.89, M = 50; const ink = rgb(.07, .2, .23), mut = rgb(.36, .44, .41), seal = rgb(.72, .51, .16);
   let page, y;
-  const newPage = () => { page = doc.addPage([W, H]); page.drawRectangle({ x: 0, y: H - 6, width: W, height: 6, color: seal }); page.drawText((C.SITE_ADI || "Destek Bulucu") + "  |  " + title, { x: M, y: H - 30, size: 8.5, font: f.r, color: mut }); y = H - 62; };
+  const newPage = () => { page = doc.addPage([W, H]); page.drawRectangle({ x: 0, y: H - 6, width: W, height: 6, color: seal }); page.drawText((C.SITE_ADI || "FonRota") + "  |  " + title, { x: M, y: H - 30, size: 8.5, font: f.r, color: mut }); y = H - 62; };
   const wrap = (text, font, size, width) => { const out = []; String(text).split("\n").forEach(par => { let line = ""; par.split(/\s+/).forEach(w => { const t = line ? line + " " + w : w; if (font.widthOfTextAtSize(t, size) > width && line) { out.push(line); line = w; } else line = t; }); out.push(line); }); return out; };
   const text = (t, { font = f.r, size = 10.5, color = ink, x = M, width = W - 2 * M, gap = 4 } = {}) => {
     for (const ln of wrap(t, font, size, width)) { if (y < M + size) newPage(); page.drawText(ln, { x, y, size, font, color }); y -= size + gap; }

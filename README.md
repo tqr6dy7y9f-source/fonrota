@@ -1,4 +1,4 @@
-# Destek Bulucu
+# FonRota
 
 Mevcut şirketlerin ve KOBİ'lerin kendilerine uygun hibe, kredi ve teşvikleri bulmasını, başvuru formlarını otomatik doldurmasını ve yeni desteklerden anında haberdar olmasını sağlayan site.
 

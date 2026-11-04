@@ -1,7 +1,7 @@
 // Site ayarları. Boş bırakılan servisler "demo modunda" çalışır:
 // hesaplar ve bildirimler tarayıcıda saklanır, AI yerine kural tabanlı analiz kullanılır.
 window.CONFIG = {
-  SITE_ADI: "Destek Bulucu",
+  SITE_ADI: "FonRota",
   // Supabase (hesaplar, kayıtlı başvurular, bildirimler) – supabase.com > Project Settings > API
   SUPABASE_URL: "https://gebuzyferpvlzturxoyu.supabase.co",
   SUPABASE_ANON_KEY: "sb_publishable_pI798Yv3sQ47VMbJE7yuhw_-y-ct6TF",

@@ -94,7 +94,7 @@ SCRIPTS = ["config.js", "assets/prompts.js", "assets/core.js", "assets/pages.js"
 
 
 def page(name):
-    title = TITLES[name] + " – Destek Bulucu"
+    title = TITLES[name] + " – FonRota"
     html = HEAD.format(title=title, css='<link rel="stylesheet" href="assets/style.css">')
     html += f'<body data-page="{name}">\n<header class="top" id="top"></header>\n<main data-page="{name}">\n{MAINS[name]}\n</main>\n<footer class="site" id="footer"></footer>\n'
     html += "".join(f'<script src="{s}"></script>\n' for s in SCRIPTS) + "</body>\n</html>\n"
@@ -103,7 +103,7 @@ def page(name):
 
 def bundle():
     css = (ROOT / "assets/style.css").read_text(encoding="utf-8")
-    html = HEAD.format(title="Destek Bulucu – önizleme", css=f"<style>\n{css}\n</style>")
+    html = HEAD.format(title="FonRota – önizleme", css=f"<style>\n{css}\n</style>")
     html += '<body>\n<header class="top" id="top"></header>\n'
     for name, m in MAINS.items():
         m = re.sub(r'href="([a-z]+)\.html(\?([^"]*))?"', lambda mm: f'href="#{mm.group(1)}"' + (f' data-q="{mm.group(3)}"' if mm.group(3) else ""), m)

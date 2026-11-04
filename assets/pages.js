@@ -1,4 +1,4 @@
-/* Destek Bulucu – sayfalar */
+/* FonRota – sayfalar */
 (function () {
 const D = window.DB; let ROOT = document;
 const $ = (s, r) => (r || ROOT).querySelector(s) || (r ? null : document.querySelector(s));
