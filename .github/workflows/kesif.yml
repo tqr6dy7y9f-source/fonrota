@@ -9,33 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: "20" }
-      - name: Program sayfalarini tarayicida ac
+      - name: Ozet bilgi formlarini indir
         run: |
-          npm i --no-save playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
-          mkdir -p kesif3
-          cat > r.js <<'JS'
-          const { chromium } = require('playwright');
-          const ids = ['02c405c5-a85d-4d95-9054-7746681c519a','03b816d6-0474-40b8-9582-4571a16725da'];
-          (async () => {
-            const b = await chromium.launch(); const p = await b.newPage({ userAgent: 'Mozilla/5.0 (compatible; DestekBulucu/1.0)' });
-            for (const id of ids) for (const suf of ['', '/ozet']) {
-              await p.goto('https://yatirimadestek.gov.tr/program/' + id + suf, { waitUntil: 'networkidle', timeout: 60000 }).catch(e => console.log(e.message));
-              await p.waitForTimeout(3000);
-              const n = id.slice(0, 8) + (suf ? '-ozet' : '');
-              require('fs').writeFileSync('kesif3/' + n + '.txt', await p.evaluate(() => document.body.innerText));
-              require('fs').writeFileSync('kesif3/' + n + '.html', await p.content());
-              const links = await p.evaluate(() => [...document.querySelectorAll('a[href]')].map(a => a.innerText.trim().slice(0, 60) + ' -> ' + a.href).filter(s => /pdf|doc|form|başvuru|basvuru|http/i.test(s)));
-              require('fs').writeFileSync('kesif3/' + n + '-links.txt', links.join('\n'));
-              await p.waitForTimeout(2000);
-            }
-            await b.close();
-          })();
-          JS
-          node r.js; ls -la kesif3
+          sudo apt-get install -y poppler-utils >/dev/null 2>&1
+          mkdir -p kesif4
+          B=https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar
+          for f in ozet-1711_yapay_zeka_ekosistem_cagrisi_2025_1.pdf ozet-era_net_cofund_araci_destekleme_programi1.pdf ozet-1501_sanayi_ar-ge_projeleri_destekleme_programi_2025_2.pdf ozet_yesil_sanayi_destek_programi.pdf; do
+            curl -sSL -m 60 -A "Mozilla/5.0 (compatible; DestekBulucu/1.0)" "$B/$f" -o "kesif4/$f" && pdftotext -layout "kesif4/$f" "kesif4/$f.txt"; sleep 2
+          done
+          rm -f kesif4/*.pdf; ls -la kesif4
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A kesif3 && git commit -m "kesif 3" && git push
+          git add -A kesif4 && git commit -m "kesif 4" && git push
