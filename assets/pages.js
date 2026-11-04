@@ -61,9 +61,9 @@ function player(el, { autoplay = false } = {}) {
       tick(e, t) { $(".v-type", e).textContent = typed.slice(0, Math.max(0, Math.floor((t - .8) * 14))); } },
     { cap: "Ölçeğini güncel KOBİ yönetmeliğine göre biz belirleriz.", html: `<div class="t1">Çalışan sayını gir.</div><div class="v-count">0</div><div><span class="v-pill">Küçük işletme</span></div>`,
       tick(e, t) { $(".v-count", e).textContent = Math.min(12, Math.floor(t * 4)); $(".v-pill", e).classList.toggle("on", t > 4); } },
-    { cap: "Hibe, kredi ve teşvikler tek haritada. Uygun olanlar yeşil.", html: `<div class="t1">Sana uyanlar haritada.</div><svg viewBox="0 0 600 220" style="width:62cqw;margin-top:2cqw">${["Makine ve yatırım", "İhracat", "Kredi", "Bölgesel hibe"].map((b, i) => { const y = 30 + i * 52; return `<path class="ln" d="M120 110 C 200 110, 200 ${y}, 270 ${y}" stroke="#E0AE57" stroke-width="3" fill="none" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><g class="nd" opacity="0"><rect x="270" y="${y - 17}" width="200" height="34" rx="8" fill="#F3F6F4"/><text x="284" y="${y + 6}" font-size="16" font-family="Figtree" fill="#12343B" font-weight="600">${b}</text><circle cx="452" cy="${y}" r="7" fill="#2F7D5B"/></g>`; }).join("")}<rect x="10" y="88" width="110" height="44" rx="10" fill="#E0AE57"/><text x="65" y="116" font-size="17" text-anchor="middle" font-family="Figtree" font-weight="700" fill="#1b1305">İşletmen</text></svg>`,
-      tick(e, t) { $$(".ln", e).forEach((l, i) => l.setAttribute("stroke-dashoffset", Math.max(0, 1 - Math.max(0, t - 1 - i * .9) / .8))); $$(".nd", e).forEach((n, i) => n.setAttribute("opacity", t > 1.8 + i * .9 ? 1 : 0)); } },
-    { cap: "Bilgilerin başvuru formuna otomatik yazılır; PDF’i indirip kullanırsın.", html: `<div class="t1">Formun hazır.</div><div class="v-form">${["Firma ünvanı", "Vergi no", "Çalışan sayısı", "İşletme ölçeği", "Proje adı"].map(k => `<div><span>${k}</span><b>✓ dolduruldu</b></div>`).join("")}</div>`,
+    { cap: "Hibe, kredi ve teşvikler kurum kurum. Sana uymayanlar elenir.", html: `<div class="t1">Sana uyanlar kurum kurum.</div><div class="v-kolon">${[["KOSGEB", ["Yapay Zekâ Kredisi", "Stratejik Ürün Desteği"]], ["TÜBİTAK", ["1702 Patent Tabanlı", "1831 Yeşil İnovasyon"]], ["Ticaret Bak.", ["Pazara Giriş Belgesi", "Fuar Desteği"]]].map(([k, l]) => `<div><b>${k}</b>${l.map(t => `<span class="vk">${t}</span>`).join("")}</div>`).join("")}</div>`,
+      tick(e, t) { $$(".vk", e).forEach((n, i) => n.classList.toggle("on", t > 1 + i * .6)); } },
+    { cap: "Her destek için bilgilerinle doldurulmuş başvuru hazırlık formu; resmi form varsa o doldurulur.", html: `<div class="t1">Formun hazır.</div><div class="v-form">${["Firma ünvanı", "Vergi no", "Çalışan sayısı", "İşletme ölçeği", "Proje adı"].map(k => `<div><span>${k}</span><b>✓ dolduruldu</b></div>`).join("")}</div>`,
       tick(e, t) { $$(".v-form b", e).forEach((b, i) => b.classList.toggle("on", t > 1.2 + i * .9)); } },
     { cap: "Ücretsiz hesap aç, sana uygun destekleri kaçırma.", html: `<div class="t1">Yeni destek çıkınca ilk sen öğren.</div><div class="t2">${esc(C.SITE_ADI)}</div><div class="v-note"><b>Sana uygun yeni destek</b>Mali Destek Programı yayımlandı. Profiline uyuyor.</div>`,
       tick(e, t) { $(".v-note", e).classList.toggle("on", t > 1.5); } }
@@ -199,7 +199,7 @@ P.bul = async () => {
   }
 };
 
-/* ---------- Sonuçlar: hiyerarşik zihin haritası (merkez → kurumlar → net fırsatlar) ---------- */
+/* ---------- Sonuçlar: kurumlara göre sütunlar ---------- */
 function amount(x, butce) {
   const ad = x.tur === "kredi" ? "kredi" : x.tur === "vergi" ? "avantaj" : "hibe";
   if (butce > 0 && x.destek_orani && x.tur !== "vergi") { const n = Math.min(butce * x.destek_orani / 100, x.ust_limit || Infinity); return `${short(Math.round(n))} ${ad} (%${x.destek_orani})`; }
@@ -376,7 +376,7 @@ P.destek = async () => {
   if (!x) { $("#detay").innerHTML = `<div class="empty"><h2>Bu destek bulunamadı.</h2><p>Kaldırılmış veya süresi dolmuş olabilir.</p><a class="btn" ${link("destekler")}>Tüm desteklere dön</a></div>`; return; }
   document.title = x.ad + " – " + C.SITE_ADI;
   const c = D.check(x, p); const secim = D.LS.get("secim", []);
-  const yontem = { pdf: "Form otomatik doldurulur", online: "Online başvuru, adım adım rehber", bilgi: "Başvuru bilgi raporu hazırlanır" }[x.basvuru.yontem];
+  const yontem = { pdf: "Kurumun resmi formu bilgilerinle doldurulur", online: "Bilgilerinle doldurulmuş başvuru hazırlık formu ve online başvuru rehberi", bilgi: "Bilgilerinle doldurulmuş başvuru hazırlık formu" }[x.basvuru.yontem];
   $("#detay").innerHTML = `
     <p class="crumb"><a ${link("destekler")}>Tüm destekler</a> / ${esc(x.kurum)}</p>
     <div class="two"><div>
@@ -461,18 +461,18 @@ P.basvuru = async () => {
   let pdfOk = mode === "pdf";
   const modeBox = () => {
     if (pdfOk) return `<div class="mode"><div><b>Form otomatik doldurulacak</b>Kurumun başvuru formunu senin bilgilerinle dolduruyoruz. İndirip imzalaman ve sisteme yüklemen yeterli.</div></div>`;
-    if (mode !== "bilgi") return `<div class="mode mid"><div><b>Bu başvuru kurumun sitesinden yapılıyor</b>Siteyi yeni sekmede açıyoruz. Aşağıdaki “Hangi alana ne yazılacak” listesinden bilgileri kopyalayıp yapıştır.</div></div>`;
-    return `<div class="mode mid"><div><b>Bu destek için doğrudan bir form yok</b>Başvuruda istenecek tüm bilgileri, belgeleri ve adımları tek bir PDF rapor halinde hazırlıyoruz.</div></div>`;
+    if (mode !== "bilgi") return `<div class="mode"><div><b>Başvuru hazırlık formun hazır</b>Bu destek için kurum indirilebilir bir form yayımlamıyor; başvuru kurumun kendi sisteminden yapılıyor. Bilgilerinle doldurulmuş hazırlık formunu indir, kurumun sisteminde istenenleri aşağıdaki listeden kopyalayıp yapıştır.</div></div>`;
+    return `<div class="mode"><div><b>Başvuru hazırlık formun hazır</b>Bu destek için doğrudan bir form yok. Başvuruda istenecek bilgileri, şartları, belgeleri ve adımları bilgilerinle doldurulmuş tek bir PDF’te hazırlıyoruz.</div></div>`;
   };
   const renderAct = () => {
     const e = eksik();
     $("#mode").innerHTML = modeBox();
-    $("#act").innerHTML = `<h3>${pdfOk ? "Doldurulmuş form" : mode !== "bilgi" ? "Online başvuru" : "Başvuru bilgi raporu"}</h3>
+    $("#act").innerHTML = `<h3>${pdfOk ? "Doldurulmuş resmi form" : "Doldurulmuş başvuru hazırlık formu"}</h3>
       ${e.length ? `<p class="small missing">${e.length} alan boş: ${e.slice(0, 4).map(k => ALANLAR[k]?.e).join(", ")}${e.length > 4 ? "…" : ""}</p>` : `<p class="small" style="color:var(--ok)">Tüm alanlar dolu.</p>`}
       <div class="actions" style="flex-direction:column;margin:12px 0">
         ${pdfOk ? `<button class="btn seal" type="button" id="dl-form">Formu doldur ve indir (PDF)</button>` : ""}
-        ${!pdfOk && mode !== "bilgi" ? `<a class="btn seal" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">Başvuru sitesini aç ↗</a>` : ""}
-        <button class="btn ${pdfOk || mode !== "bilgi" ? "ghost" : "seal"}" type="button" id="dl-info">Bilgi raporunu indir (PDF)</button>
+        <button class="btn ${pdfOk ? "ghost" : "seal"}" type="button" id="dl-info">${pdfOk ? "Hazırlık formunu da indir (PDF)" : "Hazırlık formunu indir (PDF)"}</button>
+        ${!pdfOk && mode !== "bilgi" ? `<a class="btn ghost" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">Kurumun başvuru sitesini aç ↗</a>` : ""}
       </div>
       <label class="small muted" for="durum">Başvuru durumu</label>
       <select class="input" id="durum">${["Hazırlanıyor", "Form hazır", "Başvurdum", "Sonuçlandı"].map(s => `<option${s === (app.durum || "Hazırlanıyor") ? " selected" : ""}>${s}</option>`).join("")}</select>
@@ -486,7 +486,7 @@ P.basvuru = async () => {
       catch (err) { pdfOk = false; renderAct(); toast("Form şu an alınamadı. Online başvuru rehberine geçtik."); }
       finally { if ($("#dl-form")) { $("#dl-form").disabled = false; $("#dl-form").textContent = "Formu doldur ve indir (PDF)"; } }
     };
-    $("#dl-info").onclick = async () => { const b = $("#dl-info"); b.disabled = true; try { await persist(); const bytes = await D.infoPdf(x, values, p); await D.saveFile(`${x.id}-basvuru-bilgileri.pdf`, bytes); } catch { toast("Rapor oluşturulamadı. Tekrar dene."); } b.disabled = false; };
+    $("#dl-info").onclick = async () => { const b = $("#dl-info"); b.disabled = true; try { await persist(); const bytes = await D.infoPdf(x, values, p); await D.saveFile(`${x.id}-basvuru-hazirlik-formu.pdf`, bytes); } catch { toast("Hazırlık formu oluşturulamadı. Tekrar dene."); } b.disabled = false; };
   };
   renderAct();
   if ($("#ai-ozet") && await D.aiAvailable()) {

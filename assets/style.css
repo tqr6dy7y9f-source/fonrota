@@ -141,30 +141,12 @@ textarea.input{min-height:110px;resize:vertical}
 .seg button{border:none;background:transparent;padding:8px 14px;cursor:pointer;font-weight:600;font-size:14px}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .mindmap{border-radius:16px}
-.mindmap svg{display:block;margin:0 auto}
-.mm-node{cursor:pointer}
-.mm-node:focus-visible rect{stroke:var(--seal);stroke-width:3}
 .mm-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);padding:10px 4px}
 .mm-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
-.tree{padding:16px}
-.tree details{border-left:3px solid var(--seal);margin:0 0 12px 8px;padding-left:14px}
-.tree summary{cursor:pointer;font-weight:700;font-family:"Bricolage Grotesque",sans-serif;font-size:18px;padding:4px 0}
-.tree a{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;padding:10px 12px;border-radius:8px;background:var(--bg);margin:6px 0}
-.tree-root{display:inline-flex;flex-direction:column;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-weight:700;margin-bottom:14px}
-.tree-root span{font-weight:500;font-size:13px;opacity:.85}
-.tree a span small{display:block;font-weight:700;color:var(--seal-ink);font-size:13px;margin-top:2px}
-.tree summary small{font-weight:500;color:var(--muted);font-size:14px}
 .mm-filtre{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 2px}
 .mm-butce{max-width:340px;margin:12px 0 10px}
-/* Harita animasyonu: merkez -> kurum dallari -> firsatlar */
-.mm-anim .mm-n0{animation:mmPop .5s cubic-bezier(.3,1.4,.6,1) both;transform-box:fill-box;transform-origin:center}
-.mm-anim .mm-l1,.mm-anim .mm-l2{stroke-dasharray:1;stroke-dashoffset:1;animation:mmDraw .55s ease-out forwards;animation-delay:var(--d)}
-.mm-anim .mm-n1,.mm-anim .mm-n2{opacity:0;animation:mmIn .4s ease-out forwards;animation-delay:var(--d)}
-.tree.mm-anim details{opacity:0;animation:mmIn .4s ease-out forwards;animation-delay:calc(var(--d) * .08s + .1s)}
-@keyframes mmPop{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
-@keyframes mmDraw{to{stroke-dashoffset:0}}
 @keyframes mmIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.mm-anim *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
+@media (prefers-reduced-motion:reduce){.mm-anim *{animation:none!important;opacity:1!important}}
 .list{list-style:none;margin:0;padding:0}
 .item{border-bottom:1px solid var(--line)}
 .item > a{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 4px;text-decoration:none}
@@ -296,3 +278,10 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 .kaydol-eylem{display:flex;flex-direction:column;gap:10px;align-items:stretch;text-align:center}
 .kaydol-eylem .btn{font-size:17px;padding:14px 20px}
 @media (max-width:760px){.kaydol-kutu{grid-template-columns:1fr;padding:22px 18px}}
+
+/* Tanıtım animasyonu: kurum sütunları sahnesi */
+.v-kolon{display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw;margin-top:3cqw;max-width:78cqw}
+.v-kolon>div{background:rgba(255,255,255,.14);border-radius:1.4cqw;padding:1.6cqw}
+.v-kolon b{display:block;font:700 2.4cqw Figtree,sans-serif;margin-bottom:1.2cqw}
+.vk{display:block;background:#fff;color:#12343B;border-left:.7cqw solid #2F7D5B;border-radius:1cqw;padding:1.2cqw 1.4cqw;margin-bottom:1.2cqw;font:600 2cqw Figtree,sans-serif;opacity:0;transform:translateY(1cqw);transition:opacity .35s,transform .35s}
+.vk.on{opacity:1;transform:none}

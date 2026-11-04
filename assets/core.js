@@ -331,7 +331,10 @@ async function writePdf(doc, f, blocks, title) {
   const { rgb } = window.PDFLib; const W = 595.28, H = 841.89, M = 50; const ink = rgb(.07, .2, .23), mut = rgb(.36, .44, .41), seal = rgb(.72, .51, .16);
   let page, y;
   const newPage = () => { page = doc.addPage([W, H]); page.drawRectangle({ x: 0, y: H - 6, width: W, height: 6, color: seal }); page.drawText((C.SITE_ADI || "FonRota") + "  |  " + title, { x: M, y: H - 30, size: 8.5, font: f.r, color: mut }); y = H - 62; };
-  const wrap = (text, font, size, width) => { const out = []; String(text).split("\n").forEach(par => { let line = ""; par.split(/\s+/).forEach(w => { const t = line ? line + " " + w : w; if (font.widthOfTextAtSize(t, size) > width && line) { out.push(line); line = w; } else line = t; }); out.push(line); }); return out; };
+  // Satır kaydırma; tek başına sığmayan uzun kelimeler (ör. bağlantılar) harf harf bölünür
+  const kir = (w, font, size, width) => { const parts = []; let cur = ""; for (const ch of w) { if (font.widthOfTextAtSize(cur + ch, size) > width && cur) { parts.push(cur); cur = ch; } else cur += ch; } if (cur) parts.push(cur); return parts; };
+  const wrap = (text, font, size, width) => { const out = []; String(text).split("\n").forEach(par => { let line = ""; par.split(/\s+/).flatMap(w => font.widthOfTextAtSize(w, size) > width ? kir(w, font, size, width) : [w]).forEach(w => { const t = line ? line + " " + w : w; if (font.widthOfTextAtSize(t, size) > width && line) { out.push(line); line = w; } else line = t; }); out.push(line); }); return out; };
+  const yer = (n = 40) => { if (y < M + n) newPage(); };  // madde işareti ile metni aynı sayfada tut
   const text = (t, { font = f.r, size = 10.5, color = ink, x = M, width = W - 2 * M, gap = 4 } = {}) => {
     for (const ln of wrap(t, font, size, width)) { if (y < M + size) newPage(); page.drawText(ln, { x, y, size, font, color }); y -= size + gap; }
   };
@@ -341,9 +344,9 @@ async function writePdf(doc, f, blocks, title) {
     if (b.h2) { y -= 10; if (y < M + 60) newPage(); text(b.h2, { font: f.b, size: 13, gap: 5 }); page.drawLine({ start: { x: M, y: y + 12 }, end: { x: W - M, y: y + 12 }, thickness: .6, color: rgb(.83, .86, .85) }); y -= 8; }
     if (b.p) { text(b.p); y -= 4; }
     if (b.small) { text(b.small, { size: 8.5, color: mut }); y -= 2; }
-    if (b.kv) for (const [k, v] of b.kv) { const start = y; text(k, { size: 9.5, color: mut, width: 160 }); const after = y; y = start; text(v === "" || v == null ? "—" : String(v), { x: M + 170, width: W - 2 * M - 170, font: f.b, size: 10 }); y = Math.min(y, after) - 3; }
-    if (b.ol) b.ol.forEach((it, i) => { const start = y; text(`${i + 1}.`, { width: 16 }); y = start; text(it, { x: M + 18, width: W - 2 * M - 18 }); });
-    if (b.ul) for (const it of b.ul) { const start = y; text("•", { width: 10 }); y = start; text(it, { x: M + 14, width: W - 2 * M - 14 }); }
+    if (b.kv) for (const [k, v] of b.kv) { yer(); const start = y; text(k, { size: 9.5, color: mut, width: 160 }); const after = y; y = start; text(v === "" || v == null ? "—" : String(v), { x: M + 170, width: W - 2 * M - 170, font: f.b, size: 10 }); y = Math.min(y, after) - 3; }
+    if (b.ol) b.ol.forEach((it, i) => { yer(); const start = y; text(`${i + 1}.`, { width: 16 }); y = start; text(it, { x: M + 18, width: W - 2 * M - 18 }); });
+    if (b.ul) for (const it of b.ul) { yer(); const start = y; text("•", { width: 10 }); y = start; text(it, { x: M + 14, width: W - 2 * M - 14 }); }
   }
   const pages = doc.getPages(); pages.forEach((pg, i) => pg.drawText(`${today()}   ·   Sayfa ${i + 1} / ${pages.length}`, { x: M, y: 26, size: 8, font: f.r, color: mut }));
 }
@@ -369,20 +372,34 @@ async function fillForm(x, values) {
   return { bytes: await doc.save(), filled };
 }
 
+/* Her program için doldurulmuş "Başvuru hazırlık formu" (resmi PDF formu olmayan programlar dahil).
+   Firma bilgileri + resmi "Kimler yararlanabilir?" maddeleri ve kullanıcının cevapları + başvuru dönemi/yeri + resmi belgeler. */
 async function infoPdf(x, values, p) {
   const { PDFDocument } = await pdfLibs(); const doc = await PDFDocument.create(); const f = await fonts(doc);
-  doc.setTitle(x.ad + " – başvuru bilgileri");
+  doc.setTitle(x.ad + " – başvuru hazırlık formu");
   const eksik = x.alanlar.filter(k => values[k] == null || values[k] === "");
+  const bolum = ad => x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith(ad)) || {}).metin;
+  const kimler = (bolum("Kimler") || "").split("\n").map(l => l.trim()).filter(Boolean);
+  const cev = LS.get("sart:" + x.id, {}); const CEV = { e: "[Evet]", h: "[Hayır]", b: "[Emin değilim]" };
+  let qi = 0;
+  const sartlar = kimler.map((l, i) => { const t = l.replace(/^[•–]\s*/, ""); if (/[:;]$/.test(l)) return t; return `${CEV[cev[i]] || "[Cevaplanmadı]"}  ${t}`; });
+  const resmiBelge = (x.resmi?.belgeler || []).map(d => `${d.ad}  –  ${d.url}`);
+  const yer = bolum("Başvuru yeri"), donem = bolum("Başvuru dönemi");
   await writePdf(doc, f, [
-    { h1: x.ad }, { small: `${x.kurum} · Hazırlanma tarihi ${today()}` },
-    { p: x.ozet },
-    { h2: "Başvuruda istenecek bilgiler" }, { kv: x.alanlar.map(k => [ALANLAR[k]?.e || k, ["ciro", "projeButcesi", "talepTutari"].includes(k) && num(values[k]) != null ? tl(num(values[k])) : values[k]]) },
-    ...(eksik.length ? [{ small: "Eksik alanlar: " + eksik.map(k => ALANLAR[k]?.e || k).join(", ") }] : []),
-    { h2: "Hazırlanması gereken belgeler" }, { ul: x.belgeler || [] },
-    { h2: "Başvuru adımları" }, { ol: x.basvuru.adimlar || [] },
-    { p: "Başvuru adresi: " + (x.basvuru.online || x.url) },
-    { h2: "Koşullar" }, { ul: x.kosullar || [] },
-    { small: "Bu rapor bilgilendirme amaçlıdır. Güncel koşulları kurumun resmi sayfasından kontrol edin." }
+    { h1: x.ad }, { small: `${x.kurum} · Hazırlanma tarihi ${today()} · FonRota başvuru hazırlık formu` },
+    { small: "Bu belge kurumun resmi başvuru formu değildir. Başvuruyu hazırlaman ve kurumun sisteminde istenen bilgileri hızlıca doldurman için bilgilerinle hazırlandı." },
+    { h2: "1. Başvuru sahibi ve firma bilgileri" }, { kv: x.alanlar.map(k => [ALANLAR[k]?.e || k, ["ciro", "projeButcesi", "talepTutari"].includes(k) && num(values[k]) != null ? tl(num(values[k])) : values[k]]) },
+    ...(eksik.length ? [{ small: "Boş alanlar: " + eksik.map(k => ALANLAR[k]?.e || k).join(", ") }] : []),
+    ...(sartlar.length ? [{ h2: "2. Kimler yararlanabilir? (resmi metin) ve cevapların" }, { ul: sartlar }, { small: "Maddeler Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndaki özet bilgi formundan değiştirilmeden alındı. Cevaplar senin işaretlemelerindir." }]
+      : x.kosullar?.length ? [{ h2: "2. Koşullar" }, { ul: x.kosullar }] : []),
+    ...(donem ? [{ h2: "3. Başvuru dönemi" }, { p: donem }] : []),
+    { h2: (donem ? "4" : "3") + ". Nereye ve nasıl başvurulur?" },
+    ...(yer ? [{ p: yer }] : []), ...((x.basvuru.adimlar || []).length && !yer ? [{ ol: x.basvuru.adimlar }] : []),
+    { p: (x.resmi && x.basvuru.online === x.resmi.sayfa ? "Resmi program sayfası: " : "Başvuru adresi: ") + (x.basvuru.online || x.url) },
+    ...((x.belgeler || []).length ? [{ h2: "Hazırlanması gereken belgeler" }, { ul: x.belgeler }] : []),
+    ...(resmiBelge.length ? [{ h2: "Resmi belgeler (çağrı metni, genelge, özet form)" }, { ul: resmiBelge }] : []),
+    ...(x.sayfa?.metin ? [{ h2: "Kurumun sayfasından" }, { p: x.sayfa.metin }, { small: "Kaynak: " + x.sayfa.url }] : []),
+    { small: "Güncel koşulları ve son başvuru tarihini kurumun resmi sayfasından kontrol et. FonRota kamu kurumlarıyla resmi bağı olmayan bağımsız bir bilgilendirme platformudur." }
   ], x.ad);
   return doc.save();
 }
