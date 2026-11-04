@@ -22,9 +22,11 @@ async function layout(page) {
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
-  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Bilgiler kurumların resmi sitelerinden her gün otomatik toplanır. Başvurmadan önce koşulları kurumun sayfasından kontrol et.</span><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}</span></div>`; }
+  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Bilgiler T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan her hafta otomatik toplanır. Başvurmadan önce koşulları kurumun sayfasından kontrol et.</span><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span></div>`; }
 }
-function sampleNotice(d) { return d.ornek ? `<div class="notice">Şu an örnek veri gösteriliyor. Günlük güncelleme çalıştığında kurumların sitelerindeki güncel ilanlar burada yer alır.</div>` : ""; }
+// Sürüm numarası: sayfadaki script bağlantısının ?v= değeri (tools/surum.py yeniler)
+function surum() { const m = [...document.scripts].map(x => x.src.match(/pages\.js\?v=(\d+)/)).find(Boolean); return m ? m[1] : ""; }
+function sampleNotice(d) { return d.ornek ? `<div class="notice">Şu an örnek veri gösteriliyor. Haftalık güncelleme çalıştığında kurumların sitelerindeki güncel ilanlar burada yer alır.</div>` : ""; }
 function money(x) { return x.ust_limit ? `<span class="money">${short(x.ust_limit)}’ye kadar</span>` : x.destek_orani ? `<span class="money">%${x.destek_orani} destek</span>` : ""; }
 function due(x) { const d = D.daysLeft(x.son_basvuru); return x.son_basvuru ? `<span class="due ${d <= 21 ? "soon" : ""}">Son başvuru: ${d <= 0 ? "bugün" : d + " gün kaldı"}</span>` : `<span class="due">Sürekli açık veya çağrıya bağlı</span>`; }
 function itemRow(x, c) {
