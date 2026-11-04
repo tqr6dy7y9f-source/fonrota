@@ -229,6 +229,21 @@ function kolonlar(root, goal, groups, butce, acik, kilit = new Set()) {
       </section>`; }).join("")}</div>`;
 }
 
+/* Başvurmadan önce hazır olması gerekenler (KOBİ beyannamesi, DYS, PRODİS, KAYS, ÇKS...): işaretlenince profile kaydedilir */
+function hazirlikHTML(x, p) {
+  const ids = D.onKosullar(x); const h = (p && p.hazirlik) || {};
+  const n = ids.filter(id => h[id]).length;
+  return `<section class="sec hazir" data-hazir="${esc(x.id)}"><h3>Başvurmadan önce hazır olması gerekenler ${ids.length ? `<small>${n}/${ids.length} hazır</small>` : ""}</h3>
+    ${ids.map(id => { const k = D.ON_KOSUL[id]; return `<details class="hz${h[id] ? " ok" : ""}"><summary><label><input type="checkbox" data-hz="${id}"${h[id] ? " checked" : ""}> ${esc(k.ad)}</label></summary><p>${esc(k.nasil)}${k.link ? ` <a href="${esc(k.link)}" target="_blank" rel="noopener">Resmi sayfa ↗</a>` : ""}</p></details>`; }).join("")}
+    <details class="hz"><summary>Çoğu başvuruda istenen temel belgeler</summary><p>${D.TEMEL_BELGE.map(esc).join(" · ")}. Kesin liste her desteğin resmi belgelerinde (evrak listesi, genelge) yazar.</p></details></section>`;
+}
+function hazirlikBagla(kutu, x, yenile) {
+  $$("[data-hz]", kutu).forEach(i => {
+    i.onclick = e => e.stopPropagation();
+    i.onchange = async () => { const pr = await Store.profile() || {}; const h = { ...(pr.hazirlik || {}), [i.dataset.hz]: i.checked }; await Store.saveProfile({ hazirlik: h }); if (yenile) yenile({ ...pr, hazirlik: h }); };
+  });
+}
+
 /* Bir başvuru için gerekenler: resmi metindeki "Kimler yararlanabilir?" maddeleri tek tek sorulur (metin aynen). */
 function sartSatirlari(x) {
   const kimler = x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith("Kimler")) || {}).metin;
@@ -242,6 +257,7 @@ function gerekenlerHTML(x) {
   return `<p class="crumb">${esc(x.kurum)}</p><h2 id="g-baslik">${esc(x.ad)}</h2>
     <p class="small muted">${x.resmi ? `Sorular Bakanlığın özet bilgi formundaki “Kimler yararlanabilir?” maddelerinden <strong>aynen</strong> alındı.` : `Bu program için Bakanlığın özet formu yok; şartları kurumun sayfasından kontrol et.`}</p>
     ${satir.length ? `<h3>Bu şartları karşılıyor musun?</h3><form id="g-form">${sorular}</form><div id="g-sonuc" aria-live="polite"></div>` : ""}
+    <div id="g-hazir"></div>
     ${!satir.length && x.sayfa && x.sayfa.metin ? `<h3>Kurumun sayfasından</h3><div class="resmi-metin">${esc(x.sayfa.metin)}</div>` : ""}
     ${bolum("Başvuru dönemi") ? `<h3>Başvuru dönemi</h3><div class="resmi-metin">${esc(bolum("Başvuru dönemi"))}</div>` : ""}
     ${bolum("Başvuru yeri") ? `<h3>Nereye başvurulur?</h3><div class="resmi-metin">${esc(bolum("Başvuru yeri"))}</div>` : ""}
@@ -263,6 +279,8 @@ function kaydolHTML(n, kalan) {
     <div class="actions"><a class="btn seal" id="k-kayit" ${link("hesap", "sekme=kayit")}>Ücretsiz hesap aç</a><a class="btn ghost" id="k-giris" ${link("hesap", "sekme=giris")}>Hesabım var, giriş yap</a><button type="button" class="btn ghost" id="k-sonra">Şimdilik 2 desteğe bak</button></div>`;
 }
 function gerekenlerBagla(x, kutu) {
+  const hz = $("#g-hazir", kutu);
+  if (hz) { const ciz = pr => { hz.innerHTML = hazirlikHTML(x, pr); hazirlikBagla(hz, x, ciz); }; Store.profile().then(ciz); }
   const f = $("#g-form", kutu); if (!f) return;
   const satir = sartSatirlari(x);
   const ozet = () => {
@@ -389,6 +407,7 @@ P.destek = async () => {
         <div><dt>Son başvuru</dt><dd>${tarihli(x) ? new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }) : x.sayfa ? "Kurumun sayfasına bak" : "Sürekli / çağrıya bağlı"}</dd></div>
       </dl>
       <p style="font-size:17px">${esc(x.ozet)}</p>
+      <div id="hazir-kutu"></div>
       ${x.sayfa ? `<section class="sec resmi"><h2>Kurumun sayfasından</h2>
         <p class="small muted">Bu program Bakanlığın Destekler Platformu’nda yok; bilgiler <a href="${esc(x.sayfa.url)}" target="_blank" rel="noopener">${esc(x.sayfa.kaynak)} sayfasından</a> otomatik alındı ve <strong>değiştirilmeden</strong> gösteriliyor. Başvuru tarihleri ve şartlar için kurumun sayfasını mutlaka kontrol et. Son kontrol: ${new Date(x.sayfa.kontrol).toLocaleDateString("tr-TR")}.</p>
         ${x.sayfa.metin ? `<div class="resmi-metin">${esc(x.sayfa.metin)}</div>` : ""}</section>` : ""}
@@ -422,6 +441,7 @@ P.destek = async () => {
         <button class="btn ghost" type="button" id="sec">${secim.includes(x.id) ? "Rapordan çıkar" : "Özet rapora ekle"}</button>
         <a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">Kurumun sayfası ↗</a>
       </div></aside></div>`;
+  { const hk = $("#hazir-kutu"); const ciz = pr => { hk.innerHTML = hazirlikHTML(x, pr); hazirlikBagla(hk, x, ciz); }; ciz(p); }
   $("#sec").onclick = () => { let s = D.LS.get("secim", []); s = s.includes(x.id) ? s.filter(i => i !== x.id) : [...s, x.id]; D.LS.set("secim", s); $("#sec").textContent = s.includes(x.id) ? "Rapordan çıkar" : "Özet rapora ekle"; toast(s.includes(x.id) ? "Özet rapora eklendi." : "Rapordan çıkarıldı."); };
   if ($("#oz")) {
     const B = $("#oz-b"); B.value = Math.min(+B.max, Math.max(50000, num(p && p.projeButce) || Math.min(1e6, +B.max / 2)));

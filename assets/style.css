@@ -285,3 +285,13 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 .v-kolon b{display:block;font:700 2.4cqw Figtree,sans-serif;margin-bottom:1.2cqw}
 .vk{display:block;background:#fff;color:#12343B;border-left:.7cqw solid #2F7D5B;border-radius:1cqw;padding:1.2cqw 1.4cqw;margin-bottom:1.2cqw;font:600 2cqw Figtree,sans-serif;opacity:0;transform:translateY(1cqw);transition:opacity .35s,transform .35s}
 .vk.on{opacity:1;transform:none}
+
+/* Başvuru öncesi ön koşullar */
+.hazir{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.hazir h3{margin:0 0 8px;font-size:16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.hazir h3 small{font-size:12.5px;background:var(--soft);border-radius:99px;padding:1px 9px;color:var(--muted)}
+.hz{border-top:1px solid var(--line);padding:8px 0}.hz:first-of-type{border-top:none}
+.hz summary{cursor:pointer;font-weight:600;font-size:14.5px;list-style:none;display:flex;gap:8px;align-items:center}
+.hz summary::-webkit-details-marker{display:none}.hz summary::after{content:"▾";margin-left:auto;color:var(--muted)}
+.hz[open] summary::after{content:"▴"}
+.hz summary label{display:flex;gap:8px;align-items:center;cursor:pointer}.hz input{width:18px;height:18px;accent-color:var(--ok)}
+.hz.ok summary{color:var(--ok)}.hz p{margin:6px 0 2px 26px;font-size:14px;color:var(--muted);line-height:1.5}

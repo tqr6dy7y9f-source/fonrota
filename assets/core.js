@@ -181,6 +181,41 @@ function classify(calisan, ciro, bilanco) {
 }
 
 /* ---------- Uygunluk ---------- */
+/* ---------- Başvuru öncesi ön koşullar (beyanname, kayıtlar) ----------
+   Kaynaklar: KOSGEB KOBİ Bilgi Sistemi, Ticaret Bakanlığı DYS genelgeleri, TÜBİTAK PRODİS ön kayıt kılavuzu,
+   kalkınma ajansları KAYS başvuru rehberleri, Çiftçi Kayıt Sistemi Yönetmeliği. Yalnızca resmi kaynaklarda doğrulanan genel bilgiler. */
+const ON_KOSUL = {
+  kobi: { ad: "KOSGEB kaydı ve güncel KOBİ Bilgi Beyannamesi",
+    nasil: "e-Devlet şifrenle KOSGEB e-Hizmetler / KOBİ Bilgi Sistemi’ne gir, işletmeni kaydet ve KOBİ Bilgi Beyannamesi’ni doldur. Kayıtlı işletmeler beyannameyi her mali yıl kapandıktan sonra bir önceki yılın kesinleşmiş bilgileriyle günceller. Onaylanmış bir beyannameyi değiştirmek için bağlı olduğun KOSGEB müdürlüğüne başvurman gerekebilir.",
+    link: "https://www.kosgeb.gov.tr" },
+  dys: { ad: "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı ve ihracatçı birliği üyeliği",
+    nasil: "Ticaret Bakanlığı’nın ihracat desteklerine başvurular Destek Yönetim Sistemi (DYS) üzerinden yapılır ve yararlanıcıların DYS’ye kayıt olması zorunludur. Desteklerin çoğunda bir ihracatçı birliğine üye olmak da gerekir; şart desteğin genelgesine göre değişir.",
+    link: "https://ticaret.gov.tr/destekler/destek-yonetim-sistemi-dys" },
+  prodis: { ad: "TÜBİTAK PRODİS kuruluş ön kaydı onayı",
+    nasil: "Proje önerisi göndermeden önce kuruluşun PRODİS’te “Firma Ön Kayıt Sorumlusu” rolüyle kuruluş bazlı ön kayıt yapması ve onay alması gerekir. Ön kayıt evrakı çağrı kapanışından en az bir iş günü önce TÜBİTAK’a ulaşmalı; onay 2-3 gün sürebilir. Çağrının açılmasını beklemeye gerek yok, bir kez onay alan kuruluş her çağrıda tekrar yapmaz.",
+    link: "https://tubitak.gov.tr/sites/default/files/2025-07/on_kayit_kullanici_kilavuzu.pdf" },
+  kays: { ad: "Kalkınma Ajansları Yönetim Sistemi (KAYS) kaydı ve e-imza",
+    nasil: "Kalkınma ajansı başvuruları KAYS üzerinden yapılır. Kurumun KAYS’ta kaydı yoksa önce kurum kaydı oluşturulur, yetkili ve irtibat kişileri tanımlanır; giriş e-Devlet ile yapılır. Başvuru, KAYS’ta üretilen taahhütnamenin e-imzayla imzalanmasıyla tamamlanır. Adres ve ayrıntılar ajansın başvuru rehberinde yazar." },
+  cks: { ad: "Çiftçi Kayıt Sistemi (ÇKS) kaydı",
+    nasil: "İlk kayıt arazinin bulunduğu ilçe tarım ve orman müdürlüğüne (arazi merkez ilçedeyse il müdürlüğüne) yapılır; kayıt yenileme e-Devlet üzerinden de yapılabilir. Başvuru dönemleri her yıl Bakanlıkça duyurulur.",
+    link: "https://www.tarimorman.gov.tr" },
+  banka: { ad: "Aracı banka ile görüşme",
+    nasil: "Bu kredi aracı bankalar üzerinden kullandırılır; başvuruyu çalıştığın bankaya yaparsın. Banka kendi kredi değerlendirmesini ve teminat şartlarını uygular." }
+};
+function onKosullar(x) {
+  const metin = low([x.ad, x.kurum, ...(x.resmi?.bolumler || []).map(b => b.metin), x.sayfa?.metin || ""].join(" "));
+  const k = low(x.kurum || ""), out = [];
+  const var_ = (...w) => w.some(s => metin.includes(s));
+  if (k.includes("kosgeb") || var_("kobi bilgi beyanname", "kobi beyanname")) out.push("kobi");
+  if ((k.includes("ticaret bakanlığı") && var_("destek yönetim sistemi", "dys", "ihracatçı birliği")) || var_("destek yönetim sistemi")) out.push("dys");
+  if (var_("prodis", "teydeb") || (k.includes("tübitak") && /\b1[5-8]\d\d\b/.test(x.ad))) out.push("prodis");
+  if (k.includes("kalkınma ajansı") || var_("kays", "kalkınma ajansları yönetim sistemi")) out.push("kays");
+  if (var_("çiftçi kayıt sistemi", "çks")) out.push("cks");
+  if (var_("aracı banka")) out.push("banka");
+  return out;
+}
+const TEMEL_BELGE = ["Vergi levhası", "İmza sirküleri", "Ticaret sicil gazetesi", "Faaliyet belgesi (oda kaydı)", "Vergi ve SGK borcu yoktur yazıları"];
+
 /* ---------- Hedef kitle: resmi "Kimler yararlanabilir?" metninden kimlerin başvurabileceği ---------- */
 /* Resmi "Kimler yararlanabilir?" metninden hedef kitle. Dönen küme: bu programa kimler başvurabilir.
    null => metin genel ("Şirketler", "gerçek veya tüzel kişiler") ya da metin yok: herkese gösterilir. */
@@ -392,6 +427,7 @@ async function infoPdf(x, values, p) {
     ...(eksik.length ? [{ small: "Boş alanlar: " + eksik.map(k => ALANLAR[k]?.e || k).join(", ") }] : []),
     ...(sartlar.length ? [{ h2: "2. Kimler yararlanabilir? (resmi metin) ve cevapların" }, { ul: sartlar }, { small: "Maddeler Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndaki özet bilgi formundan değiştirilmeden alındı. Cevaplar senin işaretlemelerindir." }]
       : x.kosullar?.length ? [{ h2: "2. Koşullar" }, { ul: x.kosullar }] : []),
+    ...(onKosullar(x).length ? [{ h2: "Başvurmadan önce hazır olması gerekenler" }, { ul: onKosullar(x).map(id => `${(values.hazirlik || p?.hazirlik || {})[id] ? "[Hazır]" : "[Eksik]"}  ${ON_KOSUL[id].ad}: ${ON_KOSUL[id].nasil}`) }] : []),
     ...(donem ? [{ h2: "3. Başvuru dönemi" }, { p: donem }] : []),
     { h2: (donem ? "4" : "3") + ". Nereye ve nasıl başvurulur?" },
     ...(yer ? [{ p: yer }] : []), ...((x.basvuru.adimlar || []).length && !yer ? [{ ol: x.basvuru.adimlar }] : []),
@@ -467,5 +503,5 @@ async function enablePush() {
   return true;
 }
 
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE };
 })();
