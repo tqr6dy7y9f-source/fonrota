@@ -106,30 +106,47 @@ async function supa() {
   await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js");
   sb = window.supabase.createClient(C.SUPABASE_URL, C.SUPABASE_ANON_KEY); return sb;
 }
-/* Yerleşik test (yönetici) hesabı: yalnızca demo modunda (Supabase bağlı değilken) çalışır.
-   Sunum ve deneme içindir; gerçek bir güvenlik sağlamaz, bilgileri bu dosyada açıkça yazılıdır. */
+/* Yerleşik test (yönetici) hesabı: sunum ve deneme içindir. Bilgileri bu dosyada açıkça yazılıdır;
+   yalnızca kendi test profilini görür, başka kullanıcıların verisine erişemez.
+   Supabase bağlıyken gerçek bir Supabase hesabıdır (ilk girişte, e-posta onayı kapalıysa kendiliğinden açılır). */
 const TEST_HESAP = { email: "test@fonrota.local", password: "fonrota-test", ad: "Test Yönetici", rol: "admin" };
 const TEST_PROFIL = { firmaUnvani: "TechNova Mobilya Ltd. Şti. (TEST)", vkn: "0000000000", vergiDairesi: "Samsun", sirketTuru: "Limited şirket",
   kurulusYili: "2018", naceKodu: "31.09", calisan: "25", ciro: "40000000", yetkili: "Test Yönetici", telefon: "0000 000 00 00",
   eposta: "test@fonrota.local", il: "Samsun", adres: "Test adresi", isletmeTipi: "sirket", sektorler: ["imalat"], amaclar: ["yatirim", "ihracat"],
   ihracat: true, borcYok: true, isTanimi: "Samsun’da 25 kişiyle mobilya üretiyoruz. CNC makinesi almak ve ihracata başlamak istiyoruz.", test: true };
+/* Supabase bağlıyken hesap verileri tarayıcıda tutulmaz. Bu anahtarlar yalnızca hesapsız (misafir) test için
+   kullanılır; giriş yapılınca hesaba aktarılır ve çıkışta silinir. */
+function yerelHesapVerisiniSil(cikis = true) {
+  ["profile", "draft", "apps", "notifs", "secim", "user", ...(cikis ? ["kars", "mmFiltre", "geri"] : [])].forEach(k => LS.del(k));
+  try { Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).forEach(k => localStorage.removeItem(k)); } catch {}
+}
+// Hesapsızken verilen "Kimler yararlanabilir?" cevapları (giriş yapılınca hesaba aktarılır)
+function misafirSartlari() {
+  const o = {}; try { Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).forEach(k => { o[k.slice(8)] = JSON.parse(localStorage.getItem(k)); }); } catch {}
+  return o;
+}
+const sbHata = m => /not authorized|sending|confirmation email/i.test(m) ? "Onay e-postası gönderilemedi, bu yüzden hesap şu an açılamıyor. Biraz sonra tekrar dene."
+  : /rate limit|too many/i.test(m) ? "Çok fazla deneme yapıldı. Birkaç dakika sonra tekrar dene."
+  : /invalid.*email|email.*invalid/i.test(m) ? "Bu e-posta adresi geçerli görünmüyor."
+  : /network|fetch/i.test(m) ? "Sunucuya bağlanılamadı. İnternet bağlantını kontrol et." : m;
 const Store = {
   demo: !C.SUPABASE_URL,
+  _pr: null,  // sayfa içi profil önbelleği (aynı sayfada tekrar tekrar sunucuya gitmemek için; tarayıcıya yazılmaz)
   async user() {
     const s = await supa(); if (!s) return LS.get("user");
-    const { data: { user } } = await s.auth.getUser(); return user ? { id: user.id, email: user.email, ad: user.user_metadata?.ad } : null;
+    const { data: { session } } = await s.auth.getSession(); const user = session && session.user;
+    return user ? { id: user.id, email: user.email, ad: user.user_metadata?.ad, ...(user.email === TEST_HESAP.email ? { rol: "admin" } : {}) } : null;
   },
   async signUp({ email, password, ad, profil }) {
     const s = await supa();
     if (!s) { const accounts = LS.get("accounts", {}); if (accounts[email]) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap."); accounts[email] = { ad, password }; LS.set("accounts", accounts); LS.set("user", { email, ad }); await this.saveProfile(profil); return; }
     const p = { ...profil }; const c = classify(num(p.calisan), num(p.ciro), num(p.bilanco)); if (c) { p.olcek = c.olcek; p.olcekAdi = OLCEK[c.olcek]; }
-    LS.set("profile", p);
     // Profil, kayıtla birlikte gönderilir; veritabanındaki tetikleyici hesabı ve profili birlikte kaydeder.
     const { data, error } = await s.auth.signUp({ email, password, options: { data: { ad, profil: p }, emailRedirectTo: location.origin + location.pathname.replace(/[^/]*$/, "") + "hesap.html" } });
-    if (error) throw new Error(/registered|exists/i.test(error.message) ? "Bu e-posta ile zaten bir hesap var. Giriş yap." : /password/i.test(error.message) ? "Şifre çok zayıf. Daha uzun bir şifre seç." : error.message);
+    if (error) throw new Error(/registered|exists/i.test(error.message) ? "Bu e-posta ile zaten bir hesap var. Giriş yap." : /password/i.test(error.message) ? "Şifre çok zayıf. Daha uzun bir şifre seç." : sbHata(error.message));
     if (data.user && !(data.user.identities || []).length) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap.");
-    if (!data.session) return { onayGerekli: true };
-    await this.saveProfile(p);
+    if (!data.session) { yerelHesapVerisiniSil(false); return { onayGerekli: true }; }
+    this._pr = null; await this.saveProfile({ ...p, sartlar: { ...misafirSartlari(), ...(p.sartlar || {}) } }, true); yerelHesapVerisiniSil(false);
   },
   async signIn({ email, password }) {
     const s = await supa();
@@ -137,23 +154,46 @@ const Store = {
       if (email === TEST_HESAP.email && password === TEST_HESAP.password) { LS.set("user", { email, ad: TEST_HESAP.ad, rol: "admin" }); const pr = LS.get("profile"); if (!pr || !pr.olcek) await this.saveProfile(TEST_PROFIL); return; }
       const a = LS.get("accounts", {})[email]; if (!a || a.password !== password) throw new Error("E-posta veya şifre hatalı."); LS.set("user", { email, ad: a.ad }); return;
     }
+    const misafir = LS.get("profile"), mSart = misafirSartlari();  // giriş öncesi hesapsız yapılan test ve cevaplar
+    this._pr = null;
     const { error } = await s.auth.signInWithPassword({ email, password });
-    if (error) throw new Error(/confirm/i.test(error.message) ? "Önce e-postana gelen onay bağlantısına tıkla." : "E-posta veya şifre hatalı.");
+    if (error) throw new Error(/confirm/i.test(error.message) ? "Önce e-postana gelen onay bağlantısına tıkla." : /invalid|credentials/i.test(error.message) ? "E-posta veya şifre hatalı." : sbHata(error.message));
+    // Hesapta henüz profil yoksa misafirken doldurulan test bilgileri hesaba aktarılır; sonra tarayıcıdan silinir.
+    const pr = await this.profile();
+    if ((!pr || !pr.olcek) && misafir && misafir.olcek) await this.saveProfile(misafir, true);
+    else if ((!pr || !pr.olcek) && email === TEST_HESAP.email) await this.saveProfile(TEST_PROFIL, true);
+    if (Object.keys(mSart).length) { const p2 = await this.profile() || {}; await this.saveProfile({ sartlar: { ...mSart, ...(p2.sartlar || {}) } }); }
+    yerelHesapVerisiniSil(false);
   },
-  async testGiris() { return this.signIn({ email: TEST_HESAP.email, password: TEST_HESAP.password }); },
-  async testProfiliYukle() { LS.del("profile"); return this.saveProfile(TEST_PROFIL); },
-  async signOut() { const s = await supa(); if (s) await s.auth.signOut(); LS.del("user"); },
+  async testGiris() {
+    const s = await supa(); if (!s) return this.signIn({ email: TEST_HESAP.email, password: TEST_HESAP.password });
+    try { return await this.signIn({ email: TEST_HESAP.email, password: TEST_HESAP.password }); }
+    catch (e) {
+      if (e.message !== "E-posta veya şifre hatalı.") throw e;
+      // Test hesabı Supabase'de yoksa açılır (e-posta onayı kapalıysa hemen girilir)
+      const r = await this.signUp({ email: TEST_HESAP.email, password: TEST_HESAP.password, ad: TEST_HESAP.ad, profil: TEST_PROFIL }).catch(x => { throw new Error("Test hesabı açılamadı: " + x.message); });
+      if (r && r.onayGerekli) throw new Error("Test hesabı açıldı ama e-posta onayı bekliyor. Supabase panelinde Authentication > Users bölümünden test@fonrota.local hesabını onayla ya da e-posta onayını kapat.");
+    }
+  },
+  async testProfiliYukle() { return this.saveProfile(TEST_PROFIL, true); },
+  async signOut() { const s = await supa(); this._pr = null; if (s) { await s.auth.signOut(); yerelHesapVerisiniSil(); } else LS.del("user"); },
   async profile() {
     const s = await supa(); const u = s && await this.user();
-    if (u) { const { data: r } = await s.from("profiles").select("data").eq("id", u.id).maybeSingle(); if (r) return r.data; }
+    if (u) {
+      if (this._pr && this._pr.id === u.id) return this._pr.data ? structuredClone(this._pr.data) : null;
+      const { data: r } = await s.from("profiles").select("data").eq("id", u.id).maybeSingle();
+      const d = r && r.data && Object.keys(r.data).length ? r.data : null; this._pr = { id: u.id, data: d };
+      return d ? structuredClone(d) : null;
+    }
     return LS.get("profile");
   },
-  async saveProfile(p) {
-    p = { ...(await this.profile() || {}), ...p };
+  // degistir=true: mevcut profille birleştirmeden baştan yaz
+  async saveProfile(p, degistir = false) {
+    p = degistir ? { ...p } : { ...(await this.profile() || {}), ...p };
     const c = classify(num(p.calisan), num(p.ciro), num(p.bilanco)); if (c) { p.olcek = c.olcek; p.olcekAdi = OLCEK[c.olcek]; }
-    LS.set("profile", p);
     const s = await supa(); const u = s && await this.user();
-    if (u) await s.from("profiles").upsert({ id: u.id, data: p, notify_email: !!p.bildirimEposta, updated_at: new Date().toISOString() });
+    if (u) { const { error } = await s.from("profiles").upsert({ id: u.id, email: u.email, ad: u.ad || null, data: p, notify_email: !!p.bildirimEposta, updated_at: new Date().toISOString() }); if (error) throw new Error("Profil kaydedilemedi: " + sbHata(error.message)); this._pr = { id: u.id, data: structuredClone(p) }; }
+    else LS.set("profile", p);  // hesapsız (misafir) test ya da demo modu
     return p;
   },
   async list(k) {
@@ -163,15 +203,16 @@ const Store = {
     return LS.get(k, []);
   },
   async saveApp(a) {
-    const apps = LS.get("apps", []); const i = apps.findIndex(x => x.id === a.id);
-    const v = { ...(apps[i] || {}), ...a, tarih: new Date().toISOString() }; if (i >= 0) apps[i] = v; else apps.push(v); LS.set("apps", apps);
     const s = await supa(); const u = s && await this.user();
-    if (u) await s.from("applications").upsert({ user_id: u.id, program_id: v.id, status: v.durum, values: v.values || {}, updated_at: v.tarih }, { onConflict: "user_id,program_id" });
+    const apps = u ? await this.list("apps") : LS.get("apps", []); const i = apps.findIndex(x => x.id === a.id);
+    const v = { ...(apps[i] || {}), ...a, tarih: new Date().toISOString() };
+    if (u) { await s.from("applications").upsert({ user_id: u.id, program_id: v.id, status: v.durum, values: v.values || {}, updated_at: v.tarih }, { onConflict: "user_id,program_id" }); return v; }
+    if (i >= 0) apps[i] = v; else apps.push(v); LS.set("apps", apps);
     return v;
   },
   async markRead() {
+    const s = await supa(); const u = s && await this.user(); if (u) { await s.from("notifications").update({ read: true }).eq("user_id", u.id); return; }
     LS.set("notifs", LS.get("notifs", []).map(n => ({ ...n, read: true })));
-    const s = await supa(); const u = s && await this.user(); if (u) await s.from("notifications").update({ read: true }).eq("user_id", u.id);
   }
 };
 

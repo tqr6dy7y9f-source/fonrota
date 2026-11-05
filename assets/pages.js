@@ -110,7 +110,7 @@ P.index = async () => {
 
 /* ---------- Tüm destekler ---------- */
 P.destekler = async () => {
-  const d = await D.data(); const prof = await Store.profile();
+  const d = await D.data(); const prof = await Store.profile(); const girisli = !!(await Store.user());
   $("#notice").innerHTML = sampleNotice(d);
   const st = { tur: "", il: prof?.il || "", olcek: prof?.olcek || "", q: "", sort: "uygun" };
   $("#f-il").innerHTML = `<option value="">Tüm iller</option>` + ILLER.map(i => `<option${i === st.il ? " selected" : ""}>${i}</option>`).join("");
@@ -120,7 +120,7 @@ P.destekler = async () => {
     let rows = d.destekler.map(x => ({ x, c: D.check(x, p) })).filter(({ x }) => (!st.tur || x.tur === st.tur) && (!st.q || D.low(x.ad + " " + x.kurum + " " + x.ozet).includes(D.low(st.q))));
     rows.sort((a, b) => st.sort === "tarih" ? sonTarih(a.x).localeCompare(sonTarih(b.x)) : st.sort === "tutar" ? (b.x.ust_limit || 0) - (a.x.ust_limit || 0) : b.c.score - a.c.score);
     const hedefe = r => (prof?.amaclar || []).some(a => (r.x.amac || []).includes(a));
-    $("#count").innerHTML = `${rows.length} destek listeleniyor.` + (p ? ` Uygunluk testindeki bilgilerine göre <strong>${rows.filter(r => r.c.level === "ok" && hedefe(r)).length}</strong> tanesi hedefine uyuyor ve ölçeğin elenmiyor. Kesin şartlar her desteğin resmi metninde. <a href="#" id="profil-sil">Test bilgilerimi sil</a>` : "");
+    $("#count").innerHTML = `${rows.length} destek listeleniyor.` + (p ? ` Uygunluk testindeki bilgilerine göre <strong>${rows.filter(r => r.c.level === "ok" && hedefe(r)).length}</strong> tanesi hedefine uyuyor ve ölçeğin elenmiyor. Kesin şartlar her desteğin resmi metninde.${girisli ? "" : ` <a href="#" id="profil-sil">Test bilgilerimi sil</a>`}` : "");
     const ps = $("#profil-sil"); if (ps) ps.onclick = async e => { e.preventDefault(); D.LS.del("profile"); D.LS.del("draft"); D.LS.del("mmFiltre"); toast("Test bilgilerin bu tarayıcıdan silindi."); setTimeout(() => location.reload(), 600); };
     $("#list").innerHTML = rows.length ? rows.map(r => itemRow(r.x, r.c)).join("") : `<li class="empty">Bu filtrelerle eşleşen destek yok.</li>`;
   };
@@ -212,7 +212,7 @@ P.bul = async () => {
       if (!$("#f-il").value) { toast("İlini seç."); $("#f-il").focus(); return; }
       save({ il: $("#f-il").value, kurulusYili: $("#f-kurulusYili").value, sirketTuru: $("#f-sirketTuru").value, ihracat: $("#ihracat").checked, borcYok: $("#borcYok").checked,
         isletmeTipi: $("#f-tip").value, ozelDurum: $$("#ozel .chip[aria-pressed=true]").map(c => c.dataset.v) });
-      await Store.saveProfile(D.LS.get("draft")); go("sonuclar");
+      await Store.saveProfile(D.LS.get("draft")); D.LS.del("draft"); go("sonuclar");
     };
   }
 };
@@ -351,7 +351,7 @@ function sartSonuc(satir, cev) {
   return { durum: null, neden: kimE ? "zor-eksik" : "kim-eksik" };
 }
 function gerekenlerHTML(x) {
-  const satir = sartSatirlari(x); const cev = D.LS.get("sart:" + x.id, {});
+  const satir = sartSatirlari(x); const cev = sartAl(x.id);
   const bolum = ad => x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith(ad)) || {}).metin;
   const sorular = satir.map((r, i) => r.baslik ? `<p class="s-baslik">${esc(r.metin)}</p>` :
     `<fieldset class="soru${r.alt ? " alt" : ""}${r.zorunlu ? " zorunlu" : ""}" aria-labelledby="sq${i}"><p class="s-metin" id="sq${i}">${r.zorunlu ? `<span class="s-zor">Zorunlu şart</span> ` : ""}${D.terim(r.metin)}</p>${[["e", "Evet"], ["h", "Hayır"], ["b", "Emin değilim"]].map(([v, t]) => `<label><input type="radio" name="s${i}" value="${v}"${cev[i] === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>`).join("");
@@ -367,9 +367,18 @@ function gerekenlerHTML(x) {
     <div class="actions"><a class="btn seal" ${link("destek", "id=" + x.id)}>Tüm ayrıntılar</a><a class="btn ghost" href="${esc((x.resmi && x.resmi.sayfa) || (x.sayfa && x.sayfa.url) || x.url)}" target="_blank" rel="noopener">Resmi sayfa ↗</a></div>`;
 }
 // Kullanıcının resmi şartlara verdiği cevaplara göre durum: "tam" (hepsine evet), "hayir" (en az bir hayır) veya null
+/* "Kimler yararlanabilir?" cevapları: hesapsızken tarayıcıda; Supabase hesabıyla girilmişse yalnızca hesapta
+   (sayfa açılınca bellekteki SART.hesap'a alınır, tarayıcıya yazılmaz). */
+const SART = { hesap: null, t: 0 };
+const sartAl = id => SART.hesap ? (SART.hesap[id] || {}) : D.LS.get("sart:" + id, {});
+function sartYaz(id, cev) {
+  if (SART.hesap) SART.hesap[id] = cev; else D.LS.set("sart:" + id, cev);
+  clearTimeout(SART.t);  // art arda tıklamalarda tek kayıt
+  SART.t = setTimeout(async () => { if (!(await Store.user())) return; const pr = await Store.profile() || {}; Store.saveProfile({ sartlar: { ...(pr.sartlar || {}), ...(SART.hesap || { [id]: cev }) } }).catch(e => toast(e.message)); }, 400);
+}
 function sartDurum(x) {
   const satir = sartSatirlari(x); if (!satir.length) return null;
-  const d = sartSonuc(satir, D.LS.get("sart:" + x.id, {})).durum;
+  const d = sartSonuc(satir, sartAl(x.id)).durum;
   return d === "tam" || d === "hayir" ? d : null;
 }
 function kaydolHTML(n, kalan, hedefli = true) {
@@ -389,8 +398,7 @@ function gerekenlerBagla(x, kutu) {
   const satir = sartSatirlari(x);
   const ozet = () => {
     const cev = {}; satir.forEach((r, i) => { const v = f.querySelector(`input[name=s${i}]:checked`); if (v) cev[i] = v.value; });
-    D.LS.set("sart:" + x.id, cev);
-    Store.user().then(async u => { if (!u) return; const pr = await Store.profile() || {}; Store.saveProfile({ sartlar: { ...(pr.sartlar || {}), [x.id]: cev } }); });
+    sartYaz(x.id, cev);
     const r = sartSonuc(satir, cev);
     $("#g-sonuc", kutu).innerHTML = r.durum === "tam" ? `<div class="g-durum ok"><b>Listede sana uyan bir madde var${satir.some(s => s.zorunlu) ? " ve zorunlu şartları karşılıyorsun" : ""}.</b> Kesin karar kurumun değerlendirmesiyle verilir. <a ${link("basvuru", "id=" + x.id)}>Başvuruya hazırla →</a></div>`
       : r.durum === "hayir" ? `<div class="g-durum no"><b>${r.neden === "zorunlu" ? "Zorunlu bir şartı karşılamadığını belirttin." : "Listedeki başvuru sahibi türlerinin hiçbirine uymadığını belirttin."}</b> Bu desteğe şu an uygun görünmüyorsun; tam metni resmi formdan kontrol et.</div>`
@@ -426,7 +434,6 @@ P.sonuclar = async () => {
   // Neden elendi? (kayıtlı kullanıcıya elenen destekler ve sebepleri)
   const elenen = rows.filter(r => r.c.level === "no");
   if (!misafir && elenen.length) $("#elenen").innerHTML = `<details class="elenen"><summary>Elenen ${elenen.length} destek ve neden elendikleri</summary><ul>${elenen.map(r => `<li><a ${link("destek", "id=" + r.x.id)}>${esc(r.x.ad)}</a><span>${esc(r.c.r.filter(q => q.hard && !q.ok).map(q => q.t.replace(/^Kimler başvurabilir: /, "Yalnızca ")).join(" · "))}</span></li>`).join("")}</ul></details>`;
-  Object.entries(p.sartlar || {}).forEach(([id, c]) => { if (!D.LS.get("sart:" + id)) D.LS.set("sart:" + id, c); });
   const hedefeUy = r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a));
   // Misafire hedefine uyanlardan en uyumlu 2 tanesi açık gösterilir (resmi özeti olanlar önce)
   const acikIki = new Set(all.filter(hedefeUy).sort((a, b) => b.c.score - a.c.score || !!b.x.resmi - !!a.x.resmi).slice(0, 2).map(r => r.x.id));
@@ -706,8 +713,8 @@ P.hesap = async () => {
     const kayit = sekme === "kayit"; const draft = { ...(await Store.profile() || {}), ...D.LS.get("draft", {}) };
     const kayitAlan = ["firmaUnvani", "vkn", "vergiDairesi", "sirketTuru", "kurulusYili", "naceKodu", "calisan", "ciro", "yetkili", "telefon", "il", "adres"];
     box.innerHTML = `<div class="tabs"><a ${link("hesap", "sekme=giris")} aria-current="${!kayit}">Giriş yap</a><a ${link("hesap", "sekme=kayit")} aria-current="${kayit}">Ücretsiz hesap aç</a></div>
-      ${Store.demo ? `<p class="small muted">Demo modu: hesap bu tarayıcıda saklanır. Supabase bağlandığında gerçek hesaplara geçer.</p>
-      ${!kayit ? `<div class="test-giris"><div><b>Test (yönetici) hesabı</b><span>Sunum ve deneme için hazır profil: ${esc(D.TEST_HESAP.email)} · şifre: ${esc(D.TEST_HESAP.password)}</span></div><button type="button" class="btn sm ghost" id="test-gir">Test hesabıyla gir</button></div>` : ""}` : ""}
+      ${Store.demo ? `<p class="small muted">Demo modu: hesap bu tarayıcıda saklanır. Supabase bağlandığında gerçek hesaplara geçer.</p>` : ""}
+      ${!kayit ? `<div class="test-giris"><div><b>Test (yönetici) hesabı</b><span>Sunum ve deneme için hazır profil: ${esc(D.TEST_HESAP.email)} · şifre: ${esc(D.TEST_HESAP.password)}</span></div><button type="button" class="btn sm ghost" id="test-gir">Test hesabıyla gir</button></div>` : ""}
       <form id="auth" class="narrow" novalidate>
         ${kayit ? `<label class="field" for="ad"><span>Adın soyadın</span><input class="input" id="ad" name="ad" required value="${esc(draft.yetkili)}"></label>` : ""}
         <label class="field" for="email"><span>E-posta</span><input class="input" id="email" name="email" type="email" autocomplete="email" required></label>
@@ -718,7 +725,11 @@ P.hesap = async () => {
         <p id="err" class="missing" role="alert"></p>
         <button class="btn seal" type="submit">${kayit ? "Hesabımı oluştur" : "Giriş yap"}</button>
       </form>`;
-    if ($("#test-gir")) $("#test-gir").onclick = async () => { await Store.testGiris(); toast("Test hesabıyla giriş yapıldı."); const g = D.LS.get("geri"); D.LS.del("geri"); go(g || "hesap", g ? "" : "sekme=yonetim"); };
+    if ($("#test-gir")) $("#test-gir").onclick = async () => {
+      const b = $("#test-gir"); b.disabled = true; b.textContent = "Giriş yapılıyor…"; $("#err").textContent = "";
+      try { await Store.testGiris(); } catch (e) { $("#err").textContent = e.message; b.disabled = false; b.textContent = "Test hesabıyla gir"; return; }
+      toast("Test hesabıyla giriş yapıldı."); const g = D.LS.get("geri"); D.LS.del("geri"); go(g || "hesap", g ? "" : "sekme=yonetim");
+    };
     $("#auth").onsubmit = async e => {
       e.preventDefault(); const v = formValues(e.target); $("#err").textContent = "";
       if (!/^\S+@\S+\.\S+$/.test(v.email)) { $("#err").textContent = "Geçerli bir e-posta yaz."; return; }
@@ -759,22 +770,23 @@ P.hesap = async () => {
     const L = d.destekler, say = f => L.filter(f).length;
     const kurum = {}; L.forEach(x => kurum[x.kurum] = (kurum[x.kurum] || 0) + 1);
     const hesaplar = Object.entries(D.LS.get("accounts", {}));
-    const sart = Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).length;
+    const sart = SART.hesap ? Object.keys(SART.hesap).length : Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).length;
     tab.innerHTML = `<div class="yonetim">
-      <p class="muted small">Bu sekme yalnızca test (yönetici) hesabında görünür. Site demo modunda olduğu için hesaplar ve cevaplar <strong>yalnızca bu tarayıcıda</strong> tutulur; başka cihazlardaki kullanıcılar burada görünmez.</p>
+      <p class="muted small">Bu sekme yalnızca test (yönetici) hesabında görünür.${Store.demo ? " Site demo modunda olduğu için hesaplar ve cevaplar <strong>yalnızca bu tarayıcıda</strong> tutulur; başka cihazlardaki kullanıcılar burada görünmez." : " Hesaplar ve profiller Supabase’de tutulur; tarayıcıda yalnızca oturum bilgisi kalır."}</p>
       <h3>Veri durumu</h3>
       <div class="y-kutu"><div><b>${L.length}</b><span>aktif destek</span></div><div><b>${say(x => x.resmi)}</b><span>resmi özet formlu</span></div><div><b>${say(x => x.kaynak === "kurum-sitesi")}</b><span>kurum sitesinden</span></div><div><b>${Object.keys(kurum).length}</b><span>kurum</span></div>
         <div><b>${say(x => x.tur === "hibe")} / ${say(x => x.tur === "kredi")} / ${say(x => x.tur === "vergi")}</b><span>hibe / kredi / vergi</span></div><div><b>${say(x => x.destek_orani)}</b><span>oranı belli</span></div></div>
       <p class="small muted">Son güncelleme: ${new Date(d.guncelleme).toLocaleString("tr-TR")}${surum() ? ` · Sürüm ${surum()}` : ""}. Veriler her pazartesi 07:00’de GitHub Actions ile otomatik güncellenir.</p>
-      <h3>Bu tarayıcıdaki hesaplar (${hesaplar.length + 1})</h3>
-      <ul class="y-liste"><li><b>${esc(D.TEST_HESAP.email)}</b> · ${esc(D.TEST_HESAP.ad)} · yönetici (yerleşik)</li>${hesaplar.map(([e, a]) => `<li><b>${esc(e)}</b> · ${esc(a.ad || "")}</li>`).join("")}</ul>
+      ${Store.demo ? `<h3>Bu tarayıcıdaki hesaplar (${hesaplar.length + 1})</h3>
+      <ul class="y-liste"><li><b>${esc(D.TEST_HESAP.email)}</b> · ${esc(D.TEST_HESAP.ad)} · yönetici (yerleşik)</li>${hesaplar.map(([e, a]) => `<li><b>${esc(e)}</b> · ${esc(a.ad || "")}</li>`).join("")}</ul>`
+      : `<h3>Kayıtlı hesaplar</h3><p class="small">Güvenlik gereği kullanıcı listesi sitede gösterilmez (her hesap yalnızca kendi verisini görür). Tüm hesapları <a href="https://supabase.com/dashboard/project/${esc((C.SUPABASE_URL.match(/\/\/([^.]+)/) || [])[1] || "")}/editor" target="_blank" rel="noopener">Supabase panelinde › Table Editor › profiles</a> tablosunda görebilirsin.</p>`}
       <p class="small muted">${sart} destek için şart cevabı kayıtlı.</p>
       <h3>Test araçları</h3>
-      <div class="actions"><button type="button" class="btn sm ghost" id="y-profil">Test profilini yeniden yükle</button><a class="btn sm ghost" ${link("sonuclar")}>Sonuçları test profiliyle gör</a><button type="button" class="btn sm ghost" id="y-sart">Şart cevaplarını temizle</button><button type="button" class="btn sm ghost" id="y-sifirla">Bu tarayıcıdaki tüm verileri sil</button></div>
+      <div class="actions"><button type="button" class="btn sm ghost" id="y-profil">Test profilini yeniden yükle</button><a class="btn sm ghost" ${link("sonuclar")}>Sonuçları test profiliyle gör</a><button type="button" class="btn sm ghost" id="y-sart">Şart cevaplarını temizle</button>${Store.demo ? `<button type="button" class="btn sm ghost" id="y-sifirla">Bu tarayıcıdaki tüm verileri sil</button>` : ""}</div>
     </div>`;
     $("#y-profil").onclick = async () => { await Store.testProfiliYukle(); toast("Test profili yüklendi."); };
-    $("#y-sart").onclick = () => { Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).forEach(k => localStorage.removeItem(k)); toast("Şart cevapları temizlendi."); go("hesap", "sekme=yonetim"); };
-    $("#y-sifirla").onclick = () => { if (!confirm("Bu tarayıcıdaki tüm FonRota verileri (hesaplar, profiller, cevaplar) silinecek. Emin misin?")) return; Object.keys(localStorage).filter(k => k.startsWith("db.")).forEach(k => localStorage.removeItem(k)); toast("Tüm yerel veriler silindi."); go("index"); };
+    $("#y-sart").onclick = async () => { Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).forEach(k => localStorage.removeItem(k)); if (SART.hesap) SART.hesap = {}; await Store.saveProfile({ sartlar: {} }); toast("Şart cevapları temizlendi."); go("hesap", "sekme=yonetim"); };
+    if ($("#y-sifirla")) $("#y-sifirla").onclick = () => { if (!confirm("Bu tarayıcıdaki tüm FonRota verileri (hesaplar, profiller, cevaplar) silinecek. Emin misin?")) return; Object.keys(localStorage).filter(k => k.startsWith("db.")).forEach(k => localStorage.removeItem(k)); toast("Tüm yerel veriler silindi."); go("index"); };
   }
   if (s === "bildirimler") {
     const izin = "Notification" in window ? Notification.permission : "unsupported";
@@ -794,7 +806,10 @@ async function run(page) {
   window.scrollTo(0, 0);
   ROOT = document.querySelector(`main[data-page="${page}"]`) || document;
   await layout(page);
-  try { await (P[page] || P.index)(); } catch (e) { console.error(e); }
+  try {
+    if (!Store.demo) { const u = await Store.user(); SART.hesap = u ? { ...(((await Store.profile()) || {}).sartlar || {}) } : null; }
+    await (P[page] || P.index)();
+  } catch (e) { console.error(e); }
 }
 if (D.BUNDLE) {
   window.__route = () => { const page = (location.hash.slice(1) || "index"); document.querySelectorAll("main[data-page]").forEach(m => m.hidden = m.dataset.page !== page); run(page); };
