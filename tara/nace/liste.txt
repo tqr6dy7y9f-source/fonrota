@@ -1,0 +1,13 @@
+tara/nace.sh: line 5: tuik1.html: No such file or directory
+tuik1.html <- https://biruni.tuik.gov.tr/DIESS/SiniflamaSurumListeAction.do : 000  
+tara/nace.sh: line 5: tuik2.html: No such file or directory
+tuik2.html <- https://biruni.tuik.gov.tr/DIESS/SiniflamaListeAction.do : 000  
+tara/nace.sh: line 5: tuik0.html: No such file or directory
+tuik0.html <- https://biruni.tuik.gov.tr/DIESS/ : 000  
+ticaret.html <- https://ticaret.gov.tr/esnaf-sanatkarlar/esnaf-ve-sanatkar-meslek-kollari/sektor-meslek-nace-listeleri/guncel-liste : 200 text/html; charset=utf-8 56775
+turmob.pdf <- https://www.turmob.org.tr/mevzuat/Pdf/17613 : 200 text/html; charset=utf-8 41218
+gib.html <- https://www.gib.gov.tr/ : 200 text/html; charset=utf-8 37211
+ticaret_dosya_1.pdf <- https://ticaret.gov.tr/data/5d22e2c113b8760d8c272855/Serbest%20B%C3%B6lgeler%2023.10.2026.pdf : 200 application/pdf 610484
+ticaret_dosya_2.xlsx <- https://ticaret.gov.tr/data/5d418c7e13b87639ac9dffe0/2026/Sektör Meslek Nace Kodları_2026.03.xlsx : 000  
+ticaret_dosya_3.pdf <- https://ticaret.gov.tr/data/5e18288613b8761dccd355ce/Ekonomik%20G%C3%B6r%C3%BCn%C3%BCm%202026%20Eyl%C3%BCl.pdf : 200 application/pdf 3699751
+ticaret_dosya_4.pdf <- https://ticaret.gov.tr/data/65b26ae613b876e190ae5ec4/Ticaret Bakanlığı Çerez Politikası.pdf : 000  
