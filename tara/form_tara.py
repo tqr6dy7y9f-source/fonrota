@@ -1,7 +1,7 @@
 import asyncio, json
 from playwright.async_api import async_playwright
 DOLDUR = open("tara/doldur.js").read()
-P = {"firmaUnvani": "Deneme Ltd", "vkn": "1111111111", "vergiDairesi": "Samsun", "sirketTuru": "Limited şirket", "kurulusYili": "2018", "naceKodu": "31.00.01", "calisan": "25", "ciro": "1000", "yetkili": "Ad Soyad", "telefon": "05000000000", "eposta": "a@b.c", "il": "Mardin", "adres": "Adres"}
+P = {"firmaUnvani": "Deneme Ltd", "vkn": "1111111111", "vergiDairesi": "Samsun", "sirketTuru": "Limited şirket", "kurulusYili": "2018", "naceKodu": "31.00.01", "calisan": "25", "ciro": "1000", "yetkili": "Ad Soyad", "telefon": "05000000000", "eposta": "a@b.c", "il": "Mardin", "adres": "Adres", "ihracat": True, "isTanimi": "Mardin’de tekstil üretiyoruz."}
 async def main():
     async with async_playwright() as pw:
         b = await pw.chromium.launch(); out = {}
