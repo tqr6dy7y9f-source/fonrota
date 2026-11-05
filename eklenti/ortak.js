@@ -1,7 +1,7 @@
 /*! FonRota eklentisi — hesap ve profil (Supabase). Profil yalnızca bu tarayıcıdaki eklenti deposunda tutulur; "Çıkış" siler. */
 // AYAR: tools/eklenti.py config.js'den yazar (ayar.js)
 const ALAN_ADI = { firmaUnvani: "Firma ünvanı", vkn: "Vergi kimlik no", vergiDairesi: "Vergi dairesi", sirketTuru: "Şirket türü", kurulusYili: "Kuruluş yılı",
-  naceKodu: "NACE kodu", calisan: "Çalışan sayısı", ciro: "Yıllık net satış", yetkili: "Yetkili adı soyadı", telefon: "Telefon", eposta: "E-posta", il: "İl", adres: "Adres" };
+  naceKodu: "NACE kodu", calisan: "Çalışan sayısı", ciro: "Yıllık net satış", yetkili: "Yetkili adı soyadı", telefon: "Telefon", eposta: "E-posta", il: "İl", adres: "Adres", isTanimi: "İş tanımı", ihracat: "İhracat durumu" };
 
 async function sb(yol, { method = "GET", body, token } = {}) {
   const r = await fetch(AYAR.SUPABASE_URL + yol, { method, headers: { apikey: AYAR.SUPABASE_ANON_KEY, Authorization: "Bearer " + (token || AYAR.SUPABASE_ANON_KEY), "Content-Type": "application/json" }, body: body && JSON.stringify(body) });

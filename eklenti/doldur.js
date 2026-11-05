@@ -8,18 +8,21 @@
 
   // Profil alanı -> etiket kalıpları (sade yazımla). Sıra önemli: özel olan önce.
   const ALAN = [
+    ["vergiBirlikte", [/vergi daire(si)? ?(ve|\/)? ?(no|numara)/]],  // "Vergi dairesi/numarası" tek alanda
     ["vkn", [/vergi kimlik/, /vergi (no|numara)/, /\bvkn\b/, /\btckn? ?\/? ?vkn\b/]],
     ["vergiDairesi", [/vergi daire/]],
+    ["ihracat", [/ihracat yap(mis|iyor|ti|ma)/, /yurt ?disina (ihracat|satis)/]],
+    ["isTanimi", [/(firma|isletme|sirket)[a-z]* hakkinda/, /faaliyet konusu/, /isletmenizi tanit/, /ne is yap/]],
     ["naceKodu", [/\bnace\b/, /faaliyet kod/]],
     ["sirketTuru", [/sirket (turu|tipi)/, /hukuki (yapi|statu)/, /isletme (turu|tipi)/, /firma (turu|tipi)/]],
     ["kurulusYili", [/kurulus yil/, /kurulus tarih/, /tescil yil/]],
-    ["calisan", [/calisan sayi/, /personel sayi/, /isci sayi/, /istihdam (sayi|edilen)/, /calisan kisi/]],
+    ["calisan", [/^(?!.*(ongorulen|planlanan|hedeflenen|yeni|ek istihdam)).*(calisan sayi|personel sayi|isci sayi|istihdam (sayi|edilen)|calisan kisi)/]],
     ["ciro", [/net satis/, /\bciro/, /yillik satis/, /satis (gelir|hasilat)/, /hasilat/]],
     ["eposta", [/e ?posta/, /\be ?mail/, /\bmail\b/]],
     ["telefon", [/telefon/, /\bgsm\b/, /cep tel/, /\btel\b/, /iletisim no/]],
     ["adres", [/adres/]],
-    ["il", [/^(il|sehir|bulundugu il|isletmenin bulundugu il|firma ili|il adi)$/, /^il secin/, /\bil \/ ?ilce\b/]],
-    ["yetkili", [/yetkili (ad|kisi|isim)/, /basvuru sahibi(nin)? (ad|isim)/, /temsilci/, /^ad ?soyad/, /^adi ?soyadi/, /^isim ?soyisim/, /iletisim kurulacak kisi/]],
+    ["il", [/^(il|sehir|bulundugu il|isletmenin bulundugu il|firma ili|il adi|il giriniz|faaliyette bulunulan il( ler)?)$/, /^il secin/, /\bil \/ ?ilce\b/]],
+    ["yetkili", [/yetkili (ad|kisi|isim)/, /(firma|isletme) sahibi/, /basvuru sahibi(nin)? (ad|isim)/, /temsilci/, /^ad ?soyad/, /^adi ?soyadi/, /^isim ?soyisim/, /iletisim kurulacak kisi/]],
     ["firmaUnvani", [/unvan/, /(firma|sirket|isletme|kurum|kurulus) (adi|ismi)/, /^firma$/, /^sirket$/]],
   ];
   const ATLA = /(sifre|parola|password|captcha|guvenlik kod|dogrulama kod|\bt ?c kimlik|^kimlik no)/;  // T.C. kimlik no profilde yok; vergi kimlik no değil
@@ -29,6 +32,8 @@
     const p = [];
     if (el.id) document.querySelectorAll(`label[for="${CSS.escape(el.id)}"]`).forEach(l => p.push(metin(l)));
     const sar = el.closest("label"); if (sar) p.push(metin(sar));
+    // Etiket "for" ile bağlanmamışsa aynı kutudaki etiket (ör. Bootstrap .form-group / .mb-3)
+    if (!p.length) { const k = el.closest(".form-group, .mb-3, .form-floating, .field, .form-item, .input-group, td"); const l = k && k.querySelector("label"); if (l && !l.querySelector("input,select,textarea")) p.push(metin(l)); }
     (el.getAttribute("aria-labelledby") || "").split(/\s+/).filter(Boolean).forEach(id => p.push(metin(document.getElementById(id))));
     p.push(el.getAttribute("aria-label"), el.getAttribute("placeholder"), el.getAttribute("title"));
     if (!p.filter(Boolean).join("").trim()) {
@@ -67,8 +72,10 @@
     el.title = `FonRota dolduruldu: ${ad[k] || k}`; el.dataset.fonrota = k;
   }
   function deger(p, k) {
+    if (k === "vergiBirlikte") return [p.vergiDairesi, p.vkn].filter(Boolean).join(" / ");
+    if (k === "ihracat") return p.ihracat === true ? "Evet" : p.ihracat === false ? "Hayır" : "";
+    if (k === "yetkili") return p.yetkili || p.ad || "";
     const v = p[k]; if (v == null || v === "") return "";
-    if (k === "yetkili") return v || p.ad || "";
     return String(v);
   }
 
@@ -81,6 +88,7 @@
         const k = alanBul(el);
         if (!k) { if (el.tagName !== "SELECT") sonuc.tanınmayan++; return; }
         if (!ustuneYaz && el.value && el.tagName !== "SELECT") return;
+        if (k === "ihracat" && el.tagName !== "SELECT") return;
         const v = deger(profil, k);
         if (!v) { sonuc.bos.push(adlar[k] || k); return; }
         if (yaz(el, v)) { isaretle(el, k, adlar); sonuc.dolan.push(adlar[k] || k); }

@@ -813,7 +813,7 @@ function eklentiyleAc(url, profil, ad) {
 /* ---------- Eklenti sayfası ---------- */
 P.eklenti = async () => {
   const ua = navigator.userAgent, chromium = /Chrome\/|Edg\//.test(ua) && !/Mobile/.test(ua), telefon = /iPhone|iPad|Android|Mobile/.test(ua);
-  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.1 · Ücretsiz · Mağaza gerektirmez";
+  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.2 · Ücretsiz · Mağaza gerektirmez";
   const dene = $("#dene");
   dene.onclick = async e => {
     if (!eklentiVar()) return;  // eklenti yoksa bağlantı deneme formunu normal açar

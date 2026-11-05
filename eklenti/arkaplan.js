@@ -41,4 +41,9 @@ chrome.tabs.onUpdated.addListener(async (id, degisim, tab) => {
     await chrome.scripting.executeScript({ target: { tabId: id, allFrames: true }, func: (p, a, ad) => window.__fonrota.otomatik(p, a, ad), args: [kayit.p, ALAN_ADI, k.ad || ""] });
   } catch (e) { /* bu siteye izin yok: kullanıcı eklenti simgesinden "Bu sayfayı doldur" ile doldurabilir */ chrome.action.setBadgeText({ tabId: id, text: "!" }); chrome.action.setTitle({ tabId: id, title: "FonRota: bu sayfayı doldurmak için tıkla" }); }
 });
+// Takip edilen sekmedeki bir bağlantı ya da pencere yeni sekme açarsa o sekme de doldurulur (kullanıcının açtığı boş sekmeler değil)
+chrome.webNavigation.onCreatedNavigationTarget.addListener(async d => {
+  const t = await takip.al(); const k = t[d.sourceTabId];
+  if (k && Date.now() < k.bitis) { t[d.tabId] = { ...k }; await takip.yaz(t); }
+});
 chrome.tabs.onRemoved.addListener(async id => { const t = await takip.al(); if (t[id]) { delete t[id]; takip.yaz(t); } });
