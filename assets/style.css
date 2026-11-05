@@ -338,8 +338,7 @@ table.kars th,table.kars td{border-bottom:1px solid var(--line);padding:9px 10px
 table.kars thead th{font-size:15px;background:var(--soft)}table.kars tbody th{width:150px;color:var(--muted);font-weight:600}
 @media (max-width:600px){#kars-dlg{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0}.kars-icerik{max-height:100dvh}}
 
-/* Alt bilgi: sorumluluk reddi ve telif */
-footer.site .yasal{flex-basis:100%;margin:10px 0 0;font-size:12.5px;line-height:1.55;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+/* Alt bilgi: proje notu ve telif */
 footer.site .telif{flex-basis:100%;margin:4px 0 0;font-size:12px;color:var(--muted)}
 
 /* Yönetim sekmesi */
@@ -349,7 +348,7 @@ footer.site .telif{flex-basis:100%;margin:4px 0 0;font-size:12px;color:var(--mut
 .y-kutu b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:22px}.y-kutu span{font-size:13px;color:var(--muted)}
 .y-liste{padding-left:18px;font-size:14px}.y-liste li{margin:4px 0;overflow-wrap:anywhere}
 
-footer.site .proje-notu{flex-basis:100%;margin:8px 0 0;font-size:12.5px;font-weight:600;color:var(--ink)}
+footer.site .proje-notu{flex-basis:100%;margin:10px 0 0;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:600;color:var(--ink)}
 
 /* Uzun bağlantılar/kelimeler sütunu taşırmasın */
 .two>*{min-width:0}
