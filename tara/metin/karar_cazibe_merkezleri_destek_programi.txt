@@ -1,0 +1,356 @@
+
+=== SAYFA 1 ===
+   02/01/2018 TARİHLİ ve 2018/11201 SAYILI
+      CAZİBE MERKEZLERİ PROGRAMI
+       KAPSAMINDA YATIRIMLARIN
+    DESTEKLENMESİ HAKKINDA KARAR1,2
+
+           Bakanlar Kurulu Kararı                         Yayımlandığı Resmi Gazete
+    Karar Tarihi             Karar                        Tarihi           Sayısı
+                             Sayısı
+        02/01/2018              2018/11201              25/01/2018                 30312
+    Bakanlar Kurulu Kararında Değişiklik
+               Yapan Karar
+        26/11/2018                  384                 27/11/2018                30608
+        06/10/2020                 3063                 07/10/2020                31267
+        24/11/2020                 3204                 25/11/2020                31315
+        28/12/2021                 4976                 29/12/2021                31704
+        16/12/2022                 6564                 17/12/2022                32046
+        04/04/2023                 7028                 05/04/2023                32154
+
+
+
+
+1: Dayanak:
+
+Karar Sayısı : 2018/11201
+
+Ekli “Cazibe Merkezleri Programı Kapsamında Yatırımların Desteklenmesi Hakkında Karar”ın
+yürürlüğe konulması; Ekonomi Bakanlığının 29/12/2017 tarihli ve 141554 sayılı yazısı üzerine,
+31/12/1960 tarihli ve 193 sayılı Kanunun geçici 80 inci, 14/5/1964 tarihli ve 474 sayılı Kanunun 2
+nci, 25/10/1984 tarihli ve 3065 sayılı Kanunun 13 üncü ve geçici 37 nci, 29/6/2001 tarihli ve 4706
+sayılı Kanunun ek 3 üncü, 29/01/2004 tarihli ve 5084 sayılı Kanunun ek 1 inci, 31/5/2006 tarihli ve
+5510 sayılı Kanunun ek 2 nci, 3/6/2011 tarihli ve 637 sayılı Kanun Hükmünde Kararnamenin 11
+inci ve 26 ncı maddeleri ile 13/6/2006 tarihli ve 5520 sayılı Kanunun 32/A maddesine göre, Bakanlar
+Kurulu’nca 2/1/2018 tarihinde kararlaştırılmıştır. 2:2018/11201 sayılı Kararda, 05/04/2023 tarihine
+kadar gerçekleştirilen değişiklikler, bilgi amaçlı olmak üzere, anılan metne dercedilmiştir.
+
+=== SAYFA 2 ===
+                   CAZİBE MERKEZLERİ PROGRAMI KAPSAMINDA
+                 YATIRIMLARIN DESTEKLENMESİ HAKKINDA KARAR
+
+    Amaç ve kapsam
+    MADDE 1-(1) Bu Kararın amacı, görece az gelişmiş bölgelerdeki yatırım ortamını canlandırarak
+istihdam, üretim ve ihracatın artırılması ve bölgeler arası gelişmişlik farklılıklarının azaltılmasına
+yönelik yatırımların desteklenmesine ilişkin usul ve esasların belirlenmesidir.
+    (2) Bu Karar, EK-1'de yer alan Cazibe Merkezleri Programı kapsamındaki illerde; özel sektör
+tarafından gerçekleştirilecek imalat sanayii yatırımları (US-97 Kodu: 15-37) ile çağrı merkezi ve
+veri merkezi yatırım projeleri için sağlanacak destekleri kapsar.
+    (3) (Değişik: RG-7/10/2020-31267) (Değişik: RG-29/12/2021-31704) (Değişik: RG-17/12/2022-
+32046) Bu Karar kapsamında 31/12/2024 tarihine kadar yapılacak olan teşvik belgesi müracaatları
+değerlendirilir.
+
+    Tanımlar
+    MADDE 2- (1) Bu Kararın uygulanmasında;
+    a) (Değişik: RG-27/11/2018-30608) Bakan: Sanayi ve Teknoloji Bakanını,
+    b) (Değişik:RG-27/11/2018-30608)Bakanlık: Sanayi ve Teknoloji Bakanlığını,
+    c) Beyaz alan: Sunucu, veri depolama ve ağ birimleri gibi bilgi teknolojileri donanımlarının yer
+aldığı, yükseltilmiş taban ile kaplı, enerji ve iklimlendirme altyapısı kurulmuş, gaz, yangın, nem gibi
+tehlikelere karşı önlemlerin alındığı veri merkezi alanını,
+    ç) ANSI/TIA-942: Veri merkezlerinin yer, mimari, güvenlik, hizmet sürekliliği gibi hususlara
+ilişkin kriterlerini tanımlayan uluslararası standardı,
+    d) Uptime Institute TİER-3: Veri merkezlerinin yer, mimari, güvenlik, hizmet sürekliliği gibi
+hususlara ilişkin kriterlerini tanımlayan uluslararası standardı,
+    e) Çağrı merkezi: Kurumların temasta oldukları kişi veya kurumlarla olan ve çeşitli iletişim
+kanallarıyla gerçekleşen etkileşimlerini yürüttükleri, donanım, yazılım ve çalışanlar ile bunları
+barındıran binadan müteşekkil merkezi yapıyı,
+    f) İşletme dönemi: Yatırım tamamlama vizesinin yapıldığı tarihten sonraki dönemi,
+    g) Komite: Cazibe Merkezleri Programı Değerlendirme Komitesini,
+    ğ) Sabit yatırım tutarı: Arazi-arsa, bina-inşaat, makine ve teçhizat ile diğer yatırım harcaması
+kalemlerinin toplamını,
+    h) Veri merkezi: Belirli iş süreçlerinin işletilmesi için gerekli elektronik formdaki bilgilerin
+depolanıp işlenmesi amacıyla kullanılan donanım ve yazılımlar ile bunları destekleyen ve barındıran
+fiziksel sistem ve unsurlardan müteşekkil merkezi bilgi işlem yapısını,
+    ı) Yatırımcı: Teşvik belgesi kapsamı yatırımı gerçekleştirecek gerçek veya tüzel kişileri,
+    i) Yatırım teşvik belgesi: Desteklenmesine karar verilen yatırım projesine ilişkin yatırım
+karakteristiklerinin, şartlarının, sürelerinin ve öngörülen desteklerin kayıtlı olduğu belgeyi,
+    j) Yeni yatırım: 15/6/2012 tarihli ve 2012/3305 sayılı Yatırımlarda Devlet Yardımları Hakkında
+Kararın uygulanmasına ilişkin tebliğde belirtilen komple yeni, modernizasyon, tevsi, entegrasyon
+ve ürün çeşitlendirme niteliğindeki yatırımları,
+    ifade eder.
+
+   Destekler
+   MADDE 3- (1) Bu Karar kapsamında desteklenmesine karar verilen yatırımlar, Komite
+tarafından uygun bulunması halinde enerji desteği ile 2012/3305 sayılı Bakanlar Kurulu Kararı
+kapsamında sağlanan destek unsurlarından 6 ncı bölge şartlarında, 6 ncı bölgede uygulanan oran ve
+sürelerle yararlanır.
+
+=== SAYFA 3 ===
+   Sabit yatırım tutarı ve asgari kapasite
+   MADDE 4- (1) (Değişik: RG-7/10/2020-31267) Bu karar kapsamında desteklenecek imalat
+sanayi yatırımlarının (US-97 Kodu:15-37) organize sanayi bölgesi veya endüstri bölgesinde
+gerçekleştirilmesi ve asgari 2 milyon TL yatırım tutarı şartını sağlaması gerekir.
+(2) Bu Karar kapsamındaki destek unsurlarından yararlanabilmek için çağrı merkezi yatırımlarının
+asgari 200 kişilik istihdam sağlaması, ANSI/TIA-942 veya Uptime Institute TİER-3 veya üstü
+seviyede olan veri merkezi yatırımlarının ise asgari 5.000 m2 beyaz alan ihtiva etmesi gerekir.
+
+    Enerji desteği
+    MADDE 5- (1) Komite tarafından desteklenmesi uygun görülen yeni yatırımlardan enerji desteği
+ihtiva edenlerin, işletmeye geçilmesini müteakip gerçekleşen sabit yatırım tutarının % 25'ini
+aşmamak üzere aylık elektrik enerjisi giderlerinin azami %30'u üç yıl süreyle işletme bazında 10
+milyon Türk Lirasına kadar Bakanlık bütçesinden karşılanabilir.
+    (2) Komite birinci fıkrada belirtilen limitler dâhilinde desteğin oran, süre ve miktarını; il, sektör
+veya ürün bazında belirlemeye yetkilidir.
+    (3) Enerji desteği ödemeleri, illerde valilik bünyesinde oluşturulacak komisyonun
+değerlendirmesi sonucunda hazırlanan bilgi ve belgelere istinaden üçer aylık dönemler halinde
+yapılır.
+    (4) Enerji desteği ile ilgili olarak işletmelerin enerji giderinin hesaplanmasında, eski dönem
+borçları, gecikme faizleri, ceza bedelleri ve KDV hariç enerjinin temin edildiği kurum veya
+kuruluşlarca düzenlenmiş ve bedeli peşin olarak fatura döneminde ödenmiş fatura tutarları dikkate
+alınır.
+    (5) Mevcut tesisler ile teşvik belgeli yatırımların aynı elektrik sayacını kullanması durumunda,
+enerji desteği uygulaması ilgili sayaca ait elektrik faturasının dördüncü fıkraya göre belirlenen tutarı
+üzerinden yapılır.
+    (6) Bu desteğin uygulanmasına ilişkin diğer hususlar tebliğle belirlenir.
+
+   Müracaat ve değerlendirme
+   MADDE 6- (1) Bu Karar kapsamındaki desteklerden yararlanmak için, tebliğle belirlenmiş olan
+bilgi ve belgelerle Bakanlığa müracaat edilir.
+   (2) Bakanlıkça ön değerlendirmesi yapılan yatırım projeleri dönemler itibarıyla Komitenin
+değerlendirmesine sunulur. Komite tarafından bu Karar kapsamında desteklenmesi uygun görülen
+projeler için yatırım teşvik belgesi düzenlenir. Bu kapsamda desteklenmesi uygun görülmeyen
+projeler ise talep edilmesi halinde yürürlükteki Yatırımlarda Devlet Yardımları Hakkında Karar
+kapsamında değerlendirilebilir.
+
+   Cazibe Merkezleri Programı Değerlendirme Komitesi
+   MADDE 7- (1) (Değişik: RG-27/11/2018-30608) Komite, Sanayi ve Teknoloji Bakanının
+koordinasyonunda Hazine ve Maliye Bakanı ile Enerji ve Tabii Kaynaklar Bakanından oluşur.
+   (2) (Değişik: RG-25/11/2020-31315) Komite, ihtiyaç duyulması halinde yatırım projelerini
+değerlendirmek üzere toplanır. Komitenin sekretarya görevini Bakanlık yürütür.
+   (3) Yatırım projelerinden Komite tarafından, Cazibe Merkezleri Programı kapsamındaki illerin
+ekonomik ve sosyal kalkınmasının gerçekleştirilmesi, refahının ve istihdamının artırılması, göçün
+azaltılması, katma değeri ve yerlilik oranı yüksek ürünlerin üretilmesine ilişkin hususlar
+değerlendirilmek suretiyle uygun bulunanlar, Program kapsamındaki desteklerden
+yararlandırılabilir.
+
+   Uygulama
+   MADDE 8- (1) Teşvik belgesinde öngörülen destek unsurlarının ilgili kurum ve kuruluşlar
+tarafından uygulanması zorunludur.
+   (2) Bakanlık, tebliğler ile belirlenen usul ve esaslar çerçevesinde bu Karar kapsamındaki
+uygulamaya yönelik bazı işlemleri diğer kurum ve kuruluşlar aracılığı ile yürütebilir.
+
+=== SAYFA 4 ===
+    (3) Teşvik belgesi kapsamında; hammadde, ara malı ve işletme malzemesi, kullanılmış makine
+ve teçhizat, karayolu nakil vasıtaları ve her türlü binek araçları dışında kalan yatırım harcamaları
+değerlendirmeye alınır.
+    (4) 2012/3305 sayılı Bakanlar Kurulu Kararının EK-4'ünde yer alan "teşvik edilmeyecek
+yatırımlar" bu Karar kapsamında da değerlendirmeye alınmaz.
+    (5) Bu Karar kapsamında sağlanan destekler, talep edilmesi ve Komite tarafından uygun
+görülmesi halinde, 2012/3305 sayılı Bakanlar Kurulu Kararı kapsamında 22/11/2016 tarihinden
+sonra yapılan müracaatlara istinaden, bu Kararda aranan şartları sağlayan imalat sanayii yatırımları
+ile çağrı merkezi ve veri merkezi yatırımları için düzenlenen teşvik belgelerine de uygulanır.
+    (6) Yatırımın gerçekleşmemesi veya Cazibe Merkezleri Programına mesnet teşkil eden
+taahhütlerin yerine getirilememesi ve talep edilmesi halinde proje, yürürlükteki Yatırımlarda Devlet
+Yardımları Hakkında Karar hükümleri çerçevesinde değerlendirilebilir. Ancak, bu Karar
+kapsamında yararlanılıp Yatırımlarda Devlet Yardımları Hakkında Karar kapsamında sağlanamayan
+destekler ile varsa fazladan yararlandırılan destekler, 9 uncu maddenin birinci fıkrası hükümleri
+çerçevesinde geri alınır.
+
+   Müeyyide
+   MADDE 9- (1) Kamudan kaynaklanan nedenler hariç olmak üzere, yatırımın belirlenen süre
+içerisinde gerçekleştirilmesinden yatırımcı sorumludur. Yatırımcının öngörülen yükümlülüklerini
+yerine getirmemesi halinde destekler, 21/7/1953 tarihli ve 6183 sayılı Amme Alacaklarının Tahsil
+Usulü Hakkında Kanun hükümleri çerçevesinde geri alınır. Vergi indirimi ile gelir vergisi stopajı
+desteği nedeniyle zamanında tahakkuk ettirilmemiş vergiler, vergi ziyaı cezası uygulanmaksızın
+gecikme faiziyle birlikte tahsil edilir.
+   (2) (Değişik: RG-7/10/2020-31267) (Değişik: RG-5/4/2023-32154) Bu Karar kapsamındaki
+destek unsurlarından yararlanan yatırım harcamaları, diğer kamu kurum ve kuruluşlarının
+desteklerinden yararlanamaz. Diğer kamu kurum ve kuruluşlarının desteklerinden yararlanılan veya
+yararlanılacak yatırım harcamaları için, bu Karar kapsamındaki desteklerden yararlanmak üzere
+Bakanlığa müracaat edilemez. Bu madde hükmüne aykırı davranılması halinde, bu Karar
+kapsamında yararlanılan destekler ilgili mevzuat çerçevesinde geri alınır. Ancak, diğer kamu kurum
+ve kuruluşlarının sadece sübvansiyonlu kredi desteğinden veya yatırım kapsamında kullanılan
+krediyle ilgili başka bir desteğinden yararlanan yatırımlar, söz konusu krediye bu Karar kapsamında
+yer alan faiz veya kâr payı desteği sağlanmaması kaydıyla, bu Karar kapsamındaki diğer destek
+unsurlarından yararlandırılabilir. Bu imkân, bu Karar kapsamında düzenlenmiş ve tamamlama vizesi
+yapılmamış teşvik belgelerine de uygulanır.
+
+    Diğer hükümler
+    MADDE 10- (1) Bu Karar kapsamında yer almayan hususlardan; destekler ve desteklerin
+uygulanmasına ilişkin oran ve süreler ile diğer usul ve esaslar, müracaatta aranan belgeler, devir,
+satış, ihraç, nakil, finansal kiralama, yatırım süresi, tamamlama vizesi, teminatla ithalat, mücbir
+sebep ve fevkalade hal durumları ile uygulamaya yönelik diğer hususlar, yürürlükteki Yatırımlarda
+Devlet Yardımları Hakkında Karar ile söz konusu Kararın uygulanmasına ilişkin tebliğ ve/veya ilgili
+diğer mevzuat hükümleri dikkate alınarak sonuçlandırılır.
+    (2) Bu Kararda yer alan desteklerin uygulamasından dolayı yatırımcılara aktarılacak olan destek
+tutarları; müracaat sırası, Hazine nakit dengesi ve diğer zorunlu haller dikkate alınarak yatırımcıların
+hesaplarına aktarılır.
+
+   Yürürlükten kaldırılan mevzuat
+   MADDE 11- (1) 28/11/2016 tarihli ve 2016/9596 sayılı Bakanlar Kurulu Kararı ile yürürlüğe
+konulan Cazibe Merkezleri Programının Uygulanmasına İlişkin Usul ve Esaslar Hakkında Karar
+yürürlükten kaldırılmıştır.
+   (2) 2012/3305 sayılı Bakanlar Kurulu Kararı ile yürürlüğe konulan Yatırımlarda Devlet
+Yardımları Hakkında Kararın 23/A maddesi yürürlükten kaldırılmıştır.
+
+   GEÇİCİ MADDE 1- (Ek: RG-5/4/2023-32154) (1) 6/2/2023 tarihinde Kahramanmaraş İlinde
+meydana gelen depremler dolayısıyla genel hayata etkili afet bölgesi kabul edilen ve EK-2’de yer
+alan ilçelerde gerçekleştirilecek asgari 1 milyon 500 bin TL tutarındaki yatırımlar, dördüncü fıkrada
+belirtilen hususlar dikkate alınarak 2012/3305 sayılı Bakanlar Kurulu Kararı kapsamında sağlanan
+
+=== SAYFA 5 ===
+destek unsurlarından 6 ncı bölge şartlarında, 6 ncı bölgede uygulanan oran ve sürelerle yararlanır.
+Ancak, bu madde kapsamında değerlendirilen yatırımlar için faiz veya kâr payı desteği sabit yatırım
+tutarının yüzde onunu aşmamak kaydıyla otuzmilyon Türk Lirasını geçemez. Bu Kararın yürürlüğe
+girdiği tarihten önce kullanılan ve faiz veya kâr payı desteğinden yararlanan krediler ve finansal
+kiralama borçlanmaları için, bu fıkrada belirtilen sınırlar aşılmamak kaydı ile, uygulanan faiz veya
+kâr payı desteği puanında değişiklik yapılmadan destek süresi sonuna kadar uygulama yapılır.
+    (2) Birinci fıkrada belirtilen şartları sağlayan;
+        a) Deprem nedeniyle hasar gören yatırımların yerine konulması amacıyla yapılacak
+yatırımlar,
+        b) Yatırım süresi devam eden ve tamamlama vizesi yapılmamış yatırım teşvik belgeleri
+kapsamındaki yatırımlar da dahil olmak üzere yeni yatırımlar,
+         bu madde kapsamında değerlendirilir.
+    (3) Bu madde kapsamında, 2012/3305 sayılı Karar çerçevesinde desteklenen yatırımlar, US-97
+Kodu:15-37 olan yatırım konuları için anılan Kararın EK-4'ünde yer alan hükümler dikkate
+alınmaksızın değerlendirilir. Ancak, söz konusu ekin I/B bölümünün (7) numaralı sırasında belirtilen
+yatırım konularında sadece depremden zarar gören yatırım unsurlarının yenilenmesine yönelik
+yatırımlar ile aynı ekin II/B bölümünün (2) numaralı sırasındaki yatırımlar bu sırada belirtilen
+şartlara uygun olarak bu madde kapsamında değerlendirilir.
+    (4) Deprem nedeniyle hasar gören yatırımların yerine konulması amacıyla yapılacak
+yatırımlarda, sigorta primi işveren hissesi desteği ve sigorta primi desteği, yatırımın tamamlanmasını
+müteakip, 1/8/2022-31/1/2023 tarihleri arasında (mevsimsel özellik taşıyan yatırımlarda bir
+önceki yıla ait mevsimsel istihdam ortalamaları dikkate alınır) Sosyal Güvenlik Kurumuna verilen
+aylık prim ve hizmet belgesinde bildirilen ortalama işçi sayısının;
+    a) Depremlerle yıkılan veya hasar nedeniyle sonrasında yıkılmasına karar verilen tesislerde
+tamamı ilave istihdam,
+    b) Ağır hasarlı tesislerde yüzde yirmi beşi mevcut istihdam, yüzde yetmiş beşi ilave istihdam,
+    c) Orta hasarlı tesislerde yüzde ellisi mevcut istihdam, yüzde ellisi ilave istihdam,
+    d) Az hasarlı tesislerde yüzde yetmiş beşi mevcut istihdam, yüzde yirmi beşi ilave istihdam,
+    e) Hasarsız tesislerde yüzde doksanı mevcut istihdam, yüzde onu ilave istihdam,
+      kabul edilerek uygulanır.
+    Orta hasarlı, az hasarlı ve hasarsız tesislerde sigorta primi işveren hissesi desteği ve sigorta primi
+desteği toplamının sabit yatırım tutarına oranı yüzde ikiyüzü geçemez.
+    Bu fıkra kapsamında hasar türü için, yapıya ilişkin Çevre, Şehircilik ve İklim Değişikliği
+Bakanlığı tarafından düzenlenen hasar tespit raporu esas alınır.
+    Hasarsız tesisler, yatırımcı tarafından ilgili sigorta şirketinden veya Bakanlık İl
+Müdürlüklerinden makine ve teçhizat hasarına ilişkin rapor temin edilmesi halinde bu fıkra
+kapsamında değerlendirilir.
+     (5) 1 inci maddenin ikinci fıkrası, 3 üncü, 4 üncü ve 5 inci madde hükümleri ile 8 inci maddenin
+dördüncü ve altıncı fıkraları hükümleri bu madde kapsamında uygulanmaz.
+     (6) 12/3/2023 tarihli ve 32130 sayılı Resmi Gazete’de yayımlanan 11/3/2023 tarihli ve 134 sayılı
+Cumhurbaşkanlığı Kararnamesinin 4 üncü maddesi uyarınca, söz konusu Kararnamenin yürürlüğe
+girdiği tarihten itibaren üç ay içinde yapılan yatırım teşvik belgesi başvuruları ile bu fıkrada
+belirtilen süre içinde talep edilmesi halinde, yatırım süresi devam eden ve tamamlama vizesi
+yapılmamış yatırım teşvik belgeleri için bu Kararın Komite ile ilgili hükümleri aranmaz.
+
+  Yürürlük
+  MADDE 12- (1) Bu Karar yayımı tarihinde yürürlüğe girer.
+  Yürütme
+  MADDE 13- (1) (Değişik: RG-27/11/2018-30608) Bu Karar hükümlerini Sanayi ve Teknoloji
+Bakanı yürütür.
+
+=== SAYFA 6 ===
+EK-1: (Değişik: RG-07/10/2020-31267)
+
+ CAZİBE MERKEZLERİ PROGRAMI KAPSAMINDAKİ İLLER
+   1. Adıyaman
+   2. Ağrı
+   3. Ardahan
+   4. Batman
+   5. Bayburt
+   6. Bingöl
+   7. Bitlis
+   8. Diyarbakır
+   9. Elazığ
+   10. Erzincan
+   11. Erzurum
+   12. Gümüşhane
+   13. Hakkâri
+   14. Iğdır
+   15. Kars
+   16. Kilis
+   17. Malatya
+   18. Mardin
+   19. Muş
+   20. Siirt
+   21. (Ek: RG-29/12/2021-31704) Sivas (Demirağ Organize Sanayi Bölgesinde gerçekleştirilecek
+imalat sanayii yatırımları (US-97 Kodu: 15-37))
+   22. Şanlıurfa
+   23. Şırnak
+   24. Tunceli
+   25. Van
+
+  EK-2: (Ek:RG-5/4/2023-32154)
+  GEÇİCİ MADDE (1) KAPSAMINDAKİ İLÇELER
+
+                 İl                                   İlçe
+                                                     BESNİ
+                                                  ÇELİKHAN
+                                                   GERGER
+                                                   GÖLBAŞI
+            ADIYAMAN                                KAHTA
+                                                   MERKEZ
+                                                   SAMSAT
+                                                    SİNCİK
+                                                      TUT
+                                                 ALACAKAYA
+                                                   ARICAK
+                                                    BASKİL
+                                                 KARAKOÇAN
+              ELAZIĞ                                KEBAN
+                                                 KOVANCILAR
+                                                   MADEN
+                                                     PALU
+                                                   SİVRİCE
+
+=== SAYFA 7 ===
+                     ARABAN
+  GAZİANTEP         İSLAHİYE
+                    NURDAĞI
+                    ALTINÖZÜ
+                    ANTAKYA
+                      ARSUZ
+                      BELEN
+                      DEFNE
+                    DÖRTYOL
+                      ERZİN
+    HATAY             HASSA
+                  İSKENDERUN
+                    KIRIKHAN
+                      KUMLU
+                      PAYAS
+                    REYHANLI
+                   SAMANDAĞ
+                   YAYLADAĞI
+                       AFŞİN
+                     ANDIRIN
+                ÇAĞLAYANCERİT
+                DULKADİROĞLU
+                     EKİNÖZÜ
+KAHRAMANMARAŞ       ELBİSTAN
+                     GÖKSUN
+                     NURHAK
+                  ONİKİŞUBAT
+                    PAZARCIK
+                   TÜRKOĞLU
+                   MUSABEYLİ
+    KİLİS
+                    POLATELİ
+                    AKÇADAĞ
+                     ARAPGİR
+                    ARGUVAN
+                  BATTALGAZİ
+                    DARENDE
+                 DOĞANŞEHİR
+   MALATYA         DOĞANYOL
+                   HEKİMHAN
+                       KALE
+                   KULUNCAK
+                    PÜTÜRGE
+                    YAZIHAN
+                   YEŞİLYURT
+                      BAHÇE
+  OSMANİYE
+                  HASANBEYLİ
+    SİVAS             GÜRÜN

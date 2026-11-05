@@ -1,0 +1,1916 @@
+
+=== SAYFA 1 ===
+                           TÜBİTAK
+     1509-ULUSLARARASI SANAYİ AR-GE PROJELERİ DESTEKLEME
+                          PROGRAMI
+                     UYGULAMA ESASLARI
+
+                                 BİRİNCİ BÖLÜM
+                         Amaç, Kapsam, Dayanak ve Tanımlar
+
+      Amaç
+      MADDE 1 - (1) Bu Uygulama Esaslarının amacı, uluslararası ortak destek
+programlarında (EUREKA, EUROSTARS, Avrupa Birliği Çerçeve Programları altında
+ortak proje çağrılarına çıkan programlar ve benzeri uluslararası program ve projeler) yer
+alan sektör ve büyüklüğüne bakılmaksızın Türkiye’de yerleşik katma değer yaratan
+kuruluşların, Araştırma-Geliştirme (Ar-Ge) ve yenilikçi nitelikli proje harcamalarına
+geri ödemesiz (hibe) olarak desteklenmesine yönelik Uluslararası Sanayi Ar-Ge
+Projeleri Destekleme Programına ilişkin uygulama esaslarının belirlenmesidir.
+      Kapsam
+      MADDE 2 - (1) Bu Uygulama Esasları, Uluslararası Sanayi Ar-Ge Projeleri
+Destekleme Programı kapsamındaki yenilik tanımı çerçevesinde; yeni bir ürün
+üretilmesi, mevcut bir ürünün geliştirilmesi, iyileştirilmesi, ürün kalitesi veya
+standardının yükseltilmesi veya maliyet düşürücü nitelikte yeni tekniklerin, yeni üretim
+teknolojilerinin geliştirilmesi konularında işletmelerin uluslararası ortaklı olarak
+yürütülen projelere ortak olarak katılan Türkiye’de yerleşik katma değer yaratan
+kuruluşların Ar-Ge nitelikli projelerinin TÜBİTAK tarafından desteklenmesi, izlenmesi,
+sonuçlandırılması ve sonuçların değerlendirilmesine yönelik teknik, mali, idari kurallara
+ve süreçlere ilişkin bilgileri içeren usul ve esasları kapsar.
+      Hukuki dayanak
+      MADDE 3 - (1) Bu Uygulama Esasları; 16/1/2007 tarih ve 26405 sayılı Resmi
+Gazete’de yayımlanarak yürürlüğe giren “Türkiye Bilimsel ve Teknolojik Araştırma
+Kurumu Teknoloji ve Yenilik Destek Programlarına İlişkin Yönetmelik” çerçevesinde
+hazırlanmıştır.
+      Tanımlar ve Kısaltmalar (Değişik: 14/03/2019-7YK)
+      MADDE 4 - (1) Bu Uygulama Esasları çerçevesinde Yönetmelikteki kavramlar
+ve tanımlar geçerli olmakla birlikte bu programa özel kullanılmakta olan bazı doküman
+başlıkları Yönetmelikte belirtilen genel tanımlara uygun olarak detaylandırılmış içerik
+veya farklı adlandırma taşıyabilir. Uygulama Esaslarına ilişkin tanımlar aşağıda
+verilmiştir:
+      a) Araştırma ve geliştirme (Ar-Ge): İnsan, kültür ve toplumun bilgisinden oluşan
+bilgi dağarcığının artırılması ve bu dağarcığın yeni uygulamalar tasarlamak üzere
+kullanılması için sistematik bir temelde yürütülen yaratıcı çalışmaları,
+      b) Ar-Ge Yardımı İstek Formu (AGY303): Dönem Raporunu (AGY323), projenin
+son döneminde proje sonuç raporunu (AGY353) ve yeminli mali müşavirlik proje
+harcamaları değerlendirme ve tasdik raporunu (AGY500) içeren dokümanı,
+      c) Ar-Ge Yardımı İstek Formu (AGY303) başvuru tarihi: Desteklenen projelere
+ait dönemsel AGY303’ün, PRODİS uygulaması üzerinden kuruluş tarafından
+TÜBİTAK’a gönderildiği tarihi,
+      ç) Başarı ile tamamlanmış proje: Çıktıların proje hedefleriyle uyumlu olduğu ve
+Ar-Ge kazanımlarının elde edildiği izleyici görüşü ile tespit edilen projeyi,
+
+
+
+                                           1
+
+=== SAYFA 2 ===
+       d) Başvuru tarihi: Kuruluş ön kaydının PRODİS’te onaylanması sonrasında,
+kuruluş tarafından proje başvurusunun PRODİS uygulaması üzerinden TÜBİTAK’a
+gönderildiği tarihi,
+       e) Çağrı duyurusu: Çağrıya konu teknoloji alanı, projeyi gerçekleştirecek işbirliği
+yapısı, proje bütçesi alt ve üst sınırı, proje süresi alt ve üst sınırı ve proje öneri
+başvurusu tarihleri gibi başvuru koşullarını içeren, gerektiğinde TÜBİTAK’ın taahhütte
+bulunduğu uluslararası ortak destek programında yer alan kurallar doğrultusunda
+çağrıya özel olarak belirtilen hususları tanımlayan dokümanı,
+       f) Destek kapsamı: Projenin TÜBİTAK tarafından desteklenmesi kabul edilen
+proje destek çerçevesini,
+       g) Destek karar tarihi: (Değişik: 14/03/2019-7YK) GYK’nın, proje önerisine
+ilişkin aldığı kararın, kuruluşa bildirmek üzere TÜBİTAK Başkanlığınca onaylandığı
+yazının tarihini,
+       ğ) Desteklemeye esas harcama tutarı: Destekleme oranının uygulanacağı, destek
+başvurusunun dönemsel değerlendirilmesi neticesinde kabul edilen harcama ve gider
+kalemlerine ilişkin toplam tutarı,
+       h) Destek tutarı: Desteklemeye esas harcama tutarına destek oranının uygulanması
+sonucunda hesaplanan meblağı,
+       ı) Dönem: Takvim yılı içerisinde iki dönem tanımlanmış olup, birinci dönem 1
+Ocak – 30 Haziran ve ikinci dönem 1 Temmuz – 31 Aralık tarih aralığında kalan
+süreleri,
+       i) Dönem Raporu (AGY323): Desteklenen proje kapsamında yapılan çalışmaları,
+projedeki ilerlemeyi, teknik kazanımları, ara çıktıları, zaman/maliyet/kapsam
+gerçekleşmelerini, proje planından sapmaları ve gerekçelerini, bu sapmaların proje
+gelişimine etkisini, alınması gerekli önlemleri, varsa talep edilen değişiklikleri ve
+benzeri bilgileri içeren raporu,
+       j) Elektronik İmza: Elektronik İmza Kanun’unda tanımlandığı şekli ile başka bir
+elektronik veriye eklenen veya elektronik veriyle mantıksal bağlantısı bulunan ve
+kimlik doğrulama amacıyla kullanılan elektronik veriyi,
+       k) Elektronik İmza Kanunu: 15/1/2004 tarihli ve 5070 sayılı Elektronik İmza
+Kanununu,
+       l) Elektronik Sertifika: Elektronik İmza Kanunu’nda tanımlandığı şekli ile imza
+sahibinin imza doğrulama verisini ve kimlik bilgilerini birbirine bağlayan elektronik
+kaydı,
+       m) Grup Yürütme Kurulu (GYK): (Değişik: 14/03/2019-7YK) TÜBİTAK
+Teknoloji ve Yenilik Destek Programları Başkanlığı altında faaliyet gösteren teknoloji
+gruplarının her biri için oluşturulan grup yürütme kurulunu,
+       n) Güvenli Elektronik İmza: Elektronik İmza Kanunu’nda yer alan niteliklere haiz
+elektronik imzayı,
+       o) Hakem: Proje başvurusunu değerlendirmek üzere TÜBİTAK tarafından
+görevlendirilen ve değerlendirmesini TÜBİTAK tarafından belirlenen biçime uygun
+olarak yapan uzman kişiyi,
+       ö) İzleyici: Destek ile ilgili proje faaliyetlerini, dönemler itibariyle incelemek
+üzere TÜBİTAK tarafından görevlendirilen, değerlendirmesini TÜBİTAK tarafından
+belirlenen biçime uygun olarak yapan uzman kişiyi,
+       p) Kuruluş yetkilisi: Kuruluşu en geniş şekilde temsil ve ilzama yetkili olan
+kişiyi/kişileri veya bu kişinin/kişilerin TÜBİTAK nezdinde proje sözleşmesinin
+imzalanması dahil her türlü işlemin yürütülmesine ilişkin kuruluşu TÜBİTAK’a karşı
+sorumlu kılacak biçimde usulüne uygun olarak yetkilendirdiği temsilcisi/temsilcilerini,
+       r) Kuruluş/firma: Sektör ve büyüklüğüne bakılmaksızın firma düzeyinde katma
+değer yaratan, Türkiye’de yerleşik sermaye şirketlerini,
+
+
+
+                                            2
+
+=== SAYFA 3 ===
+       s) Küçük ve Orta Büyüklükte İşletme (KOBİ): 18/11/2005 tarihli ve 25997 sayılı
+Resmi Gazete’de yayımlanan, Küçük ve Orta Büyüklükte İşletmelerin Tanımı,
+Nitelikleri ve Sınıflandırması Hakkında Yönetmelik çerçevesine giren kuruluşları veya
+uluslararası programın gerekli gördüğü KOBİ tanımına giren kuruluşları,
+       ş) Mali rapor (AGY333): Dönemsel olarak hazırlanıp, kuruluş yetkilisi/yetkilileri
+tarafından imzalanan, sağlanan desteğe ilişkin gider formları, belgeleri ve gerekli ekleri
+ile tamamlayıcı mali belgelerden oluşan ve yeminli mali müşavir tarafından onaylanan
+dokümanı,
+       t) Mali rapor hazırlama kılavuzu: AGY303’ün parçasını oluşturan mali raporun
+kuruluş tarafından hazırlanması ile ilgili bilgi ve belge düzenini, transfer ödemesi (ön
+ödeme) ile ilgili başvuru, değerlendirme ve mahsuplaşma kuralları açıklanan ve mali
+raporun yeminli mali müşavir tarafından denetimi, incelemesi ve tasdikine yönelik usul
+ve esasları içeren ve TEYDEB internet adresinde yayımlanan kılavuzu,
+       u) Nitelikli Elektronik Sertifika: Elektronik İmza Kanunu’nda yer alan niteliklere
+haiz elektronik sertifikayı,
+       ü) Öncelikli alan: (Değişik: 14/03/2019-7YK) Bilim, Teknoloji ve Yenilik
+Politikaları Kurulu veya TÜBİTAK Yönetim Kurulu tarafından belirlenen, projelerin
+desteklenmesi sırasında ilave destek verilecek alanları,
+       v) PRODİS (Proje Değerlendirme ve İzleme Sistemi): TÜBİTAK TEYDEB
+destek programları çerçevesinde proje başvuru, değerlendirme ve izleme süreçlerinin
+elektronik ortamda gerçekleştirilmesini sağlayan http://eteydeb.tubitak.gov.tr
+adresinden erişilen yazılım uygulamasını,
+       y) Panel: Değerlendirmesinde panel yöntemi kullanılan proje başvurularında,
+proje konularında uzman kişilerden oluşturulan kurulu,
+       z) Proje Öneri Bilgileri Formu (AGY103): Destek için başvurulan projenin, konu
+ve amaçları, başarı ölçütleri, bilimsel ve teknolojik niteliği, iş-zaman planı, projenin
+gerçekleştirileceği kuruluşun altyapısı ve proje yönetimine yönelik bilgileri, katma
+değer, verimlilik ve rekabet gücü açısından yapması beklenen katkı, oluşacak teknik
+bilgi birikiminin yayınımına yönelik hedef ve stratejilerine ilişkin bilgiler ile tahmini
+maliyet formlarını içeren dokümanı ve uluslararası ortak destek programının
+gerektirdiği diğer dokümanları,
+       aa) Proje mali sorumlusu: Projeye ilişkin mali raporların proje yürütücüsü ile
+birlikte destek kapsamına uygun olarak hazırlanmasından, harcamaların, gider
+belgelerinin ve maliyet hesaplarının doğruluğundan ve mevzuata uygunluğundan
+kuruluş yetkilisi ve diğer ilgililerle birlikte sorumlu olan ve kuruluşta çalışan (ayrı bir
+kişi belirlenmedikçe bu görevi proje yürütücüsü yüklenir) kişiyi,
+       bb) Proje sonuç raporu (AGY353): Proje sonuçlarının, çıktılarının kuruluşa
+kazandırdığı katma değer ve ulusal kazanımları gösteren dokümanı,
+       cc) Proje sözleşmesi: TÜBİTAK ve kuruluş arasında akdedilen, desteğin kapsamı,
+hukuki, idari, mali hükümler, fikri ve sınaî mülkiyet hakları ile diğer hususların
+belirlendiği anlaşma belgesini,
+       çç) Proje yürütücüsü: Destek için başvurulan projenin bilimsel ve teknik olarak
+yürütülmesinden, ilgili raporların verilmesinden, harcama ve giderlerin desteklenen
+projenin gereklerine uygunluğundan sorumlu olan, kuruluş yetkilisi adına yazışmaları
+yapan kuruluş personelini,
+       dd) Teknoloji: Teknik üretme ve bu tekniğin uygulanması ile ilgili gerekli alet,
+teçhizat, makine, malzemeleri geliştirebilme bilgisini, deneyimini, becerisini,
+       ee) TEYDEB: Teknoloji ve Yenilik Destek Programları Başkanlığı’nı,
+       ff) (Ek: 03/06/2021-32YK) Ticarileşme izleme süreci: Ticarileşme izleme süreci,
+projenin ticarileşme başarısının takip edildiği bir süre olup; üç dönem şeklinde
+tanımlanmıştır. Birinci ticarileşme dönemi proje destek bitiş tarihinden sonraki birinci
+yılın sonunu, ikinci ticarileşme dönemi proje destek bitiş tarihinden sonraki üçüncü
+
+
+                                            3
+
+=== SAYFA 4 ===
+yılın sonunu, üçüncü ticarileşme dönemi proje destek bitiş tarihinden sonraki beşinci
+yılın sonunu,
+       gg) (Ek: 03/06/2021-32YK) Ticarileşme izleyicisi: Proje çıktılarının
+ticarileşmesine ilişkin faaliyetlerin sonuçlarım incelemek üzere TÜBİTAK tarafından
+görevlendirilen uzman kişiyi,
+       ğğ) (Ek: 03/06/2021-32YK) Ticarileşme İzleyici Raporu (TİR): Ticarileşme
+izleyicisi tarafından, TÜBİTAK'ın belirlediği biçime uygun olarak hazırlanmış raporu,
+       hh) (Ek: 03/06/2021-32YK) Ticarileşme izleme süresi: Proje destek süresi
+bittikten sonra başlayan ve aksi belirtilmediği sürece en fazla 60 ay olan ancak
+gerektiğinde proje bazında TÜBİTAK tarafından değiştirilebilen, proje çıktılarının
+ticarileşme durumunun takibi amacıyla kullanılan süreyi,
+       ıı) (Ek: 03/06/2021-32YK) Ticarileşme Planı (TP): Proje destek süresinin son
+döneminde kuruluş tarafından sunulan ve proje çıktısının ticarileşmesi için projenin
+tamamlanma aşamasına kadar yapılmış veya proje tamamlandıktan sonra yapılması
+planlanan çalışmaları ve açıklamaları içeren belgeyi,
+       ii) (Ek: 03/06/2021-32YK) Ticarileşme Raporu (TR): Ticarileşme dönemlerinde
+kuruluş tarafından sunulan ve proje çıktılarının ticari durumuna ilişkin bilgileri içeren
+ve gerekli sayfaları Serbest Muhasebeci Mali Müşavir veya Yeminli Mali Müşavir
+tarafından onaylanan raporu,
+       jj) TÜBİTAK: Türkiye Bilimsel ve Teknolojik Araştırma Kurumu’nu,
+       kk) Yeminli mali müşavir: 1/6/1989 tarihli ve 3568 sayılı Serbest Muhasebeci
+Mali Müşavirlik ve Yeminli Mali Müşavirlik Kanunu hükümleri uyarınca yeminli mali
+müşavir odalarının çalışanlar listesine kayıtlı olan ve fiilen mesleğini icra eden kişileri,
+       ll) Yeminli mali müşavirlik proje harcamaları değerlendirme ve tasdik raporu
+(AGY500): Kuruluşa ait mali raporun, mevzuatına göre değerlendirilerek tasdik
+edilmesi sonucu, TÜBİTAK tarafından belirlenen biçime uygun olarak yeminli mali
+müşavir tarafından hazırlanan raporu,
+       mm) Yenilik: Bir fikri, satılabilir, yeni ya da geliştirilmiş/iyileştirilmiş bir ürün
+veya mal ve hizmet üretiminde kullanılan yeni ya da geliştirilmiş bir yöntem haline
+dönüştürmeyi; renk ya da dekorasyondaki değişiklikler ve benzeri bütünüyle estetik
+alana yönelik değişiklikler ile ürünün yapı, nitelik ya da performansını teknik açıdan
+değiştirmeyen görünüm farklılıklarından ibaret basit değişiklikler hariç teknolojik
+yenilik yapma ya da yaratma süreci, bir dizi bilimsel, teknolojik/teknik, mali ve ticari
+etkinliği,
+       nn) Yönetim Kurulu: (Değişik: 14/03/2019-7YK) TÜBİTAK Yönetim Kurulunu,
+       oo) Yönetmelik: 16/1/2007 tarih ve 26405 sayılı Resmi Gazete’de yayınlanarak
+yürürlüğe giren “Türkiye Bilimsel ve Teknolojik Araştırma Kurumu Teknoloji ve
+Yenilik Destek Programlarına İlişkin Yönetmeliği
+      ifade eder.
+      Programın hedefleri
+      MADDE 5 - (1) Program ile uluslararası Ar-Ge ve yenilik projeleri yapan
+Türkiye’de yerleşik kuruluşlara sağlanacak desteğin, ülkemizdeki teknik yeterliliğin ve
+bilgi birikiminin artırılması, kuruluşların uluslararası teknoloji birikimine erişiminin ve
+teknoloji transferinin sağlanması, edinilen teknolojik bilgi ve deneyimin kuruluş
+bünyesinde içselleştirilerek, özgün teknolojilerin geliştirilmesinde ivme kazandırıcı ve
+yönlendirici bir etken olması ve kuruluşların uluslararası pazarlarda yer almasına katkı
+sağlaması hedeflenmektedir.
+
+
+
+
+                                             4
+
+=== SAYFA 5 ===
+                                     İKİNCİ BÖLÜM
+                                      Destek Kapsamı
+       Destekleme dönemi ve destek süresi
+       MADDE 6 - (1) Program kapsamında desteklenen projelerin dönem tanımı
+içerisinde gerçekleşen faaliyetleri teknik ve mali yönden izlenir, değerlendirilir ve
+dönemsel olarak destek oranı uygulanarak bu projelere geri ödemesiz olarak destek
+sağlanır.
+      (2) Projenin destek süresi, projede destek kapsamına alınan faaliyetlerin
+gerçekleştirilmesi için gereken ve TÜBİTAK tarafından kabul edilen süredir. Çağrılı
+uluslararası programlarda çağrı duyurusunda belirtilen proje süresi üst sınırı geçilemez.
+      Destek oranı ve sınırı
+      MADDE 7 - (1) Program kapsamında desteklenen projeler dönemsel
+desteklemeye esas harcama tutarına uygulanacak destek oranı ile desteklenir.
+Programda uygulanacak destek oranı her dönem için sabit olup büyük ölçekli kuruluşlar
+için %60, KOBİ’ler için %75’tir.
+       (2) Bir kuruluşa ve/veya bir projeye bir takvim yılı içinde sağlanacak maksimum
+destek miktarı sınırlandırılabilir. Getirilen maksimum destek sınırları TÜBİTAK
+tarafından TEYDEB internet adresinde yayımlanır.
+      (3) TÜBİTAK’ın taahhütte bulunduğu uluslararası ortak destek programında yer
+alan kuralların gerektirdiği destek oranında ve/veya destek sınırında farklılıkların olması
+durumunda bu program kapsamında desteklenen projeler için, bu maddenin birinci
+fıkrasındaki destek oranı yerine söz konusu uluslararası kurallar çerçevesinde uygulama
+yapılır.
+       (4) Program çerçevesinde desteklenen projeler kapsamında proje faaliyetlerine
+ilişkin dönemsel harcama ve giderlerin desteklenecek harcama kapsamına alınabilmesi
+için ödemelerinin mali rapor hazırlama kılavuzunda belirtilen kurallar çerçevesinde
+gerçekleştirilmiş olması gerekir. Proje kapsamında ödemeleri yapılmış harcama ve
+giderler TÜBİTAK tarafından bu Uygulama Esasları çerçevesinde değerlendirildikten
+sonra desteklemeye esas harcama tutarına ilgili destek oranı uygulanarak kuruluşa geri
+ödemesiz (hibe) destek sağlanır. Hibe destek tutarı, projede destek kapsamına alınan
+tutarın destek oranı ile çarpılması ile hesaplanan değerdir.
+      Kamu kaynaklı desteklerin düşülmesi
+      MADDE 8 - (1) Kuruluşlar başvuruda bulundukları projeler için kamunun
+sağladığı diğer desteklerden yararlanabilirler. Proje destek başlama ve bitiş tarihleri
+arasında, diğer kamu kaynaklarından sağlanan geri ödemesiz destekler, öneri ve/veya
+destek başvurularında belirtilmelidir.
+      (2) Proje destek başlama ve bitiş tarihleri arasında ulusal kamu kaynaklarından
+sağlanan geri ödemesiz destekler, AGY303’te bildirilen desteğin alındığı harcamalardan
+düşülerek desteklenmeye esas harcama tutarı belirlenir. Personel giderleri dışındaki
+harcama ve gider kalemleri için bu uygulama, desteğin sağlandığı tarih dikkate
+alınmadan yapılır. Personel giderlerinde ise, aynı dönem içinde aynı kişilere ulusal
+kamu kaynaklarından sağlanan destekler, söz konusu kişinin TÜBİTAK’a beyan edilen
+aynı dönemine ait o kişiye ait harcamalarından düşülerek yapılır.
+      (3) Kredi şeklinde geri ödemeli olarak alınan desteklerde bu madde uyarınca
+uygulama yapılmaz. 28/02/2008 tarih ve 5746 sayılı Araştırma ve Geliştirme
+Faaliyetlerinin Desteklenmesine İlişkin Kanun ile 13/06/2006 tarih ve 5520 sayılı
+Kurumlar Vergisi Kanununda yer alan “Ar-Ge İndirimi” tanımı altında Ar-Ge
+
+
+
+                                            5
+
+=== SAYFA 6 ===
+faaliyetinde bulunan     kuruluşlara    sağlanan   destekler   bu    madde    kapsamında
+değerlendirilmez.
+      (4) Projenin uluslararası desteklerden yararlanması bu uygulama esasları
+çerçevesinde desteklenmesine engel oluşturmaz. Ancak bu proje için yurt dışı ve yurt
+içinden sağlanan desteklerin toplam tutarının proje giderlerine oranı, Dünya Ticaret
+Örgütü ve Avrupa Birliği rekabet kurallarının gerektirdiği en yüksek destek oranını
+geçmemesi kuruluş tarafından dikkate alınarak dönemsel destek talebinde bulunulur.
+Aksi durumda doğabilecek hukuki ve mali yükümlülükler kuruluşa aittir.
+       (5) Proje önerisinde geliştirilmesi hedeflenen çıktıların (teknoloji, ürün, süreç,
+modül, yöntem, yazılım, veri, rapor vb.) tamamının veya bir kısmının proje başlangıç
+tarihi ve öncesinde proje başvurusunu yapan kuruluş tarafından bir kamu kurum veya
+kuruluşuna bedeli karşılığında taahhüt edilmiş olması halinde proje önerisi
+değerlendirmeye alınmaz. Kamu kurum kuruluşlarına satılmış veya taahhüt edilmiş olsa
+bile ürün, süreç, teknoloji, modül, yazılım vb. çıktıların daha gelişmiş versiyonlarını
+konu alan projeler, önceki çıktıların kamuya satılmış olmasından ötürü bu madde
+kapsamında değerlendirilmez.
+       (6) TÜBİTAK tarafından destek kararı verilen projede geliştirilmesi hedeflenen
+çıktıların (teknoloji, ürün, süreç, modül, yöntem, yazılım, veri, rapor vb.) tamamının
+veya bir kısmının proje başvurusunu yapan kuruluş tarafından bir kamu kurum veya
+kuruluşuna bedeli karşılığında taahhüt edilmesi halinde, proje destek başlangıç tarihi ile
+işin verildiği tarih (ihale kararının onaylandığı veya ihalesiz alımlarda siparişin / işe
+başlama talimatının verildiği tarih) arasındaki faaliyetler destek kapsamında
+değerlendirilir. İlgili kamu kurum kuruluşu tarafından işin verildiği tarih itibariyle bu
+Uygulama Esaslarının 51 inci maddesi hükümleri uygulanarak proje yürürlükten
+kaldırılır.
+       (7) Proje sözleşmesinde belirtilen proje bitiş tarihi (projeye verilen ek süreler
+dahil) sonrasında kuruluşun proje çıktılarını kamu kurum veya kuruluşlarına bedeli
+karşılığında taahhütte bulunması durumunda bu madde hükümleri uygulanmaz. Proje
+bitiş tarihi sonrasında söz konusu taahhütlere girişilmesi durumunda projenin var ise
+dönemsel ödemelerine ilişkin işlemleri sonuçlandırılır.
+       (8) Kuruluşlar projede geliştirilmesi hedeflenen çıktıların (teknoloji, ürün, süreç,
+modül, yöntem, yazılım, veri, rapor vb.) tamamının veya bir kısmının proje
+başvurusunu yapan kuruluş tarafından bir kamu kurum veya kuruluşuna bedeli
+karşılığında taahhüt edilmesi durumunda, bu hususu TÜBİTAK’a, işin verildiği tarihi
+(ihale kararının onaylandığı veya ihalesiz alımlarda siparişin / işe başlama talimatının
+verildiği tarih) takip eden otuz gün içinde bildirmekle yükümlüdür. Bu madde
+kapsamında kuruluşların gerçeğe aykırı bildirimde bulunduklarının anlaşılması veya bu
+maddede belirtilen bildirimleri zamanında ve gereği gibi yapmaması halinde bu
+Uygulama Esaslarının 52 nci maddesi birinci fıkrası çerçevesinde değerlendirilerek 52
+nci madde birinci fıkrası (a) bendi hükümleri uygulanır.
+      (9) Bu Uygulama Esaslarının bu maddesindeki kamu kurum veya kuruluşu olarak
+aşağıda belirtilen kapsamda bulunan kurum veya kuruluşlar dikkate alınacaktır.
+        a) Genel bütçe kapsamındaki kamu idareleri ile özel bütçeli idareler, il özel
+idareleri ve belediyeler ile bunlara bağlı; döner sermayeli kuruluşlar, birlikler (mesleki
+kuruluş şeklinde faaliyet gösterenler ile bunların üst kuruluşları hariç) ve tüzel kişiler,
+        b) Kamu iktisadi kuruluşları ile iktisadi devlet teşekküllerinden oluşan kamu
+iktisadi teşebbüsleri,
+
+
+
+
+                                            6
+
+=== SAYFA 7 ===
+      c) Sosyal güvenlik kuruluşları, fonlar, özel kanunlarla kurulmuş ve kendilerine
+kamu görevi verilmiş tüzel kişiliğe sahip kuruluşlar (mesleki kuruluşlar hariç, vakıf
+yükseköğretim kurumları dahil) ile bağımsız bütçeli kuruluşlar,
+      d) (a), (b) ve (c) bentlerinde belirtilenlerin doğrudan veya dolaylı olarak birlikte
+ya da ayrı ayrı sermayesinin yarısından fazlasına sahip oldukları her çeşit kuruluş,
+müessese, birlik, işletme ve şirketler,
+      e) 4603 sayılı Kanun kapsamındaki bankalar.
+      Desteklenen Ar-Ge aşamaları
+      MADDE 9 - (1) Destek sağlanacak projelerin:
+      a) Kavram geliştirme,
+      b) Teknolojik/teknik ve ekonomik yapılabilirlik etüdü,
+      c) Geliştirilen kavramdan tasarıma geçiş sürecinde yer alan laboratuvar ve benzeri
+çalışmalar,
+      d) Tasarım, tasarım uygulama ve tasarım doğrulama çalışmaları,
+      e) Prototip üretimi,
+      f) Pilot tesisin kurulması,
+      g) Deneme üretimi ve tip testlerinin yapılması,
+      h) Satış sonrasında ürün tasarımından kaynaklanan sorunların çözümü faaliyetleri
+aşamalarından tamamını veya bir kısmını içermesi beklenir.
+
+      (2) Üretim veya üretim altyapısına yönelik yatırım ağırlıklı projeler (tesis ve
+tezgah alımı içeren) ile Ar-Ge içeriği bulunmayan faaliyetleri içeren projeler, programın
+amaçlarına uygun olmadığı için desteklenmez.
+      Desteklenen gider kalemleri
+      MADDE 10 - (1) Program kapsamında projelerin gerektirdiği ve ödemesi yapılan
+aşağıdaki harcama ve giderler kabul edilir, bu gider kalemleri program mevzuatında mal
+ve hizmet alımı olarak anılır:
+       a) Personel giderleri,
+         1) Program kapsamında desteklenen projelerin faaliyetlerinde görevli personelin
+giderleri, projenin dönemsel AGY303 kapsamında kuruluş tarafından ortalama aylık
+maliyetiyle beyan edilir. Proje personel ortalama aylık maliyeti, ilgili dönemdeki brüt
+ücretler, SGK işveren payları, SGK işsizlik işveren payları ve varsa ikramiye dikkate
+alınarak belirlenir. Dönemsel belirlenen bu ortalama aylık maliyetler, personelin eğitim
+ve deneyimi dikkate alınarak ilgili dönemde geçerli olan brüt asgari ücretin aşağıda
+belirtilen katları ile sınırlandırılır;
+                      1.1.) Proje konusu uzmanlık alanlarının herhangi birisinde doktora
+derecesine sahip proje personeline ilgili dönemde geçerli olan brüt asgari ücretin en
+fazla 12 katı,
+                      1.2.) En az lisans mezunu proje personeline, lisans mezuniyet
+tarihinden itibaren proje başvuru tarihine kadar geçen süre 48 aydan fazla olan proje
+personeline ilgili dönemde geçerli olan brüt asgari ücretin en fazla 10 katı, 48 aydan az
+olan proje personeline en fazla 6 katı,
+                       1.3) Ön lisans mezunu olan proje personeline, ilgili dönemde geçerli
+olan brüt asgari ücretin en fazla 4 katı,
+                       1.4) Lise ve altı eğitim düzeyine sahip proje personeline ilgili
+dönemde geçerli olan brüt asgari ücretin en fazla 3 katı ile sınırlama uygulanır.
+                       1.5.) İlgili dönemde beyan edilen proje personelinin “ortalama aylık
+maliyeti”nin bu maddenin birinci fıkrasının a bendinin birinci alt bendindeki
+sınırlamaların altında olduğu durumlarda, beyan edilen personele ait ortalama aylık
+maliyeti, desteklemeye esas harcama kapsamının belirlenmesinde dikkate alınır.
+
+
+                                            7
+
+=== SAYFA 8 ===
+                     1.6) 28/02/2008 tarih ve 5746 sayılı Araştırma ve Geliştirme
+Faaliyetlerinin Desteklenmesine ilişkin Kanunda yer alan “Gelir vergisi stopajı teşviki”
+ile “Sigorta primi desteği”, 26/06/2001 tarih ve 4691 sayılı Teknoloji Geliştirme
+Bölgeleri Kanununda yer alan Bölgede elde edilen ücretlere ilişkin gelir vergisi istisnası
+ve 06/06/1985 tarih ve 3218 sayılı Serbest Bölgeler Kanununda yer alan Bölgede elde
+edilen ücretlere ilişkin gelir vergisi istisnası çerçevesinde kuruluşların Ar-Ge
+projelerinde çalışan Ar-Ge ve destek personeli için sağlanan destek, teşvik ve istisnalar
+proje personel maliyetine dahil edilmez, TÜBİTAK’a beyan edilmez ve desteklenmez.
+Proje kapsamında yukarıda belirtilen destek teşvik ve istisnalardan faydalanılmaması
+durumunda, bu destek, teşvik ve istisnalardan faydalanmayan proje personelinin
+maliyetlerinden 5746 sayılı Kanunda yer alan destek, teşvik ve istisnalar düşülerek
+TÜBİTAK’a beyanda bulunulur.
+                      1.7.) Proje personelinin eğitim durumunun proje süresi içinde
+değişmesi durumunda değişen eğitim durumuna göre “ortalama aylık maliyete”
+uygulanan sınırlama değiştirilir.
+                    1.8.) (Değişik: 14/03/2019-7YK) Bu maddenin birinci fıkrasının (a)
+bendinin 1.1), 1.2), 1.3) ve 1.4) alt bentlerinde belirtilen personel ücretlerinin
+sınırlandırılmasında uygulanan asgari ücret katları Yönetim Kurulu kararıyla
+arttırılabilir. Bu durum TEYDEB internet adresinde duyurulur.
+        b) Proje personeline ait proje kapsamındaki seyahat giderleri kapsamında; uçak,
+tren, otobüs, gemi ile yapılan şehirlerarası ve uluslararası ekonomi sınıfı ulaşım
+giderleri,
+        c) Alet, teçhizat, yazılım ve yayın alım giderleri,
+        d) Malzeme ve sarf giderleri,
+        e) Yurt içi ve yurt dışı danışmanlık hizmeti ve diğer hizmet alım giderleri,
+        f) Türkiye’deki üniversiteler, TÜBİTAK’a bağlı Ar-Ge birimleri, özel sektör Ar-
+Ge kuruluşları ve benzeri Ar-Ge kurum ve kuruluşlarına yaptırılan Ar-Ge hizmet
+giderleri.
+         (2) (Değişik: 14/03/2019-7YK) Bu programda proje dönemsel harcamalarının
+yeminli mali müşavir tarafından yapılan denetim ve tasdikine ilişkin giderler, Hazine ve
+Maliye Bakanlığınca her yıl yayımlanan yeminli mali müşavir asgari ücret tarifesinde
+belirtilen TÜBİTAK tarafından yapılan Ar-Ge yardımları işlemlerinde geçerli ücret
+tarifesindeki yeminli mali müşavirlik ücretleri kapsamında desteklenir.
+        (3) (Ek: 14/03/2019-7YK) Proje kapsamında kullanılan alet/teçhizat/yazılımdan
+yerli malı belgesine sahip olanlar için izleyici görüşü doğrultusunda ilgili
+alet/teçhizat/yazılımın %15’i oranında ek destek tutarı dönemsel desteklemeye esas
+harcama tutarına ilave edilir. Kuruluşların proje kapsamında TÜBİTAK’a beyan
+ettikleri yerli alet/teçhizat/yazılım için yerli malı belgesini satıcı firmadan istemeleri ve
+izleme aşamasında proje izleyicisine sunmaları gerekmektedir.
+       (4) (Ek: 14/03/2019-7YK) Kuruluşun bu Uygulama Esaslarının 17 nci
+maddesinin üçüncü fıkrasında belirtilen ekonomik fizibilite raporunun hazırlanması için
+hizmet alması ve ekonomik fizibilite raporunu da proje önerisi ekinde sunması
+durumunda söz konusu gider Yönetim Kurulu tarafından belirlenen tutar kadar
+desteklenir.
+      Yurtdışı danışmanlık ve hizmet alımlarındaki uygulama
+      MADDE 11 - (1) Proje ana Ar-Ge faaliyetlerinin Türkiye’de gerçekleştirilmesi
+koşuluyla, proje için zorunlu ve tamamlayıcı nitelikteki yurt dışı danışmanlık ve hizmet
+alımları proje özelinde değerlendirilerek desteklenebilmektedir.
+
+
+
+
+                                             8
+
+=== SAYFA 9 ===
+      (2) Desteklenen proje kapsamında gerçekleşen toplam yurt dışı danışmanlık ve
+hizmet alımlarının, projenin dönemsel desteklemeye esas harcama tutarları toplamı
+içindeki payı %20 ile sınırlandırılır. Buna ilişkin uygulama söz konusu yurt dışı
+harcama ve giderlerin bildirildiği AGY303’lerde ayrı ayrı yapılır.
+      Oransal destek uygulaması
+      MADDE 12 - (1) Bu maddede belirtilen durumlarda proje harcamaları,
+sözleşmede belirtilen destek süresi ile orantılı olarak desteklemeye esas harcama tutarı
+kapsamına alınır. Bu uygulamada bu maddenin ikinci fıkrasında belirtilen proje süresi
+proje sözleşmesinde belirtilen proje süresidir. Destekleme sürecinde proje süresinin
+değişmesi bu oranın hesaplanmasında dikkate alınmaz.
+      (2) (Değişik: 14/03/2019-7YK) Proje için alınması veya yaptırılması zorunlu olan
+alet, teçhizat, kalıp gibi alımların (bilgisayar ve yazılım hariç) seri üretimde de
+kullanılacak olması durumunda, ilgili giderler proje süresiyle orantılı olarak aylık % 2
+oranı ile destek kapsamına alınır. Bu maliyete yönelik harcamaların desteklemeye esas
+harcama tutarları “maliyet x proje süresi(ay) x % 2” şeklinde belirlenir. “proje
+süresi(ay) x % 2” çarpımından bulunacak oranın alt sınırı % 40, üst sınır ise %72’dir.
+Ancak alınması, yapılması veya yaptırılması zorunlu olan ve proje faaliyetleri için
+kullanıldıktan sonra, üzerinde önemli bir değişiklik yapılmaksızın faydalı ömrünün
+büyük bir bölümü rutin üretim faaliyetlerinde kullanılacak olan bileşenlere ait giderler
+için oransal destek alt sınırı kurul kararıyla %25’e indirilebilir.
+      (3) Test, analiz ve ölçüm cihazları gibi ağırlıklı olarak firmanın Ar-Ge altyapısının
+parçasını oluşturan alımlar, maliyetinin tamamı üzerinden dönemsel destek oranı ile
+desteklenir. Ancak test, analiz ve ölçüm cihazları gibi alımlar proje faaliyetleri
+sonrasında Ar-Ge’den çok üretim faaliyetlerine tahsis edilecek ise proje süresi ile
+orantılı olarak gider kabul edilir.
+       (4) Proje konusunu teşkil eden tasarım, tasarım uygulama, geliştirme faaliyetleri
+sonucu elde edilecek prototip ürünler projenin desteklenmesine esas unsurlar olduğu
+için, daha sonra firma bünyesinde üretimde kullanılacak veya ticarileştirilecek olsa da
+bunlara girdi oluşturacak malzeme, modül, sistem ve hizmet alımları maliyet
+bedellerinin tamamı üzerinden dönemsel destek oranı ile desteklenir.
+     (5) Bu maddenin ikinci fıkrası kapsamına girmeyen alet/teçhizatın, firmanın diğer
+Ar-Ge faaliyetlerinde kullanılacak olduğu durumlarda oransal destekleme uygulaması
+yapılmaz, bu alet/teçhizat proje için gerekliliği değerlendirilerek doğrudan destek
+kapsamına alınır.
+      Desteklenmeyen giderler
+      MADDE 13 - (1) Proje ile ilgili olmayan giderler desteklenmemekle birlikte
+aşağıda belirtilen giderler de destek kapsamı dışındadır;
+      a) katma değer vergisi,
+      b) her türlü kar, fırsat maliyeti, sermaye kullanım maliyeti, sözleşme masrafları,
+      c) amortismanlar, depozitolar, avans ödemeleri,
+      d) dağıtım, pazarlama ve reklâm giderleri,
+      e) (Değişik: 14/03/2019-7YK) patent, tasarım, faydalı model, coğrafi işaret ve
+marka tescil giderleri,
+      f) AGY103, AGY303 doküman hazırlama ve hazırlatma giderleri, muhasebe,
+sekreterlik vb. idari giderler,
+      g) huzur hakkı, murahhas azaya ödenen üyelik ücretleri, brüt ücretin yanında
+ikramiye hariç verilen prim ödemesi,
+      h) personele nakdi ya da ayni olarak verilen yemek ve servis/ulaşım giderleri,
+      i) kuruluş ortaklarına ait sosyal yardımlaşma vakıf ödentileri,
+
+                                            9
+
+=== SAYFA 10 ===
+       j) konaklama giderleri, araç kiralama ve seyahatlerde kullanılan yakıt giderleri,
+       k) şehir içi nakliye giderleri (gümrüklerden ve limanlardan yapılan nakliye hariç)
+ve posta giderleri,
+       l) proje Ar-Ge faaliyetleri ile ilintili olmayan üretime yönelik altyapı yatırımı
+ağırlıklı giderler
+       m) fotokopi makinesi, projeksiyon cihazı gibi büro makineleri, büro mefruşatı,
+       n) ısıtma, aydınlatma ve üretimde sarf edilen enerji masrafları, su giderleri,
+       o) telefon, faks, haberleşme, internet kullanım maliyetleri,
+       p) vergi mevzuatında kabul edilmeyen giderler,
+       r) ofis, depo, stand kira giderleri,
+      s) inşaat ve tesisat giderleri,
+      t) kırtasiye giderleri,
+      u) CE (test giderleri hariç) ve kalite belgelendirme giderleri,
+      v) uluslararası organizasyonlara ödenen üyelik aidatı vb. giderler,
+      y) ulusal ve uluslararası proje ortaklarından alınan danışmanlık ve hizmet alımı
+giderleri (yurtiçi üniversite veya araştırma kurumları hariç)
+      (2) Proje özelinde yapılacak değerlendirmelerde, Ar-Ge faaliyetlerinin gerekliliği
+dikkate alınarak bu maddenin birinci fıkrasının alt bentlerinde belirtilen giderlerden m,
+n, s ve t bentlerinde belirtilenler içinden desteklenecek gider kalemleri olabilir.
+       (3) Otomasyon teknoloji veya yöntemlerinin kullanıldığı süreç geliştirme
+projelerinde, proje özelinde yapılacak değerlendirmenin gerektirdiği farklılıklarla
+birlikte, destek kapsamının oluşturulmasında aşağıdaki yaklaşım esas alınır:
+       a) Personel, seyahat, danışmanlık ve hizmet alımı ile yurtiçi Ar-Ge
+          kuruluşlarına yaptırılacak işlere yönelik giderler destek kapsamına alınır.
+       b) Geliştirilen sürecin denenmesi amacıyla, asgari miktarda malzeme giderleri
+          ile test yazılım ve donanımı destek kapsamına alınır.
+       c) Geliştirilen süreç içinde yer alan alet, teçhizat veya sistemlerin tasarım ve
+          geliştirme faaliyetlerinin kuruluş bünyesinde yapılması durumunda bu
+          giderler destek kapsamına alınır.
+
+                                   ÜÇÜNCÜ BÖLÜM
+                              Proje Öneri Başvuru Koşulları
+      Başvuru yapabilecek kuruluşlar
+      MADDE 14 - (1) Bu Uygulama Esaslarının 4 üncü maddesindeki kuruluş
+tanımına uyan tüm sermaye şirketleri proje başvurusunda bulunabilir. Ancak kanuni ve
+iş merkezi yurtdışında bulunan işletmelerin dar mükellefiyet statüsündeki Türkiye’de
+yerleşik temsilcilik ve şubeleri ile vakıflar, dernekler ve bunların iktisadi işletmeleri,
+kooperatifler, birlikler, şahıs şirketleri ve adi ortaklıklar bu program kapsamında
+başvuru yapamazlar.
+       Güvenli elektronik imza uygulaması ve sayısal ortamda bilgi aktarımı
+       MADDE 15- (1) Bu program kapsamında TÜBİTAK ile bilgi alışverişinde
+(belge, doküman rapor, sözleşme vb.) bulunan taraflardan güvenli elektronik imza
+uygulaması doğrultusunda elektronik ortamda güvenli bilgi transferi sağlamak amacıyla
+nitelikli elektronik sertifika alması istenebilir. Bu konudaki duyurular TÜBİTAK
+tarafından TEYDEB internet adresinden yapılır.
+      (2) Bu program kapsamında, TÜBİTAK ile ilgili taraflar arasındaki bilgi ve belge
+aktarımı imzalı basılı evrak biçiminde ve/veya PRODİS uygulaması üzerinden (güvenli
+elektronik imza kullanılarak veya kullanılmadan) yapılır. Uygulanacak bilgi alışveriş
+yöntemleri TÜBİTAK tarafından TEYDEB internet adresinden duyurulur. Elektronik
+
+                                           10
+
+=== SAYFA 11 ===
+ortamda hazırlanarak yazdırılıp ıslak imza ile TÜBİTAK’a gönderilen belge/doküman
+ile TÜBİTAK’a çevrimiçi gönderilen bilgiler arasında ihtilaf olduğunda TÜBİTAK’a
+gönderilen çevrimiçi kayıtlar esas alınır. Bu işlemler için ayrıca kişilere duyuru
+yapılmaz. Belgelerin TÜBİTAK’a basılı evrak şeklinde gönderilmesi gerektiğinin
+TÜBİTAK tarafından duyurulduğu durumlarda, bu uygulama esaslarında geçen başvuru
+tarihi olarak evrakın kargoya/postaya verildiği tarih esas alınır.
+     (3) Elektronik ortamda işlem yapmak isteyen gerçek ve tüzel kişilerin
+TÜBİTAK’ın destek programına ilişkin elektronik ortamda oluşturduğu portala üye
+olması gerekir.
+       (4) TÜBİTAK’ın söz konusu portalına üyelik esnasında oluşturulan şifrenin
+gizliliği ve yenilenmesinin sorumluluğu üyeye aittir. Bu şifrenin izinli ya da izinsiz
+olarak üçüncü kişiler tarafından kullanımından TÜBİTAK sorumlu değildir.
+       (5) Söz konusu elektronik ortamın kullanıcıları sisteme üye olurken bildirdikleri
+posta adresi, e-posta veya GSM numarasına kısa mesaj servisi vb. iletişim yöntemleri
+ile bilgilendirileceklerdir. Tüm bildirimlerde ve yazışmalarda üye tarafından bildirilen
+iletişim adresi esas alınır. TÜBİTAK, gerekli gördüğü durumlar ve işlemler için yazılı
+tebligat yapabilir.
+      (6) TÜBİTAK’ın söz konusu portalına üye olan kullanıcılar, verdikleri her
+bilginin doğru ve geçerli olduğunu kabul eder. Yanlış bilgi ve beyanlardan dolayı
+oluşabilecek sorunlardan TÜBİTAK sorumlu olmayacaktır.
+      (7) Elektronik ortamda belge veya bilgileri göndermekle zorunlu tutulan gerçek ve
+tüzel kişilerin, PRODİS veya TÜBİTAK elektronik sisteminin geçici bir süre hizmet
+dışı kalması nedeniyle mevzuatta öngörülen süre içerisinde istenen belge veya bilgiyi
+TÜBİTAK’a gönderememeleri halinde, sorunların ortadan kalktığı tarihi takip eden
+üçüncü işgününün sonuna kadar belge veya bilgiyi göndermeleri durumunda
+yükümlülükleri yerine getirilmiş kabul edilir.
+       (8) TÜBİTAK tarafından kuruluşlara elektronik ortamda gönderilen mesajların
+iletiminde bir ihtilaf olması durumunda TÜBİTAK elektronik sistem kayıtları esas
+alınır.
+      (9) Yeminli Mali Müşavirlerin düzenledikleri raporları elektronik imza ile
+onaylamasına ilişkin kanuni düzenlemeler ile ikincil mevzuat çerçevesinde AGY500
+raporu sadece elektronik ortamda alınabilir.
+      (10) PRODİS uygulaması üzerinden TÜBİTAK’a gönderilen AGY103, AGY303
+ve diğer evrakın son gönderim tarihinin resmi tatil olması halinde, son gönderim tarihi,
+resmi tatili izleyen ilk iş günü olur.
+      Ortak başvuru
+      MADDE 16 - (1) Uluslararası destek programları kapsamındaki aynı projeye
+Türkiye’den birden fazla kuruluşun katılması halinde, bu kuruluşlar ortak proje önerisi
+başvurusunda bulunmalıdır. Aynı uluslararası projede yer alan kuruluşların ayrı başvuru
+yapmaları durumunda, bu başvurular kabul edilmez. Ortak proje başvurusu tek bir proje
+başvurusu biçiminde sunulur. Kuruluşların proje içerisindeki yapacakları faaliyetler ve
+bütçeleri her kuruluş için hazırlanmalıdır. Ortakların projedeki katkıları, ilgili programın
+uluslararası başvuru formunda belirtilen proje katkılarıyla uyumlu olmalıdır.
+      (2) Proje başvurusunda bulunan kuruluşun başka bir kuruluştan Ar-Ge hizmeti
+satın aldığı ve bu hizmetin projenin önemli bir kısmını oluşturduğu durumda, projedeki
+tüm Ar-Ge faaliyetlerinin değerlendirilip izlenebilmesi için; kuruluşların ortak proje
+başvurusu yapmaları istenebilir.
+
+
+                                            11
+
+=== SAYFA 12 ===
+      (3) Bir projede desteklenen faaliyetlerin, başka bir kuruluşun projesinde hizmet
+alımı kapsamında olması durumunda bu hizmet alımı için destek talep edilmez, Ar-Ge
+faaliyetini yapan kuruluşun faaliyetleri desteklenir.
+
+     (4) Ortak proje başvurusu yapacak kuruluşların aralarında ticari ortaklık kurmaları
+zorunluluğu yoktur.
+
+     (5) Ortak projelerde projeye katılan kuruluşlardan biri, destek kararı sonrası
+imzalanacak proje sözleşmesinde muhatap kuruluş olarak belirtilir ve ödeme bildirimi
+ve destek karar yazıları hariç tüm yazışmalar bu kuruluşla yapılır.
+
+     (6) Ortak projelerin destek sürecinde, ortak kuruluşların projeden ayrılması,
+ortakların değişmesi, projedeki ortaklar arası iş planının değişmesi vb. durumlar,
+TÜBİTAK’a sunulur, yapılan değerlendirme ile ortak sunulan projenin desteklenmeye
+devam edip etmeyeceğine desteklenecekse hangi kapsamda destekleneceğine ilişkin
+karar verilir.
+
+     (7) Desteklenmesi uygun bulunan ortak projelerde dönemsel harcamalar
+sonrasında her bir katılımcıya proje harcamaları karşılığında her kuruluşun kendi
+destekleme oranı dikkate alınarak ayrı destekleme yapılır.
+
+       Ön kayıt ve proje öneri başvurusu
+       MADDE 17 - (1) Programa proje öneri başvurusu, kuruluş tarafından ön kayıt
+yapılması ve ön kayıt için TÜBİTAK’tan onay alınması sonrasında PRODİS
+uygulaması üzerinden yapılır. Proje başvuru tarihi olarak, proje önerisinin kuruluş
+tarafından PRODİS uygulaması üzerinden TÜBİTAK’a gönderildiği tarih sisteme kayıt
+edilir. Ön kayıt onayı bekleyen kuruluş proje öneri bilgilerini PRODİS üzerinden
+hazırlamaya devam edebilir. Proje öneri başvurusu, AGY103 hazırlama kılavuzuna
+uygun olarak, istenilen içerik ve biçimde hazırlanır.
+      (2) Uluslararası proje başvurusunun çağrı ile alınacağının belirtildiği durumlarda,
+projenin, çağrının değerlendirme takvimine uygun şekilde TÜBİTAK’a sunulması
+gerekmektedir. Çağrı duyurusu TÜBİTAK internet sitesinde yayımlanır. Bu duyuruda
+ön kayıt başvuru son tarihi ve proje önerisi (AGY 103) son başvuru tarihi belirtilmiş ise,
+bu tarihlerden sonra gönderilen ön kayıt başvuruları ve proje öneri başvuruları (AGY
+103) işleme alınmaz.
+      (3) (Ek: 14/03/2019-7YK) Kuruluşlar tarafından ekonomik fizibilite raporu
+(detaylı pazar araştırması, pazar ve rakip analizleri, müşteri ihtiyaçları vb. içeren rapor)
+proje önerisi ekinde sunulabilir.
+      (4) (Ek: 14/03/2019-7YK) TÜBİTAK’ta kaydı olan kuruluşlar, kayıt bilgilerinde
+değişiklik olmadığı sürece, proje başvurusunda bulunabilir. Ancak, kayıt bilgilerinde
+değişiklik olması halinde anılan değişikliğin TÜBİTAK’a bildirilmesi ve bu durumun
+TÜBİTAK tarafından onaylanması sonrası proje başvurusunda bulunabileceklerdir.
+TÜBİTAK kayıtlı bilgilerin belirli bir zaman periyodunda güncellenmesini
+kuruluşlardan talep edebilir.
+       (5) (Ek: 14/03/2019-7YK) Bu maddenin birinci ve dördüncü fıkralarında
+belirtilen ön kayıt ve proje öneri başvuru şekli TEYDEB internet adresinden duyurulur.
+      Proje destek başlangıç tarihi
+      MADDE 18 - (1) Proje destek başlangıç tarihi, proje önerisinin PRODİS
+üzerinden gönderildiği başvuru tarihinin bulunduğu ayın birinci günü veya başvuru
+
+
+                                            12
+
+=== SAYFA 13 ===
+tarihini takip eden herhangi bir ayın birinci günü olarak kuruluş tarafından belirlenir.
+Ancak, bu tarih en erken proje önerisinde belirtilen uluslararası proje başlangıç tarihi
+olması gerekir.
+     (2) TÜBİTAK projenin değerlendirme süreci sonucunda desteklenen faaliyetleri
+dikkate alarak proje destek başlangıç tarihini ve destek süresini değiştirebilir.
+
+                                 DÖRDÜNCÜ BÖLÜM
+                                 Değerlendirme ve Karar
+      Ön değerlendirme
+      MADDE 19 - (1) TÜBİTAK’a başvurusu yapılmış proje önerisi belirlenen proje
+teknik uzmanı tarafından ön değerlendirmeye alınır.
+     (2) Ön değerlendirmede proje öneri dosyası içerik ve biçim olarak değerlendirilir.
+Projenin değerlendirilebilmesi için sunulan bilgilerin yeterliliği araştırılır. Bu çalışma
+sırasında kuruluşun diğer proje başvuruları ve benzer konuda diğer kuruluşların proje
+başvuruları ile ilgili araştırma yapılabilir. Proje başlıca aşağıdaki konular bakımından
+incelenir:
+    a) Ar-Ge niteliği, yenilikçi ve özgün yönleri,
+    b) Amacı, sonuçları, kullanılacak yöntemler,
+    c) Kuruluş ve ulusal düzeydeki teknolojik katkısı,
+    d) Teknolojik değerlendirme/karşılaştırmalar,
+    e) İş paketi tanımları, iş-zaman grafiği,
+    f) İş paketi bazında bütçeleme, giderlere ilişkin açıklamalar,
+    g) Personel bilgileri,
+    h) Kuruluşun Ar-Ge olanakları,
+    i) Kuruluşun proje çıktılarına ilişkin teknolojik ve ekonomik öngörüleri.
+    (3) Ön değerlendirme sonucunda aşağıdaki durumlar gerçekleşebilir:
+     a) İçerik ve biçim olarak yeterli bulunan proje önerisi, uzmanlıkları dikkate alınarak
+belirlenen bir ya da birden çok hakeme değerlendirilmek üzere gönderilir.
+     b) (Değişik: 14/03/2019-7YK) Firmadan tanımlı bir zaman aralığında proje öneri
+dosyasında yetersiz bilgileri gidermesi ve eksik belgeleri tamamlaması istenebilir.
+İstenen zaman aralığında kuruluş tarafından revize edilmeyen proje doğrudan ret
+önerisiyle kurul değerlendirmesine sunulabilir.
+     c) (Değişik: 14/03/2019-7YK) Ar-Ge içeriği bulunmayan ya da yetersiz olan
+(üretim altyapısına yönelik yatırım ağırlıklı, rutin uygulamalara konu, güncel
+teknolojinin gerisinde kalmış çalışmaları içeren projeler), Ar-Ge sistematiği yetersiz
+olan, proje ekibinin nitelik veya nicelik olarak projeyi gerçekleştirecek yeterlilikte
+olmadığı, proje konusu ile ilgili en az lisans derecesine sahip herhangi bir proje
+personelinin bulunmadığı, proje Ar-Ge faaliyetlerinde projeyi öneren kuruluş katkısının
+olmadığı ya da çok az olduğu projeler ile çıktısı ekonomik yarara dönüşebilir nitelikte
+olmayan projeler hakem ataması yapılmadan ret önerisiyle ilgili teknoloji grubu
+yürütme kuruluna sunulabilir.
+     d) Uluslararası destek programında öngörülen bir uluslararası değerlendirme
+olduğu durumlarda, hakem atama işlemi yapılmadan uluslararası değerlendirme
+raporları dikkate alınarak proje karar taslağı oluşturulması aşamasına geçilebilir.
+      (4) Ön değerlendirme sonrası içerik ve biçim olarak yeterli bulunan AGY103
+hakem değerlendirmesine sunulur. Ziyaretli hakem değerlendirmesinde hakemin firma
+ziyareti için ön temaslar hakem veya firma tarafından başlatılabilir.
+
+
+
+                                            13
+
+=== SAYFA 14 ===
+      Hakem seçimi
+      MADDE 20 - (1) (Değişik: 14/03/2019-7YK) Projeyi değerlendirecek olan
+hakemler projenin ilgili olduğu teknoloji alanlarında uzmanlığı olan kişiler olmak
+kaydıyla genellikle üniversite veya araştırma kurumlarından seçilir. Hakem seçimi ilgili
+teknoloji grubu kurul üyelerinden de hakem önerileri alınarak yapılır. Hakem seçiminde
+hakemin projenin içerdiği teknoloji alanlarının birinde uzman olmasının yanı sıra
+aşağıda sıralanan ölçütler de dikkate alınır;
+      a) projeler arası karşılaştırma yapabilmesi için firmanın önceki projelerinde
+hakemlik görevi yapmış olması,
+      b) proje konusunda Türkiye’deki gelişimi görerek değerlendirme yapabilmesi için
+benzer projelerde görev almış olması,
+      c) üniversite-sanayi işbirliğine katkı sağlamak amacıyla projenin yürütüleceği
+bölgeden olması,
+      d) daha önceki proje değerlendirme performansları (gözlem, irdeleme, rapor
+niteliği, firmaya katkısı ve rapor veriş süresi).
+      Etik şartlar
+      MADDE 21 - (1) Hakemlerin/izleyicilerin projeyi objektif olarak değerlendirmesi
+beklenir. Çıkar çatışması veya çakışması olarak algılanabilecek kişisel ilişkiler varsa,
+hakemlik ve izleyicilik önerilen kişilerin değerlendirme yapmayacaklarını TÜBİTAK’a
+bildirerek var ise kendisine iletilen basılı evrakı TÜBİTAK’a iade etmesi gerekir.
+      (2) Proje değerlendirmelerinde hakemler, izleyiciler ve yeminli mali müşavirler bu
+Uygulama Esaslarının 54 üncü maddesinde belirtilen gizlilik kurallarına riayet ederler.
+Hakemin ve izleyicinin etik şartlara uymamasından doğabilecek olumsuz sonuçlardan
+hakem/izleyici ile TÜBİTAK arasında yapılan sözleşme gereği hakem/izleyici
+sorumludur. Yeminli mali müşavirler, etik şartlara uymamalarından doğabilecek
+olumsuz sonuçlardan 1/6/1989 tarih ve 3568 sayılı Kanun kapsamında sorumlu olup,
+etik ihlallerinden TÜBİTAK sorumlu tutulamaz.
+
+      (3) (Değişik: 14/03/2019-7YK) TÜBİTAK teknoloji grubu yürütme kurulunda ve
+danışma kurulunda görev alan üyeler, “Türkiye Bilimsel ve Teknolojik Araştırma
+Kurumu Etik Davranış İlkelerinin Belirlenmesine İlişkin Esaslar” çerçevesinde hareket
+ederler.
+       (4) Projenin “TÜBİTAK Araştırma ve Yayın Etiği Kurulu Çalışma Esasları”nda
+belirtilen hususlara konu olması ve değerlendirme sonucunda söz konusu esaslara göre
+bir ihlalin belirlenmesi durumunda, proje, bu Uygulama Esaslarının 52 nci maddesi
+birinci fıkrası çerçevesinde değerlendirilir ve bu uygulama esaslarının 52 nci maddesi
+hükümlerine göre işlem yapılır.
+      Hakem değişikliği
+      MADDE 22 - (1) Firmanın yapacağı gerekçeli başvuruyla (çıkar çatışması olması,
+hakemin firma tesislerindeki nesnel değerlendirmeyi engelleyecek tutumu vb.) hakemle
+yapılan sözleşme feshedilebilir veya TÜBİTAK’a sunduğu değerlendirme raporu
+dikkate alınmayabilir.
+      Hakem değerlendirmesi
+      MADDE 23 - (1) Projeyi değerlendirecek hakemlerle TÜBİTAK arasında
+sözleşme yapılır. Hakemler birbirlerinden ayrı ve bağımsız olarak değerlendirmelerini
+yaparlar. TÜBİTAK hakemin proje değerlendirmesini ziyaretli veya ziyaretsiz
+yapmasını isteyebilir. Ziyaretsiz hakem değerlendirmesinde hakem Proje Öneri Bilgileri
+Formunu (AGY103) inceleyerek değerlendirmesini yapar. Ziyaretli hakem
+değerlendirmesinde ise hakemin AGY103'ü incelemesinin yanında, Ar-Ge
+
+
+                                          14
+
+=== SAYFA 15 ===
+faaliyetlerinin gerçekleştirileceği kuruluşta da inceleme yapması istenir. Ortak sunulan
+projelerin ziyaretli değerlendirmelerinde, projede yer alan her bir kuruluşun proje
+kapsamında yerinde incelenmesi esastır. Ancak TÜBİTAK'ın uygun gördüğü
+durumlarda, hakemlerin proje ortaklarının tamamını ziyaret etmesi istenmeyebilir.
+İnceleme sonrasında hazırlanan Proje Önerisi Değerlendirme Raporu (AGY203)
+TÜBİTAK'a sunulur. Hakemden uluslararası ortak destek programı kuralları
+çerçevesinde AGY203'e ek olarak başka değerlendirme raporlarının da hazırlanması
+istenebilir.
+      (2) Ziyaretli değerlendirmede hakemlerin firma ziyaretleri sırasında, firmanın
+konu ile ilgili sunum yapması, proje yürütücüsü, personeli ve proje faaliyetlerine katkı
+sağlayacak teknik danışmanlarının ziyaret esnasında bulunması beklenir. Hakemler
+gerek duydukları açıklamaları AGY203 raporunu hazırlamadan önce kuruluştan talep
+edebilirler.
+     (3) Hakemler, AGY103, uluslararası ortaklı destek programının gerektirdiği diğer
+dokümanlar ve firmadan projeye ilişkin aldığı bilgiler çerçevesinde aşağıda belirtilen üç
+boyutun kriterlerini dikkate alarak projeyi değerlendirirler:
+     a) Projenin endüstriyel Ar-Ge içeriği, teknoloji düzeyi ve yenilikçi yönü,
+     b) Proje planı ve kuruluşun altyapısının uygunluğu,
+     c) Proje çıktılarının ekonomik yarara ve ulusal kazanıma dönüşebilirliği.
+       Uluslararası değerlendirme
+       MADDE 24 - (1) Bu programa başvuran projelerde, başvuru, değerlendirme,
+izleme ve sonuçlandırma süreçlerinde işbu esaslarda yer alan kurallar uygulanmakla
+birlikte TÜBİTAK’ın taahhütte bulunduğu uluslararası ortak destek programında yer
+alan kurallara uyma şartının zorunlu olduğu durumlarda ilgili uluslararası kurallar
+uygulanır. Bu tür durumlarda bu uygulama esaslarının ilgili hükümleri söz konusu
+uluslararası kurallar çerçevesinde uygulanır.
+
+       (a) (Değişik: 14/03/2019-7YK) Uluslararası destek programına ayrılan bütçe üst
+sınırı ve/veya ikili ve çoklu işbirlikleri kapsamında imzalanan özel anlaşma veya
+protokol maddeleri göz önünde bulundurularak, kurul ve/veya panel, uluslararası ön
+başvuru formu veya uluslararası proje başvuru formu üzerinden projeyi aşağıdaki gibi
+değerlendirir. Projelerin panel yöntemi ile değerlendirilmesi durumunda panel sonuçları
+ilgili kurulun onayına sunulur. Kuruluştan projeye ilişkin sunuş yapması istenebilir.
+         1) Uluslararası program kapsamında yapılan anlaşmaya göre projelerin
+sıralanmasının gerekmesi halinde, uluslararası program kuralları uyarınca bir puanlama
+sistematiğinin kullanılmasının gerekli olduğu durumlarda buna uygun bir puanlama
+sistematiği uygulanır. Aksi takdirde, bu uygulama esaslarının 23 üncü maddesi üçüncü
+fıkrasında belirtilen üç değerlendirme boyutu göz önünde bulundurularak, her bir boyut
+için 10 puan üzerinden olmak kaydıyla projeler toplam puana göre sıralanır. Herhangi
+bir boyutta 3 ve altında puan alan projeler yetersiz olarak değerlendirilir ve uluslararası
+değerlendirmeye ret olarak sunulur.
+         2) Projelerin sıralanmasının gerekmediği durumlarda, ilgili uluslararası
+değerlendirme kriterleri ve/veya bu uygulama esaslarının 23 üncü maddesi üçüncü
+fıkrasında belirtilen üç değerlendirme boyutu dikkate alınarak proje değerlendirilir.
+
+        (b) (Değişik: 14/03/2019-7YK) Uluslararası program kapsamında yapılan
+anlaşmaya göre ulusal değerlendirme yapılmaksızın uluslararası değerlendirme
+sonucunun nihai karar kabul edildiği durumlarda, ilgili kurul aşağıdaki durumlardan
+birini uygular.
+
+
+
+                                            15
+
+=== SAYFA 16 ===
+        1) (Değişik: 14/03/2019-7YK) Uluslararası değerlendirme sonucu olumsuz olan
+projeler, uluslararası değerlendirmede uygun bulunmadığı gerekçesiyle kurulda
+reddedilir.
+        2) (Değişik: 14/03/2019-7YK) Uluslararası değerlendirme sonucu olumlu olan
+projeler için destek kapsamını belirlemek amacıyla uluslararası çağrı takvimi göz
+önünde bulundurularak TEYDEB Başkanlığı kararı doğrultusunda, projeler hakem
+değerlendirme sürecine alınarak veya hakem atama işlemi yapılmadan kurula sunulur.
+Projeye ilişkin destek kapsamını belirlemek amacıyla kuruluştan projeye ilişkin sunum
+yapması istenebilir.
+
+       Proje ile ilgili kararın oluşturulması
+       MADDE 25 - (1) (Değişik: 14/03/2019-7YK) TÜBİTAK proje teknik uzmanı,
+hakem değerlendirmesi sonucunda hakem raporlarını esas alarak; kuruluştan proje
+önerisini revize etmesini, iyileştirmesini ister veya ilgili kurulun kararını oluşturmada
+yardımcı olmak amacıyla proje karar taslağını oluşturur. Proje önerisine ilişkin karar,
+projenin ilgili bulunduğu teknoloji grubu yürütme kurulunda oluşturulur. Kurulda,
+TÜBİTAK proje teknik uzmanı tarafından hazırlanan karar taslağı (Proje Bilgi Formu),
+kuruluş tarafından sunulan AGY103 ile diğer ek bilgiler incelenir ve hakemler
+tarafından hazırlanan AGY203’ün içerdiği bilgi ve değerlendirmeler esas alınarak karar
+üretilir. Proje ile ilgili karar, görüşülen diğer projelerden bağımsız oluşturulur.
+Kuruluşun Ar-Ge desteği alarak gerçekleştirdiği diğer projelerden edindiği bilgi
+birikimi ve teknolojik altyapısı esas alınarak kuruluş bazında değerlendirme ölçütü
+yükseltilebilir.
+      (2) (Değişik: 14/03/2019-7YK) Karar oluşturma aşamasında, söz konusu kurul
+üyelerinden herhangi birisinin, proje önerisi görüşülecek firma ile hâlihazırda bir çıkar
+çakışması veya çatışması varsa, ilgili proje görüşülürken söz konusu üye toplantıya
+dâhil olmaz.
+      (3) (Değişik: 14/03/2019-7YK) Kurulda görüşülen proje ile ilgili karar birbirini
+izleyen iki aşamada oluşturulur:
+         a) Proje önerisine ilişkin aşağıda belirtilen kararlardan biri alınır.
+           1) Projenin desteklenmesine karar verilir. Bu durumda desteklemeye esas
+teşkil eden proje faaliyetleri ve hedefleri belirtilmeye çalışılır.
+           2) Projenin desteklenmemesine karar verilir. Proje ret gerekçesinde, projenin
+endüstriyel Ar-Ge içeriği, teknoloji düzeyi ve yenilikçi yönü, proje planı ve kuruluşun
+alt yapısının uygunluğu ile proje çıktılarının ekonomik yarara ve ulusal kazanıma
+dönüşebilirliğine ilişkin değerlendirme boyutlarında yer alan ve projenin özellikle ret
+edilmesine esas teşkil eden kriterler belirtilir.
+           3) Projeye ilişkin kararın oluşturulmasını kolaylaştırmak için kuruluştan ek
+bilgi ve belgelerin istenmesine ve/veya projenin yeni bir hakem değerlendirme sürecine
+alınmasına karar verilir.
+           4) (Değişik: 14/03/2019-7YK) Kuruluştan projesini belirtilen bir zaman
+aralığında revize etmesi istenebilir. Revize proje yeniden hakem değerlendirme
+sürecine alınabilir ya da doğrudan kurula sunulabilir. Revize edilen projelerde
+TÜBİTAK’a proje önerisinin yapıldığı ilk başvuru tarihi geçerlidir. İstenen zaman
+aralığında revize edilmeyen proje doğrudan ret önerisiyle kurul değerlendirmesine
+sunulur.
+          b) Desteklenmesine karar verilen proje önerisinin temel olarak aşağıdaki
+hususları içeren destek kapsamı oluşturulur.
+
+          1) Desteklenecek faaliyetler,
+          2) Destek süresi,
+
+
+                                           16
+
+=== SAYFA 17 ===
+           3) Desteklenecek gider kalemleri ve miktarı,
+           4) Projenin izleme aşamasında değerlendirilecek hususlar,
+           5) Projenin belirlenen öncelikli alanlarda olup olmadığı,
+           6) Ar-Ge niteliğinin iyileştirilmesine yönelik öneriler,
+           7) Proje izleyicisi/izleyicileri.
+     (4) Karar oluşturma aşamalarında,
+     a) Proje ile ilgili kararların alınması için oy çokluğu yeterlidir.
+     b) Karar oluşturulurken proje önerisi ile ilgili diğer destek programlarına başvuru
+yapılmış olması bu programın bağımsız değerlendirme sürecini olumlu veya olumsuz
+etkilemez.
+     c) Proje gider kalemlerinin AGY103’te belirtilen birim fiyatları ve ücretler
+değerlendirmede kararın oluşturulmasında etken olarak göz önünde bulundurulmaz.
+     d) Eldeki bilgilerle kesin bir karara varılamayan durumlarda ek hakem
+değerlendirmesine başvurulabilir.
+     e) (Değişik: 14/03/2019-7YK) Önerilen proje maliyetinin 10.000.000.- (on milyon)
+TL’den büyük olması halinde ilgili kurulun talebi üzerine proje yürütücüsü ve/veya
+projede görev alan personelin, kuruluş yetkilisinin ilgili kurulda projeye ilişkin sunuş
+yapması istenebilir.
+     (5) (Değişik: 14/03/2019-7YK) Proje önerisinin, gereken içerikte ve eksiksiz
+olarak TÜBİTAK’a sunulduğu tarihten kurulda görüşülmesine kadar geçen sürenin 90
+gün olması hedeflenir.
+       Projenin karar bildirimi
+       MADDE 26 - (1) (Değişik: 14/03/2019-7YK) İlgili kurul toplantılarında projelere
+ilişkin oluşturulan karar TÜBİTAK Başkanlığı’nca onaylanarak kuruluşa bildirilir.
+TÜBİTAK Başkanlığının kurul kararı sonucunda desteklenmesi uygun bulunan
+projelerin onay sürecinde, programa ayrılan bütçenin yetersiz kalacağının tespiti
+halinde, ülke önceliklerini dikkate alarak destek sıralaması yapabilir.
+      (2) Desteklenmesi kabul edilen projelere ilişkin destek karar bildiriminde destek
+kararı, kapsamı, proje izleyicisi ve ekinde proje sözleşmesi yer alır. Proje süresince
+yapılacak değerlendirmelere dayanarak TÜBİTAK destek karar bildiriminde belirtilen
+kapsam ve izleyiciyi değiştirme hakkına sahiptir.
+      (3) Desteklenmesi uygun bulunmayan projelere ilişkin ret gerekçesi ile birlikte
+karar kuruluşa bildirilir.
+     (4) Karar bildirimini takiben kuruluşun TÜBİTAK’a itirazda bulunabileceği
+durumlarda izlenecek yöntemler aşağıda açıklanmıştır:
+       a) (Değişik: 14/03/2019-7YK) Projesi desteklenmeyen kuruluş, ret kararına ilişkin
+itirazı olması durumunda, bu durumu gerekçelendirerek itirazda bulunabilir. İtirazlar,
+TÜBİTAK proje teknik uzmanı değerlendirmesinden sonra, gerektiğinde hakem
+değerlendirmesi alınarak kurulda karara bağlanır. Ret kararına itirazlar proje karar
+yazısı tarihinden itibaren en fazla iki (2) ay içinde yapılabilir.
+       b) Kuruluşun destek kapsamına itiraz etmesi durumunda itiraza ilişkin karar
+beklenmeden kuruluş ile TÜBİTAK arasında sözleşme yapılabilir. Destek kapsamına
+itirazlar, proje karar yazısı tarihinden itibaren en fazla iki (2) ay içinde yapılabilir.
+       c) Kuruluş proje için belirlenen izleyici için itirazda bulunabilir. TÜBİTAK bu
+itirazları gerekçeleri ile birlikte değerlendirmeye alır.
+      (5) Değerlendirme sürecinde olan kararı verilmemiş projeler kuruluş tarafından
+gerekçe belirtilerek geri çekilebilir. TÜBİTAK bu projelerin değerlendirme sürecinin
+sonlandığını kuruluşa bildirir.
+
+
+                                           17
+
+=== SAYFA 18 ===
+       Sözleşme imzalanması
+       MADDE 27 - (1) Desteklenmesi uygun bulunan projeler için TÜBİTAK ile
+kuruluş/kuruluşlar arasında sözleşme imzalanır. Ortak projelerde, muhatap kuruluşun
+belirtildiği ve her bir kuruluşa ilişkin bilgilerin yer aldığı sadece bir proje sözleşmesi
+düzenlenir. TÜBİTAK ile kuruluş arasında düzenlenen proje sözleşmesi ıslak imza
+yerine güvenli elektronik imza ile imzalanabilir. Sözleşmeye ilişkin oluşacak giderler
+kuruluş tarafından karşılanır.
+      (2) Kuruluş tarafından imzalanan sözleşmenin TÜBİTAK tarafından imzalanması
+ile kuruluş tarafından projeye ilişkin sunulan AGY303 işleme alınır. Bu Uygulama
+Esaslarında belirtilen sözleşme tarihi olarak TÜBİTAK’ın imza tarihi esas alınır. Ancak
+sözleşme proje destek başlangıç tarihi itibariyle yürürlüğe girer.
+
+      (3) TÜBİTAK tarafından hazırlanarak destek karar bildiriminde verilen süre
+içinde, kuruluşa iletilen proje sözleşmesinin kuruluş tarafından imzalanarak
+TÜBİTAK’a ulaştırılması, zorunlu olup proje sözleşmesinin verilen süre içerisinde
+gönderilmemesi halinde TÜBİTAK destek kararını iptal edebilir.
+
+                                BEŞİNCİ BÖLÜM
+               Ar-Ge Yardımı İstek Formu (AGY303) Başvuru Esasları
+      Destek başvuru zamanlaması
+      MADDE 28 - (1) Sözleşmesi imzalanan projeler için, kuruluşlar projenin
+tanımlanan dönem aralıklarında gerçekleşen Ar-Ge faaliyetleri ve harcamalarına ilişkin
+AGY303’ü, bu Uygulama Esaslarının 29 uncu maddesine uygun hazırlayarak PRODİS
+üzerinden TÜBİTAK’a aşağıda belirtilen hususlara göre sunarlar. AGY303
+dokümanına/web formuna PRODİS uygulaması üzerinden ulaşılır.
+       a) Projenin dönemsel gerçekleşen Ar-Ge faaliyetlerini ve harcamalarını içeren
+AGY303, en geç, gerçekleşme dönemini takip eden üçüncü ayın sonuna kadar
+TÜBİTAK’a sunulur
+       b) Proje sözleşme tarihi itibariyle projenin tamamlanmış AGY303 dönemleri var
+ise, söz konusu AGY303’ler en geç, sözleşme tarihini takip eden dönemin üçüncü ayın
+sonuna kadar sunulur.
+       c) Projenin herhangi bir döneminde proje faaliyetlerinin yapılmaması veya
+dönemin harcama ve giderlerine yönelik talepte bulunulmayacağı durumunda dahi
+PRODİS üzerinden bu kapsamda istenen bilgilerin sunulması zorunludur. Söz konusu
+dönem projenin son dönemi ise proje sonuç raporu da sunulur.
+       d) Destek sürecinde kuruluşun proje süresinin uzatılması talebi üzerine, uzatma
+süresini kapsayan AGY303 en geç, TÜBİTAK’ın süre uzatımına ilişkin karar bildirim
+tarihinin bulunduğu dönemi izleyen üçüncü ayın sonuna kadar sunulur.
+       e) Kuruluşun proje destek süreci içinde yaptığı gerekçeli itiraz başvurularına
+ilişkin TÜBİTAK kararının beklenmesi nedeniyle TÜBİTAK’a sunulması geciken
+AGY303 destek başvuruları en geç, TÜBİTAK kararının bildirim tarihini izleyen
+dönemin üçüncü ayının sonuna kadar sunulur.
+       f) Proje süreçlerini aksatacak durumların ortaya çıkması üzerine, TÜBİTAK
+AGY303 son gönderme tarihini ileriye alabilir. Bu durum PRODİS/TEYDEB internet
+sayfasında duyurulur.
+      Dönemsel destek başvuru şekli
+      MADDE 29 - (1) Sözleşmesi imzalanan projeler için, kuruluş AGY303’ü bu
+fıkranın aşağıdaki bentlerde belirtilen dokümanları içerecek biçimde hazırlayarak
+TÜBİTAK’a sunar. Dönem için projeye ilişkin harcama beyanı yok ise AGY500 raporu
+sunulmaz, o dönem için dönem raporu sunulur. Proje Sonuç Raporu AGY353 sadece
+
+
+                                           18
+
+=== SAYFA 19 ===
+projenin son döneminde sunulur. AGY303 başvuruları bu Uygulama Esaslarının 15 inci
+maddesi hükümleri dikkate alınarak TÜBİTAK’a PRODİS üzerinden sunulur. AGY303
+dokümanına/web formuna PRODİS uygulaması üzerinden ulaşılır ve AGY303
+aşağıdaki bentlerde belirtilen dokümanlardan oluşur:
+     a) yeminli mali müşavirlik proje harcamaları değerlendirme ve tasdik raporu
+(AGY500) ve ekinde onaylı gider formları ile diğer onaylı ekleri,
+     b) dönem raporu (AGY323),
+     c) projenin son döneminde Proje Sonuç Raporu (AGY353)
+
+       (2) Mali rapor içinde yer alan harcama ve gider belgeleri (faturalar, ödeme
+belgeleri, ücret bordroları vb.) yeminli mali müşavir denetim ve tasdiki amacıyla
+hazırlandığından, ayrıca TÜBİTAK’a sunulan AGY303 içerisine konulmaz.
+
+        (3) (Değişik: 14/03/2019-7YK) Ortak projelerin yeminli mali müşavirlik proje
+harcamaları değerlendirme ve tasdik raporu (AGY500), ilgili kuruluşlar tarafından ayrı
+ayrı hazırlanarak TÜBİTAK’a sunulur. Ancak dönem raporu (AGY323) ile projenin son
+döneminde Proje Sonuç Raporu (AGY353) kuruluşlar tarafından ortak hazırlanarak
+muhatap kuruluş tarafından TÜBİTAK’a sunulur. Kuruluşlardan birinin ilgili dönemde
+harcama ve giderlerinin olmaması halinde bu durum harcaması olmayan kuruluş
+tarafından bu Uygulama Esaslarının 28 inci maddesinin birinci fıkrasının (c) bendi
+kapsamında PRODİS üzerinden istenen bilgilerin sunulması zorunludur. Ortak projede
+yer alan kuruluşların hazırlayacağı her bir AGY500 ile muhatap kuruluşun hazırlayacağı
+AGY323 (projenin son döneminde AGY353) TÜBİTAK’a sunulmadan değerlendirme
+süreci başlatılmaz. Ortak projede yer alan herhangi bir kuruluşun AGY500’ü ve muhatap
+kuruluşun AGY323’ü (projenin son döneminde AGY353) sunmaması ve konuya ilişkin
+PRODİS üzerinden bilgi vermemesi durumunda bu Uygulama Esaslarının 32 nci
+maddesinin üçüncü fıkrası hükümlerine göre uygulama yapılır.
+       Harcama ve gider belgelerinin düzenlenmesi ve kabulü
+       MADDE 30 - (1) Desteklenen projeler kapsamında yapılan faaliyetlerin
+gerçekleştirilmesi için kuruluşların proje kapsamında desteklenen gider kalemlerine
+ilişkin düzenleyecekleri gider formları, form ekinde yer alacak harcama ve gider
+belgelerinin kabulü, düzenleme ve ödeme tarihi ile eklerinin ihtiva edeceği bilgiler ve
+belge düzeni ve dönemin harcama ve giderlerinin sonraki dönem AGY303’ler ile
+sunulma koşulları mali rapor hazırlama kılavuzunda belirtilen kurallara göre
+yapılmalıdır.
+       (2) (Değişik: 14/03/2019-7YK) Ekonomik fizibilite raporuna ait harcama ve gider
+belgesinin düzenleme tarihi ile kuruluş tarafından yurt dışından alımı yapılan
+alet/teçhizat/yazılım ve malzeme giderlerine ait harcama ve gider belgesinin düzenleme
+tarihinin, proje destek başlangıç tarihinden en fazla üç ay öncesine kadar olması ve söz
+konusu alımın projenin destek kapsamı içerisinde değerlendirilmesi şartıyla, bu harcama
+ve giderler de desteklenir.
+      (3) Desteklenen projenin son dönemine ait mali raporun, denetim, inceleme ve
+tasdiki Yeminli Mali Müşavir tarafından dönemi takip eden üç (3) ay içerisinde
+yapıldığından, mali raporun Yeminli Mali Müşavir değerlendirmesi ve tasdikine ait
+harcama ve gider belgeleri, projenin destek bitiş tarihinden sonra düzenlenmiş olsa dahi
+son dönem mali rapor içinde sunulur ve destek kapsamına alınır.
+       Mali inceleme ve denetim
+       MADDE 31 - (1) Mali raporun mali denetim, inceleme ve tasdiki kuruluşun
+belirleyeceği yeminli mali müşavir tarafından kanunen kendisine verilmiş görev ve
+
+
+
+                                          19
+
+=== SAYFA 20 ===
+yetkiler çerçevesinde, bu uygulama esasları, ilgili mevzuat ve TEYDEB internet
+adresinde yayımlanan güncel AGY500 dispozisyonuna uygun olarak yapılır.
+       (2) Yeminli mali müşavirler tarafından değerlendirilen mali raporun TÜBİTAK
+tarafından denetimi ve değerlendirmesi ile ilgili hükümler saklıdır.
+       AGY303’ün sunulmaması
+       MADDE 32 - (1) Bu Uygulama Esaslarının 28 inci maddesinde belirtilen
+çerçevede kuruluşun ilgili AGY303’ü sunmaması veya 28 inci maddenin birinci
+fıkrasının (c) bendine uygun bilgileri sunmaması durumlarında, TÜBİTAK, kuruluşa
+uyarıda bulunarak söz konusu duruma ilişkin açıklama ister. Kuruluşun TÜBİTAK’a
+ilettiği bu açıklamaya ilişkin değerlendirme sonucunda aşağıdaki kararlardan biri alınır:
+      a) Kuruluştan alınan bilgi, projeye desteğin devamına engel teşkil etmiyorsa,
+kuruluştan söz konusu döneme ait AGY303’ü TÜBİTAK’ın belirttiği tarihe kadar
+TÜBİTAK’a sunması istenir. İlgili dönemin değerlendirilmesi sonucu hesaplanan
+desteklemeye esas harcama tutarından yüzde otuz (%30) kesinti yapılarak dönem
+değerlendirmesi tamamlanır. Söz konusu AGY303 projenin son dönemine ilişkin ise
+kuruluşun proje sonuç raporu hazırlayıp sunması gerekir..
+      b) Kuruluştan bilgi alınamaması durumunda, bu durum bu Uygulama Esaslarının
+52 nci madde birinci fıkrası çerçevesinde değerlendirilerek (a) bendi hükümlerine göre
+işlem yapılır.
+
+      c) Kuruluştan alınan bilgi, projeye desteğin devamına engel teşkil ediyorsa ve
+yapılan inceleme sonucu bu durumda kuruluşun kastının olmadığı anlaşılırsa bu
+Uygulama Esaslarının 51 inci madde hükümlerine uygun işlem yapılır. Kuruluştan
+alınan bilgi, projeye desteğin devamına engel teşkil ediyorsa ve yapılan inceleme
+sonucu bu durumda kuruluşun kastının olduğu anlaşılırsa bu Uygulama Esaslarının 52
+nci maddesi birinci fıkrası çerçevesinde değerlendirilerek (a) bendi hükümlerine göre
+işlem yapılır.
+
+       (2) Bu Uygulama Esaslarının 55 ve 56 ncı maddesinde belirtilen sebeplerden
+dolayı AGY303’ün zamanında sunulamaması durumunda, kuruluşun bu duruma ilişkin
+gerekçesini, belgeleriyle birlikte AGY303’ü sunması gereken tarihi izleyen üç ay içinde
+TÜBİTAK’a sunması halinde ilgili döneme ilişkin değerlendirme sonuçlandırılır ve
+ödeme yapılır. Aksi halde projenin dönemine/dönemlerine ilişkin hiç bir ödeme
+yapılmaz ve bu maddenin birinci fıkrasına göre işlem yapılır. Kuruluş söz konusu
+AGY303’ü sunacağı tarihi ilgili gerekçe yazısında bildirir.
+        (3) (Değişik: 14/03/2019-7YK) Ortak projelerde de bu maddenin birinci ve
+ikinci fıkra hükümleri uygulanır, ortak kuruluşlardan herhangi birine bu hükümlerin
+uygulanacağı durumda gerekli görülürse, projenin destek sürecinin devamı konusu
+ilgili kurulda görüşülerek aşağıdaki şekilde karara bağlanır.
+        (a)    (Değişik: 14/03/2019-7YK) AGY500’ü sunmayan kuruluşun projeye
+devam etmeyeceği tespiti sonucunda ve projenin yürürlükten kaldırılması kararının
+alınması halinde; proje bu Uygulama Esaslarının 51 inci madde hükümlerine göre
+yürürlükten kaldırılır. Ancak AGY500’ü sunmayan kuruluşa gerekli görülmesi halinde
+52 nci maddenin birinci fıkra (a) bendi hükümleri uygulanır.
+        (b)    (Değişik: 14/03/2019-7YK) AGY500’ü sunmayan kuruluşun projeye
+devam etmeyeceği tespiti sonucunda ve proje destek sürecinin devamına karar
+verilmesi halinde; AGY500’ü sunmayan kuruluşun bu Uygulama Esaslarının 29 uncu
+maddesi üçüncü fıkrası hükmü gereğince AGY500 sunması beklenmeksizin projenin
+dönemsel değerlendirmelerine devam edilir. Ancak AGY500’ü sunmayan kuruluşa
+
+
+                                           20
+
+=== SAYFA 21 ===
+gerekli görülmesi halinde bu Uygulama Esaslarının 52 nci maddesinin birinci fıkra (a)
+bendi hükümleri uygulanır.
+        (c) (Değişik: 14/03/2019-7YK) AGY500’ü sunmayan kuruluşun projeye ileriki
+dönemlerde devam edeceği tespiti sonucunda, projenin söz konusu dönem
+değerlendirmesine devam edilir. Ancak izleyici değerlendirmesi sonucunda projenin
+veya AGY500’ü sunmayan kuruluşun projeye devamı konusunda yeni bir tespit
+yapılabilir ve bu maddenin üçüncü fıkrası (a) ve (b) bentleri uygulanabilir.
+        (d) (Ek: 14/03/2019-7YK) Ortak projelerde AGY323’nin (projenin son
+döneminde AGY353) sunulmaması durumunda bu maddenin birinci ve ikinci fıkra
+hükümleri muhatap kuruluşa uygulanır.
+
+                               ALTINCI BÖLÜM
+                   AGY303 Değerlendirme, İzleme ve Destek Süreci
+      AGY303 ön değerlendirmesi
+      MADDE 33 - (1) PRODİS uygulaması üzerinden AGY303 ile sunulan dönemsel
+gelişmeler ve harcamalar, AGY103, sözleşme ve destek karar yazısı doğrultusunda
+proje teknik uzmanı tarafından ön değerlendirmeye alınır. Ön değerlendirme sonrasında
+AGY303 mali değerlendirmeye ve gerektiğinde izleyici değerlendirmesine alınır.
+      Mali değerlendirme
+      MADDE 34 - (1) AGY303’ün mali değerlendirmesi kapsamında TÜBİTAK
+bünyesindeki mali değerlendirme uzmanı tarafından AGY500 incelenir. AGY500, rapor
+dispozisyonuna uygun bulunursa, proje teknik uzmanının ön değerlendirmesi dikkate
+alınarak projenin ilgili dönem harcamalarına ilişkin “Harcama ve Gider Belgeleri Kabul
+Formu” mali değerlendirme uzmanı tarafından düzenlenir.
+      (2) Mali değerlendirme uzmanı, projenin son dönemi hariç rapor dispozisyonuna
+uygun şekilde düzenlenmeyen AGY500 raporları için aşağıdaki işlemlerden birini
+uygular.
+      a) Uygun olmayan kısımları hariç tutularak, AGY500 değerlendirmesi
+sonuçlandırılır,
+      b) Yeminli mali müşavirden ve/veya kuruluştan tanımlı bir zaman aralığında ek
+bilgi ve açıklamalar talep edilerek AGY500 raporu düzelttirilir,
+      c) AGY500 raporu dikkate alınmaz, harcamalar kapsam dışı tutularak
+değerlendirme sonuçlandırılır.
+      (3) Bu maddenin ikinci fıkrasında belirtilen durumlarda destek kapsamı dışında
+tutulan harcama ve giderler dönemsel destek tutarının bildirimi ile beraber kuruluşa
+bildirilir. Destek kapsamı dışında tutulan harcama ve giderler, rapor dispozisyonuna
+uygun düzenlenerek projenin sonraki dönemlerine ait AGY500 raporunda ve gider
+formlarında beyan edildiği değerlendirilir.
+
+      (4) Projenin son döneminde;
+      a) dispozisyonuna uygun şekilde düzenlenmeyen AGY500 raporları için yeminli
+mali müşavirden veya kuruluştan tanımlı bir zaman aralığında ek bilgi ve açıklamalar
+talep edilerek AGY500 raporu düzelttirilir.
+      b) projenin önceki dönem değerlendirmeleri sonucunda TÜBİTAK tarafından
+elektronik ortamda kuruluşa iletilen geri bildirimde, “eksikleri tamamlanarak izleyen
+dönemlerde tekrar beyan edilmesi” vb. gibi gerekçelerle kapsam dışı tutulan harcama
+ve giderler, projenin son dönemine ait mali raporunda beyan edilmediği takdirde, söz
+konusu dönemin PRODİS’te belirtilen “destek bildirimi hazırlandı” aşamasından sonra,
+kuruluş tarafından beyan edilemez ve desteklenmez.
+
+
+                                         21
+
+=== SAYFA 22 ===
+     c) desteklenen projenin dönemsel değerlendirmelerinde TÜBİTAK tarafından
+sehven kapsam dışı bırakılan harcama ve giderlere ilişkin kuruluş itirazını, en geç
+projenin son dönemine ilişkin ödeme gerçekleştirilene kadar yapabilir. İtirazın haklı
+bulunması sonucunda, ilgili gidere ilişkin işlemler mevzuatı çerçevesinde yeniden
+başlatılır. TÜBİTAK tarafından kuruluşa proje kapsamında son ödemenin
+yapılmasından sonraki söz konusu itirazlar değerlendirilmeye alınmaz.
+
+     İzleyici değerlendirmesi
+     MADDE 35 - (1) TÜBİTAK AGY303’ü gerektiğinde proje izleyicisi ile
+değerlendirir. İzleyici; proje gelişimi, desteklenecek giderler, projenin kazanımları ve
+benzeri konulara ilişkin görüş ve önerilerini raporladığı AGY403’ü; Dönem Raporu,
+gider formları, AGY103, TÜBİTAK tarafından iletilen notlar ile kuruluşu yerinde
+yapacağı ziyareti esas alarak hazırlar.
+
+       (2) İzleyici değerlendirmesi, izleyicinin kuruluşa veya proje çalışmalarını ve
+çıktılarını değerlendirmek üzere TÜBİTAK'ın uygun bulduğu yere yapacağı ziyaret
+sonrasında hazırlayacağı AGY403 ile alınır. Hakem değerlendirmesi sırasında, proje
+tamamlanmışsa veya gerek duyulmayan durumda izleyici görüşü alınmayabilir.
+Projenin son döneminde destek talep edilmediği durumlarda proje sonuç raporu
+değerlendirmesi için izleyici görüşü alınabilir. İzleyicinin değerlendireceği döneme
+ilişkin faaliyetlerin, izleyicinin daha önceki ziyaret tarihinde tamamlanmış olması
+halinde, izleyiciden kuruluşu yerinde ziyaret etmeden değerlendirme yapması
+istenebilir veya bu döneme ilişkin değerlendirmeyi önceki dönem izleme raporunda
+belirtmesi halinde yeni bir izleme raporu alınmadan izleyicinin önceki döneme ait
+izleme raporu dikkate alınabilir.
+
+     (3) TÜBİTAK gerek duyduğunda uzmanlarını da proje faaliyetlerinin yürütüldüğü
+kuruluşlarda incelemelerde bulunmak üzere görevlendirebilir.
+
+      İzleyici değişikliği
+      MADDE 36 - (1) (Değişik: 14/03/2019-7YK) Bu uygulama esaslarının 22 nci
+maddede belirtilen sebeplere dayanarak kuruluşun başvurusu üzerine, izleyicinin bir
+süre için veya sürekli görevine devam edemeyecek olduğunu bildirmesi halinde veya
+izleyicinin değerlendirme performansı (gözlem, irdeleme, rapor niteliği, firmaya katkısı
+ve rapor veriş süresi) göz önünde bulundurularak kuruluş bilgilendirilerek izleyici
+değişikliği yapılabilir. İzleyici değişikliği hususu, gerekli durumlarda ilgili teknoloji
+grubu yürütme kurulunda görüşülerek karara bağlanabilir.
+       Desteklemeye esas harcama tutarı, destek oranı ve destek tutarının
+belirlenmesi
+       MADDE 37 - (1) Mali değerlendirme sonucunda Harcama ve Gider Belgeleri
+Kabul Formu düzenlenmiş ve talep edildiği AGY403 raporu gönderilmiş AGY303
+üzerinde proje teknik uzmanı, izleyici desteğin devamı görüşündeyse, desteklenecek
+giderlerle ilgili son değerlendirmeyi yapar ve desteklemeye esas harcama tutarını
+belirler. İzleyicinin projenin amacına uygun yürütülmediği tespiti halinde, proje
+hakkında bu Uygulama Esaslarının 50 nci madde hükümlerine göre işlem yapılır.
+        (2) (Değişik: 14/03/2019-7YK) Kuruluşlar, proje için sağlanan destek tutarına
+itirazlarını, gerekçeleri ve belgeleri ile birlikte yazılı olarak veya PRODİS üzerinden
+yapabilirler. Yapılan itiraz, gerektiğinde izleyici değerlendirmesi ve/veya kurulda
+görüşülerek karara bağlanır. İtiraz kabul edilir ise söz konusu gider projenin devam
+eden dönemleri AGY303’ü içinde tekrar beyan edildiği ilgili gider kaleminde kapsama
+
+
+
+                                           22
+
+=== SAYFA 23 ===
+alınır. Ancak projenin son döneminde yapılabilecek itirazlar, bu Uygulama Esaslarının
+34 üncü maddesi dördüncü fıkrasına uygun olarak değerlendirilir.
+       (3) AGY303 başvuru tarihinden teknik ve mali incelemenin tamamlanarak
+dönemsel destek oran ve tutarının belirlenip kuruluşa bildirilmesine kadar geçen
+sürenin, AGY303’ün gereken yeterlilikte ve eksiksiz olarak TÜBİTAK’a sunulduğu
+tarihten itibaren, 90 gün olması hedeflenir.
+      Dönemsel destek tutarının ödenmesi
+      MADDE 38 - (1) Desteklenen projeler çerçevesinde dönemsel gerçekleşen
+harcama ve giderlerin faaliyetlerle uygunluğunun değerlendirilmesi sonucu,
+desteklemeye esas harcama tutarı ve destek oranı belirlenerek hesaplanan dönemsel
+destek tutarı kuruluşun TÜBİTAK’a bildirdiği banka hesabına yatırılır.
+      (2) Kuruluşun desteklenen projesinde dönemsel destek tutarı olarak hak etmiş
+olduğu alacağı üçüncü kişi veya kurum/kuruluşlara olan borçlarının tasfiyesi amacıyla
+kuruluşun talebi olması halinde temlik edilebilir. Temliknamenin örneği, TEYDEB
+internet adresinde bulunan içerik ve biçime uygun olarak noter onaylı düzenlenmesi
+zorunludur.
+      (3) Bu Uygulama Esasları çerçevesinde desteklenen projelerin destek tutarlarının
+ödeme sürecinde, kuruluşlardan vergi ve sosyal güvenlik yükümlülüklerini zamanında
+yerine getirmiş olduklarına ilişkin belgelerin istenilmesinin yasal düzenlemeler gereği
+zorunlu olduğu durumlarda söz konusu belgeler istenilir.
+       (4) Desteklenen projelerin dönemsel teknik ve mali değerlendirmeleri
+tamamlanarak destek ödemeleri sürecinde kuruluştan mevzuat gereği istenilen
+belgelerin TÜBİTAK’a belirtilen tarihe kadar kuruluş tarafından ulaştırılmaması
+halinde ödeme işlemleri durdurulur. Ancak kuruluşun söz konusu belgeleri TÜBİTAK’a
+ulaştırarak ilgili ödemenin yapılmasını talep etmesi halinde ödeme işlemleri yeniden
+başlatılır.
+       Proje değişiklikleri
+       MADDE 39 - (1) Kuruluşun, kuruluş yetkilisinin, proje yürütücüsünün adres ve
+iletişim bilgilerinin değişmesi, kuruluş yetkilisinin veya proje yürütücüsünün değişmesi,
+kuruluş unvan değişikliği, vergi dairesi ve vergi numarasındaki değişiklik, banka
+bilgilerinin değişmesi hallerinde kuruluş onbeş gün içerisinde, TÜBİTAK’ı
+bilgilendirir. Aksi durumda her türlü sorumluluk kuruluşa aittir. TÜBİTAK tarafından
+söz konusu değişiklik bildirimlerinin sadece PRODİS üzerinden yapılması istenebilir.
+      (2) Projede gerçekleşen veya gerçekleşmesi öngörülen tüm değişiklikler ve
+revizyon talepleri ayrıca gönderilmez, bu talepler AGY303’ün Dönem Raporu içinde
+Proje Değişiklik Bildirimi bölümünde sunulur.
+       (3) (Değişik:23/08/2021-34YK-08/09/2021 tarihli ve 120650 sayılı Başkanlık
+Olur’u) Proje sözleşmesinde belirtilen proje destek süresinin uzatılması kuruluş
+tarafından gerekçesi belirtilerek talep edilebilir. Bu talep proje izleyicisinin de görüşü
+alınarak kurul önerisi ve TÜBİTAK Başkanlığı onayı ile sonuçlandırılır. Talebin uygun
+bulunması durumunda proje süresi tam ay olacak şekilde uzatılır. Çağrılı uluslararası
+programlarda çağrı duyurusunda belirtilen proje süresi üst sınırı geçilemez. Ancak,
+mücbir sebebe bağlı süre uzatım talebi nedeniyle proje süresinin uluslararası programın
+çağrı duyurusunda belirtilen proje süresi üst sınırını aşmasının gerekli olması
+durumunda söz konusu süre uzatımı kararı Yönetim Kurulu tarafından alınır.
+       (4) (Değişik: 14/03/2019-7YK) Proje faaliyetleri, iş paketleri, bütçesi, gider
+kalemleri ve süresi değişmeksizin, projenin başlangıç tarihinin değiştirilmesine yönelik
+talepler kurul önerisi ve TÜBİTAK Başkanlık onayı ile sonuçlandırılır. Talebin uygun
+
+
+                                           23
+
+=== SAYFA 24 ===
+görülmesi durumunda karar kuruluşa bildirilir. Kuruluş AGY103 proje ön bilgileri, iş-
+zaman grafiği ve Dönemsel Tahmini ve Toplam Maliyet Formlarını (M030) günceller.
+      Değişiklik taleplerinin değerlendirilmesi
+      MADDE 40 - (1) Sözleşmesi TÜBİTAK ve kuruluş/kuruluşlar tarafından
+imzalanmış projeye ilişkin gerçekleşmiş veya öngörülen değişiklik taleplerinde
+aşağıdaki ölçütler esas alınarak karar verilir:
+        a) Destek kapsamına alınan veya izleme aşamasında değerlendirilmesi uygun
+bulunan giderlerde, kuruluşun talep edebileceği nitelik ve nicelik değişiklikleri ayrı ayrı
+ele alınarak sonuçlandırılır.
+       b) (Değişik: 14/03/2019-7YK) Herhangi bir AGY303’te talep edilen proje toplam
+adam-ay değeri değişiklikleri, projenin tamamı için ihtiyaç duyulan ve proje
+sözleşmesinden önce PRODİS’teki en son AGY103’teki toplam adam-ay değerinin
+%30’unu geçmiyorsa izleyici değerlendirmesi ile sonuçlandırılır. Toplam artış değeri
+proje sözleşmesinden önce PRODİS’teki en son AGY103’teki toplam adam-ay
+değerinin %30’unu geçiyorsa değişiklik talebi izleyici ve kurul değerlendirmesi ile
+sonuçlandırılır.
+        c) Toplam adam-ay değer değişikliği dışında, personel değişikliklerinin
+uygunluğuna gerek duyulduğunda izleyici görüşü ile karar verilir.
+        d) (Değişik: 14/03/2019-7YK) Personel giderleri dışındaki giderlere ilişkin
+nicelik veya nitelik değişiklik taleplerinden kaynaklanan (örneğin, ilave bir teçhizat
+alımı, malzeme miktarındaki artış, teçhizatın yeni bir modelinin alımı gibi) toplam bütçe
+artışı, personel giderleri hariç proje sözleşmesinden önce PRODİS’teki en son toplam
+tahmini bütçenin %30’unu geçmiyorsa izleyici görüşü ile sonuçlandırılır. Söz konusu
+talep edilen bütçe artışı personel giderleri hariç proje sözleşmesinden önce
+PRODİS’teki en son toplam tahmini bütçenin %30’unun üzerinde olması durumunda,
+söz konusu değişiklik talepleri izleyici görüşü alınarak kurul değerlendirmesi ile
+sonuçlandırılır.
+        e) Bütçe değişikliğine yol açmayan, proje süresinin uzatılması ve diğer değişiklik
+talepleri izleyici görüşü çerçevesinde sonuçlandırılır.
+        f) TÜBİTAK tarafından uygun bulunan değişiklikler ve gerçekleşmeler, projenin
+destek kapsamı içerisinde kabul edilir ve sözleşmenin ayrılmaz parçası olarak
+değerlendirilir. Değişiklik talebi hususundaki TÜBİTAK kararı kuruluşa bildirilir.
+      Tamamlanan projelerin destek sürecinin sonlandırılması ve ticarileşme
+izleme süreci1
+      MADDE 41 - (1) Kuruluş tarafından hazırlanan AGY353 proje sonuç raporu,
+projenin son döneminde destek talebi olmasa dahi TÜBİTAK’a sunulur. Proje sonuç
+raporu TÜBİTAK tarafından değerlendirilerek ödeme işlemlerinin tamamlanması ile
+beraber proje tamamlanmış olarak kabul edilir ve destek süreci sonlandırılır.
+       (2) (Ek: 03/06/2021-32YK) Program kapsamında desteklenen projelerin, destek
+süresinin son döneminde ve ticarileşme izleme süresi içerisinde gerçekleşen ticarileşme
+faaliyetlerinin sonuçlan izlenir, değerlendirilir ve ticarileşme başarı durumu daha
+sonraki proje başvurularının değerlendirilmesinde kullanılır. Ticarileşme izleme
+sürecine ait nitel ve/veya nicel sonuçların daha somaki proje başvurularında
+kullanılmasına ilişkin yöntem TÜBİTAK Başkam tarafından belirlenir ve TEYDEB
+internet adresinde yayımlanır.
+
+
+
+1
+  “Tamamlanan projelerin destek sürecinin sonlandırılması” şeklindeki başlık 03/06/2021 tarihli ve 32
+sayılı Yönetim Kurulunda “Tamamlanan projelerin destek sürecinin sonlandırılması ve ticarileşme
+izleme süreci” şeklinde değiştirilmiştir.
+
+
+                                                24
+
+=== SAYFA 25 ===
+        a) Ticarileşme planım değerlendirmek üzere TÜBİTAK tarafından ticarileşme
+izleyicisi görevlendirilir. Ticarileşme izleyicisi, kuruluşu yerinde ziyaret ederek
+ticarileşme planını ve sunulmuş olması durumunda ticarileşme raporunu değerlendirir
+ve ticarileşme izleyici raporunu TÜBİTAK'a gönderir. TÜBİTAK, ticarileşme
+izleyicisinden kuruluşu ziyaret etmeden de ticarileşme izleyici raporunu hazırlamasını
+isteyebilir.
+        b) Kuruluş, ticarileşme planını gerekçelendirerek ticarileşme dönemlerinde
+ticarileşme raporu sunmak istemediğini belirtebilir. Bu durumda, gerektiğinde
+kuruluştan ilave bilgi istenir ve ilgili Grup Yürütme Kurulu talebin uygunluğunu
+değerlendirir. Talebin uygun bulunmaması halinde ilgili proje için ticarileşmenin
+başarısız olduğu kabul edilecektir.
+        c) Proje izleyicisinin projenin teknolojik çalışmalarının başarıyla tamamlandığım
+belirttiği ve ticarileşme planının değerlendirilmesi sonucunda ticarileşme izleyicisi
+tarafından ticarileşme raporu alınmasının uygun bulunduğu projeler için ticarileşme
+izleme süreci başlatılır. Projenin ticarileşme izleme sürecinin başlatılabilmesi için
+öncelikli olarak proje izleyicisinin projenin teknolojik çalışmalarının başarıyla
+tamamlandığım teyit etmesi gerekmektedir. Bunun yanı sıra projenin son döneminde
+alınacak olan ticarileşme planının ticarileşme izleyicisi tarafından değerlendirilerek
+ticarileşme raporunun alınmasının uygun bulunması gerekmektedir.
+       (3) (Ek: 03/06/2021-32YK) Ticarileşme izleme süreci başlatılan kuruluş, her
+ticarileşme dönemine ait ticarileşme raporunu yıl sonunu takip eden birinci ayın sonuna
+kadar sunar.
+      a) Ticarileşme raporu bu Uygulama Esaslarının 15 inci maddesi hükümleri
+dikkate alınarak TÜBİTAK'a PRODİS üzerinden sunulur.
+    b) İhtiyaç halinde kuruluş, ticarileşme dönemlerinde ticarileşme planında revizyon
+yapmak istediğini gerekçesiyle birlikte ticarileşme raporunda bildirir.
+       c) Ticarileşme raporları TÜBİTAK tarafından ticarileşme izleyicisine gönderilir,
+ticarileşme izleyicisi kuruluşu yerinde ziyaret ederek ticarileşme raporunu
+değerlendirdiği ilgili ticarileşme dönemine ilişkin ticarileşme izleyici raporunu
+TÜBİTAK'a iletir. TÜBİTAK, ticarileşme izleyicisinden kuruluşu ziyaret etmeden de
+ticarileşme izleyici raporunu hazırlamasını isteyebilir.
+       ç) Kuruluşun en geç ilgili ticarileşme dönemini takip eden birinci ayın sonuna
+kadar ticarileşme raporunu sunmaması veya sunmama gerekçesini bildirir yazılı bir
+açıklama iletmemesi halinde; kuruluştan yazılı olarak bilgi istenir. TÜBİTAK talebi
+sonucunda ya da TÜBİTAK talebi olmaksızın kuruluş tarafından iletilen açıklama Grup
+Yürütme Kurulunda görüşülür. Kuruluştan bilgi alınamaması halinde, ticarileşmenin
+başarısız olduğu kabul edilir.
+       d) Kuruluş, ticarileşme raporunda gerekçesini belirterek daha sonraki ticarileşme
+dönemlerinde ticarileşme raporu sunmak istemediğini belirtebilir. Bu durumda,
+gerektiğinde kuruluştan ilave bilgi istenir ve ilgili Grup Yürütme Kurulu talebin
+uygunluğunu değerlendirir. Ticarileşme raporunun sunulmamasına dair gerekçenin
+Grup Yürütme Kurulu tarafından uygun bulunmaması halinde projenin ticarileşmesi
+başarısız olarak değerlendirilir.
+       (4) (Ek: 03/06/2021-32YK) TÜBİTAK, ticarileşme izleme sürecinde sunulan
+raporları ve elde edilen bilgileri kuruluşun daha sonraki projelerinin değerlendirme
+süreçlerinde kullanabilir.
+
+
+
+
+                                           25
+
+=== SAYFA 26 ===
+        (5) (Ek: 03/06/2021-32YK) TÜBİTAK, gerek duyduğunda uzmanlarını da
+ticarileşme sürecinde kuruluşlarda incelemelerde bulunmak üzere görevlendirebilir.
+       (6) (Ek: 03/06/2021-32YK) Ortak projelerde, muhatap kuruluş istenilen verileri
+proje ortağı kuruluşlardan temin ederek tek bir ticarileşme planı ve ticarileşme raporu
+sunar. Muhatap kuruluş, proje ortaklarından bilgi alamaması halinde, TÜBİTAK'a
+durumu yazılı olarak bildirir. Bilgi paylaşmayan kuruluş/kuruluşlar için ticarileşmenin
+başarısız olduğu kabul edilir.
+       (7) (Ek: 03/06/2021-32YK) Ticarileşme izleme süresinde kuruluşa ait hiçbir
+gider desteklenemez.
+      Tamamlanmayan projelerin destek sürecinin sonlandırılması
+      MADDE 42 - (1) Harcama ve gider beyan edilmiş projenin destek sürecinde
+aşağıda belirtilen durumların oluşması halinde kuruluş, projenin son durumunu içeren
+AGY353 göndererek projenin yürürlükten kaldırılmasını gerekçeli olarak talep edebilir.
+Bu durumda, gerekli görüldüğünde izleyici görüşü de alınarak desteklenen proje, bu
+Uygulama Esaslarının 50 ve 51 nci madde hükümlerine göre yürürlükten kaldırılır:
+      a) Mücbir sebepler,
+      b) Kuruluşun tasfiyesi, birleşmesi, bölünmesi, yeniden yapılanması, projenin
+devredilmesi,
+      c) Mali yetersizlik,
+      d) Proje konusunun ve öngörülen çıktıların güncel teknolojinin gerisinde kalması
+veya ekonomik değerini yitirmesi,
+      e) Oluşacak benzeri özel teknik-ekonomik durumlar,
+      f) Uluslararası projenin geri çekilmesi, iptal olması, ortakların projeden çekilmesi
+ve projenin gerçekleştirilemeyeceği durumlar.
+      (2) Uluslararası projenin iptal olması veya projeye Türkiye’den katılan kuruluşun
+projeden ayrılması durumunda, kendi yapacağı proje faaliyetlerine ilişkin olarak diğer
+ulusal sanayi Ar-Ge destek programlarına başvuruda bulunabilir.
+      (3) Proje destek sürecinin sonlandırılması itibariyle TÜBİTAK’a sunulmuş
+AGY303 dönem dosyalarında proje kapsamında gerçekleştirilmiş harcama ve giderlere
+yönelik işlemlere TÜBİTAK tarafından devam edilir.
+      (4) Herhangi bir harcama ve gider beyan edilmeksizin, kuruluşun bu maddenin
+birinci fıkrasında belirtilen nedenlerle veya herhangi bir gerekçeyle desteklenen bir
+projesinin yürürlükten kaldırılmasını talep ettiği durumlarda, proje bu Uygulama
+Esaslarının 50 ve 51 inci maddeleri çerçevesinde yürürlükten kaldırılır.
+      Satın alma, mülkiyet, muhasebe kayıtları ve ödeme işlemleri
+      MADDE 43 - (1) Kuruluşlar desteklenen projeler kapsamında, yapacakları satın
+alımları tabi oldukları mevzuat ve genel hükümler çerçevesinde gerçekleştirirler.
+       (2) Proje çerçevesinde satın alınan makine, teçhizat, sistem, modül, yazılım vb.
+taşınırlar kuruluşa aittir.
+     (3) Kuruluşlar, desteklenen proje kapsamında yapacakları harcamalara ilişkin
+muhasebe ve ödeme işlemlerini tabi oldukları mevzuat ve genel hükümler ile bu
+programa ilişkin usul ve esaslar çerçevesinde gerçekleştirirler.
+      Harcama ve faaliyetlerin denetimi ile belgelerin saklanması
+      MADDE 44 - (1) Bu Uygulama Esasları kapsamında kuruluşlar tarafından
+gerçekleştirilen proje faaliyetleri ve harcamaları gerektiğinde TÜBİTAK tarafından
+denetlenir. Bu denetimler sırasında desteklerden faydalanan kuruluşların kuruluş
+yetkilileri ile yeminli mali müşavirlik proje harcamaları değerlendirme ve tasdik
+
+
+                                           26
+
+=== SAYFA 27 ===
+raporunu düzenleyen yeminli mali müşavirler, her türlü bilgi ve belgeyi ibraz etmek ve
+gerekli kolaylığı sağlamak zorundadır.
+       (2) Kuruluş tarafından iki nüsha hazırlanan ve yeminli mali müşavir tarafından
+tasdik edilen mali rapor, biri kuruluş, diğeri yeminli mali müşavir tarafından
+istenildiğinde ibraz edilmek üzere dokümanın tabi olduğu genel hükümler çerçevesinde
+on yıl süre ile muhafaza edilir.
+       (3) Program kapsamında önerilen proje başvuruları (AGY103), değerlendirme
+formları, karar yazıları ve bu başvuru çerçevesindeki diğer doküman ve yazılar, devlet
+arşiv hizmetleri mevzuatı çerçevesinde imha edilir.
+        Sahte belgelerin tespiti, haksız veya fazla ödeme
+        MADDE 45 - (1) Desteklenen proje kapsamında; kuruluşlar tarafından sahte
+fatura, fatura yerine geçen sahte vesika ve ödemeleri gösteren sahte mali belgelerin ve
+her türlü resmi evrak şeklinde düzenlenmiş sahte belgelerin TÜBİTAK tarafından,
+TÜBİTAK’ın tabi olduğu denetim mevzuatı çerçevesindeki denetimde veya kuruluşun
+tabi olduğu mevzuat gereği yapılan denetimlerde tespiti ve bu durumun TÜBİTAK’a
+bildirilmesi halinde söz konusu durumlar incelenerek bu Uygulama Esaslarının 52 nci
+maddenin tüm hükümleri uygulanır.
+       (2) Kuruluşa birinci fıkrada belirtilen hususların dışında TÜBİTAK tarafından
+desteklenen proje kapsamında sehven fazla ödeme yapıldığının tespiti durumunda:
+       a) Fazla ödenen tutar, kuruluşun TÜBİTAK’tan herhangi bir alacağından veya
+program kapsamında hak ettiği ancak ödemesi henüz yapılmayan destek tutarından
+faizsiz olarak mahsup edilir, varsa kalan tutar TÜBİTAK tarafından kuruluşa
+bildirilmesini müteakiben bir ay içerisinde, TÜBİTAK’a iade edilir.
+       b) Kuruluşun TÜBİTAK’tan herhangi bir alacağının olmaması halinde, fazla
+ödenen tutar TÜBİTAK tarafından kuruluşa bildirilmesini müteakiben bir ay içerisinde,
+TÜBİTAK’a iade edilir.
+       c) Fazla ödenen veya mahsuplaşma sonrasında kalan tutarın kuruluşa
+bildirilmesini müteakiben bir ay içerisinde TÜBİTAK’a iade edilmemesi durumunda,
+yapılan fazla ödeme, 6183 sayılı Kanunda belirtilen oranlarda gecikme faizi
+uygulanarak tahsil edilir.
+       (3) Yeminli mali müşavirin yanıltıcı bilgi vermesinden dolayı, kuruluşa haksız ve
+fazla ödeme yapılmasının TÜBİTAK tarafından, TÜBİTAK’ın tabi olduğu denetim
+mevzuatı çerçevesindeki denetimde veya kuruluşun tabi olduğu mevzuat gereği yapılan
+denetimlerde tespiti ve bu durumun TÜBİTAK’a bildirilmesi halinde, söz konusu
+desteğin 6183 sayılı Kanunda belirtilen oranlarda gecikme faizi uygulanarak geri
+alınması sürecinde yeminli mali müşavir kuruluşlarla birlikte müştereken ve
+müteselsilen sorumludur. Kuruluş tarafından denetim, inceleme ve tasdik amacıyla
+yeminli mali müşavire sunulan mali raporda bulunan bilgi ve belgelerin eksik ve
+yetersiz olması ve bu durumun yeminli mali müşavir tarafından göz ardı edilmesi
+suretiyle düzenlenen ve onaylanan AGY500 raporunda yanıltıcı bilgi bulunduğunun
+tespiti halinde yeminli mali müşavir hakkında bu Uygulama Esaslarının 53 üncü
+maddesinin üçüncü fıkrası hükümlerine göre işlem yapılır. Bu durumda bu maddenin
+birinci fıkrası hükümleri saklı kalmak kaydıyla, kuruluşa proje çerçevesinde herhangi
+bir yaptırım uygulanmaz.
+       (4) (Değişik: 14/03/2019-7YK) AGY500 raporu içinde yeminli mali müşavir
+tarafından yanıltıcı bilgi düzenlediğinin tespiti hallerinde, yanıltıcı bilginin bu madde
+çerçevesinde kuruluşun kastı sonucu olup olmadığı ve projenin bu Uygulama
+esaslarının 52 inci maddesinin birinci fıkrası (a) ve (b) bendine göre işlem yapılması
+hususu ilgili kurul tarafından ayrıca değerlendirilir.
+
+
+                                          27
+
+=== SAYFA 28 ===
+                                  YEDİNCİ BÖLÜM
+                                  Transfer Ödemeleri
+       Transfer talep koşulları ve ödemesi
+       MADDE 46 - (1) (Değişik: 14/03/2019-7YK) Kuruluş talebine göre, TÜBİTAK
+bütçesine gider kaydedilmek üzere teminat karşılığında transfer ödemesi yapılabilir.
+Proje sözleşmesi TÜBİTAK tarafından imzalanmadan kuruluş transfer ödemesi
+talebinde bulunamaz. Proje kapsamındaki alacaklarını devreden (temlik eden) kuruluş
+transfer ödemesi (ön ödeme) başvurusunda bulunamaz. Transfer ödemeleri temlik
+edilemez. Proje destek bitiş tarihine altı (6) aydan az süre kalan projelere transfer
+ödemesi yapılmaz. Teminat olarak gösterilebilecek değerler aşağıda belirtilmektedir.
+        a) Bankalar ve finans kurumları tarafından verilen teminat mektupları,
+        b) Mevzuatında kredi kefaleti vermekle görevlendirilen kurum/kuruluşlar
+tarafından düzenlenen kefalet mektubu ya da kefalet senedi,
+        c) Kuruluş tarafından düzenlenen senet.
+        (2) (Değişik: 14/03/2019-7YK) Proje kapsamında bu maddenin birinci
+fıkrasının (a) ve (b) bentlerinde sayılan teminatlar karşılığı yapılacak transfer
+ödemelerinin her biri destek kapsamına alınan toplam proje bütçesinin yüzde yirmi
+beşini (%25) ve 2.000.000.-TL (İki milyon Türk Lirası)’nı geçemez. Transfer ödemesi
+talebi ve teminatı uygun bulunarak transfer ödemesi yapılan kuruluşa, projenin takip
+eden dönemlerinde de kuruluştan yeni bir başvuru ve teminat alınmaksızın transfer
+ödemeleri yapılır.
+        (3) (Ek: 14/03/2019-7YK) Proje kapsamında bu maddenin birinci fıkrasının (c)
+bendi gereği senet karşılığı yapılacak transfer ödemesi kuralları aşağıdadır.
+        a) Proje bazında en fazla 150.000.-TL (yüzellibin Türk Lirası)’na kadar senet
+karşılığı transfer ödemesi yapılabilir.
+        b) Kuruluşa aynı anda tek bir projesi için senet karşılığı transfer ödemesi
+yapılabilir.
+        c) Senet karşılığı transfer ödemesi mahsup işlemi tamamlandıktan sonra varsa
+kuruluşun diğer projesi için de senet karşılığı transfer ödemesi yapılabilir.
+        ç) Senet karşılığı transfer ödemesinin, en fazla iki dönemde mahsup edilmesi
+gerekir.
+        d) Senet karşılığı transfer ödemesi mahsubu tamamlanan kuruluşların aynı
+projesi için bu maddenin birinci fıkrasının (a) ve (b) bentlerinde belirtilen teminat
+karşılığı transfer ödemesi yapılabilir.
+        e) Proje kapsamında yapılacak transfer ödemesi, destek kapsamına alınan proje
+bütçesinden veya destek kapsamında kalan proje bütçesinden fazla olamaz.
+        f) Bu maddenin birinci fıkrasının (a) ve (b) bentlerinde belirtilen teminat
+karşılığı transfer ödemesi almış kuruluşun aynı projesi için senet karşılığı transfer
+ödemesi yapılmaz.
+        g) Desteklenen herhangi bir projesinde senet karşılığı transfer ödemesi almış
+olmasına rağmen mahsup sonrası kalan tutarı ödememiş kuruluşlar ile senet karşılığı
+transfer ödemesini proje faaliyetleri dışında kullandığı tespit edilen kuruluşların
+projelerine tekrar senet karşılığı transfer ödemesi yapılmaz.
+
+        (4) (Ek: 14/03/2019-7YK) Bu maddenin ikinci fıkrası kapsamında transfer
+mahsubu sonrası varsa kalan tutar bu Uygulama Esaslarının 45 inci maddesinin ikinci
+fıkrası hükümlerine göre tahsil/mahsup edilir. Bu maddenin üçüncü fıkrası kapsamında
+transfer mahsubu sonrası varsa kalan tutar; kuruluşa herhangi bir bildirim
+yapılmaksızın, transfer ödemesine ilişkin TÜBİTAK tarafından ödeme emri belgesinin
+düzenlendiği tarihten itibaren 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında
+
+
+
+                                         28
+
+=== SAYFA 29 ===
+Kanunda belirtilen gecikme zammı oranları esas alınarak faiziyle birlikte bu Uygulama
+Esasları kapsamında tahsil/mahsup edilir.
+
+      Transfer uygulamasında kabul edilen teminatlar, oranı ve süresi
+      MADDE 47 - (1) Transfer ödemesi işlemlerinde, talep edilen ilk transfer
+ödemesinin yüzde yirmi beş (%25) fazlası kadar teminat alınır. Teminat süresi, transfer
+ödemesine ilişkin talep ve değerlendirme, ödeme ve mahsup süreçleri, transfer
+ödemesinin amacı dışında kullanımı, teminat iade süreci ve diğer tüm hususlar Mali
+Rapor Hazırlama Kılavuzunda belirtildiği şekilde uygulanır.
+
+                                  SEKİZİNCİ BÖLÜM
+                            Projenin Yürürlükten Kaldırılması
+        Proje destek sürecinin geçici olarak durdurulması
+        MADDE 48 - (1) Bu Uygulama Esasları kapsamında desteklenen projelerin
+destek süreci, geçici olarak durdurulamaz. Projenin yürütülmesinde sorunların oluşması
+ve faaliyetlerin geçici olarak yapılamaması halinde bu durum ilgili döneme ait AGY323
+içinde açıklanır. Dönem değerlendirmesi sonucunda proje desteğinin devam etmesi
+uygun bulunması durumunda faaliyetlerin yapılmadığı süre destek süresine doğrudan
+eklenmez, ancak bu Uygulama Esaslarının 39 uncu maddesinin üçüncü fıkrası
+hükümleri çerçevesinde ek süre talep edilebilir.
+       Projenin devri veya kuruluş tüzel kişiliğinin değişmesi
+       MADDE 49 - (1) Kuruluşların desteklenen projelerini devretmeleri kabul
+edilmez. Projelerini devretmek isteyen kuruluşlar bu Uygulama Esaslarının 42 nci
+maddesine uygun olarak destek sürecinin sonlandırılmasını talep edebilirler. Projenin
+devredilmesi ve kuruluşun talebi olmaması halinde bu Uygulama Esaslarının 50 ve 51
+inci madde hükümleri uygulanır.
+        (2) Kuruluşun bir başka kuruluş ya da kuruluşlarla birleşmesi ve şirketin tür
+değiştirmesi gibi nedenlerle kuruluş tüzel kişiliğinin değişmesi halleri projenin
+devredilmesi olarak ele alınmaz ve projenin devri olarak değerlendirilmez. Kuruluş
+tüzel kişiliğinin başka bir tüzel kişiliğe devredilerek birleşmesi halinde AGY103
+istenmez. Bu durumda yeni kuruluşun tüzel kişiliği adına proje sözleşmesinin yeniden
+düzenlenmesi istenebilir. Devralınan kuruluşun TÜBİTAK nezdindeki hak ve
+yükümlülükleri devralan kuruluşa aittir.
+       Projenin amacına uygun yürütülmemesi
+       MADDE 50 - (1) Projelerin destek sürecinde TÜBİTAK tarafından yapılan
+değerlendirme sonucunda, bu program kapsamında projenin amacına uygun biçimde
+yürütülmediğinin anlaşılması üzerine kuruluştan bilgi istenir. Kuruluşun sunduğu bilgi
+değerlendirilerek; destek sürecinin devam etmesine veya bu Uygulama Esaslarının 51
+inci madde hükümlerine göre yürürlükten kaldırılmasına karar verilir. Söz konusu
+durum bu maddenin ikinci fıkrasında belirtilen gerekçeler dışında ve kuruluşun kastı
+sonucu gerçekleştiğinin bu Uygulama Esaslarının 52 nci maddesi birinci fıkrası
+çerçevesinde tespiti halinde ise bu Uygulama Esaslarının 52 nci madde birinci fıkra (a)
+bendi hükümleri uygulanır.
+       (2) TÜBİTAK tarafından yapılan değerlendirme sonucunda, mücbir sebepler,
+projenin devredilmesi, kuruluşun tasfiyesi, birleşmesi (kuruluş tüzel kişiliğinin başka bir
+tüzel kişilikle devrolunarak birleşmesi durumunda devralan kuruluşun projeyi devam
+ettirmemesi hallerinde) ve yeniden yapılanması, finansal yetersizlik, projenin güncel
+teknolojinin çok gerisinde kalması ve ekonomik değerini yitirmesi, teknoloji veya bilgi-
+beceri-yetenek yetersizlikleri, uluslararası projenin geri çekilmesi, iptal olması,
+
+
+                                            29
+
+=== SAYFA 30 ===
+ortakların projeden çekilmesi ve benzeri teknolojik-ekonomik nedenlerden oluşacak
+gerekçelerle projenin bu Uygulama Esaslarının 51 inci madde hükümlerine göre
+yürürlükten kaldırılmasına karar verilir.
+        Projenin yürürlükten kaldırılması
+        MADDE 51 - (1) Projelerin destek sürecinde, bu uygulama esaslarının
+maddelerinde bu madde hükümlerinin uygulanacağı belirtilen durumların oluşması
+halinde veya bu Uygulama Esaslarının 55 inci maddesinde belirtilen haller nedeniyle
+kuruluşun projeye devam edemeyeceğini bildirmesi durumunda TÜBİTAK belirlenen
+tarih itibariyle projeyi, yürürlükten kaldırır. Yürürlükten kaldırma kararı sonucunda,
+proje kapsamında kuruluşa yapılan ödemelerin ve projenin değerlendirme/izleme
+aşamalarında oluşan giderlerin iadesi istenmez. Ancak transfer ödemesi yapılmış ise
+mahsuplaşma sonrası kalan tutarın TÜBİTAK tarafından kuruluşa yapılan destek
+tutarına ilişkin bildirim tarihini takip eden bir ay içinde TÜBİTAK’a iade edilmesi
+istenir. Kuruluşun/kuruluşların TÜBİTAK’a iade etmeleri gereken ödemeleri bir ay
+içinde yapmaması durumunda, 6183 sayılı Kanunda belirtilen oranlarda gecikme faizi
+uygulanarak tahsil edilir.
+      (2) (Değişik: 14/03/2019-7YK) Bu madde kapsamında projenin yürürlükten
+kaldırılmasına ilgili teknoloji grubu kurulu tarafından karar verilir. Ayrıca projenin
+yürürlükten kaldırılma kararının alındığı tarih itibariyle, değerlendirme sürecinde olan
+veya gerçekleşmiş dönemlerine ilişkin ödeme yapılıp yapılmayacağı hususu izleyici
+görüşü esas alınarak ilgili teknoloji grubu kurulunda karara bağlanır. TÜBİTAK
+tarafından alınan karar kuruluşa bildirilir.
+
+       Kuruluşun kastı nedeniyle uygulanacak yaptırımlar
+       MADDE 52 - (1) (Değişik: 14/03/2019-7YK) Bu Uygulama Esaslarının; 8 inci
+maddesinde, 21 inci maddesinde, 32 nci maddesinde, 45 inci maddesinde veya 50 nci
+maddesinde belirtilen durumların oluşması halinde ilgili teknoloji grubu yürütme kurulu
+tarafından kuruluşun kastı olup olmadığında karar verilir. Kuruluşun kastı olduğuna
+karar verilmesi halinde bu maddenin birinci fıkrası (a) bendi uygulanır. Bu Uygulama
+Esaslarında bu maddenin birinci fıkrası (b) bendinin de uygulanacağının belirtildiği
+durumlarda ise (a) ile birlikte (b) bendi de uygulanır.
+      (a) Söz konusu proje kapsamında kuruluşa yapılan tüm ödemelerin, kuruluştan
+6183 sayılı Kanunda belirtilen oranlarda gecikme faizi uygulanarak tahsil edilmesine,
+projenin destek süreci devam ediyor ise belirlenen tarih itibariyle projenin yürürlükten
+kaldırılmasına karar verilir.
+      (b) Bu maddenin birinci fıkrasına göre kastı tespit edilen kuruluşun; TÜBİTAK
+destek programlarında desteklenmekte olan diğer projeleri, ödemesi yapılmış tutarlar
+geri istenmeksizin, yürürlükten kaldırılır. Kuruluşun proje önerileri var ise
+değerlendirme süreçleri durdurulur ve bu maddeye ilişkin kararın alındığı yılı takip eden
+üç takvim yılı süresince yeni proje başvurusu kabul edilmez.
+      (2) (Değişik: 14/03/2019-7YK) Bu madde kapsamında projenin yürürlükten
+kaldırılması hususu ilgili teknoloji grubu kurulunda karara bağlanır.
+
+                                 DOKUZUNCU BÖLÜM
+                                    Diğer Hususlar
+      Sorumluluklar
+      MADDE 53 - (1) Programın bu uygulama esasları çerçevesindeki sorumluluklar
+aşağıda belirtilmektedir.
+     a) Kuruluş; desteklenen projelerin bilimsel, teknik, idari, mali ve hukuki yönden
+bu uygulama esaslarına uygun bir şekilde yürütülmesinden, projelerin değerlendirme ve
+
+
+                                           30
+
+=== SAYFA 31 ===
+izleme aşamalarında, hakeme, izleyiciye, programın yürütülmesinde görevli kurumların
+görevlendirdiği uzmanlara gerekli araç, ortam ve bilgi akışının sağlanmasından,
+TÜBİTAK desteği ile tamamlanmış projelere ilişkin TÜBİTAK tarafından talep
+edilebilecek her türlü bilginin sağlanmasından tüzel kişilik olarak,
+       b) Kuruluş yetkilisi; desteklenen projelerin bilimsel, teknik, idari, mali ve hukuki
+yönden bu uygulama esaslarına uygun bir şekilde yürütülmesinden kuruluş adına,
+       c) Proje yürütücüsü; desteklenen projelerin değerlendirme ve izleme aşamalarında
+hakeme, izleyiciye, programın yürütülmesinde görevli kurumların görevlendirdiği
+uzmanlara gerekli araç ve ortamların sağlanmasından, projelerin bilimsel ve teknik
+olarak yürütülmesinden, TÜBİTAK’a gerekli bilgi akışının sağlanmasından, harcama ve
+giderlerin proje gereklerine uygunluğundan kuruluş yetkilisi adına,
+       d) Hakem; proje önerisinin değerlendirilmesinden, TÜBİTAK tarafından istenen
+raporun hazırlanmasından, soruların yanıtlanmasından ve gizlilik esaslarına riayet
+edilmesinden,
+       e) İzleyici; desteklenmesi uygun bulunan projeyi dönemler itibariyle, kuruluşu
+yerinde ziyaret ederek ve TÜBİTAK tarafından belirlenen formata uygun olarak
+inceleyip değerlendirilmesinden, soruların yanıtlanmasından ve gizlilik esaslarına riayet
+edilmesinden,
+       f) Proje mali sorumlusu; desteklenen projelere ilişkin mali raporların proje
+yürütücüsü ile birlikte destek kapsamına uygun olarak hazırlanmasından, harcamaların
+ve gider belgeleri ile maliyet hesaplarının doğruluğundan ve mali mevzuata
+uygunluğundan,
+       g) Yeminli mali müşavir; kanunen kendisine verilen sorumluluklar çerçevesinde,
+desteklenen projelere ilişkin harcamaların ve gider belgelerinin mali mevzuata
+uygunluğundan, maliyet hesaplarının doğruluğundan ve bu uygulama esaslarının diğer
+maddelerinde belirtilen yükümlülükler ve sorumlulukların gerektiği şekilde yerine
+getirilmesinden sorumludur.
+     (2) TÜBİTAK yukarıda belirtilen sorumlulukları dikkate alarak bu uygulama
+esasları ve ilgili diğer mevzuat çerçevesinde gerekli önlemleri alır.
+
+       (3) Kuruluş tarafından denetim, inceleme ve tasdik amacıyla yeminli mali
+ müşavire sunulan mali raporda bulunan bilgi ve belgelerin eksik ve yetersiz olması ve
+ bu durumun yeminli mali müşavir tarafından göz ardı edilmesi suretiyle düzenlenen ve
+ onaylanan AGY500 raporunda, yanıltıcı bilgi bulunduğunun tespiti halinde, TÜBİTAK
+ tarafından yapılan değerlendirme sonucunda aşağıdaki işlemlerden biri uygulanır;
+         a) Düzenlenen AGY500 raporunda, yanıltıcı bilgi bulunduğunun birinci defa
+tespiti halinde söz konusu raporu düzenleyen yeminli mali müşavire uyarı yazısı iletilir,
+         b) Düzenlenen AGY500 raporunda, yanıltıcı bilgi bulunduğunun ikinci defa
+tespiti halinde söz konusu yeminli mali müşavire, durumun bildirildiği tarihi takip eden
+üçüncü yılın sonuna kadar TÜBİTAK destek programlarına ait harcama ve giderlerin
+tasdikine ilişkin raporlarının kabul edilmeyeceği kararı bildirilir. Ayrıca bu durum,
+yeminli mali müşavirin bağlı olduğu odaya ve AGY500 raporunu düzenlediği kuruluşa
+ve varsa söz konusu yeminli mali müşavirin değerlendirme sürecinde olan düzenlediği
+raporların TÜBİTAK tarafından kabul edilmeyeceği ilgili diğer kuruluşlara bildirilir.
+       Gizlilik
+       MADDE 54 - (1) Bu destek programına yapılan proje başvurularının
+değerlendirme ve izleme süreçlerinde görev alan kişilere sunulan bilgi ve belgeler,
+kuruluşa ait "ticari gizli bilgi" veya “hizmete özel bilgi” olarak kabul edilir ve üçüncü
+kişilere herhangi bir yolla aktarılmaz. Bu bilgi ve belgeler 9/10/2003 tarihli ve 4982
+sayılı Bilgi Edinme Hakkı Kanununun kapsamı dışındadır.
+
+
+
+                                            31
+
+=== SAYFA 32 ===
+      (2) 1/6/1989 tarihli ve 3568 sayılı Serbest Muhasebeci Mali Müşavirlik ve
+Yeminli Mali Müşavirlik Kanunu, 5/12/1951 tarihli ve 5846 sayılı Fikir ve Sanat
+Eserleri Kanunu ve diğer mevzuat hükümleri de saklı kalmak kaydıyla, gizlilik
+hükümlerine aykırı davrandığı kesinleşmiş mahkeme kararlarıyla tespit edilen kişi ve
+kuruluşlar TÜBİTAK desteklerinden yararlanamazlar ve destek kapsamına alınan
+projelerde hiçbir şekilde görev alamazlar.
+
+       (3) Proje başvurularının değerlendirme ve desteklenen projelerin izleme sürecinde
+görevlendirilen hakem ve izleyicilerin bu görevlendirmeye ilişkin hazırladıkları
+değerlendirme raporları, hakem ve izleyicilerin mesleki ve kişisel haklarını koruma
+altına alma amacı ve kuruluşları yerinde birden fazla ziyaret etme durumları da dikkate
+alınarak, proje başvurusunda bulunan kuruluşa ve üçüncü şahıs ya da kuruluşlara
+iletilmez.
+
+     (4) Kuruluş, proje başvuru, değerlendirme ve izleme süreçlerinde ticari gizlilik
+düzeyine karar vererek ilgili bilgileri sunmayabilir. Bu durumda sunulan bilgiler
+çerçevesinde yapılacak değerlendirme sonuçlarını kuruluş kabul eder.
+
+      Mücbir sebepler
+      MADDE 55 - (1) (Değişik:23/08/2021-34YK-08/09/2021 tarihli ve 120650
+sayılı Başkanlık Olur’u) Mücbir sebep olarak kabul edilebilecek haller; olağanüstü
+doğa olayları, deprem, yangın, su baskını benzeri doğal afetler, kanuni grev, lokavt,
+genel salgın hastalık, ambargo, yabacı ülkelerin kısıtlamaları, terör eylemleri, sabotaj,
+savaş (ilan edilmiş olsun ya da olmasın) ve abluka olması, kısmi veya genel seferberlik
+ilanı ve benzeri haller ile proje için kritik öneme sahip proje bütçe kalemlerinin
+teminindeki güçlüklerdir.
+      (2) (Değişik:23/08/2021-34YK-08/09/2021 tarihli ve 120650 sayılı Başkanlık
+Olur’u) Bu maddenin birinci fıkrasında belirtilen hallerin mücbir sebep olarak kabul
+edilebilmesi için mücbir sebebin yetkili/ilgili merciler tarafından belgelendirilmiş
+olması zorunludur. Ancak bu maddenin birinci fıkrasında belirtilen hallerin resmi
+yetkililerden/mercilerden belge alınamadığı için açık bir şekilde belgelendirilememesi
+halinde, kuruluşun sunduğu bilgi ve belgeler değerlendirilerek ilgili Grubun önerisi ve
+TÜBİTAK Başkanı onayı ile mücbir sebep kapsamına girdiğine karar verilebilir.”
+     Haklı sebepler
+      MADDE 56 - (1) TÜBİTAK ile kuruluşların birbirlerine hitaben basılı veya
+elektronik ortamda gönderdikleri ve belirli bir süre içinde cevaplanması talep edilen
+evrakın alıcıya ulaşmaması veya geç ulaşması halleri ile TÜBİTAK’ın elektronik
+hizmetinde oluşan aksamalar, gerekçelendirme dikkate alınarak, yerine getirilemeyen
+taahhüdün haklı bir nedeni sayılabilir. Bu durumda, haklı sebebin kabul edilebilmesi
+için bahse konu gerekçenin belge(ler) ile tevsik edilmiş olması gerekir.
+
+      (2) Bu Uygulama Esaslarının 39 uncu maddesinin birinci fıkrasında belirtilen
+değişiklikler, kuruluş tarafından onbeş gün içerisinde TÜBİTAK’a bildirilmemiş ise, bu
+maddenin birinci fıkrasına dayalı talepler haklı sebep olarak kabul edilmez.
+      Fikri ve sınaî mülkiyet hakları
+      MADDE 57 - (1)            (Değişik: 14/03/2019-7YK) Bu U ygulama Esasları
+kapsamında desteklenen projelerin yürütülmesi aşamasında veya gerçekleştirilmesi
+sonucunda fikri ve sınaî mülkiyete konu olabilecek bir buluş (patent, faydalı model),
+tasarım, eser, entegre devre topografyası, teknik bilgi gibi bir fikri ürün ortaya çıkması
+halinde 17/7/1963 tarihli ve 278 sayılı Türkiye Bilimsel ve Teknolojik Araştırma
+
+
+                                           32
+
+=== SAYFA 33 ===
+Kurumu ile İlgili Bazı Düzenlemeler Hakkında Kanunun ve 4 numaralı Bakanlıklara
+Bağlı, İlgili, İlişkili Kurum ve Kuruluşlar ile Diğer Kurum ve Kuruluşların Teşkilatı
+Hakkında Cumhurbaşkanlığı Kararnamesinin ilgili              hükümleri       uygulanır.
+Desteklenmesine karar verilen projelerle ilgili olarak ortaya çıkması muhtemel fikri
+ürünler üzerindeki haklar proje sözleşmesi ile düzenlenir ve bu şekilde kuruluşa
+devredilebilir. Bu durumda kuruluş, Ar-Ge faaliyetleri sonucunda elde ettikleri fikri
+mülkiyete konu hakların Türk Patent Enstitüsü nezdinde kendi adına tescili için gerekli
+işlemleri yapar.
+      Hakem, izleyici ve yeminli mali müşavir ücretleri
+      MADDE 58 - (1) (Değişik: 14/03/2019-7YK) Program kapsamında projelerin
+değerlendirme ve izleme süreçlerinde görev alan hakem ve izleyicilerin ücretleri ve
+karşılanacak giderleri Yönetim Kurulu tarafından belirlenir ve TÜBİTAK tarafından
+ödenir. TÜBİTAK tarafından karşılanan hakem izleyici ücretleri, proje önerisinin geri
+çekilmesi, desteklenmesi, reddedilmesi, yürürlükten kaldırılması vb nedenler dahil
+hiçbir şekilde kuruluşlardan talep edilmez.
+     (2) Desteklenen projelerin dönemsel AGY303 içerisindeki mali raporlarının
+yeminli mali müşavir tarafından değerlendirilmesi ve rapor düzenlenmesine ilişkin
+yeminli mali müşavir ücretleri kuruluş tarafından ödenir, bu giderler bu Uygulama
+Esaslarının 10 uncu maddesi kapsamında desteklenir.
+
+       Uluslararası Destek Programına İlişkin İşlemler
+       MADDE 59 - (1) Uluslararası ortak destek programında, TÜBİTAK tarafından
+ilgili uluslararası organizasyon için düzenlenecek ve yeminli mali müşavirlerce
+onaylanacak mali raporlar ve onaylarına ilişkin giderler TÜBİTAK bütçesinden
+karşılanır.
+       (2) Uluslararası ortak destek programının gerektirdiği uluslararası değerlendirme
+işlemlerinin gerçekleştirilebilmesi için ödenmesi gereken hakemlik ve diğer giderlerin
+ortak karşılanmasının zorunlu olduğu durumlarda, TÜBİTAK’a düşen pay TÜBİTAK
+bütçesinden karşılanır.
+       (3) Uluslararası ortak destek programı kapsamında TÜBİTAK tarafından
+desteklenen projeler için ilgili kuruluşlara sağlanan desteğin belirli bir kısmının ilgili
+uluslararası organizasyon tarafından sağlanması durumunda, TÜBİTAK’a ödenecek
+miktar TÜBİTAK bütçesine gelir kaydedilir.
+       (4) Uluslararası anlaşmalarla taraf olunan uluslararası ortak destek programlarına
+katılım için ödenecek aidat tutarları TÜBİTAK bütçesinden karşılanır.
+      Programa ilişkin dokümanların kullanımı
+      MADDE 60 - (1) Bu Uygulama Esaslarına göre proje başvuru, değerlendirme,
+izleme, rapor hazırlama ve diğer süreçlerde kullanılacak başvuru, destek talebi, proje
+sözleşmesi, devir protokolü, değerlendirme, izleme ve tasdik raporları vb. dokümanlar
+TÜBİTAK tarafından hazırlanır ve gerektikçe güncellenerek TEYDEB internet
+adresinde yayımlanır. Kuruluş, hakem, izleyici ve yeminli mali müşavirin söz konusu
+doküman ve raporların en son güncellenmiş sürümünü kullanması beklenir. Eski
+sürümleri kullanılmış dokümanların yenilenmesi TÜBİTAK tarafından istenebilir.
+      Yürürlükten kaldırılan Uygulama Esasları
+      MADDE 61 - (1) Bilim Kurulu’nun 08/07/2007 tarih ve 155 sayılı toplantısında
+kabul edilen “Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı Uygulama
+Esasları” (Yürürlükten kaldırılan uygulama esasları) değişiklikleri ile birlikte 1 Kasım
+2010 tarihi itibariyle yürürlükten kaldırılmıştır. Yürürlükten kaldırılan uygulama
+
+
+
+                                           33
+
+=== SAYFA 34 ===
+esasları hükümleri bu Uygulama Esaslarının geçici ve yürürlük maddelerinde belirtilen
+hükümler çerçevesinde, mevzuat boşluğu oluşturmayacak şekilde uygulanır.
+      (2) Yürürlükten kaldırılan Uygulama Esasları çerçevesinde sunulan proje
+önerilerinin (AGY103) değerlendirilmesine, destek kararı verilen projelerin
+desteklenmesine (AGY303) ve ödeme işlemlerine, bu Uygulama Esaslarının geçici ve
+yürürlük maddelerinde belirtilen hükümler dikkate alınarak, aynı program altında bu
+Uygulama Esasları çerçevesinde devam edilir.
+
+      GEÇİCİ MADDE 1 - (1) Desteklenen projelerin dönemlerine ait AGY300’lere;
+       a) 1 Kasım 2010 tarihinden önce TÜBİTAK’a sunulan dönemlerine yürürlükten
+kaldırılan uygulama esasları hükümleri uygulanır. Ancak, TÜBİTAK tarafından
+değerlendirilerek 1 Kasım 2010 tarihi itibariyle karara bağlanmamış süre değişikliğine
+ilişkin talepler, bu Uygulama Esasları hükümlerine göre sonuçlandırılır.
+     b) 1 Kasım 2010 tarihi ve sonrasında TÜBİTAK’a sunulan dönemlerine bu
+Uygulama Esasları hükümleri uygulanır.
+      (2) Bu Uygulama Esaslarının 8 inci maddesinin beşinci, altıncı, yedinci ve
+sekizinci fıkralarındaki hükümler, proje sözleşmesi 25 Nisan 2008 tarihi ve öncesinde
+imzalanmış projelere uygulanmaz.
+      (3) Bu Uygulama Esasları maddelerinin yürürlük ve geçici maddelerinde belirtilen
+hususlar dikkate alınarak yürürlüğe girmesi sonrasında, 1 Ocak 2011 tarihinden önceki
+proje destek kararında belirtilen ve bu Uygulama Esasları hükümlerine aykırı hususlar
+uygulanmaz. Destek kararında belirtilmediği halde bu Uygulama Esaslarıyla getirilen
+hükümler yürürlük ve geçici maddelerinde belirtilen hususlar dikkate alınarak
+uygulanır.
+       (4) Bu Uygulama Esaslarına geçiş sürecine ilişkin bu Uygulama Esaslarında
+belirtilmeyen konularda karar almaya TÜBİTAK - TEYDEB Başkanlığı yetkilidir.
+      GEÇİCİ MADDE 2- (1)TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri
+Destekleme Programı Uygulama Esaslarının 13 üncü maddesinin birinci fıkrasının (i)
+bendinde ve 30 uncu maddesinde bu Uygulama Esasları ile yapılan değişiklik hükümleri
+01/10/2013 tarihinden itibaren TÜBİTAK’a sunulan AGY303’lere uygulanır.
+01/10/2013 tarihinden önce TÜBİTAK’a sunulan AGY303’lere bu Uygulama Esasları
+ile yapılan değişiklik öncesi hükümler çerçevesinde işlem yapılır ve sonuçlandırılır.
+
+       (2) TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı
+Uygulama Esaslarının 46 ve 47 nci maddelerinde bu Uygulama Esasları ile yapılan
+değişiklik hükümleri 01/10/2013 tarihinden sonra TÜBİTAK’a yapılacak transfer
+ödemesi başvurularına uygulanır. 01/10/2013 tarihinden önce TÜBİTAK’a yapılmış
+transfer başvurularına ilişkin ödeme ve mahsup işlemleri bu Uygulama Esasları ile
+yapılan değişiklik öncesi hükümler çerçevesinde yapılır ve sonuçlandırılır.
+     Yürürlük
+     MADDE 62 - (1) Bu Uygulama Esasları, 1 Kasım 2010 tarihinde yürürlüğe girer.
+       (2) Bu Uygulama Esaslarının 10 uncu maddesinin dördüncü fıkrasında, 17 nci
+maddesinin üçüncü fıkrasında ve 30 uncu maddesinin ikinci fıkrasında yapılan
+değişiklikler 1 Temmuz 2019 tarihi ve sonrasında yapılan proje başvurularına; 17 nci
+maddesinin dördüncü ve beşinci fıkralarında yapılan değişiklikler 1 Ocak 2020
+tarihinde; 10 uncu maddesinin üçüncü fıkrasında, 29 uncu maddesinin üçüncü
+fıkrasında ve 32 nci maddesinin üçüncü fıkrasında yapılan değişiklikler 1 Ekim 2019
+tarihinden sonra sunulan dönemlerde; 46 ncı maddesinde yapılan değişiklikler 1
+
+
+                                         34
+
+=== SAYFA 35 ===
+Temmuz 2019 tarihinden sonra destek kararı verilen projelerde uygulanmak üzere ve
+diğer değişiklikler ise Yönetim Kurulu tarafından kabul edildiği tarihte yürürlüğe girer.
+     Yürütme
+     MADDE 63 - (1) Bu Uygulama Esaslarını TÜBİTAK Başkanı yürütür.
+
+
+                         TÜBİTAK
+ ULUSLARARASI SANAYİ AR-GE PROJELERİ DESTEKLEME PROGRAMI
+           UYGULAMA ESASLARINA İLİŞKİN CETVEL
+
+
+                                                           Yürürlüğe Giriş
+              Kabul edildiği Bilim Kurulu Kararı
+                                                               Tarihi
+             04/09/2010 tarihli ve 189 sayılı Toplantı       1 Kasım 2010
+
+
+     UYGULAMA ESASLARINDA DEĞİŞİKLİK YAPILAN BİLİM KURULU
+                         KARARLARI
+
+
+
+                  04/09/2010                189                tıklayınız.
+
+                  09/07/2011                199                tıklayınız.
+
+                  07/09/2013                222                tıklayınız.
+
+                  01/03/2014                228                tıklayınız.
+
+                  07/03/2015                239                tıklayınız.
+
+                  04/06/2016                255                tıklayınız.
+
+
+          UYGULAMA ESASLARINDA DEĞİŞİKLİK YAPILAN YÖNETİM
+                       KURULU KARARLARI
+
+                  14/03/2019                    7               tıklayınız.
+
+               03/06/2021 tarihli 32 sayılı Yönetim
+                   Kurulu kararı için tıklayınız.
+                                                               03/06/2021
+                  Değişiklikten önceki metin için
+                            tıklayınız.
+                  Değişiklik Yapılan Başkanlık
+                                                         Yürürlüğe giriş tarihi
+                              Olur’u
+
+                  23/08/2021 tarihli ve 34 sayılı
+               Yönetim Kurulu toplantısında verilen           08/09/2021
+               yetki kapsamında 08/09/2021 tarihli
+              ve 120650 sayılı Başkanlık Olur’u için
+
+                                           35
+
+=== SAYFA 36 ===
+          tıklayınız.
+
+Değişiklikten önceki metin için
+          tıklayınız.
+
+
+
+
+                        36
