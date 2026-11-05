@@ -58,10 +58,10 @@ const formValues = form => Object.fromEntries([...new FormData(form).entries()].
 /* ---------- Tanıtım videosu (60 sn, kendi kendine oynayan animasyon) ---------- */
 function player(el, { autoplay = false } = {}) {
   const tabs = ["KOSGEB", "TÜBİTAK", "Kalkınma ajansı", "Ticaret Bakanlığı", "TKDK", "SGK teşvikleri", "Eximbank", "Sanayi Bakanlığı", "KGF", "İŞKUR", "AB fonları", "Teşvik belgesi"];
-  const pos = tabs.map((_, i) => [6 + (i % 4) * 22 + (i * 7) % 6, 40 + Math.floor(i / 4) * 11 + (i * 5) % 4]);
+  const pos = tabs.map((_, i) => [(i % 4) * 23 + (i * 7) % 6, 4 + Math.floor(i / 4) * 31 + (i * 5) % 4 * 2]);
   const typed = "Samsun’da 12 kişiyle mobilya üretiyoruz. CNC makinesi almak ve ihracata başlamak istiyoruz.";
   const S = [
-    { cap: "Onlarca kurum, yüzlerce sayfa, her birinin kuralı farklı.", html: `<div class="t1">Devlet desteği çok. Bulmak zor.</div>${tabs.map((t, i) => `<span class="v-tab" style="left:${pos[i][0]}%;top:${pos[i][1]}%;opacity:0">${t}</span>`).join("")}`,
+    { cap: "Onlarca kurum, yüzlerce sayfa, her birinin kuralı farklı.", html: `<div class="t1">Devlet desteği çok. Bulmak zor.</div><div class="v-tabs">${tabs.map((t, i) => `<span class="v-tab" style="left:${pos[i][0]}%;top:${pos[i][1]}%;opacity:0">${t}</span>`).join("")}</div>`,
       tick(e, t) { $$(".v-tab", e).forEach((x, i) => { const on = t > 1 + i * .55; x.style.opacity = on ? 1 : 0; x.style.transform = on ? `rotate(${(i % 5) - 2}deg)` : "scale(.6)"; }); } },
     { cap: "Yapay zekâ sektörünü ve neye ihtiyacın olduğunu çıkarır.", html: `<div class="t1">Önce işini anlat.</div><div class="v-type"></div>`,
       tick(e, t) { $(".v-type", e).textContent = typed.slice(0, Math.max(0, Math.floor((t - .8) * 14))); } },
@@ -71,15 +71,17 @@ function player(el, { autoplay = false } = {}) {
       tick(e, t) { $$(".vk", e).forEach((n, i) => n.classList.toggle("on", t > 1 + i * .6)); } },
     { cap: "Her destek için bilgilerinle doldurulmuş başvuru hazırlık formu; resmi form varsa o doldurulur.", html: `<div class="t1">Formun hazır.</div><div class="v-form">${["Firma ünvanı", "Vergi no", "Çalışan sayısı", "İşletme ölçeği", "Proje adı"].map(k => `<div><span>${k}</span><b>✓ dolduruldu</b></div>`).join("")}</div>`,
       tick(e, t) { $$(".v-form b", e).forEach((b, i) => b.classList.toggle("on", t > 1.2 + i * .9)); } },
-    { cap: "Ücretsiz hesap aç, sana uygun destekleri kaçırma.", html: `<div class="t1">Yeni destek çıkınca ilk sen öğren.</div><div class="t2">${esc(C.SITE_ADI)}</div><div class="v-note"><b>Sana uygun yeni destek</b>Mali Destek Programı yayımlandı. Profiline uyuyor.</div>`,
+    { cap: "Ücretsiz hesap aç, sana uygun destekleri kaçırma.", html: `<div class="v-iki"><div><div class="t1">Yeni destek çıkınca ilk sen öğren.</div><div class="t2">${esc(C.SITE_ADI)}</div></div><div class="v-note"><b>Sana uygun yeni destek</b>Mali Destek Programı yayımlandı. Profiline uyuyor.</div></div>`,
       tick(e, t) { $(".v-note", e).classList.toggle("on", t > 1.5); } }
   ];
   const DUR = 10, TOTAL = S.length * DUR;
   el.innerHTML = `<div class="time" aria-hidden="true"></div>${S.map(s => `<div class="scene">${s.html}</div>`).join("")}<div class="cap" aria-live="polite"></div><div class="bar"></div><button class="pause" type="button" hidden>Durdur</button><button class="ctrl" type="button" aria-label="Tanıtım videosunu oynat"><span aria-hidden="true">▶</span></button>`;
   const scenes = $$(".scene", el); let t = 0, last = 0, playing = false, raf, cur = -1;
+  const capEl = $(".cap", el), capH = () => el.style.setProperty("--cap", capEl.offsetHeight + "px");
+  if (window.ResizeObserver) new ResizeObserver(capH).observe(capEl);
   const draw = () => {
     const i = Math.min(S.length - 1, Math.floor(t / DUR)); const lt = t - i * DUR;
-    if (i !== cur) { scenes.forEach((s, j) => s.classList.toggle("on", j === i)); $(".cap", el).textContent = S[i].cap; cur = i; }
+    if (i !== cur) { scenes.forEach((s, j) => s.classList.toggle("on", j === i)); capEl.textContent = S[i].cap; cur = i; capH(); }
     S[i].tick(scenes[i], lt); $(".bar", el).style.width = (t / TOTAL * 100) + "%";
     $(".time", el).textContent = `0:${String(Math.floor(t)).padStart(2, "0")} / 1:00`;
   };
