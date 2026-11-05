@@ -144,9 +144,10 @@ P.bul = async () => {
   const chipsHTML = (obj, sel, name) => `<div class="chips" data-name="${name}">${Object.entries(obj).filter(([k]) => k !== "tumu").map(([k, v]) => `<button type="button" class="chip" data-v="${k}" aria-pressed="${(sel || []).includes(k)}">${v}</button>`).join("")}</div>`;
   if (adim === 1) {
     box.innerHTML = `<h1>İşini birkaç cümleyle anlat.</h1>
-      <p class="muted">Ne ürettiğini veya sattığını, nerede olduğunu ve ne yapmak istediğini yaz. Sektörünü ve ihtiyaçlarını biz çıkaralım.</p>
-      <label class="field" for="metin"><span>İşin ve hedefin</span><textarea class="input" id="metin" placeholder="ör. Samsun’da 12 kişiyle mobilya üretiyoruz. CNC makinesi almak ve ihracata başlamak istiyoruz.">${esc(draft.isTanimi)}</textarea></label>
-      <button class="btn seal" type="button" id="analiz">İşimi analiz et</button>
+      <p class="muted">İstersen ne ürettiğini veya sattığını, nerede olduğunu ve ne yapmak istediğini yaz; sektörünü ve ihtiyaçlarını biz çıkaralım.</p>
+      <label class="field" for="metin"><span>İşin ve hedefin <em class="opsiyonel">(zorunlu değil)</em></span><textarea class="input" id="metin" aria-describedby="metin-not" placeholder="ör. Samsun’da 12 kişiyle mobilya üretiyoruz. CNC makinesi almak ve ihracata başlamak istiyoruz.">${esc(draft.isTanimi)}</textarea>
+        <small id="metin-not">Yazmak zorunda değilsin. İstersen boş bırakıp <strong>Devam et</strong>’e bas ya da sektörünü ve ihtiyacını listeden kendin seç. Yazarsan sonuçları sana göre daha iyi daraltırız.</small></label>
+      <div class="actions"><button class="btn seal" type="button" id="analiz">İşimi analiz et</button><button class="btn ghost" type="button" id="listeden">Yazmadan listeden seç</button></div>
       <div id="sonuc"></div>
       <div class="nav-btns"><span></span><button class="btn" type="button" id="ileri">Devam et</button></div>`;
     const showResult = r => {
@@ -170,11 +171,12 @@ P.bul = async () => {
       save({ isTanimi: metin, isOzet: r.ozet, naceOneri: r.nace_onerisi }); showResult(r);
       b.disabled = false; b.textContent = "Tekrar analiz et";
     };
+    $("#listeden").onclick = () => { showResult({ sektorler: draft.sektorler || [], amaclar: draft.amaclar || [] }); $("#sonuc").scrollIntoView({ behavior: "smooth", block: "nearest" }); };
     $("#ileri").onclick = () => {
       const metin = $("#metin").value.trim();
-      // "İşimi analiz et"e basılmadan geçilirse metinden sektör/ihtiyaç yine çıkarılır; yoksa sonuçlar tüm destekleri "hedefine uyan" sayar
+      // Metin zorunlu değil. "İşimi analiz et"e basılmadan yazıp geçilirse sektör/ihtiyaç metinden yine çıkarılır.
       if (!$("#sonuc .chips")) {
-        if (metin.length < 15) { toast("Önce işini bir iki cümleyle anlat."); $("#metin").focus(); return; }
+        if (!metin) { save({ isTanimi: "" }); go("bul", "adim=2"); return; }
         const r = D.ruleAnalyze(metin);
         save({ isTanimi: metin, isOzet: r.ozet, naceOneri: r.nace_onerisi, sektorler: (r.sektorler || []).filter(k => SEKTOR[k]), amaclar: (r.amaclar || []).filter(k => AMAC[k]) });
         go("bul", "adim=2"); return;
@@ -370,10 +372,10 @@ function sartDurum(x) {
   const d = sartSonuc(satir, D.LS.get("sart:" + x.id, {})).durum;
   return d === "tam" || d === "hayir" ? d : null;
 }
-function kaydolHTML(n, kalan) {
+function kaydolHTML(n, kalan, hedefli = true) {
   const say = t => kalan.filter(r => r.x.tur === t).length;
   const parca = [["hibe", "hibe"], ["kredi", "kredi"], ["vergi", "vergi/prim avantajı"]].map(([t, ad]) => say(t) ? `${say(t)} ${ad}` : "").filter(Boolean).join(", ");
-  return `<h2 id="g-baslik">🔒 Hedefine uyan ${n} destekten 2’sini görüyorsun</h2>
+  return `<h2 id="g-baslik">🔒 ${hedefli ? "Hedefine uyan" : "Sana uyabilecek"} ${n} destekten 2’sini görüyorsun</h2>
     <p style="font-size:17px">${kalan.length} destek daha${parca ? ` (${parca})` : ""} seni bekliyor. Tamamını görmek ve başvuru için gerekenleri tek tek kontrol etmek için <strong>ücretsiz hesap aç</strong>.</p>
     <div class="g-durum"><b>Neden hesap?</b> Hesap açarsan daha net ve doğru sonuç veririz. Bazı desteklerin şartları (kuruluş yılı, ihracat yapmış olmak, Ar-Ge personeli çalıştırmak gibi) genel bilgilerle kesinleşmiyor. Hesabında bu şartları tek tek cevaplarsın; sana uymayanları eleyip yalnızca uyanları gösteririz. Girdiğin bilgiler kaybolmaz, hesabına aktarılır.</div>
     <div class="actions"><a class="btn seal" id="k-kayit" ${link("hesap", "sekme=kayit")}>Ücretsiz hesap aç</a><a class="btn ghost" id="k-giris" ${link("hesap", "sekme=giris")}>Hesabım var, giriş yap</a><button type="button" class="btn ghost" id="k-sonra">Şimdilik 2 desteğe bak</button></div>`;
@@ -406,9 +408,12 @@ P.sonuclar = async () => {
   const fit = rows.filter(r => r.c.level === "ok"), mid = rows.filter(r => r.c.level === "mid");
   const secim = D.LS.get("secim");
   const hedefN = all => all.filter(r => !(p.amaclar || []).length || (r.x.amac || []).some(a => p.amaclar.includes(a))).length;
-  $("#baslik").textContent = `Hedefine uyan ${hedefN(fit)} destek bulduk.`;
+  const hedefli = (p.amaclar || []).length > 0;
+  // Başlıktaki sayı sütunlarda/listede gösterilenlerle aynı: uygun + kısmen uygun
+  $("#baslik").textContent = hedefli ? `Hedefine uyan ${hedefN([...fit, ...mid])} destek bulduk.` : `Sana uyabilecek ${fit.length + mid.length} destek bulduk.`;
   const kitleElenen = p.isletmeTipi ? rows.filter(r => r.c.r.some(q => q.kitle && !q.ok)).length : 0;
   $("#profil").innerHTML = `${esc(OLCEK[p.olcek])}, ${esc((p.sektorler || []).map(s => SEKTOR[s]).join(", ") || "tüm sektörler")}, ${esc(p.il)}. <a ${link("bul")}>Bilgileri değiştir</a>` + (mid.length ? `<br>${mid.length} destek de kısmen uygun: bir koşulu henüz karşılamıyorsun.` : "") + `<br><span class="small">Ön eleme ölçek, il, hedef ve “Kimler yararlanabilir?” bilgisine göre yapılır${kitleElenen ? `; ${kitleElenen} destek yalnızca başka tür kuruluşlara (ör. çiftçiler, işbirliği kuruluşları, ihracatçılar) açık olduğu için elendi` : ""}. ${p.isletmeTipi ? "" : `<a ${link("bul", "adim=3")}>İşletme türünü belirt</a>, sonuçlar daralsın. `}Kesin başvuru şartları için her desteğin resmi metnine bak.</span>`;
+  if (!hedefli) $("#profil").insertAdjacentHTML("beforeend", `<br><span class="small">Hedef seçmediğin için her türden destek gösteriliyor. <a ${link("bul")}>İhtiyacını seç</a>, liste sana göre daralsın.</span>`);
   const kurumAdi = k => k.replace(/^Türk Eximbank$/, "Eximbank").replace(/ ve anlaşmalı bankalar$/, "").replace(/^SGK \/ İŞKUR$/, "SGK");
   const okN = g => g.items.filter(r => r.c.level === "ok").length;
   const groupBy = list => { const m = {}; list.forEach(r => { const k = kurumAdi(r.x.kurum); (m[k] = m[k] || []).push(r); }); return Object.entries(m).map(([k, items]) => ({ k, items: items.sort((a, b) => (a.c.level === "ok" ? 0 : 1) - (b.c.level === "ok" ? 0 : 1) || b.c.score - a.c.score) })).sort((a, b) => okN(b) - okN(a) || b.items.length - a.items.length); };
@@ -431,14 +436,14 @@ P.sonuclar = async () => {
   dlg.onclick = e => { if (e.target === dlg) dlg.close(); };
   const kaydolAc = () => {
     const hedefli = all.filter(hedefeUy);
-    $("#g-icerik").innerHTML = kaydolHTML(hedefli.length, hedefli.filter(r => !acikIki.has(r.x.id)));
+    $("#g-icerik").innerHTML = kaydolHTML(hedefli.length, hedefli.filter(r => !acikIki.has(r.x.id)), (p.amaclar || []).length > 0);
     ["#k-kayit", "#k-giris"].forEach(sel => $(sel).addEventListener("click", () => D.LS.set("geri", "sonuclar")));
     $("#k-sonra").onclick = () => dlg.close();
     dlg.showModal();
   };
   if (misafir) {
     $("#kilit-bant").hidden = false;
-    $("#kilit-bant").innerHTML = `<span>🔒 Hedefine uyan <b>${all.filter(hedefeUy).length}</b> destekten <b>2</b>’sini görüyorsun. Hesap açarsan şartları tek tek kontrol edip sana uymayanları eleriz.</span><button type="button" class="btn sm seal" id="bant-ac">Tamamını gör</button>`;
+    $("#kilit-bant").innerHTML = `<span>🔒 ${(p.amaclar || []).length ? "Hedefine uyan" : "Sana uyabilecek"} <b>${all.filter(hedefeUy).length}</b> destekten <b>2</b>’sini görüyorsun. Hesap açarsan şartları tek tek kontrol edip sana uymayanları eleriz.</span><button type="button" class="btn sm seal" id="bant-ac">Tamamını gör</button>`;
     $("#bant-ac").onclick = kaydolAc;
     let gosterildi = false; try { gosterildi = sessionStorage.getItem("kaydolGosterildi"); sessionStorage.setItem("kaydolGosterildi", "1"); } catch {}
     if (!gosterildi) setTimeout(() => { if (!dlg.open) kaydolAc(); }, 900);
@@ -480,7 +485,7 @@ P.sonuclar = async () => {
     const satir = r => kilit.has(r.x.id) ? `<li class="item kilitli-satir"><button type="button" data-kilit="1"><span aria-hidden="true">${esc(r.x.ad)}</span><span class="k-kilit">🔒 Hesap açınca görünür</span></button></li>` : itemRow(r.x, r.c);
     $("#liste").innerHTML = (fitL.length ? `<h2 style="margin:18px 0 4px">Uygun olabilir</h2><ul class="list">${fitL.map(satir).join("")}</ul>` : "") +
       (midL.length ? `<h2 style="margin:28px 0 4px">Kısmen uygun</h2><p class="muted small">Bir koşulu karşılamıyorsun ama yakınsın. Ayrıntıya bakarak ne gerektiğini görebilirsin.</p><ul class="list">${midL.map(satir).join("")}</ul>` : "") +
-      (gizli ? `<p class="small muted" style="margin-top:18px">Hedefinle ilgisi olmayan${misafir ? "" : " veya şartına “Hayır” dediğin"} ${gizli} destek bu listede yok. Hepsini <a ${link("destekler")}>Tüm destekler</a> sayfasında görebilirsin.</p>` : "");
+      (gizli ? `<p class="small muted" style="margin-top:18px">${(p.amaclar || []).length ? `Hedefinle ilgisi olmayan${misafir ? "" : " veya şartına “Hayır” dediğin"}` : "Şartına “Hayır” dediğin"} ${gizli} destek bu listede yok. Hepsini <a ${link("destekler")}>Tüm destekler</a> sayfasında görebilirsin.</p>` : "");
   }
   $$("#liste [data-kilit]").forEach(b => b.onclick = kaydolAc);
   // Yapay zekâ yorumu
