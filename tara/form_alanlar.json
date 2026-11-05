@@ -1,0 +1,388 @@
+{
+ "https://yatirim.dika.org.tr/": [
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "firma_adi",
+   "id": "",
+   "ph": "",
+   "etiket": "FİRMA ADI *",
+   "dolan": "firmaUnvani",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "firma_sahibi",
+   "id": "",
+   "ph": "",
+   "etiket": "FİRMA SAHİBİ *",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "tc_kimlik_no",
+   "id": "",
+   "ph": "",
+   "etiket": "T.C. KİMLİK NUMARASI *",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "vergi_dairesi_numarasi",
+   "id": "",
+   "ph": "",
+   "etiket": "FİRMA VERGİ DAİRESİ/NUMARASI",
+   "dolan": "vergiDairesi",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "talep_edilen_uretim",
+   "id": "",
+   "ph": "",
+   "etiket": "Talep Edilen Üretim",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "faaliyet_sektoru",
+   "id": "",
+   "ph": "",
+   "etiket": "Faaliyette Bulunulan Sektör (NACE)",
+   "dolan": "naceKodu",
+   "secenek": ""
+  },
+  {
+   "tag": "TEXTAREA",
+   "type": "textarea",
+   "name": "firma_bilgi",
+   "id": "",
+   "ph": "Firmanız hakkında detaylı bilgi veriniz...",
+   "etiket": "Firma Hakkında Kısa Bilgi",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "faaliyet_iller",
+   "id": "",
+   "ph": "",
+   "etiket": "Faaliyette Bulunulan İl(ler)",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "date",
+   "name": "faaliyet_baslama_tarihi",
+   "id": "",
+   "ph": "",
+   "etiket": "Faaliyete Başlama Tarihi",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "TEXTAREA",
+   "type": "textarea",
+   "name": "sunulan_urunler_hizmetler",
+   "id": "",
+   "ph": "Ürün ve hizmetlerinizi detaylandırınız...",
+   "etiket": "Sunulan Ürünler ve/veya Hizmetler",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "uretim_tecrubesi_yil",
+   "id": "",
+   "ph": "",
+   "etiket": "Sektördeki Üretim Tecrübesi (Yıl)",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "mevcut_calisan_sayisi",
+   "id": "",
+   "ph": "",
+   "etiket": "Mevcut Çalışan Sayısı",
+   "dolan": "calisan",
+   "secenek": ""
+  },
+  {
+   "tag": "SELECT",
+   "type": "select-one",
+   "name": "daha_once_ihracat",
+   "id": "",
+   "ph": null,
+   "etiket": "Daha Önce Yurt Dışına İhracat Yapmış mı?",
+   "dolan": "",
+   "secenek": "Seçiniz | Evet | Hayır"
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "ihracat_ulkeler",
+   "id": "",
+   "ph": "Örn: Almanya, Fransa, İngiltere...",
+   "etiket": "İhracat Yapılan Ülkeler (Varsa)",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "TEXTAREA",
+   "type": "textarea",
+   "name": "mevcut_yatirim_aciklama",
+   "id": "",
+   "ph": "Varsa açıklayınız...",
+   "etiket": "Mardin, Batman, Siirt ve Şırnak İllerinden Birinde Mevcut Yatırım Var mı?",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "SELECT",
+   "type": "select-one",
+   "name": "ongorulen_yatirim_yeni",
+   "id": "",
+   "ph": null,
+   "etiket": "Öngörülen Yatırım Yeni mi?",
+   "dolan": "",
+   "secenek": "Evet | Hayır"
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "uretim_kapasitesi",
+   "id": "",
+   "ph": "",
+   "etiket": "Üretim Kapasitesi (Ürün Miktarı)",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "kapali_alan_m2",
+   "id": "",
+   "ph": "",
+   "etiket": "Kapalı Alan (m²)",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "ongorulen_istihdam",
+   "id": "",
+   "ph": "",
+   "etiket": "Öngörülen İstihdam Sayısı",
+   "dolan": "calisan",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "ongorulen_sabit_yatirim",
+   "id": "",
+   "ph": "",
+   "etiket": "Sabit Yatırım Tutarı (TL)",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "ciro_2024",
+   "id": "",
+   "ph": "",
+   "etiket": "2024 Yılı Ciro (TL)",
+   "dolan": "ciro",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "ihracat_2024",
+   "id": "",
+   "ph": "Tutar ve ülke bilgisi...",
+   "etiket": "2024 Yılı İhracat Tutarı ve Ülkeler",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "aylik_kira_bedeli",
+   "id": "",
+   "ph": "",
+   "etiket": "Aylık Kira Bedeli (TL)",
+   "dolan": "",
+   "secenek": ""
+  }
+ ],
+ "https://yatirim.dika.org.tr/#baslik": "Yatırımcı Ön Bilgi Formu - Dicle Kalkınma Ajansı",
+ "https://girisimciform.dika.org.tr/": [
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "b_adi_soyadi",
+   "id": "adiSoyadi",
+   "ph": "Adınızı ve Soyadınızı Giriniz",
+   "etiket": "Adı Soyadı",
+   "dolan": "yetkili",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "b_il",
+   "id": "il",
+   "ph": "İl Giriniz",
+   "etiket": "İl",
+   "dolan": "il",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "b_ilce",
+   "id": "ilce",
+   "ph": "İlçe Giriniz",
+   "etiket": "İlçe",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "tel",
+   "name": "b_telefon",
+   "id": "telefon",
+   "ph": "5555555555",
+   "etiket": "Telefon",
+   "dolan": "telefon",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "email",
+   "name": "b_posta",
+   "id": "eposta",
+   "ph": "example@domain.com",
+   "etiket": "E-Posta",
+   "dolan": "eposta",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "b_fikir",
+   "id": "isFikri",
+   "ph": "İş Fikrinizi Yazınız",
+   "etiket": "İş Fikri",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "SELECT",
+   "type": "select-one",
+   "name": "b_destektur",
+   "id": "destekTuru",
+   "ph": null,
+   "etiket": "Destek Türü",
+   "dolan": "",
+   "secenek": "Seçiniz | Gastronomi | Bıttım Sabunu | Arıcılık"
+  },
+  {
+   "tag": "SELECT",
+   "type": "select-one",
+   "name": "egitim_durumu",
+   "id": "egitim_durumu",
+   "ph": null,
+   "etiket": "Eğitim Durumu",
+   "dolan": "",
+   "secenek": "Seçiniz | İlkokul | Ortaokul | Lise | Üniversite | Yüksek Lisans"
+  },
+  {
+   "tag": "INPUT",
+   "type": "text",
+   "name": "onceki_egitimler",
+   "id": "onceki_egitimler",
+   "ph": "Aldığınız eğitimleri yazınız (yoksa boş bırakabilirsiniz)",
+   "etiket": "Daha önce aldığınız eğitimler (varsa hangileri?)",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "dogum_gun",
+   "id": "",
+   "ph": "Gün",
+   "etiket": "",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "dogum_ay",
+   "id": "",
+   "ph": "Ay",
+   "etiket": "",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "number",
+   "name": "dogum_yil",
+   "id": "",
+   "ph": "Yıl",
+   "etiket": "",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "name": "cinsiyet",
+   "id": "",
+   "ph": "",
+   "etiket": "Kadın",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "radio",
+   "name": "cinsiyet",
+   "id": "",
+   "ph": "",
+   "etiket": "Erkek",
+   "dolan": "",
+   "secenek": ""
+  },
+  {
+   "tag": "INPUT",
+   "type": "file",
+   "name": "belge",
+   "id": "belge",
+   "ph": "",
+   "etiket": "Belge Yükle",
+   "dolan": "",
+   "secenek": ""
+  }
+ ],
+ "https://girisimciform.dika.org.tr/#baslik": "DİKA Destek Başvuru Formu"
+}
