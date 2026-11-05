@@ -12,7 +12,7 @@
     ["vkn", [/vergi kimlik/, /vergi (no|numara)/, /\bvkn\b/, /\btckn? ?\/? ?vkn\b/]],
     ["vergiDairesi", [/vergi daire/]],
     ["ihracat", [/ihracat yap(mis|iyor|ti|ma)/, /yurt ?disina (ihracat|satis)/]],
-    ["isTanimi", [/(firma|isletme|sirket) hakkinda/, /faaliyet konusu/, /isletmenizi tanit/, /ne is yap/]],
+    ["isTanimi", [/(firma|isletme|sirket)[a-z]* hakkinda/, /faaliyet konusu/, /isletmenizi tanit/, /ne is yap/]],
     ["naceKodu", [/\bnace\b/, /faaliyet kod/]],
     ["sirketTuru", [/sirket (turu|tipi)/, /hukuki (yapi|statu)/, /isletme (turu|tipi)/, /firma (turu|tipi)/]],
     ["kurulusYili", [/kurulus yil/, /kurulus tarih/, /tescil yil/]],
@@ -32,6 +32,8 @@
     const p = [];
     if (el.id) document.querySelectorAll(`label[for="${CSS.escape(el.id)}"]`).forEach(l => p.push(metin(l)));
     const sar = el.closest("label"); if (sar) p.push(metin(sar));
+    // Etiket "for" ile bağlanmamışsa aynı kutudaki etiket (ör. Bootstrap .form-group / .mb-3)
+    if (!p.length) { const k = el.closest(".form-group, .mb-3, .form-floating, .field, .form-item, .input-group, td"); const l = k && k.querySelector("label"); if (l && !l.querySelector("input,select,textarea")) p.push(metin(l)); }
     (el.getAttribute("aria-labelledby") || "").split(/\s+/).filter(Boolean).forEach(id => p.push(metin(document.getElementById(id))));
     p.push(el.getAttribute("aria-label"), el.getAttribute("placeholder"), el.getAttribute("title"));
     if (!p.filter(Boolean).join("").trim()) {
