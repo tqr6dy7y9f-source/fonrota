@@ -23,7 +23,7 @@ const SIRKET = ["Şahıs şirketi", "Limited şirket", "Anonim şirket", "Kooper
 
 /* Profil alanları: etiket, tür, kayıtta sorulur mu */
 const ALANLAR = {
-  firmaUnvani: { e: "Firma ünvanı", k: true },
+  firmaUnvani: { e: "Firma ünvanı", k: true, ac: "organization" },
   vkn: { e: "Vergi kimlik no", k: true, ph: "10 haneli" },
   vergiDairesi: { e: "Vergi dairesi", k: true },
   sirketTuru: { e: "Şirket türü", k: true, sec: SIRKET },
@@ -31,11 +31,11 @@ const ALANLAR = {
   naceKodu: { e: "NACE kodu", k: true, ph: "ör. 31.09", yardim: "Vergi levhanda ‘ana faaliyet kodu’ olarak yazar." },
   calisan: { e: "Çalışan sayısı", k: true, t: "number" },
   ciro: { e: "Yıllık net satış (TL)", k: true, t: "number" },
-  yetkili: { e: "Yetkili adı soyadı", k: true },
-  telefon: { e: "Telefon", k: true, t: "tel" },
-  eposta: { e: "E-posta", k: true, t: "email" },
-  il: { e: "İl", k: true, sec: ILLER },
-  adres: { e: "Adres", k: true },
+  yetkili: { e: "Yetkili adı soyadı", k: true, ac: "name" },
+  telefon: { e: "Telefon", k: true, t: "tel", ac: "tel" },
+  eposta: { e: "E-posta", k: true, t: "email", ac: "email" },
+  il: { e: "İl", k: true, sec: ILLER, ac: "address-level1" },
+  adres: { e: "Adres", k: true, ac: "street-address" },
   projeAdi: { e: "Proje adı" },
   projeOzeti: { e: "Proje özeti", uzun: true },
   projeSuresi: { e: "Proje süresi (ay)", t: "number" },

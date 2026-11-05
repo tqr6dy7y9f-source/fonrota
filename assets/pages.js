@@ -46,7 +46,7 @@ function itemRow(x, c) {
     <span class="side">${money(x)}${LEVEL_TAG[c.level]}${due(x)}</span></a></li>`;
 }
 function fieldHTML(k, v, opt = {}) {
-  const a = ALANLAR[k] || { e: k }; const id = (opt.pre || "f-") + k; const req = opt.req ? " required" : "";
+  const a = ALANLAR[k] || { e: k }; const id = (opt.pre || "f-") + k; const req = (opt.req ? " required" : "") + (a.ac ? ` autocomplete="${a.ac}"` : "");
   let input;
   if (a.sec) input = `<select class="input" id="${id}" name="${k}"${req}><option value="">Seç</option>${a.sec.map(s => `<option${s === v ? " selected" : ""}>${esc(s)}</option>`).join("")}</select>`;
   else if (a.uzun) input = `<textarea class="input" id="${id}" name="${k}"${req}>${esc(v)}</textarea>`;
@@ -717,8 +717,8 @@ P.hesap = async () => {
     box.innerHTML = `<div class="tabs"><a ${link("hesap", "sekme=giris")} aria-current="${!kayit}">Giriş yap</a><a ${link("hesap", "sekme=kayit")} aria-current="${kayit}">Ücretsiz hesap aç</a></div>
       ${Store.demo ? `<p class="small muted">Demo modu: hesap bu tarayıcıda saklanır. Supabase bağlandığında gerçek hesaplara geçer.</p>` : ""}
       <form id="auth" class="narrow" novalidate>
-        ${kayit ? `<label class="field" for="ad"><span>Adın soyadın</span><input class="input" id="ad" name="ad" required value="${esc(draft.yetkili)}"></label>` : ""}
-        <label class="field" for="email"><span>E-posta</span><input class="input" id="email" name="email" type="email" autocomplete="email" required></label>
+        ${kayit ? `<label class="field" for="ad"><span>Adın soyadın</span><input class="input" id="ad" name="ad" autocomplete="name" required value="${esc(draft.yetkili)}"></label>` : ""}
+        <label class="field" for="email"><span>E-posta</span><input class="input" id="email" name="email" type="email" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
         <label class="field" for="pw"><span>Şifre</span><input class="input" id="pw" name="password" type="password" autocomplete="${kayit ? "new-password" : "current-password"}" minlength="6" required>${kayit ? "<small>En az 6 karakter.</small>" : ""}</label>
         ${kayit ? `<h2 style="margin-top:28px">Firma bilgilerin</h2><p class="muted small">Başvuru formların bu bilgilerle otomatik dolar. Sonra da değiştirebilirsin.</p><div class="row">${kayitAlan.map(k => fieldHTML(k, draft[k], { pre: "k-" })).join("")}</div>
           <label class="check"><input type="checkbox" id="bAnlik" checked> Bana uygun yeni destek çıkınca anlık bildirim gönder</label>
