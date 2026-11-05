@@ -1,0 +1,1950 @@
+{
+ "http://ardeb-": {
+  "url": "http://ardeb-",
+  "hata": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://ardeb-/\nCall log:\n  - navigating",
+  "alt": []
+ },
+ "http://destekler.h2020.org.tr/": {
+  "url": "http://destekler.h2020.org.tr/",
+  "hata": "Page.goto: net::ERR_NAME_NOT_RESOLVED at http://destekler.h2020.org.tr/\nCall log",
+  "alt": []
+ },
+ "http://eteydeb.tubitak.gov.tr": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "TÜBİTAK TEYDEB Proje Değerlendirme ve İzleme Sistemi - PRODİS",
+  "url": "https://eteydeb.tubitak.gov.tr/teydebanasayfa.htm",
+  "alt": []
+ },
+ "https://eteydeb.tubitak.gov.tr": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "TÜBİTAK TEYDEB Proje Değerlendirme ve İzleme Sistemi - PRODİS",
+  "url": "https://eteydeb.tubitak.gov.tr/teydebanasayfa.htm",
+  "alt": []
+ },
+ "http://ardeb-pbs.tubitak.gov.tr": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "Proje Başvuru Sistemi\n                                      ",
+    "h": "https://ardeb-pbs.tubitak.gov.tr/"
+   },
+   {
+    "t": "Başvuru sayfasına git",
+    "h": "https://ardeb-pbs.tubitak.gov.tr/#"
+   }
+  ],
+  "baslik": "ARDEB Proje Başvuru Sistemi",
+  "url": "https://ardeb-pbs.tubitak.gov.tr/",
+  "alt": [
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Proje Başvuru Sistemi\n                                      ",
+      "h": "https://ardeb-pbs.tubitak.gov.tr/"
+     },
+     {
+      "t": "Başvuru sayfasına git",
+      "h": "https://ardeb-pbs.tubitak.gov.tr/#"
+     }
+    ],
+    "baslik": "ARDEB Proje Başvuru Sistemi",
+    "url": "https://ardeb-pbs.tubitak.gov.tr/",
+    "metin": "Proje Başvuru Sistemi\n                                      "
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Proje Başvuru Sistemi\n                                      ",
+      "h": "https://ardeb-pbs.tubitak.gov.tr/"
+     },
+     {
+      "t": "Başvuru sayfasına git",
+      "h": "https://ardeb-pbs.tubitak.gov.tr/#"
+     }
+    ],
+    "baslik": "ARDEB Proje Başvuru Sistemi",
+    "url": "https://ardeb-pbs.tubitak.gov.tr/#",
+    "metin": "Başvuru sayfasına git"
+   }
+  ]
+ },
+ "https://teda.ktb.gov.tr/": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "E-Başvuru",
+    "h": "https://teda.ktb.gov.tr/TR-250767/e-basvuru.html"
+   },
+   {
+    "t": "Başvuru Kılavuzu",
+    "h": "https://teda.ktb.gov.tr/TR-250980/basvuru-kilavuzu.html"
+   }
+  ],
+  "baslik": "Teda - T.C. Kültür ve Turizm Bakanlığı",
+  "url": "https://teda.ktb.gov.tr/",
+  "dolan": [],
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "E-Başvuru",
+      "h": "https://teda.ktb.gov.tr/TR-250767/e-basvuru.html"
+     },
+     {
+      "t": "YENİ BAŞVURU",
+      "h": "http://earsiv.gov.tr/app/Login.aspx"
+     },
+     {
+      "t": "\"yeni başvuru\"",
+      "h": "http://earsiv.gov.tr/app/Login.aspx"
+     },
+     {
+      "t": "E-Başvuru",
+      "h": "https://teda.ktb.gov.tr/TR-250767/e-basvuru.html"
+     }
+    ],
+    "baslik": "E-Başvuru",
+    "url": "https://teda.ktb.gov.tr/TR-250767/e-basvuru.html",
+    "dolan": [],
+    "metin": "E-Başvuru"
+   },
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Başvuru Kılavuzu",
+      "h": "https://teda.ktb.gov.tr/TR-250980/basvuru-kilavuzu.html"
+     },
+     {
+      "t": "E-Başvuru",
+      "h": "https://teda.ktb.gov.tr/TR-250767/e-basvuru.html"
+     }
+    ],
+    "baslik": "Başvuru Kılavuzu",
+    "url": "https://teda.ktb.gov.tr/TR-250980/basvuru-kilavuzu.html",
+    "dolan": [],
+    "metin": "Başvuru Kılavuzu"
+   }
+  ]
+ },
+ "https://kalkinma.com.tr/": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "Çevresel ve Sosyal Performans",
+    "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+   },
+   {
+    "t": "İş İlanları ve Başvurular",
+    "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+   },
+   {
+    "t": "Müşteri Öneri Şikayet Formu",
+    "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+   },
+   {
+    "t": "Çevresel ve Sosyal Performans",
+    "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+   },
+   {
+    "t": "İş İlanları ve Başvurular",
+    "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+   },
+   {
+    "t": "Müşteri Öneri Şikayet Formu",
+    "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+   }
+  ],
+  "baslik": "Anasayfa | Kalkınma Bankası",
+  "url": "https://kalkinma.com.tr/",
+  "alt": [
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Çevresel ve Sosyal Performans",
+      "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+     },
+     {
+      "t": "İş İlanları ve Başvurular",
+      "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+     },
+     {
+      "t": "Müşteri Öneri Şikayet Formu",
+      "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+     },
+     {
+      "t": "Çevresel ve Sosyal Performans",
+      "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+     },
+     {
+      "t": "İş İlanları ve Başvurular",
+      "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+     },
+     {
+      "t": "Müşteri Öneri Şikayet Formu",
+      "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+     }
+    ],
+    "baslik": "Çevresel ve Sosyal Performans | Kalkınma Bankası",
+    "url": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans",
+    "metin": "Çevresel ve Sosyal Performans"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Çevresel ve Sosyal Performans",
+      "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+     },
+     {
+      "t": "İş İlanları ve Başvurular",
+      "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+     },
+     {
+      "t": "Müşteri Öneri Şikayet Formu",
+      "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+     },
+     {
+      "t": "Çevresel ve Sosyal Performans",
+      "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+     },
+     {
+      "t": "İş İlanları ve Başvurular",
+      "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+     },
+     {
+      "t": "Müşteri Öneri Şikayet Formu",
+      "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+     }
+    ],
+    "baslik": "İş İlanları ve Başvurular | Kalkınma Bankası",
+    "url": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular",
+    "metin": "İş İlanları ve Başvurular"
+   },
+   {
+    "alan": 8,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Çevresel ve Sosyal Performans",
+      "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+     },
+     {
+      "t": "İş İlanları ve Başvurular",
+      "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+     },
+     {
+      "t": "Müşteri Öneri Şikayet Formu",
+      "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+     },
+     {
+      "t": "Çevresel ve Sosyal Performans",
+      "h": "https://kalkinma.com.tr/surdurulebilirlik/cevresel-ve-sosyal-performans"
+     },
+     {
+      "t": "İş İlanları ve Başvurular",
+      "h": "https://kalkinma.com.tr/hakkimizda/insan-kaynaklari/is-ilanlari-ve-basvurular"
+     },
+     {
+      "t": "Müşteri Öneri Şikayet Formu",
+      "h": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu"
+     }
+    ],
+    "baslik": "Müşteri Öneri Şikayet Formu | Kalkınma Bankası",
+    "url": "https://kalkinma.com.tr/bize-ulasin/musteri-oneri-sikayet-formu",
+    "dolan": [
+     "yetkili",
+     "eposta"
+    ],
+    "metin": "Müşteri Öneri Şikayet Formu"
+   }
+  ]
+ },
+ "https://edevlet.ogm.gov.tr/": {
+  "url": "https://edevlet.ogm.gov.tr/",
+  "hata": "Page.goto: net::ERR_TIMED_OUT at https://edevlet.ogm.gov.tr/\nCall log:\n  - navig",
+  "alt": []
+ },
+ "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "404 - PAGE NOT FOUND",
+  "url": "https://ticaret.gov.tr/404.html?aspxerrorpath=/destekler/hizmet-sektoru-desteklerihizmet-sektoru-",
+  "alt": []
+ },
+ "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "404 - PAGE NOT FOUND",
+  "url": "https://ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-",
+  "alt": []
+ },
+ "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/bilisim": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "404 - PAGE NOT FOUND",
+  "url": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/bilisim",
+  "alt": []
+ },
+ "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "404 - PAGE NOT FOUND",
+  "url": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-",
+  "alt": []
+ },
+ "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "404 - PAGE NOT FOUND",
+  "url": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-",
+  "alt": []
+ },
+ "https://ticaret.gov.tr/ihracat/mevzuat/dahilde-isleme-rejimi": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "İlgili Kişi Başvuru Formu",
+    "h": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee/"
+   }
+  ],
+  "baslik": "Dahilde İşleme Rejimi",
+  "url": "https://ticaret.gov.tr/ihracat/mevzuat/dahilde-isleme-rejimi",
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [],
+    "baslik": "Doküman Paylaşım - Ticaret Bakanlığı İlgili Kişi Başvuru Formu",
+    "url": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee",
+    "dolan": [],
+    "metin": "İlgili Kişi Başvuru Formu"
+   }
+  ]
+ },
+ "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "İlgili Kişi Başvuru Formu",
+    "h": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee/"
+   }
+  ],
+  "baslik": "Serbest Bölgeler Mevzuatı",
+  "url": "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati",
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [],
+    "baslik": "Doküman Paylaşım - Ticaret Bakanlığı İlgili Kişi Başvuru Formu",
+    "url": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee",
+    "dolan": [],
+    "metin": "İlgili Kişi Başvuru Formu"
+   }
+  ]
+ },
+ "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "İlgili Kişi Başvuru Formu",
+    "h": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee/"
+   },
+   {
+    "t": "İş Alındı Belgesi İhracat İthalat Başvuruları",
+    "h": "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik/is-alindi-belgesi-ihracat-ithalat-basvurulari"
+   }
+  ],
+  "baslik": "Yurt Dışı Müteahhitlik ve Teknik Müşavirlik",
+  "url": "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik",
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [],
+    "baslik": "Doküman Paylaşım - Ticaret Bakanlığı İlgili Kişi Başvuru Formu",
+    "url": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee",
+    "dolan": [],
+    "metin": "İlgili Kişi Başvuru Formu"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "İlgili Kişi Başvuru Formu",
+      "h": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee/"
+     },
+     {
+      "t": "İş Alındı Belgesi İhracat İthalat Başvuruları",
+      "h": "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik/is-alindi-belgesi-ihracat-ithalat-basvurulari"
+     }
+    ],
+    "baslik": "İş Alındı Belgesi İhracat İthalat Başvuruları",
+    "url": "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik/is-alindi-belgesi-ihracat-ithalat-basvurulari",
+    "metin": "İş Alındı Belgesi İhracat İthalat Başvuruları"
+   }
+  ]
+ },
+ "https://www.bakka.gov.tr/": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "Türkiye Siber Vatan Programı 2027 Dönemi Başvuruları 6 Kasım",
+    "h": "https://bakka.gov.tr/haber/turkiye-siber-vatan-programi-2027-donemi-basvurulari-6-kasima-2026-tarihine-kadar-uzatildi"
+   },
+   {
+    "t": "Sosyal Girişimcilik Programına TR81'den 37 Proje Başvurusu",
+    "h": "https://bakka.gov.tr/haber/sosyal-girisimcilik-programina-tr81den-37-proje-basvurusu"
+   },
+   {
+    "t": "Sosyal Girişimcilik Mali Destek Programı Başvuru Süresi Uzat",
+    "h": "https://bakka.gov.tr/haber/sosyal-girisimcilik-mali-destek-programi-basvuru-suresi-uzatildi-15238"
+   },
+   {
+    "t": "PROJE FİKRİ\n                            FORMU",
+    "h": "https://www.kisa.link/usGRV"
+   }
+  ],
+  "baslik": "BAKKA | Batı Karadeniz Kalkınma Ajansı",
+  "url": "https://bakka.gov.tr/",
+  "dolan": [],
+  "alt": [
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "basvuru.sibervatan.org",
+      "h": "https://basvuru.sibervatan.org/"
+     },
+     {
+      "t": "Sosyal Girişimcilik Programına TR81'den 37 Proje Başvurusu",
+      "h": "https://bakka.gov.tr/haber/sosyal-girisimcilik-programina-tr81den-37-proje-basvurusu"
+     }
+    ],
+    "baslik": "Türkiye Siber Vatan Programı 2027 Dönemi Başvuruları 6 Kasım 2026 Tarihine Kadar",
+    "url": "https://bakka.gov.tr/haber/turkiye-siber-vatan-programi-2027-donemi-basvurulari-6-kasima-2026-tarihine-kadar-uzatildi",
+    "metin": "Türkiye Siber Vatan Programı 2027 Dönemi Başvuruları 6 Kasım"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Türkiye Siber Vatan Programı 2027 Dönemi Başvuruları 6 Kasım",
+      "h": "https://bakka.gov.tr/haber/turkiye-siber-vatan-programi-2027-donemi-basvurulari-6-kasima-2026-tarihine-kadar-uzatildi"
+     }
+    ],
+    "baslik": "Sosyal Girişimcilik Programına TR81'den 37 Proje Başvurusu - BAKKA | Batı Karade",
+    "url": "https://bakka.gov.tr/haber/sosyal-girisimcilik-programina-tr81den-37-proje-basvurusu",
+    "metin": "Sosyal Girişimcilik Programına TR81'den 37 Proje Başvurusu"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Türkiye Siber Vatan Programı 2027 Dönemi Başvuruları 6 Kasım",
+      "h": "https://bakka.gov.tr/haber/turkiye-siber-vatan-programi-2027-donemi-basvurulari-6-kasima-2026-tarihine-kadar-uzatildi"
+     },
+     {
+      "t": "Sosyal Girişimcilik Programına TR81'den 37 Proje Başvurusu",
+      "h": "https://bakka.gov.tr/haber/sosyal-girisimcilik-programina-tr81den-37-proje-basvurusu"
+     }
+    ],
+    "baslik": "Sosyal Girişimcilik Mali Destek Programı Başvuru Süresi Uzatıldı - BAKKA | Batı ",
+    "url": "https://bakka.gov.tr/haber/sosyal-girisimcilik-mali-destek-programi-basvuru-suresi-uzatildi-15238",
+    "metin": "Sosyal Girişimcilik Mali Destek Programı Başvuru Süresi Uzat"
+   }
+  ]
+ },
+ "https://ufukavrupa.org.tr": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+    "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+   },
+   {
+    "t": "İş Başvuruları",
+    "h": "https://ufukavrupa.org.tr/tr"
+   },
+   {
+    "t": "PLATFORM VE AĞLAR",
+    "h": "https://ufukavrupa.org.tr/tr"
+   },
+   {
+    "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+    "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+   },
+   {
+    "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+    "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+   },
+   {
+    "t": "Kişiselleştirilmiş Tıp için Avrupa Ortaklığı (EP PerMed)-Hüc",
+    "h": "https://ufukavrupa.org.tr/tr/haberler/kisisellestirilmis-tip-icin-avrupa-ortakligi-ep-permed-hucre-ve-gen-tedavileri-cagrisi"
+   }
+  ],
+  "baslik": "Anasayfa | Ufuk Avrupa",
+  "url": "https://ufukavrupa.org.tr/tr",
+  "dolan": [],
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "İş Başvuruları",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "PLATFORM VE AĞLAR",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "Ufuk Avrupa ara değerlendirmesi uzman grubuna başvuru için s",
+      "h": "https://ufukavrupa.org.tr/tr/haberler/ufuk-avrupa-ara-degerlendirmesi-uzman-grubuna-basvuru-icin-son-basvuru-tarihi-20-haziran"
+     },
+     {
+      "t": "Ağlara Üyelik Desteği 2022 Yılı Başvuru Takvimi Belli Oldu",
+      "h": "https://ufukavrupa.org.tr/tr/haberler/aglara-uyelik-destegi-2022-yili-basvuru-takvimi-belli-oldu"
+     },
+     {
+      "t": "KDV İstisna Sertifikası İçin Başvurulan Makamı Belirleyen Pa",
+      "h": "https://ufukavrupa.org.tr/tr/haberler/kdv-istisna-sertifikasi-icin-basvurulan-makami-belirleyen-parasal-esiklerde-degisiklik"
+     }
+    ],
+    "baslik": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sisteminin Reformu ve Gelişt",
+    "url": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve",
+    "dolan": [],
+    "metin": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin"
+   },
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "İş Başvuruları",
+      "h": "https://ufukavrupa.org.tr/tr"
+     },
+     {
+      "t": "PLATFORM VE AĞLAR",
+      "h": "https://ufukavrupa.org.tr/tr"
+     },
+     {
+      "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "Kişiselleştirilmiş Tıp için Avrupa Ortaklığı (EP PerMed)-Hüc",
+      "h": "https://ufukavrupa.org.tr/tr/haberler/kisisellestirilmis-tip-icin-avrupa-ortakligi-ep-permed-hucre-ve-gen-tedavileri-cagrisi"
+     }
+    ],
+    "baslik": "Anasayfa | Ufuk Avrupa",
+    "url": "https://ufukavrupa.org.tr/tr",
+    "dolan": [],
+    "metin": "İş Başvuruları"
+   },
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "İş Başvuruları",
+      "h": "https://ufukavrupa.org.tr/tr"
+     },
+     {
+      "t": "PLATFORM VE AĞLAR",
+      "h": "https://ufukavrupa.org.tr/tr"
+     },
+     {
+      "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sistemin",
+      "h": "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve"
+     },
+     {
+      "t": "Kişiselleştirilmiş Tıp için Avrupa Ortaklığı (EP PerMed)-Hüc",
+      "h": "https://ufukavrupa.org.tr/tr/haberler/kisisellestirilmis-tip-icin-avrupa-ortakligi-ep-permed-hucre-ve-gen-tedavileri-cagrisi"
+     }
+    ],
+    "baslik": "Anasayfa | Ufuk Avrupa",
+    "url": "https://ufukavrupa.org.tr/tr",
+    "dolan": [],
+    "metin": "PLATFORM VE AĞLAR"
+   }
+  ]
+ },
+ "https://www.dika.org.tr/": {
+  "alan": 3,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "Bilgilendirme Formu",
+    "h": "https://www.cimer.gov.tr/"
+   },
+   {
+    "t": "DİKA\n\t                    Yatırımcı Ön Bilgi Formu",
+    "h": "https://yatirim.dika.org.tr/"
+   },
+   {
+    "t": "DİKA\n\t                    Girişimci Başvuru Formu",
+    "h": "https://girisimciform.dika.org.tr/"
+   },
+   {
+    "t": "Türkiye Siber Vatan Programı 2027 Dönemi Başvuruları Uzatıld",
+    "h": "https://www.dika.org.tr/haber/turkiye-siber-vatan-programi-2027-donemi-basvurulari-uzatildi/1570"
+   },
+   {
+    "t": "Türkiye Siber Vatan Programı 2027 Dönemi Başvuruları Uzatıld",
+    "h": "https://www.dika.org.tr/haber/turkiye-siber-vatan-programi-2027-donemi-basvurulari-uzatildi/1570"
+   }
+  ],
+  "baslik": "T.C. Dicle Kalkınma Ajansı",
+  "url": "https://www.dika.org.tr/",
+  "dolan": [
+   "yetkili",
+   "eposta"
+  ],
+  "alt": [
+   {
+    "alan": 8,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "BAŞVURU YAP",
+      "h": "javascript:void(0)"
+     },
+     {
+      "t": "BAŞVURU SORGULA",
+      "h": "javascript:void(0)"
+     },
+     {
+      "t": "E-Devlet ile başvuru yapmak için tıklayınız.",
+      "h": "https://www.cimer.gov.tr/Hesap/EDevletGiris"
+     }
+    ],
+    "baslik": "CİMER - T.C. Cumhurbaşkanlığı İletişim Merkezi",
+    "url": "https://www.cimer.gov.tr/",
+    "dolan": [
+     "telefon"
+    ],
+    "metin": "Bilgilendirme Formu"
+   },
+   {
+    "alan": 23,
+    "sifre": false,
+    "baglanti": [],
+    "baslik": "Yatırımcı Ön Bilgi Formu - Dicle Kalkınma Ajansı",
+    "url": "https://yatirim.dika.org.tr/",
+    "dolan": [
+     "firmaUnvani",
+     "vergiDairesi",
+     "naceKodu",
+     "calisan",
+     "ciro"
+    ],
+    "metin": "DİKA\n\t                    Yatırımcı Ön Bilgi Formu"
+   },
+   {
+    "alan": 15,
+    "sifre": false,
+    "baglanti": [],
+    "baslik": "DİKA Destek Başvuru Formu",
+    "url": "https://girisimciform.dika.org.tr/",
+    "dolan": [
+     "yetkili",
+     "il",
+     "telefon",
+     "eposta"
+    ],
+    "metin": "DİKA\n\t                    Girişimci Başvuru Formu"
+   }
+  ]
+ },
+ "https://ticaret.gov.tr/destekler/ihracat-destekleri": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "İlgili Kişi Başvuru Formu",
+    "h": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee/"
+   },
+   {
+    "t": "Kolay İhracat Platformu",
+    "h": "https://www.kolayihracat.gov.tr/"
+   },
+   {
+    "t": "KEP ve E-İmza Usulü Hakkında\n                               ",
+    "h": "https://ticaret.gov.tr/destekler/ihracat-destekleri/kep-ve-e-imza-usulu-hakkinda"
+   }
+  ],
+  "baslik": "İhracat Destekleri",
+  "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri",
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [],
+    "baslik": "Doküman Paylaşım - Ticaret Bakanlığı İlgili Kişi Başvuru Formu",
+    "url": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee",
+    "dolan": [],
+    "metin": "İlgili Kişi Başvuru Formu"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "E-İhracat Platformuna Git",
+      "h": "https://www.kolayihracat.gov.tr/e-ihracat"
+     },
+     {
+      "t": "Kolay İhracat Platformuna Git",
+      "h": "https://www.kolayihracat.gov.tr/ihracat"
+     },
+     {
+      "t": "E-Kolay İhracat Platformuna Git",
+      "h": "https://www.kolayihracat.gov.tr/e-ihracat"
+     }
+    ],
+    "baslik": "Karşılama Sayfası",
+    "url": "https://www.kolayihracat.gov.tr/",
+    "metin": "Kolay İhracat Platformu"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "İlgili Kişi Başvuru Formu",
+      "h": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee/"
+     }
+    ],
+    "baslik": "KEP ve E-İmza Usulü Hakkında",
+    "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri/kep-ve-e-imza-usulu-hakkinda",
+    "metin": "KEP ve E-İmza Usulü Hakkında\n                               "
+   }
+  ]
+ },
+ "https://www.sanayi.gov.tr/mevzuat/diger/mc0403018202": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Mevzuat | T.C. Sanayi ve Teknoloji Bakanlığı",
+  "url": "https://www.sanayi.gov.tr/mevzuat/diger/mc0403018202",
+  "dolan": [],
+  "alt": []
+ },
+ "https://www.geka.gov.tr/": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "İletişim Formu",
+    "h": "https://www.geka.gov.tr/tr/iletisim"
+   },
+   {
+    "t": "İletişim Formu",
+    "h": "https://www.geka.gov.tr/tr/iletisim"
+   },
+   {
+    "t": "2026 YILI REKABETÇİ SANAYİ İŞLETMELERİ ALTERNATİF DESTEK PRO",
+    "h": "https://www.geka.gov.tr/tr/haber/2026-yili-rekabetci-sanayi-isletmeleri-alternatif-destek-programi-basvuru-donemleri-revize-edilmistir"
+   },
+   {
+    "t": "2026 YILI REKABETÇİ SANAYİ İŞLETMELERİ ALTERNATİF DESTEK PRO",
+    "h": "https://www.geka.gov.tr/tr/haber/2026-yili-rekabetci-sanayi-isletmeleri-alternatif-destek-programi-basvuru-donemleri-revize-edilmistir"
+   },
+   {
+    "t": "İletişim Formu",
+    "h": "https://www.geka.gov.tr/tr//iletisim"
+   }
+  ],
+  "baslik": "Güney Ege Kalkınma Ajansı",
+  "url": "https://www.geka.gov.tr/",
+  "alt": [
+   {
+    "alan": 6,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr//iletisim"
+     }
+    ],
+    "baslik": "Güney Ege Kalkınma Ajansı",
+    "url": "https://www.geka.gov.tr/tr/iletisim",
+    "dolan": [
+     "telefon",
+     "eposta"
+    ],
+    "metin": "İletişim Formu"
+   },
+   {
+    "alan": 6,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr//iletisim"
+     }
+    ],
+    "baslik": "Güney Ege Kalkınma Ajansı",
+    "url": "https://www.geka.gov.tr/tr/iletisim",
+    "dolan": [
+     "telefon",
+     "eposta"
+    ],
+    "metin": "İletişim Formu"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr/iletisim"
+     },
+     {
+      "t": "Program başvuru rehberine linkten ulaşabilirsiniz.",
+      "h": "https://geka.gov.tr/tr/basvurusu-devam-eden-destekler/destek/2026-yili-rekabetci-sanayi-isletmeleri-alternatif-destek-programi"
+     },
+     {
+      "t": "İletişim Formu",
+      "h": "https://www.geka.gov.tr/tr//iletisim"
+     }
+    ],
+    "baslik": "Güney Ege Kalkınma Ajansı",
+    "url": "https://www.geka.gov.tr/tr/haber/2026-yili-rekabetci-sanayi-isletmeleri-alternatif-destek-programi-basvuru-donemleri-revize-edilmistir",
+    "metin": "2026 YILI REKABETÇİ SANAYİ İŞLETMELERİ ALTERNATİF DESTEK PRO"
+   }
+  ]
+ },
+ "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tarla-Ve-Bahce-": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sayfa bulunamadı",
+  "url": "https://www.tarimorman.gov.tr/Sayfalar/PageNotFoundError.aspx?requestUrl=https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tarla-Ve-Bahce-",
+  "dolan": [],
+  "alt": []
+ },
+ "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Tarımsal Destekler",
+  "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+  "dolan": [],
+  "alt": []
+ },
+ "https://www.mevka.org.tr/": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "Tarım Sektörü, MEVKA ve KAPSÜL Teknoloji Platformu…",
+    "h": "https://www.mevka.org.tr/tr/haberler/tarim-sektoru-mevka-ve-kapsul-teknoloji-platformu-isbirligi-ile-cok-yonlu-olarak-masaya-yatirildi"
+   },
+   {
+    "t": "Tarım Teknolojileri İdeathonu Başvurulara Açıldı",
+    "h": "https://www.mevka.org.tr/tr/haberler/tarim-teknolojileri-ideathonu-basvurulara-acildi"
+   },
+   {
+    "t": "SoGreen Hızlandırıcı Hibe Desteği Programı Başvuru…",
+    "h": "https://www.mevka.org.tr/tr/haberler/sogreen-hizlandirici-hibe-destegi-programi-basvuru-sonuclari-aciklandi"
+   },
+   {
+    "t": "TEKNOFEST 2025 Teknoloji Yarışmaları Başvuruları Devam…",
+    "h": "https://www.mevka.org.tr/tr/haberler/teknofest-2025-teknoloji-yarismalari-basvurulari-devam-ediyor"
+   },
+   {
+    "t": "2024 Yılı SOGEP Başvuru Sonuçları Açıklandı",
+    "h": "https://www.mevka.org.tr/tr/haberler/2024-yili-sogep-basvuru-sonuclari-aciklandi"
+   },
+   {
+    "t": "2025 Yılı Teknoloji Girişimciliği Ve Sosyal Girişimcilik Ala",
+    "h": "https://www.mevka.org.tr/tr/duyurular/2025-yili-teknoloji-girisimciligi-ve-sosyal-girisimcilik-alaninda-kapasitenin-gelistirilmesi-teknik-destek-programi-basvuru-rehberi-degisikligi-1"
+   }
+  ],
+  "baslik": "Mevlana Kalkınma Ajansı",
+  "url": "https://www.mevka.org.tr/",
+  "dolan": [
+   "eposta"
+  ],
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Prog",
+      "h": "https://www.mevka.org.tr/tr/haberler/2026-yili-sosyal-kalkinma-ve-girisimcilik-teknik-destek-programi-6-donem-basvurulari-basladi"
+     },
+     {
+      "t": "2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Prog",
+      "h": "https://www.mevka.org.tr/tr/haberler/2026-yili-sosyal-kalkinma-ve-girisimcilik-teknik-destek-programi-basvuru-rehberi-degisiklik-ilani"
+     },
+     {
+      "t": "Ajansımız 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik D",
+      "h": "https://www.mevka.org.tr/tr/haberler/ajansimiz-2026-yili-sosyal-kalkinma-ve-girisimcilik-teknik-destek-programi-5-donem-basvurulari-devam-ediyor"
+     }
+    ],
+    "baslik": "Tarım Sektörü, MEVKA ve KAPSÜL Teknoloji Platformu İşbirliği ile Çok Yönlü Olara",
+    "url": "https://www.mevka.org.tr/tr/haberler/tarim-sektoru-mevka-ve-kapsul-teknoloji-platformu-isbirligi-ile-cok-yonlu-olarak-masaya-yatirildi",
+    "dolan": [
+     "eposta"
+    ],
+    "metin": "Tarım Sektörü, MEVKA ve KAPSÜL Teknoloji Platformu…"
+   },
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Prog",
+      "h": "https://www.mevka.org.tr/tr/haberler/2026-yili-sosyal-kalkinma-ve-girisimcilik-teknik-destek-programi-6-donem-basvurulari-basladi"
+     },
+     {
+      "t": "2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Prog",
+      "h": "https://www.mevka.org.tr/tr/haberler/2026-yili-sosyal-kalkinma-ve-girisimcilik-teknik-destek-programi-basvuru-rehberi-degisiklik-ilani"
+     },
+     {
+      "t": "Ajansımız 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik D",
+      "h": "https://www.mevka.org.tr/tr/haberler/ajansimiz-2026-yili-sosyal-kalkinma-ve-girisimcilik-teknik-destek-programi-5-donem-basvurulari-devam-ediyor"
+     }
+    ],
+    "baslik": "Tarım Teknolojileri İdeathonu Başvurulara Açıldı",
+    "url": "https://www.mevka.org.tr/tr/haberler/tarim-teknolojileri-ideathonu-basvurulara-acildi",
+    "dolan": [
+     "eposta"
+    ],
+    "metin": "Tarım Teknolojileri İdeathonu Başvurulara Açıldı"
+   },
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Ek_VI_Mali_Kimlik_Formu",
+      "h": "https://www.mevka.org.tr/upload/news/sogreen-hizlandirici-hibe-dest-tr/Ek_VI_Mali_Kimlik_Formu.xlsx"
+     }
+    ],
+    "baslik": "SoGreen Hızlandırıcı Hibe Desteği Programı Başvuru Sonuçları Açıklandı",
+    "url": "https://www.mevka.org.tr/tr/haberler/sogreen-hizlandirici-hibe-destegi-programi-basvuru-sonuclari-aciklandi",
+    "dolan": [
+     "eposta"
+    ],
+    "metin": "SoGreen Hızlandırıcı Hibe Desteği Programı Başvuru…"
+   }
+  ]
+ },
+ "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "404 - PAGE NOT FOUND",
+  "url": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+  "alt": []
+ },
+ "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "404 - PAGE NOT FOUND",
+  "url": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+  "alt": []
+ },
+ "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Ulusal Destek Programları | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma K",
+  "url": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+  "dolan": [],
+  "alt": []
+ },
+ "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Ziraat Bankası",
+  "url": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-",
+  "alt": []
+ },
+ "https://www.trakyaka.org.tr/": {
+  "alan": 2,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "Cumhurbaşkanlığı Bilgi Edinme Formu",
+    "h": "https://www.trakyaka.org.tr/tr/35170/Cumhurbaskanligi-Bilgi-Edinme-Formu"
+   },
+   {
+    "t": "2026 Yılı Tarım ve Kırsal Kalkınma Teknik Destek Programı-01",
+    "h": "https://www.trakyaka.org.tr/tr/120179/2026-Yili-Tarim-ve-Kirsal-Kalkinma-Teknik-Destek-Programi-01-Temmuz-Agustos-Donemi-Basarili-Basvurular-Listesi"
+   }
+  ],
+  "baslik": "TRAKYA KALKINMA AJANSI",
+  "url": "https://www.trakyaka.org.tr/?mbaopn=1",
+  "dolan": [],
+  "alt": [
+   {
+    "alan": 2,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Cumhurbaşkanlığı Bilgi Edinme Formu",
+      "h": "https://www.trakyaka.org.tr/tr/35170/Cumhurbaskanligi-Bilgi-Edinme-Formu"
+     },
+     {
+      "t": "Cumhurbaşkanlığı Bilgi Edinme Formu",
+      "h": "https://www.trakyaka.org.tr/tr/35170/Cumhurbaskanligi-Bilgi-Edinme-Formu"
+     },
+     {
+      "t": "Cumhurbaşkanlığı Bilgi Edinme Formu",
+      "h": "https://www.cimer.gov.tr/"
+     },
+     {
+      "t": "Cumhurbaşkanlığı Bilgi Edinme Formu",
+      "h": "https://www.trakyaka.org.tr/tr/35170/Cumhurbaskanligi-Bilgi-Edinme-Formu"
+     }
+    ],
+    "baslik": "Cumhurbaşkanlığı Bilgi Edinme Formu - İLETİŞİM - TRAKYA KALKINMA AJANSI",
+    "url": "https://www.trakyaka.org.tr/tr/35170/Cumhurbaskanligi-Bilgi-Edinme-Formu",
+    "dolan": [],
+    "metin": "Cumhurbaşkanlığı Bilgi Edinme Formu"
+   },
+   {
+    "alan": 2,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Cumhurbaşkanlığı Bilgi Edinme Formu",
+      "h": "https://www.trakyaka.org.tr/tr/35170/Cumhurbaskanligi-Bilgi-Edinme-Formu"
+     },
+     {
+      "t": "2026 Yılı Tarım ve Kırsal Kalkınma Teknik Destek Programı-01",
+      "h": "https://www.trakyaka.org.tr/tr/120179/2026-Yili-Tarim-ve-Kirsal-Kalkinma-Teknik-Destek-Programi-01-Temmuz-Agustos-Donemi-Basarili-Basvurular-Listesi"
+     }
+    ],
+    "baslik": "2026 Yılı Tarım ve Kırsal Kalkınma Teknik Destek Programı-01 Temmuz-Ağustos Döne",
+    "url": "https://www.trakyaka.org.tr/tr/120179/2026-Yili-Tarim-ve-Kirsal-Kalkinma-Teknik-Destek-Programi-01-Temmuz-Agustos-Donemi-Basarili-Basvurular-Listesi",
+    "dolan": [],
+    "metin": "2026 Yılı Tarım ve Kırsal Kalkınma Teknik Destek Programı-01"
+   }
+  ]
+ },
+ "https://yatirimadestek.gov.tr/program/052cc3c7-77e2-4056-b8fb-389c1449051d": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "KKYDP Bireysel Sulama Sistemlerinin Desteklenmesi Programı - Devlet Destekleri v",
+  "url": "https://yatirimadestek.gov.tr/program/052cc3c7-77e2-4056-b8fb-389c1449051d",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/063c448b-2c81-478f-bfb8-af503caff1da": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sinema Filmlerinin Desteklenmesi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/063c448b-2c81-478f-bfb8-af503caff1da",
+  "alt": []
+ },
+ "https://www.ziraatbank.com.tr/tr/girisimci/tarim": {
+  "alan": 1,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "Başvurular",
+    "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+   },
+   {
+    "t": "Başvurular",
+    "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+   },
+   {
+    "t": "Başvurular",
+    "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+   },
+   {
+    "t": "Başvurular",
+    "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+   },
+   {
+    "t": "Başvurular",
+    "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+   },
+   {
+    "t": "Ziraat Çiftçi Platformu",
+    "h": "https://www.ziraatbank.com.tr/tr/ticari/tarim/ziraat-ciftci-platformu"
+   }
+  ],
+  "baslik": "Tarım | Ticari | Ziraat Bankası",
+  "url": "https://www.ziraatbank.com.tr/tr/ticari/tarim",
+  "dolan": [],
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "javascript:;"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     }
+    ],
+    "baslik": "Başvurular | Bireysel | Ziraat Bankası",
+    "url": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular",
+    "dolan": [],
+    "metin": "Başvurular"
+   },
+   {
+    "alan": 12,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+     },
+     {
+      "t": "Referans Faiz Oranları (IBOR) ve Gerçekleşecek Reformlar Hak",
+      "h": "https://www.ziraatbank.com.tr/tr/bankamiz/ziraatten-duyurular/duyurular/referans-faiz-oranlari"
+     },
+     {
+      "t": "Referans Faiz Oranları (IBOR) ve Gerçekleşecek Reformlar Hak",
+      "h": "https://www.ziraatbank.com.tr/tr/bankamiz/ziraatten-duyurular/duyurular/referans-faiz-oranlari"
+     }
+    ],
+    "baslik": "Girişimcim Ziraat Güvencesinde (GZG) | Sigorta Ürünleri Başvuruları | Başvurular",
+    "url": "https://www.ziraatbank.com.tr/tr/ticari/basvurular/sigorta-urunleri-basvurulari/girisimcim-ziraat-guvencesinde-gzg",
+    "dolan": [
+     "telefon"
+    ],
+    "metin": "Başvurular"
+   },
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/ticari/basvurular"
+     },
+     {
+      "t": "Başvurular",
+      "h": "javascript:;"
+     },
+     {
+      "t": "Başvurular",
+      "h": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular"
+     }
+    ],
+    "baslik": "Başvurular | Bireysel | Ziraat Bankası",
+    "url": "https://www.ziraatbank.com.tr/tr/bireysel/basvurular",
+    "dolan": [],
+    "metin": "Başvurular"
+   }
+  ]
+ },
+ "https://yatirimadestek.gov.tr/program/08d93dc5-754c-4577-b3e5-3e7106a6882e": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sponsorluk Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/08d93dc5-754c-4577-b3e5-3e7106a6882e",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/0a207d3a-3895-44e5-8552-819c368b69e9": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Girişimci Destek Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/0a207d3a-3895-44e5-8552-819c368b69e9",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/1ab67b2c-eb6b-4261-a0ec-f60ffa6adb36": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Ar-Ge ve Tasarım Merkezi Teşvikleri - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/1ab67b2c-eb6b-4261-a0ec-f60ffa6adb36",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/1e49211f-8389-4928-ab28-a1c233b67b3a": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yatırım Taahhütlü Avans Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/1e49211f-8389-4928-ab28-a1c233b67b3a",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/220e65de-d957-4b50-9a43-afe2abbde3b5": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "YÖNDE - Yönderlik ve Değerlendirme Destek Programı - Devlet Destekleri ve Teşvik",
+  "url": "https://yatirimadestek.gov.tr/program/220e65de-d957-4b50-9a43-afe2abbde3b5",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/22fe7e4e-6045-4343-827f-b16223f2defc": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Turizm Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/22fe7e4e-6045-4343-827f-b16223f2defc",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/266b42e1-7454-4222-9ce9-8bb462e6b35d": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sosyal Yardım Alanların İstihdamı Halinde Uygulanan Prim Teşviki - Devlet Destek",
+  "url": "https://yatirimadestek.gov.tr/program/266b42e1-7454-4222-9ce9-8bb462e6b35d",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/2ab98c68-451d-4ea8-84f2-bd9c879e59f6": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Finansal Kiralama Şirketlerine Yönelik Kredi Programı - Devlet Destekleri ve Teş",
+  "url": "https://yatirimadestek.gov.tr/program/2ab98c68-451d-4ea8-84f2-bd9c879e59f6",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/2d26e987-4262-448b-99e6-99d290944325": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Reeskont Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/2d26e987-4262-448b-99e6-99d290944325",
+  "alt": []
+ },
+ "https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [
+   {
+    "t": "İlgili Kişi Başvuru Formu",
+    "h": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee/"
+   },
+   {
+    "t": "Kolay İhracat Platformu",
+    "h": "https://www.kolayihracat.gov.tr/"
+   }
+  ],
+  "baslik": "E-İhracat Destekleri",
+  "url": "https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri",
+  "alt": [
+   {
+    "alan": 1,
+    "sifre": false,
+    "baglanti": [],
+    "baslik": "Doküman Paylaşım - Ticaret Bakanlığı İlgili Kişi Başvuru Formu",
+    "url": "https://kisiselveri.ticaret.gov.tr/view/abe0ed3c-5b65-4ab2-b2ec-83fb11752eee",
+    "dolan": [],
+    "metin": "İlgili Kişi Başvuru Formu"
+   },
+   {
+    "alan": 0,
+    "sifre": false,
+    "baglanti": [
+     {
+      "t": "E-İhracat Platformuna Git",
+      "h": "https://www.kolayihracat.gov.tr/e-ihracat"
+     },
+     {
+      "t": "Kolay İhracat Platformuna Git",
+      "h": "https://www.kolayihracat.gov.tr/ihracat"
+     },
+     {
+      "t": "E-Kolay İhracat Platformuna Git",
+      "h": "https://www.kolayihracat.gov.tr/e-ihracat"
+     }
+    ],
+    "baslik": "Karşılama Sayfası",
+    "url": "https://www.kolayihracat.gov.tr/",
+    "metin": "Kolay İhracat Platformu"
+   }
+  ]
+ },
+ "https://yatirimadestek.gov.tr/program/4163bebe-dc87-4f9c-9e49-a29139ebc945": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası İşveren Hissesi T",
+  "url": "https://yatirimadestek.gov.tr/program/4163bebe-dc87-4f9c-9e49-a29139ebc945",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/45f05725-b25f-49aa-a7dd-c8444c810761": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sektörel Gelişim Merkezi (SEGEM) Destek Programı - Devlet Destekleri ve Teşvikle",
+  "url": "https://yatirimadestek.gov.tr/program/45f05725-b25f-49aa-a7dd-c8444c810761",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/46d52585-d8df-4bf2-afa6-a6163d27f17f": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "4B (Bağ-Kur) 5 Puan Teşviki - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/46d52585-d8df-4bf2-afa6-a6163d27f17f",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/4795c846-f108-4261-ad16-13dafeba34d7": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İhracat Konsorsiyumu Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/4795c846-f108-4261-ad16-13dafeba34d7",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/479b35fa-d1b5-4a89-ab48-ca6689a2b229": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yurt Dışı Mağazalar Yatırım Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/479b35fa-d1b5-4a89-ab48-ca6689a2b229",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/4c625408-9b61-43be-9483-4f766a896063": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "KOBİ Dijital Dönüşüm Destek Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/4c625408-9b61-43be-9483-4f766a896063",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/508d186b-858e-4dd8-b9bc-8f874a2c7d21": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İşsizlik Ödeneği Alanların İstihdamı Halinde Sağlanan Teşvik Uygulaması - Devlet",
+  "url": "https://yatirimadestek.gov.tr/program/508d186b-858e-4dd8-b9bc-8f874a2c7d21",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Verimlilik Artırıcı Proje (VAP) Destek Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/54bfa568-6a69-47bf-8566-24a91ad21204": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Asgari Ücret Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/54bfa568-6a69-47bf-8566-24a91ad21204",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/56f4e239-e710-4dcf-9c3b-31b14d56e8ed": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Derneklere Yardım Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/56f4e239-e710-4dcf-9c3b-31b14d56e8ed",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/5719abc7-ac37-4356-b2b7-cec978774afe": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Kültür Varlığı Olarak Tescilli Taşınmazlara Proje ve Uygulama Yardımı - Devlet D",
+  "url": "https://yatirimadestek.gov.tr/program/5719abc7-ac37-4356-b2b7-cec978774afe",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/5921d965-fb66-4af1-a922-67e201bba0d4": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İhracat Alacakları İskonto Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/5921d965-fb66-4af1-a922-67e201bba0d4",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/596980c3-b112-4398-8b20-6a51b6a340fc": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Çiftlik Muhasebe Veri Ağı Sistemi Katılım Desteği - Devlet Destekleri ve Teşvikl",
+  "url": "https://yatirimadestek.gov.tr/program/596980c3-b112-4398-8b20-6a51b6a340fc",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/59d00469-825d-4996-a4c1-61e9f36cea61": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Aile ve Çocuk Dostu Yapım ve Dizilerin Teşvik Edilmesi - Devlet Destekleri ve Te",
+  "url": "https://yatirimadestek.gov.tr/program/59d00469-825d-4996-a4c1-61e9f36cea61",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/5cfe291c-49f4-4600-ae42-919ca13d8519": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Katılım Finans Yatırım Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/5cfe291c-49f4-4600-ae42-919ca13d8519",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/60392673-d7ba-4b44-9139-f8af81204fff": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yurtdışına Götürülen Gönderilen Sigortalılara Uygulanan 5 Puanlık İndirim Desteğ",
+  "url": "https://yatirimadestek.gov.tr/program/60392673-d7ba-4b44-9139-f8af81204fff",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/62c07a76-138f-47ad-be0c-f293f540392b": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi - Devlet Destekle",
+  "url": "https://yatirimadestek.gov.tr/program/62c07a76-138f-47ad-be0c-f293f540392b",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/683ee88e-c0d7-419a-bb0c-3cfbbbf2ee6e": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İhracata Yönelik Yatırım Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/683ee88e-c0d7-419a-bb0c-3cfbbbf2ee6e",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/6982f936-ab42-4e8d-9537-af23dcf26a2b": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sigortalı Alacağın Teminatına Dayalı Kredi Programı - Devlet Destekleri ve Teşvi",
+  "url": "https://yatirimadestek.gov.tr/program/6982f936-ab42-4e8d-9537-af23dcf26a2b",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/6bc8450a-0e24-4d8c-92e6-2295041fec43": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yurt Dışı Müteahhitlik Hizmetleri Teminat Mektubu Programı - Devlet Destekleri v",
+  "url": "https://yatirimadestek.gov.tr/program/6bc8450a-0e24-4d8c-92e6-2295041fec43",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/70150dee-d6bd-4bf7-bc36-f5f1d340fbd9": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Genç Girişimci Teşviki - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/70150dee-d6bd-4bf7-bc36-f5f1d340fbd9",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/740d8e1d-fba0-4cfc-916c-df48636eac4d": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "1704 Sanayi Yenilik Ağ Mekanizması (SAYEM) Yeşil Dönüşüm Çağrısı - Devlet Destek",
+  "url": "https://yatirimadestek.gov.tr/program/740d8e1d-fba0-4cfc-916c-df48636eac4d",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/74491580-2515-4962-98e5-a4fd31b6e659": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yurt Dışı Müteahhitlik Hizmetleri Köprü Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/74491580-2515-4962-98e5-a4fd31b6e659",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/7d6feed4-f458-4f39-b31d-069378dad9b1": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Bilimsel Toplantı Düzenleme Bilimsel Etkinliğe Katılım ve Kazı Yüzey Araştırmala",
+  "url": "https://yatirimadestek.gov.tr/program/7d6feed4-f458-4f39-b31d-069378dad9b1",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/7deff41e-2bb0-458a-bf35-5079bd4c3b2c": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Kültür Yatırımları ve Girişimlerini Teşvik - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/7deff41e-2bb0-458a-bf35-5079bd4c3b2c",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/816d5b90-4476-4b13-b1f8-0247c0383f12": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Engelli Sigortalı İstihdamında Sigorta Primi Teşviki - Devlet Destekleri ve Teşv",
+  "url": "https://yatirimadestek.gov.tr/program/816d5b90-4476-4b13-b1f8-0247c0383f12",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/821ba676-5f59-48bc-8c96-4826bc915e25": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Gençliğin Üretim Çağı (GÜÇ) Genç İstihdam Hamlesi - Devlet Destekleri ve Teşvikl",
+  "url": "https://yatirimadestek.gov.tr/program/821ba676-5f59-48bc-8c96-4826bc915e25",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/8561cc8d-26dd-4720-ba29-8c2c2bc4990b": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "1515 Öncül Ar-Ge Laboratuvarları Destekleme Programı - Devlet Destekleri ve Teşv",
+  "url": "https://yatirimadestek.gov.tr/program/8561cc8d-26dd-4720-ba29-8c2c2bc4990b",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/87175d4c-e7e0-47f6-91c8-de1f3e4cac12": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Cazibe Merkezleri Programı Yatırım Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/87175d4c-e7e0-47f6-91c8-de1f3e4cac12",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/878f0f16-727e-44d6-88ab-3dec72bc3b14": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yurt Dışı Teminat Mektubu Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/878f0f16-727e-44d6-88ab-3dec72bc3b14",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/8a1cb3cb-ec59-42ab-b45d-3dcb5b8a55ff": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "KKYDP Tarıma Dayalı Ekonomik Yatırımlarının Desteklenmesi - Devlet Destekleri ve",
+  "url": "https://yatirimadestek.gov.tr/program/8a1cb3cb-ec59-42ab-b45d-3dcb5b8a55ff",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/9108afc3-4ba9-4283-bb6a-1c2cece4be83": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Atık Su Arıtma Tesisi Enerji Teşviki - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/9108afc3-4ba9-4283-bb6a-1c2cece4be83",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/91c37357-a562-44e2-88f2-b17660e48ef3": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İskur Destekleri - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/91c37357-a562-44e2-88f2-b17660e48ef3",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/9606be0e-71fe-4381-a623-5697b8b28854": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "TGB'lerdeki Girişimlere Yönelik Teşvikler - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/9606be0e-71fe-4381-a623-5697b8b28854",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/968b118c-6650-43d3-be37-ae231aac025f": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi - Devlet Destekleri ve Teşvi",
+  "url": "https://yatirimadestek.gov.tr/program/968b118c-6650-43d3-be37-ae231aac025f",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/9bbb98cc-fed0-4cbc-92e6-5875102469e7": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Döviz Kazandırıcı Hizmetler Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/9bbb98cc-fed0-4cbc-92e6-5875102469e7",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/9d1a775a-e189-4b82-af29-01d8d8a40a23": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "4 Puanlık İndirim Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/9d1a775a-e189-4b82-af29-01d8d8a40a23",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/a5569b5f-0cc2-446f-a9e0-2b8513a011c8": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Uluslararası Nakliyat Pazarlama Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/a5569b5f-0cc2-446f-a9e0-2b8513a011c8",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/abddf672-5d01-4f2c-857b-e2fb52b0ecd9": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Özellikli İhracat Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/abddf672-5d01-4f2c-857b-e2fb52b0ecd9",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/b195854f-d2bf-43ee-821e-4a4a6d575ef2": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Dış Ticaret Şirketleri İhracat Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/b195854f-d2bf-43ee-821e-4a4a6d575ef2",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/bac4d7f4-1d00-4490-9256-1a004d696333": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yurt Dışı Fuar Katılım Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/bac4d7f4-1d00-4490-9256-1a004d696333",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/c10fbf7c-d245-4696-a3f4-242fd96032c9": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Küresel Rekabetçilik Destek Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/c10fbf7c-d245-4696-a3f4-242fd96032c9",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/c75f8085-705d-4440-8267-163497c395ac": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Enerji ve Karbon Azaltımı (EKA) Destek Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/c75f8085-705d-4440-8267-163497c395ac",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/ccf28787-ae3a-4f5c-9af4-1daf86ca6589": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Teknolojik Ürün Deneyim (TUR) Belgesi Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/ccf28787-ae3a-4f5c-9af4-1daf86ca6589",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/ce593411-7890-4dcc-b682-d300e3f3a512": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "1071-Uluslararası Araştırma Fonlarından Yararlanma Kapasitesinin ve Uluslararası",
+  "url": "https://yatirimadestek.gov.tr/program/ce593411-7890-4dcc-b682-d300e3f3a512",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/d00a5b2f-7a9d-4695-9375-2c567c70de9e": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sosyal Hizmetlerden Faydalanan Kişilerin İstihdamı Halinde Uygulanan Teşvik - De",
+  "url": "https://yatirimadestek.gov.tr/program/d00a5b2f-7a9d-4695-9375-2c567c70de9e",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/d0597974-a28b-497b-b584-933d093456a8": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sevk Öncesi İhracat Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/d0597974-a28b-497b-b584-933d093456a8",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/d14c839c-1c0f-47e6-93ab-74b5ef596c2c": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Kredi Garanti Fonu Ürünleri - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/d14c839c-1c0f-47e6-93ab-74b5ef596c2c",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/d5b7898e-5caa-42f9-9e12-7a8cedea82f2": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Sevk Sonrası Reeskont Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/d5b7898e-5caa-42f9-9e12-7a8cedea82f2",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/d9b98dc8-a7ca-4afd-8e4b-1cb3e74bc2a8": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Kültür Yatırımları ve Girişimlerine Sigorta Prim Teşviki - Devlet Destekleri ve ",
+  "url": "https://yatirimadestek.gov.tr/program/d9b98dc8-a7ca-4afd-8e4b-1cb3e74bc2a8",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/dc172c71-a2d3-499e-aeb2-b6b3be2d93b5": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "2634 Sayılı Turizm Teşvik Kanunu İle Sağlanan Destekler - Devlet Destekleri ve T",
+  "url": "https://yatirimadestek.gov.tr/program/dc172c71-a2d3-499e-aeb2-b6b3be2d93b5",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/dd93b103-6643-4a5c-b412-e1c2317fd2e2": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Ağaçlandırma Desteklemeleri - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/dd93b103-6643-4a5c-b412-e1c2317fd2e2",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/e033ed4e-297a-4cbb-975a-1fd45d62b40f": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Teknoloji Merkezi Destek Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/e033ed4e-297a-4cbb-975a-1fd45d62b40f",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/e1c64f7e-99db-4240-9614-67d8c709c60a": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yatırım Teşvik Sistemi (9903 sayılı Karar) - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/e1c64f7e-99db-4240-9614-67d8c709c60a",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/e2d7a435-14c7-4cda-88ac-af657ca79e35": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İhracata Yönelik İşletme Sermayesi Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/e2d7a435-14c7-4cda-88ac-af657ca79e35",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/e2e07cef-6986-4aad-a8ec-baac04b85427": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "1831 - Yeşil İnovasyon Teknoloji Mentörlük Çağrısı - Devlet Destekleri ve Teşvik",
+  "url": "https://yatirimadestek.gov.tr/program/e2e07cef-6986-4aad-a8ec-baac04b85427",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/e9e19357-1464-47b0-84fb-250f3568e330": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yatırımlarda Devlet Yardımları Hakkında Kararlar Çerçevesinde Uygulanan Sigorta ",
+  "url": "https://yatirimadestek.gov.tr/program/e9e19357-1464-47b0-84fb-250f3568e330",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/ec76bcf6-2887-4a06-80a2-eaa0571b85cd": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Tüm SGK Teşvikleri - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/ec76bcf6-2887-4a06-80a2-eaa0571b85cd",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/ee93eb7d-dcf0-44f8-8c5c-f3c0ed2769d7": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Eureka Network Türkiye-İspanya 2026 Yılı Çağrısı - Devlet Destekleri ve Teşvikle",
+  "url": "https://yatirimadestek.gov.tr/program/ee93eb7d-dcf0-44f8-8c5c-f3c0ed2769d7",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/eeac8332-3ee2-40ee-8fa3-b1f2bba3f9e1": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "1602 TÜBİTAK Patent Destek Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/eeac8332-3ee2-40ee-8fa3-b1f2bba3f9e1",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/ef00dc39-bab5-4127-8a55-44612adfbb44": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Marka Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/ef00dc39-bab5-4127-8a55-44612adfbb44",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/efb89ac8-194a-4025-932f-46877528a5a6": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Gemi İnşa ve İhracatı Finans Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/efb89ac8-194a-4025-932f-46877528a5a6",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/efc2d75d-ac19-4bd0-aeae-418e45a0c4a6": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "İhracata Hazırlık Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/efc2d75d-ac19-4bd0-aeae-418e45a0c4a6",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/f0015114-7875-4d30-bc0b-ca351e2aef5c": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "KOBİ İhracata Hazırlık Kredisi - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/f0015114-7875-4d30-bc0b-ca351e2aef5c",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/f4e77887-4d4c-4cc7-8b4d-d46b31dd3bf6": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Yurt Dışı Turizm Fuarlarına Katılımın ve Turizm Tanıtma ve Pazarlama Faaliyetler",
+  "url": "https://yatirimadestek.gov.tr/program/f4e77887-4d4c-4cc7-8b4d-d46b31dd3bf6",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/f5f1d3a3-8129-496b-a24f-aa076d510107": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "OSB'lere Uygulanan Teşvik ve Muafiyetler - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/f5f1d3a3-8129-496b-a24f-aa076d510107",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/f77a0bca-9bb1-4dba-aa49-0ecd41079537": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Bilimsel Proje Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/f77a0bca-9bb1-4dba-aa49-0ecd41079537",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/f8540d98-0268-47dc-938a-f5d5a6d142fc": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "1503 Proje Pazarları Destekleme Programı - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/f8540d98-0268-47dc-938a-f5d5a6d142fc",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/fc85b4fe-7999-4a9d-a911-feb369ca3769": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Fikri Mülkiyet ve Kültür Endüstrilerine Yönelik Destekler - Devlet Destekleri ve",
+  "url": "https://yatirimadestek.gov.tr/program/fc85b4fe-7999-4a9d-a911-feb369ca3769",
+  "alt": []
+ },
+ "https://yatirimadestek.gov.tr/program/fe5df282-63c6-441a-b20a-3dbe6618440e": {
+  "alan": 0,
+  "sifre": false,
+  "baglanti": [],
+  "baslik": "Kültür Merkezleri Yapım Desteği - Devlet Destekleri ve Teşvikler",
+  "url": "https://yatirimadestek.gov.tr/program/fe5df282-63c6-441a-b20a-3dbe6618440e",
+  "alt": []
+ }
+}
