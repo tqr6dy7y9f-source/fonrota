@@ -26,7 +26,7 @@ async function layout(page) {
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
-  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Bilgiler T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan ve kurumların (KOSGEB, TÜBİTAK, kalkınma ajansları…) sitelerinden her hafta otomatik toplanır. Başvurmadan önce koşulları kurumun sayfasından kontrol et.</span><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span>
+  if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span>
       <p class="proje-notu">Bu web sitesi bir bitirme/ders projesi kapsamında geliştirilmiş prototiptir. Yayınlanan veriler gösterim amaçlıdır ve resmi bir devlet kurumu bağı yoktur.</p>
       <p class="telif">© ${new Date().getFullYear()} ${esc(C.SITE_ADI)}${C.SAHIP && !/^\[/.test(C.SAHIP) ? " · " + esc(C.SAHIP) : ""}. Tüm hakları saklıdır.</p></div>`; }
 }
