@@ -37,6 +37,7 @@ function sampleNotice(d) { return d.ornek ? `<div class="notice">Şu an örnek v
 function money(x) { return x.ust_limit ? `<span class="money">${short(x.ust_limit)}’ye kadar</span>` : x.destek_orani ? `<span class="money">%${x.destek_orani} destek</span>` : ""; }
 // Destekler Platformu "sürekli açık" programlar için 30.12.2030 gibi uzak bir yer tutucu tarih kullanıyor
 const tarihli = x => x.son_basvuru && x.son_basvuru < "2030-01-01";
+const sonTarih = x => tarihli(x) ? x.son_basvuru : "9999";  // sıralama için: yer tutucu (2030) tarihler "sürekli" sayılır
 function due(x) { const d = D.daysLeft(x.son_basvuru); return tarihli(x) ? `<span class="due ${d <= 21 ? "soon" : ""}">Son başvuru: ${d <= 0 ? "bugün" : d + " gün kaldı"}</span>` : `<span class="due">${x.sayfa ? "Tarih için kurumun sayfasına bak" : "Sürekli açık veya çağrıya bağlı"}</span>`; }
 function itemRow(x, c) {
   return `<li class="item"><a ${link("destek", "id=" + x.id)}>
@@ -117,7 +118,7 @@ P.destekler = async () => {
   const render = () => {
     const p = st.il || st.olcek ? { ...(prof || {}), il: st.il, olcek: st.olcek } : prof;
     let rows = d.destekler.map(x => ({ x, c: D.check(x, p) })).filter(({ x }) => (!st.tur || x.tur === st.tur) && (!st.q || D.low(x.ad + " " + x.kurum + " " + x.ozet).includes(D.low(st.q))));
-    rows.sort((a, b) => st.sort === "tarih" ? (a.x.son_basvuru || "9999").localeCompare(b.x.son_basvuru || "9999") : st.sort === "tutar" ? (b.x.ust_limit || 0) - (a.x.ust_limit || 0) : b.c.score - a.c.score);
+    rows.sort((a, b) => st.sort === "tarih" ? sonTarih(a.x).localeCompare(sonTarih(b.x)) : st.sort === "tutar" ? (b.x.ust_limit || 0) - (a.x.ust_limit || 0) : b.c.score - a.c.score);
     const hedefe = r => (prof?.amaclar || []).some(a => (r.x.amac || []).includes(a));
     $("#count").innerHTML = `${rows.length} destek listeleniyor.` + (p ? ` Uygunluk testindeki bilgilerine göre <strong>${rows.filter(r => r.c.level === "ok" && hedefe(r)).length}</strong> tanesi hedefine uyuyor ve ölçeğin elenmiyor. Kesin şartlar her desteğin resmi metninde. <a href="#" id="profil-sil">Test bilgilerimi sil</a>` : "");
     const ps = $("#profil-sil"); if (ps) ps.onclick = async e => { e.preventDefault(); D.LS.del("profile"); D.LS.del("draft"); D.LS.del("mmFiltre"); toast("Test bilgilerin bu tarayıcıdan silindi."); setTimeout(() => location.reload(), 600); };
@@ -169,7 +170,17 @@ P.bul = async () => {
       save({ isTanimi: metin, isOzet: r.ozet, naceOneri: r.nace_onerisi }); showResult(r);
       b.disabled = false; b.textContent = "Tekrar analiz et";
     };
-    $("#ileri").onclick = () => { const v = collect(); save({ isTanimi: $("#metin").value.trim(), ...v }); go("bul", "adim=2"); };
+    $("#ileri").onclick = () => {
+      const metin = $("#metin").value.trim();
+      // "İşimi analiz et"e basılmadan geçilirse metinden sektör/ihtiyaç yine çıkarılır; yoksa sonuçlar tüm destekleri "hedefine uyan" sayar
+      if (!$("#sonuc .chips")) {
+        if (metin.length < 15) { toast("Önce işini bir iki cümleyle anlat."); $("#metin").focus(); return; }
+        const r = D.ruleAnalyze(metin);
+        save({ isTanimi: metin, isOzet: r.ozet, naceOneri: r.nace_onerisi, sektorler: (r.sektorler || []).filter(k => SEKTOR[k]), amaclar: (r.amaclar || []).filter(k => AMAC[k]) });
+        go("bul", "adim=2"); return;
+      }
+      save({ isTanimi: metin, ...collect() }); go("bul", "adim=2");
+    };
   }
   if (adim === 2) {
     box.innerHTML = `<h1>İşletmen ne büyüklükte?</h1>
@@ -254,6 +265,9 @@ function hazirlikBagla(kutu, x, yenile) {
 
 /* Bugün yapabileceğin ilk adım: eksik ön koşul > cevaplanmamış şartlar > hazırlık formu */
 function ilkAdim(x, p) {
+  // Ölçek, il, sektör veya başvuru sahibi türü uymuyorsa önce bunu söyle (ön koşul hazırlamak boşa emek olur)
+  const c = p ? D.check(x, p) : null;
+  if (c && c.level === "no") { const q = c.r.find(r => r.hard && !r.ok); return { t: "Bu destek profiline uymuyor", d: `Uymayan şart: ${q.t.replace(/^Kimler başvurabilir: /, "yalnızca ")}. Bilgilerin yanlışsa profilini güncelle; değilse başka desteklere bak.`, kotu: true }; }
   const h = (p && p.hazirlik) || {}; const eks = D.onKosullar(x).find(id => !h[id]);
   if (eks) return { t: "Önce: " + D.ON_KOSUL[eks].ad, d: D.ON_KOSUL[eks].nasil.split(/(?<=\.)\s/)[0] };
   const s = sartDurum(x);
@@ -427,7 +441,7 @@ P.sonuclar = async () => {
     $("#kilit-bant").innerHTML = `<span>🔒 Hedefine uyan <b>${all.filter(hedefeUy).length}</b> destekten <b>2</b>’sini görüyorsun. Hesap açarsan şartları tek tek kontrol edip sana uymayanları eleriz.</span><button type="button" class="btn sm seal" id="bant-ac">Tamamını gör</button>`;
     $("#bant-ac").onclick = kaydolAc;
     let gosterildi = false; try { gosterildi = sessionStorage.getItem("kaydolGosterildi"); sessionStorage.setItem("kaydolGosterildi", "1"); } catch {}
-    if (!gosterildi) setTimeout(kaydolAc, 900);
+    if (!gosterildi) setTimeout(() => { if (!dlg.open) kaydolAc(); }, 900);
   }
   if (view === "harita") {
     const F = { hedef: true, tam: false, kredisiz: false, hibe: false, ...D.LS.get("mmFiltre", {}) };
@@ -460,9 +474,13 @@ P.sonuclar = async () => {
     $("#mm").hidden = false; $("#mm-legend").hidden = false; draw();
   } else {
     $("#liste").hidden = false;
+    // Liste de başlıktaki sayıyla tutarlı olsun: hedefine uymayanlar ve şartına "Hayır" dediklerin gösterilmez
+    const gorunur = r => hedefeUy(r) && (misafir || sartDurum(r.x) !== "hayir");
+    const fitL = fit.filter(gorunur), midL = mid.filter(gorunur), gizli = fit.length + mid.length - fitL.length - midL.length;
     const satir = r => kilit.has(r.x.id) ? `<li class="item kilitli-satir"><button type="button" data-kilit="1"><span aria-hidden="true">${esc(r.x.ad)}</span><span class="k-kilit">🔒 Hesap açınca görünür</span></button></li>` : itemRow(r.x, r.c);
-    $("#liste").innerHTML = (fit.length ? `<h2 style="margin:18px 0 4px">Uygun olabilir</h2><ul class="list">${fit.map(satir).join("")}</ul>` : "") +
-      (mid.length ? `<h2 style="margin:28px 0 4px">Kısmen uygun</h2><p class="muted small">Bir koşulu karşılamıyorsun ama yakınsın. Ayrıntıya bakarak ne gerektiğini görebilirsin.</p><ul class="list">${mid.map(satir).join("")}</ul>` : "");
+    $("#liste").innerHTML = (fitL.length ? `<h2 style="margin:18px 0 4px">Uygun olabilir</h2><ul class="list">${fitL.map(satir).join("")}</ul>` : "") +
+      (midL.length ? `<h2 style="margin:28px 0 4px">Kısmen uygun</h2><p class="muted small">Bir koşulu karşılamıyorsun ama yakınsın. Ayrıntıya bakarak ne gerektiğini görebilirsin.</p><ul class="list">${midL.map(satir).join("")}</ul>` : "") +
+      (gizli ? `<p class="small muted" style="margin-top:18px">Hedefinle ilgisi olmayan${misafir ? "" : " veya şartına “Hayır” dediğin"} ${gizli} destek bu listede yok. Hepsini <a ${link("destekler")}>Tüm destekler</a> sayfasında görebilirsin.</p>` : "");
   }
   $$("#liste [data-kilit]").forEach(b => b.onclick = kaydolAc);
   // Yapay zekâ yorumu
@@ -478,7 +496,7 @@ P.sonuclar = async () => {
       } catch { toast("Yapay zekâ şu an yanıt vermedi. Biraz sonra tekrar dene."); b.disabled = false; b.textContent = "Yapay zekâ yorumlasın"; }
     };
   }
-  $("#rapor-btn").onclick = () => { if (!secim) D.LS.set("secim", fit.slice(0, 8).map(r => r.x.id)); go("rapor"); };
+  $("#rapor-btn").onclick = () => { if (!secim) D.LS.set("secim", fit.filter(r => hedefeUy(r) && sartDurum(r.x) !== "hayir").slice(0, 8).map(r => r.x.id)); go("rapor"); };
 };
 
 /* ---------- Destek ayrıntısı ---------- */
@@ -506,8 +524,11 @@ P.destek = async () => {
         <p class="small muted">Bu program Bakanlığın Destekler Platformu’nda yok; bilgiler <a href="${esc(x.sayfa.url)}" target="_blank" rel="noopener">${esc(x.sayfa.kaynak)} sayfasından</a> otomatik alındı ve <strong>değiştirilmeden</strong> gösteriliyor. Başvuru tarihleri ve şartlar için kurumun sayfasını mutlaka kontrol et. Son kontrol: ${new Date(x.sayfa.kontrol).toLocaleDateString("tr-TR")}.</p>
         ${x.sayfa.metin ? `<div class="resmi-metin">${D.terim(x.sayfa.metin)}</div>` : ""}</section>` : ""}
       ${x.resmi ? `<section class="sec resmi"><h2>Resmi özet bilgi formu</h2>
-        <p class="small muted">Aşağıdaki metin <a href="${esc(x.resmi.sayfa)}" target="_blank" rel="noopener">${esc(x.resmi.kaynak)}</a> sayfasındaki özet bilgi formundan <strong>değiştirilmeden</strong> alınmıştır.${x.resmi.guncelleme ? ` Kaynağın güncellenme tarihi: ${new Date(x.resmi.guncelleme).toLocaleDateString("tr-TR")}.` : ""} Son kontrol: ${new Date(x.resmi.kontrol).toLocaleDateString("tr-TR")}.</p>
-        ${x.resmi.bolumler.length ? x.resmi.bolumler.map(b => `<h3>${esc(b.baslik)}</h3><div class="resmi-metin">${D.terim(b.metin)}</div>`).join("") : `<p>Bu program için platformda özet bilgi formu yok. Ayrıntılar için aşağıdaki resmi belgelere bak.</p>`}
+        ${x.resmi.bolumler.length ? `<p class="small muted">Aşağıdaki metin <a href="${esc(x.resmi.sayfa)}" target="_blank" rel="noopener">${esc(x.resmi.kaynak)}</a> sayfasındaki özet bilgi formundan <strong>değiştirilmeden</strong> alınmıştır.${x.resmi.guncelleme ? ` Kaynağın güncellenme tarihi: ${new Date(x.resmi.guncelleme).toLocaleDateString("tr-TR")}.` : ""} Son kontrol: ${new Date(x.resmi.kontrol).toLocaleDateString("tr-TR")}.</p>`
+          + x.resmi.bolumler.map(b => `<h3>${esc(b.baslik)}</h3><div class="resmi-metin">${D.terim(b.metin)}</div>`).join("")
+          : x.dogrulama ? `<p class="small muted"><a href="${esc(x.resmi.sayfa)}" target="_blank" rel="noopener">${esc(x.resmi.kaynak)}</a> bu program için özet bilgi formu yayımlamıyor. Kapsam aşağıda resmi belgeden (<a href="${esc(x.dogrulama.url)}" target="_blank" rel="noopener">${esc(x.dogrulama.belge)}</a>) <strong>değiştirilmeden</strong> alınmıştır. Son kontrol: ${new Date(x.dogrulama.kontrol).toLocaleDateString("tr-TR")}.</p>`
+            + x.dogrulama.bolumler.map(b => `<h3>${esc(b.baslik)}</h3><div class="resmi-metin">${D.terim(b.metin)}</div>`).join("")
+          : `<p><a href="${esc(x.resmi.sayfa)}" target="_blank" rel="noopener">${esc(x.resmi.kaynak)}</a> bu program için özet bilgi formu yayımlamıyor. Kimlerin başvurabileceğini ve şartları ${x.resmi.belgeler.length ? "aşağıdaki resmi belgelerden" : "kurumun sayfasından"} kontrol et; bu desteğin uygunluk değerlendirmesi yalnızca ölçek, il ve hedefe göre yapıldı.</p>`}
         ${x.resmi.belgeler.length ? `<h3>Resmi belgeler</h3><ul class="docs">${x.resmi.belgeler.map(d => `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.ad)}</a></li>`).join("")}</ul>` : ""}</section>` : ""}
       <section class="sec"><h2>${p ? "Sana uygunluk" : "Başvuru koşulları"}</h2>
         <ul class="fit">${c.r.map(r => `<li class="${r.ok ? "y" : "n"}">${esc(r.t)}</li>`).join("")}${x.resmi || x.sayfa ? "" : (x.kosullar || []).map(k => `<li class="q">${esc(k)}</li>`).join("")}</ul>
@@ -629,10 +650,12 @@ P.basvuru = async () => {
 P.rapor = async () => {
   const p = await Store.profile(); const d = await D.data();
   if (!p || !p.olcek) { go("bul"); return; }
-  let ids = D.LS.get("secim", []); if (!ids.length) ids = d.destekler.filter(x => D.check(x, p).level === "ok").slice(0, 8).map(x => x.id);
+  let ids = D.LS.get("secim", []);
+  if (!ids.length) ids = d.destekler.map(x => ({ x, c: D.check(x, p) })).filter(({ x, c }) => c.level === "ok" && (!(p.amaclar || []).length || (x.amac || []).some(a => p.amaclar.includes(a))) && sartDurum(x) !== "hayir")
+    .sort((a, b) => b.c.score - a.c.score).slice(0, 8).map(r => r.x.id);
   const list = ids.map(id => d.destekler.find(x => x.id === id)).filter(Boolean).map(x => ({ x, c: D.check(x, p) }));
   const belgeler = [...new Set(list.flatMap(r => r.x.belgeler || []))];
-  const sirali = [...list].sort((a, b) => (a.x.son_basvuru || "9999").localeCompare(b.x.son_basvuru || "9999") || b.c.score - a.c.score);
+  const sirali = [...list].sort((a, b) => sonTarih(a.x).localeCompare(sonTarih(b.x)) || b.c.score - a.c.score);
   const sz = D.classify(num(p.calisan), num(p.ciro), num(p.bilanco));
   const profKV = [["Firma", p.firmaUnvani], ["İş tanımı", p.isTanimi], ["Sektör", (p.sektorler || []).map(s => SEKTOR[s]).join(", ")], ["İl", p.il], ["Kuruluş yılı", p.kurulusYili], ["Çalışan sayısı", p.calisan], ["Yıllık net satış", p.ciro ? tl(num(p.ciro)) : ""], ["İhtiyaçlar", (p.amaclar || []).map(a => AMAC[a]).join(", ")]];
   let giris = "";
@@ -644,7 +667,7 @@ P.rapor = async () => {
       <h2>2. Ölçek değerlendirmesi</h2><p><strong>${esc(OLCEK[p.olcek])}.</strong> ${esc(sz?.neden || "")} (KOBİ Yönetmeliği, 7 Ağustos 2025 değişikliği)</p>
       <h2>3. Önerilen destekler (${list.length})</h2>
       <ul class="list">${list.map(r => itemRow(r.x, r.c)).join("")}</ul>
-      <h2>4. Başvuru yol haritası</h2><div class="timeline">${sirali.map((r, i) => `<div><strong>${i + 1}. ${esc(r.x.ad)}</strong><br><span class="small muted">${r.x.son_basvuru ? "Son başvuru " + new Date(r.x.son_basvuru).toLocaleDateString("tr-TR") : "Çağrıya bağlı / sürekli"} · ${({ pdf: "form doldurulur", online: "online başvuru", bilgi: "bilgi raporu" })[r.x.basvuru.yontem]}</span></div>`).join("")}</div>
+      <h2>4. Başvuru yol haritası</h2><div class="timeline">${sirali.map((r, i) => `<div><strong>${i + 1}. ${esc(r.x.ad)}</strong><br><span class="small muted">${tarihli(r.x) ? "Son başvuru " + new Date(r.x.son_basvuru).toLocaleDateString("tr-TR") : "Çağrıya bağlı / sürekli"} · ${({ pdf: "form doldurulur", online: "online başvuru", bilgi: "bilgi raporu" })[r.x.basvuru.yontem]}</span></div>`).join("")}</div>
       <h2>5. Hazırlanması gereken belgeler</h2><ul>${belgeler.map(b => `<li>${esc(b)}</li>`).join("")}</ul>
       <p class="small muted" style="margin-top:20px">Bu rapor bilgilendirme amaçlıdır; tutar, oran ve tarihleri kurumların resmi sayfalarından doğrula.</p></div>`;
   };
@@ -659,7 +682,7 @@ P.rapor = async () => {
         { h2: "1. İşletme profili" }, { kv: profKV.filter(([, v]) => v) },
         { h2: "2. Ölçek değerlendirmesi" }, { p: `${OLCEK[p.olcek]}. ${sz?.neden || ""} (KOBİ Yönetmeliği, 7 Ağustos 2025 değişikliği)` },
         { h2: `3. Önerilen destekler (${list.length})` }, ...list.flatMap(r => [{ p: `${r.x.ad} – ${r.x.kurum}` }, { small: `${TUR[r.x.tur]}${r.x.ust_limit ? ", üst limit " + tl(r.x.ust_limit) : ""}${r.x.destek_orani ? ", destek oranı %" + r.x.destek_orani : ""}. ${r.x.ozet}` }]),
-        { h2: "4. Başvuru yol haritası" }, { ol: sirali.map(r => `${r.x.ad} (${r.x.son_basvuru ? "son başvuru " + new Date(r.x.son_basvuru).toLocaleDateString("tr-TR") : "çağrıya bağlı / sürekli"})`) },
+        { h2: "4. Başvuru yol haritası" }, { ol: sirali.map(r => `${r.x.ad} (${tarihli(r.x) ? "son başvuru " + new Date(r.x.son_basvuru).toLocaleDateString("tr-TR") : "çağrıya bağlı / sürekli"})`) },
         { h2: "5. Hazırlanması gereken belgeler" }, { ul: belgeler },
         { small: "Bu rapor bilgilendirme amaçlıdır; tutar, oran ve tarihleri kurumların resmi sayfalarından doğrula." }
       ], "Başvuru özet raporu");

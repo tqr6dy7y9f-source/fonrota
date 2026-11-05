@@ -23,6 +23,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import eleme
+import duzeltme
 from yatirimadestek import ratios, tur_bul, AMAC_KURALLARI as PLATFORM_AMAC
 
 ROOT = Path(__file__).resolve().parent
@@ -313,6 +314,9 @@ def main():
         for m in json.loads(manual_path.read_text(encoding="utf-8")):
             m["kaynak"] = "dogrulanmis"
             items[m["id"]] = {**items.get(m["id"], {}), **m}
+
+    # Resmi belgeden elle doğrulanmış kapsam düzeltmeleri (ör. özet formu olmayan bölgesel programlar)
+    print(duzeltme.uygula(list(items.values())), "elle doğrulanmış düzeltme uygulandı")
 
     today = date.today().isoformat()
     active = [i for i in items.values() if not i.get("son_basvuru") or i["son_basvuru"] >= today]

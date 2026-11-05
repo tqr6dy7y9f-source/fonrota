@@ -334,7 +334,8 @@
    "geri_odemeli": false,
    "oran_metin": null,
    "amac": [
-    "yatirim"
+    "yatirim",
+    "bolgesel"
    ],
    "olcek": [
     "mikro",
@@ -343,10 +344,36 @@
     "buyuk"
    ],
    "sektor": [
-    "tumu"
+    "imalat",
+    "bilisim",
+    "hizmet"
    ],
    "il": [
-    "tumu"
+    "Adıyaman",
+    "Ağrı",
+    "Ardahan",
+    "Batman",
+    "Bayburt",
+    "Bingöl",
+    "Bitlis",
+    "Diyarbakır",
+    "Elazığ",
+    "Erzincan",
+    "Erzurum",
+    "Gümüşhane",
+    "Hakkari",
+    "Iğdır",
+    "Kars",
+    "Kilis",
+    "Malatya",
+    "Mardin",
+    "Muş",
+    "Siirt",
+    "Sivas",
+    "Şanlıurfa",
+    "Şırnak",
+    "Tunceli",
+    "Van"
    ],
    "son_basvuru": "2026-12-31",
    "ozet": "Cazibe Merkezleri Programı Yatırım Desteği",
@@ -402,7 +429,22 @@
      }
     ]
    },
-   "destek_orani": null
+   "destek_orani": null,
+   "dogrulama": {
+    "belge": "Cazibe Merkezleri Programı Kapsamında Yatırımların Desteklenmesi Hakkında Karar",
+    "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar_cazibe_merkezleri_destek_programi.pdf",
+    "kontrol": "2026-11-05",
+    "bolumler": [
+     {
+      "baslik": "Madde 1 (2): Kapsam",
+      "metin": "Bu Karar, EK-1'de yer alan Cazibe Merkezleri Programı kapsamındaki illerde; özel sektör tarafından gerçekleştirilecek imalat sanayii yatırımları (US-97 Kodu: 15-37) ile çağrı merkezi ve veri merkezi yatırım projeleri için sağlanacak destekleri kapsar."
+     },
+     {
+      "baslik": "EK-1: Cazibe Merkezleri Programı kapsamındaki iller",
+      "metin": "1. Adıyaman\n2. Ağrı\n3. Ardahan\n4. Batman\n5. Bayburt\n6. Bingöl\n7. Bitlis\n8. Diyarbakır\n9. Elazığ\n10. Erzincan\n11. Erzurum\n12. Gümüşhane\n13. Hakkâri\n14. Iğdır\n15. Kars\n16. Kilis\n17. Malatya\n18. Mardin\n19. Muş\n20. Siirt\n21. (Ek: RG-29/12/2021-31704) Sivas (Demirağ Organize Sanayi Bölgesinde gerçekleştirilecek imalat sanayii yatırımları (US-97 Kodu: 15-37))\n22. Şanlıurfa\n23. Şırnak\n24. Tunceli\n25. Van"
+     }
+    ]
+   }
   },
   {
    "id": "yd-8a1cb3cb",
