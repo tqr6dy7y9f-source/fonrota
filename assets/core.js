@@ -142,7 +142,7 @@ const Store = {
     if (!s) { const accounts = LS.get("accounts", {}); if (accounts[email]) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap."); accounts[email] = { ad, password }; LS.set("accounts", accounts); LS.set("user", { email, ad, ...(yonetici(email) ? { rol: "admin" } : {}) }); await this.saveProfile(profil); return; }
     const p = { ...profil }; const c = classify(num(p.calisan), num(p.ciro), num(p.bilanco)); if (c) { p.olcek = c.olcek; p.olcekAdi = OLCEK[c.olcek]; }
     // Profil, kayıtla birlikte gönderilir; veritabanındaki tetikleyici hesabı ve profili birlikte kaydeder.
-    const { data, error } = await s.auth.signUp({ email, password, options: { data: { ad, profil: p }, emailRedirectTo: location.origin + location.pathname.replace(/[^/]*$/, "") + "hesap.html" } });
+    const { data, error } = await s.auth.signUp({ email, password, options: { data: { ad, full_name: ad, display_name: ad, profil: p }, emailRedirectTo: location.origin + location.pathname.replace(/[^/]*$/, "") + "hesap.html" } });
     if (error) throw new Error(/registered|exists/i.test(error.message) ? "Bu e-posta ile zaten bir hesap var. Giriş yap." : /password/i.test(error.message) ? "Şifre çok zayıf. Daha uzun bir şifre seç." : sbHata(error.message));
     if (data.user && !(data.user.identities || []).length) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap.");
     if (!data.session) { yerelHesapVerisiniSil(false); return { onayGerekli: true }; }
