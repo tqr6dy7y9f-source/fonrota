@@ -2,6 +2,8 @@
 // hesaplar ve bildirimler tarayıcıda saklanır, AI yerine kural tabanlı analiz kullanılır.
 window.CONFIG = {
   SITE_ADI: "FonRota",
+  // Sitenin yayındaki adresi: sunum QR kodu bununla üretilir ("python tools/pwa.py").
+  SITE_URL: "https://tqr6dy7y9f-source.github.io/fonrota/",
   // Sitenin sahibi: telif notlarında, sayfa üst bilgisinde (görünmez) ve indirilen PDF'lerin dosya bilgilerinde kullanılır.
   // Değiştirince "python tools/imza.py" çalıştırın; HTML sayfalarındaki görünmez telif bilgisi de güncellenir.
   SAHIP: "[Ad Soyad]",

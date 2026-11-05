@@ -23,19 +23,19 @@ const SIRKET = ["Şahıs şirketi", "Limited şirket", "Anonim şirket", "Kooper
 
 /* Profil alanları: etiket, tür, kayıtta sorulur mu */
 const ALANLAR = {
-  firmaUnvani: { e: "Firma ünvanı", k: true, ac: "organization" },
-  vkn: { e: "Vergi kimlik no", k: true, ph: "10 haneli" },
-  vergiDairesi: { e: "Vergi dairesi", k: true },
-  sirketTuru: { e: "Şirket türü", k: true, sec: SIRKET },
-  kurulusYili: { e: "Kuruluş yılı", k: true, t: "number" },
-  naceKodu: { e: "NACE kodu", k: true, ph: "ör. 31.09", yardim: "Vergi levhanda ‘ana faaliyet kodu’ olarak yazar." },
-  calisan: { e: "Çalışan sayısı", k: true, t: "number" },
-  ciro: { e: "Yıllık net satış (TL)", k: true, t: "number" },
-  yetkili: { e: "Yetkili adı soyadı", k: true, ac: "name" },
+  firmaUnvani: { e: "Firma ünvanı", k: true, ac: "organization", nerede: "Vergi levhanda ve ticaret sicil gazetende yazan tam ünvan (ör. “… Mobilya Sanayi ve Ticaret Ltd. Şti.”). Kısaltmadan, aynen yaz." },
+  vkn: { e: "Vergi kimlik no", k: true, ph: "10 haneli", nerede: "Vergi levhanın üst kısmında “Vergi Kimlik No” olarak yazar; şirketlerde 10 hanelidir. Şahıs işletmelerinde T.C. kimlik numaran vergi kimlik numarası yerine geçer." },
+  vergiDairesi: { e: "Vergi dairesi", k: true, nerede: "Vergi levhanda, bağlı olduğun vergi dairesinin adı yazar. Levhan elinde yoksa Gelir İdaresi’nin internet vergi dairesinden indirebilir ya da muhasebecinden isteyebilirsin." },
+  sirketTuru: { e: "Şirket türü", k: true, sec: SIRKET, nerede: "Ünvanın sonundan anlaşılır: “Ltd. Şti.” limited, “A.Ş.” anonim şirkettir. Ünvanında bunlar yoksa genellikle şahıs işletmesidir. Ticaret sicil gazetende de yazar." },
+  kurulusYili: { e: "Kuruluş yılı", k: true, t: "number", nerede: "Şirketin kurulduğu yıl. Ticaret sicil gazetende tescil tarihi, vergi levhanda “işe başlama tarihi” olarak görebilirsin." },
+  naceKodu: { e: "NACE kodu", k: true, ph: "ör. 31.00.01", nerede: "Vergi levhanda faaliyet kodu olarak 6 haneli yazar (ör. 31.00.01). İlk 4 hane (31.00) faaliyet sınıfını gösterir; formda kaç haneli istendiyse onu yaz. Bilmiyorsan aşağıdaki “NACE kodumu bul” ile işine yakın kodları görebilirsin; kesin kodun vergi levhandakidir." },
+  calisan: { e: "Çalışan sayısı", k: true, t: "number", nerede: "SGK’ya bildirdiğin sigortalı çalışan sayısı. Muhasebecin veya SGK işveren sistemindeki aylık bildirgelerden öğrenebilirsin. KOBİ hesabında yıllık ortalama çalışan sayısı esas alınır." },
+  ciro: { e: "Yıllık net satış (TL)", k: true, t: "number", nerede: "Son kapanan yılın gelir tablosundaki “net satışlar” tutarı. Yıllık gelir veya kurumlar vergisi beyannamende yer alır; muhasebecin hemen söyleyebilir." },
+  yetkili: { e: "Yetkili adı soyadı", k: true, ac: "name", nerede: "Şirket adına imza atmaya yetkili kişi. Kimin yetkili olduğu imza sirkülerinde yazar; şahıs işletmesinde işletme sahibidir." },
   telefon: { e: "Telefon", k: true, t: "tel", ac: "tel" },
   eposta: { e: "E-posta", k: true, t: "email", ac: "email" },
   il: { e: "İl", k: true, sec: ILLER, ac: "address-level1" },
-  adres: { e: "Adres", k: true, ac: "street-address" },
+  adres: { e: "Adres", k: true, ac: "street-address", nerede: "Vergi levhandaki iş yeri adresi. Başvurularda genellikle bu adres istenir." },
   projeAdi: { e: "Proje adı" },
   projeOzeti: { e: "Proje özeti", uzun: true },
   projeSuresi: { e: "Proje süresi (ay)", t: "number" },
@@ -111,7 +111,7 @@ async function supa() {
    Profili boşsa ilk girişte aşağıdaki örnek (test) profil yüklenir. */
 const yonetici = email => (C.YONETICI_EPOSTALARI || []).map(e => e.toLowerCase()).includes(String(email || "").toLowerCase());
 const TEST_PROFIL = { firmaUnvani: "TechNova Mobilya Ltd. Şti. (TEST)", vkn: "0000000000", vergiDairesi: "Samsun", sirketTuru: "Limited şirket",
-  kurulusYili: "2018", naceKodu: "31.09", calisan: "25", ciro: "40000000", yetkili: "Test Yönetici", telefon: "0000 000 00 00",
+  kurulusYili: "2018", naceKodu: "31.00.01", calisan: "25", ciro: "40000000", yetkili: "Test Yönetici", telefon: "0000 000 00 00",
   eposta: "test@fonrota.local", il: "Samsun", adres: "Test adresi", isletmeTipi: "sirket", sektorler: ["imalat"], amaclar: ["yatirim", "ihracat"],
   ihracat: true, borcYok: true, isTanimi: "Samsun’da 25 kişiyle mobilya üretiyoruz. CNC makinesi almak ve ihracata başlamak istiyoruz.", test: true };
 /* Supabase bağlıyken hesap verileri tarayıcıda tutulmaz. Bu anahtarlar yalnızca hesapsız (misafir) test için
@@ -625,5 +625,48 @@ async function enablePush() {
 }
 
 try { console.info(`%c${C.SITE_ADI || "FonRota"}%c © ${new Date().getFullYear()} ${C.SAHIP || ""}. Tüm hakları saklıdır.`, "font-weight:700;color:#B9832A", "color:inherit"); } catch {}
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, yonetici, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
+if ("serviceWorker" in navigator && location.protocol === "https:") addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+/* ---------- NACE kodu bulucu (Ticaret Bakanlığı / TÜİK NACE Rev.2.1 listesi) ---------- */
+let NACE = null;
+async function naceVeri() {
+  if (!NACE) NACE = assetJSON("assets/nace.json").then(v => { if (!v) throw new Error("NACE listesi okunamadı"); return { ...v, kodlar: v.kodlar.map(([k, t]) => ({ k, t, ...naceIndeks(t) })) }; });
+  return NACE.catch(e => { NACE = null; throw e; });
+}
+const sade = t => low(t).replace(/[çğıöşüâîû]/g, c => ({ ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u", â: "a", î: "i", û: "u" })[c]);
+const NACE_DUR = new Set("ve ile icin bir bu da de olarak yapan yapiyoruz yapmak istiyoruz istiyorum almak baslamak kurmak biz ben kisiyle kisi kisilik sirket sirketi firma firmasi isletme isletmesi olan gibi vb diger baska yerde siniflandirilmamis dahil haric buro burosu ofis yeni cok her tum".split(" "));
+// Eş anlamlılar: kelimenin kendisine EK olarak aranır (yerine geçmez)
+const NACE_ES = [[/^uret|^imal|^fabrika|^atolye/, ["imal"]], [/^sat|^ticaret/, ["ticaret"]], [/^magaza|^dukkan|^perakende/, ["perakende"]], [/^toptan/, ["toptan"]],
+  [/^tamir|^onar|^servis/, ["onarim", "bakim"]], [/^oto$|^otomobil|^araba|^arac/, ["motorlu", "otomobil"]], [/^nakliy|^nakliye|^lojistik/, ["yuk", "tasimacilig"]], [/^kargo|^kurye/, ["kurye", "posta"]],
+  [/^yazilim|^uygulama|^mobil uygulama/, ["programlama", "yazilim"]], [/^restoran|^lokanta/, ["lokanta"]], [/^kafe|^cafe/, ["icecek", "kafe"]], [/^firin|^pastane/, ["ekmek", "pastane", "unlu"]],
+  [/^sera/, ["sebze", "ortu"]], [/^ciftlik|^tarla|^ciftci/, ["yetistir"]], [/^insaat|^muteahhit|^yapi/, ["insaat", "bina"]], [/^eticaret|^internet|^online/, ["internet"]],
+  [/^konfeksiyon|^hazir|^dikim|^terzi/, ["giyim"]], [/^muhasebe|^mali musavir/, ["muhasebe", "defter"]], [/^kuafor|^berber/, ["kuafor", "berber"]], [/^danisman/, ["danismanlik"]]];
+const NACE_NIYET = [[/^uret|^imal|^fabrika|^atolye|^konfeksiyon|^dikim/, k => k >= "10" && k < "33"], [/^sat|^magaza|^dukkan|^perakende/, k => k >= "45" && k < "48"], [/^tamir|^onar|^servis/, k => /^(33|45\.2|95)/.test(k)], [/^ciftlik|^tarla|^ciftci|^sera|^yetistir/, k => k < "04"]];
+const NACE_IL = new Set(ILLER.map(i => sade(i)));
+function naceIndeks(t) {
+  const ana = sade(t.replace(/\([^)]*\)/g, " ")), ek = sade((t.match(/\(([^)]*)\)/g) || []).join(" ").replace(/[^()]*hari[cç][^()]*/gi, " "));
+  const kel = x => x.split(/[^a-z0-9]+/).filter(w => w.length > 2);
+  return { a: kel(ana), e: kel(ek) };
+}
+const naceKok = w => w.slice(0, Math.max(4, Math.min(6, w.length - 2)));
+async function naceAra(q, n = 8) {
+  const v = await naceVeri(); const N = v.kodlar.length;
+  if (/^[\d.\s]+$/.test(q.trim())) { const kod = q.replace(/[^\d]/g, ""); return kod.length >= 2 ? v.kodlar.filter(x => x.k.replace(/\./g, "").startsWith(kod)).slice(0, n) : []; }
+  const kelime = sade(q).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !NACE_IL.has(w) && !/^\d+$/.test(w));
+  const gruplar = kelime.map(w => [...new Set([...(NACE_DUR.has(w) ? [] : [naceKok(w)]), ...NACE_ES.filter(([r]) => r.test(w)).flatMap(([, e]) => e)])]).filter(g => g.length);
+  if (!gruplar.length) return [];
+  v.df = v.df || new Map();
+  const idf = k => { if (!v.df.has(k)) v.df.set(k, v.kodlar.filter(x => x.a.some(w => w.startsWith(k))).length); const d = v.df.get(k); return d ? Math.log(1 + N / d) : 0; };
+  const niyet = NACE_NIYET.filter(([r]) => kelime.some(w => r.test(w))).map(([, f]) => f);
+  const enIdf = Math.max(...gruplar.flat().map(idf), 1);
+  const puan = x => gruplar.reduce((p, g) => p + Math.max(0, ...g.map(k => x.a.some(w => w.startsWith(k)) ? idf(k) * (x.a.slice(0, 4).some(w => w.startsWith(k)) ? 1.3 : 1) : x.e.some(w => w.startsWith(k)) ? idf(k) * .35 : 0)), 0)
+    + (niyet.some(f => f(x.k)) ? enIdf * .5 : 0);
+  // Kamu yönetimi (84) ve üyelik kuruluşları (94) sorguda istenmedikçe geride kalsın
+  const kamu = kelime.some(w => /^kamu|^belediye|^dernek|^vakif|^sendika|^oda$|^birlik/.test(w));
+  const puanS = x => puan(x) * (!kamu && /^(84|94|99)/.test(x.k) ? .5 : 1);
+  const r = v.kodlar.map(x => ({ x, p: puanS(x) })).filter(o => o.p > enIdf * .5 + .01 || (o.p > 0 && !niyet.length)).sort((a, b) => b.p - a.p || a.x.t.length - b.x.t.length);
+  const en = r.length ? r[0].p : 0;
+  return r.filter(o => o.p >= en * .55).slice(0, n).map(o => o.x);
+}
+
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, yonetici, naceAra, naceVeri, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
 })();

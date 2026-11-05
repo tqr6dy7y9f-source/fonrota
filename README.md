@@ -57,3 +57,10 @@ Bu numara değişince ziyaretçilerin tarayıcısı yeni dosyayı indirir; deği
 - `forms/kosgeb-ornek-basvuru-formu.pdf` test için üretilmiş örnek formdur. Gerçek formların alan adları farklıysa `forms/maps/<form-adı>.json` ile eşle (`{"pdf_alan_adi": "firmaUnvani"}`).
 - Taranmış (doldurulamaz) PDF'lerde bilgiler forma ek sayfa olarak eklenir.
 - Yerelde deneme: `python -m http.server` → http://localhost:8000
+
+## Kolaylık özellikleri
+- **Nereden bulurum?** Form alanlarının altında (VKN, vergi dairesi, NACE, çalışan sayısı, ciro…) kısa açıklama.
+- **NACE kodu bulucu:** `assets/nace.json`, Ticaret Bakanlığı'nın TÜİK NACE Rev.2.1 listesinden üretilir. Liste güncellenince dosyayı indirip `python tools/nace.py "Sektör Meslek Nace Kodları_….xlsx"` çalıştır.
+- **Telefona kurulum ve QR:** `python tools/pwa.py` simgeleri, `manifest.webmanifest` dosyasını ve `config.js > SITE_URL` adresinin QR kodunu (`assets/qr.svg`) üretir.
+- **Başvuru adım takibi** (Hesap › Başvurularım), **kapanışı yaklaşan destekler** kutusu ve üst menüde **yazı boyutu** (A) düğmesi.
+

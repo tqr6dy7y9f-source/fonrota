@@ -19,9 +19,11 @@ async function layout(page) {
       <a ${link("bul")}${cur("bul")} class="hide-m">Uygunluk testi</a>
       ${u ? `<a ${link("hesap")}${cur("hesap")} id="nav-hesap">Hesabım</a>`
           : `<a ${link("hesap", "sekme=giris")}${cur("hesap")} id="nav-hesap">Giriş yap</a><a class="btn sm seal nav-cta" ${link("hesap", "sekme=kayit")}><span class="uzun">Ücretsiz hesap aç</span><span class="kisa">Hesap aç</span></a>`}
+      <button type="button" class="lang yazi" id="yazi" translate="no" aria-label="Yazı boyutu: ${YAZI_AD[yaziSeviye()]}. Değiştirmek için dokun" title="Yazı boyutu">A<span aria-hidden="true">${"+".repeat(yaziSeviye())}</span></button>
       <button type="button" class="lang" id="lang" translate="no" aria-label="${D.lang() === "en" ? "Türkçeye geç" : "Switch to English"}">${D.lang() === "en" ? "TR" : "EN"}</button>
     </nav></div>`;
   $("#lang").onclick = () => D.setLang(D.lang() === "en" ? "tr" : "en");
+  $("#yazi").onclick = () => { const s = (yaziSeviye() + 1) % YAZI.length; D.LS.set("yazi", s); yaziUygula(); const b = $("#yazi"); b.lastChild.textContent = "+".repeat(s); b.setAttribute("aria-label", `Yazı boyutu: ${YAZI_AD[s]}. Değiştirmek için dokun`); toast(`Yazı boyutu: ${YAZI_AD[s]}`); };
   karsBar();
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
@@ -50,7 +52,103 @@ function fieldHTML(k, v, opt = {}) {
   if (a.sec) input = `<select class="input" id="${id}" name="${k}"${req}><option value="">Seç</option>${a.sec.map(s => `<option${s === v ? " selected" : ""}>${esc(s)}</option>`).join("")}</select>`;
   else if (a.uzun) input = `<textarea class="input" id="${id}" name="${k}"${req}>${esc(v)}</textarea>`;
   else input = `<input class="input" id="${id}" name="${k}" type="${a.t || "text"}" value="${esc(v)}" ${a.ph ? `placeholder="${esc(a.ph)}"` : ""}${a.t === "number" ? ' inputmode="numeric" min="0"' : ""}${req}>`;
-  return `<label class="field" for="${id}"><span>${esc(a.e)}</span>${input}${a.yardim ? `<small>${esc(a.yardim)}</small>` : ""}</label>`;
+  const label = `<label class="field" for="${id}"><span>${esc(a.e)}</span>${input}${a.yardim ? `<small>${esc(a.yardim)}</small>` : ""}</label>`;
+  // "Nereden bulurum?": tıklayınca açılan kısa açıklama (etiketin dışında; tıklamak alana odaklanmaz)
+  return a.nerede ? `<div class="alan">${label}<details class="nereden"><summary>Nereden bulurum?</summary><p>${D.terim(a.nerede)}</p></details>${k === "naceKodu" && !opt.naceYok ? naceBulucuHTML(id) : ""}</div>` : label;
+}
+/* ---------- Yazı boyutu (üst menüdeki A düğmesi): sayfa içeriği ve alt bilgi büyür; tercih bu tarayıcıda kalır ---------- */
+const YAZI = [1, 1.12, 1.25], YAZI_AD = ["normal", "büyük", "çok büyük"];
+const yaziSeviye = () => { const s = +D.LS.get("yazi", 0); return s >= 0 && s < YAZI.length ? s : 0; };
+const yaziUygula = () => document.documentElement.style.setProperty("--yazi", YAZI[yaziSeviye()]);
+yaziUygula();
+
+/* ---------- Başvuru adım takibi (Hesap › Başvurularım) ---------- */
+const DURUMLAR = ["Hazırlanıyor", "Form hazır", "Başvurdum", "Sonuçlandı"];
+const durumSira = d => Math.max(0, DURUMLAR.indexOf(d || "Hazırlanıyor"));
+// Adımlar: ön koşullar (hazırlık listesiyle ortak), temel belgeler, form, kurumun resmi adımları, başvuru, sonuç
+function takipAdimlari(x, a, p) {
+  const h = (p && p.hazirlik) || {}, b = (p && p.belgeler) || {}, el = ((p && p.adimlar) || {})[x.id] || {}, ds = durumSira(a.durum);
+  const belgeHazir = D.TEMEL_BELGE.filter(t => b[t]).length;
+  return [
+    ...D.onKosullar(x).map(id => ({ k: "hz:" + id, t: D.ON_KOSUL[id].ad, ok: !!h[id] })),
+    { k: "belge", t: `Temel belgeler hazır (${belgeHazir}/${D.TEMEL_BELGE.length})`, ok: belgeHazir === D.TEMEL_BELGE.length || !!el.belge },
+    { k: "form", t: x.basvuru.form ? "Kurumun resmi formu dolduruldu" : "Başvuru hazırlık formu indirildi", ok: ds >= 1 || !!el.form },
+    ...(x.basvuru.adimlar || []).map((t, i) => ({ k: "r" + i, t, ok: !!el["r" + i], resmi: true })),
+    { k: "basvur", t: `${x.kurum} sistemine başvuru yapıldı`, ok: ds >= 2 },
+    { k: "sonuc", t: "Sonuç geldi", ok: ds >= 3 }
+  ];
+}
+function takipHTML(x, a, p) {
+  const ad = takipAdimlari(x, a, p), n = ad.filter(s => s.ok).length, yuzde = Math.round(n / ad.length * 100);
+  return `<article class="takip-kart" data-app="${esc(x.id)}">
+    <div class="takip-ust"><div><a ${link("destek", "id=" + x.id)}><b>${esc(x.ad)}</b></a><span class="small muted">${esc(x.kurum)} · son işlem ${new Date(a.tarih).toLocaleDateString("tr-TR")}${tarihli(x) ? ` · <strong>${D.daysLeft(x.son_basvuru)} gün kaldı</strong>` : ""}</span></div>
+      <label class="small"><span class="sr-only">Durum</span><select class="input" data-durum>${DURUMLAR.map(s => `<option${s === (a.durum || "Hazırlanıyor") ? " selected" : ""}>${s}</option>`).join("")}</select></label></div>
+    <div class="takip-ilerleme" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${yuzde}" aria-label="İlerleme"><i style="width:${yuzde}%"></i></div>
+    <details class="takip-adim"${a.acik ? " open" : ""}><summary>${n}/${ad.length} adım tamam</summary>
+      <ul>${ad.map(s => `<li${s.ok ? ' class="ok"' : ""}><label><input type="checkbox" data-adim="${esc(s.k)}"${s.ok ? " checked" : ""}> <span>${s.resmi ? "<small>Kurumun adımı:</small> " : ""}${D.terim(s.t)}</span></label></li>`).join("")}</ul>
+      <a class="btn ghost sm" ${link("basvuru", "id=" + x.id)}>Başvuru sayfasına git</a></details>
+  </article>`;
+}
+function takipBagla(tab, d, apps) {
+  tab.addEventListener("change", async e => {
+    const kart = e.target.closest(".takip-kart"); if (!kart) return;
+    const x = d.destekler.find(z => z.id === kart.dataset.app), a = apps.find(z => z.id === x.id);
+    const yaz = async ds => { a.durum = DURUMLAR[ds]; await Store.saveApp({ id: x.id, durum: a.durum, values: a.values || {} }); };
+    try {
+      if (e.target.matches("[data-durum]")) await yaz(DURUMLAR.indexOf(e.target.value));
+      const k = e.target.dataset.adim;
+      if (k) {
+        const on = e.target.checked, pr = await Store.profile() || {};
+        if (k.startsWith("hz:")) await Store.saveProfile({ hazirlik: { ...(pr.hazirlik || {}), [k.slice(3)]: on } });
+        else if (k === "basvur") await yaz(on ? Math.max(2, durumSira(a.durum)) : 1);
+        else if (k === "sonuc") await yaz(on ? 3 : 2);
+        else if (k === "form" && !on && durumSira(a.durum) >= 1) await yaz(0);
+        else { const el = { ...(pr.adimlar || {}) }; el[x.id] = { ...(el[x.id] || {}), [k]: on }; await Store.saveProfile({ adimlar: el }); }
+      }
+      a.acik = true; kart.outerHTML = takipHTML(x, a, await Store.profile());
+    } catch (err) { toast(err.message || "Kaydedilemedi."); }
+  });
+}
+/* Kapanışı yaklaşan, sana uygun destekler (90 gün içinde) */
+function yaklasanHTML(d, p, apps = []) {
+  const takip = new Set(apps.map(a => a.id));
+  const L = d.destekler.filter(x => tarihli(x) && D.daysLeft(x.son_basvuru) >= 0 && D.daysLeft(x.son_basvuru) <= 90)
+    .filter(x => takip.has(x.id) || (p && D.check(x, p).level !== "no" && (!(p.amaclar || []).length || (x.amac || []).some(a2 => p.amaclar.includes(a2)))))
+    .sort((a, b) => a.son_basvuru.localeCompare(b.son_basvuru));
+  return `<section class="yaklasan"><h3>⏰ Kapanışı yaklaşan, sana uygun destekler</h3>${L.length
+    ? `<ul>${L.map(x => { const g = D.daysLeft(x.son_basvuru); return `<li><a ${link("destek", "id=" + x.id)}>${esc(x.ad)}</a><span class="due ${g <= 21 ? "soon" : ""}">${g <= 0 ? "Bugün kapanıyor" : g + " gün kaldı"} · ${new Date(x.son_basvuru).toLocaleDateString("tr-TR", { day: "numeric", month: "long" })}</span><button type="button" class="btn ghost sm" data-takvim="${esc(x.id)}">📅 Takvime ekle</button></li>`; }).join("")}</ul>`
+    : `<p class="small muted">Önümüzdeki 90 günde kapanacak, profiline uyan destek yok. Desteklerin çoğu sürekli açık ya da çağrıya bağlı.</p>`}</section>`;
+}
+
+/* NACE kodu bulucu: alanın altında açılan arama; seçilen kod alana yazılır */
+const ilkCumle = t => (String(t).split(/(?<=[.!?])\s/)[0] || "").trim();
+function naceBulucuHTML(id) {
+  return `<div class="nace-bul" data-hedef="${id}"><button type="button" class="nace-ac" aria-expanded="false">🔎 NACE kodumu bul</button>
+    <div class="nace-panel" hidden><label class="small" for="${id}-q">İşini birkaç kelimeyle yaz</label><input class="input" id="${id}-q" type="search" autocomplete="off" placeholder="ör. ahşap mobilya imalatı, yazılım geliştirme">
+    <ul class="nace-liste" aria-live="polite"></ul><p class="small muted">Kaynak: Ticaret Bakanlığı’nın TÜİK NACE Rev.2.1 listesi. Bu bir öneridir; kesin kodun vergi levhanda yazar.</p></div></div>`;
+}
+document.addEventListener("click", async e => {
+  const ac = e.target.closest(".nace-ac"), sec = e.target.closest("[data-nace]");
+  if (ac) {
+    const kutu = ac.closest(".nace-bul"), pnl = $(".nace-panel", kutu), q = $("input", pnl);
+    pnl.hidden = !pnl.hidden; ac.setAttribute("aria-expanded", !pnl.hidden); if (pnl.hidden) return;
+    if (!q.value) { const pr = await Store.profile().catch(() => null); q.value = ilkCumle((pr && pr.isTanimi) || ""); }
+    q.focus(); naceListele(kutu);
+  }
+  if (sec) {
+    const kutu = sec.closest(".nace-bul"), hedef = document.getElementById(kutu.dataset.hedef);
+    hedef.value = sec.dataset.nace; hedef.dispatchEvent(new Event("input", { bubbles: true })); hedef.dispatchEvent(new Event("change", { bubbles: true }));
+    $(".nace-panel", kutu).hidden = true; $(".nace-ac", kutu).setAttribute("aria-expanded", "false"); toast(`NACE kodu yazıldı: ${sec.dataset.nace}`);
+  }
+});
+let naceZ;
+document.addEventListener("input", e => { const k = e.target.closest(".nace-panel input"); if (k) { clearTimeout(naceZ); naceZ = setTimeout(() => naceListele(k.closest(".nace-bul")), 200); } });
+async function naceListele(kutu) {
+  const q = $(".nace-panel input", kutu).value.trim(), ul = $(".nace-liste", kutu);
+  if (q.length < 3) { ul.innerHTML = `<li class="muted small">Ne yaptığını yaz: ör. “mobilya imalatı”, “oto tamiri”, “yazılım”.</li>`; return; }
+  let r = []; try { r = await D.naceAra(q); } catch { ul.innerHTML = `<li class="missing small">Liste yüklenemedi. İnternet bağlantını kontrol et.</li>`; return; }
+  ul.innerHTML = r.length ? r.map(x => `<li><button type="button" data-nace="${esc(x.k)}"><b>${esc(x.k)}</b><span>${esc(x.t)}</span></button></li>`).join("")
+    : `<li class="muted small">Eşleşen kod bulunamadı. Başka kelimeyle dene (ör. “üretim” yerine ürünün adı).</li>`;
 }
 const formValues = form => Object.fromEntries([...new FormData(form).entries()].map(([k, v]) => [k, typeof v === "string" ? v.trim() : v]));
 
@@ -107,7 +205,26 @@ P.index = async () => {
     } else pl.start();
   }
   window.__player = pl;
+  kurBolumu();
 };
+
+/* Telefona kurulum: Android/Chrome'da yükleme penceresi, iPhone'da Paylaş › Ana Ekrana Ekle yönergesi; masaüstünde QR kod */
+let kurIstemi = null;
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); kurIstemi = e; const b = document.getElementById("kur-btn"); if (b) b.hidden = false; });
+function kurBolumu() {
+  const kutu = $("#kur"); if (!kutu) return;
+  const kurulu = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+  if (kurulu) { kutu.hidden = true; return; }
+  const ua = navigator.userAgent, ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1), android = /Android/.test(ua);
+  const telefon = ios || android || matchMedia("(max-width: 700px)").matches;
+  $("#kur-qr").hidden = telefon;
+  $("#kur-adim").innerHTML = (ios ? ["Safari’de alttaki <b>Paylaş</b> düğmesine (kare ve yukarı ok) dokun.", "Listeden <b>Ana Ekrana Ekle</b>’yi seç.", "Sağ üstteki <b>Ekle</b>’ye dokun; FonRota simgesi ana ekranına gelir."]
+    : android ? ["Aşağıdaki <b>Uygulamayı yükle</b> düğmesine dokun.", "Düğme görünmüyorsa Chrome’da sağ üstteki <b>⋮</b> menüsünden <b>Ana ekrana ekle</b> ya da <b>Uygulamayı yükle</b>’yi seç."]
+    : ["Telefonunun kamerasını yandaki QR koda tut ve açılan bağlantıya dokun.", "iPhone’da Safari’nin <b>Paylaş</b> menüsünden, Android’de Chrome’un <b>⋮</b> menüsünden <b>Ana Ekrana Ekle</b>’yi seç.", "Bilgisayarına da kurmak istersen Chrome veya Edge’de adres çubuğundaki yükleme simgesine tıkla."]).map(t => `<li>${t}</li>`).join("");
+  $("#kur-btn").hidden = !kurIstemi;
+  $("#kur-btn").onclick = async () => { if (!kurIstemi) return; kurIstemi.prompt(); const r = await kurIstemi.userChoice.catch(() => null); kurIstemi = null; $("#kur-btn").hidden = true; if (r && r.outcome === "accepted") toast("FonRota ana ekranına eklendi."); };
+}
+addEventListener("appinstalled", () => { const k = document.getElementById("kur"); if (k) k.hidden = true; });
 
 /* ---------- Tüm destekler ---------- */
 P.destekler = async () => {
@@ -156,7 +273,7 @@ P.bul = async () => {
         ${r.ozet ? `<h3>Anladığımız kadarıyla</h3><p>${esc(r.ozet)}</p>` : `<h3>İşine göre seçtiklerimiz</h3>`}
         <p class="small muted" style="margin-top:12px">Sektörün (yanlışsa değiştir)</p>${chipsHTML(SEKTOR, r.sektorler, "sektorler")}
         <p class="small muted" style="margin-top:12px">Neye ihtiyacın var?</p>${chipsHTML(AMAC, r.amaclar, "amaclar")}
-        ${r.nace_onerisi ? `<p class="small" style="margin-top:12px">Olası faaliyet kodu: <strong>${esc(r.nace_onerisi)}</strong></p>` : ""}
+        ${r.nace_onerisi ? `<p class="small" style="margin-top:12px">Olası faaliyet kodu: <strong>${esc(r.nace_onerisi)}</strong> <span class="muted">(öneri; kesin kodun vergi levhanda yazar)</span></p>` : ""}
         ${r.ipucu ? `<p class="small">İpucu: ${esc(r.ipucu)}</p>` : ""}
         ${r.kaynak === "kural" ? `<p class="small muted">Anahtar kelimelere göre seçildi.</p>` : ""}</div>`;
       $$("#sonuc .chip").forEach(c => c.onclick = () => c.setAttribute("aria-pressed", c.getAttribute("aria-pressed") !== "true"));
@@ -168,6 +285,7 @@ P.bul = async () => {
       const b = $("#analiz"); b.disabled = true; b.textContent = "Analiz ediliyor…";
       let r = null; try { if (await D.aiAvailable()) r = await D.ai("analiz", { metin }); } catch {}
       if (!r) r = D.ruleAnalyze(metin);
+      if (!r.nace_onerisi) { const n = await D.naceAra(ilkCumle(metin), 1).catch(() => []); if (n[0]) r.nace_onerisi = `${n[0].k} ${n[0].t}`; }
       r.sektorler = (r.sektorler || []).filter(k => SEKTOR[k]); r.amaclar = (r.amaclar || []).filter(k => AMAC[k]);
       save({ isTanimi: metin, isOzet: r.ozet, naceOneri: r.nace_onerisi }); showResult(r);
       b.disabled = false; b.textContent = "Tekrar analiz et";
@@ -758,8 +876,11 @@ P.hesap = async () => {
   }
   if (s === "basvurular") {
     const apps = await Store.list("apps");
-    tab.innerHTML = apps.length ? `<div class="scroll-x"><table class="apps"><thead><tr><th>Destek</th><th>Durum</th><th>Son işlem</th><th></th></tr></thead><tbody>${apps.map(a => { const x = d.destekler.find(z => z.id === a.id); return x ? `<tr><td>${esc(x.ad)}<br><span class="small muted">${esc(x.kurum)}</span></td><td>${esc(a.durum)}</td><td>${new Date(a.tarih).toLocaleDateString("tr-TR")}</td><td><a class="btn ghost sm" ${link("basvuru", "id=" + x.id)}>Devam et</a></td></tr>` : ""; }).join("")}</tbody></table></div>`
-      : `<div class="empty"><p>Henüz bir başvuru hazırlamadın.</p><a class="btn seal" ${link("sonuclar")}>Uygun desteklerime bak</a></div>`;
+    const kutu = yaklasanHTML(d, p, apps);
+    tab.innerHTML = kutu + (apps.length ? `<p class="muted small">Her başvurunun adımlarını işaretle; ilerlemen hesabında saklanır.</p><div class="takip">${apps.map(a => { const x = d.destekler.find(z => z.id === a.id); return x ? takipHTML(x, a, p) : ""; }).join("")}</div>`
+      : `<div class="empty"><p>Henüz bir başvuru hazırlamadın.</p><a class="btn seal" ${link("sonuclar")}>Uygun desteklerime bak</a></div>`);
+    takipBagla(tab, d, apps);
+    $$("[data-takvim]", tab).forEach(b => b.onclick = () => { const x = d.destekler.find(z => z.id === b.dataset.takvim); D.indir(`${x.id}-son-basvuru.ics`, D.icsDosya(x, D.siteUrl("destek.html?id=" + encodeURIComponent(x.id))), "text/calendar"); toast("Takvim dosyası indirildi; açınca takvimine eklenir."); });
   }
   if (s === "yonetim" && admin) {
     const L = d.destekler, say = f => L.filter(f).length;
