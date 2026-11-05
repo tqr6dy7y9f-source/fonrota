@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "FonRota – Başvuru Formu Doldurucu",
   "short_name": "FonRota",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "FonRota hesabındaki firma bilgileriyle online başvuru formlarını tek tıkla doldurur. Formu göndermez; kontrol edip sen gönderirsin.",
   "default_locale": "tr",
   "icons": {
@@ -29,6 +29,26 @@
     "contextMenus"
   ],
   "host_permissions": [
-    "https://gebuzyferpvlzturxoyu.supabase.co/*"
+    "https://gebuzyferpvlzturxoyu.supabase.co/*",
+    "*://*.gov.tr/*",
+    "*://*.org.tr/*",
+    "*://*.edu.tr/*",
+    "*://*.bel.tr/*",
+    "*://*.com.tr/*",
+    "https://docs.google.com/forms/*",
+    "https://forms.office.com/*",
+    "https://tqr6dy7y9f-source.github.io/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://tqr6dy7y9f-source.github.io/fonrota/*",
+        "http://localhost/*"
+      ],
+      "js": [
+        "site.js"
+      ],
+      "run_at": "document_start"
+    }
   ]
 }

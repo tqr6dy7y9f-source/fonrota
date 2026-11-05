@@ -18,7 +18,12 @@ ayar = {"SUPABASE_URL": al("SUPABASE_URL"), "SUPABASE_ANON_KEY": al("SUPABASE_AN
 (E / "ayar.js").write_text("// tools/eklenti.py tarafından config.js'den üretilir; elle değiştirme.\nconst AYAR = " + json.dumps(ayar, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
 
 m = json.loads((E / "manifest.json").read_text(encoding="utf-8"))
-m["host_permissions"] = [ayar["SUPABASE_URL"].rstrip("/") + "/*"] if ayar["SUPABASE_URL"] else []
+from urllib.parse import urlparse
+site = urlparse(ayar["SITE_URL"]); site_kok = f"{site.scheme}://{site.netloc}/*"
+# Kurum siteleri: FonRota'dan açılan sekmede formu kendiliğinden doldurabilmek için (diğer sitelerde simgeden "Bu sayfayı doldur")
+KURUM = ["*://*.gov.tr/*", "*://*.org.tr/*", "*://*.edu.tr/*", "*://*.bel.tr/*", "*://*.com.tr/*", "https://docs.google.com/forms/*", "https://forms.office.com/*", site_kok]
+m["host_permissions"] = ([ayar["SUPABASE_URL"].rstrip("/") + "/*"] if ayar["SUPABASE_URL"] else []) + KURUM
+m["content_scripts"] = [{"matches": [ayar["SITE_URL"] + "*", "http://localhost/*"], "js": ["site.js"], "run_at": "document_start"}]
 (E / "manifest.json").write_text(json.dumps(m, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 (E / "icons").mkdir(exist_ok=True)

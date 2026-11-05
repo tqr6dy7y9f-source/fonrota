@@ -88,6 +88,27 @@
       sonuc.dolan = [...new Set(sonuc.dolan)]; sonuc.bos = [...new Set(sonuc.bos)];
       return sonuc;
     },
+    // FonRota sitesinden açılan sekme: sayfa yüklenince kendiliğinden doldur; geç yüklenen formlar için birkaç kez dener
+    otomatik(profil, adlar = {}, programAdi = "") {
+      if (window !== top && !document.querySelector("input, select, textarea")) return;
+      const toplam = new Set(), bos = new Set();
+      const tur = () => { const r = this.doldur(profil, adlar); r.dolan.forEach(x => toplam.add(x)); r.bos.forEach(x => bos.add(x)); if (window === top) rozet(); };
+      const rozet = () => {
+        let k = document.getElementById("fonrota-rozet");
+        if (!k) { k = document.createElement("div"); k.id = "fonrota-rozet"; k.setAttribute("role", "status");
+          k.style.cssText = "position:fixed;right:16px;bottom:16px;z-index:2147483647;max-width:320px;background:#12343B;color:#F3F6F4;font:14px/1.45 system-ui,sans-serif;padding:12px 14px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.3);border-left:5px solid #E0AE57";
+          document.body.appendChild(k); }
+        k.innerHTML = "";
+        const b = document.createElement("b"); b.textContent = toplam.size ? `FonRota: ${toplam.size} alan dolduruldu` : "FonRota: bu sayfada doldurulacak alan bulunamadı"; b.style.display = "block";
+        const s = document.createElement("span"); s.textContent = toplam.size ? "Altın çerçeveli alanları kontrol et, formu kendin gönder." + (bos.size ? ` Profilinde boş: ${[...bos].join(", ")}.` : "") : "Başvuru formuna geçtiğinde kendiliğinden doldurulur.";
+        const x = document.createElement("button"); x.textContent = "×"; x.setAttribute("aria-label", "Kapat"); x.style.cssText = "position:absolute;top:4px;right:8px;background:none;border:none;color:inherit;font-size:18px;cursor:pointer";
+        x.onclick = () => k.remove(); k.append(b, s, x);
+        if (programAdi) { const p = document.createElement("small"); p.textContent = programAdi; p.style.cssText = "display:block;opacity:.7;margin-top:4px"; k.append(p); }
+      };
+      tur(); setTimeout(tur, 1500); setTimeout(tur, 4000);
+      const g = new MutationObserver(() => { clearTimeout(g.t); g.t = setTimeout(tur, 600); });
+      g.observe(document.documentElement, { childList: true, subtree: true }); setTimeout(() => g.disconnect(), 20000);
+    },
     // Sağ tık menüsü: odaktaki alana seçilen bilgiyi yazar
     alanaYaz(profil, k, adlar = {}) {
       const el = document.activeElement;

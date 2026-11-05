@@ -753,14 +753,21 @@ P.basvuru = async () => {
         ${pdfOk ? `<button class="btn seal" type="button" id="dl-form">Formu doldur ve indir (PDF)</button>` : ""}
         <button class="btn ${pdfOk ? "ghost" : "seal"}" type="button" id="dl-info">${pdfOk ? "Hazırlık formunu da indir (PDF)" : "Hazırlık formunu indir (PDF)"}</button>
         <button class="btn ghost" type="button" id="muhasebe">↗ Muhasebecime gönder (PDF ile)</button><div class="paylas-sec" id="muh-sec" hidden></div>
-        ${!pdfOk && mode !== "bilgi" ? `<a class="btn ghost" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">Kurumun başvuru sitesini aç ↗</a>` : ""}
+        ${!pdfOk && mode !== "bilgi" ? (eklentiVar() ? `<a class="btn seal" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">🧩 Kurumun sitesinde otomatik doldur ↗</a><p class="small muted" style="margin:0">Kurumun sayfası açılır; başvuru formuna geldiğinde FonRota eklentisi bilgilerini kendiliğinden yazar. Kontrol edip sen gönderirsin.</p>`
+          : `<a class="btn ghost" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">Kurumun başvuru sitesini aç ↗</a><p class="small muted" style="margin:0">💡 <a ${link("eklenti")}>FonRota eklentisini</a> kurarsan kurumun sitesindeki form kendiliğinden dolar.</p>`) : ""}
       </div>
       <label class="small muted" for="durum">Başvuru durumu</label>
       <select class="input" id="durum">${["Hazırlanıyor", "Form hazır", "Başvurdum", "Sonuçlandı"].map(s => `<option${s === (app.durum || "Hazırlanıyor") ? " selected" : ""}>${s}</option>`).join("")}</select>
       ${!pdfOk && mode !== "bilgi" ? `<h3 style="margin-top:22px">Hangi alana ne yazılacak</h3><ul class="copy-list">${x.alanlar.map(k => `<li><span>${esc(ALANLAR[k]?.e)}</span><span>${values[k] ? esc(values[k]) : '<em class="missing">boş</em>'}</span>${values[k] ? `<button class="btn ghost sm" type="button" data-copy="${esc(values[k])}">Kopyala</button>` : "<span></span>"}</li>`).join("")}</ul>` : ""}`;
     $("#durum").onchange = async e => { app.durum = e.target.value; await persist(e.target.value); toast("Durum kaydedildi."); };
     $$("[data-copy]").forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "Kopyalandı"; setTimeout(() => b.textContent = "Kopyala", 1500); } catch { toast("Kopyalanamadı; metni seçip kopyala."); } });
-    if ($("#open-site")) $("#open-site").onclick = () => persist("Hazırlanıyor");
+    if ($("#open-site")) $("#open-site").onclick = async e => {
+      await persist("Hazırlanıyor").catch(() => {});
+      if (!eklentiVar()) return;
+      e.preventDefault(); Object.assign(values, formValues(form));
+      const r = await eklentiyleAc(x.basvuru.online, { ...p, ...Object.fromEntries(Object.entries(values).filter(([, v]) => v)) }, x.ad);
+      if (r.tamam) toast("Kurumun sayfası açıldı; form gelince eklenti dolduracak."); else { toast(r.hata || "Eklenti açamadı; sayfa normal açılıyor."); open(x.basvuru.online, "_blank", "noopener"); }
+    };
     if ($("#dl-form")) $("#dl-form").onclick = async () => {
       const b = $("#dl-form"); b.disabled = true; b.textContent = "Form hazırlanıyor…";
       try { await persist(); const { bytes, filled } = await D.fillForm(x, values); if (await D.saveFile(`${x.id}-basvuru-formu.pdf`, bytes)) { await persist("Form hazır"); app.durum = "Form hazır"; $("#durum").value = "Form hazır"; toast(filled ? `${filled} alan dolduruldu. İmzalayıp kuruma yükle.` : "Form doldurulamadı; bilgiler forma ek sayfa olarak eklendi."); } }
@@ -791,10 +798,30 @@ P.basvuru = async () => {
 };
 
 /* ---------- Başvuru özet raporu ---------- */
+/* ---------- FonRota eklentisiyle bağlantı ---------- */
+const eklentiVar = () => !!document.documentElement.dataset.fonrotaEklenti;
+// Eklenti kuruluysa kurumun sayfasını açtırır ve form kendiliğinden dolar. Profil siteden gönderilir (eklentide ayrıca giriş gerekmez).
+function eklentiyleAc(url, profil, ad) {
+  return new Promise(res => {
+    const dinle = e => { if (e.source === window && e.data && e.data.kaynak === "fonrota-eklenti") { removeEventListener("message", dinle); clearTimeout(z); res(e.data); } };
+    const z = setTimeout(() => { removeEventListener("message", dinle); res({ tamam: false, hata: "Eklenti yanıt vermedi." }); }, 4000);
+    addEventListener("message", dinle);
+    postMessage({ kaynak: "fonrota-site", tip: "ac", url, profil, ad }, location.origin);
+  });
+}
+
 /* ---------- Eklenti sayfası ---------- */
 P.eklenti = async () => {
   const ua = navigator.userAgent, chromium = /Chrome\/|Edg\//.test(ua) && !/Mobile/.test(ua), telefon = /iPhone|iPad|Android|Mobile/.test(ua);
-  $("#eklenti-not").textContent = telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.0 · Ücretsiz · Mağaza gerektirmez";
+  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.1 · Ücretsiz · Mağaza gerektirmez";
+  const dene = $("#dene");
+  dene.onclick = async e => {
+    if (!eklentiVar()) return;  // eklenti yoksa bağlantı deneme formunu normal açar
+    e.preventDefault(); const p = await Store.profile();
+    if (!p || !p.olcek) { toast("Önce uygunluk testini yap ya da giriş yap; form bu bilgilerle dolacak."); return; }
+    const r = await eklentiyleAc(D.siteUrl("deneme-formu.html"), p, "Deneme formu");
+    if (!r.tamam) { toast(r.hata || "Eklenti açamadı."); open(dene.href, "_blank"); }
+  };
 };
 
 P.rapor = async () => {
