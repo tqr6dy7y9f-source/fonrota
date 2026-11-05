@@ -426,3 +426,14 @@ footer.site .yazi-ayar{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:c
 .yazi-ayar button{display:inline-flex;align-items:baseline;gap:5px;font:500 13.5px Figtree,sans-serif;padding:6px 12px;border:1px solid var(--line);border-radius:99px;background:var(--surface);color:var(--ink);cursor:pointer}
 .yazi-ayar button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .yazi-ayar b{font-family:"Bricolage Grotesque",sans-serif;line-height:1}
+
+/* Logonun yanındaki yazı boyutu kutusu */
+.marka{display:flex;align-items:center;gap:10px;min-width:0}
+.yazi-kutu{position:relative;flex:none;width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer;font:700 15px "Bricolage Grotesque",sans-serif;padding:0}
+.yazi-kutu sup{font-size:10px;margin-left:1px}
+.yazi-kutu.son sup{display:none}.yazi-kutu.son::after{content:"−";font-size:12px;position:absolute;right:4px;top:2px}
+.yazi-kutu[data-seviye="1"],.yazi-kutu[data-seviye="2"]{background:var(--seal-soft);border-color:var(--seal)}
+.yazi-kutu:hover{background:var(--soft)}
+.yazi-kutu .ipucu{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);white-space:nowrap;background:var(--ink);color:var(--bg);font:500 12.5px Figtree,sans-serif;padding:6px 9px;border-radius:7px;opacity:0;pointer-events:none;transition:opacity .15s;z-index:20}
+.yazi-kutu:hover .ipucu,.yazi-kutu:focus-visible .ipucu{opacity:1}
+@media (max-width:600px){.marka{gap:7px}.yazi-kutu{width:30px;height:30px;font-size:14px}.yazi-kutu .ipucu{left:0;transform:none}}
