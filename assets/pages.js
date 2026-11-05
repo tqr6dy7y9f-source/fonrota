@@ -29,6 +29,7 @@ async function layout(page) {
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
   if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span>
+      <p class="alt-baglanti"><a ${link("eklenti")}>🧩 FonRota eklentisi: başvuru formlarını otomatik doldur</a></p>
       <div class="yazi-ayar" role="group" aria-label="Yazı boyutu"><span>Yazı boyutu:</span>${YAZI.map((_, i) => `<button type="button" data-yazi="${i}" aria-pressed="${i === yaziSeviye()}"><b style="font-size:${13 + i * 3}px">A</b> ${YAZI_AD[i][0].toUpperCase() + YAZI_AD[i].slice(1)}</button>`).join("")}</div>
       <p class="proje-notu">Bu web sitesi bir bitirme/ders projesi kapsamında geliştirilmiş prototiptir. Destek bilgileri gerçektir; T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan ve kurumların resmi sitelerinden her hafta otomatik olarak çekilir. Sitenin resmi bir devlet kurumu bağı yoktur.</p>
       <p class="telif">© ${new Date().getFullYear()} ${esc(C.SITE_ADI)}${C.SAHIP && !/^\[/.test(C.SAHIP) ? " · " + esc(C.SAHIP) : ""}. Tüm hakları saklıdır.</p></div>`; }
@@ -790,6 +791,12 @@ P.basvuru = async () => {
 };
 
 /* ---------- Başvuru özet raporu ---------- */
+/* ---------- Eklenti sayfası ---------- */
+P.eklenti = async () => {
+  const ua = navigator.userAgent, chromium = /Chrome\/|Edg\//.test(ua) && !/Mobile/.test(ua), telefon = /iPhone|iPad|Android|Mobile/.test(ua);
+  $("#eklenti-not").textContent = telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.0 · Ücretsiz · Mağaza gerektirmez";
+};
+
 P.rapor = async () => {
   const p = await Store.profile(); const d = await D.data();
   if (!p || !p.olcek) { go("bul"); return; }

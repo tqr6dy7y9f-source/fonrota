@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deneme başvuru formu – FonRota eklentisi</title>
+<meta name="description" content="FonRota eklentisini denemek için örnek online başvuru formu. Gerçek bir kurum formu değildir.">
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#EEF1F5;--kart:#fff;--yazi:#1F2933;--soluk:#5F6B7A;--cizgi:#CBD2DA;--vurgu:#2457A6}
+@media (prefers-color-scheme:dark){:root{--bg:#151A21;--kart:#1E252E;--yazi:#E6EAF0;--soluk:#9AA6B4;--cizgi:#36404C;--vurgu:#7FA8E8}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--yazi);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.bant{background:#FFF4D6;color:#5A4300;border-bottom:1px solid #E8D59A;padding:10px 16px;font-size:14px;text-align:center}
+.bant a{color:inherit;font-weight:700}
+main{max-width:760px;margin:24px auto;padding:0 16px}
+.kart{background:var(--kart);border:1px solid var(--cizgi);border-radius:10px;padding:20px 22px;margin-bottom:16px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:0 0 12px;color:var(--vurgu)}
+p.soluk{color:var(--soluk);margin:0 0 6px}
+label{display:block;font-weight:600;margin:12px 0 4px;font-size:14px}
+input,select,textarea{width:100%;padding:9px 10px;border:1px solid var(--cizgi);border-radius:6px;font:inherit;background:var(--kart);color:var(--yazi)}
+textarea{min-height:80px}
+.iki{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+@media (max-width:600px){.iki{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse}td{padding:6px 0;vertical-align:middle}td:first-child{width:42%;font-weight:600;font-size:14px;padding-right:12px}
+.soru{border:1px solid var(--cizgi);border-radius:8px;padding:12px 14px;margin-top:12px}
+.soru [role="heading"]{font-weight:600;margin-bottom:6px}
+.onay{display:flex;gap:8px;align-items:flex-start;font-weight:400}.onay input{width:auto;margin-top:4px}
+button{background:var(--vurgu);color:#fff;border:none;border-radius:6px;padding:11px 18px;font:600 15px system-ui,sans-serif;cursor:pointer}
+#gonderildi{display:none;background:#E3F3EA;color:#1D5A3A;border-radius:8px;padding:12px;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="bant">Bu sayfa <b>FonRota eklentisini denemek için</b> hazırlanmış örnek bir formdur; gerçek bir kurumun başvuru formu değildir ve hiçbir yere gönderilmez. <a href="eklenti.html">Eklentiyi kur</a></div>
+<main>
+  <div class="kart">
+    <h1>Örnek Destek Programı – Online Başvuru Formu</h1>
+    <p class="soluk">Kurumların online başvuru formlarında sık görülen alanlar ve yazım biçimleri. Eklentide <b>“Bu sayfayı doldur”</b>a bas.</p>
+  </div>
+  <form id="form" class="kart" autocomplete="off">
+    <h2>1. Başvuru sahibi işletme</h2>
+    <label for="unvan">Firma Ünvanı *</label><input id="unvan" name="firma_unvani">
+    <div class="iki">
+      <div><label>Vergi Kimlik No * <input name="vkn" inputmode="numeric"></label></div>
+      <div><label for="vd">Bağlı Olduğu Vergi Dairesi</label><input id="vd" name="vergi_dairesi"></div>
+    </div>
+    <div class="iki">
+      <div><label for="tur">Şirket Türü</label><select id="tur" name="sirket_turu"><option value="">Seçiniz</option><option>Şahıs şirketi</option><option>Limited şirket</option><option>Anonim şirket</option><option>Kooperatif</option></select></div>
+      <div><label for="yil">Kuruluş Yılı</label><input id="yil" name="kurulus_yili" type="number"></div>
+    </div>
+    <label for="nace">Ana Faaliyet (NACE) Kodu</label><input id="nace" name="nace">
+
+    <h2 style="margin-top:22px">2. Ölçek bilgileri</h2>
+    <table>
+      <tr><td>Toplam Çalışan Sayısı</td><td><input name="f12" type="number"></td></tr>
+      <tr><td>Son Yıl Net Satış Hasılatı (TL)</td><td><input name="f13"></td></tr>
+    </table>
+
+    <h2 style="margin-top:22px">3. İletişim</h2>
+    <div class="iki">
+      <div><input name="yetkili" placeholder="Yetkili Adı Soyadı"></div>
+      <div><input name="tel" placeholder="Telefon"></div>
+    </div>
+    <div class="soru" role="listitem"><div role="heading" id="q1">E-posta adresiniz</div><input aria-labelledby="q1" name="entry.1001"></div>
+    <div class="soru" role="listitem"><div role="heading" id="q2">İşletmenin bulunduğu il</div><select aria-labelledby="q2" name="entry.1002"><option value="">Seçiniz</option><option>Ankara</option><option>İstanbul</option><option>İzmir</option><option>Samsun</option><option>Trabzon</option></select></div>
+    <label for="adr">Açık Adres</label><textarea id="adr" name="adres"></textarea>
+
+    <h2 style="margin-top:22px">4. Proje</h2>
+    <label for="proje">Proje Adı</label><input id="proje" name="proje_adi">
+    <label for="ozet">Proje Özeti</label><textarea id="ozet" name="proje_ozeti"></textarea>
+    <label for="sifre">Başvuru takip şifresi belirleyin</label><input id="sifre" type="password" name="sifre">
+    <label class="onay"><input type="checkbox" name="kvkk"> Kişisel verilerin işlenmesine ilişkin aydınlatma metnini okudum.</label>
+    <p style="margin-top:16px"><button type="submit">Başvuruyu gönder</button></p>
+    <div id="gonderildi" role="status">Deneme formu: bilgiler hiçbir yere gönderilmedi. Eklentinin doldurduğu alanlar altın renkle işaretli.</div>
+  </form>
+</main>
+<script>document.getElementById("form").onsubmit = e => { e.preventDefault(); document.getElementById("gonderildi").style.display = "block"; };</script>
+</body>
+</html>

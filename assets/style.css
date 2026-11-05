@@ -437,3 +437,9 @@ footer.site .yazi-ayar{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:c
 .yazi-kutu .ipucu{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%);white-space:nowrap;background:var(--ink);color:var(--bg);font:500 12.5px Figtree,sans-serif;padding:6px 9px;border-radius:7px;opacity:0;pointer-events:none;transition:opacity .15s;z-index:20}
 .yazi-kutu:hover .ipucu,.yazi-kutu:focus-visible .ipucu{opacity:1}
 @media (max-width:600px){.marka{gap:7px}.yazi-kutu{width:30px;height:30px;font-size:14px}.yazi-kutu .ipucu{left:0;transform:none}}
+
+/* Eklenti sayfası */
+.eklenti-sayfa h2{margin-top:30px}
+.eklenti-sayfa code{background:var(--soft);padding:1px 6px;border-radius:5px;font-size:.92em}
+footer.site .alt-baglanti{flex-basis:100%;margin:10px 0 0}
+footer.site .alt-baglanti a{font-weight:600;color:var(--seal-ink)}
