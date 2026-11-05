@@ -19,18 +19,18 @@ async function layout(page) {
       <a ${link("bul")}${cur("bul")} class="hide-m">Uygunluk testi</a>
       ${u ? `<a ${link("hesap")}${cur("hesap")} id="nav-hesap">Hesabım</a>`
           : `<a ${link("hesap", "sekme=giris")}${cur("hesap")} id="nav-hesap">Giriş yap</a><a class="btn sm seal nav-cta" ${link("hesap", "sekme=kayit")}><span class="uzun">Ücretsiz hesap aç</span><span class="kisa">Hesap aç</span></a>`}
-      <button type="button" class="lang yazi" id="yazi" translate="no" aria-label="Yazı boyutu: ${YAZI_AD[yaziSeviye()]}. Değiştirmek için dokun" title="Yazı boyutu">A<span aria-hidden="true">${"+".repeat(yaziSeviye())}</span></button>
       <button type="button" class="lang" id="lang" translate="no" aria-label="${D.lang() === "en" ? "Türkçeye geç" : "Switch to English"}">${D.lang() === "en" ? "TR" : "EN"}</button>
     </nav></div>`;
   $("#lang").onclick = () => D.setLang(D.lang() === "en" ? "tr" : "en");
-  $("#yazi").onclick = () => { const s = (yaziSeviye() + 1) % YAZI.length; D.LS.set("yazi", s); yaziUygula(); const b = $("#yazi"); b.lastChild.textContent = "+".repeat(s); b.setAttribute("aria-label", `Yazı boyutu: ${YAZI_AD[s]}. Değiştirmek için dokun`); toast(`Yazı boyutu: ${YAZI_AD[s]}`); };
   karsBar();
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
   if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span>
+      <div class="yazi-ayar" role="group" aria-label="Yazı boyutu"><span>Yazı boyutu:</span>${YAZI.map((_, i) => `<button type="button" data-yazi="${i}" aria-pressed="${i === yaziSeviye()}"><b style="font-size:${13 + i * 3}px">A</b> ${YAZI_AD[i][0].toUpperCase() + YAZI_AD[i].slice(1)}</button>`).join("")}</div>
       <p class="proje-notu">Bu web sitesi bir bitirme/ders projesi kapsamında geliştirilmiş prototiptir. Destek bilgileri gerçektir; T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan ve kurumların resmi sitelerinden her hafta otomatik olarak çekilir. Sitenin resmi bir devlet kurumu bağı yoktur.</p>
       <p class="telif">© ${new Date().getFullYear()} ${esc(C.SITE_ADI)}${C.SAHIP && !/^\[/.test(C.SAHIP) ? " · " + esc(C.SAHIP) : ""}. Tüm hakları saklıdır.</p></div>`; }
+  if (ft) $$("[data-yazi]", ft).forEach(b => b.onclick = () => { D.LS.set("yazi", +b.dataset.yazi); yaziUygula(); $$("[data-yazi]", ft).forEach(x => x.setAttribute("aria-pressed", x === b)); toast(`Yazı boyutu: ${YAZI_AD[+b.dataset.yazi]}`); });
 }
 // Sürüm numarası: sayfadaki script bağlantısının ?v= değeri (tools/surum.py yeniler)
 function surum() { const m = [...document.scripts].map(x => x.src.match(/pages\.js\?v=(\d+)/)).find(Boolean); return m ? m[1] : ""; }

@@ -417,7 +417,12 @@ main p,main li,main dd,main td,main h1,main h2,main h3,.resmi-metin,.crumb{overf
 
 /* Yazı boyutu: içerik ölçeklenir (üst menü sabit kalır) */
 main,footer.site,.kars-bar{zoom:var(--yazi,1)}
-.nav .yazi{margin-left:6px;min-width:38px}.nav .yazi span{font-size:11px;vertical-align:super;margin-left:1px}
-.nav .yazi+.lang{margin-left:4px}
-@media (max-width:600px){.nav{gap:2px}.nav .lang{padding:6px 7px;margin-left:3px}.nav .yazi{min-width:30px;margin-left:4px}.nav .yazi+.lang{margin-left:3px}}
+@media (max-width:600px){.nav{gap:2px}.nav .lang{padding:6px 7px;margin-left:3px}}
 @media (max-width:380px){.brand span{font-size:19px}.nav .nav-cta{padding:7px 8px}}
+
+/* Alt bilgi: yazı boyutu seçici */
+footer.site .yazi-ayar{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px}
+.yazi-ayar span{font-weight:600;color:var(--ink);margin-right:2px}
+.yazi-ayar button{display:inline-flex;align-items:baseline;gap:5px;font:500 13.5px Figtree,sans-serif;padding:6px 12px;border:1px solid var(--line);border-radius:99px;background:var(--surface);color:var(--ink);cursor:pointer}
+.yazi-ayar button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.yazi-ayar b{font-family:"Bricolage Grotesque",sans-serif;line-height:1}
