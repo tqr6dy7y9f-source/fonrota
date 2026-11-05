@@ -23,7 +23,7 @@ Mevcut şirketlerin ve KOBİ'lerin kendilerine uygun hibe, kredi ve teşvikleri 
 3. **Supabase**: proje aç, `supabase/schema.sql`'i SQL Editor'de çalıştır. URL ve anon key'i `config.js`'e yaz.
    - Authentication > URL Configuration > **Site URL**: sitenin adresi (ör. `https://tqr6dy7y9f-source.github.io/fonrota/`); onay bağlantıları buraya döner.
    - Supabase'in yerleşik e-posta servisi yalnızca proje ekibindeki adreslere mail gönderir. Kendi SMTP'n yoksa Authentication > Sign In / Providers > Email > **Confirm email** seçeneğini kapat; yoksa ziyaretçiler kayıt olamaz.
-   - Test (yönetici) hesabı `test@fonrota.local`: e-posta onayı kapalıysa giriş sayfasındaki "Test hesabıyla gir" düğmesine ilk basışta kendiliğinden açılır. Onay açıksa Authentication > Users > Add user ile bu e-posta ve `fonrota-test` şifresiyle, "Auto Confirm User" işaretli olarak bir kez oluştur.
+   - Yönetici hesabı: `config.js` > `YONETICI_EPOSTALARI` (şu an `test@fonrota.local`). Şifre kodda yoktur; hesabı Authentication > Users > Add user ile bu e-postayla, kendi seçtiğin şifreyle ve "Auto Confirm User" işaretli olarak oluştur. Bu hesap Yönetim sekmesini görür; başkalarının verisine erişemez.
    - Supabase bağlıyken hesap, profil, şart cevapları ve başvurular yalnızca Supabase'de tutulur; tarayıcıda yalnızca oturum bilgisi kalır. Hesapsız yapılan test, giriş yapılınca hesaba aktarılır ve tarayıcıdan silinir.
 4. **Anlık bildirim**: `npx web-push generate-vapid-keys` → public key `config.js`'e, private key GitHub Secrets'a.
 5. **E-posta**: Resend hesabı aç, alan adını doğrula.

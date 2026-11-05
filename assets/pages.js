@@ -716,7 +716,6 @@ P.hesap = async () => {
     const kayitAlan = ["firmaUnvani", "vkn", "vergiDairesi", "sirketTuru", "kurulusYili", "naceKodu", "calisan", "ciro", "yetkili", "telefon", "il", "adres"];
     box.innerHTML = `<div class="tabs"><a ${link("hesap", "sekme=giris")} aria-current="${!kayit}">Giriş yap</a><a ${link("hesap", "sekme=kayit")} aria-current="${kayit}">Ücretsiz hesap aç</a></div>
       ${Store.demo ? `<p class="small muted">Demo modu: hesap bu tarayıcıda saklanır. Supabase bağlandığında gerçek hesaplara geçer.</p>` : ""}
-      ${!kayit ? `<div class="test-giris"><div><b>Test (yönetici) hesabı</b><span>Sunum ve deneme için hazır profil: ${esc(D.TEST_HESAP.email)} · şifre: ${esc(D.TEST_HESAP.password)}</span></div><button type="button" class="btn sm ghost" id="test-gir">Test hesabıyla gir</button></div>` : ""}
       <form id="auth" class="narrow" novalidate>
         ${kayit ? `<label class="field" for="ad"><span>Adın soyadın</span><input class="input" id="ad" name="ad" required value="${esc(draft.yetkili)}"></label>` : ""}
         <label class="field" for="email"><span>E-posta</span><input class="input" id="email" name="email" type="email" autocomplete="email" required></label>
@@ -727,11 +726,6 @@ P.hesap = async () => {
         <p id="err" class="missing" role="alert"></p>
         <button class="btn seal" type="submit">${kayit ? "Hesabımı oluştur" : "Giriş yap"}</button>
       </form>`;
-    if ($("#test-gir")) $("#test-gir").onclick = async () => {
-      const b = $("#test-gir"); b.disabled = true; b.textContent = "Giriş yapılıyor…"; $("#err").textContent = "";
-      try { await Store.testGiris(); } catch (e) { $("#err").textContent = e.message; b.disabled = false; b.textContent = "Test hesabıyla gir"; return; }
-      toast("Test hesabıyla giriş yapıldı."); const g = D.LS.get("geri"); D.LS.del("geri"); go(g || "hesap", g ? "" : "sekme=yonetim");
-    };
     $("#auth").onsubmit = async e => {
       e.preventDefault(); const v = formValues(e.target); $("#err").textContent = "";
       if (!/^\S+@\S+\.\S+$/.test(v.email)) { $("#err").textContent = "Geçerli bir e-posta yaz."; return; }
@@ -774,19 +768,19 @@ P.hesap = async () => {
     const hesaplar = Object.entries(D.LS.get("accounts", {}));
     const sart = SART.hesap ? Object.keys(SART.hesap).length : Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).length;
     tab.innerHTML = `<div class="yonetim">
-      <p class="muted small">Bu sekme yalnızca test (yönetici) hesabında görünür.${Store.demo ? " Site demo modunda olduğu için hesaplar ve cevaplar <strong>yalnızca bu tarayıcıda</strong> tutulur; başka cihazlardaki kullanıcılar burada görünmez." : " Hesaplar ve profiller Supabase’de tutulur; tarayıcıda yalnızca oturum bilgisi kalır."}</p>
+      <p class="muted small">Bu sekme yalnızca yönetici hesabında görünür.${Store.demo ? " Site demo modunda olduğu için hesaplar ve cevaplar <strong>yalnızca bu tarayıcıda</strong> tutulur; başka cihazlardaki kullanıcılar burada görünmez." : " Hesaplar ve profiller Supabase’de tutulur; tarayıcıda yalnızca oturum bilgisi kalır."}</p>
       <h3>Veri durumu</h3>
       <div class="y-kutu"><div><b>${L.length}</b><span>aktif destek</span></div><div><b>${say(x => x.resmi)}</b><span>resmi özet formlu</span></div><div><b>${say(x => x.kaynak === "kurum-sitesi")}</b><span>kurum sitesinden</span></div><div><b>${Object.keys(kurum).length}</b><span>kurum</span></div>
         <div><b>${say(x => x.tur === "hibe")} / ${say(x => x.tur === "kredi")} / ${say(x => x.tur === "vergi")}</b><span>hibe / kredi / vergi</span></div><div><b>${say(x => x.destek_orani)}</b><span>oranı belli</span></div></div>
       <p class="small muted">Son güncelleme: ${new Date(d.guncelleme).toLocaleString("tr-TR")}${surum() ? ` · Sürüm ${surum()}` : ""}. Veriler her pazartesi 07:00’de GitHub Actions ile otomatik güncellenir.</p>
-      ${Store.demo ? `<h3>Bu tarayıcıdaki hesaplar (${hesaplar.length + 1})</h3>
-      <ul class="y-liste"><li><b>${esc(D.TEST_HESAP.email)}</b> · ${esc(D.TEST_HESAP.ad)} · yönetici (yerleşik)</li>${hesaplar.map(([e, a]) => `<li><b>${esc(e)}</b> · ${esc(a.ad || "")}</li>`).join("")}</ul>`
+      ${Store.demo ? `<h3>Bu tarayıcıdaki hesaplar (${hesaplar.length})</h3>
+      <ul class="y-liste">${hesaplar.map(([e, a]) => `<li><b>${esc(e)}</b> · ${esc(a.ad || "")}${D.yonetici(e) ? " · yönetici" : ""}</li>`).join("")}</ul>`
       : `<h3>Kayıtlı hesaplar</h3><p class="small">Güvenlik gereği kullanıcı listesi sitede gösterilmez (her hesap yalnızca kendi verisini görür). Tüm hesapları <a href="https://supabase.com/dashboard/project/${esc((C.SUPABASE_URL.match(/\/\/([^.]+)/) || [])[1] || "")}/editor" target="_blank" rel="noopener">Supabase panelinde › Table Editor › profiles</a> tablosunda görebilirsin.</p>`}
       <p class="small muted">${sart} destek için şart cevabı kayıtlı.</p>
       <h3>Test araçları</h3>
       <div class="actions"><button type="button" class="btn sm ghost" id="y-profil">Test profilini yeniden yükle</button><a class="btn sm ghost" ${link("sonuclar")}>Sonuçları test profiliyle gör</a><button type="button" class="btn sm ghost" id="y-sart">Şart cevaplarını temizle</button>${Store.demo ? `<button type="button" class="btn sm ghost" id="y-sifirla">Bu tarayıcıdaki tüm verileri sil</button>` : ""}</div>
     </div>`;
-    $("#y-profil").onclick = async () => { await Store.testProfiliYukle(); toast("Test profili yüklendi."); };
+    $("#y-profil").onclick = async () => { await Store.testProfiliYukle(); toast("Test profili yüklendi."); go("hesap", "sekme=yonetim"); };
     $("#y-sart").onclick = async () => { Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).forEach(k => localStorage.removeItem(k)); if (SART.hesap) SART.hesap = {}; await Store.saveProfile({ sartlar: {} }); toast("Şart cevapları temizlendi."); go("hesap", "sekme=yonetim"); };
     if ($("#y-sifirla")) $("#y-sifirla").onclick = () => { if (!confirm("Bu tarayıcıdaki tüm FonRota verileri (hesaplar, profiller, cevaplar) silinecek. Emin misin?")) return; Object.keys(localStorage).filter(k => k.startsWith("db.")).forEach(k => localStorage.removeItem(k)); toast("Tüm yerel veriler silindi."); go("index"); };
   }

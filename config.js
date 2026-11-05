@@ -10,6 +10,9 @@ window.CONFIG = {
   // Supabase'i durdurursan iki değeri boş bırak (""): site "demo modunda" çalışır, hesaplar ziyaretçinin tarayıcısında saklanır.
   SUPABASE_URL: "https://gebuzyferpvlzturxoyu.supabase.co",
   SUPABASE_ANON_KEY: "sb_publishable_pI798Yv3sQ47VMbJE7yuhw_-y-ct6TF",
+  // Yönetim sekmesini görecek hesap(lar). Şifre kodda tutulmaz: hesabı Supabase > Authentication > Users > Add user
+  // ile bu e-postayla ve kendi seçtiğin şifreyle oluştur ("Auto Confirm User" işaretli).
+  YONETICI_EPOSTALARI: ["test@fonrota.local"],
   // AI uç noktası (api/ai.js Vercel'e yüklendiğinde): ör. "/api/ai"
   AI_ENDPOINT: "",
   // Web Push için VAPID açık anahtarı (npx web-push generate-vapid-keys)

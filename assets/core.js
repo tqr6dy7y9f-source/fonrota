@@ -106,10 +106,10 @@ async function supa() {
   await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js");
   sb = window.supabase.createClient(C.SUPABASE_URL, C.SUPABASE_ANON_KEY); return sb;
 }
-/* Yerleşik test (yönetici) hesabı: sunum ve deneme içindir. Bilgileri bu dosyada açıkça yazılıdır;
-   yalnızca kendi test profilini görür, başka kullanıcıların verisine erişemez.
-   Supabase bağlıyken gerçek bir Supabase hesabıdır (ilk girişte, e-posta onayı kapalıysa kendiliğinden açılır). */
-const TEST_HESAP = { email: "test@fonrota.local", password: "fonrota-test", ad: "Test Yönetici", rol: "admin" };
+/* Yönetici (test) hesabı: config.js'deki YONETICI_EPOSTALARI ile tanınır; şifresi kodda yoktur, hesap sahibi belirler.
+   Yönetim sekmesini görür ama yalnızca kendi profilini görür, başka kullanıcıların verisine erişemez.
+   Profili boşsa ilk girişte aşağıdaki örnek (test) profil yüklenir. */
+const yonetici = email => (C.YONETICI_EPOSTALARI || []).map(e => e.toLowerCase()).includes(String(email || "").toLowerCase());
 const TEST_PROFIL = { firmaUnvani: "TechNova Mobilya Ltd. Şti. (TEST)", vkn: "0000000000", vergiDairesi: "Samsun", sirketTuru: "Limited şirket",
   kurulusYili: "2018", naceKodu: "31.09", calisan: "25", ciro: "40000000", yetkili: "Test Yönetici", telefon: "0000 000 00 00",
   eposta: "test@fonrota.local", il: "Samsun", adres: "Test adresi", isletmeTipi: "sirket", sektorler: ["imalat"], amaclar: ["yatirim", "ihracat"],
@@ -135,11 +135,11 @@ const Store = {
   async user() {
     const s = await supa(); if (!s) return LS.get("user");
     const { data: { session } } = await s.auth.getSession(); const user = session && session.user;
-    return user ? { id: user.id, email: user.email, ad: user.user_metadata?.ad, ...(user.email === TEST_HESAP.email ? { rol: "admin" } : {}) } : null;
+    return user ? { id: user.id, email: user.email, ad: user.user_metadata?.ad, ...(yonetici(user.email) ? { rol: "admin" } : {}) } : null;
   },
   async signUp({ email, password, ad, profil }) {
     const s = await supa();
-    if (!s) { const accounts = LS.get("accounts", {}); if (accounts[email]) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap."); accounts[email] = { ad, password }; LS.set("accounts", accounts); LS.set("user", { email, ad }); await this.saveProfile(profil); return; }
+    if (!s) { const accounts = LS.get("accounts", {}); if (accounts[email]) throw new Error("Bu e-posta ile zaten bir hesap var. Giriş yap."); accounts[email] = { ad, password }; LS.set("accounts", accounts); LS.set("user", { email, ad, ...(yonetici(email) ? { rol: "admin" } : {}) }); await this.saveProfile(profil); return; }
     const p = { ...profil }; const c = classify(num(p.calisan), num(p.ciro), num(p.bilanco)); if (c) { p.olcek = c.olcek; p.olcekAdi = OLCEK[c.olcek]; }
     // Profil, kayıtla birlikte gönderilir; veritabanındaki tetikleyici hesabı ve profili birlikte kaydeder.
     const { data, error } = await s.auth.signUp({ email, password, options: { data: { ad, profil: p }, emailRedirectTo: location.origin + location.pathname.replace(/[^/]*$/, "") + "hesap.html" } });
@@ -151,8 +151,10 @@ const Store = {
   async signIn({ email, password }) {
     const s = await supa();
     if (!s) {
-      if (email === TEST_HESAP.email && password === TEST_HESAP.password) { LS.set("user", { email, ad: TEST_HESAP.ad, rol: "admin" }); const pr = LS.get("profile"); if (!pr || !pr.olcek) await this.saveProfile(TEST_PROFIL); return; }
-      const a = LS.get("accounts", {})[email]; if (!a || a.password !== password) throw new Error("E-posta veya şifre hatalı."); LS.set("user", { email, ad: a.ad }); return;
+      const a = LS.get("accounts", {})[email]; if (!a || a.password !== password) throw new Error("E-posta veya şifre hatalı.");
+      LS.set("user", { email, ad: a.ad, ...(yonetici(email) ? { rol: "admin" } : {}) });
+      if (yonetici(email)) { const pr = LS.get("profile"); if (!pr || !pr.olcek) await this.saveProfile(TEST_PROFIL); }
+      return;
     }
     const misafir = LS.get("profile"), mSart = misafirSartlari();  // giriş öncesi hesapsız yapılan test ve cevaplar
     this._pr = null;
@@ -161,19 +163,9 @@ const Store = {
     // Hesapta henüz profil yoksa misafirken doldurulan test bilgileri hesaba aktarılır; sonra tarayıcıdan silinir.
     const pr = await this.profile();
     if ((!pr || !pr.olcek) && misafir && misafir.olcek) await this.saveProfile(misafir, true);
-    else if ((!pr || !pr.olcek) && email === TEST_HESAP.email) await this.saveProfile(TEST_PROFIL, true);
+    else if ((!pr || !pr.olcek) && yonetici(email)) await this.saveProfile(TEST_PROFIL, true);
     if (Object.keys(mSart).length) { const p2 = await this.profile() || {}; await this.saveProfile({ sartlar: { ...mSart, ...(p2.sartlar || {}) } }); }
     yerelHesapVerisiniSil(false);
-  },
-  async testGiris() {
-    const s = await supa(); if (!s) return this.signIn({ email: TEST_HESAP.email, password: TEST_HESAP.password });
-    try { return await this.signIn({ email: TEST_HESAP.email, password: TEST_HESAP.password }); }
-    catch (e) {
-      if (e.message !== "E-posta veya şifre hatalı.") throw e;
-      // Test hesabı Supabase'de yoksa açılır (e-posta onayı kapalıysa hemen girilir)
-      const r = await this.signUp({ email: TEST_HESAP.email, password: TEST_HESAP.password, ad: TEST_HESAP.ad, profil: TEST_PROFIL }).catch(x => { throw new Error("Test hesabı açılamadı: " + x.message); });
-      if (r && r.onayGerekli) throw new Error("Test hesabı açıldı ama e-posta onayı bekliyor. Supabase panelinde Authentication > Users bölümünden test@fonrota.local hesabını onayla ya da e-posta onayını kapat.");
-    }
   },
   async testProfiliYukle() { return this.saveProfile(TEST_PROFIL, true); },
   async signOut() { const s = await supa(); this._pr = null; if (s) { await s.auth.signOut(); yerelHesapVerisiniSil(); } else LS.del("user"); },
@@ -633,5 +625,5 @@ async function enablePush() {
 }
 
 try { console.info(`%c${C.SITE_ADI || "FonRota"}%c © ${new Date().getFullYear()} ${C.SAHIP || ""}. Tüm hakları saklıdır.`, "font-weight:700;color:#B9832A", "color:inherit"); } catch {}
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, TEST_HESAP, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, yonetici, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
 })();
