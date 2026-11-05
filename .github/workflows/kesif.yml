@@ -7,17 +7,14 @@ permissions:
 jobs:
   kesif:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - name: 2209-A sablonunu indir
-        run: |
-          mkdir -p sablon
-          UA="Mozilla/5.0 (compatible; FonRota/1.0)"
-          curl -sSL -m 60 -A "$UA" "https://tubitak.gov.tr/sites/default/files/2025-10/2209-A_arastirma_onerisi_formu_09102025.docx" -o sablon/form2025.docx
-          curl -sSL -m 60 -A "$UA" "https://tubitak.gov.tr/sites/default/files/2024-04/ek-1_2209-a_arastirma_onerisi_formu_28.09.2022.docx" -o sablon/form2022.docx
-          file sablon/*; ls -la sablon
+      - run: sudo apt-get install -y poppler-utils >/dev/null 2>&1 && pip install requests >/dev/null
+      - name: Belgeleri tara
+        run: python tara/tara.py
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A sablon && git commit -m "sablon 2209" && git push
+          git add -A tara && git commit -m "kesif: degerlendirme tablolari" && git push
