@@ -326,7 +326,9 @@ def build(url, info, sec, docs):
     ozet = (destek.split("\n")[0] if destek else kimler.split("\n")[0] if kimler else info["ad"]).lstrip("•– ")
     return {
         "id": pid, "ad": info["ad"][:160], "kurum": kurum_adi(info["kurum"]), "url": url, "tur": tur,
-        "ust_limit": None,  # programlarda çoğu zaman kalem kalem birden çok limit var; tek sayıya indirmek yanıltır. Resmi metinde okunur. "destek_orani": r[0] if r else None,  # en düşük oran: iyimser olmayan tahmin
+        # Üst limit: programlarda çoğu zaman kalem kalem birden çok limit var; tek sayıya indirmek yanıltır, resmi metinde okunur.
+        "ust_limit": None,
+        "destek_orani": r[0] if r else None,  # en düşük oran: iyimser olmayan tahmin
         "geri_odemeli": "geri ödemeli" in t,
         "oran_metin": (f"%{r[0]}–%{r[-1]}" if len(r) > 1 else None),
         "amac": amac, "olcek": olcek, "sektor": ["tumu"], "il": ["tumu"],

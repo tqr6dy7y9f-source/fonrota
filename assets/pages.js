@@ -677,7 +677,8 @@ P.hesap = async () => {
     const kayit = sekme === "kayit"; const draft = { ...(await Store.profile() || {}), ...D.LS.get("draft", {}) };
     const kayitAlan = ["firmaUnvani", "vkn", "vergiDairesi", "sirketTuru", "kurulusYili", "naceKodu", "calisan", "ciro", "yetkili", "telefon", "il", "adres"];
     box.innerHTML = `<div class="tabs"><a ${link("hesap", "sekme=giris")} aria-current="${!kayit}">Giriş yap</a><a ${link("hesap", "sekme=kayit")} aria-current="${kayit}">Ücretsiz hesap aç</a></div>
-      ${Store.demo ? `<p class="small muted">Demo modu: hesap bu tarayıcıda saklanır. Supabase bağlandığında gerçek hesaplara geçer.</p>` : ""}
+      ${Store.demo ? `<p class="small muted">Demo modu: hesap bu tarayıcıda saklanır. Supabase bağlandığında gerçek hesaplara geçer.</p>
+      ${!kayit ? `<div class="test-giris"><div><b>Test (yönetici) hesabı</b><span>Sunum ve deneme için hazır profil: ${esc(D.TEST_HESAP.email)} · şifre: ${esc(D.TEST_HESAP.password)}</span></div><button type="button" class="btn sm ghost" id="test-gir">Test hesabıyla gir</button></div>` : ""}` : ""}
       <form id="auth" class="narrow" novalidate>
         ${kayit ? `<label class="field" for="ad"><span>Adın soyadın</span><input class="input" id="ad" name="ad" required value="${esc(draft.yetkili)}"></label>` : ""}
         <label class="field" for="email"><span>E-posta</span><input class="input" id="email" name="email" type="email" autocomplete="email" required></label>
@@ -688,6 +689,7 @@ P.hesap = async () => {
         <p id="err" class="missing" role="alert"></p>
         <button class="btn seal" type="submit">${kayit ? "Hesabımı oluştur" : "Giriş yap"}</button>
       </form>`;
+    if ($("#test-gir")) $("#test-gir").onclick = async () => { await Store.testGiris(); toast("Test hesabıyla giriş yapıldı."); const g = D.LS.get("geri"); D.LS.del("geri"); go(g || "hesap", g ? "" : "sekme=yonetim"); };
     $("#auth").onsubmit = async e => {
       e.preventDefault(); const v = formValues(e.target); $("#err").textContent = "";
       if (!/^\S+@\S+\.\S+$/.test(v.email)) { $("#err").textContent = "Geçerli bir e-posta yaz."; return; }
@@ -704,11 +706,12 @@ P.hesap = async () => {
     };
     return;
   }
-  const s = ["profil", "basvurular", "bildirimler"].includes(sekme) ? sekme : "profil";
+  const admin = u.rol === "admin";
+  const s = ["profil", "basvurular", "bildirimler", ...(admin ? ["yonetim"] : [])].includes(sekme) ? sekme : "profil";
   const p = await Store.profile() || {}; const d = await D.data();
   const notifs = await Store.list("notifs"); const unread = notifs.filter(n => !n.read).length;
   box.innerHTML = `<h1 style="margin-top:26px">Merhaba ${esc(u.ad || "")}</h1>
-    <div class="tabs"><a ${link("hesap", "sekme=profil")} aria-current="${s === "profil"}">Firma profili</a><a ${link("hesap", "sekme=basvurular")} aria-current="${s === "basvurular"}">Başvurularım</a><a ${link("hesap", "sekme=bildirimler")} aria-current="${s === "bildirimler"}">Bildirimler${unread ? ` (${unread})` : ""}</a></div><div id="tab"></div>`;
+    <div class="tabs"><a ${link("hesap", "sekme=profil")} aria-current="${s === "profil"}">Firma profili</a><a ${link("hesap", "sekme=basvurular")} aria-current="${s === "basvurular"}">Başvurularım</a><a ${link("hesap", "sekme=bildirimler")} aria-current="${s === "bildirimler"}">Bildirimler${unread ? ` (${unread})` : ""}</a>${admin ? `<a ${link("hesap", "sekme=yonetim")} aria-current="${s === "yonetim"}">Yönetim</a>` : ""}</div><div id="tab"></div>`;
   const tab = $("#tab");
   if (s === "profil") {
     const alan = ["firmaUnvani", "vkn", "vergiDairesi", "sirketTuru", "kurulusYili", "naceKodu", "calisan", "ciro", "yetkili", "telefon", "eposta", "il", "adres"];
@@ -722,6 +725,27 @@ P.hesap = async () => {
     const apps = await Store.list("apps");
     tab.innerHTML = apps.length ? `<div class="scroll-x"><table class="apps"><thead><tr><th>Destek</th><th>Durum</th><th>Son işlem</th><th></th></tr></thead><tbody>${apps.map(a => { const x = d.destekler.find(z => z.id === a.id); return x ? `<tr><td>${esc(x.ad)}<br><span class="small muted">${esc(x.kurum)}</span></td><td>${esc(a.durum)}</td><td>${new Date(a.tarih).toLocaleDateString("tr-TR")}</td><td><a class="btn ghost sm" ${link("basvuru", "id=" + x.id)}>Devam et</a></td></tr>` : ""; }).join("")}</tbody></table></div>`
       : `<div class="empty"><p>Henüz bir başvuru hazırlamadın.</p><a class="btn seal" ${link("sonuclar")}>Uygun desteklerime bak</a></div>`;
+  }
+  if (s === "yonetim" && admin) {
+    const L = d.destekler, say = f => L.filter(f).length;
+    const kurum = {}; L.forEach(x => kurum[x.kurum] = (kurum[x.kurum] || 0) + 1);
+    const hesaplar = Object.entries(D.LS.get("accounts", {}));
+    const sart = Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).length;
+    tab.innerHTML = `<div class="yonetim">
+      <p class="muted small">Bu sekme yalnızca test (yönetici) hesabında görünür. Site demo modunda olduğu için hesaplar ve cevaplar <strong>yalnızca bu tarayıcıda</strong> tutulur; başka cihazlardaki kullanıcılar burada görünmez.</p>
+      <h3>Veri durumu</h3>
+      <div class="y-kutu"><div><b>${L.length}</b><span>aktif destek</span></div><div><b>${say(x => x.resmi)}</b><span>resmi özet formlu</span></div><div><b>${say(x => x.kaynak === "kurum-sitesi")}</b><span>kurum sitesinden</span></div><div><b>${Object.keys(kurum).length}</b><span>kurum</span></div>
+        <div><b>${say(x => x.tur === "hibe")} / ${say(x => x.tur === "kredi")} / ${say(x => x.tur === "vergi")}</b><span>hibe / kredi / vergi</span></div><div><b>${say(x => x.destek_orani)}</b><span>oranı belli</span></div></div>
+      <p class="small muted">Son güncelleme: ${new Date(d.guncelleme).toLocaleString("tr-TR")}${surum() ? ` · Sürüm ${surum()}` : ""}. Veriler her pazartesi 07:00’de GitHub Actions ile otomatik güncellenir.</p>
+      <h3>Bu tarayıcıdaki hesaplar (${hesaplar.length + 1})</h3>
+      <ul class="y-liste"><li><b>${esc(D.TEST_HESAP.email)}</b> · ${esc(D.TEST_HESAP.ad)} · yönetici (yerleşik)</li>${hesaplar.map(([e, a]) => `<li><b>${esc(e)}</b> · ${esc(a.ad || "")}</li>`).join("")}</ul>
+      <p class="small muted">${sart} destek için şart cevabı kayıtlı.</p>
+      <h3>Test araçları</h3>
+      <div class="actions"><button type="button" class="btn sm ghost" id="y-profil">Test profilini yeniden yükle</button><a class="btn sm ghost" ${link("sonuclar")}>Sonuçları test profiliyle gör</a><button type="button" class="btn sm ghost" id="y-sart">Şart cevaplarını temizle</button><button type="button" class="btn sm ghost" id="y-sifirla">Bu tarayıcıdaki tüm verileri sil</button></div>
+    </div>`;
+    $("#y-profil").onclick = async () => { await Store.testProfiliYukle(); toast("Test profili yüklendi."); };
+    $("#y-sart").onclick = () => { Object.keys(localStorage).filter(k => k.startsWith("db.sart:")).forEach(k => localStorage.removeItem(k)); toast("Şart cevapları temizlendi."); go("hesap", "sekme=yonetim"); };
+    $("#y-sifirla").onclick = () => { if (!confirm("Bu tarayıcıdaki tüm FonRota verileri (hesaplar, profiller, cevaplar) silinecek. Emin misin?")) return; Object.keys(localStorage).filter(k => k.startsWith("db.")).forEach(k => localStorage.removeItem(k)); toast("Tüm yerel veriler silindi."); go("index"); };
   }
   if (s === "bildirimler") {
     const izin = "Notification" in window ? Notification.permission : "unsupported";

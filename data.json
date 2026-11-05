@@ -62,7 +62,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-0f2ffa7d",
@@ -155,7 +156,8 @@
       "ad": "ck-hayvancilik_destekleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-3c193217",
@@ -256,7 +258,8 @@
       "ad": "ck-dusuk_faizli_tarimsal_krediler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-56f4e239",
@@ -318,7 +321,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-87175d4c",
@@ -397,7 +401,8 @@
       "ad": "etuyskullanimkilavuzu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-8a1cb3cb",
@@ -459,7 +464,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-ee93eb7d",
@@ -521,7 +527,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-62c07a76",
@@ -629,7 +636,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-1ab67b2c",
@@ -716,7 +724,8 @@
       "ad": "kilavuz-arge_merkezleri_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-821ba676",
@@ -778,7 +787,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-9606be0e",
@@ -857,7 +867,8 @@
       "ad": "teblig-arge_merkezleri_destegigelir_vergisi_stopaji.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-036f0e8c",
@@ -949,7 +960,8 @@
       "ad": "ck-tarimsal_desteklemeler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-03b816d6",
@@ -1037,7 +1049,8 @@
       "ad": "ozet-era_net_cofund_araci_destekleme_programi1.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-04123fcb",
@@ -1140,7 +1153,8 @@
       "ad": "5-madde-pazara-giris-projesi-hazirlama-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-0543c637",
@@ -1241,7 +1255,8 @@
       "ad": "10-madde-kuresel-tedarik-zinciri-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-063c448b",
@@ -1332,7 +1347,8 @@
       "ad": "ozet-sinema_filmlerinin_desteklenmesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-08d93dc5",
@@ -1421,7 +1437,8 @@
       "ad": "ozet-sponsorluk_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-0fe65745",
@@ -1513,7 +1530,8 @@
       "ad": "ck-tarimsal_desteklemeler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-10ccb0b2",
@@ -1618,7 +1636,8 @@
       "ad": "7-ve-8-madde-yurt-disi-ve-yurt-ici-fuar-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-1145e2bf",
@@ -1714,7 +1733,8 @@
       "ad": "teblig-catak_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-1331d6ab",
@@ -1811,7 +1831,8 @@
       "ad": "teknik-musavirlik-hizmetlerine-saglanacak-devlet-yardimlari-hakkinda-2014_10-sayili-kararin-uue-genelgesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": 10
   },
   {
    "id": "yd-14b9ffd9",
@@ -1919,7 +1940,8 @@
       "ad": "sss-1505.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-1855e758",
@@ -2019,7 +2041,8 @@
       "ad": "sss-1509.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": 75
   },
   {
    "id": "yd-1ab5875a",
@@ -2118,7 +2141,8 @@
       "ad": "serbest-bolgeler-uygulama-yonetmeligi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-1b4952f6",
@@ -2219,7 +2243,8 @@
       "ad": "18-madde-cok-kanalli-zincir-magaza-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-1cb09bf3",
@@ -2329,7 +2354,8 @@
       "ad": "2024-yili-e-ihracat-destekleri-ust-limitleri.xlsx"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-21ed6aad",
@@ -2427,7 +2453,8 @@
       "ad": "ek-1_ar-ge_projesi_baslikli_dokuman_formati.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-22fe7e4e",
@@ -2518,7 +2545,8 @@
       "ad": "ozet_turizm_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-266b42e1",
@@ -2626,7 +2654,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-2ab98c68",
@@ -2720,7 +2749,8 @@
       "ad": "ozet_finansal_kiralama_sirketlerine_yonelik_kredi_programi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-2d26e987",
@@ -2811,7 +2841,8 @@
       "ad": "ozet_reeskont_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-2f124788",
@@ -2908,7 +2939,8 @@
       "ad": "5449-sayili-kararin-uygulama-usul-ve-esaslarina-iliskin-genelge.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-3a2ad7af",
@@ -3004,7 +3036,8 @@
       "ad": "ck-tarim_havzalar_listesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-4163bebe",
@@ -3105,7 +3138,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-418886e0",
@@ -3202,7 +3236,8 @@
       "ad": "yonetmelik-tubitak_tarafindan_yurutulen_destek_programlari-2019_4.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-43532d4b",
@@ -3301,7 +3336,8 @@
       "ad": "tanitim_kitapcigi-orkoy_kredileri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-46d52585",
@@ -3401,7 +3437,8 @@
       "ad": "sgk_istihdam_tesvikleri_brosurleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-46d56e27",
@@ -3515,7 +3552,8 @@
       "ad": "2007-2_sayili_dir_otomasyon_tebligi.docx"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-479b35fa",
@@ -3607,7 +3645,8 @@
       "ad": "ozet_yurt_disi_magazalar_yatirim_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-4a73b72d",
@@ -3709,7 +3748,8 @@
       "ad": "21-madde-pazara-giris-rapor-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-4c0c104e",
@@ -3817,7 +3857,8 @@
       "ad": "teblig-ozel-statulu_sirketler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-508d186b",
@@ -3917,7 +3958,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-54bfa568",
@@ -4017,7 +4059,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-55191372",
@@ -4113,7 +4156,8 @@
       "ad": "ck-tarim_havzalar_listesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-551b993a",
@@ -4211,7 +4255,8 @@
       "ad": "yesil-mutabakata-uyum-projesi-destegine-iliskin-genelge---080525.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-5626ea68",
@@ -4304,7 +4349,8 @@
       "ad": "ck-tarimsal_desteklemeler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-5719abc7",
@@ -4396,7 +4442,8 @@
       "ad": "teblig-kultur_varligi_olarak_tescilli_tasinmazlara_proje_ve_uygulama_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-5921d965",
@@ -4484,7 +4531,8 @@
       "ad": "ozet_ihracat_alacaklari_iskonto_programi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-596980c3",
@@ -4551,7 +4599,8 @@
       "ad": "ck-tarimsal_desteklemeler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-59d00469",
@@ -4640,7 +4689,8 @@
       "ad": "ozet-aile_cocuk_dostu_yapim_dizilerin_tesvik_edilmesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-5cfe291c",
@@ -4732,7 +4782,8 @@
       "ad": "ozet_katilim_finans_yatirim_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-5fa8de23",
@@ -4824,7 +4875,8 @@
       "ad": "ck-tarimsal_desteklemeler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-60392673",
@@ -4925,7 +4977,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-610b6222",
@@ -5027,7 +5080,8 @@
       "ad": "24-madde-sektorel-ticaret-heyeti-ve-alim-heyeti-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-683ee88e",
@@ -5120,7 +5174,8 @@
       "ad": "ozet_ihracat_yonelik_yatirim_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-686210bb",
@@ -5211,7 +5266,8 @@
       "ad": "ozet_diger_kredi_urunleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-6982f936",
@@ -5301,7 +5357,8 @@
       "ad": "ozet_sigortali_alacagin_teminatina_dayali_kredi_programi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-6bc8450a",
@@ -5389,7 +5446,8 @@
       "ad": "ozet_yurt_disi_muteahhitlik_hizmetleri_teminat_mektubu_programi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-70150dee",
@@ -5490,7 +5548,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-71cab34b",
@@ -5593,7 +5652,8 @@
       "ad": "yonetmelik-tubitak_tarafindan_yurutulen_destek_programlari-2019_2.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-740d8e1d",
@@ -5702,7 +5762,8 @@
       "ad": "1601-242sayilibilimkurulu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-74491580",
@@ -5792,7 +5853,8 @@
       "ad": "ozet_yurt_disi_muteahhitlik_hizmetleri_kopru_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-7d6feed4",
@@ -5883,7 +5945,8 @@
       "ad": "ozet-bilimsel_topl_duz_etkinlik_kazi_yuzey_arastirmalari_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-7deff41e",
@@ -5985,7 +6048,8 @@
       "ad": "kultur-endustrileri-destek-ve-tesvik-rehberi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-7e37a246",
@@ -6086,7 +6150,8 @@
       "ad": "4madde-yurt-disi-marka-tescil-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-816d5b90",
@@ -6186,7 +6251,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-83008980",
@@ -6287,7 +6353,8 @@
       "ad": "3madde-pazara-giris-belgesi-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-8561cc8d",
@@ -6388,7 +6455,8 @@
       "ad": "sss-1515.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-878f0f16",
@@ -6478,7 +6546,8 @@
       "ad": "ozet_yurt_disi_teminat_mektubu_programi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-8b9044e5",
@@ -6589,7 +6658,8 @@
       "ad": "destek-kapsaminda-degerlendirilen-tanitim-faaliyetleri.docx"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-8d888b97",
@@ -6682,7 +6752,8 @@
       "ad": "sorular-ve-cevaplar-tarim_sigortasi_destekleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-8fbd6a12",
@@ -6773,7 +6844,8 @@
       "ad": "ozet-ceviri_ve_yayim_edebiyat_eserlerini_destek_projeleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-90928b40",
@@ -6874,7 +6946,8 @@
       "ad": "17-madde-marka-ve-turquality-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-9108afc3",
@@ -6975,7 +7048,8 @@
       "ad": "atiksu-aritma-tesisi-enerji-tesviki-yonetmeligi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-91c37357",
@@ -7046,7 +7120,8 @@
       "ad": "genelge-iskur_destekleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-968b118c",
@@ -7142,7 +7217,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-9bbb98cc",
@@ -7234,7 +7310,8 @@
       "ad": "ozet_doviz_kazandirici_hizmetler_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-9d1a775a",
@@ -7359,7 +7436,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-a132ddd4",
@@ -7463,7 +7541,8 @@
       "ad": "19-madde-urge-projesi-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 75
   },
   {
    "id": "yd-a1b1d75a",
@@ -7569,7 +7648,8 @@
       "ad": "etuyskullanimkilavuzu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-a5569b5f",
@@ -7660,7 +7740,8 @@
       "ad": "ozet_uluslararasi_nakliyat_pazarlama_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-a624034b",
@@ -7766,7 +7847,8 @@
       "ad": "destekler-sunum.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-aa73efbf",
@@ -7884,7 +7966,8 @@
       "ad": "1702_sss.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": 25
   },
   {
    "id": "yd-abddf672",
@@ -7973,7 +8056,8 @@
       "ad": "ozet_ozellikli_ihracat_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-adba4cd2",
@@ -8069,7 +8153,8 @@
       "ad": "ck-tarim_havzalar_listesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-b195854f",
@@ -8159,7 +8244,8 @@
       "ad": "ozet_dis_ticaret_sirketleri_ihracat_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-b1b3882e",
@@ -8312,7 +8398,8 @@
       "ad": "yonetim-danismanligi-sektorune-sunulan-desteklere-iliskin-ozet-bilgi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-b3c9ded0",
@@ -8413,7 +8500,8 @@
       "ad": "2564-sayili-karar-ve-karara-iliskin-genelgenin-2024-yili-destek-ust-limitlerixls.xls"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-b6fb2892",
@@ -8514,7 +8602,8 @@
       "ad": "6-madde-yurt-disi-pazar-arastirmasi-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-bac4d7f4",
@@ -8606,7 +8695,8 @@
       "ad": "ozet_yurt_disi_fuar_katilim_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-c74eef87",
@@ -8710,7 +8800,8 @@
       "ad": "22-ve-23-maddeler-sanal-fuara-katilim-ve-sanal-fuar-organizasyonu-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-ce593411",
@@ -8806,7 +8897,8 @@
       "ad": "1071_web_sayfasi_bilgi_notu-16072020.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-d00a5b2f",
@@ -8906,7 +8998,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-d0597974",
@@ -9009,7 +9102,8 @@
       "ad": "uygulama_esaslari_sevk_oncesi_ihracat_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-d14c839c",
@@ -9102,7 +9196,8 @@
       "ad": "ozet_kredi_garanti_fonu_urunleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-d5b7898e",
@@ -9192,7 +9287,8 @@
       "ad": "ozet_sevk_sonrasi_reeskont_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-d929c738",
@@ -9293,7 +9389,8 @@
       "ad": "16-madde-gemi-ve-yat-sektorunde-faaliyet-gosteren-sirketlere-tasarim-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-d9b98dc8",
@@ -9406,7 +9503,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-da11b78f",
@@ -9507,7 +9605,8 @@
       "ad": "9-madde-sirket-ve-marka-alim-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-daa0590a",
@@ -9608,7 +9707,8 @@
       "ad": "12-madde-tanitim-destegi.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-dc172c71",
@@ -9700,7 +9800,8 @@
       "ad": "turizm_tesvikleri.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-dd76316d",
@@ -9798,7 +9899,8 @@
       "ad": "ihtisas_serbest_bolgelerinde_saglanacak_destekler_hakkinda_karar.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-dd93b103",
@@ -9907,7 +10009,8 @@
       "ad": "turler_listesi-agaclandirma_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-e2d7a435",
@@ -9980,7 +10083,8 @@
       "ad": "ozet_ihracat_yonelik_isletme_sermayesi_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-e2e07cef",
@@ -10101,7 +10205,8 @@
       "ad": "niyet_beyani_formu_231206.docx"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-e3abe6c4",
@@ -10214,7 +10319,8 @@
       "ad": "yonetmelik-teydep.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-e44bcab1",
@@ -10329,7 +10435,8 @@
       "ad": "tubitak-kaynaklarindan-genel-butce-kapsamindaki-kamu-idareleri-ile-ozel-butceli-idarelere-proje-karsiligi-aktarilacak-tut.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": 40
   },
   {
    "id": "yd-e59440bb",
@@ -10430,7 +10537,8 @@
       "ad": "11-madde-birim-kira-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-e9e19357",
@@ -10543,7 +10651,8 @@
       "ad": "ozet-3305_sayili_yatirimlarda_devlet_yardimlari_hakkinda_karar_ka.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-ec76bcf6",
@@ -10635,7 +10744,8 @@
       "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-ee86a6c3",
@@ -10727,7 +10837,8 @@
       "ad": "ck-tarimsal_desteklemeler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-eeac8332",
@@ -10828,7 +10939,8 @@
       "ad": "1602-hibe-destek-tutarlari-tablosu.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-ef00dc39",
@@ -10921,7 +11033,8 @@
       "ad": "ozet_marka_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-efb89ac8",
@@ -11010,7 +11123,8 @@
       "ad": "ozet_gemi_insa_ve_ihracati_finansman_programi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-efc2d75d",
@@ -11100,7 +11214,8 @@
       "ad": "ozet_ihracata_hazirlik_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-f0015114",
@@ -11189,7 +11304,8 @@
       "ad": "ozet_kobi_ihracata_hazirlik_kredisi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-f209bb25",
@@ -11289,7 +11405,8 @@
       "ad": "teblig-islenmis_su_urunlerinin_desteklenmesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-f4e77887",
@@ -11378,7 +11495,8 @@
       "ad": "ozet-turizm_tanitma_ve_pazarlama_faaliyetlerinin_desteklenmesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-f774d310",
@@ -11480,7 +11598,8 @@
       "ad": "25-madde-sanal-ticaret-heyeti-destegi-limiti.jpg"
      }
     ]
-   }
+   },
+   "destek_orani": 50
   },
   {
    "id": "yd-f77a0bca",
@@ -11578,7 +11697,8 @@
       "ad": "bilimsel_arastirma_ve_ceviri_projeleri_yonergesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-f8540d98",
@@ -11678,7 +11798,8 @@
       "ad": "sss-1503_proje_pazarlari_destekleme_programi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-fa4ab389",
@@ -11766,7 +11887,8 @@
       "ad": "ozet-ufuk_2020_destek_programlari.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-fc85b4fe",
@@ -11854,7 +11976,8 @@
       "ad": "ozet-fikri_mulkiyet_ve_kultur_endustrilerine_yonelik_destekler.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-fe5df282",
@@ -11942,7 +12065,8 @@
       "ad": "ozet-kultur_merkezleri_yapim_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-1e49211f",
@@ -12026,7 +12150,8 @@
       "ad": "teknoloji-alanlari-listesi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-519337fe",
@@ -12117,7 +12242,8 @@
       "ad": "enerji_kay_ve_enerjinin_kul_ver_art_dair_-yon_202202140829.docx"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-c75f8085",
@@ -12179,7 +12305,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-ccf28787",
@@ -12254,7 +12381,8 @@
       "ad": "duyuru-teknolojik_urun_deneyim_tur_belgesi_destegi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-e1c64f7e",
@@ -12346,7 +12474,8 @@
       "ad": "tesvik_uygulama_telefon_rehberi.pdf"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-f5f1d3a3",
@@ -12408,7 +12537,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "kosgeb-ba79ca0b",
@@ -14033,7 +14163,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-220e65de",
@@ -14095,7 +14226,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-45f05725",
@@ -14157,7 +14289,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-4795c846",
@@ -14228,7 +14361,8 @@
       "ad": "ekler.rar"
      }
     ]
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-4c625408",
@@ -14290,7 +14424,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-c10fbf7c",
@@ -14352,7 +14487,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   },
   {
    "id": "yd-e033ed4e",
@@ -14414,7 +14550,8 @@
     "kontrol": "2026-11-04",
     "bolumler": [],
     "belgeler": []
-   }
+   },
+   "destek_orani": null
   }
  ]
 }

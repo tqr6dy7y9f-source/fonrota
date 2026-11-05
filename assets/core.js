@@ -106,6 +106,13 @@ async function supa() {
   await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js");
   sb = window.supabase.createClient(C.SUPABASE_URL, C.SUPABASE_ANON_KEY); return sb;
 }
+/* Yerleşik test (yönetici) hesabı: yalnızca demo modunda (Supabase bağlı değilken) çalışır.
+   Sunum ve deneme içindir; gerçek bir güvenlik sağlamaz, bilgileri bu dosyada açıkça yazılıdır. */
+const TEST_HESAP = { email: "test@fonrota.local", password: "fonrota-test", ad: "Test Yönetici", rol: "admin" };
+const TEST_PROFIL = { firmaUnvani: "TechNova Mobilya Ltd. Şti. (TEST)", vkn: "0000000000", vergiDairesi: "Samsun", sirketTuru: "Limited şirket",
+  kurulusYili: "2018", naceKodu: "31.09", calisan: "25", ciro: "40000000", yetkili: "Test Yönetici", telefon: "0000 000 00 00",
+  eposta: "test@fonrota.local", il: "Samsun", adres: "Test adresi", isletmeTipi: "sirket", sektorler: ["imalat"], amaclar: ["yatirim", "ihracat"],
+  ihracat: true, borcYok: true, isTanimi: "Samsun’da 25 kişiyle mobilya üretiyoruz. CNC makinesi almak ve ihracata başlamak istiyoruz.", test: true };
 const Store = {
   demo: !C.SUPABASE_URL,
   async user() {
@@ -126,10 +133,15 @@ const Store = {
   },
   async signIn({ email, password }) {
     const s = await supa();
-    if (!s) { const a = LS.get("accounts", {})[email]; if (!a || a.password !== password) throw new Error("E-posta veya şifre hatalı."); LS.set("user", { email, ad: a.ad }); return; }
+    if (!s) {
+      if (email === TEST_HESAP.email && password === TEST_HESAP.password) { LS.set("user", { email, ad: TEST_HESAP.ad, rol: "admin" }); const pr = LS.get("profile"); if (!pr || !pr.olcek) await this.saveProfile(TEST_PROFIL); return; }
+      const a = LS.get("accounts", {})[email]; if (!a || a.password !== password) throw new Error("E-posta veya şifre hatalı."); LS.set("user", { email, ad: a.ad }); return;
+    }
     const { error } = await s.auth.signInWithPassword({ email, password });
     if (error) throw new Error(/confirm/i.test(error.message) ? "Önce e-postana gelen onay bağlantısına tıkla." : "E-posta veya şifre hatalı.");
   },
+  async testGiris() { return this.signIn({ email: TEST_HESAP.email, password: TEST_HESAP.password }); },
+  async testProfiliYukle() { LS.del("profile"); return this.saveProfile(TEST_PROFIL); },
   async signOut() { const s = await supa(); if (s) await s.auth.signOut(); LS.del("user"); },
   async profile() {
     const s = await supa(); const u = s && await this.user();
@@ -580,5 +592,5 @@ async function enablePush() {
 }
 
 try { console.info(`%c${C.SITE_ADI || "FonRota"}%c © ${new Date().getFullYear()} ${C.SAHIP || ""}. Tüm hakları saklıdır.`, "font-weight:700;color:#B9832A", "color:inherit"); } catch {}
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, TEST_HESAP, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
 })();
