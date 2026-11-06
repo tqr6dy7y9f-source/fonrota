@@ -12,8 +12,7 @@ async function layout(page) {
   const u = await Store.user();
   const cur = p => p === page ? ' aria-current="page"' : "";
   top.innerHTML = `<div class="wrap">
-    <div class="marka"><a class="brand" ${link("index")}><i aria-hidden="true"></i><span>${esc(C.SITE_ADI)}</span></a>
-      <button type="button" class="yazi-kutu" id="yazi-kutu" translate="no"><span aria-hidden="true">A<sup>+</sup></span><span class="ipucu" role="tooltip"></span></button></div>
+    <a class="brand" ${link("index")}><i aria-hidden="true"></i><span>${esc(C.SITE_ADI)}</span></a>
     <nav class="nav" aria-label="Ana menü">
       <a ${D.BUNDLE ? link("index") : 'href="index.html#nasil"'} class="hide-m">Nasıl çalışır?</a>
       <a ${link("destekler")}${cur("destekler")} class="hide-s">Tüm destekler</a>
@@ -23,17 +22,14 @@ async function layout(page) {
       <button type="button" class="lang" id="lang" translate="no" aria-label="${D.lang() === "en" ? "Türkçeye geç" : "Switch to English"}">${D.lang() === "en" ? "TR" : "EN"}</button>
     </nav></div>`;
   $("#lang").onclick = () => D.setLang(D.lang() === "en" ? "tr" : "en");
-  yaziKutusu(); $("#yazi-kutu").onclick = () => yaziSec((yaziSeviye() + 1) % YAZI.length);
   karsBar();
   const n = await D.checkNew();
   if (n) $("#nav-hesap").insertAdjacentHTML("beforeend", `<span class="badge" aria-label="${n} yeni bildirim">${n}</span>`);
   const ft = $("#footer");
   if (ft) { const d = await D.data(); ft.innerHTML = `<div class="wrap"><span>Son güncelleme: ${new Date(d.guncelleme).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}${surum() ? ` · Sürüm ${surum()}` : ""}</span>
       <p class="alt-baglanti"><a ${link("eklenti")}>🧩 FonRota eklentisi: başvuru formlarını otomatik doldur</a></p>
-      <div class="yazi-ayar" role="group" aria-label="Yazı boyutu"><span>Yazı boyutu:</span>${YAZI.map((_, i) => `<button type="button" data-yazi="${i}" aria-pressed="${i === yaziSeviye()}"><b style="font-size:${13 + i * 3}px">A</b> ${YAZI_AD[i][0].toUpperCase() + YAZI_AD[i].slice(1)}</button>`).join("")}</div>
       <p class="proje-notu">Bu web sitesi bir bitirme/ders projesi kapsamında geliştirilmiş prototiptir. Destek bilgileri gerçektir; T.C. Sanayi ve Teknoloji Bakanlığı Destekler Platformu’ndan ve kurumların resmi sitelerinden her hafta otomatik olarak çekilir. Sitenin resmi bir devlet kurumu bağı yoktur.</p>
       <p class="telif">© ${new Date().getFullYear()} ${esc(C.SITE_ADI)}${C.SAHIP && !/^\[/.test(C.SAHIP) ? " · " + esc(C.SAHIP) : ""}. Tüm hakları saklıdır.</p></div>`; }
-  if (ft) $$("[data-yazi]", ft).forEach(b => b.onclick = () => yaziSec(+b.dataset.yazi));
 }
 // Sürüm numarası: sayfadaki script bağlantısının ?v= değeri (tools/surum.py yeniler)
 function surum() { const m = [...document.scripts].map(x => x.src.match(/pages\.js\?v=(\d+)/)).find(Boolean); return m ? m[1] : ""; }
@@ -59,22 +55,6 @@ function fieldHTML(k, v, opt = {}) {
   // "Nereden bulurum?": tıklayınca açılan kısa açıklama (etiketin dışında; tıklamak alana odaklanmaz)
   return a.nerede ? `<div class="alan">${label}<details class="nereden"><summary>Nereden bulurum?</summary><p>${D.terim(a.nerede)}</p></details>${k === "naceKodu" && !opt.naceYok ? naceBulucuHTML(id) : ""}</div>` : label;
 }
-/* ---------- Yazı boyutu (üst menüdeki A düğmesi): sayfa içeriği ve alt bilgi büyür; tercih bu tarayıcıda kalır ---------- */
-const YAZI = [1, 1.12, 1.25], YAZI_AD = ["normal", "büyük", "çok büyük"];
-const yaziSeviye = () => { const s = +D.LS.get("yazi", 0); return s >= 0 && s < YAZI.length ? s : 0; };
-const yaziUygula = () => document.documentElement.style.setProperty("--yazi", YAZI[yaziSeviye()]);
-// Logonun yanındaki kutu: her tıklamada bir kademe büyür, en büyükten sonra normale döner
-function yaziKutusu() {
-  const b = document.getElementById("yazi-kutu"); if (!b) return; const s = yaziSeviye(), son = s === YAZI.length - 1;
-  const t = son ? "Yazı boyutunu küçült (normale dön)" : "Yazı boyutunu büyüt";
-  b.setAttribute("aria-label", `${t}. Şu an: ${YAZI_AD[s]}`); b.querySelector(".ipucu").textContent = t; b.classList.toggle("son", son); b.dataset.seviye = s;
-}
-function yaziSec(s) {
-  D.LS.set("yazi", s); yaziUygula(); yaziKutusu();
-  $$("[data-yazi]").forEach(x => x.setAttribute("aria-pressed", +x.dataset.yazi === s)); toast(`Yazı boyutu: ${YAZI_AD[s]}`);
-}
-yaziUygula();
-
 /* ---------- Başvuru adım takibi (Hesap › Başvurularım) ---------- */
 const DURUMLAR = ["Hazırlanıyor", "Form hazır", "Başvurdum", "Sonuçlandı"];
 const durumSira = d => Math.max(0, DURUMLAR.indexOf(d || "Hazırlanıyor"));

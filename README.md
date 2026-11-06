@@ -62,7 +62,7 @@ Bu numara değişince ziyaretçilerin tarayıcısı yeni dosyayı indirir; deği
 - **Nereden bulurum?** Form alanlarının altında (VKN, vergi dairesi, NACE, çalışan sayısı, ciro…) kısa açıklama.
 - **NACE kodu bulucu:** `assets/nace.json`, Ticaret Bakanlığı'nın TÜİK NACE Rev.2.1 listesinden üretilir. Liste güncellenince dosyayı indirip `python tools/nace.py "Sektör Meslek Nace Kodları_….xlsx"` çalıştır.
 - **Telefona kurulum ve QR:** `python tools/pwa.py` simgeleri, `manifest.webmanifest` dosyasını ve `config.js > SITE_URL` adresinin QR kodunu (`assets/qr.svg`) üretir.
-- **Başvuru adım takibi** (Hesap › Başvurularım), **kapanışı yaklaşan destekler** kutusu ve **yazı boyutu**: logonun yanındaki A+ kutusu (her tıklamada büyür) ve alt bilgideki seçici.
+- **Başvuru adım takibi** (Hesap › Başvurularım), **kapanışı yaklaşan destekler** kutusu.
 
 ## FonRota tarayıcı eklentisi (`eklenti/`)
 Chrome/Edge eklentisi: FonRota hesabıyla giriş yapılır, açık olan online başvuru formundaki alanlar etiketlerinden tanınıp firma bilgileriyle doldurulur (sağ tık › FonRota ile doldur ile tek tek de). Formu göndermez; şifre ve onay kutularına dokunmaz.
