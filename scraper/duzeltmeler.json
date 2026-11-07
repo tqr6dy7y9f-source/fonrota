@@ -55,5 +55,37 @@
     }
    ]
   }
+ },
+ {
+  "id": "dika-56463dbe",
+  "neden": "Kurum sayfası: 'Program Ajans sorumluluk illerinden sadece Mardin ilinde uygulanmakta'",
+  "alanlar": {
+   "il": [
+    "Mardin"
+   ]
+  }
+ },
+ {
+  "id": "iskur-b7c52fef",
+  "neden": "Kurum sayfası: 'Program, 2026 yılı itibarıyla sadece Hatay ilinde uygulanmaktadır.'",
+  "alanlar": {
+   "il": [
+    "Hatay"
+   ]
+  }
+ },
+ {
+  "id": "mevka-1f461e45",
+  "neden": "Kurum sayfası: 'Son Başvuru: 8 Kasım 2026'",
+  "alanlar": {
+   "son_basvuru": "2026-11-08"
+  }
+ },
+ {
+  "id": "mevka-adc29d2f",
+  "neden": "Kurum sayfası: 'Son başvuru tarihi: 7 Ekim 2025' (süresi dolmuş)",
+  "alanlar": {
+   "son_basvuru": "2025-10-07"
+  }
  }
 ]

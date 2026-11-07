@@ -74,25 +74,54 @@ function ilListesi(t) {
   return iller.length >= 8 ? iller : null;
 }
 function maddeler(t) { return String(t).split(/\n|•/).map(s => s.trim()).filter(s => s.length > 2); }
-function sadeHTML(x, p) {
+/* Kurum sitesinden alınan serbest metni bölümlere ayır: soru-cevap başlıkları ve anahtar kelimelerle */
+function kurumParcala(metin) {
+  const satir = String(metin).split(/\n|•/).map(s => s.trim()).filter(Boolean)
+    .filter(s => !(/(Formu|Taahhütnamesi|Tablosu|Listesi|Rehberi|Kılavuzu)\b/.test(s) && !/[.:;]$/.test(s) && s.split(" ").length < 25));  // dosya adı listeleri
+  const cumle = satir.flatMap(s => s.split(/(?<=[.?!])\s+(?=[A-ZÇĞİÖŞÜ0-9“"])/)).map(s => s.trim()).filter(s => s.length > 2);
+  const P = { kim: [], des: [], donem: [], yer: [], amac: [] }; let alan = null, hepsi = false;
+  const tur = s => /hangi (işletme|firma|kurum)|kimler|kim başvur|yararlan(abilir|ma koşul|ma şart)|başvuru (şart|koşul)/i.test(s) ? "kim"
+    : /nereden|nasıl başvur|başvuru (nere|yeri|süreci|nasıl)|e-devlet|bilgi sistemi/i.test(s) ? "yer"
+    : /ne zaman|son başvuru|başvuru (tarih|dönem|süre)|tarihleri arasında|tarihine kadar/i.test(s) ? "donem"
+    : /tutar|limit|faiz|komisyon|vade|geri ödeme|oran|ne kadar|%|\bTL\b|avro|dolar|hibe|destek miktar|karşılan/i.test(s) ? "des" : null;
+  for (const s of cumle) {
+    if (s.endsWith("?")) { alan = tur(s); continue; }  // soru başlığı: sonraki cevaplar o bölüme
+    const t = alan || tur(s) || (P.amac.length ? null : "amac");
+    if (!t) continue;
+    if (t === "kim") {
+      if (/gerek(ir|mektedir)|zorunlu|şartları taşı/i.test(s)) hepsi = true;
+      const [, sonra] = s.split(/:\s*/, 2);
+      (sonra && /,/.test(sonra) ? sonra.split(/,\s*(?=[A-ZÇĞİÖŞÜ])|,\s+(?=\S+\s+\S+.*(?:olması|bulunması|sahibi))/).map(x => x.replace(/\.$/, "")) : [s]).forEach(x => x.length > 3 && P.kim.push(x));
+    } else P[t].push(s);
+    if (alan && /\.$/.test(s) && t !== "kim" && t !== "des") alan = alan;  // soru bölümünde kal
+  }
+  return { ...P, hepsi };
+}
+function kurumSade(x, p) {
+  const s = x.sade; if (!s) return "";  // kurum metinleri düzensiz: yalnızca elle hazırlanmış, kaynağı doğrulanmış sade anlatım gösterilir
+  return sadeHTML(x, p, { amac: s.amac ? [s.amac] : [], kim: s.kim || [], des: s.tutar || [], donem: s.ne_zaman ? [s.ne_zaman] : [], yer: s.nerede ? [s.nerede] : [], hepsi: !!s.hepsi, el: true, not: s.not, ilMetin: s.il_metin });
+}
+function sadeHTML(x, p, parca) {
   const B = baslik => (x.resmi.bolumler.find(b => b.baslik.startsWith(baslik)) || {}).metin || "";
-  const kim = maddeler(B("Kimler")), des = maddeler(B("Desteklenen")), donem = maddeler(B("Başvuru dönemi")), yer = maddeler(B("Başvuru yeri"));
+  const { kim, des, donem, yer, amac: amacK, hepsi, el, not, ilMetin } = parca || { kim: maddeler(B("Kimler")), des: maddeler(B("Desteklenen")), donem: maddeler(B("Başvuru dönemi")), yer: maddeler(B("Başvuru yeri")) };
   if (!kim.length && !des.length) return "";
   const kisalt = (s, n = 260) => s.length > n ? s.slice(0, n).replace(/\s+\S*$/, "") + "…" : s;
   const il = ilListesi(des.join(" ") + " " + kim.join(" "));
   const sayili = s => /(\d|%|TL|avro|euro|dolar|milyon|bin\b|oran|limit|kadar|süre|yıl|ay\b)/i.test(s);
-  const amac = des.find(s => /amaç|amacı|amacıyla|yönelik/i.test(s)) || des[0] || "";
-  const neler = des.filter(s => s !== amac && sayili(s) && !(il && ilListesi(s))).slice(0, 5);
+  const amac = (amacK && amacK[0]) || des.find(s => /amaç|amacı|amacıyla|yönelik/i.test(s)) || des[0] || "";
+  const neler = el ? des : des.filter(s => s !== amac && sayili(s) && !(il && ilListesi(s))).slice(0, 5);
   const tutar = x.oran_metin || (x.destek_orani ? "%" + x.destek_orani : "");
   const li = a => a.map(s => `<li>${D.terim(sadeCumle(kisalt(s)))}</li>`).join("");
   const linkli = s => esc(sadeCumle(kisalt(s, 200))).replace(/(https?:\/\/[^\s<]+)/g, u => `<a href="${u.replace(/[.,;)]+$/, "")}" target="_blank" rel="noopener">${u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 40)}${u.length > 48 ? "…" : ""}</a>`);
   return `<div class="sade">
+    ${not ? `<div class="sade-kutu sade-not">ℹ️ ${esc(not)}</div>` : ""}
     ${amac ? `<div class="sade-kutu"><h3>🎯 Bu destek ne için?</h3><p>${D.terim(sadeCumle(kisalt(amac, 320)))}</p></div>` : ""}
-    <div class="sade-kutu"><h3>👥 Kimler başvurabilir?</h3>${kim.length ? `<ul>${li(kim.slice(0, 6))}</ul>${kim.length > 6 ? `<p class="small muted">ve ${kim.length - 6} madde daha (resmi metinde).</p>` : ""}${kim.length > 1 ? `<p class="small muted">Bu maddelerden birine uyman yeterli olabilir; zorunlu şartlar resmi metinde “zorunlu/gerekir” diye yazar.</p>` : ""}` : `<p class="muted">Resmi metinde belirtilmemiş.</p>`}</div>
+    <div class="sade-kutu"><h3>👥 Kimler başvurabilir?</h3>${kim.length ? `<ul>${li(kim.slice(0, 6))}</ul>${kim.length > 6 ? `<p class="small muted">ve ${kim.length - 6} madde daha (resmi metinde).</p>` : ""}${kim.length > 1 ? (hepsi ? `<p class="small muted">Kurum bu şartların <b>hepsinin</b> taşınmasını istiyor.</p>` : parca ? "" : `<p class="small muted">Bu maddelerden birine uyman yeterli olabilir; zorunlu şartlar resmi metinde “zorunlu/gerekir” diye yazar.</p>`) : ""}` : `<p class="muted">Resmi metinde belirtilmemiş.</p>`}</div>
     <div class="sade-kutu"><h3>💰 Ne kadar destek?</h3><p><b>${esc(TUR[x.tur] || x.tur)}</b>${x.tur === "hibe" ? " (geri ödemesiz)" : x.geri_odemeli ? " (geri ödemeli)" : x.tur === "kredi" ? " (geri ödenir)" : ""}${tutar ? ` · ${esc(tutar)}` : ""}${x.ust_limit ? ` · en fazla ${esc(tl(x.ust_limit))}` : ""}</p>${neler.length ? `<ul>${li(neler)}</ul>` : ""}${neler.some(s => /TL\s?\/\s?da/.test(s)) ? `<p class="small muted">TL/dekar: her dekar (1.000 m²) arazi için ödenen tutar.</p>` : ""}</div>
+    ${ilMetin ? `<div class="sade-kutu"><h3>📍 Hangi illerde?</h3><p>${esc(ilMetin)}${p && p.il ? (x.il.includes(p.il) ? ` <span class="sade-ok">✓ ${esc(p.il)} kapsamda.</span>` : ` <span class="sade-no">✗ ${esc(p.il)} kapsamda değil.</span>`) : ""}</p></div>` : ""}
     ${il ? `<div class="sade-kutu"><h3>📍 Hangi illerde?</h3><p><b>${il.length} ilde</b> geçerli.${p && p.il ? (il.includes(p.il) ? ` <span class="sade-ok">✓ ${esc(p.il)} listede.</span>` : ` <span class="sade-no">✗ ${esc(p.il)} listede yok.</span>`) : ""}</p><details><summary class="small">İlleri göster</summary><p class="small">${esc(il.join(", "))}</p></details></div>` : ""}
     ${donem.length || yer.length ? `<div class="sade-kutu"><h3>📅 Ne zaman, nereye?</h3><ul>${donem.length ? `<li><b>Başvuru dönemi:</b> ${D.terim(sadeCumle(kisalt(donem[0], 160)))}</li>` : ""}${yer.length ? `<li><b>Başvuru yeri:</b> ${linkli(yer.join(" "))}</li>` : ""}</ul></div>` : ""}
-    <p class="small muted">Bu sade anlatım resmi metinden otomatik çıkarıldı; bazı ayrıntılar kısaltıldı. Kesin bilgi için <a href="#" data-gorunum="resmi">Resmi metin</a> sekmesine bak.</p>
+    <p class="small muted">${el ? "Bu sade anlatım kurumun sayfasındaki metne bakılarak hazırlandı; kurum metni değişirse kendiliğinden kaldırılır." : "Bu sade anlatım resmi metinden otomatik çıkarıldı; bazı ayrıntılar kısaltıldı."} Kesin bilgi için <a href="#" data-gorunum="resmi">${parca ? "Kurumun metni" : "Resmi metin"}</a> sekmesine bak.</p>
   </div>`;
 }
 
@@ -685,9 +714,11 @@ P.destek = async () => {
       <p style="font-size:17px">${esc(x.ozet)}</p>
       <div id="ilk-adim"></div>
       <div id="hazir-kutu"></div>
-      ${x.sayfa ? `<section class="sec resmi"><h2>Kurumun sayfasından</h2>
+      ${x.sayfa ? `<section class="sec resmi" id="kurum-bolum"><h2>Kurumun sayfasından</h2>
+        ${x.sayfa.metin && kurumSade(x, p) ? `<div class="seg gorunum" role="tablist" aria-label="Metin görünümü"><button type="button" role="tab" data-gorunum="sade">Sade anlatım</button><button type="button" role="tab" data-gorunum="resmi">Kurumun metni (değiştirilmemiş)</button></div>
+        <div data-panel="sade">${kurumSade(x, p)}</div>` : ""}<div data-panel="resmi">
         <p class="small muted">Bu program Bakanlığın Destekler Platformu’nda yok; bilgiler <a href="${esc(x.sayfa.url)}" target="_blank" rel="noopener">${esc(x.sayfa.kaynak)} sayfasından</a> otomatik alındı ve <strong>değiştirilmeden</strong> gösteriliyor. Başvuru tarihleri ve şartlar için kurumun sayfasını mutlaka kontrol et. Son kontrol: ${new Date(x.sayfa.kontrol).toLocaleDateString("tr-TR")}.</p>
-        ${x.sayfa.metin ? `<div class="resmi-metin">${D.terim(x.sayfa.metin)}</div>` : ""}</section>` : ""}
+        ${x.sayfa.metin ? `<div class="resmi-metin">${D.terim(x.sayfa.metin)}</div>` : ""}</div></section>` : ""}
       ${x.resmi ? `<section class="sec resmi" id="resmi-bolum"><h2>Resmi özet bilgi formu</h2>
         ${x.resmi.bolumler.length && sadeHTML(x, p) ? `<div class="seg gorunum" role="tablist" aria-label="Metin görünümü"><button type="button" role="tab" data-gorunum="sade">Sade anlatım</button><button type="button" role="tab" data-gorunum="resmi">Resmi metin (değiştirilmemiş)</button></div>
         <div data-panel="sade">${sadeHTML(x, p)}</div>` : ""}
@@ -726,8 +757,7 @@ P.destek = async () => {
   { const hk = $("#hazir-kutu"); const ciz = pr => { hk.innerHTML = hazirlikHTML(x, pr); hazirlikBagla(hk, x, ciz); $("#ilk-adim").innerHTML = ilkAdimHTML(x, pr); }; ciz(p); }
   eylemBagla($("#eylem-kutu"), x);
   // Sade anlatım / resmi metin sekmesi (seçim bu tarayıcıda hatırlanır)
-  const rb = $("#resmi-bolum");
-  if (rb && $(".gorunum", rb)) {
+  for (const rb of [$("#resmi-bolum"), $("#kurum-bolum")]) if (rb && $(".gorunum", rb)) {
     const goster = g => { $$("[data-panel]", rb).forEach(e => e.hidden = e.dataset.panel !== g); $$(".gorunum [data-gorunum]", rb).forEach(b => { b.setAttribute("aria-pressed", b.dataset.gorunum === g); b.setAttribute("aria-selected", b.dataset.gorunum === g); }); D.LS.set("metinGorunum", g); };
     rb.addEventListener("click", e => { const b = e.target.closest("[data-gorunum]"); if (!b) return; e.preventDefault(); goster(b.dataset.gorunum); if (b.tagName === "A") rb.scrollIntoView({ behavior: "smooth" }); });
     goster(D.LS.get("metinGorunum", "sade") === "resmi" ? "resmi" : "sade");

@@ -432,3 +432,4 @@ footer.site .alt-baglanti a{font-weight:600;color:var(--seal-ink)}
 .sade-kutu p{margin:0 0 4px}.sade-kutu ul{margin:4px 0 0;padding-left:20px}.sade-kutu li{margin:3px 0}
 .sade-kutu details{margin-top:6px}
 .sade-ok{color:var(--ok);font-weight:600}.sade-no{color:var(--no);font-weight:600}
+.sade-not{background:var(--seal-soft);border-color:var(--seal)}

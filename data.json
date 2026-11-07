@@ -12642,7 +12642,24 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "İşletmelerin yapay zekâ teknolojilerini iş süreçlerinde kullanmasını, dijital kapasitesini ve üretim yetkinliğini geliştirmesini sağlamak.",
+    "kim": [
+     "KOBİ olmak (gerçek veya tüzel kişi)",
+     "KOSGEB sistemine kayıtlı olmak ve işletme beyanının güncel olması",
+     "Başvuru tarihinde geçerli bir Teknogirişim Rozeti’ne sahip olmak",
+     "GO Dijital Cüzdan hesabı bulunmak"
+    ],
+    "hepsi": true,
+    "tutar": [
+     "Faizsiz ve komisyonsuz kredi; işletme başına en fazla 5.000.000 TL.",
+     "Toplam vade 24 ay: ilk 12 ay ödeme yok, sonra dört ayda bir olmak üzere 4 eşit taksit.",
+     "Bankadan kesin teminat mektubu getirmek zorunludur.",
+     "Kredi yalnızca KOSGEB’in listesindeki hizmet sağlayıcılardan alınan hizmetlere harcanabilir."
+    ],
+    "nerede": "KOSGEB bilgi sistemi (kosgeb.gov.tr) veya e-Devlet üzerinden online başvuru; uygunluk sistemce otomatik kontrol edilir."
+   }
   },
   {
    "id": "kosgeb-9ac0d2af",
@@ -12708,7 +12725,22 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "Orta-yüksek ve yüksek teknolojili, katma değeri yüksek ürünlerin Türkiye’de üretilmesine yönelik yatırım projelerini desteklemek (Teknoloji Odaklı Sanayi Hamlesi kapsamında).",
+    "kim": [
+     "Türkiye’de kurulu sermaye şirketi olmak (A.Ş. veya Ltd. Şti.; şahıs işletmesi olamaz)",
+     "Sanayi ve Teknoloji Bakanlığı’nın çağrısına ön başvuru yapmış ve KOSGEB’e yönlendirilmiş olmak",
+     "KOSGEB’e kayıtlı ve işletme beyanının güncel olması"
+    ],
+    "hepsi": true,
+    "tutar": [
+     "Bağımsız değerlendirme raporu desteği: 50.000 TL’ye kadar, %100, geri ödemesiz.",
+     "Personel giderleri desteği: 10.000.000 TL’ye kadar, %80, geri ödemeli.",
+     "Proje süresi 24 ay. Diğer destek kalemleri için kurumun metnine bak."
+    ],
+    "nerede": "Önce Sanayi ve Teknoloji Bakanlığı’na ön başvuru yapılır; kesin başvuruya davet edilen işletmeler Program Portalı üzerinden KOSGEB’e yönlendirilir."
+   }
   },
   {
    "id": "tubitak-7d7ffcea",
@@ -12839,7 +12871,16 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "BiGG girişimcilik programının 1. aşamasını yürütecek “uygulayıcı kuruluşları” belirlemek. Bu kuruluşlar girişimcilerin iş fikirlerini toplar, değerlendirir ve iş planı hazırlamalarına destek olur.",
+    "kim": [
+     "Teknoloji geliştirme bölgeleri, teknoloji transfer ofisleri, finans kurumları, özel sektör ve araştırma altyapıları gibi girişimcilere destek veren kuruluşlar",
+     "İşletmeler ve girişimciler bu çağrıya doğrudan başvurmaz"
+    ],
+    "not": "Kurum sayfasına göre 2026–2028 dönemi uygulayıcı kuruluşları belirlenmiş durumda; yeni başvuru olup olmadığını TÜBİTAK sayfasından kontrol et.",
+    "nerede": "TÜBİTAK"
+   }
   },
   {
    "id": "tubitak-be36a690",
@@ -12904,7 +12945,18 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "Üniversitelerdeki Teknoloji Transfer Ofislerinin (TTO) teknoloji transferi uzmanı çalıştırmasını ya da mevcut uzmanlarını tutmasını desteklemek.",
+    "kim": [
+     "Üniversitelerin Teknoloji Transfer Ofisleri (işletmeler başvuramaz)"
+    ],
+    "tutar": [
+     "24 aylık proje için bütçe üst sınırı formülle hesaplanır: personel giderleri = 24 × 6 × başvuru tarihindeki brüt asgari ücret; hizmet alımı = personel giderinin %5’i. Genel giderler bu tutara dahildir."
+    ],
+    "ne_zaman": "TÜBİTAK yeni bir duyuru yapana kadar sürekli açık; başvurular dönemler hâlinde toplanıp panelde değerlendirilir.",
+    "nerede": "TÜBİTAK"
+   }
   },
   {
    "id": "iskur-e87abe4e",
@@ -12969,7 +13021,23 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "İşsizlere, kamu kurumlarıyla yürütülen işlerde (bakım hizmetleri, ağaçlandırma, park ve temizlik işleri gibi) çalışarak iş deneyimi ve çalışma alışkanlığı kazandırmak.",
+    "kim": [
+     "Türkiye Cumhuriyeti vatandaşı, İŞKUR’a kayıtlı ve 18 yaşını doldurmuş olmak",
+     "Emekli (yaşlılık veya malullük aylığı alan) olmamak",
+     "Son bir ayda sigortalı çalışmamış olmak",
+     "Hane gelir şartını sağlamak",
+     "Başka bir İŞKUR programından o sırada yararlanmıyor olmak"
+    ],
+    "hepsi": true,
+    "not": "Bu program işletmeler için değil, işsiz kişiler içindir.",
+    "tutar": [
+     "Katılımcıya, katıldığı her gün için 1.375 TL cep harçlığı (1 Ocak 2026 itibarıyla)."
+    ],
+    "nerede": "İŞKUR"
+   }
   },
   {
    "id": "iskur-6946cec9",
@@ -13034,7 +13102,23 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "Devlet üniversitesi öğrencilerine iş deneyimi, eğitim (iş arama, öz geçmiş, mülakat, finansal okuryazarlık) ve gelir desteği sağlamak.",
+    "kim": [
+     "Devlet üniversitelerinde örgün eğitim gören ön lisans, lisans, yüksek lisans veya doktora öğrencisi olmak (açık öğretim ve uzaktan eğitim öğrencileri yararlanamaz)",
+     "Programı yürüten üniversitenin öğrencisi olmak",
+     "Türkiye Cumhuriyeti vatandaşı, İŞKUR’a kayıtlı ve 18 yaşını doldurmuş olmak",
+     "Son bir ayda sigortalı çalışmamış olmak",
+     "Hane gelir şartını sağlamak"
+    ],
+    "hepsi": true,
+    "not": "Bu program işletmeler için değil, üniversite öğrencileri içindir.",
+    "tutar": [
+     "Katılımcılara gelir desteği verilir; tutar kurumun bu sayfasında belirtilmemiş."
+    ],
+    "nerede": "İŞKUR ve ilgili devlet üniversitesi"
+   }
   },
   {
    "id": "iskur-d76ef715",
@@ -13099,7 +13183,25 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "İŞKUR ve TOBB işbirliğiyle, işsizleri iş piyasasının ihtiyaç duyduğu mesleklerde kursla yetiştirmek.",
+    "kim": [
+     "İŞKUR’a kayıtlı işsiz olmak",
+     "Kurs başlamadan önceki son 15 günde sigortalı çalışmamış olmak",
+     "15 yaşını doldurmuş olmak",
+     "Mesleğin gerektirdiği özel şartları taşımak",
+     "Aynı meslekte İŞKUR kursunu daha önce bitirmemiş olmak",
+     "İşverenin birinci veya ikinci derece akrabası ya da eşi olmamak"
+    ],
+    "hepsi": true,
+    "not": "Bu program işsiz kişilerin mesleki eğitimi içindir.",
+    "tutar": [
+     "Kurs: günde 5–8 saat, haftada 30–45 saat; teorik ve pratik eğitim toplamı en fazla 160 gün.",
+     "Karşılanan giderler için kurumun metnine bak."
+    ],
+    "nerede": "İŞKUR"
+   }
   },
   {
    "id": "iskur-b7c52fef",
@@ -13123,7 +13225,7 @@
     "tumu"
    ],
    "il": [
-    "tumu"
+    "Hatay"
    ],
    "son_basvuru": null,
    "ozet": "Üretim Sürecine Katılım Programı (ÜSKAP), işverenlerin ihtiyaç duydukları nitelikli iş gücünü herhangi bir maliyete katlanmaksızın iş yerinde yetiştirmelerine olanak tanıyan aktif bir iş gücü programıdır. Bu program sayesinde, istihdam sürecinde daha isabetli kararlar alabilir, işe almayı düşündüğün",
@@ -13164,7 +13266,20 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "İşverenlerin, işe almayı düşündükleri kişileri maliyete katlanmadan 3 aya kadar iş yerinde yetiştirmesini ve gözlemlemesini sağlamak.",
+    "kim": [
+     "Başvuruyu işveren yapar",
+     "Programa alınacak kişi: İŞKUR’a kayıtlı işsiz, Türkiye Cumhuriyeti vatandaşı, son bir ayda sigortalı çalışmamış ve 18–35 yaş arasında olmalı"
+    ],
+    "hepsi": true,
+    "tutar": [
+     "İşverene, programa alınan her kişi için ayda en fazla 32.500 TL ücret, vergi ve prim desteği; en fazla 3 ay."
+    ],
+    "il_metin": "2026 yılında yalnızca Hatay’da uygulanıyor.",
+    "nerede": "Çalışma ve İş Kurumu il müdürlükleri, hizmet merkezleri veya İŞKUR e-Şube."
+   }
   },
   {
    "id": "iskur-a1360bf6",
@@ -13229,7 +13344,22 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "İşveren konkordato, iflas, iflasın ertelenmesi veya aciz nedeniyle ödeme güçlüğüne düşerse, işçilerin ödenmeyen ücretlerinden en fazla 3 aylığını karşılamak.",
+    "kim": [
+     "Başvuruyu işçi yapar (işletmeler değil)",
+     "Ücret alacağının olduğu dönemde iş sözleşmesiyle çalışmış olmak",
+     "İşverenin ödeme güçlüğüne düşmüş olması",
+     "Ödeme güçlüğünden önceki son bir yılda aynı iş yerinde en az bir gün çalışmış olmak",
+     "Alacağın 5 yıllık zaman aşımına uğramamış olması"
+    ],
+    "hepsi": true,
+    "tutar": [
+     "En fazla 3 aylık temel ücret alacağı ödenir; ödeme, prime esas günlük kazanç üst sınırını aşamaz."
+    ],
+    "nerede": "İŞKUR birimine şahsen: talep dilekçesi, işverenin ödeme güçlüğünü gösteren belge (aciz vesikası, iflas, konkordato kararı vb.) ve işçi alacak belgesiyle."
+   }
   },
   {
    "id": "eximbank-6261ccdb",
@@ -13834,7 +13964,7 @@
     "Konya",
     "Karaman"
    ],
-   "son_basvuru": null,
+   "son_basvuru": "2026-11-08",
    "ozet": "Ajansımız, InnoPark Konya Teknoloji Geliştirme Bölgesi ve TÜYAFED Yazılımcılar Federasyonu iş birliğiyle başlatılan “Yazan Zeka: Derin Teknolojileri Hızlandırma Programı” yapay zekâ ve derin teknoloji alanındaki yenilikçi fikirleri geliştirmek isteyen girişimcileri bekliyor.",
    "firma_yasi_max": null,
    "ihracat_gerekli": false,
@@ -13873,74 +14003,21 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
-  },
-  {
-   "id": "mevka-adc29d2f",
-   "ad": "Dijital Dönüşüm ve Yapay Zeka Eğitim Programı",
-   "kurum": "Mevlana Kalkınma Ajansı",
-   "url": "https://www.mevka.org.tr/tr/haberler/dijital-donusum-ve-yapay-zeka-egitim-programi",
-   "tur": "hibe",
-   "ust_limit": null,
-   "destek_orani": null,
-   "oran_metin": null,
-   "amac": [
-    "yatirim",
-    "dijital"
-   ],
-   "olcek": [
-    "mikro",
-    "kucuk",
-    "orta",
-    "buyuk"
-   ],
-   "sektor": [
-    "tumu"
-   ],
-   "il": [
-    "Konya",
-    "Karaman"
-   ],
-   "son_basvuru": null,
-   "ozet": "Bilindiği üzere Mevlana Kalkınma Ajansı, Sanayi ve Teknoloji Bakanlığı koordinasyonunda Konya ve Karaman illerinde, bölgesel kalkınma alanında faaliyetler yürüten bir kamu kurumudur. Ajansımız, Konya Yatırım Destek Ofisimiz aracılığıyla iş ve yatırım ortamının iyileştirilmesine yönelik çalışmalar yü",
-   "firma_yasi_max": null,
-   "ihracat_gerekli": false,
-   "kosullar": [],
-   "belgeler": [],
-   "sayfa": {
-    "kaynak": "Mevlana Kalkınma Ajansı",
-    "url": "https://www.mevka.org.tr/tr/haberler/dijital-donusum-ve-yapay-zeka-egitim-programi",
-    "kontrol": "2026-11-04",
-    "metin": "Dijital Dönüşüm ve Yapay Zeka Eğitim Programı\nBilindiği üzere Mevlana Kalkınma Ajansı, Sanayi ve Teknoloji Bakanlığı koordinasyonunda Konya ve Karaman illerinde, bölgesel kalkınma alanında faaliyetler yürüten bir kamu kurumudur. Ajansımız, Konya Yatırım Destek Ofisimiz aracılığıyla iş ve yatırım ortamının iyileştirilmesine yönelik çalışmalar yürütmektedir. Bu kapsamda Ajansımız tarafından ilimiz için önemli olduğu değerlendirilen imalat sektöründe faaliyet gösteren firmaların çalışanlarına yönelik Dijital Dönüşüm ve Yapay Zeka Eğitim Programı düzenlenecektir. Eğitimler Konya Ticaret Odası Teknoloji ve Eğitim Kampüsü Model Fabrika Toplantı Salonunda yüz yüze olarak gerçekleştirilecektir. Eğitimler 10 Ekim 2025 tarihinde başlayacak ve Cuma günleri olacaktır. Eğitim programı ile ilgili hususlar şu şekildedir;\n• Eğitime her firmadan 1 kişi olmak üzere 20 kişi kabul edilecektir.\nDijital Dönüşüm ve Yapay Zeka Eğitimi kapsamında;\n• Dijital Ekosistemler ve Platformlar\n• Dijital Olgunluk Değerlendirmesi ve Yol Haritası Oluşturma\n• Dijital Teknolojiler ve Yapay Zeka Endüstriyel Nesnelerin İnterneti (IIoT) İş Süreçlerinin Dijitalleştirilmesi (ERP, PLM, MES) Büyük Veri ve Yapay Zeka Siber Güvenlik Endüstriyel Robotlar ve Cobot’lar Eklemeli İmalat (3D Baskı) İmalatta AR/VR Uygulamaları\n• Endüstriyel Nesnelerin İnterneti (IIoT)\n• İş Süreçlerinin Dijitalleştirilmesi (ERP, PLM, MES)\n• Endüstriyel Robotlar ve Cobot’lar\n• Model Fabrika Uygulamaları & Vaka Analizi Yalın Dijital Dönüşüm Model Fabrika Uygulaması Vaka Analizi – Sunum ve Değerlendirme\n• Vaka Analizi – Sunum ve Değerlendirme\nkonu başlıklarında eğitimler verilecektir. Eğitimde sonunda sertifika verilecek olup %75 altında devam edilmesi durumunda sertifika verilemeyecektir. Başvuru sayısı fazla olması durumunda verilen bilgilere göre adaylar arasından seçim yapılacaktır. Başvuru için: https://forms.gle/md2YSS1WpPAnhzVD7 Son başvuru tarihi: 7 Ekim 2025 saat 17:00 Kamuoyuna saygıyla duyurulur…\nEğitim tarihlerine aşağıdaki dosyalar kısmından erişebilirsiniz."
-   },
-   "alanlar": [
-    "firmaUnvani",
-    "vkn",
-    "vergiDairesi",
-    "yetkili",
-    "telefon",
-    "eposta",
-    "adres",
-    "il",
-    "kurulusYili",
-    "sirketTuru",
-    "naceKodu",
-    "calisan",
-    "ciro",
-    "projeAdi",
-    "projeOzeti",
-    "projeSuresi",
-    "projeButcesi",
-    "talepTutari"
-   ],
-   "basvuru": {
-    "yontem": "online",
-    "form": null,
-    "online": "https://www.mevka.org.tr/",
-    "adimlar": []
-   },
-   "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "Yapay zekâ ve derin teknoloji alanında iş fikri olan girişimcileri 8 haftalık hızlandırma programıyla desteklemek.",
+    "kim": [
+     "Ön lisans, lisans, yüksek lisans veya doktora öğrencisi ya da mezunu olmak",
+     "Yapay zekâ tabanlı girişim geliştiren bireysel girişimci veya en fazla 5 kişilik ekip olmak",
+     "Fikir doğrulama veya ilk ürün (MVP) aşamasında olmak",
+     "İş fikrinin yapay zekâ temelli olması; programa düzenli katılıp Demo Day’de sunum yapmak"
+    ],
+    "tutar": [
+     "Para desteği değil: 32 saatlik eğitim ve birebir mentorluk (iş modeli ve pazar, veri ve MVP, BİGG planı ve bütçe, Demo Day hazırlığı)."
+    ],
+    "ne_zaman": "Son başvuru 8 Kasım 2026; program 11 Kasım 2026’da başlar (%70 çevrim içi, %30 yüz yüze).",
+    "nerede": "https://ttoportal.innopark.com.tr/form_view.php?token=57a453fe-0133-4d10-8f32-e2fa9177a988"
+   }
   },
   {
    "id": "oran-d54a4f64",
@@ -14099,10 +14176,7 @@
     "tumu"
    ],
    "il": [
-    "Mardin",
-    "Batman",
-    "Şırnak",
-    "Siirt"
+    "Mardin"
    ],
    "son_basvuru": null,
    "ozet": "Programın hedefi; ülke sathında daha dengeli bir yerleşme düzeninin sağlanması ve göçün kademeli olarak yönlendirilebilmesi için nispeten geri kalmış ve göç veren bölgelerde, bölgesel çekim merkezi niteliğini haiz şehirlerin katma değeri yüksek üretim, ihracat, istihdam, verimlilik, teknoloji ve yen",
@@ -14143,7 +14217,15 @@
     "adimlar": []
    },
    "kredi": null,
-   "kaynak": "kurum-sitesi"
+   "kaynak": "kurum-sitesi",
+   "sade": {
+    "amac": "Göç veren bölgelerdeki çekim merkezi şehirlerin üretim, ihracat, istihdam, verimlilik ve teknoloji kapasitesini artırmak.",
+    "kim": [
+     "Kurumun sayfasında başvuru sahipleri belirtilmemiş. Öncelikler daha çok kurumsal projelere yönelik: OSB ve KSS’lerde uygulamalı eğitim merkezleri, sanayi altyapısı, kümelenme, model fabrikalar ve KOBİ’lere iş destek hizmetleri."
+    ],
+    "il_metin": "Dicle Kalkınma Ajansı bölgesinde yalnızca Mardin’de uygulanıyor.",
+    "nerede": "Dicle Kalkınma Ajansı"
+   }
   },
   {
    "id": "yd-0a207d3a",
