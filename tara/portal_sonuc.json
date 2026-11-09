@@ -1,0 +1,131 @@
+{
+ "KOSGEB e-Hizmetler": {
+  "aday": "https://edevlet.kosgeb.gov.tr/",
+  "durum": 200,
+  "baslik": "E-Hizmetler",
+  "url": "https://edevlet.kosgeb.gov.tr/EHizmetler/Index?ReturnUrl=%2f",
+  "sifre": false,
+  "edevlet": true,
+  "alan": 1
+ },
+ "Ticaret Bakanlığı DYS": {
+  "aday": "https://dys.ticaret.gov.tr/",
+  "durum": 200,
+  "baslik": "Destek Yönetim Sistemi (DYS)",
+  "url": "https://dys.ticaret.gov.tr/",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 1
+ },
+ "TÜBİTAK TEYDEB": {
+  "aday": "https://eteydeb.tubitak.gov.tr/",
+  "durum": 200,
+  "baslik": "TÜBİTAK TEYDEB Proje Değerlendirme ve İzleme Sistemi - PRODİS",
+  "url": "https://eteydeb.tubitak.gov.tr/teydebanasayfa.htm",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 0
+ },
+ "TÜBİTAK ARDEB PBS": {
+  "aday": "https://ardeb-pbs.tubitak.gov.tr/",
+  "durum": 200,
+  "baslik": "ARDEB Proje Başvuru Sistemi",
+  "url": "https://ardeb-pbs.tubitak.gov.tr/",
+  "sifre": false,
+  "edevlet": true,
+  "alan": 1
+ },
+ "TÜBİTAK ARBİS": {
+  "aday": "https://arbis.tubitak.gov.tr/",
+  "durum": 200,
+  "baslik": "ARBİS - Araştırmacı Bilgi Sistemi",
+  "url": "https://arbis.tubitak.gov.tr/",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 0
+ },
+ "Kalkınma Ajansları KAYS": {
+  "aday": "https://kays.kalkinma.gov.tr/",
+  "hata": "Page.goto: net::ERR_NAME_NOT_RESOLVED at https://kays.kalkinma.gov.tr/\nCall log:\n  - navigating to \""
+ },
+ "Sanayi Bakanlığı E-TUYS": {
+  "aday": "https://etuys.sanayi.gov.tr/",
+  "hata": "Page.goto: net::ERR_TIMED_OUT at https://etuys.sanayi.gov.tr/\nCall log:\n  - navigating to \"https://e"
+ },
+ "İŞKUR e-Şube": {
+  "aday": "https://esube.iskur.gov.tr/",
+  "durum": 200,
+  "baslik": "Türkiye İş Kurumu - Ana Sayfa",
+  "url": "https://esube.iskur.gov.tr/",
+  "sifre": true,
+  "edevlet": true,
+  "alan": 26
+ },
+ "SGK İşveren Sistemi": {
+  "aday": "https://uyg.sgk.gov.tr/IsverenSistemi",
+  "durum": 200,
+  "baslik": "T.C. Sosyal Güvenlik Kurumu",
+  "url": "https://uyg.sgk.gov.tr/IsverenSistemi",
+  "sifre": true,
+  "edevlet": true,
+  "alan": 5
+ },
+ "e-Devlet": {
+  "aday": "https://www.turkiye.gov.tr/",
+  "durum": 200,
+  "baslik": "e-Devlet Kapısı Devletin Kısayolu | www.türkiye.gov.tr",
+  "url": "https://www.turkiye.gov.tr/",
+  "sifre": false,
+  "edevlet": true,
+  "alan": 2
+ },
+ "TEDA": {
+  "aday": "https://teda.ktb.gov.tr/",
+  "durum": 200,
+  "baslik": "Teda - T.C. Kültür ve Turizm Bakanlığı",
+  "url": "https://teda.ktb.gov.tr/",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 1
+ },
+ "OGM e-Devlet": {
+  "aday": "https://edevlet.ogm.gov.tr/",
+  "hata": "Page.goto: net::ERR_TIMED_OUT at https://edevlet.ogm.gov.tr/\nCall log:\n  - navigating to \"https://ed"
+ },
+ "TARSİM": {
+  "aday": "https://web.tarsim.gov.tr/",
+  "durum": 200,
+  "baslik": "TARSİM | Tarım Sigortaları",
+  "url": "https://www.tarsim.gov.tr/",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 0
+ },
+ "Eximbank": {
+  "aday": "https://www.eximbank.gov.tr/",
+  "durum": 200,
+  "baslik": "Türk Eximbank - Türk Eximbank",
+  "url": "https://www.eximbank.gov.tr/",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 25
+ },
+ "KGF": {
+  "aday": "https://www.kgf.com.tr/",
+  "durum": 307,
+  "baslik": "Anasayfa",
+  "url": "https://www.kgf.com.tr/index.php/tr/",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 1
+ },
+ "Ufuk Avrupa": {
+  "aday": "https://ufukavrupa.org.tr/",
+  "durum": 200,
+  "baslik": "Anasayfa | Ufuk Avrupa",
+  "url": "https://ufukavrupa.org.tr/tr",
+  "sifre": false,
+  "edevlet": false,
+  "alan": 1
+ }
+}
