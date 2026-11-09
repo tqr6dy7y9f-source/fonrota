@@ -1,18 +1,38 @@
+"""Kurumların online başvuru sistemleri: adres açılıyor mu, nereye yönleniyor, giriş ekranı var mı? (yalnızca açılış sayfası)"""
 import asyncio, json
 from playwright.async_api import async_playwright
-DOLDUR = open("tara/doldur.js").read()
-P = {"firmaUnvani": "Deneme Ltd", "vkn": "1111111111", "vergiDairesi": "Samsun", "sirketTuru": "Limited şirket", "kurulusYili": "2018", "naceKodu": "31.00.01", "calisan": "25", "ciro": "1000", "yetkili": "Ad Soyad", "telefon": "05000000000", "eposta": "a@b.c", "il": "Mardin", "adres": "Adres", "ihracat": True, "isTanimi": "Mardin’de tekstil üretiyoruz."}
+ADAY = {
+ "KOSGEB e-Hizmetler": "https://edevlet.kosgeb.gov.tr/",
+ "Ticaret Bakanlığı DYS": "https://dys.ticaret.gov.tr/",
+ "TÜBİTAK TEYDEB": "https://eteydeb.tubitak.gov.tr/",
+ "TÜBİTAK ARDEB PBS": "https://ardeb-pbs.tubitak.gov.tr/",
+ "TÜBİTAK ARBİS": "https://arbis.tubitak.gov.tr/",
+ "Kalkınma Ajansları KAYS": "https://kays.kalkinma.gov.tr/",
+ "Sanayi Bakanlığı E-TUYS": "https://etuys.sanayi.gov.tr/",
+ "İŞKUR e-Şube": "https://esube.iskur.gov.tr/",
+ "SGK İşveren Sistemi": "https://uyg.sgk.gov.tr/IsverenSistemi",
+ "e-Devlet": "https://www.turkiye.gov.tr/",
+ "TEDA": "https://teda.ktb.gov.tr/",
+ "OGM e-Devlet": "https://edevlet.ogm.gov.tr/",
+ "TARSİM": "https://web.tarsim.gov.tr/",
+ "Eximbank": "https://www.eximbank.gov.tr/",
+ "KGF": "https://www.kgf.com.tr/",
+ "Ufuk Avrupa": "https://ufukavrupa.org.tr/",
+}
 async def main():
     async with async_playwright() as pw:
         b = await pw.chromium.launch(); out = {}
-        for url in ["https://yatirim.dika.org.tr/", "https://girisimciform.dika.org.tr/"]:
-            p = await b.new_page(user_agent="Mozilla/5.0 (compatible; FonRota/1.0)")
-            await p.goto(url, wait_until="domcontentloaded", timeout=60000); await p.wait_for_timeout(4000)
-            await p.add_script_tag(content=DOLDUR); await p.evaluate("p => window.__fonrota.doldur(p, {}, false)", P)
-            out[url] = await p.evaluate("""() => [...document.querySelectorAll('input,select,textarea')].filter(e => e.offsetParent !== null && !/^(hidden|submit|button)$/i.test(e.type||'')).map(e => {
-              const lab = (e.id && document.querySelector('label[for="'+e.id+'"]')) || e.closest('label') || e.closest('.form-group,.col,.row,td,div')?.querySelector('label');
-              return { tag: e.tagName, type: e.type, name: e.name, id: e.id, ph: e.placeholder, etiket: (lab ? lab.textContent : '').trim().slice(0,80), dolan: e.dataset.fonrota || '', secenek: e.tagName==='SELECT' ? [...e.options].slice(0,6).map(o=>o.text.trim()).join(' | ') : '' }; })""")
-            out[url + "#baslik"] = await p.title()
-            await p.screenshot(path="tara/" + url.split("//")[1].split(".")[0] + ".png", full_page=True); await p.close()
-        json.dump(out, open("tara/form_alanlar.json", "w"), ensure_ascii=False, indent=1); await b.close()
+        for ad, url in ADAY.items():
+            p = await b.new_page(user_agent="Mozilla/5.0 (compatible; FonRota/1.0)", ignore_https_errors=True)
+            try:
+                r = await p.goto(url, wait_until="domcontentloaded", timeout=45000); await p.wait_for_timeout(3000)
+                info = await p.evaluate("""() => ({ baslik: document.title.slice(0, 90), url: location.href,
+                  sifre: !!document.querySelector('input[type=password]'),
+                  edevlet: /e-?devlet|turkiye\\.gov\\.tr|giriş yap|giris yap|oturum aç/i.test(document.body.innerText.slice(0, 20000)),
+                  alan: document.querySelectorAll('input:not([type=hidden]),select,textarea').length })""")
+                out[ad] = {"aday": url, "durum": r.status if r else None, **info}
+            except Exception as e:
+                out[ad] = {"aday": url, "hata": str(e)[:100]}
+            print(ad, json.dumps(out[ad], ensure_ascii=False), flush=True); await p.close()
+        json.dump(out, open("tara/portal_sonuc.json", "w"), ensure_ascii=False, indent=1); await b.close()
 asyncio.run(main())
