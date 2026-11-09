@@ -626,6 +626,39 @@ async function enablePush() {
 
 try { console.info(`%c${C.SITE_ADI || "FonRota"}%c © ${new Date().getFullYear()} ${C.SAHIP || ""}. Tüm hakları saklıdır.`, "font-weight:700;color:#B9832A", "color:inherit"); } catch {}
 if ("serviceWorker" in navigator && location.protocol === "https:") addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+/* ---------- Online başvuru sistemi: destek için kurumun gerçek başvuru sistemi (bilgi sayfası değil) ----------
+   Adresler 9 Kasım 2026'da açılarak doğrulandı (tara/portal_sonuc). e-Devlet ile girilen sistemlerde giriş kullanıcıya aittir. */
+const PORTAL = {
+  kosgeb: { ad: "KOSGEB e-Hizmetler", url: "https://edevlet.kosgeb.gov.tr/", giris: "e-Devlet" },
+  dys: { ad: "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS)", url: "https://dys.ticaret.gov.tr/", giris: "DYS kullanıcı girişi" },
+  teydeb: { ad: "TÜBİTAK TEYDEB Proje Başvuru Sistemi", url: "https://eteydeb.tubitak.gov.tr/", giris: "TEYDEB kullanıcı girişi" },
+  ardeb: { ad: "TÜBİTAK ARDEB Proje Başvuru Sistemi", url: "https://ardeb-pbs.tubitak.gov.tr/", giris: "e-Devlet" },
+  iskur: { ad: "İŞKUR e-Şube", url: "https://esube.iskur.gov.tr/", giris: "e-Devlet veya İŞKUR şifresi" },
+  sgk: { ad: "SGK İşveren Sistemi", url: "https://uyg.sgk.gov.tr/IsverenSistemi", giris: "işyeri kullanıcı girişi" },
+  teda: { ad: "TEDA Başvuru Sistemi", url: "https://teda.ktb.gov.tr/", giris: "" },
+  edevlet: { ad: "e-Devlet Kapısı", url: "https://www.turkiye.gov.tr/", giris: "e-Devlet" }
+};
+function basvuruSistemi(x) {
+  const t = (x.resmi?.bolumler || []).map(b => b.metin).join(" ") + " " + (x.sayfa?.metin || "");
+  const yer = (x.resmi?.bolumler || []).find(b => b.baslik.startsWith("Başvuru yeri"))?.metin || "";
+  const no = +((x.ad.match(/\b(1\d{3}|3\d{3})\b/) || [])[1] || 0);
+  const k = x.kurum;
+  let s = null;
+  if (/KOSGEB/.test(k)) s = PORTAL.kosgeb;
+  else if (/Ticaret Bakanlığı/.test(k) && /DYS|Destek Yönetim Sistemi/.test(t)) s = PORTAL.dys;
+  else if (/TÜBİTAK/.test(k) && no >= 1500 && no < 1900) s = PORTAL.teydeb;
+  else if (/TÜBİTAK/.test(k) && (no >= 1000 && no < 1100 || no >= 3500 && no < 3600)) s = PORTAL.ardeb;
+  else if (/İŞKUR/.test(k)) s = PORTAL.iskur;
+  else if (/^SGK/.test(k)) s = PORTAL.sgk;
+  else if (/TEDA/.test(x.ad)) s = PORTAL.teda;
+  else if (/e-Devlet üzerinden/i.test(yer)) s = PORTAL.edevlet;
+  if (s) return { ...s, kaynak: "sistem" };
+  // Başvuru yeri metnindeki bağlantı (genelge/PDF değil)
+  const l = (yer.match(/https?:\/\/[^\s,;)]+|www\.[^\s,;)]+/g) || []).map(u => u.replace(/[.]+$/, "")).find(u => !/\.(pdf|docx?)$/i.test(u));
+  if (l) return { ad: "Kurumun başvuru sayfası", url: /^http/.test(l) ? l : "https://" + l, giris: "", kaynak: "metin" };
+  return { ad: "Kurumun sayfası", url: x.sayfa?.url || x.basvuru.online || x.url, giris: "", kaynak: "sayfa" };
+}
+
 /* ---------- NACE kodu bulucu (Ticaret Bakanlığı / TÜİK NACE Rev.2.1 listesi) ---------- */
 let NACE = null;
 async function naceVeri() {
@@ -668,5 +701,5 @@ async function naceAra(q, n = 8) {
   return r.filter(o => o.p >= en * .55).slice(0, n).map(o => o.x);
 }
 
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, yonetici, naceAra, naceVeri, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
+window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, yonetici, basvuruSistemi, naceAra, naceVeri, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
 })();

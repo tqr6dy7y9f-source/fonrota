@@ -813,8 +813,11 @@ P.basvuru = async () => {
         ${pdfOk ? `<button class="btn seal" type="button" id="dl-form">Formu doldur ve indir (PDF)</button>` : ""}
         <button class="btn ${pdfOk ? "ghost" : "seal"}" type="button" id="dl-info">${pdfOk ? "Hazırlık formunu da indir (PDF)" : "Hazırlık formunu indir (PDF)"}</button>
         <button class="btn ghost" type="button" id="muhasebe">↗ Muhasebecime gönder (PDF ile)</button><div class="paylas-sec" id="muh-sec" hidden></div>
-        ${!pdfOk && mode !== "bilgi" ? (eklentiVar() ? `<a class="btn seal" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">🧩 Kurumun sitesinde otomatik doldur ↗</a><p class="small muted" style="margin:0">Kurumun sayfası açılır; başvuru formuna geldiğinde FonRota eklentisi bilgilerini kendiliğinden yazar. Kontrol edip sen gönderirsin.</p>`
-          : `<a class="btn ghost" href="${esc(x.basvuru.online)}" target="_blank" rel="noopener" id="open-site">Kurumun başvuru sitesini aç ↗</a><p class="small muted" style="margin:0">💡 <a ${link("eklenti")}>FonRota eklentisini</a> kurarsan kurumun sitesindeki form kendiliğinden dolar.</p>`) : ""}
+        ${mode !== "bilgi" ? (() => { const sis = D.basvuruSistemi(x); return `<div class="sistem-kutu"><b>Başvuru yeri:</b> ${esc(sis.ad)}${sis.giris ? ` <span class="small muted">(${esc(sis.giris)} ile giriş)</span>` : ""}
+          ${sis.kaynak === "sayfa" ? `<p class="small muted" style="margin:4px 0 0">Kurum bu destek için bir online başvuru sistemi belirtmemiş; kurumun sayfası açılır.</p>` : ""}</div>
+          ${eklentiVar() ? `<a class="btn seal" href="${esc(sis.url)}" target="_blank" rel="noopener" id="open-site">🧩 Başvuru sitesini aç ve doldur ↗</a>
+          <ol class="small muted adimlar"><li>Site yeni sekmede açılır${sis.giris ? `; <b>${esc(sis.giris)}</b> ile kendin giriş yap (şifrene dokunmayız)` : ""}.</li><li>Başvuru formuna geç. Her adımda firma bilgilerin kendiliğinden yazılır.</li><li>Dolmayan bir alan olursa alana tıkla, sağdaki <b>FonRota</b> panelinden bilgiyi seç.</li><li>Kontrol et ve formu kendin gönder.</li></ol>`
+          : `<a class="btn ghost" href="${esc(sis.url)}" target="_blank" rel="noopener" id="open-site">Başvuru sitesini aç ↗</a><p class="small muted" style="margin:0">💡 <a ${link("eklenti")}>FonRota eklentisini</a> kurarsan bu sitedeki form bilgilerinle kendiliğinden dolar.</p>`}`; })() : ""}
       </div>
       <label class="small muted" for="durum">Başvuru durumu</label>
       <select class="input" id="durum">${["Hazırlanıyor", "Form hazır", "Başvurdum", "Sonuçlandı"].map(s => `<option${s === (app.durum || "Hazırlanıyor") ? " selected" : ""}>${s}</option>`).join("")}</select>
@@ -825,8 +828,8 @@ P.basvuru = async () => {
       await persist("Hazırlanıyor").catch(() => {});
       if (!eklentiVar()) return;
       e.preventDefault(); Object.assign(values, formValues(form));
-      const r = await eklentiyleAc(x.basvuru.online, { ...p, ...Object.fromEntries(Object.entries(values).filter(([, v]) => v)) }, x.ad);
-      if (r.tamam) toast("Kurumun sayfası açıldı; form gelince eklenti dolduracak."); else { toast(r.hata || "Eklenti açamadı; sayfa normal açılıyor."); open(x.basvuru.online, "_blank", "noopener"); }
+      const r = await eklentiyleAc(D.basvuruSistemi(x).url, { ...p, ...Object.fromEntries(Object.entries(values).filter(([, v]) => v)) }, x.ad);
+      if (r.tamam) toast("Başvuru sitesi açıldı. Giriş yapıp forma geçince eklenti dolduracak."); else { toast(r.hata || "Eklenti açamadı; sayfa normal açılıyor."); open(D.basvuruSistemi(x).url, "_blank", "noopener"); }
     };
     if ($("#dl-form")) $("#dl-form").onclick = async () => {
       const b = $("#dl-form"); b.disabled = true; b.textContent = "Form hazırlanıyor…";
@@ -873,7 +876,7 @@ function eklentiyleAc(url, profil, ad) {
 /* ---------- Eklenti sayfası ---------- */
 P.eklenti = async () => {
   const ua = navigator.userAgent, chromium = /Chrome\/|Edg\//.test(ua) && !/Mobile/.test(ua), telefon = /iPhone|iPad|Android|Mobile/.test(ua);
-  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.2 · Ücretsiz · Mağaza gerektirmez";
+  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.3 · Ücretsiz · Mağaza gerektirmez";
   const dene = $("#dene");
   dene.onclick = async e => {
     if (!eklentiVar()) return;  // eklenti yoksa bağlantı deneme formunu normal açar

@@ -37,7 +37,7 @@ async function doldur() {
     if (!tab || !/^https?:|^file:/.test(tab.url || "")) return goster(`<div class="sonuc">Bu sayfa doldurulamaz. Başvuru formunun olduğu sekmeyi aç.</div>`);
     const p = (await depo.al("profil")).p;
     await chrome.scripting.executeScript({ target: { tabId: tab.id, allFrames: true }, files: ["doldur.js"] });
-    const r = await chrome.scripting.executeScript({ target: { tabId: tab.id, allFrames: true }, func: (p, a) => window.__fonrota.doldur(p, a), args: [p, ALAN_ADI] });
+    const r = await chrome.scripting.executeScript({ target: { tabId: tab.id, allFrames: true }, func: (p, a) => { const r = window.__fonrota.doldur(p, a); window.__fonrota.otomatik(p, a, ""); return r; }, args: [p, ALAN_ADI] });
     const dolan = [...new Set(r.flatMap(x => (x.result && x.result.dolan) || []))], bos = [...new Set(r.flatMap(x => (x.result && x.result.bos) || []))];
     goster(`<div class="sonuc">${dolan.length ? `<b class="ok">✓ ${dolan.length} alan dolduruldu</b>${esc(dolan.join(", "))}` : "<b>Tanıdığım bir alan bulamadım.</b>Alanlara sağ tıklayıp elle doldurabilirsin."}
       ${bos.length ? `<p class="muted" style="margin:6px 0 0">Profilinde boş olduğu için doldurulamadı: ${esc(bos.join(", "))}.</p>` : ""}</div>`);

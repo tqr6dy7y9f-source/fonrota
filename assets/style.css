@@ -433,3 +433,7 @@ footer.site .alt-baglanti a{font-weight:600;color:var(--seal-ink)}
 .sade-kutu details{margin-top:6px}
 .sade-ok{color:var(--ok);font-weight:600}.sade-no{color:var(--no);font-weight:600}
 .sade-not{background:var(--seal-soft);border-color:var(--seal)}
+
+/* Başvuru sistemi kutusu */
+.sistem-kutu{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;text-align:left}
+.adimlar{margin:4px 0 0;padding-left:18px;text-align:left}.adimlar li{margin:2px 0}
