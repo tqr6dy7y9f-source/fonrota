@@ -6,6 +6,7 @@
   "url": "https://yatirimadestek.gov.tr/program/036f0e8c-ada2-4b4f-ac9e-834bd4cd4a63",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -23,7 +24,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Ruhsatlı alanlardaki üreticilere 170 TL/da ödeme yapılır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -60,7 +61,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/036f0e8c-ada2-4b4f-ac9e-834bd4cd4a63",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -89,8 +90,7 @@
      "ad": "ck-tarimsal_desteklemeler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-03b816d6",
@@ -99,6 +99,7 @@
   "url": "https://yatirimadestek.gov.tr/program/03b816d6-0474-40b8-9582-4571a16725da",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -116,7 +117,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Programa üye ülkelerde Kamu-Kamu iş birliklerini destekleyerek, ulusal ve bölgesel araştırma programları arasındaki koordinasyonun sağlanması, araştırma ve yenilik programlarının geliştirilip güçlendirilerek uluslararası iş birliğinin arttırılması hedeflenmektedir. Bu amaçla; ERA-NET Cofund'un Horiz",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -153,7 +154,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/03b816d6-0474-40b8-9582-4571a16725da",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -178,8 +179,7 @@
      "ad": "ozet-era_net_cofund_araci_destekleme_programi1.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-04123fcb",
@@ -188,6 +188,7 @@
   "url": "https://yatirimadestek.gov.tr/program/04123fcb-56f1-4460-a5c3-15edd4c722e3",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -206,7 +207,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Şirketlerin sürdürülebilir ihracat artışını sağlama odaklı hedef pazar, yurt dışı pazarlara yönelik finansman ve fiyatlandırma stratejisi, pazarlama ve kanal stratejisi ve bunlara dair aksiyon planı ve bütçelerini içeren pazara giriş projesi hazırlık sürecine dair alacakları danışmanlık ve rapor gid",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -245,7 +246,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/04123fcb-56f1-4460-a5c3-15edd4c722e3",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -282,8 +283,7 @@
      "ad": "5-madde-pazara-giris-projesi-hazirlama-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-052cc3c7",
@@ -292,6 +292,7 @@
   "url": "https://yatirimadestek.gov.tr/program/052cc3c7-77e2-4056-b8fb-389c1449051d",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -342,11 +343,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/052cc3c7-77e2-4056-b8fb-389c1449051d",
    "guncelleme": "2026-04-03",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-0543c637",
@@ -355,6 +355,7 @@
   "url": "https://yatirimadestek.gov.tr/program/0543c637-bb5c-4988-b6ce-9a7edd80c22f",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -372,7 +373,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Üretici firmaların, küresel firmaların tedarik zincirine girebilmelerini teminen; küresel tedarik zinciri yetkinlik projesi kapsamındaki giderleri ve küresel tedarik zincirine yönelik yurt dışı depo kira gideri ile depolama hizmetlerine ilişkin bazı giderleri, 5973 sayılı İhracat Destekleri Hakkında",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -410,7 +411,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0543c637-bb5c-4988-b6ce-9a7edd80c22f",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -447,8 +448,7 @@
      "ad": "10-madde-kuresel-tedarik-zinciri-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-063c448b",
@@ -457,6 +457,7 @@
   "url": "https://yatirimadestek.gov.tr/program/063c448b-2c81-478f-bfb8-af503caff1da",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -475,7 +476,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Başvurulara İlişkin Genel Koşullar:",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -514,7 +515,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/063c448b-2c81-478f-bfb8-af503caff1da",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -539,8 +540,7 @@
      "ad": "ozet-sinema_filmlerinin_desteklenmesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-08d93dc5",
@@ -549,6 +549,7 @@
   "url": "https://yatirimadestek.gov.tr/program/08d93dc5-754c-4577-b3e5-3e7106a6882e",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -566,7 +567,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5228 sayılı Bazı Kanunlarda ve 178 sayılı Kanun Hükmünde Kararnamede Değişiklik Yapılması Hakkında Kanun ile Genelge 2005/13.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -604,7 +605,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/08d93dc5-754c-4577-b3e5-3e7106a6882e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -629,8 +630,7 @@
      "ad": "ozet-sponsorluk_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-0a207d3a",
@@ -639,6 +639,7 @@
   "url": "https://yatirimadestek.gov.tr/program/0a207d3a-3895-44e5-8552-819c368b69e9",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -689,11 +690,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0a207d3a-3895-44e5-8552-819c368b69e9",
    "guncelleme": "2026-03-26",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-0f2ffa7d",
@@ -702,6 +702,7 @@
   "url": "https://yatirimadestek.gov.tr/program/0f2ffa7d-98eb-4c85-9e90-452cae2ad1b2",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -757,7 +758,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0f2ffa7d-98eb-4c85-9e90-452cae2ad1b2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -786,8 +787,7 @@
      "ad": "ck-hayvancilik_destekleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-0fe65745",
@@ -796,6 +796,7 @@
   "url": "https://yatirimadestek.gov.tr/program/0fe65745-0cbb-42da-8ced-1bd413d04029",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -813,7 +814,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Lisanslı depoculuk sistemine ürün teslim eden üretici ve üretici örgütlerinin kira, nakliye ve analiz harcamalarının desteklenmesi amaçlanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -850,7 +851,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0fe65745-0cbb-42da-8ced-1bd413d04029",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -879,8 +880,7 @@
      "ad": "ck-tarimsal_desteklemeler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-10ccb0b2",
@@ -889,6 +889,7 @@
   "url": "https://yatirimadestek.gov.tr/program/10ccb0b2-7f22-4494-8d74-cb203bae1a03",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -906,7 +907,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Destek Kapsamı",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -948,7 +949,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/10ccb0b2-7f22-4494-8d74-cb203bae1a03",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -985,8 +986,7 @@
      "ad": "7-ve-8-madde-yurt-disi-ve-yurt-ici-fuar-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-1145e2bf",
@@ -995,6 +995,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1145e2bf-cfe1-4420-b86e-2dffbc5201c2",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1012,7 +1013,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "ÇATAK Programında, toprak ve su kalitesinin korunması, doğal kaynakların sürdürülebilirliği, erozyonun önlenmesi ve tarımın olumsuz etkilerinin azaltılmasına yönelik alanların korunması amaçlanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1049,7 +1050,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1145e2bf-cfe1-4420-b86e-2dffbc5201c2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1082,8 +1083,7 @@
      "ad": "teblig-catak_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-1331d6ab",
@@ -1092,6 +1092,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1331d6ab-36b6-43dd-91b6-8cbafa08b9d5",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 10,
   "geri_odemeli": false,
   "oran_metin": "%10–%90",
   "amac": [
@@ -1110,7 +1111,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Teknik müşavirlik şirketlerinin(TMŞ) yurtdışındaki ofisleri, reklam, tanıtım ve pazarlama faaliyetleri, yurtdışı fuar, seminer ve konferanslara katılımları, pazar araştırması seyahatleri, mesleki sorumluluk sigortası ve yazılım harcamaları, yurtdışı teknik eğitim programlarına ve uluslararası meslek",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1147,7 +1148,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1331d6ab-36b6-43dd-91b6-8cbafa08b9d5",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1180,8 +1181,7 @@
      "ad": "teknik-musavirlik-hizmetlerine-saglanacak-devlet-yardimlari-hakkinda-2014_10-sayili-kararin-uue-genelgesi.pdf"
     }
    ]
-  },
-  "destek_orani": 10
+  }
  },
  {
   "id": "yd-14b9ffd9",
@@ -1190,6 +1190,7 @@
   "url": "https://yatirimadestek.gov.tr/program/14b9ffd9-90dc-4fe6-8025-10306174b0f8",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1207,7 +1208,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Bu programla, üniversite/kamu araştırma merkez ve enstitülerindeki bilgi birikimi ve teknolojinin, Türkiye’de yerleşik ve proje sonuçlarını Türkiye’de uygulamayı taahhüt eden kuruluşların ihtiyaçları doğrultusunda, ürüne ya da sürece dönüştürülerek sanayiye aktarılması yoluyla ticarileştirilmesine k",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1244,7 +1245,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/14b9ffd9-90dc-4fe6-8025-10306174b0f8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1289,8 +1290,7 @@
      "ad": "sss-1505.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-1855e758",
@@ -1299,6 +1299,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1855e758-b50a-48a3-ad77-ccc3d340e21c",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 75,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1316,7 +1317,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Program kapsamında ''araştırma ve deneysel geliştirme (Ar-Ge)'', “teknolojik açıdan yeni veya iyileştirilmiş ürün”, “teknolojik süreç yeniliği” odaklı projeler beklenmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1353,7 +1354,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1855e758-b50a-48a3-ad77-ccc3d340e21c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1390,8 +1391,7 @@
      "ad": "sss-1509.pdf"
     }
    ]
-  },
-  "destek_orani": 75
+  }
  },
  {
   "id": "yd-1ab5875a",
@@ -1400,6 +1400,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1ab5875a-97f5-4169-b587-f489fa517bd8",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1419,7 +1420,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İhracata yönelik yatırım ve üretimi teşvik etmek, doğrudan yabancı yatırımları ve teknoloji girişini hızlandırmak, işletmeleri ihracata yönlendirmek ve uluslararası ticareti geliştirmek amacıyla kurulan serbest bölgelerde kullanıcılara aşağıda özet bilgileri verilen teşvik ve muafiyetler sağlanabilm",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1457,7 +1458,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1ab5875a-97f5-4169-b587-f489fa517bd8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1490,8 +1491,7 @@
      "ad": "serbest-bolgeler-uygulama-yonetmeligi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-1ab67b2c",
@@ -1500,6 +1500,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1ab67b2c-eb6b-4261-a0ec-f60ffa6adb36",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1550,7 +1551,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1ab67b2c-eb6b-4261-a0ec-f60ffa6adb36",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -1578,8 +1579,7 @@
      "ad": "kilavuz-arge_merkezleri_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-1b4952f6",
@@ -1588,6 +1588,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1b4952f6-f686-4d0a-ae55-8318f85a7a91",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1605,7 +1606,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Çok kanallı zincir mağaza marka sahibi şirketlerin; yurt dışı marka tescil/yenileme/koruma giderleri yıllık 750.000 TL, pazar araştırması çalışması ve raporları yıllık 2.000.000 TL, tanıtım giderleri ülke başına 5 yıl boyunca yıllık 9.000.000 TL, birim kira gideri birim başına 5 yıl/yıllık 2.000.000",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1643,7 +1644,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1b4952f6-f686-4d0a-ae55-8318f85a7a91",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1680,8 +1681,7 @@
      "ad": "18-madde-cok-kanalli-zincir-magaza-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-1cb09bf3",
@@ -1690,6 +1690,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1cb09bf3-1c63-41be-96e3-ff0cabbc0a7e",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": "%50–%75",
   "amac": [
@@ -1708,7 +1709,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Şirketlerin, pazaryerlerinin ve perakende e-ticaret sitelerinin; e-ihracata hazırlanması, yurt dışı pazarlarda ve pazaryerlerinde Türk ürünlerinin ve markalarının çevrim içi sergilenmesi, tanıtılması, yurt dışı siparişlere ilişkin hızlı teslimatın sağlanması, şirketlerin e-ihracat gerçekleştirmeleri",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1746,7 +1747,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1cb09bf3-1c63-41be-96e3-ff0cabbc0a7e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1791,8 +1792,7 @@
      "ad": "2024-yili-e-ihracat-destekleri-ust-limitleri.xlsx"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-1e49211f",
@@ -1801,6 +1801,7 @@
   "url": "https://yatirimadestek.gov.tr/program/1e49211f-8389-4928-ab28-a1c233b67b3a",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1819,7 +1820,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-31",
+  "son_basvuru": null,
   "ozet": "Yatırım Taahhütlü Avans Kredisi",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1852,7 +1853,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1e49211f-8389-4928-ab28-a1c233b67b3a",
    "guncelleme": "2026-03-19",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -1876,8 +1877,7 @@
      "ad": "teknoloji-alanlari-listesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-21ed6aad",
@@ -1886,6 +1886,7 @@
   "url": "https://yatirimadestek.gov.tr/program/21ed6aad-1bf1-42b4-bfee-cf32ef536766",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -1904,7 +1905,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "TÜBİTAK sanayi teşvikleri başlığında yer alan T.C. Hazine ve Maliye Bakanlığı Ar-Ge Vergi indirimi desteğinde, mükelleflerin, münhasıran yeni teknoloji ve bilgi arayışına yönelik araştırma ve geliştirme faaliyetleri çerçevesinde, işletmeleri bünyesinde 2008 hesap döneminden itibaren yaptıkları harca",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -1942,7 +1943,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/21ed6aad-1bf1-42b4-bfee-cf32ef536766",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1975,8 +1976,7 @@
      "ad": "ek-1_ar-ge_projesi_baslikli_dokuman_formati.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-220e65de",
@@ -1985,6 +1985,7 @@
   "url": "https://yatirimadestek.gov.tr/program/220e65de-d957-4b50-9a43-afe2abbde3b5",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2035,11 +2036,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/220e65de-d957-4b50-9a43-afe2abbde3b5",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-22fe7e4e",
@@ -2048,6 +2048,7 @@
   "url": "https://yatirimadestek.gov.tr/program/22fe7e4e-6045-4343-827f-b16223f2defc",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2065,7 +2066,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi ile turizm işletmelerinin, özel havayollarının, seyahat acentalarının finansman ihtiyacı karşılanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2105,7 +2106,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/22fe7e4e-6045-4343-827f-b16223f2defc",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2130,8 +2131,7 @@
      "ad": "ozet_turizm_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-266b42e1",
@@ -2140,6 +2140,7 @@
   "url": "https://yatirimadestek.gov.tr/program/266b42e1-7454-4222-9ce9-8bb462e6b35d",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2157,7 +2158,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 3294 sayılı Kanun’un ek 5’inci maddesi, 2018/8 - 2021/18 - 2023/17 sayılı Genelgeler.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2194,7 +2195,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/266b42e1-7454-4222-9ce9-8bb462e6b35d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2239,8 +2240,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-2ab98c68",
@@ -2249,6 +2249,7 @@
   "url": "https://yatirimadestek.gov.tr/program/2ab98c68-451d-4ea8-84f2-bd9c879e59f6",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2268,7 +2269,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Uygun başvuru sahiplerinin yurt dışı mal ve hizmet ihracı taahhüdü karşılığında finansal kiralama yoluyla yapacakları yatırımların finanse edilmesi amacıyla sunulmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2309,7 +2310,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/2ab98c68-451d-4ea8-84f2-bd9c879e59f6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2334,8 +2335,7 @@
      "ad": "ozet_finansal_kiralama_sirketlerine_yonelik_kredi_programi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-2d26e987",
@@ -2344,6 +2344,7 @@
   "url": "https://yatirimadestek.gov.tr/program/2d26e987-4262-448b-99e6-99d290944325",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2362,7 +2363,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "T.C. Merkez Bankası ile işbirliği halinde mal ve döviz kazandırıcı hizmet ihracatı yapan firmalar için uygun maliyetle finansman sağlanması amacıyla sunulan TL veya Döviz kredisidir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2401,7 +2402,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/2d26e987-4262-448b-99e6-99d290944325",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2426,8 +2427,7 @@
      "ad": "ozet_reeskont_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-2f124788",
@@ -2436,6 +2436,7 @@
   "url": "https://yatirimadestek.gov.tr/program/2f124788-3459-495b-926e-851aace1c868",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2453,7 +2454,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; ülkemiz ihracatının etkin ve kapsamlı akışını sağlamak, ihracatçılarımızın uluslararası tedarik ve dağıtım zincirlerine daha hızlı ve rekabetçi fiyatlarla nüfuz etmelerini temin etmek ve önemli pazarlardaki ihracat performansımızı istikrarlı kılacak altyapı olanaklarını oluşturmak üz",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2491,7 +2492,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/2f124788-3459-495b-926e-851aace1c868",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2524,8 +2525,7 @@
      "ad": "5449-sayili-kararin-uygulama-usul-ve-esaslarina-iliskin-genelge.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-3a2ad7af",
@@ -2534,6 +2534,7 @@
   "url": "https://yatirimadestek.gov.tr/program/3a2ad7af-3763-499e-a29d-0b205e1859aa",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2551,7 +2552,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; ülkemizde bitkisel üretimi artırmak, verim ve kaliteyi yükseltmek, sürdürülebilirliği sağlamak ve çevreye duyarlı alternatif tarım tekniklerinin geliştirilmesine yönelik, çiftçileri desteklemektir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2588,7 +2589,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/3a2ad7af-3763-499e-a29d-0b205e1859aa",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2621,8 +2622,7 @@
      "ad": "ck-tarim_havzalar_listesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-3c193217",
@@ -2631,6 +2631,7 @@
   "url": "https://yatirimadestek.gov.tr/program/3c193217-4953-4e13-aa4a-ef823e66337c",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2694,7 +2695,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/3c193217-4953-4e13-aa4a-ef823e66337c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2723,8 +2724,7 @@
      "ad": "ck-dusuk_faizli_tarimsal_krediler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-4163bebe",
@@ -2733,6 +2733,7 @@
   "url": "https://yatirimadestek.gov.tr/program/4163bebe-dc87-4f9c-9e49-a29139ebc945",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2750,7 +2751,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 4447 sayılı Kanun’un ek 4’üncü maddesi, 31/12/2018 tarihli ve 30642 sayılı Resmi Gazete’de yayımlanan Çok Tehlikeli Sınıfta Yer Alan ve Ondan Fazla Çalışanı Bulunan İşyerlerinde İşsizlik Sigortası Primi İşveren Payı Teşvikinden Yararlanılmasına İlişkin Usul ve Esaslar Hakkında Tebliğ,",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2788,7 +2789,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4163bebe-dc87-4f9c-9e49-a29139ebc945",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2825,8 +2826,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-418886e0",
@@ -2835,6 +2835,7 @@
   "url": "https://yatirimadestek.gov.tr/program/418886e0-4f7e-47d3-86e9-c0286e46543a",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2853,7 +2854,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Programın amacı; ülkemizde ihtiyaç duyulan, teknolojik dışa bağımlılığımızı azaltacak ve/veya ülkemizin rekabet gücünü artıracak ulusal/uluslararası yeni bir ürün/süreç/yöntem/model geliştirme amacına yönelik uygulamalı araştırma ve/veya deneysel geliştirme projelerinin desteklenmesidir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2890,7 +2891,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/418886e0-4f7e-47d3-86e9-c0286e46543a",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2923,8 +2924,7 @@
      "ad": "yonetmelik-tubitak_tarafindan_yurutulen_destek_programlari-2019_4.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-43532d4b",
@@ -2933,6 +2933,7 @@
   "url": "https://yatirimadestek.gov.tr/program/43532d4b-e773-471c-a29c-dcb29e9bfc63",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -2951,7 +2952,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Ormanların korunması, geliştirilmesi, işletilmesi ve genişletilmesi hedeflerine ulaşmak üzere, orman köylülerinin kalkındırılmalarına katkıda bulunmak ve ormanlara olabilecek baskıyı azaltmak için orman köylülerine, kooperatiflere ve kooperatif üst kuruluşlarına hibe ve kredi kullandırılması amaçlan",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -2990,7 +2991,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/43532d4b-e773-471c-a29c-dcb29e9bfc63",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3023,8 +3024,7 @@
      "ad": "tanitim_kitapcigi-orkoy_kredileri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-45f05725",
@@ -3033,6 +3033,7 @@
   "url": "https://yatirimadestek.gov.tr/program/45f05725-b25f-49aa-a7dd-c8444c810761",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3083,11 +3084,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/45f05725-b25f-49aa-a7dd-c8444c810761",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-46d52585",
@@ -3096,6 +3096,7 @@
   "url": "https://yatirimadestek.gov.tr/program/46d52585-d8df-4bf2-afa6-a6163d27f17f",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3113,7 +3114,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5510 Sayılı Kanun’un 81’inci maddesi (j) bendi.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3154,7 +3155,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/46d52585-d8df-4bf2-afa6-a6163d27f17f",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3187,8 +3188,7 @@
      "ad": "sgk_istihdam_tesvikleri_brosurleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-46d56e27",
@@ -3197,6 +3197,7 @@
   "url": "https://yatirimadestek.gov.tr/program/46d56e27-8547-40e6-8700-c70f726ed113",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3215,7 +3216,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; Dünya piyasa fiyatlarından girdi temin edilmesi suretiyle ihracatı artırmak, ihraç ürünlerine uluslararası piyasalarda rekabet gücü kazandırmak, ihraç pazarlarını geliştirme ve ihraç ürünlerini çeşitlendirmektir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3253,7 +3254,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/46d56e27-8547-40e6-8700-c70f726ed113",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3302,8 +3303,7 @@
      "ad": "2007-2_sayili_dir_otomasyon_tebligi.docx"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-4795c846",
@@ -3312,6 +3312,7 @@
   "url": "https://yatirimadestek.gov.tr/program/4795c846-f108-4261-ad16-13dafeba34d7",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3362,7 +3363,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4795c846-f108-4261-ad16-13dafeba34d7",
    "guncelleme": "2026-04-14",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -3374,8 +3375,7 @@
      "ad": "ekler.rar"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-479b35fa",
@@ -3384,6 +3384,7 @@
   "url": "https://yatirimadestek.gov.tr/program/479b35fa-d1b5-4a89-ab48-ca6689a2b229",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3403,7 +3404,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi, harcama belgeleri karşılığında kullandırılmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3442,7 +3443,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/479b35fa-d1b5-4a89-ab48-ca6689a2b229",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3467,8 +3468,7 @@
      "ad": "ozet_yurt_disi_magazalar_yatirim_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-4a73b72d",
@@ -3477,6 +3477,7 @@
   "url": "https://yatirimadestek.gov.tr/program/4a73b72d-9d5c-400a-8f24-8c2fcebd7b7a",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3495,7 +3496,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İşbirliği kuruluşlarının yurt dışına yönelik pazara giriş stratejileri ile eylem planlarının oluşturulabilmesi ve üyesi şirketlerle paylaşılmak amacıyla satın alınan rapor giderleri 5973 sayılı İhracat Destekleri Hakkında Karar’ın 21. maddesi kapsamında %50 oranında ve yıllık 3.000.000 TL’ye kadar d",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3533,7 +3534,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4a73b72d-9d5c-400a-8f24-8c2fcebd7b7a",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3570,8 +3571,7 @@
      "ad": "21-madde-pazara-giris-rapor-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-4c0c104e",
@@ -3580,6 +3580,7 @@
   "url": "https://yatirimadestek.gov.tr/program/4c0c104e-9977-4b6e-8760-cec0ad03d034",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3597,7 +3598,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Dış Ticaret Müsteşarlığınca (İhracat Genel Müdürlüğü) yapılan inceleme sonucunda gerekli şartları haiz olduğu belirlenen şirketlere “Dış Ticaret Sermaye Şirketi” statüsü verilir. Dış Ticaret Sermaye Şirketi Statüsü verilen şirketlerin ticaret unvanları Resmî Gazete’de yayımlanır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3634,7 +3635,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4c0c104e-9977-4b6e-8760-cec0ad03d034",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3679,8 +3680,7 @@
      "ad": "teblig-ozel-statulu_sirketler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-4c625408",
@@ -3689,6 +3689,7 @@
   "url": "https://yatirimadestek.gov.tr/program/4c625408-9b61-43be-9483-4f766a896063",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3739,11 +3740,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4c625408-9b61-43be-9483-4f766a896063",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-508d186b",
@@ -3752,6 +3752,7 @@
   "url": "https://yatirimadestek.gov.tr/program/508d186b-858e-4dd8-b9bc-8f874a2c7d21",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3769,7 +3770,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 4447 sayılı İşsizlik Sigortası Kanunu’nun 50’nci maddesinin beşinci fıkrası, 2009/149 sayılı Genelge.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3806,7 +3807,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/508d186b-858e-4dd8-b9bc-8f874a2c7d21",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3843,8 +3844,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-519337fe",
@@ -3853,6 +3853,7 @@
   "url": "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3870,7 +3871,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-31",
+  "son_basvuru": null,
   "ozet": "Verimlilik Artırıcı Proje (VAP) Destek Programı",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3903,7 +3904,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -3935,8 +3936,7 @@
      "ad": "enerji_kay_ve_enerjinin_kul_ver_art_dair_-yon_202202140829.docx"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-54bfa568",
@@ -3945,6 +3945,7 @@
   "url": "https://yatirimadestek.gov.tr/program/54bfa568-6a69-47bf-8566-24a91ad21204",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -3962,7 +3963,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5510 Sayılı Kanun’un Geçici 109’uncu maddesi, 2020/10 sayılı Genelge 2025 yılı Ocak ila Aralık ayları/dönemlerinde şartları sağlayan işyerlerinden bildirilen sigortalılara ilişkin toplam prim ödeme gün sayısı ile 33,33 Türk lirasının çarpımı sonucu bulunacak tutar, işverenlerin Kuruma",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -3999,7 +4000,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/54bfa568-6a69-47bf-8566-24a91ad21204",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4036,8 +4037,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-55191372",
@@ -4046,6 +4046,7 @@
   "url": "https://yatirimadestek.gov.tr/program/55191372-2f23-47cd-9b32-a9240a0e5ab2",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4063,7 +4064,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; ülkemizde bitkisel üretimi artırmak, verim ve kaliteyi yükseltmek, sürdürülebilirliği sağlamak ve çevreye duyarlı alternatif tarım tekniklerinin geliştirilmesine yönelik çiftçileri desteklemektir. Susam ve yer fıstığı için tüm havzalarda, diğer ürünler için havza listesinde yer alan ",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4100,7 +4101,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/55191372-2f23-47cd-9b32-a9240a0e5ab2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4133,8 +4134,7 @@
      "ad": "ck-tarim_havzalar_listesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-551b993a",
@@ -4143,6 +4143,7 @@
   "url": "https://yatirimadestek.gov.tr/program/551b993a-1395-4606-b250-6641de5826f1",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4161,7 +4162,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Programın amacı, şirketlerin Avrupa Yeşil Mutabakatına uyumunu sağlamak için ihtiyaç duyacağı danışmanlık hizmetlerine ulaşımını kolaylaştırmaktır. Ayrıca, sürdürülebilirlik ve yeşil mutabakat sürecini başarı ile yürüten firmaların üretici ve tüketici nezdinde farkındalığının Responsible® markası il",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4199,7 +4200,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/551b993a-1395-4606-b250-6641de5826f1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4232,8 +4233,7 @@
      "ad": "yesil-mutabakata-uyum-projesi-destegine-iliskin-genelge---080525.pdf"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-5626ea68",
@@ -4242,6 +4242,7 @@
   "url": "https://yatirimadestek.gov.tr/program/5626ea68-ff17-4b56-ba7b-b76795ea6786",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4259,7 +4260,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Organik tarım ve iyi tarım uygulamaları yapan çiftçilere destek olmak amaçlanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4297,7 +4298,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5626ea68-ff17-4b56-ba7b-b76795ea6786",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4326,8 +4327,7 @@
      "ad": "ck-tarimsal_desteklemeler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-56f4e239",
@@ -4336,6 +4336,7 @@
   "url": "https://yatirimadestek.gov.tr/program/56f4e239-e710-4dcf-9c3b-31b14d56e8ed",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4386,11 +4387,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/56f4e239-e710-4dcf-9c3b-31b14d56e8ed",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-5719abc7",
@@ -4399,6 +4399,7 @@
   "url": "https://yatirimadestek.gov.tr/program/5719abc7-ac37-4356-b2b7-cec978774afe",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4416,7 +4417,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 2863 sayılı Kültür ve Tabiat Varlıklarını Koruma Kanunu ve Taşınmaz Kültür Varlıklarına Yardım Sağlanmasına Dair Yönetmelik.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4453,7 +4454,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5719abc7-ac37-4356-b2b7-cec978774afe",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4482,8 +4483,7 @@
      "ad": "teblig-kultur_varligi_olarak_tescilli_tasinmazlara_proje_ve_uygulama_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-5921d965",
@@ -4492,6 +4492,7 @@
   "url": "https://yatirimadestek.gov.tr/program/5921d965-fb66-4af1-a922-67e201bba0d4",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4509,7 +4510,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Programın alt limiti 15.000 ABD dolarıdır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4546,7 +4547,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5921d965-fb66-4af1-a922-67e201bba0d4",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4571,8 +4572,7 @@
      "ad": "ozet_ihracat_alacaklari_iskonto_programi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-596980c3",
@@ -4581,6 +4581,7 @@
   "url": "https://yatirimadestek.gov.tr/program/596980c3-b112-4398-8b20-6a51b6a340fc",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4598,7 +4599,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Çiftlik Muhasebe Veri Ağı Sistemi Katılım Desteği",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4631,7 +4632,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/596980c3-b112-4398-8b20-6a51b6a340fc",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -4639,8 +4640,7 @@
      "ad": "ck-tarimsal_desteklemeler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-59d00469",
@@ -4649,6 +4649,7 @@
   "url": "https://yatirimadestek.gov.tr/program/59d00469-825d-4996-a4c1-61e9f36cea61",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4666,7 +4667,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 6112 sayılı Radyo ve Televizyonların Kuruluş ve Yayın Hizmetleri Hakkında Kanun ile Aile ve Çocuk Dostu Yapım ve Dizilerin Teşvik Edilmesine Dair Usul ve Esaslar Hakkında Yönetmelik.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4704,7 +4705,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/59d00469-825d-4996-a4c1-61e9f36cea61",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4729,8 +4730,7 @@
      "ad": "ozet-aile_cocuk_dostu_yapim_dizilerin_tesvik_edilmesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-5cfe291c",
@@ -4739,6 +4739,7 @@
   "url": "https://yatirimadestek.gov.tr/program/5cfe291c-49f4-4600-ae42-919ca13d8519",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4757,7 +4758,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İslam Kalkınma Bankası’ndan sağlanan kredide katılım finansman modeli uygulamalarından murabaha yöntemiyle sermaye malı harcamaları finanse edilmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4797,7 +4798,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5cfe291c-49f4-4600-ae42-919ca13d8519",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4822,8 +4823,7 @@
      "ad": "ozet_katilim_finans_yatirim_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-5fa8de23",
@@ -4832,6 +4832,7 @@
   "url": "https://yatirimadestek.gov.tr/program/5fa8de23-4801-4b89-b0a0-853aee858bb1",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4849,7 +4850,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Geleneksel zeytin bahçesi alanının, en az 1/5’inde, ihtiyaç duyulan ağaçlarda gençleştirme budaması yapacağını tespit ettiren ve gençleştirme budamasını yapan çiftçilere budanan alan üzerinden destekleme yapılması amaçlanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4886,7 +4887,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5fa8de23-4801-4b89-b0a0-853aee858bb1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4915,8 +4916,7 @@
      "ad": "ck-tarimsal_desteklemeler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-60392673",
@@ -4925,6 +4925,7 @@
   "url": "https://yatirimadestek.gov.tr/program/60392673-d7ba-4b44-9139-f8af81204fff",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -4943,7 +4944,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5510 sayılı Kanun’un 81’inci maddesinin 1’inci fıkrasının (i) bendi – 2013/30 sayılı Genelge.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -4980,7 +4981,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/60392673-d7ba-4b44-9139-f8af81204fff",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5017,8 +5018,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-610b6222",
@@ -5027,6 +5027,7 @@
   "url": "https://yatirimadestek.gov.tr/program/610b6222-ddf0-4241-b7da-4985e9b716c0",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5045,7 +5046,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İşbirliği kuruluşlarınca düzenlenen;",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5083,7 +5084,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/610b6222-ddf0-4241-b7da-4985e9b716c0",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5120,8 +5121,7 @@
      "ad": "24-madde-sektorel-ticaret-heyeti-ve-alim-heyeti-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-62c07a76",
@@ -5130,6 +5130,7 @@
   "url": "https://yatirimadestek.gov.tr/program/62c07a76-138f-47ad-be0c-f293f540392b",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5184,7 +5185,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/62c07a76-138f-47ad-be0c-f293f540392b",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5229,8 +5230,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-683ee88e",
@@ -5239,6 +5239,7 @@
   "url": "https://yatirimadestek.gov.tr/program/683ee88e-c0d7-419a-bb0c-3cfbbbf2ee6e",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5258,7 +5259,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi ile firmaların makine-teçhizat ve aksam harcamaları KDV hariç tutar üzerinden finanse edilmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5298,7 +5299,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/683ee88e-c0d7-419a-bb0c-3cfbbbf2ee6e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5323,8 +5324,7 @@
      "ad": "ozet_ihracat_yonelik_yatirim_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-686210bb",
@@ -5333,6 +5333,7 @@
   "url": "https://yatirimadestek.gov.tr/program/686210bb-0234-4171-a6d9-d3da7bbb1dbd",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5352,7 +5353,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Türkiye Kalkınma ve Yatırım Bankası tarafından sanayi, yenilenebilir enerji, enerji ve kaynak verimliliği, turizm yatırımları, eğitim ve sağlık yatırımları için uygun koşullarda yatırım kredisi sağlanabilmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5390,7 +5391,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/686210bb-0234-4171-a6d9-d3da7bbb1dbd",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5415,8 +5416,7 @@
      "ad": "ozet_diger_kredi_urunleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-6982f936",
@@ -5425,6 +5425,7 @@
   "url": "https://yatirimadestek.gov.tr/program/6982f936-ab42-4e8d-9537-af23dcf26a2b",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5443,7 +5444,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Program kapsamında Türk Eximbank tarafından sigortalanan vadeli alacaklar teminata alınmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5481,7 +5482,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/6982f936-ab42-4e8d-9537-af23dcf26a2b",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5506,8 +5507,7 @@
      "ad": "ozet_sigortali_alacagin_teminatina_dayali_kredi_programi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-6bc8450a",
@@ -5516,6 +5516,7 @@
   "url": "https://yatirimadestek.gov.tr/program/6bc8450a-0e24-4d8c-92e6-2295041fec43",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5533,7 +5534,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Program ile yurt dışında müteahhitlik faaliyetinde bulunan firmaların mevcut pazarlarda kalıcılığının sağlanması ile birlikte yeni pazarlara açılmalarını teminen yurt dışında üstlenilen projelerin teminat mektubu ile desteklenmesi amaçlanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5570,7 +5571,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/6bc8450a-0e24-4d8c-92e6-2295041fec43",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5595,8 +5596,7 @@
      "ad": "ozet_yurt_disi_muteahhitlik_hizmetleri_teminat_mektubu_programi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-70150dee",
@@ -5605,6 +5605,7 @@
   "url": "https://yatirimadestek.gov.tr/program/70150dee-d6bd-4bf7-bc36-f5f1d340fbd9",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5623,7 +5624,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5510 sayılı Kanun’un 81’inci maddesi (k) bendi, 2018/28 sayılı Genelge.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5660,7 +5661,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/70150dee-d6bd-4bf7-bc36-f5f1d340fbd9",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5697,8 +5698,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-71cab34b",
@@ -5707,6 +5707,7 @@
   "url": "https://yatirimadestek.gov.tr/program/71cab34b-baca-4ff4-a95d-5294d5d08e27",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5725,7 +5726,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Hızlı Destek Programının amacı, üniversitelerde, araştırma hastanelerinde ve araştırma enstitülerinde/istasyonlarında yürütülecek acil, kısa süreli, küçük bütçeli araştırma ve geliştirme projelerine destek sağlamaktır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5764,7 +5765,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/71cab34b-baca-4ff4-a95d-5294d5d08e27",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5801,8 +5802,7 @@
      "ad": "yonetmelik-tubitak_tarafindan_yurutulen_destek_programlari-2019_2.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-740d8e1d",
@@ -5811,6 +5811,7 @@
   "url": "https://yatirimadestek.gov.tr/program/740d8e1d-fba0-4cfc-916c-df48636eac4d",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5829,7 +5830,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yeşil Mutabakata Uyum Kapsamındaki Öncelikli Ar-Ge ve Yenilik Konuları 1704 programı çağrısı kapsamındadır. SAYEM başvurusu yapıldığında hedeflenen ürünün Teknoloji Hazırlık Seviyesi (THS) en az 5, tercihen THS 6 olmalıdır. THS 5 ve üzerindeki teknolojiler kullanılarak ürün veya ürün gruplarının gel",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5866,7 +5867,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/740d8e1d-fba0-4cfc-916c-df48636eac4d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5911,8 +5912,7 @@
      "ad": "1601-242sayilibilimkurulu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-74491580",
@@ -5921,6 +5921,7 @@
   "url": "https://yatirimadestek.gov.tr/program/74491580-2515-4962-98e5-a4fd31b6e659",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -5940,7 +5941,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi uluslararası piyasalarda yaşanan mali krizin Türk müteahhitlik sektörü üzerindeki etkilerinin azaltılması ve bu alanda faaliyet gösteren firmaların mevcut şantiyelerinin ve mobilizasyon-makine parkının işler durumda muhafaza edilerek bu pazarlardaki yatırımların ve mevcut rekabet gücünün uzun ",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -5977,7 +5978,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/74491580-2515-4962-98e5-a4fd31b6e659",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6002,8 +6003,7 @@
      "ad": "ozet_yurt_disi_muteahhitlik_hizmetleri_kopru_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-7d6feed4",
@@ -6012,6 +6012,7 @@
   "url": "https://yatirimadestek.gov.tr/program/7d6feed4-f458-4f39-b31d-069378dad9b1",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6029,7 +6030,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 664 sayılı Atatürk Kültür, Dil ve Tarih Yüksek Kurumu Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname ile Yüksek Kurum Yönetim Kurulu 07/02/2017 Tarihli ve 734/2 sayılı İlke Kararı Destek Alanları ve Yararlanma Şartları:",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6069,7 +6070,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/7d6feed4-f458-4f39-b31d-069378dad9b1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6094,8 +6095,7 @@
      "ad": "ozet-bilimsel_topl_duz_etkinlik_kazi_yuzey_arastirmalari_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-7deff41e",
@@ -6104,6 +6104,7 @@
   "url": "https://yatirimadestek.gov.tr/program/7deff41e-2bb0-458a-bf35-5079bd4c3b2c",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6122,7 +6123,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5225 sayılı Kültür Yatırımlarını ve Girişimlerini Teşvik Kanunu, Kültür Yatırımlarının ve Girişimlerinin Belgelendirilmesine ve Niteliklerine İlişkin Yönetmelik.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6160,7 +6161,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/7deff41e-2bb0-458a-bf35-5079bd4c3b2c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6197,8 +6198,7 @@
      "ad": "kultur-endustrileri-destek-ve-tesvik-rehberi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-7e37a246",
@@ -6207,6 +6207,7 @@
   "url": "https://yatirimadestek.gov.tr/program/7e37a246-94dd-40dc-a64c-dfbc3d2ad5d7",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6224,7 +6225,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Şirketlerin yurt içi marka tescil belgesine sahip oldukları markalarının yurt dışında tescili ve korunmasına ilişkin giderleri, 5973 sayılı İhracat Destekleri Hakkında Karar’ın 4. maddesi kapsamında %50 oranında ve yıllık 750.000 TL'ye kadar desteklenir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6262,7 +6263,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/7e37a246-94dd-40dc-a64c-dfbc3d2ad5d7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6299,8 +6300,7 @@
      "ad": "4madde-yurt-disi-marka-tescil-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-816d5b90",
@@ -6309,6 +6309,7 @@
   "url": "https://yatirimadestek.gov.tr/program/816d5b90-4476-4b13-b1f8-0247c0383f12",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6326,7 +6327,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 4857 sayılı İş Kanunu’nun 30’uncu maddesi, 2008/77 sayılı Genelge.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6363,7 +6364,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/816d5b90-4476-4b13-b1f8-0247c0383f12",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6400,8 +6401,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-821ba676",
@@ -6410,6 +6410,7 @@
   "url": "https://yatirimadestek.gov.tr/program/821ba676-5f59-48bc-8c96-4826bc915e25",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6460,11 +6461,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/821ba676-5f59-48bc-8c96-4826bc915e25",
    "guncelleme": "2026-03-15",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-83008980",
@@ -6473,6 +6473,7 @@
   "url": "https://yatirimadestek.gov.tr/program/83008980-ba18-447f-8bb8-470fde9f3bf7",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6490,7 +6491,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Şirketlerin üretimini ve/veya ihracatını yaptıkları ürünlere ilişkin aldıkları pazara giriş belgeleri ile ruhsatlandırma ve kayıt işlemlerine ilişkin giderleri, 5973 sayılı İhracat Destekleri Hakkında Karar’ın 3. maddesi kapsamında %50 oranında ve şirket başına yıllık 4.000.000 TL'ye kadar desteklen",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6528,7 +6529,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/83008980-ba18-447f-8bb8-470fde9f3bf7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6565,8 +6566,7 @@
      "ad": "3madde-pazara-giris-belgesi-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-8561cc8d",
@@ -6575,6 +6575,7 @@
   "url": "https://yatirimadestek.gov.tr/program/8561cc8d-26dd-4720-ba29-8c2c2bc4990b",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6592,7 +6593,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Program kapsamında; yeni bilgiler üretilmesi ve uygulanması, Bilimsel yorumların yapılması, Güncel ve gelecekte karşılaşılması muhtemel teknolojik ve bilimsel problemlerin çözümüne yönelik çalışmalar yapılması, Kavramsal doğrulama, yeni kuramsal çerçeveler oluşturulması amaçlı temel ve/veya uygulama",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6630,7 +6631,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8561cc8d-26dd-4720-ba29-8c2c2bc4990b",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6667,8 +6668,7 @@
      "ad": "sss-1515.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-87175d4c",
@@ -6677,6 +6677,7 @@
   "url": "https://yatirimadestek.gov.tr/program/87175d4c-e7e0-47f6-91c8-de1f3e4cac12",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6727,7 +6728,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/87175d4c-e7e0-47f6-91c8-de1f3e4cac12",
    "guncelleme": "2026-03-18",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -6747,8 +6748,7 @@
      "ad": "etuyskullanimkilavuzu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-878f0f16",
@@ -6757,6 +6757,7 @@
   "url": "https://yatirimadestek.gov.tr/program/878f0f16-727e-44d6-88ab-3dec72bc3b14",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6774,7 +6775,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Program ile uygun başvuru sahiplerinin yurt dışında kalıcı olmalarını sağlamak amacıyla ihtiyaç duyabilecekleri teminat mektupları düzenlenmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6813,7 +6814,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/878f0f16-727e-44d6-88ab-3dec72bc3b14",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6838,8 +6839,7 @@
      "ad": "ozet_yurt_disi_teminat_mektubu_programi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-8a1cb3cb",
@@ -6848,6 +6848,7 @@
   "url": "https://yatirimadestek.gov.tr/program/8a1cb3cb-ec59-42ab-b45d-3dcb5b8a55ff",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6898,11 +6899,73 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8a1cb3cb-ec59-42ab-b45d-3dcb5b8a55ff",
    "guncelleme": "2026-04-21",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
+  }
+ },
+ {
+  "id": "yd-8a987028",
+  "ad": "İstihdamı Koruma Destek Programı",
+  "kurum": "KOSGEB",
+  "url": "https://yatirimadestek.gov.tr/program/8a987028-c221-4223-956c-2456561968e8",
+  "tur": "hibe",
+  "ust_limit": null,
+  "destek_orani": null,
+  "geri_odemeli": false,
+  "oran_metin": null,
+  "amac": [
+   "istihdam"
+  ],
+  "olcek": [
+   "mikro",
+   "kucuk",
+   "orta",
+   "buyuk"
+  ],
+  "sektor": [
+   "tumu"
+  ],
+  "il": [
+   "tumu"
+  ],
+  "son_basvuru": "2026-11-30",
+  "ozet": "İstihdamı Koruma Destek Programı",
+  "firma_yasi_max": null,
+  "ihracat_gerekli": false,
+  "kosullar": [],
+  "belgeler": [],
+  "alanlar": [
+   "firmaUnvani",
+   "vkn",
+   "vergiDairesi",
+   "yetkili",
+   "telefon",
+   "eposta",
+   "adres",
+   "il",
+   "kurulusYili",
+   "sirketTuru",
+   "naceKodu",
+   "calisan",
+   "ciro"
+  ],
+  "basvuru": {
+   "yontem": "online",
+   "form": null,
+   "online": "https://yatirimadestek.gov.tr/program/8a987028-c221-4223-956c-2456561968e8",
+   "adimlar": []
   },
-  "destek_orani": null
+  "kredi": null,
+  "kaynak": "platform",
+  "resmi": {
+   "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
+   "sayfa": "https://yatirimadestek.gov.tr/program/8a987028-c221-4223-956c-2456561968e8",
+   "guncelleme": "2026-11-04",
+   "kontrol": "2026-11-09",
+   "bolumler": [],
+   "belgeler": []
+  }
  },
  {
   "id": "yd-8b9044e5",
@@ -6911,6 +6974,7 @@
   "url": "https://yatirimadestek.gov.tr/program/8b9044e5-657b-4bdd-a874-73423f26bafb",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -6929,7 +6993,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Tasarımcı şirketleri ve tasarım ofislerinin yurt dışında tanınmaları ve markalaşmaları amacıyla marka, patent, faydalı model, endüstriyel tasarım tescili ve marka tescilinin yenilenmesi/korunması giderleri, yurt dışı birim kira, temel kurulum, dekorasyon, konsept mimari çalışmaları ile birimlerin ki",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -6968,7 +7032,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8b9044e5-657b-4bdd-a874-73423f26bafb",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7013,8 +7077,7 @@
      "ad": "destek-kapsaminda-degerlendirilen-tanitim-faaliyetleri.docx"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-8d888b97",
@@ -7023,6 +7086,7 @@
   "url": "https://yatirimadestek.gov.tr/program/8d888b97-752f-44ea-91b8-1e188f6ae9af",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7041,7 +7105,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Devlet Destekli Tarım Sigortaları Sisteminde amaç; doğal afet ve hastalıkların tarım ve hayvancılıkta neden olduğu zararları kar amacı olmadan sigorta prensipleri çerçevesinde ve teknik esaslara dayalı olarak, sürdürebilir bir sistemle kısmi de olsa karşılamak, bu sayede üreticileri uzun vadede geli",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7078,7 +7142,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8d888b97-752f-44ea-91b8-1e188f6ae9af",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7107,8 +7171,7 @@
      "ad": "sorular-ve-cevaplar-tarim_sigortasi_destekleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-8fbd6a12",
@@ -7117,6 +7180,7 @@
   "url": "https://yatirimadestek.gov.tr/program/8fbd6a12-82c4-43c6-951f-dc463d0b3f55",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7135,7 +7199,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "# Teşvik Mevzuatı Teşvik Konusu Teşvik Şartları 12/07/2017 tarih ve 138826 sayılı Bakanlık Çeviri ve Yayım • Edebi eserlerin çevirisi, basımı ve tanıtımı desteği verilmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7174,7 +7238,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8fbd6a12-82c4-43c6-951f-dc463d0b3f55",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7199,8 +7263,7 @@
      "ad": "ozet-ceviri_ve_yayim_edebiyat_eserlerini_destek_projeleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-90928b40",
@@ -7209,6 +7272,7 @@
   "url": "https://yatirimadestek.gov.tr/program/90928b40-f59e-4457-8a74-e9ececf64b8e",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7226,7 +7290,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Ülkemizin dünya çapında markalaşma potansiyeli olan markalarına ait ürün gruplarının geliştirilmesinden pazarlamasına, satışından satış sonrası verilen hizmetlere kadar bütün süreçlerinin desteklenmesi ve böylece program kapsamındaki Türk markalarının konumlandırılması, konumlarının güçlendirilmesi ",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7264,7 +7328,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/90928b40-f59e-4457-8a74-e9ececf64b8e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7301,8 +7365,7 @@
      "ad": "17-madde-marka-ve-turquality-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-9108afc3",
@@ -7311,6 +7374,7 @@
   "url": "https://yatirimadestek.gov.tr/program/9108afc3-4ba9-4283-bb6a-1c2cece4be83",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7329,7 +7393,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: Çevre Kanunu’nun 29. Maddesi Uyarınca Atık su Arıtma Tesislerinin Teşvik Tedbirlerinden Faydalanmasında Uyulacak Usul Ve Esaslara Dair Yönetmelik Bu teşvik kapsamında atık suların arıtılması amacıyla atık su arıtma tesislerinde kullanılan ve ödemesi yapılan bir önceki yıla ait elektri",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7366,7 +7430,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9108afc3-4ba9-4283-bb6a-1c2cece4be83",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7403,8 +7467,7 @@
      "ad": "atiksu-aritma-tesisi-enerji-tesviki-yonetmeligi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-91c37357",
@@ -7413,6 +7476,7 @@
   "url": "https://yatirimadestek.gov.tr/program/91c37357-a562-44e2-88f2-b17660e48ef3",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7430,7 +7494,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İskur Destekleri",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7463,7 +7527,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/91c37357-a562-44e2-88f2-b17660e48ef3",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -7475,8 +7539,7 @@
      "ad": "genelge-iskur_destekleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-9606be0e",
@@ -7485,6 +7548,7 @@
   "url": "https://yatirimadestek.gov.tr/program/9606be0e-71fe-4381-a623-5697b8b28854",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7535,7 +7599,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9606be0e-71fe-4381-a623-5697b8b28854",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -7555,8 +7619,7 @@
      "ad": "teblig-arge_merkezleri_destegigelir_vergisi_stopaji.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-968b118c",
@@ -7565,9 +7628,11 @@
   "url": "https://yatirimadestek.gov.tr/program/968b118c-6650-43d3-be37-ae231aac025f",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
+   "istihdam",
    "finansman"
   ],
   "olcek": [
@@ -7582,7 +7647,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 6331 sayılı İş Sağlığı ve Güvenliği Kanunu’nun 7’nci maddesi, İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi Hakkında Yönetmeliğin 6’ncı maddesi, İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi Hakkında Tebliğ.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7619,7 +7684,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/968b118c-6650-43d3-be37-ae231aac025f",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7652,8 +7717,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-9bbb98cc",
@@ -7662,6 +7726,7 @@
   "url": "https://yatirimadestek.gov.tr/program/9bbb98cc-fed0-4cbc-92e6-5875102469e7",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7680,7 +7745,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi Türk firmalarının yurt dışına yönelik olarak gerçekleştirecekleri hizmetlerin finansmanına yönelik bir programdır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7720,7 +7785,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9bbb98cc-fed0-4cbc-92e6-5875102469e7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7745,8 +7810,7 @@
      "ad": "ozet_doviz_kazandirici_hizmetler_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-9d1a775a",
@@ -7755,6 +7819,7 @@
   "url": "https://yatirimadestek.gov.tr/program/9d1a775a-e189-4b82-af29-01d8d8a40a23",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7772,7 +7837,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5510 sayılı Kanun’un 81’inci maddesinin 1’inci fıkrasının (ı) bendi ve geçici 108’inci maddesi - 2008/93 - 2009/139 - 2011/45 - 2020/1 - 2021/26 - 2021/30 - 2025/6 sayılı Genelgeler.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7810,7 +7875,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9d1a775a-e189-4b82-af29-01d8d8a40a23",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7871,8 +7936,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-a132ddd4",
@@ -7881,6 +7945,7 @@
   "url": "https://yatirimadestek.gov.tr/program/a132ddd4-e744-4f9a-8498-29232c850057",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 75,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -7900,7 +7965,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Şirketlerin, kümelenme anlayışı ile müştereken ihracata yönlendirilmeleri ve düzenli ihracatçı olmaları amacıyla, işbirliği kuruluşlarınca, üyesi şirketlere yönelik olarak yürütülen; amacı, kapsamı, süresi ile bütçesi belirli ihtiyaç analizi, istihdam, eğitim, danışmanlık, tanıtım, yurt dışı pazarla",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -7939,7 +8004,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a132ddd4-e744-4f9a-8498-29232c850057",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7976,8 +8041,7 @@
      "ad": "19-madde-urge-projesi-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 75
+  }
  },
  {
   "id": "yd-a1b1d75a",
@@ -7986,6 +8050,7 @@
   "url": "https://yatirimadestek.gov.tr/program/a1b1d75a-bde1-4644-84ef-32401658d904",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8004,7 +8069,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "2016/9495 sayılı \"Yatırımlara Proje Bazlı Devlet Yardımı Verilmesine İlişkin Karar\" tahtında uygulanan Proje Bazlı Teşvik Sistemi, kalkınma planları ve yıllık programlarda öngörülen hedefler doğrultusunda ülkemizin mevcut durumda veya gelecekte ortaya çıkabilecek kritik ihtiyaçlarını karşılayacak, a",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8042,7 +8107,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a1b1d75a-bde1-4644-84ef-32401658d904",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8083,8 +8148,7 @@
      "ad": "etuyskullanimkilavuzu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-a5569b5f",
@@ -8093,6 +8157,7 @@
   "url": "https://yatirimadestek.gov.tr/program/a5569b5f-0cc2-446f-a9e0-2b8513a011c8",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8110,7 +8175,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi Türk firmalarının kredi vadesi içinde yapacakları uluslararası kara, hava, deniz taşımacılık hizmetlerine mukabil gerçekleştirmeyi taahhüt ettikleri döviz gelirleri karşılığında sunulmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8150,7 +8215,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a5569b5f-0cc2-446f-a9e0-2b8513a011c8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8175,8 +8240,7 @@
      "ad": "ozet_uluslararasi_nakliyat_pazarlama_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-a624034b",
@@ -8185,6 +8249,7 @@
   "url": "https://yatirimadestek.gov.tr/program/a624034b-da81-49ad-8c67-4632133f0f3e",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8204,7 +8269,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; şirketler, kurumlar ve işbirliği kuruluşlarının ihracata hazırlanması ve uluslararası pazarlarda rekabet avantajı kazanmaları amacıyla altyapılarının ve kurumsal kapasitelerinin güçlendirilmesi, ürün ve hizmetlerinin yurt dışında tanıtımı, pazarlanması, tutundurulması, markalaşması i",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8241,7 +8306,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a624034b-da81-49ad-8c67-4632133f0f3e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8282,8 +8347,7 @@
      "ad": "destekler-sunum.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-aa73efbf",
@@ -8292,6 +8356,7 @@
   "url": "https://yatirimadestek.gov.tr/program/aa73efbf-dff8-4288-bc1f-aa32c4457d9e",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 25,
   "geri_odemeli": false,
   "oran_metin": "%25–%75",
   "amac": [
@@ -8309,7 +8374,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "1702 Patent Lisans Çağrısı ile yükseköğretim kurumları, araştırma altyapıları, kamu kurumları, kamu araştırma merkez ve enstitüleri ve erken aşama teknoloji şirketleri tarafından yürütülen araştırma, geliştirme ve yenilik projeleri sonucunda ortaya çıkan ve patent ile korunan teknolojilerin lisansla",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8348,7 +8413,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/aa73efbf-dff8-4288-bc1f-aa32c4457d9e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8401,8 +8466,7 @@
      "ad": "1702_sss.pdf"
     }
    ]
-  },
-  "destek_orani": 25
+  }
  },
  {
   "id": "yd-abddf672",
@@ -8411,6 +8475,7 @@
   "url": "https://yatirimadestek.gov.tr/program/abddf672-5d01-4f2c-857b-e2fb52b0ecd9",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8428,7 +8493,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İhraç edilecek malın üretim süreci ya da satış koşulları nedeniyle 12 aydan uzun vadeli finansman ihtiyacı bulunan firmaların yeni pazarlara yeni ürün gibi özellik arz eden ihracat projelerine destek sağlanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8466,7 +8531,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/abddf672-5d01-4f2c-857b-e2fb52b0ecd9",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8491,8 +8556,7 @@
      "ad": "ozet_ozellikli_ihracat_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-adba4cd2",
@@ -8501,6 +8565,7 @@
   "url": "https://yatirimadestek.gov.tr/program/adba4cd2-d2bd-46eb-ba22-d58622d4dbb6",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8518,7 +8583,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Belirlenmiş olan tarım havzalarından üretilen ürünlerin miktar bazlı desteklenmesi amaçlanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8555,7 +8620,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/adba4cd2-d2bd-46eb-ba22-d58622d4dbb6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8588,8 +8653,7 @@
      "ad": "ck-tarim_havzalar_listesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-b195854f",
@@ -8598,6 +8662,7 @@
   "url": "https://yatirimadestek.gov.tr/program/b195854f-d2bf-43ee-821e-4a4a6d575ef2",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8616,7 +8681,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi banka Yönetim Kurulu veya Yönetim Kurulunun kararı çerçevesinde ihdas edilen ilgili kredi komitesi tarafından ABD doları bazında tahsis edimektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8654,7 +8719,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b195854f-d2bf-43ee-821e-4a4a6d575ef2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8679,8 +8744,7 @@
      "ad": "ozet_dis_ticaret_sirketleri_ihracat_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-b1b3882e",
@@ -8689,6 +8753,7 @@
   "url": "https://yatirimadestek.gov.tr/program/b1b3882e-15bd-49bf-a860-b0bc1ff65c65",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8707,7 +8772,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; döviz kazandırıcı hizmet ve faaliyetler ile hizmet ihracatının hukuki çerçevesinin oluşturulması, hizmet ihracatımızda sürdürülebilir artışın sağlanması amacıyla ihracata yönelik kurumsal kapasite oluşturulmasına ve kapasitenin güçlendirilmesine, yurt dışı pazarlara erişime, pazarda ",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8744,7 +8809,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b1b3882e-15bd-49bf-a860-b0bc1ff65c65",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8833,8 +8898,7 @@
      "ad": "yonetim-danismanligi-sektorune-sunulan-desteklere-iliskin-ozet-bilgi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-b3c9ded0",
@@ -8843,6 +8907,7 @@
   "url": "https://yatirimadestek.gov.tr/program/b3c9ded0-0b7c-4eda-9450-493e1c518003",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": "%50–%100",
   "amac": [
@@ -8861,7 +8926,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; döviz kazandırıcı hizmet sektörlerinde faaliyet gösteren ve Türkiye’de yerleşik şirket, kurum ve kuruluşların markalaşmak için gerçekleştirdikleri faaliyetlere ilişkin giderler, Türkiye İhracatçılar Meclisi ve ihracatçı birliklerinin TURQUALITY® Programı kapsamında şirket, kurum ve k",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -8898,7 +8963,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b3c9ded0-0b7c-4eda-9450-493e1c518003",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8935,8 +9000,7 @@
      "ad": "2564-sayili-karar-ve-karara-iliskin-genelgenin-2024-yili-destek-ust-limitlerixls.xls"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-b6fb2892",
@@ -8945,6 +9009,7 @@
   "url": "https://yatirimadestek.gov.tr/program/b6fb2892-1593-4562-beb1-cf2c45149f14",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -8962,7 +9027,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Şirketler tarafından gerçekleştirilen pazar araştırma faaliyetine (yeni ihraç pazarları yaratılması ve geleneksel pazarlarda pazar payımızın artırılması için yurt dışı pazarlar hakkında bilgi sağlamak ve potansiyel alıcılarla iş görüşmeleri yapmak amacıyla yurt dışında gerçekleştirilen araştırma sey",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9000,7 +9065,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b6fb2892-1593-4562-beb1-cf2c45149f14",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9037,8 +9102,7 @@
      "ad": "6-madde-yurt-disi-pazar-arastirmasi-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-bac4d7f4",
@@ -9047,6 +9111,7 @@
   "url": "https://yatirimadestek.gov.tr/program/bac4d7f4-1d00-4490-9256-1a004d696333",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9065,7 +9130,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi firmaların yurt dışı fuarlara katılımını sağlayarak ürünlerinin tanıtım ve pazarlanmasına katkıda bulunmayı amaçlamaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9105,7 +9170,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/bac4d7f4-1d00-4490-9256-1a004d696333",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9130,8 +9195,7 @@
      "ad": "ozet_yurt_disi_fuar_katilim_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-c10fbf7c",
@@ -9140,6 +9204,7 @@
   "url": "https://yatirimadestek.gov.tr/program/c10fbf7c-d245-4696-a3f4-242fd96032c9",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9190,11 +9255,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/c10fbf7c-d245-4696-a3f4-242fd96032c9",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-c74eef87",
@@ -9203,6 +9267,7 @@
   "url": "https://yatirimadestek.gov.tr/program/c74eef87-5700-476a-ba58-4e550111b27d",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9220,7 +9285,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Destek Kapsamı",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9261,7 +9326,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/c74eef87-5700-476a-ba58-4e550111b27d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9298,8 +9363,7 @@
      "ad": "22-ve-23-maddeler-sanal-fuara-katilim-ve-sanal-fuar-organizasyonu-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-c75f8085",
@@ -9308,6 +9372,7 @@
   "url": "https://yatirimadestek.gov.tr/program/c75f8085-705d-4440-8267-163497c395ac",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9325,7 +9390,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-31",
+  "son_basvuru": null,
   "ozet": "Enerji Ve Karbon Azaltımı (EKA) Destek Programı",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9358,11 +9423,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/c75f8085-705d-4440-8267-163497c395ac",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-ccf28787",
@@ -9371,6 +9435,7 @@
   "url": "https://yatirimadestek.gov.tr/program/ccf28787-ae3a-4f5c-9af4-1daf86ca6589",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9388,7 +9453,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-31",
+  "son_basvuru": null,
   "ozet": "Teknolojik Ürün Deneyim (TUR) Belgesi Desteği",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9421,7 +9486,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ccf28787-ae3a-4f5c-9af4-1daf86ca6589",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -9437,8 +9502,7 @@
      "ad": "duyuru-teknolojik_urun_deneyim_tur_belgesi_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-ce593411",
@@ -9447,6 +9511,7 @@
   "url": "https://yatirimadestek.gov.tr/program/ce593411-7890-4dcc-b682-d300e3f3a512",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9465,7 +9530,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "1071 programı Araştırma Projeleri Çağrılarının amacı yeni bilgilerin üretilmesi, bilimsel yorumların yapılması veya teknolojik problemlerin çözümlenmesi için sunulan, uluslararası özgünlük içeren ve literatüre katkı sağlayacak araştırma projelerinin desteklenmesidir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9505,7 +9570,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ce593411-7890-4dcc-b682-d300e3f3a512",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9534,8 +9599,7 @@
      "ad": "1071_web_sayfasi_bilgi_notu-16072020.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-d00a5b2f",
@@ -9544,6 +9608,7 @@
   "url": "https://yatirimadestek.gov.tr/program/d00a5b2f-7a9d-4695-9375-2c567c70de9e",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9561,7 +9626,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 2828 sayılı Kanun’un Ek 1’inci maddesi. 2018/7 sayılı Genelge.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9598,7 +9663,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d00a5b2f-7a9d-4695-9375-2c567c70de9e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9635,8 +9700,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-d0597974",
@@ -9645,6 +9709,7 @@
   "url": "https://yatirimadestek.gov.tr/program/d0597974-a28b-497b-b584-933d093456a8",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9664,7 +9729,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredinin amacı yararlanıcıların ihracatlarını geliştirmeye yardımcı olmak, ihraç edilen mal ve hizmetleri çeşitlendirmek, yeni pazarlar kazandırmak, yurtdışında yapılacak yatırımlar ile ihracata yönelik yatırım malları üretim ve satışını teşvik etmektir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9702,7 +9767,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d0597974-a28b-497b-b584-933d093456a8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9739,8 +9804,7 @@
      "ad": "uygulama_esaslari_sevk_oncesi_ihracat_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-d14c839c",
@@ -9749,6 +9813,7 @@
   "url": "https://yatirimadestek.gov.tr/program/d14c839c-1c0f-47e6-93ab-74b5ef596c2c",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": true,
   "oran_metin": null,
   "amac": [
@@ -9766,7 +9831,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi Garanti Fonu A.Ş. işletmelerin ihtiyaç duyduğu finansmana belirli şartlar altında kefil olan, ortakları arasında kamu, meslek örgütleri ve özel kurum ve kuruluşların yer aldığı bir fon şirketidir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9804,7 +9869,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d14c839c-1c0f-47e6-93ab-74b5ef596c2c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9833,8 +9898,7 @@
      "ad": "ozet_kredi_garanti_fonu_urunleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-d5b7898e",
@@ -9843,6 +9907,7 @@
   "url": "https://yatirimadestek.gov.tr/program/d5b7898e-5caa-42f9-9e12-7a8cedea82f2",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9860,7 +9925,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi, ihracatçıların vadeli satış imkanlarının artırılması suretiyle uluslararası rekabet şanslarının genişletilmesi, alacaklarını ticarî ve politik risklerden arındırarak yeni ve hedef pazarlara açılmalarını teşvik etmek amacıyla sunulmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9899,7 +9964,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d5b7898e-5caa-42f9-9e12-7a8cedea82f2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9924,8 +9989,7 @@
      "ad": "ozet_sevk_sonrasi_reeskont_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-d929c738",
@@ -9934,6 +9998,7 @@
   "url": "https://yatirimadestek.gov.tr/program/d929c738-2665-4546-896e-a7dc0d51a4f7",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -9951,7 +10016,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Gemi ve yat sektöründe faaliyet gösteren şirketlerin alacakları tasarım hizmetine ilişkin giderleri, 5973 sayılı İhracat Destekleri Hakkında Kararın 16. maddesine istinaden 5 yıl süresince %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -9989,7 +10054,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d929c738-2665-4546-896e-a7dc0d51a4f7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10026,8 +10091,7 @@
      "ad": "16-madde-gemi-ve-yat-sektorunde-faaliyet-gosteren-sirketlere-tasarim-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-d9b98dc8",
@@ -10036,6 +10100,7 @@
   "url": "https://yatirimadestek.gov.tr/program/d9b98dc8-a7ca-4afd-8e4b-1cb3e74bc2a8",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10054,7 +10119,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5225 sayılı Kanun’un 5’inci maddesi, 2010/109 sayılı Genelge.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10091,7 +10156,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d9b98dc8-a7ca-4afd-8e4b-1cb3e74bc2a8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10140,8 +10205,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-da11b78f",
@@ -10150,6 +10214,7 @@
   "url": "https://yatirimadestek.gov.tr/program/da11b78f-733b-4852-bc43-856516c9b067",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10167,7 +10232,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yurt dışında yerleşik şirketlerin/markaların alımına yönelik mali ve hukuki danışmanlık hizmetlerine ilişkin giderler %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir. Yurt dışında yerleşik şirketin ileri teknolojiye sahip ve teknoloji transferi sağlayacak nitelikte olması halinde destek lim",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10205,7 +10270,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/da11b78f-733b-4852-bc43-856516c9b067",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10242,8 +10307,7 @@
      "ad": "9-madde-sirket-ve-marka-alim-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-daa0590a",
@@ -10252,6 +10316,7 @@
   "url": "https://yatirimadestek.gov.tr/program/daa0590a-f1c6-491a-a479-54ef22fc478e",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10269,7 +10334,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Birime bağlı tanıtım:",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10307,7 +10372,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/daa0590a-f1c6-491a-a479-54ef22fc478e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10344,8 +10409,7 @@
      "ad": "12-madde-tanitim-destegi.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-dc172c71",
@@ -10354,6 +10418,7 @@
   "url": "https://yatirimadestek.gov.tr/program/dc172c71-a2d3-499e-aeb2-b6b3be2d93b5",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10371,7 +10436,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 2634 Sayılı Turizm Teşvik Kanunu, Destek Alanları ve Yararlanma Şartları:",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10408,7 +10473,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/dc172c71-a2d3-499e-aeb2-b6b3be2d93b5",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10437,8 +10502,7 @@
      "ad": "turizm_tesvikleri.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-dd76316d",
@@ -10447,6 +10511,7 @@
   "url": "https://yatirimadestek.gov.tr/program/dd76316d-6ac8-480b-ad22-3db9371ef4e7",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10466,7 +10531,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı, döviz kazandırıcı hizmet sektörleri ile Ar-Ge yoğun, yüksek teknolojili veya katma değeri yüksek mal üretimine yönelik sektörlerin uluslararası rekabet gücünün geliştirilmesi, ihracatının ve hizmet gelirlerinin artırılması için ihtisas serbest bölgesinde faaliyet gösteren kullanıcıla",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10503,7 +10568,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/dd76316d-6ac8-480b-ad22-3db9371ef4e7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10536,8 +10601,7 @@
      "ad": "ihtisas_serbest_bolgelerinde_saglanacak_destekler_hakkinda_karar.pdf"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-dd93b103",
@@ -10546,6 +10610,7 @@
   "url": "https://yatirimadestek.gov.tr/program/dd93b103-6643-4a5c-b412-e1c2317fd2e2",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10564,7 +10629,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; ağaçlandırma, rehabilitasyon, erozyon ve sel kontrolü, çığ ve heyelanların önlenmesi, mera ıslahı, ağaç ıslahı, orman ağaç, ağaççık ve florasına ait tohum ve fidan üretimi, fidanlık ve imar-ihya çalışmalarına katkı sağlamaktır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10609,7 +10674,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/dd93b103-6643-4a5c-b412-e1c2317fd2e2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10646,8 +10711,7 @@
      "ad": "turler_listesi-agaclandirma_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-e033ed4e",
@@ -10656,6 +10720,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e033ed4e-297a-4cbb-975a-1fd45d62b40f",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10706,11 +10771,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e033ed4e-297a-4cbb-975a-1fd45d62b40f",
    "guncelleme": "2026-10-17",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-e1c64f7e",
@@ -10719,6 +10783,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e1c64f7e-99db-4240-9614-67d8c709c60a",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10737,7 +10802,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-31",
+  "son_basvuru": null,
   "ozet": "Yatırım Teşvik Sistemi (9903 Sayılı Karar)",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10770,7 +10835,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e1c64f7e-99db-4240-9614-67d8c709c60a",
    "guncelleme": "2026-03-19",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": [
     {
@@ -10802,8 +10867,7 @@
      "ad": "tesvik_uygulama_telefon_rehberi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-e2d7a435",
@@ -10812,6 +10876,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e2d7a435-14c7-4cda-88ac-af657ca79e35",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10830,7 +10895,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İhracata yönelik mal üreten imalatçılar",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10863,7 +10928,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e2d7a435-14c7-4cda-88ac-af657ca79e35",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Özet bilgi formu",
@@ -10876,8 +10941,7 @@
      "ad": "ozet_ihracat_yonelik_isletme_sermayesi_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-e2e07cef",
@@ -10886,6 +10950,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e2e07cef-6986-4aad-a8ec-baac04b85427",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -10904,7 +10969,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Bu çağrı KOBİ’lerin Yeşil Dönüşüm mevzuatlarına uyum kapsamında gereklilikleri karşılamak üzere alacağı teknik yardım hizmetlerini kapsamaktadır. Yeşil teknolojiler konusunda güncel teknolojiler için firmaların teknoloji danışmanlığı, kapasite ya da durum analizi, mevcut problemlerin tespiti ve çözü",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -10949,7 +11014,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e2e07cef-6986-4aad-a8ec-baac04b85427",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10998,8 +11063,7 @@
      "ad": "niyet_beyani_formu_231206.docx"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-e3abe6c4",
@@ -11008,6 +11072,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e3abe6c4-e233-46fd-a738-900e55c4ba4c",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11028,7 +11093,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "1. Bu çağrının amacı, TTO’ların asgari düzeyde yukarıda belirtilen kapsamdaki faaliyetleri yürütebilecek yeni TTP’leri istihdam etmeleri veya bünyelerinde çalışmakta olan TTP’lerin sürekliliğini sağlamalarını teşvik etmektir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11071,7 +11136,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e3abe6c4-e233-46fd-a738-900e55c4ba4c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11112,8 +11177,7 @@
      "ad": "yonetmelik-teydep.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-e44bcab1",
@@ -11122,6 +11186,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e44bcab1-4474-4070-98bb-9041ebba4944",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 40,
   "geri_odemeli": false,
   "oran_metin": "%40–%100",
   "amac": [
@@ -11140,7 +11205,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kamu kurumları tarafından tespit edilen sorunların çözümüne ve/veya ihtiyaçlara yönelik olarak ilan edilen çağrılara üniversiteler, kamu Ar-Ge birimleri ve özel kuruluşların bilgi birikimi, yetişmiş insan gücü ve alt yapı imkanları kullanılarak sunulan Ar-Ge nitelikli projeler desteklenmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11179,7 +11244,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e44bcab1-4474-4070-98bb-9041ebba4944",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11228,8 +11293,7 @@
      "ad": "tubitak-kaynaklarindan-genel-butce-kapsamindaki-kamu-idareleri-ile-ozel-butceli-idarelere-proje-karsiligi-aktarilacak-tut.pdf"
     }
    ]
-  },
-  "destek_orani": 40
+  }
  },
  {
   "id": "yd-e59440bb",
@@ -11238,6 +11302,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e59440bb-5fe5-4952-ae00-a2668a5355be",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11255,7 +11320,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Şirketlerin Türkiye’de üretilen ürünlerin pazarlandığı yurt dışı birimlerinin kira giderleri ile paylaşımlı ofislere ilişkin üyelik giderleri, 5973 sayılı İhracat Destekleri Hakkında Kararın 11.maddesi kapsamında, her bir birim başına yıllık 2.000.000 TL’ye kadar %50 oranında desteklenir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11293,7 +11358,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e59440bb-5fe5-4952-ae00-a2668a5355be",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11330,8 +11395,7 @@
      "ad": "11-madde-birim-kira-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-e9e19357",
@@ -11340,6 +11404,7 @@
   "url": "https://yatirimadestek.gov.tr/program/e9e19357-1464-47b0-84fb-250f3568e330",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11357,7 +11422,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5510 sayılı Kanun’un Ek 2’inci maddesi, 2011/54 - 2012/30 - 2012/37 - 2023/23 sayılı Genelgeler.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11395,7 +11460,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e9e19357-1464-47b0-84fb-250f3568e330",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11444,8 +11509,7 @@
      "ad": "ozet-3305_sayili_yatirimlarda_devlet_yardimlari_hakkinda_karar_ka.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-ec76bcf6",
@@ -11454,6 +11518,7 @@
   "url": "https://yatirimadestek.gov.tr/program/ec76bcf6-2887-4a06-80a2-eaa0571b85cd",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11471,7 +11536,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "İşyeri Yönünden Zorunlu Şartlar:",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11508,7 +11573,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ec76bcf6-2887-4a06-80a2-eaa0571b85cd",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11537,8 +11602,7 @@
      "ad": "sigorta_prim_tesvikleri_sunumu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-ee86a6c3",
@@ -11547,6 +11611,7 @@
   "url": "https://yatirimadestek.gov.tr/program/ee86a6c3-650e-4857-b7d5-f9a415678d30",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11564,7 +11629,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; bitkisel üretimde kimyasal mücadele yerine alternatif mücadele tekniklerinin uygulanmasıyla kimyasal ilaç kullanımının azaltılması, insan sağlığının ve doğal dengenin korunması için biyolojik ve/veya biyoteknik mücadele yapan üreticilere desteklemektir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11601,7 +11666,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ee86a6c3-650e-4857-b7d5-f9a415678d30",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11630,8 +11695,7 @@
      "ad": "ck-tarimsal_desteklemeler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-ee93eb7d",
@@ -11640,6 +11704,7 @@
   "url": "https://yatirimadestek.gov.tr/program/ee93eb7d-dcf0-44f8-8c5c-f3c0ed2769d7",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11690,11 +11755,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ee93eb7d-dcf0-44f8-8c5c-f3c0ed2769d7",
    "guncelleme": "2026-10-27",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-eeac8332",
@@ -11703,6 +11767,7 @@
   "url": "https://yatirimadestek.gov.tr/program/eeac8332-3ee2-40ee-8fa3-b1f2bba3f9e1",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11720,7 +11785,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Program ile Türkiye kaynaklı ulusal ve uluslararası patent başvuru ve tescil sayısının artırılması, gerçek ve tüzel kişilerin patent başvurusu yapmaya teşvik edilmesi ve Türkiye menşeli patent sayısının artırılması hedeflenmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11758,7 +11823,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/eeac8332-3ee2-40ee-8fa3-b1f2bba3f9e1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11795,8 +11860,7 @@
      "ad": "1602-hibe-destek-tutarlari-tablosu.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-ef00dc39",
@@ -11805,6 +11869,7 @@
   "url": "https://yatirimadestek.gov.tr/program/ef00dc39-bab5-4127-8a55-44612adfbb44",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11823,7 +11888,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Programın amacı yurt dışında yerleşik markaların satın alınması ve Türkiye’de yerleşik markaların yurt dışında tutundurulması kapsamında yapılacak/yapılmış harcamalara finansman sağlamaktır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11864,7 +11929,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ef00dc39-bab5-4127-8a55-44612adfbb44",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11889,8 +11954,7 @@
      "ad": "ozet_marka_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-efb89ac8",
@@ -11899,6 +11963,7 @@
   "url": "https://yatirimadestek.gov.tr/program/efb89ac8-194a-4025-932f-46877528a5a6",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -11917,7 +11982,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredi ile gemi inşa/ihraç edecek firmaların gemi inşa aşamasındaki finansman ihtiyaçları karşılanmaktadır.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -11954,7 +12019,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/efb89ac8-194a-4025-932f-46877528a5a6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11979,8 +12044,7 @@
      "ad": "ozet_gemi_insa_ve_ihracati_finansman_programi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-efc2d75d",
@@ -11989,6 +12053,7 @@
   "url": "https://yatirimadestek.gov.tr/program/efc2d75d-ac19-4bd0-aeae-418e45a0c4a6",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12007,7 +12072,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Kredinin amacı firmaların uluslararası piyasadaki rekabet güçlerini artırarak ihracata hazırlık aşamasındaki finansman ihtiyacını gidermektir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12045,7 +12110,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/efc2d75d-ac19-4bd0-aeae-418e45a0c4a6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12070,8 +12135,7 @@
      "ad": "ozet_ihracata_hazirlik_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-f0015114",
@@ -12080,6 +12144,7 @@
   "url": "https://yatirimadestek.gov.tr/program/f0015114-7875-4d30-bc0b-ca351e2aef5c",
   "tur": "kredi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12097,7 +12162,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Program kapsamında ihracata hazırlık amacıyla 5 milyon ABD Dolarına kadar kredi kullandırılabilmektedir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12135,7 +12200,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f0015114-7875-4d30-bc0b-ca351e2aef5c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12160,8 +12225,7 @@
      "ad": "ozet_kobi_ihracata_hazirlik_kredisi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-f209bb25",
@@ -12170,6 +12234,7 @@
   "url": "https://yatirimadestek.gov.tr/program/f209bb25-3842-4bb2-9e28-b83e8423507d",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12187,7 +12252,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Desteğin amacı; su ürünleri yetiştiricilik belgesine sahip olan ve ürünlerini Tarım ve Orman Bakanlığı (Bakanlık)’nca onaylı işleme ve değerlendirme tesislerinde dondurulmuş veya soğutulmuş olarak işleyip paketleyerek iç piyasada tüketilmek üzere satan yetiştiricilerin, 1 yıl süreyle desteklenerek s",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12224,7 +12289,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f209bb25-3842-4bb2-9e28-b83e8423507d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12261,8 +12326,7 @@
      "ad": "teblig-islenmis_su_urunlerinin_desteklenmesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-f4e77887",
@@ -12271,6 +12335,7 @@
   "url": "https://yatirimadestek.gov.tr/program/f4e77887-4d4c-4cc7-8b4d-d46b31dd3bf6",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12288,7 +12353,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: Yurt Dışı Turizm Fuarlarına Katılımın ve Turizm Tanıtma ve Pazarlama Faaliyetlerinin Desteklenmesine İlişkin Tebliğ, Destek Alanları ve Yararlanma Şartları:",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12326,7 +12391,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f4e77887-4d4c-4cc7-8b4d-d46b31dd3bf6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12351,8 +12416,7 @@
      "ad": "ozet-turizm_tanitma_ve_pazarlama_faaliyetlerinin_desteklenmesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-f5f1d3a3",
@@ -12361,6 +12425,7 @@
   "url": "https://yatirimadestek.gov.tr/program/f5f1d3a3-8129-496b-a24f-aa076d510107",
   "tur": "vergi",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12378,7 +12443,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-31",
+  "son_basvuru": null,
   "ozet": "OSB'lere Uygulanan Teşvik Ve Muafiyetler",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12411,11 +12476,10 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f5f1d3a3-8129-496b-a24f-aa076d510107",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [],
    "belgeler": []
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-f774d310",
@@ -12424,6 +12488,7 @@
   "url": "https://yatirimadestek.gov.tr/program/f774d310-9e2a-42ee-b9c6-760c847b44c7",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": 50,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12442,7 +12507,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Bakanlık koordinasyonunda işbirliği kuruluşlarınca düzenlenen sanal ticaret heyeti faaliyetlerine ilişkin giderler, 5973 sayılı İhracat Destekleri Hakkında Karar’ın 25. maddesi kapsamında, %50 oranında ve faaliyet başına 1.000.000 TL'ye kadar desteklenir.",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12480,7 +12545,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f774d310-9e2a-42ee-b9c6-760c847b44c7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12517,8 +12582,7 @@
      "ad": "25-madde-sanal-ticaret-heyeti-destegi-limiti.jpg"
     }
    ]
-  },
-  "destek_orani": 50
+  }
  },
  {
   "id": "yd-f77a0bca",
@@ -12527,6 +12591,7 @@
   "url": "https://yatirimadestek.gov.tr/program/f77a0bca-9bb1-4dba-aa49-0ecd41079537",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12545,7 +12610,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 664 sayılı Atatürk Kültür, Dil ve Tarih Yüksek Kurumu Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname ile Atatürk Kültür Dil ve Tarih Yüksek Kurumu Bilimsel Araştırma ve Çeviri Projeleri Yönergesi Destek Alanları ve Yararlanma Şartları:",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12587,7 +12652,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f77a0bca-9bb1-4dba-aa49-0ecd41079537",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12616,8 +12681,7 @@
      "ad": "bilimsel_arastirma_ve_ceviri_projeleri_yonergesi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-f8540d98",
@@ -12626,6 +12690,7 @@
   "url": "https://yatirimadestek.gov.tr/program/f8540d98-0268-47dc-938a-f5d5a6d142fc",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12643,7 +12708,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Bu programla, üniversite/kamu araştırma merkez ve enstitülerindeki bilgi birikimi ve teknolojinin, Türkiye’de yerleşik ve proje sonuçlarını Türkiye’de uygulamayı taahhüt eden kuruluşların ihtiyaçları doğrultusunda, ürüne ya da sürece dönüştürülerek sanayiye aktarılması yoluyla ticarileştirilmesine k",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12684,7 +12749,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f8540d98-0268-47dc-938a-f5d5a6d142fc",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12717,8 +12782,7 @@
      "ad": "sss-1503_proje_pazarlari_destekleme_programi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-fa4ab389",
@@ -12727,6 +12791,7 @@
   "url": "https://yatirimadestek.gov.tr/program/fa4ab389-caba-4470-be3b-4faec31527f5",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12744,7 +12809,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Ufuk2020, 80 Milyar Avro’luk dev finansmanıyla dünyanın en büyük bütçeli araştırma ve inovasyon programıdır. Ufuk2020 kapsamında aşağıdaki sayılan destek mekanizmalarıyla sağlık, enerji, ulaşım, bilgi ve iletişim teknolojileri, ileri imalat teknolojileri, gıda, biyoteknoloji, güvenlik, sosyal biliml",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12781,7 +12846,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/fa4ab389-caba-4470-be3b-4faec31527f5",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12806,8 +12871,7 @@
      "ad": "ozet-ufuk_2020_destek_programlari.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-fc85b4fe",
@@ -12816,6 +12880,7 @@
   "url": "https://yatirimadestek.gov.tr/program/fc85b4fe-7999-4a9d-a911-feb369ca3769",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12833,7 +12898,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 5/12/1951 tarihli ve 5846 sayılı Fikir ve Sanat Eserleri Kanunu Fikir ve Sanat Eserlerini İçeren Taşıyıcı Materyaller ile Bu Eserlerin Çoğaltılmasına Yarayan Teknik Cihazların Bedellerinden Yapılan Kesintilerin Kullanımına İlişkin Usul ve Esaslar Hakkında Yönetmelik. 5846 Sayılı Kanun",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12870,7 +12935,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/fc85b4fe-7999-4a9d-a911-feb369ca3769",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12895,8 +12960,7 @@
      "ad": "ozet-fikri_mulkiyet_ve_kultur_endustrilerine_yonelik_destekler.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  },
  {
   "id": "yd-fe5df282",
@@ -12905,6 +12969,7 @@
   "url": "https://yatirimadestek.gov.tr/program/fe5df282-63c6-441a-b20a-3dbe6618440e",
   "tur": "hibe",
   "ust_limit": null,
+  "destek_orani": null,
   "geri_odemeli": false,
   "oran_metin": null,
   "amac": [
@@ -12922,7 +12987,7 @@
   "il": [
    "tumu"
   ],
-  "son_basvuru": "2030-12-30",
+  "son_basvuru": null,
   "ozet": "Yasal Dayanak: 1 No’lu Cumhurbaşkanlığı Teşkilatı Hakkında Cumhurbaşkanlığı Kararnamesi’nin 9. Bölüm 277. Maddesi a, b, d ve e bendi ile 285. Maddesi’nin f bendi, 2013 yılından itibaren Resmî Gazete’de yayımlanan yatırım programları, “Kamu Eliyle Yapılan Kültür Yatırımlarına Destek Projesi Hakkında ",
   "firma_yasi_max": null,
   "ihracat_gerekli": false,
@@ -12959,7 +13024,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/fe5df282-63c6-441a-b20a-3dbe6618440e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-04",
+   "kontrol": "2026-11-09",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12984,7 +13049,6 @@
      "ad": "ozet-kultur_merkezleri_yapim_destegi.pdf"
     }
    ]
-  },
-  "destek_orani": null
+  }
  }
 ]
