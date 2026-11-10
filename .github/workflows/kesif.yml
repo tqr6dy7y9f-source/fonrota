@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - run: pip install playwright >/dev/null && python -m playwright install --with-deps chromium >/dev/null
+      - run: pip install requests >/dev/null
       - name: Belgeleri tara
         run: python tara/form_tara.py
       - name: Kaydet
