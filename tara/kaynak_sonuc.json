@@ -1,0 +1,103 @@
+{
+ "doi": {
+  "10.1080/10447310802205776": {
+   "baslik": "An Empirical Evaluation of the System Usability Scale",
+   "yazar": [
+    "Bangor",
+    "Kortum",
+    "Miller"
+   ],
+   "yil": 2008,
+   "dergi": "International Journal of Human–Computer Interaction",
+   "cilt": "24",
+   "sayi": "6",
+   "sayfa": "574-594"
+  },
+  "10.1177/001316446002000104": {
+   "baslik": "A Coefficient of Agreement for Nominal Scales",
+   "yazar": [
+    "Cohen"
+   ],
+   "yil": 1960,
+   "dergi": "Educational and Psychological Measurement",
+   "cilt": "20",
+   "sayi": "1",
+   "sayfa": "37-46"
+  },
+  "10.2307/2529310": {
+   "baslik": "The Measurement of Observer Agreement for Categorical Data",
+   "yazar": [
+    "Landis",
+    "Koch"
+   ],
+   "yil": 1977,
+   "dergi": "Biometrics",
+   "cilt": "33",
+   "sayi": "1",
+   "sayfa": "159"
+  },
+  "10.1080/10447318.2018.1455307": {
+   "baslik": "The System Usability Scale: Past, Present, and Future",
+   "yazar": [
+    "Lewis"
+   ],
+   "yil": 2018,
+   "dergi": "International Journal of Human–Computer Interaction",
+   "cilt": "34",
+   "sayi": "7",
+   "sayfa": "577-590"
+  },
+  "10.1017/CBO9780511809071": {
+   "baslik": "Introduction to Information Retrieval",
+   "yazar": [
+    "Manning",
+    "Raghavan",
+    "Schütze"
+   ],
+   "yil": 2008,
+   "dergi": "",
+   "cilt": null,
+   "sayi": null,
+   "sayfa": null
+  },
+  "10.1002/pra2.323": {
+   "baslik": "GotFunding: A grant recommendation system based on scientific articles",
+   "yazar": [
+    "Zeng",
+    "Acuna"
+   ],
+   "yil": 2020,
+   "dergi": "Proceedings of the Association for Information Science and Technology",
+   "cilt": "57",
+   "sayi": "1",
+   "sayfa": null
+  }
+ },
+ "ara": {
+  "Informing SMEs better about available support measures Yasuda": "Expecting value: line 1 column 1 (char 0)",
+  "Information frictions and firm take up of government support Custodio Hansman Mendes": "Expecting value: line 1 column 1 (char 0)",
+  "SUS a quick and dirty usability scale Brooke": [
+   {
+    "baslik": "SUS: A 'Quick and Dirty' Usability Scale",
+    "yazar": [],
+    "yil": 1996,
+    "doi": "10.1201/9781498710411-35",
+    "tur": "book-chapter"
+   },
+   {
+    "baslik": "'Quick and Dirty' Usability Tests",
+    "yazar": [],
+    "yil": 1996,
+    "doi": "10.1201/9781498710411-24",
+    "tur": "book-chapter"
+   },
+   {
+    "baslik": "Getting the Most out of 'Quick and Dirty' User Interface Simulations",
+    "yazar": [],
+    "yil": 1996,
+    "doi": "10.1201/9781498710411-26",
+    "tur": "book-chapter"
+   }
+  ]
+ }
+}
