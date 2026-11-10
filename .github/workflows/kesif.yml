@@ -7,14 +7,22 @@ permissions:
 jobs:
   kesif:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - run: pip install requests >/dev/null
-      - name: Belgeleri tara
-        run: python tara/form_tara.py
+      - name: CATAK sayfalari
+        run: |
+          mkdir -p catak
+          UA="Mozilla/5.0 (compatible; destek-arastirma/1.0)"
+          curl -sSL -m 60 -A "$UA" "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tarla-Ve-Bahce-Bitkileri/CATAK" -o catak/tob.html || true
+          curl -sSL -m 60 -A "$UA" "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ozet-cevre_amacli_tarim_arazilerini_koruma_destegi_catak.pdf" -o catak/ozet.pdf || true
+          curl -sSL -m 60 -A "$UA" "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/bkk-catak_destegi_2.pdf" -o catak/bkk.pdf || true
+          curl -sSL -m 60 -A "$UA" "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/teblig-catak_destegi.pdf" -o catak/teblig.pdf || true
+          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || true
+          for f in catak/*.pdf; do pdftotext -layout "$f" "$f.txt" || true; done
+          python3 -c "import re,html;t=open('catak/tob.html',encoding='utf-8',errors='ignore').read();t=re.sub(r'(?s)<(script|style).*?</\1>','',t);open('catak/tob.txt','w').write(html.unescape(re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',t))))" || true
+          ls -la catak
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A tara && git commit -m "kesif: form taramasi" && git push
+          git add -A catak && git commit -m "catak kesif" && git push
