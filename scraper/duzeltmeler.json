@@ -87,5 +87,23 @@
   "alanlar": {
    "son_basvuru": "2025-10-07"
   }
+ },
+ {
+  "id": "yd-1145e2bf",
+  "neden": "Platformda 'Sürekli aktif' görünüyor, ancak Tarım ve Orman Bakanlığı'nın program sayfasına göre 2018'den beri yeni başvuru alınmıyor (süresi dolmuş).",
+  "alanlar": {
+   "son_basvuru": "2017-12-31"
+  },
+  "dogrulama": {
+   "belge": "Tarım ve Orman Bakanlığı – ÇATAK program sayfası",
+   "url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tarla-Ve-Bahce-Bitkileri/CATAK",
+   "kontrol": "2026-11-10",
+   "bolumler": [
+    {
+     "baslik": "Program sayfası",
+     "metin": "2018 Yılından itibaren ÇATAK Programına yeni başvuru alınmamaktadır. Programın 2020 yılı sonunda tamamlanması öngörülmektedir."
+    }
+   ]
+  }
  }
 ]
