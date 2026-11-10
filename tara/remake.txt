@@ -1,0 +1,156 @@
+ • • • • • 2209-A araştırma önerisi formu örneği: yazılım projesi (2026) | re:make • • • • • • İçeriğe geç re : make • Hikaye 
+• Topluluk 
+• Etkinlikler 
+• Projeler 
+• Blog 
+ Ara ⌘K • 01 Hikaye 
+• 02 Topluluk 
+• 03 Etkinlikler 
+• 04 Projeler 
+• 05 Blog 
+ • Duyurular 
+• Öğrenciler 
+• İzmir toplulukları 
+• Sık sorulanlar 
+• Marka 
+ Giriş Başvur Notlar TÜBİTAK 2209-A öğrenci araştırma projesi 
+# TÜBİTAK 2209-A araştırma önerisi formu: yazılım projesi için doldurulmuş örnek
+ 2209-A başvurusunda en çok zorlanılan yer araştırma önerisi. Formun her bölümünü, İzmir'in açık otobüs verisiyle kurulmuş örnek bir yazılım projesi üzerinden doldurduk; neyi neden öyle yazdığımızı da yanına not ettik.
+ Can Karaca 29 Ekim 2026 · 12 dk okuma TÜBİTAK 2209-A'ya başvurmaya karar verdin, danışmanını da buldun. Şimdi önünde boş bir araştırma önerisi formu var. 2026 çağrısında son gün 11 Kasım, saat 17.30. Danışman onayının da bu tarihe kadar verilmesi gerekiyor.
+ Bu yazıda formu baştan sona, örnek bir yazılım projesiyle doldurduk. Her bölümde önce TÜBİTAK'ın ne istediğini, sonra örnek metni, en sonda da neden öyle yazdığımızı bulacaksın. Programın genel kuralları ve fikri araştırma sorusuna çevirme kısmı için önceki yazımıza bak.
+ Bir uyarı: bu bir örnek, kopyalanacak bir metin değil. Hakem aynı cümleleri başka başvurularda da görebilir, benzerlik kontrolü de yapılıyor. Yapıyı al, içeriği kendi projenle doldur.
+## Önce bilmen gereken üç şey
+• Form artık Word dosyası değil. 2026'da araştırma önerisi, TÜBİTAK Yönetim Bilgi Sistemi'nde (TYBS) bölüm bölüm doldurduğun metinlerden otomatik oluşuyor. Metni başka bir yerde yazıp yapıştırabilirsin. Ama başvuru içeriği bilgi notu , yapıştırılan biçimlendirmenin önizlemede boş görünebileceğini söylüyor. Her bölümden sonra "Proje Önerisini Önizle" düğmesiyle kontrol et.
+• Minimum sınırlar kesin. Özet en az 25, en çok 450 kelime. "Konunun Önemi", "Amaç ve Hedefler" ve "Yöntem" bölümleri en az 350'şer karakter. Çağrı duyurusuna göre bu sınırlara uymayan ya da Türkçe olmayan öneri, hakeme hiç gitmeden ön incelemede eleniyor. 350 karakter yaklaşık 50 kelime eder. Yani bu sınır bir hedef değil, alt sınır.
+• Puanlama dört başlıkta yapılıyor: bilimsel nitelik (%35), yöntem (%25), proje yönetimi (%20) ve yaygın etki (%20). Formun bölümleri de bu sırayı izliyor.
+## Örnek proje
+ Başlık: İzmir'de otobüslerin durağa varış süresinin tahmini: tarife ile anlık konum verisinden öğrenen modelin karşılaştırılması
+ Kısaca: İzmir Büyükşehir Belediyesi'nin açık veri portalında ESHOT otobüslerinin hareket saatleri ve anlık konumları herkese açık. Proje, birkaç hattın konumunu aylarca kaydedip gerçek varış zamanlarını çıkarıyor. Sonra üç tahmin yöntemini karşılaştırıyor: tarife, otobüsün son hızı ve geçmiş veriyle eğitilmiş bir model.
+ Bu konuyu üç sebeple seçtik:
+• Tek bir yazılım öğrencisinin bir yılda bitirebileceği büyüklükte.
+• İnsan katılımcı yok, yani etik kurul onayı gerekmiyor. Anket ya da kullanıcı testi içeren projelerde, bilimsel değerlendirmeden sonra etik kurul belgesi istenebiliyor.
+• Sonucu dakika cinsinden ölçülebiliyor.
+ Kendi projende bir veri setini kullanmadan önce lisansını oku. Kaydettiğin veriyi yayımlayıp yayımlayamayacağını lisans belirler.
+ Örnek metinlerdeki köşeli parantezler ( [Kaynak 1] gibi) senin dolduracağın yerler. Kaynak uydurma. Google Scholar'da "bus arrival time prediction" ya da DergiPark'ta "otobüs varış süresi tahmini" diye aratarak başla. Okumadığın bir kaynağı da yazma.
+## 1.1 Konunun önemi ve bilimsel nitelik
+ TÜBİTAK ne istiyor: Konunun kapsamı, sınırları ve önemi. Literatürdeki hangi eksikliği kapatacağın, kaynaklara atıfla. Araştırma sorusu, varsa hipotez. Konun 12. Kalkınma Planı'ndaki ya da 2030 Sanayi ve Teknoloji Stratejisi'ndeki kritik teknoloji alanlarıyla ilişkiliyse, bu ilişkinin sebebi ve sağlayacağı yarar.
+ Örnek metin: 
+ Toplu taşımada bekleme süresinin belirsizliği, yolcunun toplu taşımayı tercih etmesini azaltan etkenlerden biridir [Kaynak 1]. Durak ekranları ve mobil uygulamalar varış süresini çoğunlukla tarifeye ya da aracın anlık konumuna dayanarak tahmin eder. Ancak trafik yoğunluğunun saate ve güzergâha göre değiştiği kentlerde bu tahminlerin sapabildiği bildirilmektedir [Kaynak 2]. Geçmiş konum verisiyle eğitilen makine öğrenmesi modellerinin bu sapmayı azalttığını gösteren çalışmalar vardır [Kaynak 3, Kaynak 4]. Ancak bu çalışmaların çoğu büyük ve kapalı veri setleriyle yapılmıştır. Türkiye'deki bir kentin açık verisiyle yapılmış, yöntemleri aynı veri üzerinde karşılaştıran bir çalışmaya rastlanmamıştır [literatür taramanın sonucu].
+ Bu proje, İzmir Büyükşehir Belediyesi'nin açık veri portalında yayımlanan ESHOT anlık konum ve hareket saati verileriyle şu soruyu yanıtlamayı amaçlamaktadır: Geçmiş konum verisiyle eğitilmiş bir model, otobüsün durağa varış süresini tarifeye ve aracın son hızına dayanan tahminlerden ne ölçüde daha doğru tahmin eder?
+ Hipotez: Sabah ve akşam yoğun saatlerinde modelin ortalama mutlak hatası, tarife tabanlı tahminden en az %20 düşüktür.
+ Proje, açık kamu verisinin yapay zekâ yöntemleriyle değerlendirilmesine bir örnek oluşturması bakımından [ilgili strateji belgesindeki başlık] ile ilişkilidir.
+ Neden böyle: 
+• Paragraf genelden özele iniyor: sorun, mevcut çözüm, çözümün eksiği, bu projenin kapattığı boşluk. Hakem "bu neden araştırma?" sorusunun cevabını ilk paragrafta buluyor.
+• Soru tek cümle ve içinde bir karşılaştırma var. Hipotezde de bir sayı var (%20). Bu sayı sonradan "başarılı mıydı?" sorusunu cevaplamanı sağlıyor.
+• Strateji belgesi bağlantısını abartma. Belgeyi aç, konunun gerçekten denk geldiği başlığı bul ve onu yaz. Denk gelmiyorsa bu paragrafı hiç yazma; zorunlu değil.
+## 1.2 Amaç ve hedefler
+ TÜBİTAK ne istiyor: Açık, ölçülebilir, gerçekçi ve ulaşılabilir amaç ve hedefler.
+ Örnek metin: 
+ Amaç: İzmir'de otobüslerin durağa varış süresini tahmin eden üç yöntemin doğruluğunu aynı açık veri üzerinde karşılaştırmak.
+ Hedefler: 
+• Beş ESHOT hattının anlık konumunu 12 hafta boyunca 30 saniyede bir kaydederek en az 20.000 durağa varış kaydı içeren bir veri seti oluşturmak.
+• Tarife tabanlı tahmin, son hıza dayalı tahmin ve geçmiş veriyle eğitilmiş model için ortalama mutlak hatayı (dakika) ve gerçek varışa ±2 dakika içinde kalan tahminlerin oranını hesaplamak.
+• Yöntemler arasındaki farkın yoğun saatte, yoğun olmayan saatte ve hatlar arasında nasıl değiştiğini raporlamak.
+• Veri toplama ve değerlendirme kodunu açık kaynak olarak yayımlamak.
+ Neden böyle: Her hedefin sonunda bir sayı ya da somut bir çıktı var: 5 hat, 12 hafta, 20.000 kayıt, ±2 dakika, açık kaynak depo. "Daha iyi bir sistem geliştirmek" gibi ölçülemeyen bir hedef, bu bölümün puanını düşürür.
+## 2. Yöntem
+ TÜBİTAK ne istiyor: Yöntemin amaca neden uygun olduğu, literatüre atıfla. Araştırma tasarımı, bağımlı ve bağımsız değişkenler, istatistiksel yöntemler. Varsa ön çalışma. Yöntemin çalışma takvimiyle ilişkisi.
+ Örnek metin: 
+ Araştırma tasarımı: Gözlemsel ve karşılaştırmalı. Üç tahmin yöntemi aynı varış kayıtları üzerinde çalıştırılır ve hataları karşılaştırılır.
+ Veri toplama (İş Adımı 1–2): Yoğunluğu ve güzergâh uzunluğu farklı beş hat seçilir. Bu hatlardaki otobüslerin konumu açık veri servisinden 30 saniyede bir sorgulanıp veritabanına kaydedilir. Otobüsün, durağın 50 metre yakınından geçtiği an "varış" olarak etiketlenir. Etiketleme doğruluğu, rastgele seçilen 200 kaydın harita üzerinde elle kontrolüyle ölçülür.
+ Değişkenler: Bağımlı değişken, gerçek varış süresi ile tahmin edilen süre arasındaki farktır (dakika). Bağımsız değişkenler: saat dilimi, gün tipi (hafta içi, cumartesi, pazar), hat, durağın güzergâhtaki sırası, önceki iki durak arasında geçen süre ve otobüsün son bilinen hızıdır.
+ Karşılaştırılan yöntemler (İş Adımı 3–4): 
+• Y0: tarifedeki kalkış saatine göre hesaplanan varış.
+• Y1: kalan mesafenin, otobüsün son beş dakikadaki ortalama hızına bölünmesi.
+• Y2: yukarıdaki değişkenlerle eğitilen gradyan artırmalı karar ağacı modeli [Kaynak 3].
+ Değerlendirme: Veri zamana göre bölünür: ilk 8 hafta eğitim, sonraki 2 hafta doğrulama, son 2 hafta test. Böylece model geleceği görmeden değerlendirilir. Ölçütler ortalama mutlak hata ve ±2 dakika içinde kalan tahmin oranıdır. Yöntemlerin aynı kayıtlardaki hataları Wilcoxon işaretli sıralar testiyle karşılaştırılır (p < 0,05). Hipotez, yoğun saat alt grubunda ayrıca sınanır.
+ Saha doğrulaması (İş Adımı 5): Üç hatta, farklı saatlerde 60 varış durakta gözlenir. Gözlenen varış zamanı, veri setindeki etiketle karşılaştırılır.
+ Ön çalışma: Başvuru öncesinde iki hattın konumu yedi gün boyunca kaydedilmiş ve [kayıt sayısı, kayıp veri oranı] elde edilmiştir. Bu deneme, veri servisinin projenin ihtiyaç duyduğu sıklıkta veri sağladığını göstermektedir.
+ Neden böyle: 
+• Bilgi notunun saydığı her şey burada: tasarım, değişkenler, istatistik yöntemi, ön çalışma, takvim bağlantısı. Hakem bir kontrol listesiyle okuyor; eksik başlık puan kaybettirir.
+• Zamana göre bölme ayrıntısı küçük görünür, ama yazılımcının araştırmacı gibi düşündüğünü gösteren yer burası. Rastgele bölseydin model aynı günün verisini hem eğitimde hem testte görürdü ve sonuç olduğundan iyi çıkardı.
+• Ön çalışmayı gerçekten yap. Bir haftalık deneme kaydı için birkaç saatlik kod yeter. Sonucunu buraya yazmak, "bu proje yürür mü?" sorusunu cevaplar. Yapmadıysan bu paragrafı yazma; sayı uydurma.
+## 3.1 Çalışma takvimi
+ TÜBİTAK ne istiyor: Başlıca faaliyetler, süreleri, başarı ölçütleri ve araştırmanın başarısına katkıları. Bilgi notundaki kurallar:
+• Proje en fazla 12 ay sürebilir.
+• En az bir iş adımı olmalı.
+• Literatür taraması, sonuç raporu, sonuçların paylaşımı ve malzeme alımı ayrı iş adımı olarak yazılmaz.
+• Başarı ölçütü ölçülebilir olmalı ve o sütunun toplamı 100'e eşit olmalı.
+ Örnek takvim: 
+• Veri toplama altyapısı ve kayıt (1–4. ay). Başarı ölçütü: beş hatta 12 haftalık kayıt, kayıp veri oranı %5'in altında. Katkı: %15.
+• Varış zamanlarının çıkarılması (2–5. ay). Başarı ölçütü: en az 20.000 varış kaydı; elle kontrol edilen 200 kayıtta hatalı etiket oranı %2'nin altında. Katkı: %20.
+• Temel yöntemlerin uygulanması (Y0, Y1) (5–6. ay). Başarı ölçütü: iki yöntemin test verisindeki hatası hesaplanmış. Katkı: %15.
+• Modelin geliştirilmesi ve karşılaştırma (Y2) (6–9. ay). Başarı ölçütü: modelin hatası üç yöntemle karşılaştırılmış, hipotez yoğun saat alt grubunda sınanmış. Katkı: %30.
+• Saha doğrulaması ve hata analizi (9–11. ay). Başarı ölçütü: 60 saha gözlemi; saha ile veri seti arasındaki ortalama fark 1 dakikanın altında. Katkı: %20.
+ Toplam katkı: %100. 12. ay, gecikmelere karşı boş bırakıldı.
+ Neden böyle: Literatür taraması ve rapor yazımı takvimde yok. Kural bunu istiyor, çünkü onlar zaten her işin parçası. Başarı ölçütleri "model geliştirilmiş" gibi bir durum değil, kontrol edilebilir sayılar. Dördüncü adım hipotezi sınadığı için en büyük payı alıyor. Yöntemdeki "İş Adımı" numaraları da buradaki numaralarla aynı; bilgi notunun istediği bağlantı böyle kuruluyor.
+## 3.2 Risk yönetimi
+ TÜBİTAK ne istiyor: Projeyi aksatabilecek riskler ve her biri için B planı. B planı projenin temel hedefinden sapmamalı. Yöntem değişiyorsa ayrıntısı yazılmalı.
+ Örnek metin: 
+ Risk 1: Veri servisinin kesintiye uğraması ya da biçiminin değişmesi (İş Adımı 1). B planı: Kayıt programı her sorguyu ham haliyle saklar ve bir saatten uzun kesintide uyarı verir. Kayıp gün sayısı toplam sürenin %10'unu geçerse kayıt süresi bir ay uzatılır; bunun için 12. ay boş bırakılmıştır.
+ Risk 2: Konum verisinden varış zamanının güvenilir çıkarılamaması (İş Adımı 2). B planı: 50 metrelik yarıçap yerine, durağın iki yanındaki konum noktaları arasında doğrusal enterpolasyon kullanılır. Bu da yeterli olmazsa, portaldaki "durağa yaklaşan otobüsler" verisi ikinci bir etiket kaynağı olarak kullanılır ve bu değişiklik raporda belirtilir.
+ Risk 3: Modelin tarifeden daha iyi sonuç vermemesi (İş Adımı 4). B planı: Bu durum projenin başarısızlığı değil, hipotezin reddidir ve aynı ayrıntıda raporlanır. Hata analizinde tarifenin hangi hat ve saatlerde yeterli olduğu ayrıca incelenir.
+ Neden böyle: Üçüncü risk çoğu öğrencinin yazmadığı risktir, ama hakemin en çok merak ettiği budur. Araştırmada olumsuz sonuç da sonuçtur. Bunu baştan yazmak, projeyi "uygulama yapmak" değil "soru sormak" olarak gördüğünü gösterir.
+## 3.3 Araştırma olanakları
+ TÜBİTAK ne istiyor: Projede kullanılacak, kurumunda var olan altyapı ve ekipman.
+ Örnek metin: 
+ Veri analizi ve model eğitimi bölümün [laboratuvar adı] bilgisayar laboratuvarında ve yürütücünün kişisel bilgisayarında yapılacaktır. Veri seti boyutunun tek bir bilgisayarın belleğini aşması durumunda üniversitenin [hesaplama sunucusu varsa adı] kullanılacaktır. 12 hafta kesintisiz çalışması gereken kayıt programı için bütçeden sunucu kiralanacaktır.
+ Neden böyle: Kısa ve gerçek olsun. Olmayan bir laboratuvarı yazma; danışmanın bunu bilir, hakem de sorabilir.
+## 4. Yaygın etki
+ TÜBİTAK ne istiyor: Projeden beklenen çıktılar, kategorilere ayrılmış, ölçülebilir ve gerçekçi.
+ Örnek metin: 
+ Bilimsel/akademik: Sonuçların bir ulusal öğrenci kongresine ya da sempozyumuna bildiri olarak gönderilmesi (1 bildiri başvurusu).
+ Teknolojik ve toplumsal: Veri toplama ve değerlendirme kodunun açık kaynak lisansla yayımlanması. Veri lisansı izin veriyorsa, işlenmiş varış veri setinin de paylaşılması. Bulguların kısa bir raporla İzmir Büyükşehir Belediyesi'nin ilgili birimine iletilmesi.
+ Yeni proje ve kariyer: Sonuçların bitirme projesine ya da bir 2209-B başvurusuna temel oluşturması.
+ Neden böyle: "Uluslararası dergide yayın" gibi bir çıktı, lisans öğrencisi için gerçekçi değil ve hakem bunu fark eder. Bir bildiri, açık kaynak bir depo ve bir rapor hem gerçekçi hem de doğrulanabilir. Bir not: kongre katılım ve yayın masrafları 2209-A bütçesine yazılamıyor.
+## Bütçe
+ Bütçe başvuru sırasında giriliyor ve çağrı duyurusuna göre başvurular kapandıktan sonra değiştirilemiyor. Üst sınır 12.000 TL. Makine-teçhizat, sarf malzeme, seyahat ve hizmet alımı giderleri yazılabiliyor. Kongre katılım, yayın ve patent masrafları yazılamıyor.
+ Örnek projenin bütçesi şöyle olabilir (tutarlar temsili; kendi tutarlarını güncel tekliflerle belirle):
+• Hizmet alımı: sunucu kirası. 12 hafta kesintisiz veri kaydı ve yedekleme için, 12 ay. Örnek: 12 × 400 TL = 4.800 TL.
+• Makine-teçhizat: harici disk. Ham verinin yedeği için 2 TB. Örnek: 3.000 TL.
+• Seyahat: saha doğrulaması. 60 gözlem için toplu taşıma. Örnek: 1.500 TL.
+ Toplam: 9.300 TL.
+ Bir kalemin kabul edilip edilmeyeceğinden emin değilsen tahminle yazma; bideb2209a@tubitak.gov.tr adresine sor. Bütçenin üst sınırı doldurması gerekmiyor. Her kalemin projedeki bir iş adımına bağlanması, tutarın büyüklüğünden daha önemli.
+## Özet (en son yaz)
+ TÜBİTAK ne istiyor: 25–450 kelime. Bilimsel nitelik, yöntem, proje yönetimi ve yaygın etki hakkında bilgi. Bilgi notu bu bölümün en son yazılmasını öneriyor.
+ Örnek metin: 
+ Toplu taşımada varış süresi tahminlerinin doğruluğu, yolcunun bekleme süresini ve toplu taşıma tercihini etkiler. Bu proje, İzmir Büyükşehir Belediyesi'nin açık veri portalında yayımlanan ESHOT anlık konum ve hareket saati verileriyle, otobüslerin durağa varış süresini tahmin eden üç yöntemi karşılaştırmayı amaçlamaktadır: tarife tabanlı tahmin, aracın son hızına dayalı tahmin ve geçmiş konum verisiyle eğitilmiş gradyan artırmalı karar ağacı modeli. Beş hattın konumu 12 hafta boyunca 30 saniyede bir kaydedilecek ve en az 20.000 varış kaydı içeren bir veri seti oluşturulacaktır. Yöntemler, zamana göre ayrılmış test verisinde ortalama mutlak hata ve ±2 dakika içinde kalan tahmin oranıyla karşılaştırılacak; farklar Wilcoxon işaretli sıralar testiyle sınanacaktır. Hipotez, yoğun saatlerde modelin hatasının tarifeye göre en az %20 düşük olduğudur. Proje beş iş adımında, 12 ayda tamamlanacaktır; veri servisi kesintisi ve etiketleme güçlüğü için B planları tanımlanmıştır. Çıktılar arasında bir bildiri başvurusu, açık kaynak veri toplama ve değerlendirme kodu ve belediyeye iletilecek bir bulgu raporu yer almaktadır.
+ Neden böyle: Dört puanlama başlığının her biri bir ya da iki cümleyle var. Özet yaklaşık 150 kelime: alt sınırın çok üstünde, üst sınırın çok altında. Hakemin ilk okuduğu yer burası; her cümlesi formun bir bölümünü özetlemeli.
+## Kaynaklar ve ekler
+• Kaynakça ayrı bir adımda giriliyor. Listedeki her kaynağa metin içinde atıf yapılması gerekiyor. DOI numarası olan kaynaklarda DOI'yi eklemek zorunlu. Biçim için TÜBİTAK'ın bibliyografik veriler sayfasına bak.
+• "Belirtmek istediğiniz diğer konular" bölümüne yalnız değerlendirmeye katkısı olan bir şey koy. Örnek projede, ön çalışmanın bir haftalık kayıt grafiği buraya iyi gider.
+• Ekler anket ya da ölçek gibi yardımcı belgeler için. Örnek projede ek yok.
+• Görseller .jpg, .jpeg ya da .png olmalı. Formül varsa ekran görüntüsü olarak eklenebiliyor.
+## Göndermeden önce kontrol listesi
+• Bütün metin Türkçe.
+• Özet 25–450 kelime arasında. 1.1, 1.2 ve 2. bölümler en az 350'şer karakter.
+• "Proje Önerisini Önizle" ile baktın; boş ya da bozuk görünen bölüm yok.
+• Takvimde literatür, rapor, paylaşım ya da malzeme alımı ayrı adım olarak yok; katkı sütununun toplamı 100.
+• Yöntemdeki adımlar takvimdeki iş adımlarıyla eşleşiyor.
+• Kaynakçadaki her kaynağa metinde atıf var; DOI'si olanlarda DOI yazılı.
+• Yapay zekâ kullandıysan beyan ettin. Çağrı duyurusu, yapay zekâyla üretilen içeriğin doğruluğundan hem seni hem danışmanını sorumlu tutuyor.
+• ARBİS kaydın güncel.
+• Danışmanın 11 Kasım 17.30'dan önce onaylayacak; ona en az bir hafta önce gönderdin. Kurum yetkilisinin e-imzası 16–23 Kasım arasında.
+## Takıldığın yer olursa
+ Formu tek başına doldurmak zorunda değilsin. re:make her pazar 15.00'te buluşuyor; araştırma sorunu ya da yöntemini masaya getirip birlikte didikleyebiliriz. Üye olmadan da gelebilirsin. Yeri ve saati burada .
+ • Bağlantı X LinkedIn Bir sonraki not düştüğünde haberin olsun.
+ E-posta adresin Yeni haberler ve rehber yazılar. Ayda birkaç mail, istediğin an çık.
+## Yorumlar 0 
+ Yorum yaz
+ Adın E-posta (yayınlanmaz) Yorumun Gönder Başka notlar 
+## Okumaya devam.
+ • 11 Ekim 2026
+### TÜBİTAK 2209-A 2026 açıldı: yazılım projesiyle nasıl başvurulur? 
+ TÜBİTAK'ın lisans ve ön lisans öğrencilerine yönelik 2209-A ve 2209-B çağrıları 11 Kasım 2026'ya kadar açık. Yazılım fikrini hakemin görmek istediği araştırma projesine nasıl çevireceğini ve önümüzdeki dört haftayı nasıl planlayacağını anlattık.
+ TÜBİTAK · 2209-A · öğrenci · araştırma projesi · kariyer
+ Can Karaca 11 Ekim 2026 · 5 dk okuma 
+ re : make İzmir'de, birlikte yapıldı. 
+ Birlikte üretmek isteyen geliştiriciler, tasarımcılar ve meraklılar için bağımsız bir topluluk.
+ • GitHub 
+• Instagram 
+• X 
+• YouTube 
+• Mail 
+ re:make notları
+ E-posta adresin Yeni haberler ve rehber yazılar. Ayda birkaç mail, istediğin an çık.
+ Hikaye Topluluk Etkinlikler Projeler Blog Başvur Duyurular Öğrenciler İzmir toplulukları Sık sorulanlar Marka Hub Takvime abone ol RSS © 2026 re : make İzmir --:-- Gizlilik Çerezler Kullanım Şartları Çerez tercihleri Tema • • 
