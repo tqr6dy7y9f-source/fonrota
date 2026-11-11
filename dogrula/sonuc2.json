@@ -1,0 +1,1686 @@
+[
+ {
+  "url": "http://ardeb-pbs.tubitak.gov.tr",
+  "kod": 200,
+  "son": "https://ardeb-pbs.tubitak.gov.tr/",
+  "baslik": "ARDEB Proje Başvuru Sistemi",
+  "uzunluk": 2318
+ },
+ {
+  "url": "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-destekleri/d%C3%B6viz-kazandirici-hizmet-sekt%C3%B6rleri-markalasma-destegi",
+  "hata": "ConnectionError: HTTPSConnectionPool(host='ticaret.gov.tr', port=443): Max retries exceeded with url: /destekler/hizm"
+ },
+ {
+  "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi",
+  "kod": 200,
+  "son": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 6873
+ },
+ {
+  "url": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-mevzuati",
+  "kod": 200,
+  "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-mevzuati",
+  "baslik": "Internal Server Error",
+  "uzunluk": 27
+ },
+ {
+  "url": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar",
+  "kod": 200,
+  "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar",
+  "baslik": "Internal Server Error",
+  "uzunluk": 27
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 6127
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 6040
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet-gosteren-sirketlere-tasarim-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet-gosteren-sirketlere-tasarim-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5940
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5851
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri",
+  "baslik": "Internal Server Error",
+  "uzunluk": 27
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5857
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-projesi-hazirlama-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-projesi-hazirlama-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 6074
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5835
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 6740
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 7218
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tanitim-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tanitim-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5869
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tasarimci-sirket-ve-tasarim-ofisi-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tasarimci-sirket-ve-tasarim-ofisi-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 6056
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/ur-ge-proje-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/ur-ge-proje-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5831
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5863
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 5940
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka-alim-destegi",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka-alim-destegi",
+  "baslik": "Internal Server Error",
+  "uzunluk": 27
+ },
+ {
+  "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+  "kod": 200,
+  "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+  "baslik": "T.C. Ticaret Bakanlığı",
+  "uzunluk": 6488
+ },
+ {
+  "url": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-tarim-sigortalari",
+  "kod": 200,
+  "son": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-tarim-sigortalari",
+  "baslik": "Devlet Destekli Tarım Sigortaları | Hizmetlerimiz | Tarım | Kurumsal | Ziraat Bankası",
+  "uzunluk": 5822
+ },
+ {
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler",
+  "kod": 200,
+  "son": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler",
+  "baslik": "Destekler Listesi - KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı",
+  "uzunluk": 2028,
+  "metin": " Destekler Listesi - KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı Erişilebilirlik Menüsü × Ekran Okuyucu Seçili Alan Okuyucu Bağlantı Vurgula Büyük Metin Metni Sola Hizala İmleç Okuma Kılavuzu Okuma Maskesi Disleksi Dostu Kontrast Solgunlaştırma Düşük Doygunluk Yüksek Doygunluk Erişilebilirlik Ayarlarını Temizle Tüm Liste Site içi arama e-hizmetler MENU Kurumsal Başkan Başkan Yardımcıları Mevzuat Tarihçe Genel Kurul ve İcra Komitesi İştirakler Vizyon, Misyon ve Temel Değerler Rapor ve İstatistikler Hizmet Envanteri ve Hizmet Standartları Tablosu KVKK Aydınlatma Metni Kurumsal Kimlik Bilgi Güvenliği Politikası Destekler Girişimci Destek Programı Kapasite Geliştirme Destek Programı Küresel Rekabetçilik Destek Programı KOBİ Dijital Dönüşüm Destek Programı YÖNDE - Yönderlik ve Değerlendirme Destek Programı İstihdamı Koruma Destek Programı Teknoloji Merkezi Destek Programı Sektörel Gelişim Merkezi (SEGEM) Destek Programı Yapay Zekâ Kredisi Diğer Destekler KOBİ Nereden Başlamalıyım? İşletme Beyanı İşlemleri Desteklenen Sektörler e-Hizmetlerimiz Duyurular İletişim İLETİŞİM MÜDÜRLÜKLER TEKMERLER SEGEMLER TEMSİLCİLİKLER BİLGİ EDİNME KOBİ'leri yenilikçi, rekabetçi, ikiz dönüşüm ve ihracat odaklı bir yapıya kavuşturarak sürdürülebilir bir ekonomik gelecek inşa ediyoruz. Buradasınız: Anasayfa Destekler Diğer Destekler Girişim Sermayesi Yatırım Fonları Yatırımları devamı için Yeşil Sanayi Destek Programı devamı için Stratejik Ürün Destek Programı devamı için 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı devamı için 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı devamı için Yürürlükten Kaldırılan Destekler devamı için T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / ANKARA 0 312 595 28 00 (pbx) 0 312 368 07 15 444 1 567 Kayıt İşlemleri Nereden Başlamalıyım? Desteklenen Sektörler Nelerdir? (NACE) KOSGEB e-Hizmetler e-Personel Bilgi Edinme Site Haritası ",
+  "baglar": [
+   [
+    "/content/favicon/apple-icon-57x57.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-57x57.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-60x60.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-72x72.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-76x76.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-114x114.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-120x120.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-144x144.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-152x152.png",
+    "   "
+   ],
+   [
+    "/content/favicon/apple-icon-180x180.png",
+    "   "
+   ],
+   [
+    "/content/favicon/android-icon-192x192.png",
+    "   "
+   ],
+   [
+    "/content/favicon/favicon-32x32.png",
+    "   "
+   ],
+   [
+    "/content/favicon/favicon-96x96.png",
+    "   "
+   ],
+   [
+    "/content/favicon/favicon-16x16.png",
+    "   "
+   ],
+   [
+    "/content/favicon/manifest.json",
+    "   "
+   ],
+   [
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800",
+    "   "
+   ],
+   [
+    "https://fonts.googleapis.com/css?family=Oswald:400,300,700",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/bootstrap.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/bootstrap-multiselect.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/sumoselect.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/fonts/font-awesome/css/font-awesome.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/animations.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/superfish.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/revolution-slider/css/settings.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/prettyPhoto.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/style.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/menu/style.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/menu/fontello.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/colors/blue.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/theme-responsive.css",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/css/Ortak.css?v=1.05",
+    "   "
+   ],
+   [
+    "/Web/Content/assets/plugins/FuncyBox/jquery.fancybox.css?v=1.05",
+    "   "
+   ],
+   [
+    "https://twitter.com/kosgeb                                ",
+    "   "
+   ],
+   [
+    "https://sosyal.teknofest.app/@kosgebkurumsal",
+    "   "
+   ],
+   [
+    "/site/tr/genel/liste/7/haftanin-kobi-girisimcisi",
+    "Tüm Liste"
+   ],
+   [
+    "https://twitter.com/kosgeb                                ",
+    "   "
+   ],
+   [
+    "https://sosyal.teknofest.app/@kosgebkurumsal",
+    "   "
+   ],
+   [
+    "https://edevlet.kosgeb.gov.tr/",
+    "   "
+   ],
+   [
+    "/site",
+    "   "
+   ],
+   [
+    "/site",
+    "   "
+   ],
+   [
+    "#",
+    "Kurumsal "
+   ],
+   [
+    "/site/tr/genel/destekler/3/destekler",
+    "Destekler "
+   ],
+   [
+    "https://edevlet.kosgeb.gov.tr/EHizmetler.aspx",
+    "KOBİ"
+   ],
+   [
+    "/site/tr/genel/liste/2/duyurular",
+    "Duyurular"
+   ],
+   [
+    "/site/tr/genel/iletisim",
+    "İletişim "
+   ],
+   [
+    "https://www.sanayi.gov.tr/",
+    "   "
+   ],
+   [
+    "/site",
+    "Anasayfa"
+   ],
+   [
+    "/site/tr/genel/destekler/3/destekler",
+    "Destekler\r\n                                    "
+   ],
+   [
+    "/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari",
+    "   "
+   ],
+   [
+    "/site/tr/genel/destekdetay/9022/yesil-sanayi-destek-programi",
+    "   "
+   ],
+   [
+    "/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi",
+    "   "
+   ],
+   [
+    "/site/tr/genel/destekdetay/9145/1501-tubitak-sanayi-arge-projeleri-destekleme-programi",
+    "   "
+   ],
+   [
+    "/site/tr/genel/destekdetay/9146/1507-tubitak-kobi-arge-baslangic-destek-programi",
+    "   "
+   ],
+   [
+    "/site/tr/genel/destekler/6530/yururlukten-kaldirilan-destekler",
+    "   "
+   ],
+   [
+    "/site/tr/genel/detay/180/nereden-baslamaliyim",
+    "Nereden Başlamalıyım?"
+   ],
+   [
+    "/site/tr/baglanti/DesteklenenSektor",
+    "Desteklenen Sektörler Nelerdir? (NACE)"
+   ],
+   [
+    "https://edevlet.kosgeb.gov.tr/",
+    "e-Hizmetler"
+   ],
+   [
+    "http://kds.kosgeb.gov.tr/UI/UILogin.aspx",
+    "e-Personel"
+   ],
+   [
+    "https://www.kosgeb.gov.tr/site/tr/genel/IletisimMerkezi",
+    "Bilgi Edinme"
+   ],
+   [
+    "https://www.kosgeb.gov.tr/site/tr/genel/siteharitasi",
+    "Site Haritası"
+   ],
+   [
+    "https://www.cimer.gov.tr/",
+    "   "
+   ],
+   [
+    "https://www.turkiye.gov.tr/",
+    "   "
+   ],
+   [
+    "https://www.sanayi.gov.tr/",
+    "   "
+   ]
+  ]
+ },
+ {
+  "url": "https://ufukavrupa.org.tr/tr",
+  "kod": 200,
+  "son": "https://ufukavrupa.org.tr/tr",
+  "baslik": "Anasayfa | Ufuk Avrupa",
+  "uzunluk": 9304,
+  "metin": " Anasayfa | Ufuk Avrupa Skip to main content E-Bülten Kim Kimdir? IMS Portal Türkçe English Türkçe Main navigation Alanlar / Kümeler Bilimsel Mükemmeliyet Avrupa Araştırma Konseyi Marie S. Curie Alanı Araştırma Altyapıları Küresel Sorunlar ve Endüstriyel Rekabet Sağlık Kültür, Yaratıcılık ve Kapsayıcı Toplumlar Sivil Güvenlik Dijital, Endüstri ve Uzay İklim, Enerji ve Mobilite Gıda, Biyoekonomi, Doğal Kaynaklar, Tarım ve Çevre Ortak Araştırma Merkezi Yenilikçi Avrupa Avrupa Yenilik Konseyi Avrupa Yenilik Ekosistemleri Avrupa Yenilik ve Teknoloji Enstitüsü WIDERA-Katılımın Genişletilmesi ve ERA'nın Güçlendirilmesi WIDENING-Katılımın Genişletilmesi ve Mükemmeliyetin Yayılımı ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sisteminin Reformu ve Geliştirilmesi Misyonlar Toprak Sağlığı Sağlıklı okyanuslar, denizler, kıyı ve İçsular İklim Değişikliğine Uyum Kanser Misyonu İklim-Nötr ve Akıllı Şehirler Misyonu New European Bauhaus Ortaklıklar Çağrılar TÜBİTAK Destekleri IPA Projesi Kademeli Çağrılar Ufuk Avrupa Front Menu UFUK2020 TURKEY in H2020 Projesi Yenilik Radarı Hedef Türkiye İş Başvuruları Uluslararası İşbirliği Kuruluşları ERA-NET ve Çok Taraflı Programlar DESTEKLER Çok Uluslu Araştırma ve İnovasyon İşbirliği Destekleri Öncül Araştırma Bireysel Destekleri (European Research Council) Burs ve Dolaşım Destekleri (Marie Sklodowska Curie) KOBİ Destekleri PLATFORM VE AĞLAR ÇAĞRILAR ÖDÜLLER Yeşil ve Kapsayıcı Gelecek alanında Uluslararası Proje Pazarı Etkinliği, 21 Ocak 2027, İstanbul Yeşil ve Kapsayıcı Gelecek alanında Uluslararası Proje Pazarı Etkinliği Ufuk Avrupa 2026-2027 Çalışma Programları Detaya Git Bilgi Günleri ve Proje Pazarı Etkinlikleri Detaya Git Ufuk Avrupa Nedir? Detaya Git Yasal ve Finansal Konular Bu bölümde Ufuk Avrupa Programı'na başvuru hazırlık, başvuru gerçekleştirme, proje imza, proje yürütme ve proje sonlandırma aşamalarında tüm paydaşları bağlayan yasal, idarî ve malî kural, süreç ve sistemlere ilişkin detaylı bilgiler yer almaktadır. Detaya Git Ufuk Avrupa'da Türkiye için Teknik Destek Projesi Detaylı Bilgi WIDENING-Katılımın Genişletilmesi ve Mükemmeliyetin Yayılımı Avrupa Yenilik Konseyi (EIC) ERA'nın güçlendirilmesi-Avrupa Araştırma ve Yenilik Sisteminin Reformu ve Geliştirilmesi Avrupa Yenilik Ekosistemleri (EIE) Gıda, Biyoekonomi, Doğal Kaynaklar, Tarım ve Çevre İklim, Enerji ve Mobilite Dijital, Endüstri ve Uzay Toplum için Sivil Güvenlik Kültür, Yaratıcılık ve Kapsayıcı Toplumlar Araştırma Altyapıları Marie Sklodowska Curie Alanı (Tüm Çağrılar) Avrupa Araştırma Konseyi Ortak Araştırma Merkezi - JRC Avrupa Yenilik ve Teknoloji Enstitüsü (EIT) Sağlık HABERLER Ufuk Avrupa Kanser Misyonu 2027 Çağrılarına Yönelik Çevrim İçi Proje Pazarı Etkinliği Düzenlenecek Yenilikçi Sağlık Girişimi (IHI)- Sağlık Araştırmalarına Yönelik Önemli Proje Sonuçları Dayanıklı Kültürel Miras Ortaklığı (Resilient Cultural Heritage Partnership - RCH) 2027 Yılı Çok Uluslu Ortak Çağrısı Başvuruya Açıldı Excel4Pro Hızlandırma Programı 1. Dönem Başvuruları Başladı Ufuk Avrupa Sağlık Kümesi, Kanser Misyonu ve EP PerMed Ortak Arama Duyurusu Derin Teknoloji Şirketlerine Yönelik EIC Accelerator İleri Düzey Eğitimi: Avrupa Birliği Finansmanıyla Küresel Pazarlara Açılın Ufuk Avrupa Marie Skłodowska-Curie Alanı (MSCA) Değişim Programı (Staff Exchanges - SE) 2027 Çağrısına yönelik Odak Grup Eğitimi EICMentor Türkiye EIC Hızlandırıcı Kısa Başvuru Geliştirme Desteği Çağrısı Tüm Haberler ETKİNLİKLER Ufuk Avrupa kapsamında düzenlenecek etkinlikleri takvim üzerinden takip edebilirsiniz. 19 Kasım 2026 Küme 5: İklim, Enerji ve Mobilite Bilgi Günü ve GREENET Proje Pazarı Etkinliği – 19 Kasım 2026, Brüksel 19 Kasım 2026 2027'de EIC'nin Sunacağı Destek Fırsatları Neler? Bilgi Günü: 19 Kasım 2026 19 Kasım 2026 EIC 2027 Çalışma Programı Yayımlandı! Yenilikler 19 Kasım’daki Bilgi Günü’nde Tanıtılacak Tüm Etkinlikler Kasım 2026 Tümü Pagination Öncesi Sonraki Pzr Pzt Sal Çar Per Cum Cmt 1 2 3 4 5 6 7 1 2 3 4 5 Ufuk Avrupa Sağlık Kümesi - 2027 Çağrılarına Yönelik Ortaklık Kurma Eğitimi Per, 11/05/2026 - 14:00 6 7 8 9 10 11 12 13 14 8 9 10 European Research and Innovation Days 2026 Sal, 11/10/2026 - 10:00 Registrations Open for European Research and Innovation Days 2026 Sal, 11/10/2026 - 10:00 11 Battery Innovation Days 2026 Çar, 11/11/2026 - 09:00 12 13 14 15 16 17 18 19 20 21 15 16 17 18 19 Küme 5: İklim, Enerji ve Mobilite Bilgi Günü ve GREENET Proje Pazarı Etkinliği – 19 Kasım 2026, Brüksel Per, 11/19/2026 - 10:30 2027'de EIC'nin Sunacağı Destek Fırsatları Neler? Bilgi Günü: 19 Kasım 2026 Per, 11/19/2026 - 11:30 EIC 2027 Çalışma Programı Yayımlandı! Yenilikler 19 Kasım’daki Bilgi Günü’nde Tanıtılacak Per, 11/19/2026 - 11:30 20 21 22 23 24 25 26 27 28 22 23 24 Go Global with EU Capital: EIC Accelerator Masterclass for Deep-Tech Companies Sal, 11/24/2026 - 09:30 25 “Keeping European Research Open and Secure: Making Research Security Work in Practice” – Online Event, 25 November 2026 Çar, 11/25/2026 - 16:00 26 From Idea to Impact: Gaziantep, the New Destination for Horizon Europe National Info Days 26 November 2026 (Physical Event) Per, 11/26/2026 - 09:00 27 Gaziantep’te Yenilikçi Avrupa (EIC-EIT) Bilgi Günü, 27 Kasım 2026 Cum, 11/27/2026 - 09:30 28 29 30 1 2 3 4 5 29 30 1 2 3 4 5 TÜBİTAK Uluslararası İşbirliklerine Katılımı Özendirmeye Yönelik Destek ve Ödül Programları Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK) tarafından bilim, teknoloji ve yenilik çevrelerinin uluslararası işbirliği programlarına katılımlarını özendirmek ve bu yolla, ülkemizin uluslararası işbirliği programlarından en yüksek düzeyde faydalanmasını sağlamak amacıyla “Uluslararası İşbirliklerine Katılımı Özendirmeye Yönelik Destek ve Ödül Programları” yürütülmektedir. Türkiye’de faaliyet gösteren kuruluşların Avrupa Birliği Çerçeve Programları (AB ÇP) kapsamındaki araştırma, geliştirme ve yenilik faaliyetlerine etkin katılımını sağlamak amacıyla yürütülen destek ve ödül programlarına ait güncel verilere bağlantı üzerinden erişilebilmektedir. Marie Skłodowska-Curie Proje Ön Değerlendirme Desteği ERC Baş Araştırmacı Geliştirme Programı Seyahat Desteği Programı Yabancı Araştırmacı Seyahat Desteği Koordinatörlüğü Destekleme Programı Ağlara Üyelik Desteği EURAXESS İş Başvuruları Yayınlar Eğitim Materyalleri En Başarılı Türk Sanayi Kuruluşları En Başarılı Türk Araştırma Kuruluşları En Başarılı Türk KOBİ'ler Proje Başvuru Süreci Yasal ve Finansal Konular Ufuk Avrupa'da Hakemlik BAŞARI HİKAYELERİ AB Çerçeve Programları kapsamında Türk Ortakların yeraldığı Projeler için hazırlanan Başarı Hikayelerine ulaşmak için tıklayınız . WHISTLEBLOWING - İhbar Kültürünün Geliştirilmesi ve İhbar Mekanizmalarının Ampirik Olarak İncelenmesi Detayları Göster Ufuk Avrupa - LOESS - Literacy boost through an Operational Educational Ecosystem of Societal actors on Soil health Detayları Göster Abdurrahman ATÇIL I ERC 2019 Consolidator Grant I OTTOLEGAL I The Making of Ottoman Law: The Agency and Interaction of Diverse Groups in Lawmaking, 1450–1650 Detayları Göster Elif UYSAL I ERC 2023 Advanced Grant I GO SPACE I Goal-Oriented Networking for Space Detayları Göster Nur MUSTAFAOĞLU I ERC 2023 Starting Grant I META-BRAIN I Deciphering METAstasis of lung cancer to BRAIN and developing new therapeutic approaches via a human metastatic cascade platform Detayları Göster Seda KESKİN AVCI I ERC 2023 Consolidator Grant I STARLET I Atomistic Modeling of Advanced Porous Materials for Energy, Environment, and Biomedical Applications Detayları Göster Erdinç TATAR I ERC 2023 Starting Grant I 0-drift I Towards no-drift sensors with on-chip self-calibration Detayları Göster Fatma GÜNEY I ERC 2023 Starting Grant I ENSURE I ENabling Self-Driving in Uncertain Real Environments Detayları Göster Arzucan ÖZGÜR I ERC 2022 Consolidator Grant I LifeLU I Understanding the Language of Life: Identifying and Characterizing the Language Units in Protein Sequences Detayları Göster Barış YILDIZ I ERC 2022 Starting Grant I GoodMobility I A New Perspective on City Logistics: Concepts, Theory, and Models for Designing and Managing Logistics as a Service Detayları Göster Tüm Başarı Hikayeleri VIDEOS ICTürkiye2026 International Brokerage Event 29 September 2026 EIT Pathfinder Info Day - 24 August 2026 EIT Urban Mobility 2026 Çağrıları Ulusal Bilgi Günü ECHO Webinar on 23 July 2026 Karbonsuzlaşma mı, rekabet mi? I #shorts Horizon Europe WIDERA Hop-on Facility Call Webinar, 20 July 2026 Horizon Europe Clean Industrial Deal (CID) 2026 International Brokerage Event Marie Skłodowska-Curie Actions 2026 Calls Conference, 15 April 2026 Part I Marie Skłodowska-Curie Actions 2026 Calls Conference, 15 April 2026 Part II Ufuk Avrupa Programı New European Bauhaus NEB Facility Bilgi Günü, 28 Nisan 2026 HIZLI ERİŞİM Alanlar / Kümeler Misyonlar Ortaklıklar Çağrılar TÜBİTAK Destekleri IPA Projesi Kademeli Çağrılar DİĞER BAĞLANTILAR TÜBİTAK EUREKA Ağı COST Ağı Diğer Faydalı Bağlantılar İletişim +90 312 298 1750 ufukavrupa[at]tubitak.gov.tr KVKK Aydınlat",
+  "baglar": [
+   [
+    "https://ufukavrupa.org.tr/tr",
+    "   "
+   ],
+   [
+    "/sites/default/files/css/css_ZDptL27NZJtua2GvrmRtkKSOyNleSYcV-d3LHXEDOIE.css?delta=1&amp;language=tr&amp;theme=ufukavrupa&amp;include=eJxtkFtuxCAMRTeEwpKQAzcDHYIRxpnH6jtpE3Vo-4N8zzEy2FNGCdSsP4qpR6wwnhtsaFopT_RB929QuK2U0xMG955TuZ4tRzSVGl0a1Sin-SGTlqpzThIRjDykY7UzCYwueqVtb_-Tz1e9s4W5YySac6ULnOQURhVBvwm39OTisKF0-c8U3Aa-_8zdUo8ueS7vRtR7iDjpr6uQUdXKbRywr5Z68o4aSMyWXoPs1zmtHDTDPFi7znALEOwRPgFec6Z9",
+    "   "
+   ],
+   [
+    "#main-content",
+    "Skip to main content\n    "
+   ],
+   [
+    "/tr/e-bulten",
+    "E-Bülten"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/kim-kimdir",
+    "Kim Kimdir?"
+   ],
+   [
+    "https://imsportal.turkiyeinhorizoneurope.org//",
+    "IMS Portal"
+   ],
+   [
+    "/en",
+    "English"
+   ],
+   [
+    "/tr",
+    "Türkçe"
+   ],
+   [
+    "/tr/alanlar-kumeler",
+    "Alanlar / Kümeler"
+   ],
+   [
+    "/tr/alanlar-kumeler/avrupa-arastirma-konseyi",
+    "Avrupa Araştırma Konseyi"
+   ],
+   [
+    "/tr/alanlar-kumeler/marie-sklodowska-curie-alani-tum-cagrilar",
+    "Marie S. Curie Alanı"
+   ],
+   [
+    "/tr/alanlar-kumeler/arastirma-altyapilari",
+    "Araştırma Altyapıları"
+   ],
+   [
+    "/tr/alanlar-kumeler/saglik",
+    "Sağlık"
+   ],
+   [
+    "/tr/alanlar-kumeler/kultur-yaraticilik-ve-kapsayici-toplumlar",
+    "Kültür, Yaratıcılık ve Kapsayıcı Toplumlar"
+   ],
+   [
+    "/tr/alanlar-kumeler/toplum-icin-sivil-guvenlik",
+    "Sivil Güvenlik"
+   ],
+   [
+    "/tr/alanlar-kumeler/dijital-endustri-ve-uzay",
+    "Dijital, Endüstri ve Uzay"
+   ],
+   [
+    "/tr/alanlar-kumeler/iklim-enerji-ve-mobilite",
+    "İklim, Enerji ve Mobilite"
+   ],
+   [
+    "/tr/alanlar-kumeler/gida-biyoekonomi-dogal-kaynaklar-tarim-ve-cevre",
+    "Gıda, Biyoekonomi, Doğal Kaynaklar, Tarım ve Çevre"
+   ],
+   [
+    "/tr/alanlar-kumeler/ortak-arastirma-merkezi-jrc",
+    "Ortak Araştırma Merkezi"
+   ],
+   [
+    "/tr/alanlar-kumeler/avrupa-yenilik-konseyi-eic",
+    "Avrupa Yenilik Konseyi"
+   ],
+   [
+    "/tr/alanlar-kumeler/avrupa-yenilik-ekosistemleri-eie",
+    "Avrupa Yenilik Ekosistemleri"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/avrupa-yenilik-ve-teknoloji-enstitusu-eit",
+    "Avrupa Yenilik ve Teknoloji Enstitüsü"
+   ],
+   [
+    "/tr/alanlar-kumeler/widening-katilimin-genisletilmesi-ve-mukemmeliyetin-yayilimi",
+    "WIDENING-Katılımın Genişletilmesi ve Mükemmeliyetin Yayılımı"
+   ],
+   [
+    "/tr/misyonlar",
+    "Misyonlar"
+   ],
+   [
+    "/tr/toprak-sagligi",
+    "Toprak Sağlığı"
+   ],
+   [
+    "/tr/okyanuslar-ve-sularin-restorasyonu-misyonu-0",
+    "Sağlıklı okyanuslar, denizler, kıyı ve İçsular"
+   ],
+   [
+    "/tr/iklim-degisikligine-uyum-misyonu-1",
+    "İklim Değişikliğine Uyum"
+   ],
+   [
+    "/tr/kanser-misyonu",
+    "Kanser Misyonu"
+   ],
+   [
+    "/tr/iklim-notr-ve-akilli-sehirler-misyonu",
+    "İklim-Nötr ve Akıllı Şehirler Misyonu"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/new-european-bauhaus-misyonu",
+    "New European Bauhaus"
+   ],
+   [
+    "/tr/ortakliklar",
+    "Ortaklıklar"
+   ],
+   [
+    "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals",
+    "Çağrılar"
+   ],
+   [
+    "/tr/tubitak-destekleri",
+    "TÜBİTAK Destekleri"
+   ],
+   [
+    "https://turkiyeinhorizoneurope.org/",
+    "IPA Projesi"
+   ],
+   [
+    "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?order=DESC&amp;pageNumber=1&amp;pageSize=100&amp;sortBy=startDate&amp;isExactMatch=true&amp;type=8&amp;status=31094501,31094502&amp;frameworkProgramme=43108390",
+    "Kademeli Çağrılar"
+   ],
+   [
+    "/tr/alanlar-kumeler",
+    "Çok Uluslu Araştırma ve İnovasyon İşbirliği Destekleri"
+   ],
+   [
+    "/tr/h2020/avrupa-arastirma-konseyi",
+    "Öncül Araştırma Bireysel Destekleri (European Research Council)"
+   ],
+   [
+    "/tr/h2020/marie-curie",
+    "Burs ve Dolaşım Destekleri (Marie Sklodowska Curie)"
+   ],
+   [
+    "/tr/kobi-destekleri",
+    "KOBİ Destekleri"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/haberler/yesil-ve-kapsayici-gelecek-alaninda-uluslararasi-proje-pazari-etkinligi",
+    "Yeşil ve Kapsayıcı Gelecek alanında Uluslararası Proje Pazarı Etkinliği"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/haberler/yesil-ve-kapsayici-gelecek-alaninda-uluslararasi-proje-pazari-etkinligi",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/haberler/ufuk-avrupa-2026-2027-calisma-programi-yayimlandi",
+    "Detaya Git"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/haberler/ufuk-avrupa-2026-2027-calisma-programi-yayimlandi",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/haberler/ufuk-avrupa-2026-2027-yili-cagrilarina-yonelik-bilgi-gunleri-ve-proje-pazari-etkinlikleri",
+    "Detaya Git"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/haberler/ufuk-avrupa-2026-2027-yili-cagrilarina-yonelik-bilgi-gunleri-ve-proje-pazari-etkinlikleri",
+    "&nbsp;"
+   ],
+   [
+    "/tr/ufuk-avrupa-genel-bilgiler",
+    "Detaya Git"
+   ],
+   [
+    "/tr/ufuk-avrupa-genel-bilgiler",
+    "&nbsp;"
+   ],
+   [
+    "/tr/yasal-ve-finansal-konular",
+    "Detaya Git"
+   ],
+   [
+    "/tr/yasal-ve-finansal-konular",
+    "&nbsp;"
+   ],
+   [
+    "https://turkiyeinhorizoneurope.org/",
+    "Detaylı Bilgi"
+   ],
+   [
+    "https://turkiyeinhorizoneurope.org/",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/widening-katilimin-genisletilmesi-ve-mukemmeliyetin-yayilimi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/widening-katilimin-genisletilmesi-ve-mukemmeliyetin-yayilimi",
+    "WIDENING-Katılımın Genişletilmesi ve Mükemmeliyetin Yayılımı"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/avrupa-yenilik-konseyi-eic ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/avrupa-yenilik-konseyi-eic",
+    "Avrupa Yenilik Konseyi (EIC) "
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/eranin-guclendirilmesi-avrupa-arastirma-ve-yenilik-sisteminin-reformu-ve ",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/avrupa-yenilik-ekosistemleri-eie ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/avrupa-yenilik-ekosistemleri-eie",
+    "Avrupa Yenilik Ekosistemleri (EIE)"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/gida-biyoekonomi-dogal-kaynaklar-tarim-ve-cevre ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/gida-biyoekonomi-dogal-kaynaklar-tarim-ve-cevre",
+    "Gıda, Biyoekonomi, Doğal Kaynaklar, Tarım ve Çevre"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/iklim-enerji-ve-mobilite ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/iklim-enerji-ve-mobilite",
+    "İklim, Enerji ve Mobilite"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/dijital-endustri-ve-uzay ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/dijital-endustri-ve-uzay",
+    "Dijital, Endüstri ve Uzay"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/toplum-icin-sivil-guvenlik ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/toplum-icin-sivil-guvenlik",
+    "Toplum için Sivil Güvenlik"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/kultur-yaraticilik-ve-kapsayici-toplumlar ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/kultur-yaraticilik-ve-kapsayici-toplumlar",
+    "Kültür, Yaratıcılık ve Kapsayıcı Toplumlar"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/arastirma-altyapilari ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/arastirma-altyapilari",
+    "Araştırma Altyapıları"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/marie-sklodowska-curie-alani-tum-cagrilar ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/marie-sklodowska-curie-alani-tum-cagrilar",
+    "Marie Sklodowska Curie Alanı (Tüm Çağrılar)"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/avrupa-arastirma-konseyi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/avrupa-arastirma-konseyi",
+    "Avrupa Araştırma Konseyi"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/ortak-arastirma-merkezi-jrc ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/ortak-arastirma-merkezi-jrc",
+    "Ortak Araştırma Merkezi - JRC"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/avrupa-yenilik-ve-teknoloji-enstitusu-eit ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/avrupa-yenilik-ve-teknoloji-enstitusu-eit",
+    "Avrupa Yenilik ve Teknoloji Enstitüsü (EIT)"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/alanlar-kumeler/saglik ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/alanlar-kumeler/saglik",
+    "Sağlık"
+   ],
+   [
+    "/tr/haberler/ufuk-avrupa-kanser-misyonu-2027-cagrilarina-yonelik-cevrim-ici-proje-pazari-etkinligi",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/yenilikci-saglik-girisimi-ihi-saglik-arastirmalarina-yonelik-onemli-proje-sonuclari",
+    "Yenilikçi Sağlık Girişimi (IHI)- Sağlık Araştırmalarına Yönelik Önemli Proje Sonuçları"
+   ],
+   [
+    "/tr/haberler/yenilikci-saglik-girisimi-ihi-saglik-arastirmalarina-yonelik-onemli-proje-sonuclari",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/dayanikli-kulturel-miras-ortakligi-resilient-cultural-heritage-partnership-rch-2027-yili",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/excel4pro-hizlandirma-programi-1-donem-basvurulari-basladi",
+    "Excel4Pro Hızlandırma Programı 1. Dönem Başvuruları Başladı"
+   ],
+   [
+    "/tr/haberler/excel4pro-hizlandirma-programi-1-donem-basvurulari-basladi",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/ufuk-avrupa-saglik-kumesi-kanser-misyonu-ve-ep-permed-ortak-arama-duyurusu",
+    "Ufuk Avrupa Sağlık Kümesi, Kanser Misyonu ve EP PerMed Ortak Arama Duyurusu"
+   ],
+   [
+    "/tr/haberler/ufuk-avrupa-saglik-kumesi-kanser-misyonu-ve-ep-permed-ortak-arama-duyurusu",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/derin-teknoloji-sirketlerine-yonelik-eic-accelerator-ileri-duzey-egitimi-avrupa-birligi",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/ufuk-avrupa-marie-sklodowska-curie-alani-msca-degisim-programi-staff-exchanges-se-2027",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/eicmentor-turkiye-eic-hizlandirici-kisa-basvuru-gelistirme-destegi-cagrisi",
+    "EICMentor Türkiye EIC Hızlandırıcı Kısa Başvuru Geliştirme Desteği Çağrısı"
+   ],
+   [
+    "/tr/haberler/eicmentor-turkiye-eic-hizlandirici-kisa-basvuru-gelistirme-destegi-cagrisi",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler",
+    "Tüm Haberler"
+   ],
+   [
+    "/tr/haberler/kume-5-iklim-enerji-ve-mobilite-bilgi-gunu-ve-greenet-proje-pazari-etkinligi-19-kasim-2026",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/2027de-eicnin-sunacagi-destek-firsatlari-neler-bilgi-gunu-19-kasim-2026",
+    "2027&#039;de EIC&#039;nin Sunacağı Destek Fırsatları Neler? Bilgi Günü: 19 Kasım 2026"
+   ],
+   [
+    "/tr/haberler/2027de-eicnin-sunacagi-destek-firsatlari-neler-bilgi-gunu-19-kasim-2026",
+    "&nbsp;"
+   ],
+   [
+    "/tr/haberler/eic-2027-calisma-programi-yayimlandi-yenilikler-19-kasimdaki-bilgi-gununde-tanitilacak",
+    "EIC 2027 Çalışma Programı Yayımlandı! Yenilikler 19 Kasım’daki Bilgi Günü’nde Tanıtılacak"
+   ],
+   [
+    "/tr/haberler/eic-2027-calisma-programi-yayimlandi-yenilikler-19-kasimdaki-bilgi-gununde-tanitilacak",
+    "&nbsp;"
+   ],
+   [
+    "/tr/etkinlikler",
+    "Tüm Etkinlikler"
+   ],
+   [
+    "/tr/events/calendar/month/202611",
+    "Tümü"
+   ],
+   [
+    "/tr/haberler/ufuk-avrupa-saglik-kumesi-2027-cagrilarina-yonelik-ortaklik-kurma-egitimi",
+    "Ufuk Avrupa Sağlık Kümesi - 2027 Çağrılarına Yönelik Ortaklık Kurma Eğitimi"
+   ],
+   [
+    "/en/news/european-research-and-innovation-days-2026",
+    "European Research and Innovation Days 2026"
+   ],
+   [
+    "/en/news/registrations-open-european-research-and-innovation-days-2026",
+    "Registrations Open for European Research and Innovation Days 2026"
+   ],
+   [
+    "/en/news/battery-innovation-days-2026",
+    "Battery Innovation Days 2026"
+   ],
+   [
+    "/tr/haberler/2027de-eicnin-sunacagi-destek-firsatlari-neler-bilgi-gunu-19-kasim-2026",
+    "2027&#039;de EIC&#039;nin Sunacağı Destek Fırsatları Neler? Bilgi Günü: 19 Kasım 2026"
+   ],
+   [
+    "/tr/haberler/eic-2027-calisma-programi-yayimlandi-yenilikler-19-kasimdaki-bilgi-gununde-tanitilacak",
+    "EIC 2027 Çalışma Programı Yayımlandı! Yenilikler 19 Kasım’daki Bilgi Günü’nde Tanıtılacak"
+   ],
+   [
+    "/en/news/go-global-eu-capital-eic-accelerator-masterclass-deep-tech-companies",
+    "Go Global with EU Capital: EIC Accelerator Masterclass for Deep-Tech Companies"
+   ],
+   [
+    "/tr/haberler/gaziantepte-yenilikci-avrupa-eic-eit-bilgi-gunu-27-kasim-2026",
+    "Gaziantep’te Yenilikçi Avrupa (EIC-EIT) Bilgi Günü, 27 Kasım 2026"
+   ],
+   [
+    "https://ufukavrupa.org.tr/sites/default/files/WEB%20S%C4%B0TES%C4%B0%20DESTEKLER%2021_08_2025.pdf",
+    "bağlantı"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/destekler/marie-sklodowska-curie-proje-degerlendirme-destegi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/destekler/marie-sklodowska-curie-proje-degerlendirme-destegi",
+    "Marie Skłodowska-Curie Proje Ön Değerlendirme Desteği"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/destekler/erc-bas-arastirmaci-gelistirme-programi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/destekler/erc-bas-arastirmaci-gelistirme-programi",
+    "ERC Baş Araştırmacı Geliştirme Programı"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/destekler/seyahat-destegi-programi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/destekler/seyahat-destegi-programi",
+    "Seyahat Desteği Programı"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/destekler/yabanci-arastirmaci-seyahat-destegi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/destekler/yabanci-arastirmaci-seyahat-destegi",
+    "Yabancı Araştırmacı Seyahat Desteği"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/destekler/koordinatorlugu-destekleme-programi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/destekler/koordinatorlugu-destekleme-programi",
+    "Koordinatörlüğü Destekleme Programı "
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/destekler/aglara-uyelik-destegi ",
+    "&nbsp;"
+   ],
+   [
+    "/tr/destekler/aglara-uyelik-destegi",
+    "Ağlara Üyelik Desteği"
+   ],
+   [
+    "https://www.euraxess.org.tr/",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/yayinlar",
+    "&nbsp;"
+   ],
+   [
+    "/tr/egitim-materyalleri",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/en-basarili-turk-sanayi-kuruluslari",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/en-basarili-turk-arastirma-kuruluslari",
+    "&nbsp;"
+   ],
+   [
+    "https://ufukavrupa.org.tr/tr/en-basarili-turk-kobiler",
+    "&nbsp;"
+   ],
+   [
+    "/tr/proje-basvuru-sureci",
+    "&nbsp;"
+   ],
+   [
+    "/tr/yasal-ve-finansal-konular",
+    "&nbsp;"
+   ],
+   [
+    "/tr/ufukavrupada-hakemlik",
+    "&nbsp;"
+   ],
+   [
+    "/tr/basari-hikayeleri",
+    "tıklayınız"
+   ],
+   [
+    "/tr/basari-hikayeleri/whistleblowing-ihbar-kulturunun-gelistirilmesi-ve-ihbar-mekanizmalarinin-ampirik",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/ufuk-avrupa-loess-literacy-boost-through-operational-educational-ecosystem",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/abdurrahman-atcil-i-erc-2019-consolidator-grant-i-ottolegal-i-making-ottoman-law",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/elif-uysal-i-erc-2023-advanced-grant-i-go-space-i-goal-oriented-networking-space",
+    "Elif UYSAL I ERC 2023 Advanced Grant I GO SPACE I Goal-Oriented Networking for Space"
+   ],
+   [
+    "/tr/basari-hikayeleri/elif-uysal-i-erc-2023-advanced-grant-i-go-space-i-goal-oriented-networking-space",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/nur-mustafaoglu-i-erc-2023-starting-grant-i-meta-brain-i-deciphering-metastasis",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/seda-keskin-avci-i-erc-2023-consolidator-grant-i-starlet-i-atomistic-modeling",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/erdinc-tatar-i-erc-2023-starting-grant-i-0-drift-i-towards-no-drift-sensors-chip",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/fatma-guney-i-erc-2023-starting-grant-i-ensure-i-enabling-self-driving-uncertain",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/arzucan-ozgur-i-erc-2022-consolidator-grant-i-lifelu-i-understanding-language",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri/baris-yildiz-i-erc-2022-starting-grant-i-goodmobility-i-new-perspective-city",
+    "Detayları Göster"
+   ],
+   [
+    "/tr/basari-hikayeleri",
+    "Tüm Başarı Hikayeleri"
+   ],
+   [
+    "/tr/alanlar-kumeler",
+    "Alanlar / Kümeler"
+   ],
+   [
+    "/tr/misyonlar",
+    "Misyonlar"
+   ],
+   [
+    "/tr/ortakliklar",
+    "Ortaklıklar"
+   ],
+   [
+    "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals",
+    "Çağrılar"
+   ],
+   [
+    "/tr/tubitak-destekleri",
+    "TÜBİTAK Destekleri"
+   ],
+   [
+    "https://turkiyeinhorizoneurope.org/",
+    "IPA Projesi"
+   ],
+   [
+    "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals?order=DESC&amp;pageNumber=1&amp;pageSize=100&amp;sortBy=startDate&amp;isExactMatch=true&amp;type=8&amp;status=31094501,31094502&amp;frameworkProgramme=43108390",
+    "Kademeli Çağrılar"
+   ],
+   [
+    "https://www.tubitak.gov.tr/",
+    "TÜBİTAK"
+   ],
+   [
+    "http://www.eurekanetwork.org/",
+    "EUREKA Ağı"
+   ],
+   [
+    "https://www.cost.eu/",
+    "COST Ağı"
+   ],
+   [
+    "/sites/default/files/2025-09/faydali-baglantilar-tr.pdf",
+    "Diğer Faydalı Bağlantılar"
+   ],
+   [
+    "/kvkk-aydinlatma-metni",
+    "KVKK Aydınlatma Metni"
+   ]
+  ]
+ },
+ {
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari",
+  "kod": 200,
+  "son": "https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari",
+  "baslik": "Uluslararası Programlar | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu",
+  "uzunluk": 3626,
+  "metin": " Uluslararası Programlar | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu Ana içeriğe atla TR EN Hızlı bağlantılar Arama NSosyal Twitter Linkedin Instagram Facebook Youtube Main navigation KURUMSAL Hakkımızda Biz Kimiz Yönetim Kurulu Başkan Üst Yönetim Mevzuat Organizasyon Şeması Strateji Belgeleri Mali Tablolar Sayılarla TÜBİTAK Hizmet Envanterleri Kurumsal Kimlik Politikalar Öncelikli Ar-Ge ve Yenilik Konuları Yeşil Büyüme TYH Öncelikli ve Kilit Teknolojilerde TYH'ler Girişimci ve Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıllarda Ödül Alanlar Yapay Zekâ Yapay Zekâ Politikası Üretken Yapay Zekâ Rehberi DESTEKLER Akademik Ulusal Programlar Uluslararası Programlar Sanayi Ulusal Programlar Uluslararası Programlar Bilim & Toplum Ulusal Programlar Uluslararası Programlar Bilimsel Etkinlik Etkinlik Düzenleme Etkinliklere Katılım Uluslararası Destekler Uluslararası İş Birlikleri İkili İş Birliği Programları Çok Taraflı Programlar AB Çerçeve Programları BURSLAR Lisans / Önlisans Mentorluk Desteği Programı Burs Programları Destek Programları Lisansüstü Eğitim Burs Programları Araştırma Burs Programları Uluslararası Burslar Doktora Sonrası Araştırma Burs Programları Uluslararası Burslar Uluslararası Araştırma Burs Programları Uluslararası Burslar AR-GE FAALİYETLERİMİZ MAM Enerji Teknolojileri İklim ve Yaşam Bilimleri Malzeme ve Proses Teknolojileri BİLGEM Bilişim Teknolojileri Enstitüsü (BTE) Siber Güvenlik Enstitüsü (SGE) Ulusal Elektronik ve Kriptoloji Araştırma Enstitüsü (UEKAE) Yapay Zekâ Enstitüsü (YZE) Yazılım Teknolojileri Araştırma Enstitüsü (YTE) İleri Teknolojiler Araştırma Enstitüsü (İLTAREN) AR-GE Birimleri Raylı Ulaşım Teknolojileri Enstitüsü (RUTE) Savunma Sanayii Araştırma ve Geliştirme Enstitüsü (SAGE) TEKSEB ve TEKNOPARK Temel Bilimler Araştırma Enstitüsü (TBAE) Temiz Enerji, İklim Değişikliği ve Sürdürülebilirlik Araştırma Enstitüsü Türkiye Sanayi Sevk ve İdare Enstitüsü (TÜSSİDE) Ulusal Metroloji Enstitüsü (UME) Uzay Teknolojileri Araştırma Enstitüsü (UZAY) Kutup Araştırmaları Enstitüsü (KARE) AR-GE Kolaylık Birimleri Bursa Test ve Analiz Laboratuvarı (BUTAL) Ulusal Akademik Ağ ve Bilgi Merkezi (ULAKBİM) Haber Arşivi Video Arşivi Fotoğraf Arşivi KVKK Aydınlatma metni Sosyal medya NSosyal Twitter Linkedin Instagram Facebook Youtube Görsel Sayfa yolu Ana Sayfa Destekler Akademik Uluslararası Programlar + - 0 1071 - Uluslararası İşbirliği Projeleri Destek Programı Ufuk Avrupa Programı PAYLAŞ 0 Footer - Linkler ARBİS ARAŞTIRMACI BİLGİ SİSTEMİ ARDEB PBS PROJE BAŞVURU SİSTEMİ TEYDEB PRODİS E-BİDEB TÜBİTAK BİDEB BAŞVURU VE İZLEME SİSTEMİ BİTO PBS UİDB PBS TYBS Dipnot KURUMSAL Politikalar Mevzuat Uluslararası Birimlerimiz Merkez & Enstitüler KVKK BİDB Politikaları Transfer Takip Sistemi (TTS) ARŞİV Haber Arşivi Duyuru arşivi Fotoğraf Arşivi Video Arşivi Projeler Veritabanı ÇAĞRI MERKEZİ 444 66 90 Bilim ve Toplum Başkanlığı Çağrı Merkezi 0312 222 83 99 Sosyal medya linkleri NSosyal Twitter Linkedin Instagram Facebook Youtube Tüm konularda bizimle iletişime geçmek için TÜBİTAK İletişim Merkezi üzerinden bize ulaşabilirsiniz. © 2026 Türkiye Bilimsel ve Teknolojik Araştırma Kurumu. Her hakkı saklıdır. Türkiye Bilimsel ve Teknolojik Araştırma Kurumu Remzi Oğuz Arık Mah. Tunus Cad. No:80 06680 Çankaya/ANKARA 0 (312) 468 5300 0 (312) 298 1000 tubitak.baskanlik@tubitak.hs03.kep.tr ",
+  "baglar": [
+   [
+    "https://tubitak.gov.tr/en/funds/academic/international-support-programs",
+    "   "
+   ],
+   [
+    "/themes/custom/feza_gursey/css/styles.css?tjpu8c",
+    "   "
+   ],
+   [
+    "#main-content",
+    "Ana içeriğe atla\n    "
+   ],
+   [
+    "/tr",
+    "   "
+   ],
+   [
+    "https://sosyal.teknofest.app/@tubitak",
+    "NSosyal"
+   ],
+   [
+    "https://twitter.com/tubitak",
+    "Twitter"
+   ],
+   [
+    "https://tr.linkedin.com/company/tubitak",
+    "Linkedin"
+   ],
+   [
+    "https://www.instagram.com/tubitak/",
+    "Instagram"
+   ],
+   [
+    "https://www.facebook.com/tubitak",
+    "Facebook"
+   ],
+   [
+    "https://www.youtube.com/user/tubitaktv",
+    "Youtube"
+   ],
+   [
+    "https://www.sanayi.gov.tr/",
+    "   "
+   ],
+   [
+    "/tr",
+    "KURUMSAL"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda",
+    "Hakkımızda"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/biz-kimiz",
+    "Biz Kimiz"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/yonetim-kurulu",
+    "Yönetim Kurulu"
+   ],
+   [
+    "/kurumsal/baskan",
+    "Başkan"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/ust-yonetim",
+    "Üst Yönetim"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/mevzuat",
+    "Mevzuat"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/organizasyon-semasi",
+    "Organizasyon Şeması"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/strateji-belgeleri-mali-tablolar",
+    "Strateji Belgeleri"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/mali-tablolar",
+    "Mali Tablolar"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/sayilarla-tubitak",
+    "Sayılarla TÜBİTAK"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/hizmet-envanteri",
+    "Hizmet Envanterleri"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/kurumsal-kimlik",
+    "Kurumsal Kimlik"
+   ],
+   [
+    "/tr/kurumsal/politikalar",
+    "Politikalar"
+   ],
+   [
+    "/tr/kurumsal/politikalar/tubitak-2026-2028-oncelikli-ar-ge-ve-yenilik-konulari",
+    "Öncelikli Ar-Ge ve Yenilik Konuları"
+   ],
+   [
+    "/tr/kurumsal/politikalar/yesil-buyume-teknoloji-yol-haritasi",
+    "Yeşil Büyüme TYH"
+   ],
+   [
+    "/tr/kurumsal/politikalar/oncelikli-ve-kilit-teknolojilerde-btypk-bunyesinde-hazirlanan-teknoloji-yol-haritalari",
+    "Öncelikli ve Kilit Teknolojilerde TYH&#039;ler"
+   ],
+   [
+    "/tr/kurumsal/politikalar/girisimci-ve-yenilikci-universite-endeksi",
+    "Girişimci ve Yenilikçi Üniversite Endeksi"
+   ],
+   [
+    "/tr/kurumsal/politikalar/universitelerin-alan-bazli-yetkinlik-analizi",
+    "Üniversitelerin Alan Bazlı Yetkinlik Analizi"
+   ],
+   [
+    "/tr/kurumsal/politikalar/tubitak-teknoloji-hazirlik-seviyesi-belirleme-metodolojisi",
+    "Teknoloji Hazırlık Seviyesi (THS) Belirleme"
+   ],
+   [
+    "/tr/kurumsal/politikalar/bty-istatistikleri",
+    "BTY İstatistikleri"
+   ],
+   [
+    "/tr/kurumsal/politikalar/bty-kilavuzlari",
+    "BTY Kılavuzları"
+   ],
+   [
+    "/tr/kurumsal/politikalar/bilim-ve-teknolojileri-yuksek-kurulu",
+    "BTYK (Mülga)"
+   ],
+   [
+    "/tr/kurumsal/politikalar/arsiv",
+    "Arşiv"
+   ],
+   [
+    "/tr/kurumsal/uluslararasi",
+    "Uluslararası"
+   ],
+   [
+    "/tr/kurumsal/uluslararasi/ikili-proje-destekleri",
+    "İkili Proje Destekleri"
+   ],
+   [
+    "/tr/kurumsal/uluslararasi/cok-tarafli-programlar",
+    "Çok Taraflı Programlar"
+   ],
+   [
+    "/tr/kurumsal/uluslararasi/cerceve-programlari",
+    "Çerçeve Programları"
+   ],
+   [
+    "/tr/kurumsal/teknoloji-transfer-ofisi",
+    "Teknoloji Transfer Ofisi"
+   ],
+   [
+    "/tr/kurumsal/teknoloji-transfer-ofisi",
+    "Hakkımızda"
+   ],
+   [
+    "/tr/kurumsal/teknoloji-transfer-ofisi/patentler",
+    "Patentler"
+   ],
+   [
+    "/tr/kurumsal/teknoloji-transfer-ofisi/ilanlar",
+    "İlanlar"
+   ],
+   [
+    "/tr/kurumsal/oduller",
+    "Ödüller"
+   ],
+   [
+    "/tr/kurumsal/oduller/gecmis-yillarda-odul-alanlar",
+    "Geçmiş Yıllarda Ödül Alanlar"
+   ],
+   [
+    "/tr/kurumsal/yapay-zeka/yapay-zeka-politika-belgesi",
+    "Yapay Zekâ Politikası"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/uretken-yapay-zeka-rehberi",
+    "Üretken Yapay Zekâ Rehberi"
+   ],
+   [
+    "/tr",
+    "DESTEKLER"
+   ],
+   [
+    "/tr/destekler/akademik",
+    "Akademik"
+   ],
+   [
+    "/tr/destekler/akademik/ulusal-destek-programlari",
+    "Ulusal Programlar"
+   ],
+   [
+    "/tr/destekler/akademik/uluslararasi-destek-programlari",
+    "Uluslararası Programlar"
+   ],
+   [
+    "/tr/destekler/sanayi",
+    "Sanayi"
+   ],
+   [
+    "/tr/destekler/sanayi/ulusal-destek-programlari",
+    "Ulusal Programlar"
+   ],
+   [
+    "/tr/destekler/sanayi/uluslararasi-programlar",
+    "Uluslararası Programlar"
+   ],
+   [
+    "/tr/destekler/bilim-toplum",
+    "Bilim &amp; Toplum"
+   ],
+   [
+    "/tr/destekler/bilim-toplum/ulusal-programlar",
+    "Ulusal Programlar"
+   ],
+   [
+    "/tr/destekler/bilim-toplum/uluslararasi-programlar",
+    "Uluslararası Programlar"
+   ],
+   [
+    "/tr/destekler/bilimsel-etkinlik",
+    "Bilimsel Etkinlik"
+   ],
+   [
+    "/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme",
+    "Etkinlik Düzenleme"
+   ],
+   [
+    "/tr/destekler/bilimsel-etkinlik/etkinliklere-katilim-destekleri",
+    "Etkinliklere Katılım"
+   ],
+   [
+    "/tr/destekler/bilimsel-etkinlik/uluslararasi-destekler",
+    "Uluslararası Destekler"
+   ],
+   [
+    "/tr/destekler/uluslararasi-is-birlikleri",
+    "Uluslararası İş Birlikleri"
+   ],
+   [
+    "/tr/destekler/uluslararasi-is-birlikleri/ikili-is-birligi-programlari",
+    "İkili İş Birliği Programları"
+   ],
+   [
+    "/tr/destekler/uluslararasi-is-birlikleri/coklu-is-birligi-programlari",
+    "Çok Taraflı Programlar"
+   ],
+   [
+    "/tr/kurumsal/uluslararasi/cerceve-programlari",
+    "AB Çerçeve Programları"
+   ],
+   [
+    "/tr",
+    "BURSLAR"
+   ],
+   [
+    "/tr/burslar/lisans-onlisans",
+    "Lisans / Önlisans"
+   ],
+   [
+    "/tr/burslar/lisans/mentorluk-destegi-programi",
+    "Mentorluk Desteği Programı"
+   ],
+   [
+    "/tr/burslar/lisans/burs-programlari",
+    "Burs Programları"
+   ],
+   [
+    "/tr/burslar/lisans/destek-programlari",
+    "Destek Programları"
+   ],
+   [
+    "/tr/burslar/lisansustu",
+    "Lisansüstü"
+   ],
+   [
+    "/tr/burslar/lisansustu/egitim-burs-programlari",
+    "Eğitim Burs Programları"
+   ],
+   [
+    "/tr/burslar/lisansustu/arastirma-burs-programlari",
+    "Araştırma Burs Programları"
+   ],
+   [
+    "/tr/burslar/lisansustu/uluslararasi-burslar",
+    "Uluslararası Burslar"
+   ],
+   [
+    "/tr/burslar/doktora-sonrasi",
+    "Doktora Sonrası"
+   ],
+   [
+    "/tr/burslar/doktora-sonrasi/arastirma-burs-programlari",
+    "Araştırma Burs Programları"
+   ],
+   [
+    "/tr/burslar/doktora-sonrasi/uluslararasi-burslar",
+    "Uluslararası Burslar"
+   ],
+   [
+    "/tr/burslar/uluslararasi",
+    "Uluslararası"
+   ],
+   [
+    "/tr/burslar/yabancilara-yonelik/arastirma-burs-programlari",
+    "Araştırma Burs Programları"
+   ],
+   [
+    "/tr/burslar/yabancilara-yonelik/uluslararasi-burslar",
+    "Uluslararası Burslar"
+   ],
+   [
+    "/tr",
+    "AR-GE FAALİYETLERİMİZ"
+   ],
+   [
+    "https://enerji.mam.tubitak.gov.tr",
+    "Enerji Teknolojileri"
+   ],
+   [
+    "https://iklim.mam.tubitak.gov.tr/",
+    "İklim ve Yaşam Bilimleri"
+   ],
+   [
+    "https://malzeme.mam.tubitak.gov.tr/",
+    "Malzeme ve Proses Teknolojileri"
+   ],
+   [
+    "https://bilgem.tubitak.gov.tr/",
+    "BİLGEM"
+   ],
+   [
+    "https://bilgem.tubitak.gov.tr/bte/",
+    "Bilişim Teknolojileri Enstitüsü (BTE)"
+   ],
+   [
+    "https://bilgem.tubitak.gov.tr/sge/",
+    "Siber Güvenlik Enstitüsü (SGE)"
+   ],
+   [
+    "https://bilgem.tubitak.gov.tr/uekae/",
+    "Ulusal Elektronik ve Kriptoloji Araştırma Enstitüsü (UEKAE)"
+   ],
+   [
+    "https://bilgem.tubitak.gov.tr/yze/",
+    "Yapay Zekâ Enstitüsü (YZE)"
+   ],
+   [
+    "https://bilgem.tubitak.gov.tr/yte/",
+    "Yazılım Teknolojileri Araştırma Enstitüsü (YTE)"
+   ],
+   [
+    "https://bilgem.tubitak.gov.tr/iltaren/",
+    "İleri Teknolojiler Araştırma Enstitüsü (İLTAREN)"
+   ],
+   [
+    "http://rute.tubitak.gov.tr/",
+    "Raylı Ulaşım Teknolojileri Enstitüsü (RUTE)"
+   ],
+   [
+    "http://www.sage.tubitak.gov.tr/",
+    "Savunma Sanayii Araştırma ve Geliştirme Enstitüsü (SAGE)"
+   ],
+   [
+    "https://marmarateknokent.com.tr/",
+    "TEKSEB ve TEKNOPARK"
+   ],
+   [
+    "http://tbae.tubitak.gov.tr/",
+    "Temel Bilimler Araştırma Enstitüsü (TBAE)"
+   ],
+   [
+    "https://tubitak.gov.tr/tr",
+    "Temiz Enerji, İklim Değişikliği ve Sürdürülebilirlik Araştırma Enstitüsü"
+   ],
+   [
+    "http://tusside.tubitak.gov.tr/",
+    "Türkiye Sanayi Sevk ve İdare Enstitüsü (TÜSSİDE)"
+   ],
+   [
+    "http://www.ume.tubitak.gov.tr/",
+    "Ulusal Metroloji Enstitüsü (UME)"
+   ],
+   [
+    "http://uzay.tubitak.gov.tr/",
+    "Uzay Teknolojileri Araştırma Enstitüsü (UZAY)"
+   ],
+   [
+    "https://kare.tubitak.gov.tr/",
+    "Kutup Araştırmaları Enstitüsü (KARE)"
+   ],
+   [
+    "http://butal.tubitak.gov.tr/",
+    "Bursa Test ve Analiz Laboratuvarı (BUTAL)"
+   ],
+   [
+    "http://ulakbim.tubitak.gov.tr/",
+    "Ulusal Akademik Ağ ve Bilgi Merkezi (ULAKBİM)"
+   ],
+   [
+    "/tr/haberler",
+    "Haber Arşivi"
+   ],
+   [
+    "/tr/video-arsivi",
+    "Video Arşivi"
+   ],
+   [
+    "/tr/fotograf-arsivi",
+    "Fotoğraf Arşivi"
+   ],
+   [
+    "/tr/kvkk",
+    "KVKK Aydınlatma metni"
+   ],
+   [
+    "https://sosyal.teknofest.app/@tubitak",
+    "NSosyal"
+   ],
+   [
+    "https://twitter.com/tubitak",
+    "Twitter"
+   ],
+   [
+    "https://tr.linkedin.com/company/tubitak",
+    "Linkedin"
+   ],
+   [
+    "https://www.instagram.com/tubitak/",
+    "Instagram"
+   ],
+   [
+    "https://www.facebook.com/tubitak",
+    "Facebook"
+   ],
+   [
+    "https://www.youtube.com/user/tubitaktv",
+    "Youtube"
+   ],
+   [
+    "/tr",
+    "Ana Sayfa"
+   ],
+   [
+    "/tr/destekler",
+    "Destekler"
+   ],
+   [
+    "/tr/destekler/akademik",
+    "Akademik"
+   ],
+   [
+    "/tr/destekler/akademik/uluslararasi-destek-programlari/1071-uluslararasi-isbirligi-projeleri-destek-programi",
+    "1071 - Uluslararası İşbirliği Projeleri Destek Programı"
+   ],
+   [
+    "/tr/destekler/akademik/uluslararasi-destek-programlari/ufuk-avrupa-programi",
+    "Ufuk Avrupa Programı"
+   ],
+   [
+    "https://www.facebook.com/sharer/sharer.php?u=https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari&amp;title=Uluslararası Programlar",
+    "   "
+   ],
+   [
+    "https://twitter.com/intent/tweet?text=Uluslararası Programlar+https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari",
+    "   "
+   ],
+   [
+    "https://www.linkedin.com/sharing/share-offsite/?url=https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari",
+    "   "
+   ],
+   [
+    "mailto:?subject=Uluslararası Programlar&amp;body=https://tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari",
+    "   "
+   ],
+   [
+    "https://arbis.tubitak.gov.tr",
+    "ARBİS"
+   ],
+   [
+    "https://ardeb-pbs.tubitak.gov.tr/",
+    "ARDEB PBS "
+   ],
+   [
+    "https://eteydeb.tubitak.gov.tr",
+    "TEYDEB"
+   ],
+   [
+    "https://ebideb.tubitak.gov.tr/",
+    "E-BİDEB"
+   ],
+   [
+    "https://bilimtoplum-pbs.tubitak.gov.tr/",
+    "BİTO"
+   ],
+   [
+    "https://uidb-pbs.tubitak.gov.tr/",
+    "UİDB"
+   ],
+   [
+    "https://tybs.tubitak.gov.tr",
+    "TYBS"
+   ],
+   [
+    "/tr/kurumsal/politikalar",
+    "Politikalar"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/mevzuat",
+    "Mevzuat"
+   ],
+   [
+    "/tr/kurumsal/uluslararasi",
+    "Uluslararası"
+   ],
+   [
+    "/tr/kurumsal/hakkimizda/birimlerimiz",
+    "Birimlerimiz"
+   ],
+   [
+    "/tr/merkez-enstituler",
+    "Merkez &amp; Enstitüler"
+   ],
+   [
+    "/tr/kvkk",
+    "KVKK"
+   ],
+   [
+    "/tr/bidb-politikalari",
+    "BİDB Politikaları"
+   ],
+   [
+    "/tr/destekler/akademik/uygulamalar-ve-yonergeler/tts-transfer-takip-sistemi",
+    "Transfer Takip Sistemi (TTS)"
+   ],
+   [
+    "/tr/haberler",
+    "Haber Arşivi"
+   ],
+   [
+    "/tr/duyuru",
+    "Duyuru arşivi"
+   ],
+   [
+    "/tr/fotograf-arsivi",
+    "Fotoğraf Arşivi"
+   ],
+   [
+    "/tr/video-arsivi",
+    "Video Arşivi"
+   ],
+   [
+    "https://search.trdizin.gov.tr/tr/proje/ara",
+    "Projeler Veritabanı"
+   ],
+   [
+    "tel:4446690",
+    "444 66 90"
+   ],
+   [
+    "tel:+903122228399",
+    "0312 222 83 99"
+   ],
+   [
+    "https://sosyal.teknofest.app/@tubitak",
+    "NSosyal"
+   ],
+   [
+    "https://twitter.com/tubitak",
+    "Twitter"
+   ],
+   [
+    "https://tr.linkedin.com/company/tubitak",
+    "Linkedin"
+   ],
+   [
+    "https://www.instagram.com/tubitak/",
+    "Instagram"
+   ],
+   [
+    "https://www.facebook.com/tubitak",
+    "Facebook"
+   ],
+   [
+    "https://www.youtube.com/user/tubitaktv",
+    "Youtube"
+   ],
+   [
+    "https://www.teknofest.org/tr/",
+    "   "
+   ],
+   [
+    "https://tubimer.tubitak.gov.tr",
+    "   "
+   ],
+   [
+    "/tr",
+    "   "
+   ],
+   [
+    "https://www.google.com/maps/place/T%C3%9CB%C4%B0TAK/@39.9047815,32.8561887,17z/data=!3m1!4b1!4m6!3m5!1s0x14d34fa3d338a531:0x1db0b942620e8828!8m2!3d39.9047774!4d32.8587636!16s%2Fg%2F1tdjtc4g?entry=ttu",
+    "Remzi Oğuz Arık Mah. Tunus Cad. No:80 06680 Çankaya/ANKARA"
+   ],
+   [
+    "tel:+0903124685300",
+    "0 (312) 468 5300"
+   ],
+   [
+    "tel:+0903122981000",
+    "0 (312) 298 1000"
+   ],
+   [
+    "mailto:tubitak.baskanlik@tubitak.hs03.kep.tr",
+    "tubitak.baskanlik@tubitak.hs03.kep.tr"
+   ]
+  ]
+ }
+]
