@@ -16,9 +16,9 @@ jobs:
         run: |
           pip install -q requests
           mkdir -p dogrula
-          python tara/dogrula.py
+          python tara/dogrula2.py
       - name: Kaydet
         run: |
           git config user.name "destek-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A dogrula && git commit -m "dogrulama sonucu" && git push
+          git add -A dogrula && git commit -m "dogrulama2 sonucu" && git push
