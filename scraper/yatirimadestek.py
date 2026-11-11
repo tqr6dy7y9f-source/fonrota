@@ -154,6 +154,16 @@ def kurum_adi(s):
     return " ".join(w(x) for x in s.split())
 
 
+def bagla(metin):
+    """Platform metninde satır sonunda bölünmüş bağlantıları birleştirir:
+    'https://…/ihracat-destekleri- hakkinda-karar' -> 'https://…/ihracat-destekleri-hakkinda-karar'.
+    Yalnızca '-' ile biten bir adresin ardından küçük harfli, adres biçimli bir parça geliyorsa birleştirir."""
+    onceki = None
+    while onceki != metin:
+        onceki = metin
+        metin = re.sub(r"(https?://[^\s)]*-)[ \t]+([a-z0-9%][a-z0-9%._~/-]*)", r"\1\2", metin)
+    return metin
+
 def tr_date(s):
     m = re.search(r"(\d{1,2})\.(\d{1,2})\.(20\d{2})", s or "")
     if not m: return None
@@ -312,7 +322,7 @@ def build(url, info, sec, docs):
         {"kredi": ["finansman"], "vergi": ["vergi"]}.get(tur) or [k for k, ws in AMAC_KURALLARI.items() if any(w in t for w in ws)][:2] or ["yatirim"]
     kosullar = [l.lstrip("•– ").strip() for l in kimler.split("\n") if l.strip()][:12]
     yer = sec.get("yer", "")
-    online = next(iter(re.findall(r"https?://[^\s)]+", yer)), url)
+    online = next(iter(re.findall(r"https?://[^\s)]+", bagla(yer))), url).rstrip(".,;")
     form = next((d for d in docs if re.search(r"form", low(d["ad"])) and not low(d["ad"]).startswith("ozet") and d["ad"].lower().endswith(".pdf")), None)
     pid = "yd-" + url.rsplit("/", 1)[1][:8]
     form_path = None

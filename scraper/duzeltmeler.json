@@ -105,5 +105,12 @@
     }
    ]
   }
+ },
+ {
+  "id": "yd-03b816d6",
+  "neden": "Program Ufuk 2020 (Horizon 2020) çerçeve programına bağlıdır; Ufuk 2020 2020 sonunda bitmiş, yerini Ufuk Avrupa (2021–2027) almıştır. Platformdaki kayıtta verilen iki başvuru adresi (destekler.h2020.org.tr, ufuk2020.org.tr) 11.11.2026'da açılmıyor. Platformda 'açık' göründüğü hâlde süresi dolmuş sayıldı.",
+  "alanlar": {
+   "son_basvuru": "2020-12-31"
+  }
  }
 ]

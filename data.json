@@ -2764,95 +2764,6 @@
    }
   },
   {
-   "id": "yd-03b816d6",
-   "ad": "2020 ERA-NET Cofund Aracı Destek Programı",
-   "kurum": "TÜBİTAK",
-   "url": "https://yatirimadestek.gov.tr/program/03b816d6-0474-40b8-9582-4571a16725da",
-   "tur": "hibe",
-   "ust_limit": null,
-   "destek_orani": null,
-   "geri_odemeli": false,
-   "oran_metin": null,
-   "amac": [
-    "arge"
-   ],
-   "olcek": [
-    "mikro",
-    "kucuk",
-    "orta",
-    "buyuk"
-   ],
-   "sektor": [
-    "tumu"
-   ],
-   "il": [
-    "tumu"
-   ],
-   "son_basvuru": null,
-   "ozet": "Programa üye ülkelerde Kamu-Kamu iş birliklerini destekleyerek, ulusal ve bölgesel araştırma programları arasındaki koordinasyonun sağlanması, araştırma ve yenilik programlarının geliştirilip güçlendirilerek uluslararası iş birliğinin arttırılması hedeflenmektedir. Bu amaçla; ERA-NET Cofund'un Horiz",
-   "firma_yasi_max": null,
-   "ihracat_gerekli": false,
-   "kosullar": [
-    "Kamu kurum ve kuruluşları; Programa üye ülkelerdeki ulusal fonlama kuruluşlarının bir araya gelerek oluşturdukları konsorsiyumlar"
-   ],
-   "belgeler": [],
-   "alanlar": [
-    "firmaUnvani",
-    "vkn",
-    "vergiDairesi",
-    "yetkili",
-    "telefon",
-    "eposta",
-    "adres",
-    "il",
-    "kurulusYili",
-    "sirketTuru",
-    "naceKodu",
-    "calisan",
-    "ciro"
-   ],
-   "basvuru": {
-    "yontem": "online",
-    "form": null,
-    "online": "http://destekler.h2020.org.tr/",
-    "adimlar": [
-     "Başvurular http://destekler.h2020.org.tr/ adresinden yapılmaktadır."
-    ]
-   },
-   "kredi": null,
-   "kaynak": "platform",
-   "resmi": {
-    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
-    "sayfa": "https://yatirimadestek.gov.tr/program/03b816d6-0474-40b8-9582-4571a16725da",
-    "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-09",
-    "bolumler": [
-     {
-      "baslik": "Kimler yararlanabilir?",
-      "metin": "• Kamu kurum ve kuruluşları; Programa üye ülkelerdeki ulusal fonlama kuruluşlarının bir araya gelerek oluşturdukları konsorsiyumlar"
-     },
-     {
-      "baslik": "Desteklenen alanlar ve destek unsurları",
-      "metin": "Programa üye ülkelerde Kamu-Kamu iş birliklerini destekleyerek, ulusal ve bölgesel araştırma programları arasındaki koordinasyonun sağlanması, araştırma ve yenilik programlarının geliştirilip güçlendirilerek uluslararası iş birliğinin arttırılması hedeflenmektedir. Bu amaçla; ERA-NET Cofund'un Horizon 2020 kapsamında uluslararası araştırma ve / veya inovasyon projelerinin finansmanına imkan tanıyan ortak finansmanlı ortak teklif çağrısının uygulanmasıdır. ERA-NET Cofund aracı projelerinde tipik bir Ufuk 2020 Programı çağrı ve destek süreci izlenir.\nDestekler;\n• Destek miktarlarında mimimum veya maksimum destek oranı uygulanmamaktadır. Çağrılara göre değişkenlik göstermektedir."
-     },
-     {
-      "baslik": "Başvuru dönemi",
-      "metin": "Başvurular sürekli açıktır. Açık çağrılara https://ufuk2020.org.tr/tr/icerik/cagrilar adresinden ulaşılabilmektedir."
-     },
-     {
-      "baslik": "Başvuru yeri",
-      "metin": "Başvurular http://destekler.h2020.org.tr/ adresinden yapılmaktadır."
-     }
-    ],
-    "belgeler": [
-     {
-      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ozet-era_net_cofund_araci_destekleme_programi1.pdf",
-      "ad": "ozet-era_net_cofund_araci_destekleme_programi1.pdf"
-     }
-    ]
-   }
-  },
-  {
    "id": "yd-04123fcb",
    "ad": "Pazara Giriş Projesi Hazırlama Desteği",
    "kurum": "Ticaret Bakanlığı",
@@ -2904,7 +2815,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-projesi-hazirlama-destegi",
     "adimlar": [
      "Şirketler, pazara giriş projesi hazırlama desteği başvurusu ve destek ödemesi için ibraz edilmesi gereken belgelerle birlikte proje başvurusunu Destek Yöneyim Sistemi(DYS)/ Kayıtlı elektronik posta (KEP) üzerinden Ticaret Bakanlığı’na yapar.",
      "Pazara Giriş Projesi Hazırlama Desteği işleyişinin DYS üzerinden gerçekleştirilebilmesine ilişkin teknik düzenlemelerin tamamlandığının İhracat Genel Müdürlüğü tarafından ilan edilmesinin akabinde yapılacak iş ve işlemler DYS üzerinden yürütülür. Başvurusu KEP yoluyla gerçekleştirilen ancak destek ödemesi henüz gerçekleştirilmemiş desteklere ilişkin iş ve işlemler KEP üzerinden yürütülmeye devam olunur.",
@@ -3007,7 +2918,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri",
     "adimlar": [
      "KTZ Yetkinlik Projesi başvurusu ve yurt dışı depo kira gideri ile depolama hizmet giderleri desteğine ilişkin ön onay başvurusu, gerekli belgeler ile birlikte Destek Yönetim Sistemi (DYS) üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü), destek ödemesi için başvurular ise DYS üzerinden incelemeci kuruluşa (İBGS) yapılır.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri"
@@ -3447,7 +3358,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
     "adimlar": [
      "Yurt dışı fuarlar için:",
      "Yurt dışı fuar organizasyonlarında tanıtım faaliyetlerinin desteklenebilmesi için fuarın başlangıç tarihinden en geç 2 ay önce organizatörün fuara ilişkin tanıtım projesini DYS üzerinden Ticaret Bakanlına iletmesi gerekir.",
@@ -3961,7 +3872,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi",
     "adimlar": [
      "Gerçekleştirilen faaliyete ilişkin harcamanın desteklenmesi için ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde, başvuru belgelerinin ilgili incelemeci kuruluşa (üyesi olunan İhracatçı Birlikleri Genel Sekreterliği) ibraz edilmesi gerekir.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi"
@@ -4809,7 +4720,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-",
+    "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-mevzuati",
     "adimlar": [
      "YLDA’nın destek kapsamına alınması için, işbirliği kuruluşları tarafından fizibilite raporunu da içeren bir proje ile Ticaret Bakanlığı’na başvuru yapılması ve projenin Bakanlıkça uygun bulunması gerekir.",
      "Link: https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek- mevzuati"
@@ -5107,7 +5018,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "http://ardeb-",
+    "online": "http://ardeb-pbs.tubitak.gov.tr",
     "adimlar": [
      "TÜBİTAK, online başvuru yapabilmek için ARBİS bilgileriniz ile http://ardeb- pbs.tubitak.gov.tr adresine giriş yapabilirsiniz. ARBİS hesabınız yoksa, http://arbis.tubitak.gov.tr adresine girerek oluşturabilirsiniz. Elektronik başvuru tamamlandıktan sonra 14 gün içerisinde e-imza süreci tamamlanmayan proje başvuruları geçersiz sayılacaktır."
     ]
@@ -5749,7 +5660,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi",
     "adimlar": [
      "Ticaret Bakanlığı Destekten yararlanmak isteyen işbirliği kuruluşlarının, rapor desteği için “Rapor Desteği Başvuru Belgeleri” ile birlikte Destek Yönetim Sistemi (DYS) üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü) başvurmaları ve ön onay almaları gerekir.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi"
@@ -6415,7 +6326,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-",
+    "online": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi",
     "adimlar": [
      "Destek kapsamına alınmak için DYS üzerinden Ticaret Bakanlığı’na, ödeme için ise incelemeci kuruluşa(şirketin üyesi olduğu ihracatçı birlikleri genel sekreterliği) başvuru yapılır.",
      "Link: https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda- karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi"
@@ -7236,7 +7147,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri",
     "adimlar": [
      "İşbirliği kuruluşları, program başlangıç tarihinden en az 3 ay önce DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü) başvururlar. Ödeme için ise işbirliği kuruluşlarının faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde destek başvurularını DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü)/incelemeci kuruluşa(İBGS) iletmeleri gerekir.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri"
@@ -8306,7 +8217,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi",
     "adimlar": [
      "Yurt dışı marka tescil desteği için şirketler ödeme belgesi tarihinden itibaren 6 ay içerisinde gerekli bilgi ve belgelerle birlikte üyesi oldukları incelemeci kuruluşa(İhracatçı Birliği) Destek Yönetim Sistemi (DYS) üzerinden başvurularını yaparlar.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi"
@@ -8509,7 +8420,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi",
     "adimlar": [
      "Destek başvuruları; pazara giriş belgesi desteğinde, şirket tarafından, gerekli belgelerle birlikte, desteğe konu pazara giriş belgesinin düzenlenme tarihinden itibaren; ruhsatlandırma ve kayıt işlemlerinde ise, anılan işlemlere ilişkin ödeme belgesi tarihinden itibaren 6 ay içerisinde, Destek Yöneyim Sistemi(DYS) üzerinden üyesi olunan İhracatçı Birliği Genel Sekreterliğine(İBGS)yapılır.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi"
@@ -8805,7 +8716,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tasarimci-sirket-ve-tasarim-ofisi-destegi",
     "adimlar": [
      "Destek unsurlarından yararlanmak için tasarımcı şirket/tasarım ofisinin destek kapsamına alınması gerekir. Buna ilişkin kapsama alınma başvuruları Destek Yönetim Sistemi (DYS) üzerinden yapılır.",
      "Tasarımcı şirket/tasarım ofisinin destek ödemesinden yararlandırılabilmesi için gerekli belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa(tasarımcı şirket/tasarım ofisinin üyesi bulunduğu İhracatçı Birliği Genel Sekreterliği) DYS üzerinden başvurulur.",
@@ -8917,7 +8828,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-",
+    "online": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-tarim-sigortalari",
     "adimlar": [
      "Tarım ve Orman Bakanlığı, T.C Ziraat Bankası A.Ş Link: https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli- tarim-sigortalari https://web.tarsim.gov.tr/havuz/"
     ]
@@ -9102,7 +9013,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri",
     "adimlar": [
      "Destek kapsamına alınmak için Ticaret Bakanlığı’na, ödeme için ise incelemeci kuruluşa(şirketin üyesi olduğu ihracatçı birlikleri genel sekreterliği) başvuru yapılır.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri"
@@ -9697,7 +9608,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/ur-ge-proje-destegi",
     "adimlar": [
      "İşbirliği kuruluşu, proje başvurusunu gerekli belgelerle birlikte DYS üzerinden Ticaret Bakanlığına iletir.",
      "Faaliyetlere ilişkin destek ödemesi başvuruları ise, faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde gerekli belgelerle birlikte DYS üzerinden incelemeci kuruluşa(İBGS) yapılır.",
@@ -10504,7 +10415,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-",
+    "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar",
     "adimlar": [
      "Ticaret Bakanlığı Link: https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet- ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar"
     ]
@@ -10658,7 +10569,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-",
+    "online": "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-destekleri/d%C3%B6viz-kazandirici-hizmet-sekt%C3%B6rleri-markalasma-destegi",
     "adimlar": [
      "Ticaret Bakanlığı Link: https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru- destekleri/d%C3%B6viz-kazandirici-hizmet-sekt%C3%B6rleri-markalasma-destegi"
     ]
@@ -10759,7 +10670,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi",
     "adimlar": [
      "Destek ödeme başvuruları “Yurt dışı Pazar Araştırması Desteği Başvuru Bilgi ve Belgeleri” ile birlikte, şirket çalışanının Türkiye’ye giriş tarihinden itibaren en geç 3 ay içerisinde DYS üzerinden incelemeci kuruluşa(İhracatçı Birliği) yapılır.",
      "Link:https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi"
@@ -11017,7 +10928,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
     "adimlar": [
      "İşbirliği kuruluşu, toplu katılımın gerçekleştirileceği sanal fuarın destek kapsamına alınmasına dair proje başvurusunu gerekli bilgi ve belgelerle fuarın başlama tarihinden en geç 2 ay önce DYS üzerinden Ticaret Bakanlığına iletir.",
      "İşbirliği kuruluşlarının tek başına veya diğer işbirliği kuruluşları ile birlikte düzenleyeceği sanal fuar organizasyonu için program başlangıç tarihinden en az 6 ay önce gerekli bilgi ve belgelerle Ticaret Bakanlığına (İhracat Genel Müdürlüğü) DYS üzerinden onay başvurusunda bulunulur.",
@@ -11748,7 +11659,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet-gosteren-sirketlere-tasarim-destegi",
     "adimlar": [
      "Şirketlerin destek ödemesinden yararlanabilmesi için gerekli belgelerle birlikte ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde incelemeci kuruluşa DYS üzerinden başvuru yapması gerekmektedir.",
      "Link:https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet- gosteren-sirketlere-tasarim-destegi"
@@ -11964,7 +11875,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka-alim-destegi",
     "adimlar": [
      "Şirketlerin, ön onay için Destek Yönetim Sistemi (DYS) üzerinden Ticaret Bakanlığına başvuru yapmaları gerekir. Destek ödemesi başvuruları ise ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde gerekli belgeler ile DYS üzerinden Ticaret Bakanlığına/ İncelemeci Kuruluşa(Ticaret Bakanlığı tarafından görevlendirilen İhracatçı Birlikleri Genel Sekreterlikleri) yapılır.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka- alim-destegi"
@@ -12066,7 +11977,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tanitim-destegi",
     "adimlar": [
      "Yurt dışı tanıtım desteği için şirketler, ödeme belgesi tarihinden itibaren 6 ay içerisinde gerekli bilgi ve belgelerle Destek Yönetim Sistemi (DYS) üzerinden incelemeci kuruluşa(üyesi olduğu İhracatçı Birliği Genel Sekreterliği) başvurularını yaparlar.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/tanitim-destegi"
@@ -13052,7 +12963,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi",
     "adimlar": [
      "Birim kira desteği için şirketler, ödeme belgesi tarihinden itibaren 6 ay içerisinde gerekli bilgi ve belgelerle Destek Yönetim Sistemi (DYS) üzerinden incelemeci kuruluşa(üyesi olduğu İhracatçı Birliği Genel Sekreterliği) başvurularını yaparlar.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi"
@@ -14176,7 +14087,7 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi",
     "adimlar": [
      "İşbirliği kuruluşları, başvuru belgeleri ile birlikte program başlangıç tarihinden en az 1 (bir) ay önce DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü) onay başvurusunda bulunur. Ödeme için ise işbirliği kuruluşlarının, faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde gerekli belgelerle birlikte, DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü)/incelemeci kuruluşa(İBGS) başvurması gerekmektedir.",
      "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi"
