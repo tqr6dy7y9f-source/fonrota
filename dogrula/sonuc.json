@@ -1,0 +1,3298 @@
+[
+ {
+  "id": "yd-8a987028",
+  "ad": "İstihdamı Koruma Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "platform",
+  "son_basvuru": "2026-11-30",
+  "guncelleme": "2026-11-04",
+  "linkler": []
+ },
+ {
+  "id": "yd-052cc3c7",
+  "ad": "KKYDP Bireysel Sulama Sistemlerinin Desteklenmesi Programı",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": "2026-12-31",
+  "guncelleme": "2026-04-03",
+  "linkler": []
+ },
+ {
+  "id": "yd-0f2ffa7d",
+  "ad": "Hayvancılık Destekleri",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": "2026-12-31",
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   },
+   {
+    "url": "https://www.tarimorman.gov.tr/HAYGEM",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/HAYGEM",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 235103,
+    "uzunluk": 5546,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Hayvancılık Genel Müdürlüğü"
+   }
+  ]
+ },
+ {
+  "id": "yd-3c193217",
+  "ad": "Düşük Faizli Yatırım Ve İşletme Kredisi Uygulamaları",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": "2026-12-31",
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ziraatbank.com.tr/tr/girisimci/tarim",
+    "kod": 200,
+    "son": "https://www.ziraatbank.com.tr/tr/ticari/tarim",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 62361,
+    "uzunluk": 4311,
+    "ifade": [],
+    "tarih": [
+     "15.09.2023"
+    ],
+    "baslik": "Tarım | Ticari | Ziraat Bankası"
+   }
+  ]
+ },
+ {
+  "id": "yd-56f4e239",
+  "ad": "Derneklere Yardım Desteği",
+  "kurum": "Sivil Toplumla İlişkiler Genel Müdürlüğü",
+  "kaynak": "platform",
+  "son_basvuru": "2026-12-31",
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-87175d4c",
+  "ad": "Cazibe Merkezleri Programı Yatırım Desteği",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": "2026-12-31",
+  "guncelleme": "2026-03-18",
+  "linkler": []
+ },
+ {
+  "id": "yd-8a1cb3cb",
+  "ad": "KKYDP Tarıma Dayalı Ekonomik Yatırımlarının Desteklenmesi",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": "2026-12-31",
+  "guncelleme": "2026-04-21",
+  "linkler": []
+ },
+ {
+  "id": "yd-ee93eb7d",
+  "ad": "Eureka Network Türkiye-İspanya 2026 Yılı Çağrısı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": "2027-03-03",
+  "guncelleme": "2026-10-27",
+  "linkler": []
+ },
+ {
+  "id": "yd-62c07a76",
+  "ad": "Araştırma, Geliştirme Ve Tasarım Faaliyetlerinin Desteklenmesi",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": "2028-12-30",
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-1ab67b2c",
+  "ad": "Ar-Ge Ve Tasarım Merkezi Teşvikleri",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": "2028-12-31",
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-821ba676",
+  "ad": "Gençliğin Üretim Çağı (GÜÇ) Genç İstihdam Hamlesi",
+  "kurum": "İŞKUR",
+  "kaynak": "platform",
+  "son_basvuru": "2028-12-31",
+  "guncelleme": "2026-03-15",
+  "linkler": []
+ },
+ {
+  "id": "yd-9606be0e",
+  "ad": "TGB'lerdeki Girişimlere Yönelik Teşvikler",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": "2028-12-31",
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "kosgeb-ba79ca0b",
+  "ad": "Yapay Zekâ Kredisi",
+  "kurum": "KOSGEB",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler",
+    "kod": 200,
+    "son": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 60444,
+    "uzunluk": 2028,
+    "ifade": [
+     "stek Programı devamı için 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı devamı için 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı devamı için Yürürlükten Kaldırılan Destekler devamı için T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus"
+    ],
+    "tarih": [],
+    "baslik": "Destekler Listesi - KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı"
+   },
+   {
+    "url": "forms/kosgeb-ba79ca0b.pdf",
+    "hata": "MissingSchema: Invalid URL 'forms/kosgeb-ba79ca0b.pdf': No scheme supplied. Perhaps you meant https://forms/kosgeb-ba79ca0b.pdf?"
+   },
+   {
+    "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredisi",
+    "kod": 200,
+    "son": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredisi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 65026,
+    "uzunluk": 5232,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Yapay Zekâ Kredisi - KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı"
+   }
+  ]
+ },
+ {
+  "id": "kosgeb-9ac0d2af",
+  "ad": "Stratejik Ürün Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler",
+    "kod": 200,
+    "son": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 60444,
+    "uzunluk": 2028,
+    "ifade": [
+     "stek Programı devamı için 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı devamı için 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı devamı için Yürürlükten Kaldırılan Destekler devamı için T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus"
+    ],
+    "tarih": [],
+    "baslik": "Destekler Listesi - KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı"
+   },
+   {
+    "url": "forms/kosgeb-9ac0d2af.pdf",
+    "hata": "MissingSchema: Invalid URL 'forms/kosgeb-9ac0d2af.pdf': No scheme supplied. Perhaps you meant https://forms/kosgeb-9ac0d2af.pdf?"
+   },
+   {
+    "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi",
+    "kod": 200,
+    "son": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 94032,
+    "uzunluk": 9718,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Stratejik Ürün Destek Programı - KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlı"
+   }
+  ]
+ },
+ {
+  "id": "tubitak-7d7ffcea",
+  "ad": "Mentorluk Desteği Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+    "kod": 200,
+    "son": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 66026,
+    "uzunluk": 4844,
+    "ifade": [
+     " Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıll"
+    ],
+    "tarih": [],
+    "baslik": "Ulusal Destek Programları | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+   },
+   {
+    "url": "https://www.tubitak.gov.tr/tr/burslar/lisans/mentorluk-destegi-programi",
+    "kod": 200,
+    "son": "https://tubitak.gov.tr/tr/burslar/lisans/mentorluk-destegi-programi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 58809,
+    "uzunluk": 3596,
+    "ifade": [
+     " Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıll"
+    ],
+    "tarih": [],
+    "baslik": "Mentorluk Desteği Programı | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+   }
+  ]
+ },
+ {
+  "id": "tubitak-0ffc035a",
+  "ad": "1612 - BiGG - 1.Aşama Uygulayıcı Kuruluş Çağrısı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+    "kod": 200,
+    "son": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 66026,
+    "uzunluk": 4844,
+    "ifade": [
+     " Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıll"
+    ],
+    "tarih": [],
+    "baslik": "Ulusal Destek Programları | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+   },
+   {
+    "url": "forms/tubitak-0ffc035a.pdf",
+    "hata": "MissingSchema: Invalid URL 'forms/tubitak-0ffc035a.pdf': No scheme supplied. Perhaps you meant https://forms/tubitak-0ffc035a.pdf?"
+   },
+   {
+    "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1612-bigg-1asama-uygulayici-kurulus-cagrisi",
+    "kod": 200,
+    "son": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1612-bigg-1asama-uygulayici-kurulus-cagrisi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 85377,
+    "uzunluk": 11429,
+    "ifade": [
+     " Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıll"
+    ],
+    "tarih": [],
+    "baslik": "1612 - BiGG - 1.Aşama Uygulayıcı Kuruluş Çağrısı | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+   }
+  ]
+ },
+ {
+  "id": "tubitak-be36a690",
+  "ad": "1613 - Teknoloji Transferi Profesyoneli Çağrısı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+    "kod": 200,
+    "son": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 66026,
+    "uzunluk": 4844,
+    "ifade": [
+     " Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıll"
+    ],
+    "tarih": [],
+    "baslik": "Ulusal Destek Programları | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+   },
+   {
+    "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1613-teknoloji-transferi-profesyoneli-cagrisi",
+    "kod": 200,
+    "son": "https://tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1613-teknoloji-transferi-profesyoneli-cagrisi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 94154,
+    "uzunluk": 9135,
+    "ifade": [
+     " Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıll"
+    ],
+    "tarih": [],
+    "baslik": "1613 - Teknoloji Transferi Profesyoneli Çağrısı | TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+   }
+  ]
+ },
+ {
+  "id": "iskur-e87abe4e",
+  "ad": "İşgücü Uyum Programı",
+  "kurum": "İŞKUR",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.iskur.gov.tr/isveren/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/isveren/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 362022,
+    "uzunluk": 20202,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "İşveren - Türkiye İş Kurumu (İŞKUR)"
+   },
+   {
+    "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/isgucu-uyum-programi/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/isgucu-uyum-programi/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 212254,
+    "uzunluk": 15977,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "İşgücü Uyum Programı - Türkiye İş Kurumu (İŞKUR)"
+   }
+  ]
+ },
+ {
+  "id": "iskur-6946cec9",
+  "ad": "İŞKUR Gençlik Programı",
+  "kurum": "İŞKUR",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.iskur.gov.tr/isveren/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/isveren/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 362022,
+    "uzunluk": 20202,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "İşveren - Türkiye İş Kurumu (İŞKUR)"
+   },
+   {
+    "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/iskur-genclik-programi/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/iskur-genclik-programi/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 215150,
+    "uzunluk": 17184,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "İŞKUR Gençlik Programı - Türkiye İş Kurumu (İŞKUR)"
+   }
+  ]
+ },
+ {
+  "id": "iskur-d76ef715",
+  "ad": "Nitelikli İşgücü Yetiştirme Programı",
+  "kurum": "İŞKUR",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.iskur.gov.tr/isveren/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/isveren/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 362022,
+    "uzunluk": 20202,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "İşveren - Türkiye İş Kurumu (İŞKUR)"
+   },
+   {
+    "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/nitelikli-isgucu-yetistirme-programi/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/nitelikli-isgucu-yetistirme-programi/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 206276,
+    "uzunluk": 10347,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Nitelikli İşgücü Yetiştirme Programı - Türkiye İş Kurumu (İŞKUR)"
+   }
+  ]
+ },
+ {
+  "id": "iskur-b7c52fef",
+  "ad": "Üretim Sürecine Katılma Programı",
+  "kurum": "İŞKUR",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.iskur.gov.tr/isveren/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/isveren/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 362022,
+    "uzunluk": 20202,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "İşveren - Türkiye İş Kurumu (İŞKUR)"
+   },
+   {
+    "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/uretim-surecine-katilim-programi/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/uretim-surecine-katilim-programi/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 203143,
+    "uzunluk": 8404,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Üretim Sürecine Katılım Programı - Türkiye İş Kurumu (İŞKUR)"
+   }
+  ]
+ },
+ {
+  "id": "iskur-a1360bf6",
+  "ad": "Ücret Garanti Fonu",
+  "kurum": "İŞKUR",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.iskur.gov.tr/isveren/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/isveren/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 362022,
+    "uzunluk": 20202,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "İşveren - Türkiye İş Kurumu (İŞKUR)"
+   },
+   {
+    "url": "https://www.iskur.gov.tr/is-arayan/issizlik-sigortasi/ucret-garanti-fonu/",
+    "kod": 200,
+    "son": "https://www.iskur.gov.tr/is-arayan/issizlik-sigortasi/ucret-garanti-fonu/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 202551,
+    "uzunluk": 9648,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Ücret Garanti Fonu - Türkiye İş Kurumu (İŞKUR)"
+   }
+  ]
+ },
+ {
+  "id": "eximbank-6261ccdb",
+  "ad": "Alıcı Kredileri",
+  "kurum": "Türk Eximbank",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.eximbank.gov.tr/",
+    "kod": 200,
+    "son": "https://www.eximbank.gov.tr/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 264141,
+    "uzunluk": 11761,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T&#252;rk Eximbank - Türk Eximbank"
+   },
+   {
+    "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alici-kredileri",
+    "kod": 200,
+    "son": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alici-kredileri",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 68831,
+    "uzunluk": 6303,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Alıcı Kredileri - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "eximbank-e1713d64",
+  "ad": "Avrupa Yatırım Bankası Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.eximbank.gov.tr/",
+    "kod": 200,
+    "son": "https://www.eximbank.gov.tr/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 264141,
+    "uzunluk": 11761,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T&#252;rk Eximbank - Türk Eximbank"
+   },
+   {
+    "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/avrupa-yatirim-bankasi-ayb-kredisi",
+    "hata": "ConnectTimeout: HTTPSConnectionPool(host='www.eximbank.gov.tr', port=443): Max retries exceeded with url: /tr/urun-ve-hizmetlerimiz/kred"
+   }
+  ]
+ },
+ {
+  "id": "eximbank-e2762321",
+  "ad": "TİM Wings Programı",
+  "kurum": "Türk Eximbank",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.eximbank.gov.tr/",
+    "kod": 200,
+    "son": "https://www.eximbank.gov.tr/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 264141,
+    "uzunluk": 11761,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T&#252;rk Eximbank - Türk Eximbank"
+   },
+   {
+    "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi",
+    "hata": "ConnectTimeout: HTTPSConnectionPool(host='www.eximbank.gov.tr', port=443): Max retries exceeded with url: /tr/urun-ve-hizmetlerimiz/kred"
+   }
+  ]
+ },
+ {
+  "id": "eximbank-738703eb",
+  "ad": "Uluslararası Proje Kredileri",
+  "kurum": "Türk Eximbank",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.eximbank.gov.tr/",
+    "kod": 200,
+    "son": "https://www.eximbank.gov.tr/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 264141,
+    "uzunluk": 11761,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T&#252;rk Eximbank - Türk Eximbank"
+   },
+   {
+    "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alici-kredileri/uluslararasi-proje-kredileri",
+    "hata": "ConnectTimeout: HTTPSConnectionPool(host='www.eximbank.gov.tr', port=443): Max retries exceeded with url: /tr/urun-ve-hizmetlerimiz/alic"
+   }
+  ]
+ },
+ {
+  "id": "trakyaka-8856997d",
+  "ad": "Proje Teklif Çağrısı",
+  "kurum": "Trakya Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.trakyaka.org.tr/",
+    "kod": 200,
+    "son": "https://www.trakyaka.org.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 52073,
+    "uzunluk": 4979,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "TRAKYA KALKINMA AJANSI"
+   },
+   {
+    "url": "https://www.trakyaka.org.tr/tr/33373/Proje-Teklif-Cagrisi",
+    "kod": 200,
+    "son": "https://www.trakyaka.org.tr/tr/33373/Proje-Teklif-Cagrisi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 39853,
+    "uzunluk": 5553,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Proje Teklif Çağrısı - Kapanan Destek Programları ve Sonuçları - TRAKYA KALKINMA AJANSI"
+   }
+  ]
+ },
+ {
+  "id": "trakyaka-49b84e06",
+  "ad": "Doğrudan Faaliyet Desteği Programı",
+  "kurum": "Trakya Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.trakyaka.org.tr/",
+    "kod": 200,
+    "son": "https://www.trakyaka.org.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 52073,
+    "uzunluk": 4979,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "TRAKYA KALKINMA AJANSI"
+   },
+   {
+    "url": "https://www.trakyaka.org.tr/tr/35120/Dogrudan-Faaliyet-Destegi-Programi",
+    "kod": 200,
+    "son": "https://www.trakyaka.org.tr/tr/35120/Dogrudan-Faaliyet-Destegi-Programi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 41432,
+    "uzunluk": 6025,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Doğrudan Faaliyet Desteği Programı - Kapanan Destek Programları ve Sonuçları - TRAKYA KALKINMA AJANSI"
+   }
+  ]
+ },
+ {
+  "id": "geka-fdeb7c18",
+  "ad": "Aydın Yatırım Teşvikleri",
+  "kurum": "Güney Ege Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.geka.gov.tr/",
+    "kod": 200,
+    "son": "https://www.geka.gov.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 219441,
+    "uzunluk": 9686,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Güney Ege Kalkınma Ajansı"
+   },
+   {
+    "url": "https://www.geka.gov.tr/tr/sayfa/aydin-yatirim-tesvikleri",
+    "kod": 200,
+    "son": "https://www.geka.gov.tr/tr/sayfa/aydin-yatirim-tesvikleri",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 166696,
+    "uzunluk": 17715,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Güney Ege Kalkınma Ajansı"
+   }
+  ]
+ },
+ {
+  "id": "geka-f8387ec5",
+  "ad": "Denizli Yatırım Teşvikleri",
+  "kurum": "Güney Ege Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.geka.gov.tr/",
+    "kod": 200,
+    "son": "https://www.geka.gov.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 219441,
+    "uzunluk": 9686,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Güney Ege Kalkınma Ajansı"
+   },
+   {
+    "url": "https://www.geka.gov.tr/tr/sayfa/denizli-yatirim-tesvikleri",
+    "kod": 200,
+    "son": "https://www.geka.gov.tr/tr/sayfa/denizli-yatirim-tesvikleri",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 134633,
+    "uzunluk": 14953,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Güney Ege Kalkınma Ajansı"
+   }
+  ]
+ },
+ {
+  "id": "geka-2b41c588",
+  "ad": "Muğla Yatırım Teşvikleri",
+  "kurum": "Güney Ege Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.geka.gov.tr/",
+    "kod": 200,
+    "son": "https://www.geka.gov.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 219441,
+    "uzunluk": 9686,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Güney Ege Kalkınma Ajansı"
+   },
+   {
+    "url": "https://www.geka.gov.tr/tr/sayfa/mugla-yatirim-tesvikleri",
+    "kod": 200,
+    "son": "https://www.geka.gov.tr/tr/sayfa/mugla-yatirim-tesvikleri",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 134884,
+    "uzunluk": 14649,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Güney Ege Kalkınma Ajansı"
+   }
+  ]
+ },
+ {
+  "id": "mevka-1faf4813",
+  "ad": "MEVKA ve ICMPD İş Birliğiyle ENHANCER PRO Hibe Programları",
+  "kurum": "Mevlana Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.mevka.org.tr/",
+    "kod": 200,
+    "son": "https://www.mevka.org.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 378098,
+    "uzunluk": 44840,
+    "ifade": [
+     "üzenlenmemiş bütün işlemlerinde özel hukuk hükümlerine tabi kuruluşlar olarak kurulmuş olup, ulusal düzeyde koordinasyonlarından ise ilgili Kanun çerçevesinde (mülga) Devlet Planlama Teşkilatı sorumlu kılınmıştır. 3/6/2011 tarih ve 641 sayılı Kanun Hükmünde Kararname çerçevesinde Devlet Planlama Teşkilatı ilga edilerek, Dev"
+    ],
+    "tarih": [],
+    "baslik": "Mevlana Kalkınma Ajansı"
+   },
+   {
+    "url": "https://www.mevka.org.tr/tr/haberler/mevka-ve-icmpd-is-birligiyle-enhancer-pro-hibe-programlari-konya-da-tanitildi",
+    "kod": 200,
+    "son": "https://www.mevka.org.tr/tr/haberler/mevka-ve-icmpd-is-birligiyle-enhancer-pro-hibe-programlari-konya-da-tanitildi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 66566,
+    "uzunluk": 25730,
+    "ifade": [
+     "üzenlenmemiş bütün işlemlerinde özel hukuk hükümlerine tabi kuruluşlar olarak kurulmuş olup, ulusal düzeyde koordinasyonlarından ise ilgili Kanun çerçevesinde (mülga) Devlet Planlama Teşkilatı sorumlu kılınmıştır. 3/6/2011 tarih ve 641 sayılı Kanun Hükmünde Kararname çerçevesinde Devlet Planlama Teşkilatı ilga edilerek, Dev"
+    ],
+    "tarih": [
+     "22 Aralık 2026"
+    ],
+    "baslik": "MEVKA ve ICMPD İş Birliğiyle ENHANCER PRO Hibe Programları Konya’da Tanıtıldı"
+   }
+  ]
+ },
+ {
+  "id": "oran-d54a4f64",
+  "ad": "Anadoludakiler-Kırsal Kalkınma Teknik Destek Programı",
+  "kurum": "Orta Anadolu Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.oran.org.tr/",
+    "kod": 200,
+    "son": "https://www.oran.org.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 171338,
+    "uzunluk": 8410,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Orta Anadolu Kalkınma Ajansı"
+   },
+   {
+    "url": "forms/oran-d54a4f64.pdf",
+    "hata": "MissingSchema: Invalid URL 'forms/oran-d54a4f64.pdf': No scheme supplied. Perhaps you meant https://forms/oran-d54a4f64.pdf?"
+   },
+   {
+    "url": "https://www.oran.org.tr/tr/acik-destek-cagrilari/anadoludakiler-kirsal-kalkinma-teknik-destek-programi",
+    "kod": 200,
+    "son": "https://www.oran.org.tr/tr/acik-destek-cagrilari/anadoludakiler-kirsal-kalkinma-teknik-destek-programi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 94139,
+    "uzunluk": 8110,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Anadoludakiler-Kırsal Kalkınma Teknik Destek Programı"
+   }
+  ]
+ },
+ {
+  "id": "oran-c62ac214",
+  "ad": "ENHANCER PRO ile Mikro ve Orta Ölçekli İşletmeler İçin 100 bin Avro Hibe Desteği",
+  "kurum": "Orta Anadolu Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.oran.org.tr/",
+    "kod": 200,
+    "son": "https://www.oran.org.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 171338,
+    "uzunluk": 8410,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Orta Anadolu Kalkınma Ajansı"
+   },
+   {
+    "url": "https://www.oran.org.tr/haber/enhancer-pro-ile-mikro-ve-orta-olcekli-isletmeler-icin-100-bin-avro-hibe-destegi",
+    "kod": 200,
+    "son": "https://www.oran.org.tr/haber/enhancer-pro-ile-mikro-ve-orta-olcekli-isletmeler-icin-100-bin-avro-hibe-destegi",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 94697,
+    "uzunluk": 6796,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "ENHANCER PRO ile Mikro ve Orta Ölçekli İşletmeler İçin 100 bin Avro Hibe Desteği"
+   }
+  ]
+ },
+ {
+  "id": "bakka-bbe8ecf2",
+  "ad": "Sosyal Gelişmeyi Destekleme Programı (SOGEP)",
+  "kurum": "Batı Karadeniz Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.bakka.gov.tr/",
+    "kod": 200,
+    "son": "https://bakka.gov.tr",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 173988,
+    "uzunluk": 7183,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "BAKKA | Batı Karadeniz Kalkınma Ajansı"
+   },
+   {
+    "url": "https://www.bakka.gov.tr/tr/destekler/sosyal-gelismeyi-destekleme-programi-sogep",
+    "kod": 200,
+    "son": "https://bakka.gov.tr",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 173988,
+    "uzunluk": 7183,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "BAKKA | Batı Karadeniz Kalkınma Ajansı"
+   }
+  ]
+ },
+ {
+  "id": "dika-56463dbe",
+  "ad": "Cazibe Merkezlerini Destekleme Programı (CMDP)",
+  "kurum": "Dicle Kalkınma Ajansı",
+  "kaynak": "kurum-sitesi",
+  "son_basvuru": null,
+  "guncelleme": null,
+  "linkler": [
+   {
+    "url": "https://www.dika.org.tr/",
+    "kod": 200,
+    "son": "https://www.dika.org.tr/",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 130330,
+    "uzunluk": 9890,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Dicle Kalkınma Ajansı"
+   },
+   {
+    "url": "https://www.dika.org.tr/destekler/cazibe-merkezlerini-destekleme-programi-cmdp",
+    "kod": 200,
+    "son": "https://www.dika.org.tr/destekler/cazibe-merkezlerini-destekleme-programi-cmdp",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 31763,
+    "uzunluk": 6643,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Cazibe Merkezlerini Destekleme Programı (CMDP) - T.C. Dicle Kalkınma Ajansı"
+   }
+  ]
+ },
+ {
+  "id": "yd-036f0e8c",
+  "ad": "Fındık Üreticilerini Destekleme",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-03b816d6",
+  "ad": "2020 ERA-NET Cofund Aracı Destek Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "http://destekler.h2020.org.tr/",
+    "hata": "ConnectionError: HTTPConnectionPool(host='destekler.h2020.org.tr', port=80): Max retries exceeded with url: / (Caused by NameResolutionEr"
+   },
+   {
+    "url": "https://ufuk2020.org.tr/tr/icerik/cagrilar",
+    "hata": "ConnectTimeout: HTTPSConnectionPool(host='ufuk2020.org.tr', port=443): Max retries exceeded with url: /tr/icerik/cagrilar (Caused by Con"
+   },
+   {
+    "url": "http://destekler.h2020.org.tr/adresinden",
+    "hata": "ConnectionError: HTTPConnectionPool(host='destekler.h2020.org.tr', port=80): Max retries exceeded with url: /adresinden (Caused by NameRe"
+   }
+  ]
+ },
+ {
+  "id": "yd-04123fcb",
+  "ad": "Pazara Giriş Projesi Hazırlama Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-projesi-hazirlama-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-projesi-hazirlama-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 64012,
+    "uzunluk": 6074,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-0543c637",
+  "ad": "Küresel Tedarik Zinciri Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 62932,
+    "uzunluk": 5851,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-063c448b",
+  "ad": "Sinema Filmlerinin Desteklenmesi",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://sinema.ktb.gov.tr/TR-143929/basvurular.html",
+    "kod": 200,
+    "son": "https://sinema.ktb.gov.tr/TR-143929/basvurular.html",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 41450,
+    "uzunluk": 2104,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Başvurular"
+   }
+  ]
+ },
+ {
+  "id": "yd-08d93dc5",
+  "ad": "Sponsorluk Desteği",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-0a207d3a",
+  "ad": "Girişimci Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-26",
+  "linkler": []
+ },
+ {
+  "id": "yd-0fe65745",
+  "ad": "Lisanslı Depolarda Ürün Muhafazası İçin Kira Desteği",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-10ccb0b2",
+  "ad": "Yurt Dışı Ve Yurt İçi Fuar Destekleri",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 63552,
+    "uzunluk": 6488,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-1331d6ab",
+  "ad": "Teknik Müşavirlik Hizmetlerine Sağlanacak Devlet Yardımları",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 61143,
+    "uzunluk": 5356,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-14b9ffd9",
+  "ad": "1505 Üniversite-Sanayi İşbirliği Destek Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "http://eteydeb.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://eteydeb.tubitak.gov.tr/teydebanasayfa.htm",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 22624,
+    "uzunluk": 3158,
+    "ifade": [
+     "No: 51/C Çankaya/ANKARA PRODİS Giriş Yeni Kullanıcı Kaydı Gerekli Yazılımlar Sıkça Sorulan Sorular Elektronik İmza Mevzuat ve Belgeler Yardımcı Kılavuzlar YENİ Tamamlanmış Projeler İletişim Duyurular | Başarı Öyküleri | Tanıtım | E-Seminer "
+    ],
+    "tarih": [],
+    "baslik": "TÜBİTAK TEYDEB Proje Değerlendirme ve İzleme Sistemi - PRODİS"
+   }
+  ]
+ },
+ {
+  "id": "yd-1855e758",
+  "ad": "1509 TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eteydeb.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://eteydeb.tubitak.gov.tr/teydebanasayfa.htm",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 22624,
+    "uzunluk": 3158,
+    "ifade": [
+     "No: 51/C Çankaya/ANKARA PRODİS Giriş Yeni Kullanıcı Kaydı Gerekli Yazılımlar Sıkça Sorulan Sorular Elektronik İmza Mevzuat ve Belgeler Yardımcı Kılavuzlar YENİ Tamamlanmış Projeler İletişim Duyurular | Başarı Öyküleri | Tanıtım | E-Seminer "
+    ],
+    "tarih": [],
+    "baslik": "TÜBİTAK TEYDEB Proje Değerlendirme ve İzleme Sistemi - PRODİS"
+   },
+   {
+    "url": "https://www.tubitak.gov.tr/",
+    "kod": 200,
+    "son": "https://tubitak.gov.tr/tr",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 100994,
+    "uzunluk": 11250,
+    "ifade": [
+     " Yenilikçi Üniversite Endeksi Üniversitelerin Alan Bazlı Yetkinlik Analizi Teknoloji Hazırlık Seviyesi (THS) Belirleme BTY İstatistikleri BTY Kılavuzları BTYK (Mülga) Arşiv Uluslararası İkili Proje Destekleri Çok Taraflı Programlar Çerçeve Programları Teknoloji Transfer Ofisi Hakkımızda Patentler İlanlar Ödüller Geçmiş Yıll",
+     " sahalardaki birikimini ortaya koydu. Devamını oku 12 Eki 2026 TÜBİTAK’IN Enstitü Ve Ar-Ge Merkezleriyle Katıldığı Dünyanın En Prestijli Uzay Kongresi IAC 2026 Sona Erdi TÜBİTAK uzay araştırmaları alanındaki çalışmalarını 5-9 Ekim tarihlerinde Antalya’da düzenlenen 77. Uluslararası Uzay Kongresi’nde (IAC 2026) ortaya koydu. Dev"
+    ],
+    "tarih": [],
+    "baslik": "TÜBİTAK | Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+   },
+   {
+    "url": "https://eureka.org.tr/",
+    "kod": 200,
+    "son": "https://eureka.org.tr/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 42095,
+    "uzunluk": 1594,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "EUREKA Ulusal Koordinasyon Ofisi"
+   }
+  ]
+ },
+ {
+  "id": "yd-1ab5875a",
+  "ad": "Serbest Bölgelerde Sağlanan Muafiyet Ve Teşvikler",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 60844,
+    "uzunluk": 5308,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-1b4952f6",
+  "ad": "Çok Kanalli Zincir Mağaza Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 64813,
+    "uzunluk": 6040,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-1cb09bf3",
+  "ad": "E-İhracat Destekleri",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 62085,
+    "uzunluk": 5359,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-1e49211f",
+  "ad": "Yatırım Taahhütlü Avans Kredisi",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-19",
+  "linkler": []
+ },
+ {
+  "id": "yd-21ed6aad",
+  "ad": "Sanayi Teşvikleri T.C. Hazine Ve Maliye Bakanlığı Ar-Ge İndirimi Desteği",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "forms/yd-21ed6aad.pdf",
+    "hata": "MissingSchema: Invalid URL 'forms/yd-21ed6aad.pdf': No scheme supplied. Perhaps you meant https://forms/yd-21ed6aad.pdf?"
+   }
+  ]
+ },
+ {
+  "id": "yd-220e65de",
+  "ad": "YÖNDE - Yönderlik Ve Değerlendirme Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-22fe7e4e",
+  "ad": "Turizm Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-266b42e1",
+  "ad": "Sosyal Yardım Alanların İstihdamı Halinde Uygulanan Prim Teşviki",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-2ab98c68",
+  "ad": "Finansal Kiralama Şirketlerine Yönelik Kredi Programı",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-2d26e987",
+  "ad": "Reeskont Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-2f124788",
+  "ad": "Yurt Dışı Lojistik Dağıtım Ağlarının Desteklenmesi",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-mevzuati",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-mevzuati",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   }
+  ]
+ },
+ {
+  "id": "yd-3a2ad7af",
+  "ad": "Mazot, Gübre Ve Toprak Analizi Desteği",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-4163bebe",
+  "ad": "Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası İşveren Hissesi Teşviki Uygulaması",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-418886e0",
+  "ad": "1005 Ulusal Yeni Fikirler Ve Ürünler Araştırma Destek Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "http://ardeb-",
+    "hata": "ConnectionError: HTTPConnectionPool(host='ardeb-', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPConnect"
+   },
+   {
+    "url": "http://ardeb-pbs.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://ardeb-pbs.tubitak.gov.tr/",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 71173,
+    "uzunluk": 2318,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "ARDEB Proje Başvuru Sistemi"
+   },
+   {
+    "url": "http://arbis.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://arbis.tubitak.gov.tr/",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 12873,
+    "uzunluk": 865,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "ARBİS - Araştırmacı Bilgi Sistemi"
+   }
+  ]
+ },
+ {
+  "id": "yd-43532d4b",
+  "ad": "ORKÖY Kredileri",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://edevlet.ogm.gov.tr/",
+    "hata": "ReadTimeout: HTTPSConnectionPool(host='edevlet.ogm.gov.tr', port=443): Read timed out. (read timeout=45)"
+   }
+  ]
+ },
+ {
+  "id": "yd-45f05725",
+  "ad": "Sektörel Gelişim Merkezi (SEGEM) Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-46d52585",
+  "ad": "4B (Bağ-Kur) 5 Puan Teşviki",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-46d56e27",
+  "ad": "Dahilde İşleme Rejimi",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/ihracat/mevzuat/dahilde-isleme-rejimi",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/ihracat/mevzuat/dahilde-isleme-rejimi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 60303,
+    "uzunluk": 7023,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-4795c846",
+  "ad": "İhracat Konsorsiyumu Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-04-14",
+  "linkler": []
+ },
+ {
+  "id": "yd-479b35fa",
+  "ad": "Yurt Dışı Mağazalar Yatırım Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-4a73b72d",
+  "ad": "Pazara Giriş Rapor Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 62722,
+    "uzunluk": 5835,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-4c0c104e",
+  "ad": "Özel Statülü Şirketler",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/destekler/ihracat-destekleri",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 63031,
+    "uzunluk": 5667,
+    "ifade": [
+     "leri Hakkında Karar Destek Üst Limitleri 2018/12 Sayılı Tarımsal Ürünlerde İhracat İadesi Yardımları Özel Statülü Şirketler Fuarlar Prefinansman Modeli ve İGE (Mülga) Karar/Tebliğ Bazında Destek Mevzuatı KEP ve E-İmza Usulü Hakkında Belgeler sadece mevzuatta belirtilen başvuru mercii kuruluşun KEP adresine iletilmelidir! KE"
+    ],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-4c625408",
+  "ad": "KOBİ Dijital Dönüşüm Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-508d186b",
+  "ad": "İşsizlik Ödeneği Alanların İstihdamı Halinde Sağlanan Teşvik Uygulaması",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-519337fe",
+  "ad": "Verimlilik Artırıcı Proje (VAP) Destek Programı",
+  "kurum": "Enerji ve Tabii Kaynaklar Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-54bfa568",
+  "ad": "Asgari Ücret Desteği",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-55191372",
+  "ad": "Sertifikalı Tohum, Fidan Kullanım Ve Sertifikalı Tohum Üretim Desteği",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-551b993a",
+  "ad": "Yeşil Mutabakata Uyum Projesi Desteği – Responsible® Programı",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 67315,
+    "uzunluk": 6873,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-5626ea68",
+  "ad": "Organik Tarım Ve İyi Tarım Uygulamaları Desteği",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-5719abc7",
+  "ad": "Kültür Varlığı Olarak Tescilli Taşınmazlara Proje Ve Uygulama Yardımı",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-5921d965",
+  "ad": "İhracat Alacakları İskonto Programı",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-596980c3",
+  "ad": "Çiftlik Muhasebe Veri Ağı Sistemi Katılım Desteği",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-59d00469",
+  "ad": "Aile Ve Çocuk Dostu Yapım Ve Dizilerin Teşvik Edilmesi",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-5cfe291c",
+  "ad": "Katılım Finans Yatırım Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-5fa8de23",
+  "ad": "Geleneksel Zeytin Bahçelerinin Rehabilitasyonu",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-60392673",
+  "ad": "Yurtdışına Götürülen Gönderilen Sigortalılara Uygulanan 5 Puanlık İndirim Desteği",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-610b6222",
+  "ad": "Sektörel Ticaret Heyeti Ve Alım Heyeti Destekleri",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 67194,
+    "uzunluk": 7218,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-683ee88e",
+  "ad": "İhracata Yönelik Yatırım Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-686210bb",
+  "ad": "Diğer Kredi Ürünleri",
+  "kurum": "Türkiye Kalkınma ve Yatırım Bankası",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": [
+   {
+    "url": "https://kalkinma.com.tr/",
+    "kod": 200,
+    "son": "https://kalkinma.com.tr/",
+    "tur": "text/html",
+    "boyut": 497579,
+    "uzunluk": 20791,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Anasayfa | Kalkınma Bankası"
+   }
+  ]
+ },
+ {
+  "id": "yd-6982f936",
+  "ad": "Sigortalı Alacağın Teminatına Dayalı Kredi Programı",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-6bc8450a",
+  "ad": "Yurt Dışı Müteahhitlik Hizmetleri Teminat Mektubu Programı",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-70150dee",
+  "ad": "Genç Girişimci Teşviki",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-71cab34b",
+  "ad": "1002 Hızlı Destek Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "http://ardeb-pbs.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://ardeb-pbs.tubitak.gov.tr/",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 71173,
+    "uzunluk": 2318,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "ARDEB Proje Başvuru Sistemi"
+   },
+   {
+    "url": "http://arbis.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://arbis.tubitak.gov.tr/",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 12873,
+    "uzunluk": 865,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "ARBİS - Araştırmacı Bilgi Sistemi"
+   }
+  ]
+ },
+ {
+  "id": "yd-740d8e1d",
+  "ad": "1704 Sanayi Yenilik Ağ Mekanizması (SAYEM) Yeşil Dönüşüm Çağrısı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-74491580",
+  "ad": "Yurt Dışı Müteahhitlik Hizmetleri Köprü Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-7d6feed4",
+  "ad": "Bilimsel Toplantı Düzenleme Bilimsel Etkinliğe Katılım Ve Kazı Yüzey Araştırmaları",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-7deff41e",
+  "ad": "Kültür Yatırımları Ve Girişimlerini Teşvik",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-7e37a246",
+  "ad": "Yurt Dışı Marka Tescil Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 63304,
+    "uzunluk": 5863,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-816d5b90",
+  "ad": "Engelli Sigortalı İstihdamında Sigorta Primi Teşviki",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-83008980",
+  "ad": "Pazara Giriş Belgesi Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 62812,
+    "uzunluk": 5857,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-8561cc8d",
+  "ad": "1515 Öncül Ar-Ge Laboratuvarları Destekleme Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-878f0f16",
+  "ad": "Yurt Dışı Teminat Mektubu Programı",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-8b9044e5",
+  "ad": "Tasarımcı Şirket Ve Tasarım Ofisi Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tasarimci-sirket-ve-tasarim-ofisi-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tasarimci-sirket-ve-tasarim-ofisi-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 64738,
+    "uzunluk": 6056,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-8d888b97",
+  "ad": "Tarım Sigortası Destekleri",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-",
+    "kod": 404,
+    "son": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-",
+    "tur": "text/html",
+    "boyut": 3154,
+    "uzunluk": 560,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Ziraat Bankası"
+   },
+   {
+    "url": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-tarim-sigortalari",
+    "kod": 200,
+    "son": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-tarim-sigortalari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 42275,
+    "uzunluk": 5822,
+    "ifade": [],
+    "tarih": [
+     "15.09.2023"
+    ],
+    "baslik": "Devlet Destekli Tarım Sigortaları | Hizmetlerimiz | Tarım | Kurumsal | Ziraat Bankası"
+   },
+   {
+    "url": "https://web.tarsim.gov.tr/havuz/",
+    "kod": 200,
+    "son": "https://www.tarsim.gov.tr",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 57559,
+    "uzunluk": 4805,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "TARSİM | Tarım Sigortaları"
+   }
+  ]
+ },
+ {
+  "id": "yd-8fbd6a12",
+  "ad": "Çeviri Ve Yayım Destek Programı (TEDA) Ve Edebiyat Eserlerini Destek Projesi (EDES)",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://teda.ktb.gov.tr/",
+    "kod": 200,
+    "son": "https://teda.ktb.gov.tr/",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 55917,
+    "uzunluk": 2849,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Teda - T.C. Kültür ve Turizm Bakanlığı"
+   },
+   {
+    "url": "https://teda.ktb.gov.tr/indirilen",
+    "kod": 404,
+    "son": "https://teda.ktb.gov.tr/indirilen",
+    "tur": "text/html",
+    "boyut": 1245,
+    "uzunluk": 195,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "404 - File or directory not found."
+   },
+   {
+    "url": "https://kygm.ktb.gov.tr/TR-138650/edebiyat-destek.html",
+    "kod": 200,
+    "son": "https://kygm.ktb.gov.tr?_Dil=1",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 124143,
+    "uzunluk": 11484,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Kütüphaneler ve Yayımlar Genel Müdürlüğü - T.C. Kültür ve Turizm Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-90928b40",
+  "ad": "Marka Ve TURQUALITY® Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   }
+  ]
+ },
+ {
+  "id": "yd-9108afc3",
+  "ad": "Atık Su Arıtma Tesisi Enerji Teşviki",
+  "kurum": "Çevre Şehircilik ve İklim Değişikliği Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-91c37357",
+  "ad": "İskur Destekleri",
+  "kurum": "İŞKUR",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-968b118c",
+  "ad": "İş Sağlığı Ve Güvenliği Hizmetlerinin Desteklenmesi",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-9bbb98cc",
+  "ad": "Döviz Kazandırıcı Hizmetler Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-9d1a775a",
+  "ad": "4 Puanlık İndirim Desteği",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-a132ddd4",
+  "ad": "Uluslararası Rekabetçiliğin Geliştirilmesi (UR-GE) Proje Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/ur-ge-proje-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/ur-ge-proje-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 62758,
+    "uzunluk": 5831,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-a1b1d75a",
+  "ad": "Proje Bazlı Teşvik Sistemi (2016/9495 Sayılı Karar)",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.sanayi.gov.tr/mevzuat/diger/mc0403018202",
+    "kod": 200,
+    "son": "https://www.sanayi.gov.tr/mevzuat/diger/mc0403018202",
+    "tur": "text/html",
+    "boyut": 2496,
+    "uzunluk": 36,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Sanayi ve Teknoloji Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-a5569b5f",
+  "ad": "Uluslararası Nakliyat Pazarlama Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-a624034b",
+  "ad": "Türkiye Bilişim Sektörünün Uluslararasılaşması Ve E-Turqualıty (Bilişimin Yıldızları) Programı",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/bilisim",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/bilisim",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   }
+  ]
+ },
+ {
+  "id": "yd-aa73efbf",
+  "ad": "1702 Patent Tabanlı Teknoloji Transferi Destekleme Çağrısı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eteydeb.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://eteydeb.tubitak.gov.tr/teydebanasayfa.htm",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 22624,
+    "uzunluk": 3158,
+    "ifade": [
+     "No: 51/C Çankaya/ANKARA PRODİS Giriş Yeni Kullanıcı Kaydı Gerekli Yazılımlar Sıkça Sorulan Sorular Elektronik İmza Mevzuat ve Belgeler Yardımcı Kılavuzlar YENİ Tamamlanmış Projeler İletişim Duyurular | Başarı Öyküleri | Tanıtım | E-Seminer "
+    ],
+    "tarih": [],
+    "baslik": "TÜBİTAK TEYDEB Proje Değerlendirme ve İzleme Sistemi - PRODİS"
+   }
+  ]
+ },
+ {
+  "id": "yd-abddf672",
+  "ad": "Özellikli İhracat Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-adba4cd2",
+  "ad": "Tarım Havzaları Üretim Ve Destekleme Modeli Fark Ödemesi Destekleri",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-b195854f",
+  "ad": "Dış Ticaret Şirketleri İhracat Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-b1b3882e",
+  "ad": "Hizmet İhracatının Tanımlanması, Sınıflandırılması Ve Desteklenmesi",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   }
+  ]
+ },
+ {
+  "id": "yd-b3c9ded0",
+  "ad": "Döviz Kazandırıcı Hizmet Sektörleri Markalaşma Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/destekler/hizmet-sektoru-desteklerihizmet-sektoru-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-destekleri/d%C3%B6viz-kazandirici-hizmet-sekt%C3%B6rleri-markalasma-destegi",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/404.html?aspxerrorpath=/destekler/hizmet-sektoru-desteklerihizmet-sektoru-destekleri/d%c3%b6viz-kazandirici-hizmet-sekt%c3%b6rleri-markalasma-destegi",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   }
+  ]
+ },
+ {
+  "id": "yd-b6fb2892",
+  "ad": "Yurt Dışı Pazar Araştırması Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 63460,
+    "uzunluk": 5940,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-bac4d7f4",
+  "ad": "Yurt Dışı Fuar Katılım Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-c10fbf7c",
+  "ad": "Küresel Rekabetçilik Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-c74eef87",
+  "ad": "Sanal Fuar Destekleri",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 63552,
+    "uzunluk": 6488,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-c75f8085",
+  "ad": "Enerji Ve Karbon Azaltımı (EKA) Destek Programı",
+  "kurum": "Enerji ve Tabii Kaynaklar Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-ccf28787",
+  "ad": "Teknolojik Ürün Deneyim (TUR) Belgesi Desteği",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-ce593411",
+  "ad": "1071-Uluslararası Araştırma Fonlarından Yararlanma Kapasitesinin Ve Uluslararası Ar-Ge İşbirliklerine Katılımın Arttırılmasına Yönelik Destek Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "http://uidb-pbs.tubitak.gov.tr/adresinden",
+    "kod": 200,
+    "son": "https://uidb-pbs.tubitak.gov.tr/pageNotFound",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 22370,
+    "uzunluk": 242,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "TÜBİTAK UIDB Başvuru Sistemi"
+   }
+  ]
+ },
+ {
+  "id": "yd-d00a5b2f",
+  "ad": "Sosyal Hizmetlerden Faydalanan Kişilerin İstihdamı Halinde Uygulanan Teşvik",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-d0597974",
+  "ad": "Sevk Öncesi İhracat Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-d14c839c",
+  "ad": "Kredi Garanti Fonu Ürünleri",
+  "kurum": "Kredi Garanti Fonu (KGF)",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-d5b7898e",
+  "ad": "Sevk Sonrası Reeskont Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-d929c738",
+  "ad": "Gemi Ve Yat Sektöründe Faaliyet Gösteren Şirketlere Tasarım Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   }
+  ]
+ },
+ {
+  "id": "yd-d9b98dc8",
+  "ad": "Kültür Yatırımları Ve Girişimlerine Sigorta Prim Teşviki",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-da11b78f",
+  "ad": "Şirket Ve Marka Alım Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   }
+  ]
+ },
+ {
+  "id": "yd-daa0590a",
+  "ad": "Tanıtım Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tanitim-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tanitim-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 63068,
+    "uzunluk": 5869,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-dc172c71",
+  "ad": "2634 Sayılı Turizm Teşvik Kanunu İle Sağlanan Destekler",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-dd76316d",
+  "ad": "İhtisas Serbest Bölgelerinde Sağlanan Destekler",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati",
+    "kod": 200,
+    "son": "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 60844,
+    "uzunluk": 5308,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-dd93b103",
+  "ad": "Ağaçlandırma Desteklemeleri",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-e033ed4e",
+  "ad": "Teknoloji Merkezi Destek Programı",
+  "kurum": "KOSGEB",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-10-17",
+  "linkler": []
+ },
+ {
+  "id": "yd-e1c64f7e",
+  "ad": "Yatırım Teşvik Sistemi (9903 Sayılı Karar)",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-19",
+  "linkler": []
+ },
+ {
+  "id": "yd-e2d7a435",
+  "ad": "İhracata Yönelik İşletme Sermayesi Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-e2e07cef",
+  "ad": "1831 - Yeşil İnovasyon Teknoloji Mentörlük Çağrısı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-e3abe6c4",
+  "ad": "1601 - Yenilik Ve Girişimcilik Alanlarında Kapasite Artırılmasına Yönelik Destek Programı (Teknoloji Transfer Profesyoneli İstihdamı Desteği Çağrısı)",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eteydeb.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://eteydeb.tubitak.gov.tr/teydebanasayfa.htm",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 22624,
+    "uzunluk": 3158,
+    "ifade": [
+     "No: 51/C Çankaya/ANKARA PRODİS Giriş Yeni Kullanıcı Kaydı Gerekli Yazılımlar Sıkça Sorulan Sorular Elektronik İmza Mevzuat ve Belgeler Yardımcı Kılavuzlar YENİ Tamamlanmış Projeler İletişim Duyurular | Başarı Öyküleri | Tanıtım | E-Seminer "
+    ],
+    "tarih": [],
+    "baslik": "TÜBİTAK TEYDEB Proje Değerlendirme ve İzleme Sistemi - PRODİS"
+   }
+  ]
+ },
+ {
+  "id": "yd-e44bcab1",
+  "ad": "1007 Kamu Kurumları Araştırma Ve Geliştirme Projelerini Destekleme Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "http://ardeb-pbs.tubitak.gov.tr",
+    "kod": 200,
+    "son": "https://ardeb-pbs.tubitak.gov.tr/",
+    "tur": "text/html;charset=UTF-8",
+    "boyut": 71173,
+    "uzunluk": 2318,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "ARDEB Proje Başvuru Sistemi"
+   }
+  ]
+ },
+ {
+  "id": "yd-e59440bb",
+  "ad": "Birim Kira Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 64180,
+    "uzunluk": 6127,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-e9e19357",
+  "ad": "Yatırımlarda Devlet Yardımları Hakkında Kararlar Çerçevesinde Uygulanan Sigorta Primi Teşviki",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-ec76bcf6",
+  "ad": "Tüm SGK Teşvikleri",
+  "kurum": "SGK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-ee86a6c3",
+  "ad": "Biyolojik Ve Biyoteknik Mücadele Desteği",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "kod": 200,
+    "son": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 302614,
+    "uzunluk": 8929,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Tarımsal Destekler"
+   }
+  ]
+ },
+ {
+  "id": "yd-eeac8332",
+  "ad": "1602 TÜBİTAK Patent Destek Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-ef00dc39",
+  "ad": "Marka Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-efb89ac8",
+  "ad": "Gemi İnşa Ve İhracatı Finans Programı",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-efc2d75d",
+  "ad": "İhracata Hazırlık Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-f0015114",
+  "ad": "KOBİ İhracata Hazırlık Kredisi",
+  "kurum": "Türk Eximbank",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "kod": 200,
+    "son": "https://eximbank.gov.tr/tr/faiz-ve-kar-payi-oranlari",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 59944,
+    "uzunluk": 4081,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Faiz ve Kar Payı Oranları - Türk Eximbank"
+   }
+  ]
+ },
+ {
+  "id": "yd-f209bb25",
+  "ad": "İşlenmiş Şu Ürünlerinin Desteklenmesi",
+  "kurum": "Tarım ve Orman Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "forms/yd-f209bb25.pdf",
+    "hata": "MissingSchema: Invalid URL 'forms/yd-f209bb25.pdf': No scheme supplied. Perhaps you meant https://forms/yd-f209bb25.pdf?"
+   }
+  ]
+ },
+ {
+  "id": "yd-f4e77887",
+  "ad": "Yurt Dışı Turizm Fuarlarına Katılımın Ve Turizm Tanıtma Ve Pazarlama Faaliyetlerinin Desteklenmesi",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-f5f1d3a3",
+  "ad": "OSB'lere Uygulanan Teşvik Ve Muafiyetler",
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2026-03-24",
+  "linkler": []
+ },
+ {
+  "id": "yd-f774d310",
+  "ad": "Sanal Ticaret Heyeti Desteği",
+  "kurum": "Ticaret Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/404.html?aspxerrorpath=/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+    "tur": "text/html",
+    "boyut": 5839,
+    "uzunluk": 27,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Internal Server Error"
+   },
+   {
+    "url": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi",
+    "kod": 200,
+    "son": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi",
+    "tur": "text/html; charset=utf-8",
+    "boyut": 65876,
+    "uzunluk": 6740,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "T.C. Ticaret Bakanlığı"
+   }
+  ]
+ },
+ {
+  "id": "yd-f77a0bca",
+  "ad": "Bilimsel Proje Desteği",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-f8540d98",
+  "ad": "1503 Proje Pazarları Destekleme Programı",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-fa4ab389",
+  "ad": "Ufuk Avrupa (Horizon Europe) Destekleri",
+  "kurum": "TÜBİTAK",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": [
+   {
+    "url": "https://ufukavrupa.org.tr",
+    "kod": 200,
+    "son": "https://ufukavrupa.org.tr/tr",
+    "tur": "text/html; charset=UTF-8",
+    "boyut": 102293,
+    "uzunluk": 9304,
+    "ifade": [],
+    "tarih": [],
+    "baslik": "Anasayfa | Ufuk Avrupa"
+   }
+  ]
+ },
+ {
+  "id": "yd-fc85b4fe",
+  "ad": "Fikri Mülkiyet Ve Kültür Endüstrilerine Yönelik Destekler",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ },
+ {
+  "id": "yd-fe5df282",
+  "ad": "Kültür Merkezleri Yapım Desteği",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "kaynak": "platform",
+  "son_basvuru": null,
+  "guncelleme": "2025-12-25",
+  "linkler": []
+ }
+]
