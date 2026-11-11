@@ -24,7 +24,7 @@
     ["il", [/^(il|sehir|bulundugu il|isletmenin bulundugu il|firma ili|il adi|il giriniz|faaliyette bulunulan il( ler)?)$/, /^il secin/, /\bil \/ ?ilce\b/]],
     ["soyad", [/^soy ?ad(i|iniz)?$/, /^soy ?isim/, /^last ?name$/, /^surname$/, /\blastname\b/]],
     ["ad", [/^ad(i|iniz)?$/, /^isim(iniz)?$/, /^first ?name$/, /\bfirstname\b/, /^given ?name$/]],
-    ["yetkili", [/yetkili (ad|kisi|isim)/, /(firma|isletme) sahibi/, /basvuru sahibi(nin)? (ad|isim)/, /temsilci/, /^ad ?soyad/, /^adi ?soyadi/, /^isim ?soyisim/, /iletisim kurulacak kisi/]],
+    ["yetkili", [/yetkili (ad|kisi|isim)/, /yetkili[a-z]* (ad|isim)/, /imza sahibi[a-z]* (ad|isim)/, /\badi (ve )?soyadi\b/, /(firma|isletme) sahibi/, /basvuru sahibi(nin)? (ad|isim)/, /temsilci/, /^ad ?soyad/, /^adi ?soyadi/, /^isim ?soyisim/, /iletisim kurulacak kisi/]],
     ["firmaUnvani", [/unvan/, /(firma|sirket|isletme|kurum|kurulus) (adi|ismi)/, /^firma$/, /^sirket$/]],
   ];
   const EK_AD = { ad: "Ad", soyad: "Soyadı", vergiBirlikte: "Vergi dairesi / no" };
@@ -181,6 +181,18 @@
       g.observe(document.documentElement, { childList: true, subtree: true });
       addEventListener("hashchange", () => setTimeout(tur, 500)); addEventListener("popstate", () => setTimeout(tur, 500));
     },
+    // PDF/Word formlarındaki etiket metninden profil alanını bulur (formdoldur.js kullanır)
+    etiketten(metin) {
+      const t = sade(String(metin || "").replace(/^[\s•·\-–*\d.)]+/, "").replace(/[:：]\s*$/, ""));
+      if (!t || t.length > 90 || /tebligat|\bkep\b|\buets\b|web|internet sitesi/.test(t)) return null;
+      if (/imza|kase|tarih|paraf/.test(t) && !/\b(ad|adi|soyad|soyadi|isim)\b/.test(t)) return null;   // "İmza", "Tarih" boş kalır; "imza sahibinin adı soyadı" doldurulur
+      if (/vergi (no|numara|kimlik)/.test(t)) return /daire/.test(t) ? "vergiBirlikte" : "vkn";  // "Vergi No / T.C. Kimlik No" gibi birleşik etiketler
+      if (ATLA.test(t)) return null;
+      for (const [k, kal] of ALAN) if (kal.some(r => r.test(t))) return k;
+      return null;
+    },
+    deger: (p, k) => deger(p, k),
+    alanAdi: (adlar, k) => adi(adlar, k),
     // Sağ tık menüsü: odaktaki alana seçilen bilgiyi yazar
     alanaYaz(profil, k, adlar = {}) {
       const el = document.activeElement;

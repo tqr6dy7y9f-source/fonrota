@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FonRota – PDF/Word formu doldur</title>
+<link rel="stylesheet" href="popup.css">
+<link rel="stylesheet" href="form.css">
+</head>
+<body class="sayfa">
+<header><img src="icons/32.png" alt="" width="22" height="22"><b>FonRota</b><span>PDF ve Word başvuru formu doldurucu</span></header>
+<main>
+  <h1>Başvuru formunu bilgilerinle doldur</h1>
+  <p class="muted">Kurumun PDF ya da Word (.docx) formunu yükle; firma bilgilerin boş alanlara yazılır ve doldurulmuş kopyası sana verilir. Dosya bilgisayarından dışarı gönderilmez. Kurumun formu değiştirilmez; yalnızca boş alanlara yazılır.</p>
+  <div id="profil" class="kutu"></div>
+  <div id="kaynak" class="kutu" hidden></div>
+  <label class="birak" id="birak" for="dosya">
+    <b>PDF ya da Word dosyasını buraya sürükle</b>
+    <span>ya da tıklayıp seç (.pdf, .docx)</span>
+    <input id="dosya" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+  </label>
+  <div id="durum" role="status"></div>
+  <div id="sonuc"></div>
+  <p class="muted not">Doldurulan değerleri mutlaka kontrol et. İmza, kaşe, tarih ve kimlik numarası alanlarına dokunulmaz; bunları sen doldurursun. Formu kurumun istediği yoldan (e-posta, KEP, elden) <b>kendin</b> gönderirsin.</p>
+</main>
+<script src="ayar.js"></script>
+<script src="ortak.js"></script>
+<script src="doldur.js"></script>
+<script src="lib/pdf-lib.min.js"></script>
+<script src="lib/fontkit.umd.min.js"></script>
+<script src="lib/pdf.min.js"></script>
+<script src="lib/jszip.min.js"></script>
+<script src="formdoldur.js"></script>
+<script src="form.js"></script>
+</body>
+</html>

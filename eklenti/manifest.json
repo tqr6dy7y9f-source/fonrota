@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "FonRota – Başvuru Formu Doldurucu",
   "short_name": "FonRota",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "FonRota hesabındaki firma bilgileriyle online başvuru formlarını tek tıkla doldurur. Formu göndermez; kontrol edip sen gönderirsin.",
   "default_locale": "tr",
   "icons": {

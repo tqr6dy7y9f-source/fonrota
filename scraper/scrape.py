@@ -331,8 +331,8 @@ def main():
         "destekler": sorted(active, key=lambda i: i.get("son_basvuru") or "9999"),
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     # Artık hiçbir kaydın kullanmadığı indirilmiş formları sil
-    used = {i["basvuru"].get("form") for i in active}
-    for f in FORMS.glob("*.pdf"):
+    used = {i["basvuru"].get("form") for i in active} | {f["dosya"] for i in active for f in (i["basvuru"].get("formlar") or [])}
+    for f in [*FORMS.glob("*.pdf"), *FORMS.glob("*.docx")]:
         if f"forms/{f.name}" not in used and not f.name.startswith("kosgeb-ornek"):
             f.unlink()
     new_ids = [i["id"] for i in active if i["id"] not in old_ids] if old_ids else []

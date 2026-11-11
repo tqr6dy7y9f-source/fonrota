@@ -489,7 +489,8 @@ async function saveFile(filename, bytes) {
     try { const dl = await window.claude.use("downloads"); if (dl) { await dl.save({ filename, data: new Blob([bytes]) }); return true; } }
     catch (e) { if (e && e.code === "declined") return false; }
   }
-  const url = URL.createObjectURL(new Blob([bytes], { type: "application/pdf" }));
+  const tip = /\.docx$/i.test(filename) ? "application/vnd.openxmlformats-officedocument.wordprocessingml.document" : "application/pdf";
+  const url = URL.createObjectURL(new Blob([bytes], { type: tip }));
   const a = Object.assign(document.createElement("a"), { href: url, download: filename }); document.body.append(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 4000); return true;
 }
@@ -539,9 +540,27 @@ async function writePdf(doc, f, blocks, title) {
   const pages = doc.getPages(); pages.forEach((pg, i) => pg.drawText(`${today()}   ·   Sayfa ${i + 1} / ${pages.length}`, { x: M, y: 26, size: 8, font: f.r, color: mut }));
 }
 
+/* ---------- PDF / Word başvuru formu doldurucu (eklentiyle aynı motor: eklenti/formdoldur.js) ---------- */
+const FORM_KOK = "eklenti/";
+async function formMotoru() {
+  for (const f of ["doldur.js", "lib/pdf-lib.min.js", "lib/fontkit.umd.min.js", "lib/pdf.min.js", "lib/jszip.min.js", "formdoldur.js"]) await loadScript(FORM_KOK + f);
+  window.FormDoldur.kok = FORM_KOK; return window.FormDoldur;
+}
+const alanAdlari = () => Object.fromEntries(Object.entries(ALANLAR).map(([k, v]) => [k, v.e]));
+// bytes: ArrayBuffer; döner: { tur, blob, uzanti, dolan:[{alan, etiket, deger}], bos:[] }
+async function belgeDoldur(bytes, ad, values) { const FD = await formMotoru(); return FD.doldur(bytes, ad, values, alanAdlari()); }
+// Programın doldurulabilir başvuru belgeleri (toplayıcının indirdiği PDF/Word formları)
+function formlar(x) { return (x.basvuru && x.basvuru.formlar) || []; }
+
 async function fillForm(x, values) {
   const { PDFDocument, PDFTextField } = await pdfLibs();
-  const doc = await PDFDocument.load(await asset(x.basvuru.form));
+  const kaynak = await asset(x.basvuru.form);
+  // Kısa belgelerde (gerçek formlar) etiketlerden doldurmayı dene; uzun belgeler (uygulama esasları, çağrı metni) form değildir
+  try {
+    const sayfa = (await PDFDocument.load(kaynak, { ignoreEncryption: true })).getPageCount();
+    if (sayfa <= 8) { const r = await belgeDoldur(kaynak.slice ? kaynak.slice(0) : kaynak, x.basvuru.form, { ...values }); if (r.dolan.length) return { bytes: new Uint8Array(await r.blob.arrayBuffer()), filled: r.dolan.length }; }
+  } catch (e) { console.warn("Form motoru:", e); }
+  const doc = await PDFDocument.load(kaynak);
   const f = await fonts(doc); const form = doc.getForm();
   const base = x.basvuru.form.split("/").pop().replace(/\.pdf$/i, "");
   const map = (await assetJSON(`forms/maps/${base}.json`)) || {};
@@ -735,5 +754,5 @@ async function naceAra(q, n = 8) {
   return r.filter(o => o.p >= en * .55).slice(0, n).map(o => o.x);
 }
 
-window.DB = { C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, yonetici, basvuruSistemi, naceAra, naceVeri, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
+window.DB = { belgeDoldur, formlar, C, BUNDLE, $, $$, esc, low, tl, short, num, sfx, toast, today, ILLER, OLCEK, SEKTOR, AMAC, TUR, SIRKET, ALANLAR, params, href, link, go, data, byId, LS, Store, classify, check, LEVEL_TAG, daysLeft, ruleAnalyze, aiAvailable, ai, saveFile, fillForm, infoPdf, writePdf, pdfLibs, fonts, plan, chartSVG, ozChart, checkNew, enablePush, asset, lang, setLang, kitleUyar, kitleMetni, ON_KOSUL, onKosullar, TEMEL_BELGE, yonetici, basvuruSistemi, naceAra, naceVeri, SOZLUK, terim, icsDosya, indir, siteUrl, profilDoluluk };
 })();

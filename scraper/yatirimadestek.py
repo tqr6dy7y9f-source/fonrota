@@ -154,6 +154,51 @@ def kurum_adi(s):
     return " ".join(w(x) for x in s.split())
 
 
+# Başvuruda doldurulacak belgeler (PDF ve Word). Site ve eklenti bunları kullanıcının bilgileriyle doldurur.
+FORM_AD = re.compile(r"form|basvuru[_\- ]?dosya|dilekce|dilekçe|taahhutname|taahhütname|beyan|niyet")
+FORM_DEGIL = re.compile(r"^ozet|usul|esaslar|talimat|teblig|tebliğ|karar|yonetmelik|yönetmelik|kilavuz|kılavuz|evrak_listesi|evrak-listesi|alanlari|alanları|uretim_dallari")
+# Dosya adından okunur başlık: "ek-ii_basvuru_formu.doc" -> "Ek-II başvuru formu"
+TR_KELIME = {"basvuru": "başvuru", "isletme": "işletme", "beyani": "beyanı", "sirket": "şirket", "dosyasi": "dosyası", "formlari": "formları",
+             "urunlerinin": "ürünlerinin", "islenmis": "işlenmiş", "dokuman": "doküman", "formati": "formatı", "baslikli": "başlıklı",
+             "dilekcesi": "dilekçesi", "taahhutnamesi": "taahhütnamesi", "ozel": "özel", "bilgi": "bilgi", "cizelge": "çizelge"}
+def okunur_ad(ad):
+    t = re.sub(r"[_\-]+", " ", ad.rsplit(".", 1)[0]).strip()
+    t = re.sub(r"\b\d{6}\b", "", t)                                   # 231206 gibi tarih kodları
+    t = re.sub(r"\bek (i{1,3}|iv|v|\d+)\b", lambda m: "Ek-" + (m[1].upper() if not m[1].isdigit() else m[1]), t, flags=re.I)
+    t = re.sub(r"\bar ge\b", "Ar-Ge", t, flags=re.I); t = re.sub(r"\bvap\b", "VAP", t, flags=re.I)
+    t = " ".join(TR_KELIME.get(w.lower(), w) for w in t.split())
+    t = re.sub(r"^\d+\s+", "", t).strip()
+    return (t[:1].upper() + t[1:])[:90]
+
+def formlari_indir(pid, docs):
+    """Form benzeri belgeleri forms/ altına indirir; eski Word (.doc) varsa LibreOffice ile .docx'e çevirir."""
+    import shutil, subprocess, tempfile
+    out = []
+    for d in docs:
+        ad = d["ad"]; uz = ad.rsplit(".", 1)[-1].lower() if "." in ad else ""
+        if uz not in ("pdf", "doc", "docx") or not FORM_AD.search(low(ad)) or FORM_DEGIL.search(low(ad)): continue
+        slug = re.sub(r"[^a-z0-9]+", "-", low(ad.rsplit(".", 1)[0]).translate(str.maketrans("çğıöşü", "cgiosu"))).strip("-")[:50]
+        hedef = f"{pid}-{slug}"
+        try:
+            rr = session.get(d["url"], timeout=60)
+            if not rr.ok or len(rr.content) > MAX_PDF: continue
+            b = rr.content
+            if uz == "pdf" and b[:4] != b"%PDF": continue
+            FORMS.mkdir(exist_ok=True)
+            if uz == "doc":
+                if not shutil.which("soffice") or b[:2] != b"\xd0\xcf": continue
+                with tempfile.TemporaryDirectory() as t:
+                    (Path(t) / "f.doc").write_bytes(b)
+                    subprocess.run(["soffice", "--headless", "--convert-to", "docx", "--outdir", t, str(Path(t) / "f.doc")], capture_output=True, timeout=120)
+                    if not (Path(t) / "f.docx").exists(): continue
+                    b = (Path(t) / "f.docx").read_bytes(); uz = "docx"
+            if uz == "docx" and b[:2] != b"PK": continue
+            (FORMS / f"{hedef}.{uz}").write_bytes(b)
+            out.append({"ad": okunur_ad(ad), "dosya": f"forms/{hedef}.{uz}", "tur": uz, "kaynak": d["url"]})
+        except Exception as e:
+            print("  form indirilemedi:", ad, e)
+    return out
+
 def bagla(metin):
     """Platform metninde satır sonunda bölünmüş bağlantıları birleştirir:
     'https://…/ihracat-destekleri- hakkinda-karar' -> 'https://…/ihracat-destekleri-hakkinda-karar'.
@@ -325,6 +370,7 @@ def build(url, info, sec, docs):
     online = next(iter(re.findall(r"https?://[^\s)]+", bagla(yer))), url).rstrip(".,;")
     form = next((d for d in docs if re.search(r"form", low(d["ad"])) and not low(d["ad"]).startswith("ozet") and d["ad"].lower().endswith(".pdf")), None)
     pid = "yd-" + url.rsplit("/", 1)[1][:8]
+    formlar = formlari_indir(pid, docs)
     form_path = None
     if form:
         try:
@@ -348,7 +394,7 @@ def build(url, info, sec, docs):
         "kosullar": kosullar,
         "belgeler": [],  # resmi metinde yoksa uydurma belge listesi gösterme; resmi belgeler "resmi.belgeler"de
         "alanlar": ["firmaUnvani", "vkn", "vergiDairesi", "yetkili", "telefon", "eposta", "adres", "il", "kurulusYili", "sirketTuru", "naceKodu", "calisan", "ciro"],
-        "basvuru": {"yontem": "pdf" if form_path else "online", "form": form_path, "online": online,
+        "basvuru": {"yontem": "pdf" if form_path else "online", "form": form_path, "online": online, "formlar": formlar,
                     "adimlar": [l.lstrip("•– ") for l in yer.split("\n") if l.strip()][:6]},
         "kredi": None,
         "kaynak": "platform",

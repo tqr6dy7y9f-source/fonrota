@@ -17,6 +17,7 @@ jobs:
       - name: Destekler Platformu için tarayıcı ve PDF aracı
         run: |
           sudo apt-get install -y poppler-utils >/dev/null
+          sudo apt-get install -y -qq libreoffice-writer-nogui >/dev/null || true   # eski Word (.doc) formlarını .docx'e çevirmek için
           python -m playwright install --with-deps chromium >/dev/null
       - name: Destekler Platformu'nu tara (yatirimadestek.gov.tr)
         run: python scraper/yatirimadestek.py

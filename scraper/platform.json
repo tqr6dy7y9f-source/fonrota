@@ -1935,6 +1935,14 @@
    "adimlar": [
     "193, 5520 ve 5746 sayılı kanunlarla sağlanan Ar-Ge indiriminden yararlanmak için T.C. Hazine ve Maliye Bakanlığı Gelir İdaresi Başkanlığına başvuru yapılır. TÜBİTAK’a başvuru yapılmaz.",
     "Maliye Bakanlığı Gelir İdaresi Başkanlığı, mükellef tarafından başvurusu yapılmış Ar-Ge İndirimine konu projenin, Ar-Ge faaliyeti olup olmadığına ilişkin değerlendirmesini yapmak üzere TÜBİTAK’a gönderir."
+   ],
+   "formlar": [
+    {
+     "ad": "Ek-1 Ar-Ge projesi başlıklı doküman formatı",
+     "dosya": "forms/yd-21ed6aad-ek-1-ar-ge-projesi-baslikli-dokuman-formati.pdf",
+     "tur": "pdf",
+     "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ek-1_ar-ge_projesi_baslikli_dokuman_formati.pdf"
+    }
    ]
   },
   "kredi": null,
@@ -3627,6 +3635,20 @@
    "online": "https://ticaret.gov.tr/destekler/ihracat-destekleri",
    "adimlar": [
     "Ticaret Bakanlığı İhracat Genel Müdürlüğü Link: https://ticaret.gov.tr/destekler/ihracat-destekleri"
+   ],
+   "formlar": [
+    {
+     "ad": "Ek-II başvuru formu",
+     "dosya": "forms/yd-4c0c104e-ek-ii-basvuru-formu.docx",
+     "tur": "docx",
+     "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ek-ii_basvuru_formu.doc"
+    },
+    {
+     "ad": "Ek-III şirket faaliyet formu",
+     "dosya": "forms/yd-4c0c104e-ek-iii-sirket-faaliyet-formu.docx",
+     "tur": "docx",
+     "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ek-iii_sirket_faaliyet_formu.doc"
+    }
    ]
   },
   "kredi": null,
@@ -3896,7 +3918,15 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04",
-   "adimlar": []
+   "adimlar": [],
+   "formlar": [
+    {
+     "ad": "VAP başvuru dosyası ve ekleri",
+     "dosya": "forms/yd-519337fe-2-vap-basvuru-dosyasi-ve-ekleri.docx",
+     "tur": "docx",
+     "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/2-vap_basvuru_dosyasi_ve_ekleri.docx"
+    }
+   ]
   },
   "kredi": null,
   "kaynak": "platform",
@@ -11006,6 +11036,20 @@
    "adimlar": [
     "KOBİ, uzman desteği alacağı Çözüm Ortağını belirledikten sonra başvurusunu TÜBİTAK’a sunabilecektir. Başvurular çevrimiçi olarak PRODİS üzerinden gönderilecektir.",
     "Bilgi için: yesilsanayi.mentor@tubitak.gov.tr"
+   ],
+   "formlar": [
+    {
+     "ad": "Ek-1 işletme beyanı",
+     "dosya": "forms/yd-e2e07cef-ek-1-isletme-beyani.docx",
+     "tur": "docx",
+     "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ek-1_isletme_beyani.doc"
+    },
+    {
+     "ad": "Niyet beyanı formu",
+     "dosya": "forms/yd-e2e07cef-niyet-beyani-formu-231206.docx",
+     "tur": "docx",
+     "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/niyet_beyani_formu_231206.docx"
+    }
    ]
   },
   "kredi": null,
@@ -12281,6 +12325,14 @@
    "online": "https://yatirimadestek.gov.tr/program/f209bb25-3842-4bb2-9e28-b83e8423507d",
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri"
+   ],
+   "formlar": [
+    {
+     "ad": "Başvuru formları işlenmiş su ürünlerinin desteklenmesi",
+     "dosya": "forms/yd-f209bb25-basvuru-formlari-islenmis-su-urunlerinin-desteklen.pdf",
+     "tur": "pdf",
+     "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/basvuru-formlari-islenmis_su_urunlerinin_desteklenmesi.pdf"
+    }
    ]
   },
   "kredi": null,

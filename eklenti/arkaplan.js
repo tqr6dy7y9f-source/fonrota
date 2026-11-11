@@ -4,7 +4,13 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.removeAll(() => {
     chrome.contextMenus.create({ id: "fonrota", title: "FonRota ile doldur", contexts: ["editable"] });
     Object.entries(ALAN_ADI).forEach(([k, ad]) => chrome.contextMenus.create({ id: "f:" + k, parentId: "fonrota", title: ad, contexts: ["editable"] }));
+    // Kurum sayfasındaki PDF/Word form bağlantısı: indirip bilgilerle doldurur
+    chrome.contextMenus.create({ id: "belge", title: "FonRota ile bu PDF/Word formunu doldur", contexts: ["link"],
+      targetUrlPatterns: ["*://*/*.pdf", "*://*/*.pdf?*", "*://*/*.PDF", "*://*/*.docx", "*://*/*.docx?*", "*://*/*.doc", "*://*/*.doc?*"] });
   });
+});
+chrome.contextMenus.onClicked.addListener(info => {
+  if (info.menuItemId === "belge" && info.linkUrl) chrome.tabs.create({ url: chrome.runtime.getURL("form.html?url=" + encodeURIComponent(info.linkUrl)) });
 });
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
   if (!String(info.menuItemId).startsWith("f:") || !tab) return;

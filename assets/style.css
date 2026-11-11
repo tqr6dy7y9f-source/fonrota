@@ -437,3 +437,11 @@ footer.site .alt-baglanti a{font-weight:600;color:var(--seal-ink)}
 /* Başvuru sistemi kutusu */
 .sistem-kutu{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;text-align:left}
 .adimlar{margin:4px 0 0;padding-left:18px;text-align:left}.adimlar li{margin:2px 0}
+
+/* PDF / Word başvuru formu kutusu (başvuru sayfası) */
+.belge-kutu{margin:4px 0 16px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.belge-kutu h3{margin:0 0 6px;font-size:15px}
+.belge{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px solid var(--line)}
+.belge span{min-width:0;overflow-wrap:anywhere;font-size:13.5px}
+.belge-yukle{display:inline-block;margin-top:8px;cursor:pointer}
+#belge-sonuc{margin-top:8px}

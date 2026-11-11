@@ -819,10 +819,12 @@ P.basvuru = async () => {
           <ol class="small muted adimlar"><li>Site yeni sekmede açılır${sis.giris ? `; <b>${esc(sis.giris)}</b> ile kendin giriş yap (şifrene dokunmayız)` : ""}.</li><li>Başvuru formuna geç. Her adımda firma bilgilerin kendiliğinden yazılır.</li><li>Dolmayan bir alan olursa alana tıkla, sağdaki <b>FonRota</b> panelinden bilgiyi seç.</li><li>Kontrol et ve formu kendin gönder.</li></ol>`
           : `<a class="btn ghost" href="${esc(sis.url)}" target="_blank" rel="noopener" id="open-site">Başvuru sitesini aç ↗</a><p class="small muted" style="margin:0">💡 <a ${link("eklenti")}>FonRota eklentisini</a> kurarsan bu sitedeki form bilgilerinle kendiliğinden dolar.</p>`}`; })() : ""}
       </div>
+      ${belgeKutusu(x)}
       <label class="small muted" for="durum">Başvuru durumu</label>
       <select class="input" id="durum">${["Hazırlanıyor", "Form hazır", "Başvurdum", "Sonuçlandı"].map(s => `<option${s === (app.durum || "Hazırlanıyor") ? " selected" : ""}>${s}</option>`).join("")}</select>
       ${!pdfOk && mode !== "bilgi" ? `<h3 style="margin-top:22px">Hangi alana ne yazılacak</h3><ul class="copy-list">${x.alanlar.map(k => `<li><span>${esc(ALANLAR[k]?.e)}</span><span>${values[k] ? esc(values[k]) : '<em class="missing">boş</em>'}</span>${values[k] ? `<button class="btn ghost sm" type="button" data-copy="${esc(values[k])}">Kopyala</button>` : "<span></span>"}</li>`).join("")}</ul>` : ""}`;
     $("#durum").onchange = async e => { app.durum = e.target.value; await persist(e.target.value); toast("Durum kaydedildi."); };
+    belgeKutusuBagla(x, async () => { await persist().catch(() => {}); return { ...p, ...Object.fromEntries(Object.entries(values).filter(([, v]) => v)) }; });
     $$("[data-copy]").forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "Kopyalandı"; setTimeout(() => b.textContent = "Kopyala", 1500); } catch { toast("Kopyalanamadı; metni seçip kopyala."); } });
     if ($("#open-site")) $("#open-site").onclick = async e => {
       await persist("Hazırlanıyor").catch(() => {});
@@ -861,6 +863,42 @@ P.basvuru = async () => {
 };
 
 /* ---------- Başvuru özet raporu ---------- */
+/* ---------- PDF / Word başvuru formları: programın formları + kullanıcının yüklediği form ---------- */
+function belgeKutusu(x) {
+  const fl = D.formlar(x);
+  return `<div class="belge-kutu"><h3>PDF / Word başvuru formu</h3>
+    ${fl.length ? `<p class="small muted" style="margin:0 0 6px">Kurumun yayımladığı form${fl.length > 1 ? "lar" : ""}. Bilgilerinle doldurulmuş kopyasını indir, kontrol et, imzala.</p>
+      ${fl.map((f, i) => `<div class="belge"><span>📄 ${esc(f.ad)} <small class="muted">${esc(f.tur.toUpperCase())}</small></span><button class="btn ghost sm" type="button" data-belge="${i}">Bilgilerimle doldur</button></div>`).join("")}`
+      : `<p class="small muted" style="margin:0 0 6px">Kurumdan PDF ya da Word formu aldıysan yükle; boş alanları bilgilerinle dolduralım.</p>`}
+    <label class="btn ghost sm belge-yukle" for="belge-yukle">${fl.length ? "Başka bir formu yükle" : "Formu yükle"} (PDF / Word)</label>
+    <input type="file" id="belge-yukle" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+    <div id="belge-sonuc" class="small" role="status"></div>
+    <p class="small muted" style="margin:6px 0 0">Dosya bilgisayarından dışarı gönderilmez. İmza, kaşe, tarih ve kimlik numarasını sen doldurursun.</p></div>`;
+}
+function belgeKutusuBagla(x, degerler) {
+  const sonuc = $("#belge-sonuc"); if (!sonuc) return;
+  const isle = async (bytes, ad, dugme) => {
+    if (dugme) { dugme.disabled = true; dugme.dataset.eski = dugme.textContent; dugme.textContent = "Dolduruluyor…"; }
+    sonuc.textContent = "Form dolduruluyor…";
+    try {
+      const r = await D.belgeDoldur(bytes, ad, await degerler());
+      const yeni = window.FormDoldur.dosyaAdi(ad, r.uzanti), b = new Uint8Array(await r.blob.arrayBuffer());
+      await D.saveFile(yeni, b);
+      sonuc.innerHTML = r.dolan.length
+        ? `<b style="color:var(--ok)">✓ ${r.dolan.length} alan dolduruldu</b> (${esc([...new Set(r.dolan.map(d => d.alan))].join(", "))}). <b>${esc(yeni)}</b> indirildi.${r.uzanti === "docx" ? " Kurum PDF istiyorsa Word’de Dosya › Farklı Kaydet › PDF." : ""}${r.bos.length ? `<br><span class="muted">Profilinde boş: ${esc(r.bos.join(", "))}.</span>` : ""}`
+        : `Bu formda tanıdığım bir alan bulamadım (taranmış resim olabilir). Dosya olduğu gibi indirildi; alanları elle doldur.`;
+    } catch (e) { sonuc.innerHTML = `<span class="missing">${esc(e.message || "Form doldurulamadı.")}</span>`; }
+    if (dugme) { dugme.disabled = false; dugme.textContent = dugme.dataset.eski; }
+  };
+  $$("[data-belge]").forEach(b => b.onclick = async () => {
+    const f = D.formlar(x)[+b.dataset.belge];
+    try { const r = await fetch(f.dosya); if (!r.ok) throw new Error(); await isle(await r.arrayBuffer(), f.dosya.split("/").pop(), b); }
+    catch { sonuc.innerHTML = `<span class="missing">Form şu an alınamadı.</span> <a href="${esc(f.kaynak)}" target="_blank" rel="noopener">Kurumun sitesinden indir ↗</a> ve “Formu yükle” ile doldur.`; }
+  });
+  const yukle = $("#belge-yukle");
+  yukle.onchange = async () => { const f = yukle.files[0]; if (f) await isle(await f.arrayBuffer(), f.name, null); yukle.value = null; };
+}
+
 /* ---------- FonRota eklentisiyle bağlantı ---------- */
 const eklentiVar = () => !!document.documentElement.dataset.fonrotaEklenti;
 // Eklenti kuruluysa kurumun sayfasını açtırır ve form kendiliğinden dolar. Profil siteden gönderilir (eklentide ayrıca giriş gerekmez).
@@ -890,7 +928,7 @@ async function eklentiyeHesabiBildir() {
 /* ---------- Eklenti sayfası ---------- */
 P.eklenti = async () => {
   const ua = navigator.userAgent, chromium = /Chrome\/|Edg\//.test(ua) && !/Mobile/.test(ua), telefon = /iPhone|iPad|Android|Mobile/.test(ua);
-  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.4 · Ücretsiz · Mağaza gerektirmez";
+  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.5 · Ücretsiz · Mağaza gerektirmez";
   const dene = $("#dene");
   dene.onclick = async e => {
     if (!eklentiVar()) return;  // eklenti yoksa bağlantı deneme formunu normal açar

@@ -2,18 +2,24 @@
 const kok = document.getElementById("kok");
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
+const BELGE = /\.(pdf|docx?)([?#]|$)/i;
+const formSayfasi = url => chrome.tabs.create({ url: chrome.runtime.getURL("form.html" + (url ? "?url=" + encodeURIComponent(url) : "")) });
 async function ciz() {
   const kayit = await depo.al("profil");
   if (!kayit) return girisCiz();
+  const [sekme] = await chrome.tabs.query({ active: true, currentWindow: true });
+  const belge = sekme && sekme.url && (BELGE.test(sekme.url) || (/^file:/.test(sekme.url) && /\.(pdf|docx?)$/i.test(sekme.url)));
   const p = kayit.p, dolu = Object.keys(ALAN_ADI).filter(k => p[k]);
   kok.innerHTML = `<h2>${esc(p.firmaUnvani || "Firma bilgilerin")}</h2>
     <p class="muted">${esc(kayit.hesap || kayit.email)} · ${dolu.length}/${Object.keys(ALAN_ADI).length} bilgi dolu${kayit.kaynak === "site" ? " · sitedeki hesabından" : ""}</p>
     <p>Başvuru formunu aç, sonra aşağıdaki düğmeye bas. Doldurulan alanlar altın renkle işaretlenir; <b>kontrol edip formu kendin gönder.</b></p>
-    <button class="ana" id="doldur">Bu sayfayı doldur</button>
+    ${belge ? `<button class="ana" id="belge">Bu PDF/Word formunu doldur</button><p class="muted" style="margin-top:6px">Doldurulmuş kopyası yeni sekmede açılır.</p>` : `<button class="ana" id="doldur">Bu sayfayı doldur</button>`}
     <div id="sonuc"></div>
+    ${belge ? "" : `<button class="kucuk" id="pdf" style="width:100%;margin-top:8px">📄 PDF ya da Word başvuru formu doldur</button>`}
     <p class="muted" style="margin-top:10px">Bir alan dolmadıysa o alana sağ tıkla › <b>FonRota ile doldur</b> › bilgiyi seç.</p>
     <div class="satir"><button class="kucuk" id="yenile">Profili yenile</button><a href="${AYAR.SITE_URL}hesap.html?sekme=profil" target="_blank">Profili düzenle</a><button class="kucuk" id="cikis">Çıkış</button></div>`;
-  document.getElementById("doldur").onclick = doldur;
+  if (belge) document.getElementById("belge").onclick = () => formSayfasi(sekme.url);
+  else { document.getElementById("doldur").onclick = doldur; document.getElementById("pdf").onclick = () => formSayfasi(""); }
   document.getElementById("yenile").onclick = async () => {
     if (!(await depo.al("oturum"))) { chrome.tabs.create({ url: AYAR.SITE_URL + "hesap.html?sekme=profil" }); return goster(`<div class="sonuc">FonRota sitesini açtım. Sitede hangi hesapla giriş yaptıysan eklenti onun bilgilerini kullanır.</div>`); }
     try { await profilYenile(); ciz(); } catch (e) { goster(`<span class="hata">${esc(e.message)}</span>`); } };

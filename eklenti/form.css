@@ -1,0 +1,19 @@
+body.sayfa{width:auto;min-height:100vh}
+body.sayfa main{max-width:720px;margin:0 auto;padding:22px 18px 40px}
+h1{font-size:22px;margin:4px 0 8px}
+.kutu{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:14px 0}
+.kutu b{display:block}
+.birak{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;border:2px dashed var(--line);border-radius:14px;padding:28px 16px;margin:14px 0;background:var(--surface);cursor:pointer;font-weight:400}
+.birak b{font-size:16px}.birak span{color:var(--muted);font-size:13px}
+.birak.uzerinde{border-color:var(--seal);background:var(--seal-soft)}
+.birak input{position:absolute;width:1px;height:1px;opacity:0}
+.birak:focus-within{outline:2px solid var(--seal);outline-offset:2px}
+#durum{min-height:1.4em;margin:6px 0;color:var(--muted)}
+.dugmeler{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.dugmeler a,.dugmeler button{display:inline-block;text-decoration:none;font-weight:700;border-radius:9px;padding:9px 14px;border:1px solid var(--seal);background:var(--seal);color:#1b1305}
+.dugmeler a.ikincil{background:var(--surface);color:var(--ink);border-color:var(--line)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+td.d{font-weight:600}
+.not{margin-top:18px}
