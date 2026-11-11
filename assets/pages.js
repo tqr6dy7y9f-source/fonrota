@@ -873,10 +873,24 @@ function eklentiyleAc(url, profil, ad) {
   });
 }
 
+// Sitede hangi hesap açıksa eklenti de onun bilgilerini kullansın: her sayfa açılışında güncel profil (ya da çıkış) bildirilir.
+// Eklenti kurulu değilse mesajı dinleyen olmaz, bir şey olmaz.
+const gecerliEposta = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v || "").trim());
+async function eklentiyeHesabiBildir() {
+  try {
+    const u = await Store.user();
+    if (!u) return postMessage({ kaynak: "fonrota-site", tip: "cikis" }, location.origin);
+    const p = { ...((await Store.profile()) || {}) }; delete p.sartlar;
+    if (!gecerliEposta(p.eposta)) p.eposta = u.email;
+    if (!p.yetkili && u.ad) p.yetkili = u.ad;
+    postMessage({ kaynak: "fonrota-site", tip: "profil", hesap: u.email, profil: p }, location.origin);
+  } catch (e) { /* eklenti bildirimi sayfayı etkilemesin */ }
+}
+
 /* ---------- Eklenti sayfası ---------- */
 P.eklenti = async () => {
   const ua = navigator.userAgent, chromium = /Chrome\/|Edg\//.test(ua) && !/Mobile/.test(ua), telefon = /iPhone|iPad|Android|Mobile/.test(ua);
-  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.3 · Ücretsiz · Mağaza gerektirmez";
+  $("#eklenti-not").textContent = eklentiVar() ? `✓ Eklenti bu tarayıcıda kurulu (sürüm ${document.documentElement.dataset.fonrotaEklenti}).` : telefon ? "Eklenti bilgisayardaki Chrome veya Edge için. Bu sayfayı bilgisayarında aç." : !chromium ? "Bu tarayıcı eklentiyi desteklemiyor; Chrome veya Edge ile aç." : "Sürüm 1.4 · Ücretsiz · Mağaza gerektirmez";
   const dene = $("#dene");
   dene.onclick = async e => {
     if (!eklentiVar()) return;  // eklenti yoksa bağlantı deneme formunu normal açar
@@ -1033,6 +1047,7 @@ async function run(page) {
   await layout(page);
   try {
     if (!Store.demo) { const u = await Store.user(); SART.hesap = u ? { ...(((await Store.profile()) || {}).sartlar || {}) } : null; }
+    eklentiyeHesabiBildir();
     await (P[page] || P.index)();
   } catch (e) { console.error(e); }
 }

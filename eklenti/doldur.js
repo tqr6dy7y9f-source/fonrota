@@ -22,9 +22,13 @@
     ["telefon", [/telefon/, /\bgsm\b/, /cep tel/, /\btel\b/, /iletisim no/]],
     ["adres", [/adres/]],
     ["il", [/^(il|sehir|bulundugu il|isletmenin bulundugu il|firma ili|il adi|il giriniz|faaliyette bulunulan il( ler)?)$/, /^il secin/, /\bil \/ ?ilce\b/]],
+    ["soyad", [/^soy ?ad(i|iniz)?$/, /^soy ?isim/, /^last ?name$/, /^surname$/, /\blastname\b/]],
+    ["ad", [/^ad(i|iniz)?$/, /^isim(iniz)?$/, /^first ?name$/, /\bfirstname\b/, /^given ?name$/]],
     ["yetkili", [/yetkili (ad|kisi|isim)/, /(firma|isletme) sahibi/, /basvuru sahibi(nin)? (ad|isim)/, /temsilci/, /^ad ?soyad/, /^adi ?soyadi/, /^isim ?soyisim/, /iletisim kurulacak kisi/]],
     ["firmaUnvani", [/unvan/, /(firma|sirket|isletme|kurum|kurulus) (adi|ismi)/, /^firma$/, /^sirket$/]],
   ];
+  const EK_AD = { ad: "Ad", soyad: "Soyadı", vergiBirlikte: "Vergi dairesi / no" };
+  const adi = (adlar, k) => adlar[k] || EK_AD[k] || k;
   const ATLA = /(sifre|parola|password|captcha|guvenlik kod|dogrulama kod|\bt ?c kimlik|^kimlik no)/;  // T.C. kimlik no profilde yok; vergi kimlik no değil
 
   const metin = el => (el ? el.textContent : "") || "";
@@ -69,13 +73,19 @@
   }
   function isaretle(el, k, ad) {
     el.style.outline = "2px solid #B9832A"; el.style.outlineOffset = "1px"; el.style.backgroundColor = "#FBF3E4";
-    el.title = `FonRota dolduruldu: ${ad[k] || k}`; el.dataset.fonrota = k;
+    el.title = `FonRota dolduruldu: ${adi(ad, k)}`; el.dataset.fonrota = k;
   }
   function deger(p, k) {
     if (k === "vergiBirlikte") return [p.vergiDairesi, p.vkn].filter(Boolean).join(" / ");
     if (k === "ihracat") return p.ihracat === true ? "Evet" : p.ihracat === false ? "Hayır" : "";
     if (k === "yetkili") return p.yetkili || p.ad || "";
+    if (k === "ad" || k === "soyad") {  // "Berra Nur Kasaplı" -> ad: "Berra Nur", soyad: "Kasaplı"
+      const s = String(p.yetkili || "").trim().split(/\s+/).filter(Boolean); if (s.length < 2) return "";
+      return k === "soyad" ? s[s.length - 1] : s.slice(0, -1).join(" ");
+    }
     const v = p[k]; if (v == null || v === "") return "";
+    if (k === "eposta" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v).trim())) return "";   // geçersiz e-posta yazılmaz
+    if (k === "telefon" && String(v).replace(/\D/g, "").length < 10) return "";                   // eksik telefon yazılmaz
     return String(v);
   }
 
@@ -90,8 +100,8 @@
         if (!ustuneYaz && el.value && el.tagName !== "SELECT") return;
         if (k === "ihracat" && el.tagName !== "SELECT") return;
         const v = deger(profil, k);
-        if (!v) { sonuc.bos.push(adlar[k] || k); return; }
-        if (yaz(el, v)) { isaretle(el, k, adlar); sonuc.dolan.push(adlar[k] || k); }
+        if (!v) { sonuc.bos.push(adi(adlar, k)); return; }
+        if (yaz(el, v)) { isaretle(el, k, adlar); sonuc.dolan.push(adi(adlar, k)); }
       });
       sonuc.dolan = [...new Set(sonuc.dolan)]; sonuc.bos = [...new Set(sonuc.bos)];
       return sonuc;
@@ -103,11 +113,15 @@
       // Giriş sayfası: görünür şifre kutusu var ve onun dışında en fazla 3 alan var (uzun başvuru formundaki "şifre belirleyin" alanı giriş sayılmaz)
       const girisSayfasi = () => {
         const g = [...document.querySelectorAll("input, select, textarea")].filter(e => e.offsetParent !== null && !e.closest("#fonrota-rozet, #fonrota-panel") && !/^(hidden|submit|button|image|reset|checkbox|radio)$/i.test(e.type || ""));
-        return g.some(e => e.type === "password") && g.filter(e => e.type !== "password").length <= 3;
+        const sifre = g.filter(e => e.type === "password"), diger = g.filter(e => e.type !== "password");
+        if (!sifre.length) return false;
+        const kayitFormu = sifre.length > 1 || sifre.some(e => /new-password/i.test(e.autocomplete || "")) || diger.some(e => ["ad", "soyad", "yetkili"].includes(alanBul(e)));
+        return !kayitFormu && diger.length <= 3;
       };
       const tur = () => {
         if (girisSayfasi()) { if (window === top) rozet(true); return; }
         const r = this.doldur(durum.profil, adlar); r.dolan.forEach(x => durum.toplam.add(x)); r.bos.forEach(x => durum.bos.add(x));
+        document.querySelectorAll("[data-fonrota]").forEach(e => durum.toplam.add(adi(adlar, e.dataset.fonrota)));  // düğmeyle az önce doldurulanlar da sayılır
         if (window === top) rozet(false);
       };
       const rozet = giris => {
@@ -171,7 +185,7 @@
     alanaYaz(profil, k, adlar = {}) {
       const el = document.activeElement;
       if (!el || !/^(INPUT|SELECT|TEXTAREA)$/.test(el.tagName)) return { hata: "Önce doldurmak istediğin alana tıkla." };
-      const v = deger(profil, k); if (!v) return { hata: `Profilinde “${adlar[k] || k}” boş.` };
+      const v = deger(profil, k); if (!v) return { hata: `Profilinde “${adi(adlar, k)}” boş ya da geçersiz.` };
       return yaz(el, v) ? (isaretle(el, k, adlar), { tamam: true }) : { hata: "Bu alana yazılamadı." };
     }
   };

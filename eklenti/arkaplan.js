@@ -20,10 +20,23 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
    (kurumun ilk sayfası bilgi sayfasıysa, kullanıcı forma geçtiğinde de dolar). */
 const SURE = 30 * 60 * 1000;
 const takip = { al: async () => (await chrome.storage.session.get("takip")).takip || {}, yaz: t => chrome.storage.session.set({ takip: t }) };
+// Siteden gelen hesap bilgisi: sitede kim giriş yaptıysa eklenti onun profilini kullanır.
+// Eklentiye ayrıca başka bir hesapla giriş yapılmışsa o oturum kapatılır (iki hesap karışmasın).
+const sitedenMi = g => g.tab && g.url && (g.url.startsWith(AYAR.SITE_URL.replace(/\/$/, "")) || /^http:\/\/localhost[:/]/.test(g.url));
+chrome.runtime.onMessage.addListener((m, gonderen) => {
+  if ((m.tip !== "profil" && m.tip !== "cikis") || !sitedenMi(gonderen)) return;
+  (async () => {
+    const eski = await depo.al("profil"), oturum = await depo.al("oturum");
+    if (m.tip === "cikis") { if (eski && eski.kaynak === "site") await depo.sil("profil"); return; }
+    if (!m.profil || typeof m.profil !== "object") return;
+    if (oturum && oturum.email !== m.hesap) await depo.sil("oturum");
+    await depo.yaz("profil", { p: m.profil, zaman: Date.now(), email: m.hesap, hesap: m.hesap, kaynak: "site" });
+  })();
+});
 chrome.runtime.onMessage.addListener((m, gonderen, cevap) => {
   if (m.tip !== "ac" || !gonderen.tab || !gonderen.url || !gonderen.url.startsWith(AYAR.SITE_URL.replace(/\/$/, "")) && !/^http:\/\/localhost[:/]/.test(gonderen.url)) return;
   (async () => {
-    if (m.profil && typeof m.profil === "object") await depo.yaz("profil", { p: m.profil, zaman: Date.now(), email: m.profil.eposta || "", kaynak: "site" });
+    if (m.profil && typeof m.profil === "object") { const e = await depo.al("profil"); await depo.yaz("profil", { p: m.profil, zaman: Date.now(), email: (e && e.hesap) || m.profil.eposta || "", hesap: e && e.hesap, kaynak: "site" }); }
     if (!(await depo.al("profil"))) return cevap({ hata: "Profil yok. FonRota sitesinde giriş yap." });
     const tab = await chrome.tabs.create({ url: m.url, index: gonderen.tab.index + 1 });
     const t = await takip.al(); t[tab.id] = { bitis: Date.now() + SURE, ad: m.ad }; await takip.yaz(t);

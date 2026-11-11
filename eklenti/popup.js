@@ -7,14 +7,16 @@ async function ciz() {
   if (!kayit) return girisCiz();
   const p = kayit.p, dolu = Object.keys(ALAN_ADI).filter(k => p[k]);
   kok.innerHTML = `<h2>${esc(p.firmaUnvani || "Firma bilgilerin")}</h2>
-    <p class="muted">${esc(kayit.email)} · ${dolu.length}/${Object.keys(ALAN_ADI).length} bilgi dolu</p>
+    <p class="muted">${esc(kayit.hesap || kayit.email)} · ${dolu.length}/${Object.keys(ALAN_ADI).length} bilgi dolu${kayit.kaynak === "site" ? " · sitedeki hesabından" : ""}</p>
     <p>Başvuru formunu aç, sonra aşağıdaki düğmeye bas. Doldurulan alanlar altın renkle işaretlenir; <b>kontrol edip formu kendin gönder.</b></p>
     <button class="ana" id="doldur">Bu sayfayı doldur</button>
     <div id="sonuc"></div>
     <p class="muted" style="margin-top:10px">Bir alan dolmadıysa o alana sağ tıkla › <b>FonRota ile doldur</b> › bilgiyi seç.</p>
     <div class="satir"><button class="kucuk" id="yenile">Profili yenile</button><a href="${AYAR.SITE_URL}hesap.html?sekme=profil" target="_blank">Profili düzenle</a><button class="kucuk" id="cikis">Çıkış</button></div>`;
   document.getElementById("doldur").onclick = doldur;
-  document.getElementById("yenile").onclick = async () => { try { await profilYenile(); ciz(); } catch (e) { goster(`<span class="hata">${esc(e.message)}</span>`); } };
+  document.getElementById("yenile").onclick = async () => {
+    if (!(await depo.al("oturum"))) { chrome.tabs.create({ url: AYAR.SITE_URL + "hesap.html?sekme=profil" }); return goster(`<div class="sonuc">FonRota sitesini açtım. Sitede hangi hesapla giriş yaptıysan eklenti onun bilgilerini kullanır.</div>`); }
+    try { await profilYenile(); ciz(); } catch (e) { goster(`<span class="hata">${esc(e.message)}</span>`); } };
   document.getElementById("cikis").onclick = async () => { await cikis(); ciz(); };
 }
 function girisCiz() {

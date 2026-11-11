@@ -3,7 +3,9 @@
 document.documentElement.dataset.fonrotaEklenti = chrome.runtime.getManifest().version;
 window.addEventListener("message", e => {
   if (e.source !== window || e.origin !== location.origin) return;
-  const m = e.data; if (!m || m.kaynak !== "fonrota-site" || m.tip !== "ac" || !/^https?:\/\//.test(m.url || "")) return;
+  const m = e.data; if (!m || m.kaynak !== "fonrota-site") return;
+  if (m.tip === "profil" || m.tip === "cikis") return chrome.runtime.sendMessage({ tip: m.tip, hesap: m.hesap || "", profil: m.profil || null });
+  if (m.tip !== "ac" || !/^https?:\/\//.test(m.url || "")) return;
   chrome.runtime.sendMessage({ tip: "ac", url: m.url, profil: m.profil || null, ad: m.ad || "" }, r => {
     window.postMessage({ kaynak: "fonrota-eklenti", tip: "acildi", tamam: !!(r && r.tamam), hata: r && r.hata }, location.origin);
   });
