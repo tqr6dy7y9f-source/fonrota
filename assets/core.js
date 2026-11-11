@@ -71,6 +71,9 @@ async function data() {
   if (!d || !Array.isArray(d.destekler)) d = window.__SEED__;
   // Şimdilik yalnızca mevcut şirketler ve KOBİ'ler
   d.destekler = d.destekler.filter(x => !(x.olcek || []).every(o => o === "arastirmaci" || o === "girisimci"));
+  // Programın gerçekte kime yönelik olduğu metninden çıkarılır (platform çoğu programa sektör yazmıyor)
+  d.destekler = d.destekler.filter(x => !ogrenciBursu(x));
+  d.destekler.forEach(faaliyetUygula);
   _data = d; return d;
 }
 const byId = async id => (await data()).destekler.find(x => x.id === id);
@@ -357,6 +360,35 @@ function hedefKitle(x) {
   if (/(^|[\s•,;])(şirketler|tüzel firmalar)\b/.test(k) || var_("gerçek veya tüzel kişi", "gerçek ve tüzel kişi", "sermaye şirket", "özel kuruluş", "özel sektör kuruluş", "kobi", "sanayi kuruluş", "ticari faaliyette bulunan şirket", "yerleşik şirket", "yerleşik firma", "firmalar başvurabilir", "tasarımcı şirket", "gelir ve kurumlar vergisi mükellef")) K.add("genel");
   return K.size && !K.has("genel") ? K : null;
 }
+/* Programın faaliyet türü. Resmi platform programların neredeyse hiçbirine sektör yazmadığı için
+   "kimler yararlanabilir", ad ve özet metninden çıkarılır:
+   - uretim: yalnızca mal/ürün üreten işletmelere açık (imalatçı, sanayi işletmesi, teknolojik ürün…);
+     metinde hizmet, müteahhitlik, döviz kazandırıcı faaliyet ya da "tüm sektörler" geçiyorsa bu kısıt konmaz.
+   - arge: Ar-Ge / araştırma / yenilik programı. Adı dışında metni olmayan bu programlar toplayıcıda
+     varsayılan "yatırım" hedefini alıyordu; makine-tesis yatırımı geçmiyorsa bu hedef kaldırılır. */
+const kucukHarf = s => String(s || "").replace(/I/g, "ı").replace(/İ/g, "i").toLowerCase();
+function programMetni(x) {
+  const kim = (x.resmi && (x.resmi.bolumler.find(b => b.baslik.startsWith("Kimler")) || {}).metin) || "";
+  return kucukHarf([x.ad, x.ozet, kim, (x.kosullar || []).join(" "), x.sade ? JSON.stringify(x.sade) : ""].join(" "));
+}
+const ARGE_RE = /ar-ge|araştırma|inovasyon|yenilik|teknoloji transfer|eureka|ufuk avrupa|horizon|ufuk2020|mentor|teknoloji merkezi|tekmer|patent/;
+const URETIM_RE = /imalatçı|mal üreten|sanayi hamlesi|üretim tesis|imalat sanayi|sanayi işletme|stratejik ürün|teknolojik ürün|verimlilik artırıcı|tüketim malı|ihraç edilecek mal|üretim yetkinli|katma değeri yüksek ürün/;
+const HIZMET_DE_RE = /hizmet sektör|hizmet ihracat|hizmet işletme|hizmet sunan|hizmet veren|müteahhit|döviz kazandırıcı|tüm ihracatçılar|tüm sektör|sektör ve büyüklüğüne bakılmaksızın|her sektör/;
+const YATIRIM_RE = /makine|tesis|yatırım|ekipman/;
+const URETEN_SEKTOR = ["imalat", "tarim", "enerji", "bilisim"];
+function ogrenciBursu(x) { return /\/burslar\//.test(x.url || "") || /\bburs/.test(kucukHarf(x.ad)); }
+function faaliyetUygula(x) {
+  const t = programMetni(x);
+  x._uretim = URETIM_RE.test(t) && !HIZMET_DE_RE.test(t);
+  // Ad/özette müteahhitlik geçiyorsa (ör. Eximbank alıcı kredileri) program yurt dışında müteahhitlik veya gemi inşa yapan firmalar içindir
+  x._muteahhit = /müteahhit/.test(kucukHarf([x.ad, x.ozet].join(" ")));
+  if (ARGE_RE.test(t)) {
+    const yat = YATIRIM_RE.test(kucukHarf([x.ad, x.ozet].join(" ")));
+    let a = (x.amac || []).filter(k => yat || x.tur === "kredi" || (k !== "yatirim" && k !== "finansman"));
+    if (!a.includes("arge")) a.unshift("arge");
+    x.amac = a;
+  }
+}
 /* İşletmenin özellikleri (uygunluk testi): hangi kitlelere giriyor? */
 function profilKitle(p) {
   const S = new Set();
@@ -378,7 +410,7 @@ function alanSektor(x) {
   if (/tgb|teknopark|teknoloji geliştirme bölge|ar-ge ve tasarım merkez/.test(a)) return ["argemerkezi"];
   if (/dernek|vakıf|belediye/.test(a)) return ["kamu"];
   if (/turizm/.test(a)) return ["turizm"];
-  if (/sinema|film|dizi|yayım|yayın|eser|kültür varlığı/.test(a)) return ["medya"];
+  if (/sinema|film|dizi|yayım|yayın|eser|kültür varlığı|kültür yatırım|kültür girişim/.test(a)) return ["medya"];
   if (k.includes("kültür ve turizm")) return ["medya", "turizm"];
   if (/gemi|yat sektör/.test(a)) return ["gemi"];
   if (/bilişim/.test(a)) return ["bilisim"];
@@ -405,6 +437,8 @@ function check(x, p) {
   if (p.olcek) r.push({ hard: true, ok: x.olcek.includes(p.olcek), t: "Ölçek: " + x.olcek.map(o => OLCEK[o]).join(", ") });
   if (p.sektorler && p.sektorler.length) r.push({ hard: true, ok: x.sektor.includes("tumu") || x.sektor.some(s => p.sektorler.includes(s)), t: "Sektör: " + x.sektor.map(s => SEKTOR[s] || s).join(", ") });
   if (p.il) r.push({ hard: true, ok: x.il.includes("tumu") || x.il.includes(p.il), t: "Bölge: " + (x.il.includes("tumu") ? "Türkiye geneli" : x.il.join(", ")) });
+  if (x._muteahhit && !hedefKitle(x)) r.push({ hard: true, kitle: true, ok: (p.sektorler || []).includes("insaat") || (p.ozelDurum || []).some(d => d === "muteahhit" || d === "gemi"), t: "Kimler başvurabilir: müteahhitlik veya gemi inşa firmaları" });
+  if (x._uretim && p.sektorler && p.sektorler.length) r.push({ hard: true, kitle: true, ok: p.sektorler.some(s => URETEN_SEKTOR.includes(s)), t: "Faaliyet: mal veya ürün üreten işletmeler (imalat, tarım, enerji, yazılım)" });
   if (x.firma_yasi_max && num(p.kurulusYili)) r.push({ hard: true, ok: yil - num(p.kurulusYili) <= x.firma_yasi_max, t: `İşletmenin en fazla ${x.firma_yasi_max} yıllık olması` });
   if (x.ihracat_gerekli) r.push({ hard: false, ok: !!p.ihracat, t: "İhracat yapıyor olmak" });
   if (p.isletmeTipi && kitleMetni(x)) r.push({ hard: true, ok: kitleUyar(x, p), kitle: true, t: "Kimler başvurabilir: " + kitleMetni(x) });
