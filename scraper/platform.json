@@ -51,6 +51,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -61,7 +62,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/036f0e8c-ada2-4b4f-ac9e-834bd4cd4a63",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -144,6 +145,7 @@
    "yontem": "online",
    "form": null,
    "online": "http://destekler.h2020.org.tr/",
+   "formlar": [],
    "adimlar": [
     "Başvurular http://destekler.h2020.org.tr/ adresinden yapılmaktadır."
    ]
@@ -154,7 +156,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/03b816d6-0474-40b8-9582-4571a16725da",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -233,7 +235,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-projesi-hazirlama-destegi",
+   "formlar": [],
    "adimlar": [
     "Şirketler, pazara giriş projesi hazırlama desteği başvurusu ve destek ödemesi için ibraz edilmesi gereken belgelerle birlikte proje başvurusunu Destek Yöneyim Sistemi(DYS)/ Kayıtlı elektronik posta (KEP) üzerinden Ticaret Bakanlığı’na yapar.",
     "Pazara Giriş Projesi Hazırlama Desteği işleyişinin DYS üzerinden gerçekleştirilebilmesine ilişkin teknik düzenlemelerin tamamlandığının İhracat Genel Müdürlüğü tarafından ilan edilmesinin akabinde yapılacak iş ve işlemler DYS üzerinden yürütülür. Başvurusu KEP yoluyla gerçekleştirilen ancak destek ödemesi henüz gerçekleştirilmemiş desteklere ilişkin iş ve işlemler KEP üzerinden yürütülmeye devam olunur.",
@@ -246,7 +249,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/04123fcb-56f1-4460-a5c3-15edd4c722e3",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -335,6 +338,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/052cc3c7-77e2-4056-b8fb-389c1449051d",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -343,7 +347,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/052cc3c7-77e2-4056-b8fb-389c1449051d",
    "guncelleme": "2026-04-03",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -399,7 +403,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri",
+   "formlar": [],
    "adimlar": [
     "KTZ Yetkinlik Projesi başvurusu ve yurt dışı depo kira gideri ile depolama hizmet giderleri desteğine ilişkin ön onay başvurusu, gerekli belgeler ile birlikte Destek Yönetim Sistemi (DYS) üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü), destek ödemesi için başvurular ise DYS üzerinden incelemeci kuruluşa (İBGS) yapılır.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/kuresel-tedarik-zinciri-destekleri"
@@ -411,7 +416,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0543c637-bb5c-4988-b6ce-9a7edd80c22f",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -505,6 +510,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/063c448b-2c81-478f-bfb8-af503caff1da",
+   "formlar": [],
    "adimlar": [
     "Başvurular e-Devlet üzerinden yapılmaktadır."
    ]
@@ -515,7 +521,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/063c448b-2c81-478f-bfb8-af503caff1da",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -594,6 +600,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/08d93dc5-754c-4577-b3e5-3e7106a6882e",
+   "formlar": [],
    "adimlar": [
     "Kültür varlıklarına ilişkin sponsorluk faaliyetleri Kültür Varlıkları ve Müzeler Genel Müdürlüğü, Emlak Dairesi Başkanlığı tarafından yürütülmektedir.",
     "Telefon: 0 (312) 470 63 76"
@@ -605,7 +612,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/08d93dc5-754c-4577-b3e5-3e7106a6882e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -682,6 +689,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/0a207d3a-3895-44e5-8552-819c368b69e9",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -690,7 +698,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0a207d3a-3895-44e5-8552-819c368b69e9",
    "guncelleme": "2026-03-26",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -748,6 +756,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler www.devletdestekleri.gov.tr 2/23/3"
    ]
@@ -758,7 +767,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0f2ffa7d-98eb-4c85-9e90-452cae2ad1b2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -841,6 +850,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -851,7 +861,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/0fe65745-0cbb-42da-8ced-1bd413d04029",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -933,7 +943,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+   "formlar": [],
    "adimlar": [
     "Yurt dışı fuarlar için:",
     "Yurt dışı fuar organizasyonlarında tanıtım faaliyetlerinin desteklenebilmesi için fuarın başlangıç tarihinden en geç 2 ay önce organizatörün fuara ilişkin tanıtım projesini DYS üzerinden Ticaret Bakanlına iletmesi gerekir.",
@@ -949,7 +960,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/10ccb0b2-7f22-4494-8d74-cb203bae1a03",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1040,6 +1051,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tarla-Ve-Bahce-",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tarla-Ve-Bahce- Bitkileri/CATAK"
    ]
@@ -1050,7 +1062,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1145e2bf-cfe1-4420-b86e-2dffbc5201c2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1138,6 +1150,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik",
+   "formlar": [],
    "adimlar": [
     "Ticaret Bakanlığı (Uluslararası Hizmet Ticareti Genel Müdürlüğü) Link: https://ticaret.gov.tr/hizmet-ticareti/yurtdisi-muteahhitlik-teknik-musavirlik"
    ]
@@ -1148,7 +1161,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1331d6ab-36b6-43dd-91b6-8cbafa08b9d5",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1235,6 +1248,7 @@
    "yontem": "online",
    "form": null,
    "online": "http://eteydeb.tubitak.gov.tr",
+   "formlar": [],
    "adimlar": [
     "Destek programına proje başvuruları sadece elektronik ortamda http://eteydeb.tubitak.gov.tr adresindeki çevrimiçi (online) uygulama (Proje Değerlendirme ve İzleme Sistemi-PRODİS) üzerinden yapılabilmektedir. Söz konusu adresteki açıklamalar ve bilgilendirmeler doğrultusunda proje başvuruları yapılmalıdır."
    ]
@@ -1245,7 +1259,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/14b9ffd9-90dc-4fe6-8025-10306174b0f8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1344,6 +1358,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://eteydeb.tubitak.gov.tr",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK, Proje başvuruları çevrimiçi olarak https://eteydeb.tubitak.gov.tr internet adresinden yapılır."
    ]
@@ -1354,7 +1369,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1855e758-b50a-48a3-ad77-ccc3d340e21c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1447,6 +1462,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati",
+   "formlar": [],
    "adimlar": [
     "Ticaret Bakanlığı ve Serbest Bölge Müdürlükleri.",
     "Link: https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati"
@@ -1458,7 +1474,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1ab5875a-97f5-4169-b587-f489fa517bd8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1543,6 +1559,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/1ab67b2c-eb6b-4261-a0ec-f60ffa6adb36",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -1551,7 +1568,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1ab67b2c-eb6b-4261-a0ec-f60ffa6adb36",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -1632,7 +1649,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi",
+   "formlar": [],
    "adimlar": [
     "Gerçekleştirilen faaliyete ilişkin harcamanın desteklenmesi için ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde, başvuru belgelerinin ilgili incelemeci kuruluşa (üyesi olunan İhracatçı Birlikleri Genel Sekreterliği) ibraz edilmesi gerekir.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/cok-kanalli-zincir-magaza-destegi"
@@ -1644,7 +1662,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1b4952f6-f686-4d0a-ae55-8318f85a7a91",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1736,6 +1754,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri",
+   "formlar": [],
    "adimlar": [
     "Yararlanıcılar, ön onay ve destek ödeme başvurularını ilgili bilgi ve belgelerle birlikte incelemeci kuruluşa sunar. İşbirliği kuruluşları ise ön onay başvurularını ilgili bilgi ve belgelerle birlikte E-İhracat Sekretaryasına, destek ödeme başvurularını incelemeci kuruluşa yapar.",
     "Link: https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri"
@@ -1747,7 +1766,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1cb09bf3-1c63-41be-96e3-ff0cabbc0a7e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -1845,6 +1864,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/1e49211f-8389-4928-ab28-a1c233b67b3a",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -1853,7 +1873,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/1e49211f-8389-4928-ab28-a1c233b67b3a",
    "guncelleme": "2026-03-19",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -1932,10 +1952,6 @@
    "yontem": "pdf",
    "form": "forms/yd-21ed6aad.pdf",
    "online": "https://yatirimadestek.gov.tr/program/21ed6aad-1bf1-42b4-bfee-cf32ef536766",
-   "adimlar": [
-    "193, 5520 ve 5746 sayılı kanunlarla sağlanan Ar-Ge indiriminden yararlanmak için T.C. Hazine ve Maliye Bakanlığı Gelir İdaresi Başkanlığına başvuru yapılır. TÜBİTAK’a başvuru yapılmaz.",
-    "Maliye Bakanlığı Gelir İdaresi Başkanlığı, mükellef tarafından başvurusu yapılmış Ar-Ge İndirimine konu projenin, Ar-Ge faaliyeti olup olmadığına ilişkin değerlendirmesini yapmak üzere TÜBİTAK’a gönderir."
-   ],
    "formlar": [
     {
      "ad": "Ek-1 Ar-Ge projesi başlıklı doküman formatı",
@@ -1943,6 +1959,10 @@
      "tur": "pdf",
      "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ek-1_ar-ge_projesi_baslikli_dokuman_formati.pdf"
     }
+   ],
+   "adimlar": [
+    "193, 5520 ve 5746 sayılı kanunlarla sağlanan Ar-Ge indiriminden yararlanmak için T.C. Hazine ve Maliye Bakanlığı Gelir İdaresi Başkanlığına başvuru yapılır. TÜBİTAK’a başvuru yapılmaz.",
+    "Maliye Bakanlığı Gelir İdaresi Başkanlığı, mükellef tarafından başvurusu yapılmış Ar-Ge İndirimine konu projenin, Ar-Ge faaliyeti olup olmadığına ilişkin değerlendirmesini yapmak üzere TÜBİTAK’a gönderir."
    ]
   },
   "kredi": null,
@@ -1951,7 +1971,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/21ed6aad-1bf1-42b4-bfee-cf32ef536766",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2036,6 +2056,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/220e65de-d957-4b50-9a43-afe2abbde3b5",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -2044,7 +2065,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/220e65de-d957-4b50-9a43-afe2abbde3b5",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -2104,6 +2125,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/22fe7e4e-6045-4343-827f-b16223f2defc",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -2114,7 +2136,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/22fe7e4e-6045-4343-827f-b16223f2defc",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2193,6 +2215,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/266b42e1-7454-4222-9ce9-8bb462e6b35d",
+   "formlar": [],
    "adimlar": [
     "Şartları sağlayan sigortalılar için www.sgk.gov.tr web adresi üzerinden “e- SGK/İşveren/İşveren Sistemi/İşveren/Teşvikler ve Tanımlar/Teşvikten Faydalanılacak Sigortalı Tanımlama” menüleri seçilerek tanımlama işlemi yapılaması mümkün bulunmaktadır."
    ]
@@ -2203,7 +2226,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/266b42e1-7454-4222-9ce9-8bb462e6b35d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2308,6 +2331,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/2ab98c68-451d-4ea8-84f2-bd9c879e59f6",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -2318,7 +2342,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/2ab98c68-451d-4ea8-84f2-bd9c879e59f6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2400,6 +2424,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/2d26e987-4262-448b-99e6-99d290944325",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -2410,7 +2435,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/2d26e987-4262-448b-99e6-99d290944325",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2488,7 +2513,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-",
+   "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek-mevzuati",
+   "formlar": [],
    "adimlar": [
     "YLDA’nın destek kapsamına alınması için, işbirliği kuruluşları tarafından fizibilite raporunu da içeren bir proje ile Ticaret Bakanlığı’na başvuru yapılması ve projenin Bakanlıkça uygun bulunması gerekir.",
     "Link: https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/destek- mevzuati"
@@ -2500,7 +2526,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/2f124788-3459-495b-926e-851aace1c868",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2587,6 +2613,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -2597,7 +2624,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/3a2ad7af-3763-499e-a29d-0b205e1859aa",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2693,6 +2720,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.ziraatbank.com.tr/tr/girisimci/tarim",
+   "formlar": [],
    "adimlar": [
     "T.C. Ziraat Bankası A.Ş Link: https://www.ziraatbank.com.tr/tr/girisimci/tarim"
    ]
@@ -2703,7 +2731,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/3c193217-4953-4e13-aa4a-ef823e66337c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2786,6 +2814,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/4163bebe-dc87-4f9c-9e49-a29139ebc945",
+   "formlar": [],
    "adimlar": [
     "İşyerinin, teşvikten yararlanılacak takvim yılından önceki üç yıl süreyle bu Tebliğin 4.",
     "maddesinde aranılan tüm şartları sağlayıp sağlamadığı kurum sistemi tarafından otomatik olarak kontrol edilecektir. Teşvikten yararlanmak isteyen işverenler için başvuru şartı bulunmamaktadır. Sosyal Güvenlik İl Müdürlükleri/Sosyal Güvenlik Merkezlerine herhangi bir belge ibraz edilmesine gerek yoktur."
@@ -2797,7 +2826,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4163bebe-dc87-4f9c-9e49-a29139ebc945",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2888,7 +2917,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "http://ardeb-",
+   "online": "http://ardeb-pbs.tubitak.gov.tr",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK, online başvuru yapabilmek için ARBİS bilgileriniz ile http://ardeb- pbs.tubitak.gov.tr adresine giriş yapabilirsiniz. ARBİS hesabınız yoksa, http://arbis.tubitak.gov.tr adresine girerek oluşturabilirsiniz. Elektronik başvuru tamamlandıktan sonra 14 gün içerisinde e-imza süreci tamamlanmayan proje başvuruları geçersiz sayılacaktır."
    ]
@@ -2899,7 +2929,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/418886e0-4f7e-47d3-86e9-c0286e46543a",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -2989,6 +3019,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://edevlet.ogm.gov.tr/",
+   "formlar": [],
    "adimlar": [
     "E-devlet üzerinden başvuru için https://edevlet.ogm.gov.tr/"
    ]
@@ -2999,7 +3030,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/43532d4b-e773-471c-a29c-dcb29e9bfc63",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3084,6 +3115,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/45f05725-b25f-49aa-a7dd-c8444c810761",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -3092,7 +3124,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/45f05725-b25f-49aa-a7dd-c8444c810761",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -3153,6 +3185,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/46d52585-d8df-4bf2-afa6-a6163d27f17f",
+   "formlar": [],
    "adimlar": [
     "Teşvikten yararlanma şartlarını yerine getirenler için herhangi bir başvuru alınmaksızın sistem tarafından 5 puanlık prim teşviki uygulanmaktadır."
    ]
@@ -3163,7 +3196,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/46d52585-d8df-4bf2-afa6-a6163d27f17f",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3251,6 +3284,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://ticaret.gov.tr/ihracat/mevzuat/dahilde-isleme-rejimi",
+   "formlar": [],
    "adimlar": [
     "Dâhilde İşleme İzin Belgesi almak için elektronik ortamda Ticaret Bakanlığına (İhracat Genel Müdürlüğü) başvuru yapılır.",
     "Link: https://ticaret.gov.tr/ihracat/mevzuat/dahilde-isleme-rejimi Dâhilde İşleme İzni başvuruları ise e-Devlet üzerinden “Tek Pencere Sistemi E-başvuru Uygulaması” ile elektronik ortamdan gümrük idarelerine yapılır."
@@ -3262,7 +3296,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/46d56e27-8547-40e6-8700-c70f726ed113",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3363,6 +3397,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/4795c846-f108-4261-ad16-13dafeba34d7",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -3371,7 +3406,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4795c846-f108-4261-ad16-13dafeba34d7",
    "guncelleme": "2026-04-14",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -3441,6 +3476,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/479b35fa-d1b5-4a89-ab48-ca6689a2b229",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -3451,7 +3487,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/479b35fa-d1b5-4a89-ab48-ca6689a2b229",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3530,7 +3566,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi",
+   "formlar": [],
    "adimlar": [
     "Ticaret Bakanlığı Destekten yararlanmak isteyen işbirliği kuruluşlarının, rapor desteği için “Rapor Desteği Başvuru Belgeleri” ile birlikte Destek Yönetim Sistemi (DYS) üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü) başvurmaları ve ön onay almaları gerekir.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-rapor-destegi"
@@ -3542,7 +3579,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4a73b72d-9d5c-400a-8f24-8c2fcebd7b7a",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3633,9 +3670,6 @@
    "yontem": "online",
    "form": null,
    "online": "https://ticaret.gov.tr/destekler/ihracat-destekleri",
-   "adimlar": [
-    "Ticaret Bakanlığı İhracat Genel Müdürlüğü Link: https://ticaret.gov.tr/destekler/ihracat-destekleri"
-   ],
    "formlar": [
     {
      "ad": "Ek-II başvuru formu",
@@ -3649,6 +3683,9 @@
      "tur": "docx",
      "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ek-iii_sirket_faaliyet_formu.doc"
     }
+   ],
+   "adimlar": [
+    "Ticaret Bakanlığı İhracat Genel Müdürlüğü Link: https://ticaret.gov.tr/destekler/ihracat-destekleri"
    ]
   },
   "kredi": null,
@@ -3657,7 +3694,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4c0c104e-9977-4b6e-8760-cec0ad03d034",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3754,6 +3791,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/4c625408-9b61-43be-9483-4f766a896063",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -3762,7 +3800,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/4c625408-9b61-43be-9483-4f766a896063",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -3819,6 +3857,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/508d186b-858e-4dd8-b9bc-8f874a2c7d21",
+   "formlar": [],
    "adimlar": [
     "Teşvik kapsamına giren sigortalıların e-Bildirge giriş ekranlarında yer alan “Engelli ve İşsizlik Teşvik Yönetimi” ekranından sisteme kodlanması gerekmektedir."
    ]
@@ -3829,7 +3868,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/508d186b-858e-4dd8-b9bc-8f874a2c7d21",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -3918,7 +3957,6 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04",
-   "adimlar": [],
    "formlar": [
     {
      "ad": "VAP başvuru dosyası ve ekleri",
@@ -3926,7 +3964,8 @@
      "tur": "docx",
      "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/2-vap_basvuru_dosyasi_ve_ekleri.docx"
     }
-   ]
+   ],
+   "adimlar": []
   },
   "kredi": null,
   "kaynak": "platform",
@@ -3934,7 +3973,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -4020,6 +4059,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/54bfa568-6a69-47bf-8566-24a91ad21204",
+   "formlar": [],
    "adimlar": [
     "Uygun firmalarda başvuru şartı aranmayacaktır."
    ]
@@ -4030,7 +4070,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/54bfa568-6a69-47bf-8566-24a91ad21204",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4121,6 +4161,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -4131,7 +4172,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/55191372-2f23-47cd-9b32-a9240a0e5ab2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4218,7 +4259,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-",
+   "online": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi",
+   "formlar": [],
    "adimlar": [
     "Destek kapsamına alınmak için DYS üzerinden Ticaret Bakanlığı’na, ödeme için ise incelemeci kuruluşa(şirketin üyesi olduğu ihracatçı birlikleri genel sekreterliği) başvuru yapılır.",
     "Link: https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda- karara-iliskin-genelgeler/yesil-mutabakata-uyum-projesi-destegi-responsible-programi"
@@ -4230,7 +4272,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/551b993a-1395-4606-b250-6641de5826f1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4318,6 +4360,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -4328,7 +4371,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5626ea68-ff17-4b56-ba7b-b76795ea6786",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4409,6 +4452,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/56f4e239-e710-4dcf-9c3b-31b14d56e8ed",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -4417,7 +4461,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/56f4e239-e710-4dcf-9c3b-31b14d56e8ed",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -4474,6 +4518,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/5719abc7-ac37-4356-b2b7-cec978774afe",
+   "formlar": [],
    "adimlar": [
     "İl Kültür ve Turizm Müdürlükleri aracılığıyla Kültür Varlıkları ve Müzeler Genel Müdürlüğü, Restorasyon Daire Başkanlığına başvurulmaktadır."
    ]
@@ -4484,7 +4529,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5719abc7-ac37-4356-b2b7-cec978774afe",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4567,6 +4612,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/5921d965-fb66-4af1-a922-67e201bba0d4",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -4577,7 +4623,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5921d965-fb66-4af1-a922-67e201bba0d4",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4654,6 +4700,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/596980c3-b112-4398-8b20-6a51b6a340fc",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -4662,7 +4709,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/596980c3-b112-4398-8b20-6a51b6a340fc",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -4724,6 +4771,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/59d00469-825d-4996-a4c1-61e9f36cea61",
+   "formlar": [],
    "adimlar": [
     "Görevlendirilecek kurumun ilan edilmesi beklenmektedir. Bununla birlikte genel anlamda yapılacak duyuruyu takiben başvuruların Radyo ve Televizyon Üst Kurulu Genel Evrak Birimine yapılması mümkündür.",
     "Telefon: 0 (312) 297 50 00"
@@ -4735,7 +4783,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/59d00469-825d-4996-a4c1-61e9f36cea61",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4818,6 +4866,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/5cfe291c-49f4-4600-ae42-919ca13d8519",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -4828,7 +4877,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5cfe291c-49f4-4600-ae42-919ca13d8519",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -4907,6 +4956,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -4917,7 +4967,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/5fa8de23-4801-4b89-b0a0-853aee858bb1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5001,6 +5051,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/60392673-d7ba-4b44-9139-f8af81204fff",
+   "formlar": [],
    "adimlar": [
     "Başvuru şartı bulunmamaktadır."
    ]
@@ -5011,7 +5062,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/60392673-d7ba-4b44-9139-f8af81204fff",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5102,7 +5153,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri",
+   "formlar": [],
    "adimlar": [
     "İşbirliği kuruluşları, program başlangıç tarihinden en az 3 ay önce DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü) başvururlar. Ödeme için ise işbirliği kuruluşlarının faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde destek başvurularını DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü)/incelemeci kuruluşa(İBGS) iletmeleri gerekir.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/sektorel-ticaret-heyeti-ve-alim-heyeti-destekleri"
@@ -5114,7 +5166,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/610b6222-ddf0-4241-b7da-4985e9b716c0",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5205,6 +5257,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/62c07a76-138f-47ad-be0c-f293f540392b",
+   "formlar": [],
    "adimlar": [
     "2008/85 sayılı Genelgede belirtilen belgelerin işyerinin bağlı olduğu Sosyal Güvenlik İl Müdürlüğüne/Sosyal Güvenlik Merkezine verilmesi gerekmektedir."
    ]
@@ -5215,7 +5268,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/62c07a76-138f-47ad-be0c-f293f540392b",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5319,6 +5372,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/683ee88e-c0d7-419a-bb0c-3cfbbbf2ee6e",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -5329,7 +5383,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/683ee88e-c0d7-419a-bb0c-3cfbbbf2ee6e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5410,6 +5464,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://kalkinma.com.tr/",
+   "formlar": [],
    "adimlar": [
     "Kalkınma Yatırım Bankasının internet sitesinden ön başvuru alınmaktadır.(Başvuru linki:",
     "https://kalkinma.com.tr/)"
@@ -5421,7 +5476,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/686210bb-0234-4171-a6d9-d3da7bbb1dbd",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5502,6 +5557,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/6982f936-ab42-4e8d-9537-af23dcf26a2b",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -5512,7 +5568,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/6982f936-ab42-4e8d-9537-af23dcf26a2b",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5591,6 +5647,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/6bc8450a-0e24-4d8c-92e6-2295041fec43",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -5601,7 +5658,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/6bc8450a-0e24-4d8c-92e6-2295041fec43",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5681,6 +5738,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/70150dee-d6bd-4bf7-bc36-f5f1d340fbd9",
+   "formlar": [],
    "adimlar": [
     "e-Devlet hesabı üzerinden İnteraktif Vergi Dairesi’ne veya direkt olarak İnteraktif Vergi Dairesi adresine giriş yaparak vergi dairesine ve SGK’ya dilekçe oluşturulmalıdır. Genç girişimcilerin kazanç istisnasından faydalandığına dair belgeyi bağlı bulunduğu vergi dairesinden alarak Sosyal Güvenlik İl Müdürlüklerine/Sosyal Güvenlik Merkezlerine müracaat etmeleri gerekmektedir."
    ]
@@ -5691,7 +5749,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/70150dee-d6bd-4bf7-bc36-f5f1d340fbd9",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5785,6 +5843,7 @@
    "yontem": "online",
    "form": null,
    "online": "http://ardeb-pbs.tubitak.gov.tr",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK, başvurular ARBİS bilgileri ile http://ardeb-pbs.tubitak.gov.tr adresinden yapılmaktadır. ARBİS hesabının olmaması durumunda, http://arbis.tubitak.gov.tr adresine girerek hesap oluşturulmaktadır."
    ]
@@ -5795,7 +5854,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/71cab34b-baca-4ff4-a95d-5294d5d08e27",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5887,6 +5946,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/740d8e1d-fba0-4cfc-916c-df48636eac4d",
+   "formlar": [],
    "adimlar": [
     "SAYEM çağrısına başvuru yapmayı düşünen kurum/kuruluşların PRODİS başvurusu öncesinde sayem.basvuru@tubitak.gov.tr adresine e-posta atarak TÜBİTAK SAYEM sorumluları ile iletişime geçmesi önerilmektedir. Platformların oluşması ve gelişmesine katkı sağlanması hedeflenmektedir."
    ]
@@ -5897,7 +5957,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/740d8e1d-fba0-4cfc-916c-df48636eac4d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -5998,6 +6058,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/74491580-2515-4962-98e5-a4fd31b6e659",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -6008,7 +6069,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/74491580-2515-4962-98e5-a4fd31b6e659",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6031,6 +6092,83 @@
     {
      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ozet_yurt_disi_muteahhitlik_hizmetleri_kopru_kredisi.pdf",
      "ad": "ozet_yurt_disi_muteahhitlik_hizmetleri_kopru_kredisi.pdf"
+    }
+   ]
+  }
+ },
+ {
+  "id": "yd-76813b4a",
+  "ad": "1707 - Siparişe Dayalı Ar-Ge Projeleri Için KOBİ Destekleme Çağrısı",
+  "kurum": "TÜBİTAK",
+  "url": "https://yatirimadestek.gov.tr/program/76813b4a-a2a6-4702-946a-49cf0e262b57",
+  "tur": "hibe",
+  "ust_limit": null,
+  "destek_orani": null,
+  "geri_odemeli": false,
+  "oran_metin": null,
+  "amac": [
+   "arge"
+  ],
+  "olcek": [
+   "mikro",
+   "kucuk",
+   "orta",
+   "buyuk"
+  ],
+  "sektor": [
+   "tumu"
+  ],
+  "il": [
+   "tumu"
+  ],
+  "son_basvuru": "2026-11-27",
+  "ozet": "1707 - Siparişe Dayalı Ar-Ge Projeleri Için KOBİ Destekleme Çağrısı",
+  "firma_yasi_max": null,
+  "ihracat_gerekli": false,
+  "kosullar": [],
+  "belgeler": [],
+  "alanlar": [
+   "firmaUnvani",
+   "vkn",
+   "vergiDairesi",
+   "yetkili",
+   "telefon",
+   "eposta",
+   "adres",
+   "il",
+   "kurulusYili",
+   "sirketTuru",
+   "naceKodu",
+   "calisan",
+   "ciro"
+  ],
+  "basvuru": {
+   "yontem": "online",
+   "form": null,
+   "online": "https://yatirimadestek.gov.tr/program/76813b4a-a2a6-4702-946a-49cf0e262b57",
+   "formlar": [],
+   "adimlar": []
+  },
+  "kredi": null,
+  "kaynak": "platform",
+  "resmi": {
+   "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
+   "sayfa": "https://yatirimadestek.gov.tr/program/76813b4a-a2a6-4702-946a-49cf0e262b57",
+   "guncelleme": "2026-11-12",
+   "kontrol": "2026-11-16",
+   "bolumler": [],
+   "belgeler": [
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/siparis_arge_2024-1_guncellenmis_sss-18012024.pdf",
+     "ad": "siparis_arge_2024-1_guncellenmis_sss-18012024.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/29_yk_yonerge.pdf",
+     "ad": "29_yk_yonerge.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/yesilmutabakat.pdf",
+     "ad": "yesilmutabakat.pdf"
     }
    ]
   }
@@ -6090,6 +6228,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/7d6feed4-f458-4f39-b31d-069378dad9b1",
+   "formlar": [],
    "adimlar": [
     "Başvurular, Proje ve Destek Sistemi (EDSİS) üzerinden yapılmaktadır. Bütünleşik Bilgi Sistemi’ne üye olmanız gerekmektedir."
    ]
@@ -6100,7 +6239,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/7d6feed4-f458-4f39-b31d-069378dad9b1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6180,6 +6319,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/7deff41e-2bb0-458a-bf35-5079bd4c3b2c",
+   "formlar": [],
    "adimlar": [
     "Başvuru, Kültür Varlıkları ve Müzeler Genel Müdürlüğüne yapılmaktadır.",
     "Telefon: 0 (312) 470 63 72"
@@ -6191,7 +6331,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/7deff41e-2bb0-458a-bf35-5079bd4c3b2c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6281,7 +6421,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi",
+   "formlar": [],
    "adimlar": [
     "Yurt dışı marka tescil desteği için şirketler ödeme belgesi tarihinden itibaren 6 ay içerisinde gerekli bilgi ve belgelerle birlikte üyesi oldukları incelemeci kuruluşa(İhracatçı Birliği) Destek Yönetim Sistemi (DYS) üzerinden başvurularını yaparlar.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/yurt-disi-marka-tescil-destegi"
@@ -6293,7 +6434,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/7e37a246-94dd-40dc-a64c-dfbc3d2ad5d7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6384,6 +6525,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/816d5b90-4476-4b13-b1f8-0247c0383f12",
+   "formlar": [],
    "adimlar": [
     "Başvuru şartı bulunmamaktadır."
    ]
@@ -6394,7 +6536,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/816d5b90-4476-4b13-b1f8-0247c0383f12",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6483,6 +6625,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/821ba676-5f59-48bc-8c96-4826bc915e25",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -6491,7 +6634,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/821ba676-5f59-48bc-8c96-4826bc915e25",
    "guncelleme": "2026-03-15",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -6547,7 +6690,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi",
+   "formlar": [],
    "adimlar": [
     "Destek başvuruları; pazara giriş belgesi desteğinde, şirket tarafından, gerekli belgelerle birlikte, desteğe konu pazara giriş belgesinin düzenlenme tarihinden itibaren; ruhsatlandırma ve kayıt işlemlerinde ise, anılan işlemlere ilişkin ödeme belgesi tarihinden itibaren 6 ay içerisinde, Destek Yöneyim Sistemi(DYS) üzerinden üyesi olunan İhracatçı Birliği Genel Sekreterliğine(İBGS)yapılır.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/pazara-giris-belgesi-destegi"
@@ -6559,7 +6703,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/83008980-ba18-447f-8bb8-470fde9f3bf7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6651,6 +6795,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/8561cc8d-26dd-4720-ba29-8c2c2bc4990b",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK TEYDEB Öncelikli Teknoloji Alanları Destekleme Grubu - 1515@tubitak.gov.tr Tel: (312) 298 95 15"
    ]
@@ -6661,7 +6806,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8561cc8d-26dd-4720-ba29-8c2c2bc4990b",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6750,6 +6895,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/87175d4c-e7e0-47f6-91c8-de1f3e4cac12",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -6758,7 +6904,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/87175d4c-e7e0-47f6-91c8-de1f3e4cac12",
    "guncelleme": "2026-03-18",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -6834,6 +6980,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/878f0f16-727e-44d6-88ab-3dec72bc3b14",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -6844,7 +6991,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/878f0f16-727e-44d6-88ab-3dec72bc3b14",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -6921,6 +7068,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/8a1cb3cb-ec59-42ab-b45d-3dcb5b8a55ff",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -6929,7 +7077,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8a1cb3cb-ec59-42ab-b45d-3dcb5b8a55ff",
    "guncelleme": "2026-04-21",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -6984,6 +7132,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/8a987028-c221-4223-956c-2456561968e8",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -6992,7 +7141,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8a987028-c221-4223-956c-2456561968e8",
    "guncelleme": "2026-11-04",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -7049,7 +7198,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tasarimci-sirket-ve-tasarim-ofisi-destegi",
+   "formlar": [],
    "adimlar": [
     "Destek unsurlarından yararlanmak için tasarımcı şirket/tasarım ofisinin destek kapsamına alınması gerekir. Buna ilişkin kapsama alınma başvuruları Destek Yönetim Sistemi (DYS) üzerinden yapılır.",
     "Tasarımcı şirket/tasarım ofisinin destek ödemesinden yararlandırılabilmesi için gerekli belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa(tasarımcı şirket/tasarım ofisinin üyesi bulunduğu İhracatçı Birliği Genel Sekreterliği) DYS üzerinden başvurulur.",
@@ -7062,7 +7212,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8b9044e5-657b-4bdd-a874-73423f26bafb",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7161,7 +7311,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-",
+   "online": "https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli-tarim-sigortalari",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, T.C Ziraat Bankası A.Ş Link: https://www.ziraatbank.com.tr/tr/kurumsal/tarim/hizmetlerimiz/devlet-destekli- tarim-sigortalari https://web.tarsim.gov.tr/havuz/"
    ]
@@ -7172,7 +7323,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8d888b97-752f-44ea-91b8-1e188f6ae9af",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7257,6 +7408,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://teda.ktb.gov.tr/",
+   "formlar": [],
    "adimlar": [
     "TEDA Başvurusu, Elektronik ağ adresinden https://teda.ktb.gov.tr/ indirilen formların İngilizce veya Türkçe olarak doldurulup imzalanıp/kaşelendikten sonra,",
     "EDES Başvurusu, Elektronik ağ adresinden https://kygm.ktb.gov.tr/TR-138650/edebiyat-destek.html indirildikten sonra doldurulup imzalanıp/kaşelendikten sonra elden ya da posta yoluyla Yayımlar Daire Başkanlığına müracaat etmek gerekir."
@@ -7268,7 +7420,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/8fbd6a12-82c4-43c6-951f-dc463d0b3f55",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7346,7 +7498,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri",
+   "formlar": [],
    "adimlar": [
     "Destek kapsamına alınmak için Ticaret Bakanlığı’na, ödeme için ise incelemeci kuruluşa(şirketin üyesi olduğu ihracatçı birlikleri genel sekreterliği) başvuru yapılır.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/marka-ve-turquality-destekleri"
@@ -7358,7 +7511,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/90928b40-f59e-4457-8a74-e9ececf64b8e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7450,6 +7603,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/9108afc3-4ba9-4283-bb6a-1c2cece4be83",
+   "formlar": [],
    "adimlar": [
     "İl Çevre ve Şehircilik Müdürlükleri"
    ]
@@ -7460,7 +7614,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9108afc3-4ba9-4283-bb6a-1c2cece4be83",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7549,6 +7703,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/91c37357-a562-44e2-88f2-b17660e48ef3",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -7557,7 +7712,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/91c37357-a562-44e2-88f2-b17660e48ef3",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -7621,6 +7776,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/9606be0e-71fe-4381-a623-5697b8b28854",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -7629,7 +7785,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9606be0e-71fe-4381-a623-5697b8b28854",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -7704,6 +7860,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/968b118c-6650-43d3-be37-ae231aac025f",
+   "formlar": [],
    "adimlar": [
     "Tehlikeli ve çok tehlikeli sınıfta yer alan işyerlerine sahip işverenler, iş sağlığı ve güvenliği desteğinden yararlanmak için işyerlerinin tescil edildiği ünitelere tebliğde yer alan ek-1’de belirtilen başvuru formu ile müracaat ederler."
    ]
@@ -7714,7 +7871,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/968b118c-6650-43d3-be37-ae231aac025f",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7805,6 +7962,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/9bbb98cc-fed0-4cbc-92e6-5875102469e7",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -7815,7 +7973,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9bbb98cc-fed0-4cbc-92e6-5875102469e7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -7895,6 +8053,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/9d1a775a-e189-4b82-af29-01d8d8a40a23",
+   "formlar": [],
    "adimlar": [
     "Başvuru şartı bulunmamaktadır."
    ]
@@ -7905,7 +8064,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/9d1a775a-e189-4b82-af29-01d8d8a40a23",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8021,7 +8180,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/ur-ge-proje-destegi",
+   "formlar": [],
    "adimlar": [
     "İşbirliği kuruluşu, proje başvurusunu gerekli belgelerle birlikte DYS üzerinden Ticaret Bakanlığına iletir.",
     "Faaliyetlere ilişkin destek ödemesi başvuruları ise, faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde gerekli belgelerle birlikte DYS üzerinden incelemeci kuruluşa(İBGS) yapılır.",
@@ -8034,7 +8194,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a132ddd4-e744-4f9a-8498-29232c850057",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8126,6 +8286,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.sanayi.gov.tr/mevzuat/diger/mc0403018202",
+   "formlar": [],
    "adimlar": [
     "Başvurular, Elektronik Teşvik Uygulama ve Yabancı Sermaye Bilgi Sistemi (E-TUYS) üzerinden yapılmaktadır.",
     "Link: https://www.sanayi.gov.tr/mevzuat/diger/mc0403018202 (erişim tarihi 12/11/2024)"
@@ -8137,7 +8298,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a1b1d75a-bde1-4644-84ef-32401658d904",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8235,6 +8396,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/a5569b5f-0cc2-446f-a9e0-2b8513a011c8",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -8245,7 +8407,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a5569b5f-0cc2-446f-a9e0-2b8513a011c8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8326,6 +8488,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/bilisim",
+   "formlar": [],
    "adimlar": [
     "Ticaret Bakanlığı Link: https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/bilisim"
    ]
@@ -8336,7 +8499,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/a624034b-da81-49ad-8c67-4632133f0f3e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8431,6 +8594,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://eteydeb.tubitak.gov.tr",
+   "formlar": [],
    "adimlar": [
     "Başvurular https://eteydeb.tubitak.gov.tr internet adresinden çevrimiçi (online) gönderilecektir.",
     "Bilgi için:",
@@ -8443,7 +8607,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/aa73efbf-dff8-4288-bc1f-aa32c4457d9e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8551,6 +8715,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/abddf672-5d01-4f2c-857b-e2fb52b0ecd9",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -8561,7 +8726,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/abddf672-5d01-4f2c-857b-e2fb52b0ecd9",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8640,6 +8805,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -8650,7 +8816,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/adba4cd2-d2bd-46eb-ba22-d58622d4dbb6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8739,6 +8905,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/b195854f-d2bf-43ee-821e-4a4a6d575ef2",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -8749,7 +8916,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b195854f-d2bf-43ee-821e-4a4a6d575ef2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8828,7 +8995,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-",
+   "online": "https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet-ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar",
+   "formlar": [],
    "adimlar": [
     "Ticaret Bakanlığı Link: https://ticaret.gov.tr/hizmet-ticareti/doviz-kazandirici-hizmet-ticareti/hizmet- ihracatinin-tanimlanmasi-siniflandirilmasi-ve-desteklenmesi-hakkinda-karar"
    ]
@@ -8839,7 +9007,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b1b3882e-15bd-49bf-a860-b0bc1ff65c65",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -8982,7 +9150,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-",
+   "online": "https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru-destekleri/d%C3%B6viz-kazandirici-hizmet-sekt%C3%B6rleri-markalasma-destegi",
+   "formlar": [],
    "adimlar": [
     "Ticaret Bakanlığı Link: https://ticaret.gov.tr/destekler/hizmet-sektoru-desteklerihizmet-sektoru- destekleri/d%C3%B6viz-kazandirici-hizmet-sekt%C3%B6rleri-markalasma-destegi"
    ]
@@ -8993,7 +9162,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b3c9ded0-0b7c-4eda-9450-493e1c518003",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9083,7 +9252,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi",
+   "formlar": [],
    "adimlar": [
     "Destek ödeme başvuruları “Yurt dışı Pazar Araştırması Desteği Başvuru Bilgi ve Belgeleri” ile birlikte, şirket çalışanının Türkiye’ye giriş tarihinden itibaren en geç 3 ay içerisinde DYS üzerinden incelemeci kuruluşa(İhracatçı Birliği) yapılır.",
     "Link:https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/yurt-disi-pazar-arastirmasi-destegi"
@@ -9095,7 +9265,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/b6fb2892-1593-4562-beb1-cf2c45149f14",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9190,6 +9360,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/bac4d7f4-1d00-4490-9256-1a004d696333",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -9200,7 +9371,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/bac4d7f4-1d00-4490-9256-1a004d696333",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9277,6 +9448,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/c10fbf7c-d245-4696-a3f4-242fd96032c9",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -9285,7 +9457,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/c10fbf7c-d245-4696-a3f4-242fd96032c9",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -9341,7 +9513,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-ve-yurt-ici-fuar-destekleri",
+   "formlar": [],
    "adimlar": [
     "İşbirliği kuruluşu, toplu katılımın gerçekleştirileceği sanal fuarın destek kapsamına alınmasına dair proje başvurusunu gerekli bilgi ve belgelerle fuarın başlama tarihinden en geç 2 ay önce DYS üzerinden Ticaret Bakanlığına iletir.",
     "İşbirliği kuruluşlarının tek başına veya diğer işbirliği kuruluşları ile birlikte düzenleyeceği sanal fuar organizasyonu için program başlangıç tarihinden en az 6 ay önce gerekli bilgi ve belgelerle Ticaret Bakanlığına (İhracat Genel Müdürlüğü) DYS üzerinden onay başvurusunda bulunulur.",
@@ -9356,7 +9529,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/c74eef87-5700-476a-ba58-4e550111b27d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9445,6 +9618,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/c75f8085-705d-4440-8267-163497c395ac",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -9453,7 +9627,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/c75f8085-705d-4440-8267-163497c395ac",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -9508,6 +9682,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/ccf28787-ae3a-4f5c-9af4-1daf86ca6589",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -9516,7 +9691,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ccf28787-ae3a-4f5c-9af4-1daf86ca6589",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -9590,6 +9765,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/ce593411-7890-4dcc-b682-d300e3f3a512",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK, Ulusal proje başvuruları, uidb-pbs.tubitak.gov.tr internet adresi üzerinden yalnızca elektronik imza (e-imza) kullanılarak yapılabilmektedir."
    ]
@@ -9600,7 +9776,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ce593411-7890-4dcc-b682-d300e3f3a512",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9683,6 +9859,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/d00a5b2f-7a9d-4695-9375-2c567c70de9e",
+   "formlar": [],
    "adimlar": [
     "Şartları sağlayan sigortalılar için www.sgk.gov.tr web adresi üzerinden “e-SGK/İşveren/İşveren Sistemi/İşveren/Teşvikler ve Tanımlar/Teşvikten Faydalanılacak Sigortalı Tanımlama” menüleri seçilerek tanımlama işlemi yapılaması mümkün bulunmaktadır."
    ]
@@ -9693,7 +9870,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d00a5b2f-7a9d-4695-9375-2c567c70de9e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9787,6 +9964,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/d0597974-a28b-497b-b584-933d093456a8",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -9797,7 +9975,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d0597974-a28b-497b-b584-933d093456a8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9889,6 +10067,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/d14c839c-1c0f-47e6-93ab-74b5ef596c2c",
+   "formlar": [],
    "adimlar": [
     "Doğrudan kefalet sistemi kapsamındaki kefaletler için başvurular KGF’ye; PGS ve PLS kapsamındaki kefaletler içinse başvurular, kredinin talep edildiği KGF ortağı olan aracı bankalara yapılmaktadır. KGF resmi internet sitesi www.kgf.com.tr"
    ]
@@ -9899,7 +10078,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d14c839c-1c0f-47e6-93ab-74b5ef596c2c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -9984,6 +10163,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/d5b7898e-5caa-42f9-9e12-7a8cedea82f2",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -9994,7 +10174,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d5b7898e-5caa-42f9-9e12-7a8cedea82f2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10072,7 +10252,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet-gosteren-sirketlere-tasarim-destegi",
+   "formlar": [],
    "adimlar": [
     "Şirketlerin destek ödemesinden yararlanabilmesi için gerekli belgelerle birlikte ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde incelemeci kuruluşa DYS üzerinden başvuru yapması gerekmektedir.",
     "Link:https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/gemi-ve-yat-sektorunde-faaliyet- gosteren-sirketlere-tasarim-destegi"
@@ -10084,7 +10265,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d929c738-2665-4546-896e-a7dc0d51a4f7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10176,6 +10357,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/d9b98dc8-a7ca-4afd-8e4b-1cb3e74bc2a8",
+   "formlar": [],
    "adimlar": [
     "“Kültür Yatırım” veya “Kültür Girişim” belgelerinin işyerinin bağlı olduğu Sosyal Güvenlik İl Müdürlüğüne/Sosyal Güvenlik Merkezine verilmesi gerekmektedir."
    ]
@@ -10186,7 +10368,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/d9b98dc8-a7ca-4afd-8e4b-1cb3e74bc2a8",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10288,7 +10470,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka-alim-destegi",
+   "formlar": [],
    "adimlar": [
     "Şirketlerin, ön onay için Destek Yönetim Sistemi (DYS) üzerinden Ticaret Bakanlığına başvuru yapmaları gerekir. Destek ödemesi başvuruları ise ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde gerekli belgeler ile DYS üzerinden Ticaret Bakanlığına/ İncelemeci Kuruluşa(Ticaret Bakanlığı tarafından görevlendirilen İhracatçı Birlikleri Genel Sekreterlikleri) yapılır.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/yurt-disi-sirket-ve-yurt-disinda-yerlesik-sirkete-ait-marka- alim-destegi"
@@ -10300,7 +10483,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/da11b78f-733b-4852-bc43-856516c9b067",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10390,7 +10573,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/tanitim-destegi",
+   "formlar": [],
    "adimlar": [
     "Yurt dışı tanıtım desteği için şirketler, ödeme belgesi tarihinden itibaren 6 ay içerisinde gerekli bilgi ve belgelerle Destek Yönetim Sistemi (DYS) üzerinden incelemeci kuruluşa(üyesi olduğu İhracatçı Birliği Genel Sekreterliği) başvurularını yaparlar.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/tanitim-destegi"
@@ -10402,7 +10586,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/daa0590a-f1c6-491a-a479-54ef22fc478e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10493,6 +10677,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/dc172c71-a2d3-499e-aeb2-b6b3be2d93b5",
+   "formlar": [],
    "adimlar": [
     "Kültür ve Turizm Bakanlığı, Yatırım ve İşletmeler Genel Müdürlüğü"
    ]
@@ -10503,7 +10688,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/dc172c71-a2d3-499e-aeb2-b6b3be2d93b5",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10588,6 +10773,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati",
+   "formlar": [],
    "adimlar": [
     "Ticaret Bakanlığı ve Serbest Bölge Müdürlükleri Link: https://ticaret.gov.tr/serbest-bolgeler/serbest-bolgeler-mevzuati"
    ]
@@ -10598,7 +10784,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/dd76316d-6ac8-480b-ad22-3db9371ef4e7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10694,6 +10880,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/dd93b103-6643-4a5c-b412-e1c2317fd2e2",
+   "formlar": [],
    "adimlar": [
     "Orman İşletme Müdürlükleri"
    ]
@@ -10704,7 +10891,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/dd93b103-6643-4a5c-b412-e1c2317fd2e2",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -10793,6 +10980,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/e033ed4e-297a-4cbb-975a-1fd45d62b40f",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -10801,7 +10989,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e033ed4e-297a-4cbb-975a-1fd45d62b40f",
    "guncelleme": "2026-10-17",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -10857,6 +11045,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/e1c64f7e-99db-4240-9614-67d8c709c60a",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -10865,7 +11054,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e1c64f7e-99db-4240-9614-67d8c709c60a",
    "guncelleme": "2026-03-19",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": [
     {
@@ -10950,6 +11139,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/e2d7a435-14c7-4cda-88ac-af657ca79e35",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -10958,7 +11148,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e2d7a435-14c7-4cda-88ac-af657ca79e35",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Özet bilgi formu",
@@ -11033,10 +11223,6 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/e2e07cef-6986-4aad-a8ec-baac04b85427",
-   "adimlar": [
-    "KOBİ, uzman desteği alacağı Çözüm Ortağını belirledikten sonra başvurusunu TÜBİTAK’a sunabilecektir. Başvurular çevrimiçi olarak PRODİS üzerinden gönderilecektir.",
-    "Bilgi için: yesilsanayi.mentor@tubitak.gov.tr"
-   ],
    "formlar": [
     {
      "ad": "Ek-1 işletme beyanı",
@@ -11050,6 +11236,10 @@
      "tur": "docx",
      "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/niyet_beyani_formu_231206.docx"
     }
+   ],
+   "adimlar": [
+    "KOBİ, uzman desteği alacağı Çözüm Ortağını belirledikten sonra başvurusunu TÜBİTAK’a sunabilecektir. Başvurular çevrimiçi olarak PRODİS üzerinden gönderilecektir.",
+    "Bilgi için: yesilsanayi.mentor@tubitak.gov.tr"
    ]
   },
   "kredi": null,
@@ -11058,7 +11248,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e2e07cef-6986-4aad-a8ec-baac04b85427",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11169,6 +11359,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://eteydeb.tubitak.gov.tr",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK- İletişim: 1601@tubitak.gov.tr. Çağrılara göre Başvurular çevrimiçi olarak PRODİS üzerinden TÜBİTAK’a gönderilecektir. PRODİS uygulamasına https://eteydeb.tubitak.gov.tr adresinden erişilebilir. Bilgi için:",
     "Esra YARDIMOĞLU Hamit TAŞ E-Posta: esra.yardimoglu@tubitak.gov.tr E-Posta: hamit.tas@tubitak.gov.tr Tel: 0-312-2989350 Tel: 0-312-2989508 Fatih Mert ÇİFTÇİ Onur ÜLGEN Tel: 0-312-2989411 E-Posta: onur.ulgen@tubitak.gov.tr E-Posta: mert.ciftci@tubitak.gov.tr Tel: 0-312-2989693 Hamdi AKSU E-Posta: hamdi.aksu@tubitak.gov.tr Tel: 0-312-2989410"
@@ -11180,7 +11371,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e3abe6c4-e233-46fd-a738-900e55c4ba4c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11277,6 +11468,7 @@
    "yontem": "online",
    "form": null,
    "online": "http://ardeb-pbs.tubitak.gov.tr",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK, KAMAG için başvurular hem 1. Aşama hem de 2. Aşama için elektronik ortamda alınmaktadır. Elektronik başvuru sistemine http://ardeb-pbs.tubitak.gov.tr adresinden ulaşabilirsiniz. SAVTAG için ve ıslak imzalı belgelerin başvuru merci ARDEB:",
     "Araştırma Destek Programları Başkanlığı’dır."
@@ -11288,7 +11480,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e44bcab1-4474-4070-98bb-9041ebba4944",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11390,7 +11582,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi",
+   "formlar": [],
    "adimlar": [
     "Birim kira desteği için şirketler, ödeme belgesi tarihinden itibaren 6 ay içerisinde gerekli bilgi ve belgelerle Destek Yönetim Sistemi (DYS) üzerinden incelemeci kuruluşa(üyesi olduğu İhracatçı Birliği Genel Sekreterliği) başvurularını yaparlar.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat- destekleri-hakkinda-karara-iliskin-genelgeler/birim-kira-destegi"
@@ -11402,7 +11595,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e59440bb-5fe5-4952-ae00-a2668a5355be",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11494,6 +11687,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/e9e19357-1464-47b0-84fb-250f3568e330",
+   "formlar": [],
    "adimlar": [
     "Başvuru E-TUYS üzerinden yatırım teşvik belgesi müracaatı yapılır. Yatırım teşvik belgesi tamamlama vizesi onayını takip eden ilk aydan itibaren destek kullanılmaya başlanır."
    ]
@@ -11504,7 +11698,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/e9e19357-1464-47b0-84fb-250f3568e330",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11607,6 +11801,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/ec76bcf6-2887-4a06-80a2-eaa0571b85cd",
+   "formlar": [],
    "adimlar": [
     "Başvurular için genellikle www.sgk.gov.tr web adresi üzerinden “e-SGK/İşveren/İşveren Sistemi/İşveren/Teşvikler ve Tanımlar/Teşvikten Faydalanılacak Sigortalı Tanımlama” menüleri seçilerek tanımlama işlemi yapılması gerekmekte olup bazı durumlarda doğrudan işyerinin bağlı olduğu Sosyal Güvenlik İl Müdürlüğüne/Sosyal Güvenlik Merkezine müracaat edilmesi gerekmektedir."
    ]
@@ -11617,7 +11812,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ec76bcf6-2887-4a06-80a2-eaa0571b85cd",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11700,6 +11895,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler",
+   "formlar": [],
    "adimlar": [
     "Tarım ve Orman Bakanlığı, Tarım ve Orman İl Müdürlükleri Link: https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler"
    ]
@@ -11710,7 +11906,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ee86a6c3-650e-4857-b7d5-f9a415678d30",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11791,6 +11987,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/ee93eb7d-dcf0-44f8-8c5c-f3c0ed2769d7",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -11799,7 +11996,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ee93eb7d-dcf0-44f8-8c5c-f3c0ed2769d7",
    "guncelleme": "2026-10-27",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -11856,6 +12053,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/eeac8332-3ee2-40ee-8fa3-b1f2bba3f9e1",
+   "formlar": [],
    "adimlar": [
     "Patent iş birliği Anlaşmasına uygun olarak yapılan patent başvurular Türk Patent ve Marka Kurumuna, Uluslararası İnceleme Raporu Desteği ve Uluslararası Tescil Ödülü için TÜBİTAK, TEYDEB Teknoloji Transfer Mekanizmaları Destekleme Grubuna başvuru yapılabilir.",
     "E-Posta: 1602@tubitak.gov.tr"
@@ -11867,7 +12065,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/eeac8332-3ee2-40ee-8fa3-b1f2bba3f9e1",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -11963,6 +12161,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/ef00dc39-bab5-4127-8a55-44612adfbb44",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -11973,7 +12172,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/ef00dc39-bab5-4127-8a55-44612adfbb44",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12053,6 +12252,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/efb89ac8-194a-4025-932f-46877528a5a6",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -12063,7 +12263,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/efb89ac8-194a-4025-932f-46877528a5a6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12144,6 +12344,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/efc2d75d-ac19-4bd0-aeae-418e45a0c4a6",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -12154,7 +12355,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/efc2d75d-ac19-4bd0-aeae-418e45a0c4a6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12234,6 +12435,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/f0015114-7875-4d30-bc0b-ca351e2aef5c",
+   "formlar": [],
    "adimlar": [
     "Başvurunun internet sitesinde yayımlanan ve başvuru sırasında talep edilen evraklarla birlikte Bankaya yapılması gerekmektedir. (www.eximbank.gov.tr)"
    ]
@@ -12244,7 +12446,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f0015114-7875-4d30-bc0b-ca351e2aef5c",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12323,9 +12525,6 @@
    "yontem": "pdf",
    "form": "forms/yd-f209bb25.pdf",
    "online": "https://yatirimadestek.gov.tr/program/f209bb25-3842-4bb2-9e28-b83e8423507d",
-   "adimlar": [
-    "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri"
-   ],
    "formlar": [
     {
      "ad": "Başvuru formları işlenmiş su ürünlerinin desteklenmesi",
@@ -12333,6 +12532,9 @@
      "tur": "pdf",
      "kaynak": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/basvuru-formlari-islenmis_su_urunlerinin_desteklenmesi.pdf"
     }
+   ],
+   "adimlar": [
+    "Tarım ve Orman Bakanlığı, Tarım ve Orman İl/İlçe Müdürlükleri"
    ]
   },
   "kredi": null,
@@ -12341,7 +12543,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f209bb25-3842-4bb2-9e28-b83e8423507d",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12376,6 +12578,107 @@
     {
      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/teblig-islenmis_su_urunlerinin_desteklenmesi.pdf",
      "ad": "teblig-islenmis_su_urunlerinin_desteklenmesi.pdf"
+    }
+   ]
+  }
+ },
+ {
+  "id": "yd-f217ccdd",
+  "ad": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+  "kurum": "TÜBİTAK",
+  "url": "https://yatirimadestek.gov.tr/program/f217ccdd-737c-4039-8c39-4fb51e0ff62a",
+  "tur": "hibe",
+  "ust_limit": null,
+  "destek_orani": null,
+  "geri_odemeli": false,
+  "oran_metin": null,
+  "amac": [
+   "arge"
+  ],
+  "olcek": [
+   "mikro",
+   "kucuk",
+   "orta",
+   "buyuk"
+  ],
+  "sektor": [
+   "tumu"
+  ],
+  "il": [
+   "tumu"
+  ],
+  "son_basvuru": "2026-11-23",
+  "ozet": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+  "firma_yasi_max": null,
+  "ihracat_gerekli": false,
+  "kosullar": [],
+  "belgeler": [],
+  "alanlar": [
+   "firmaUnvani",
+   "vkn",
+   "vergiDairesi",
+   "yetkili",
+   "telefon",
+   "eposta",
+   "adres",
+   "il",
+   "kurulusYili",
+   "sirketTuru",
+   "naceKodu",
+   "calisan",
+   "ciro"
+  ],
+  "basvuru": {
+   "yontem": "pdf",
+   "form": "forms/yd-f217ccdd.pdf",
+   "online": "https://yatirimadestek.gov.tr/program/f217ccdd-737c-4039-8c39-4fb51e0ff62a",
+   "formlar": [],
+   "adimlar": []
+  },
+  "kredi": null,
+  "kaynak": "platform",
+  "resmi": {
+   "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
+   "sayfa": "https://yatirimadestek.gov.tr/program/f217ccdd-737c-4039-8c39-4fb51e0ff62a",
+   "guncelleme": "2026-11-12",
+   "kontrol": "2026-11-16",
+   "bolumler": [],
+   "belgeler": [
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/1507_proje_oneri_bilgileri_formu_hazirlama_kilavuzu_agy100-101.pdf",
+     "ad": "1507_proje_oneri_bilgileri_formu_hazirlama_kilavuzu_agy100-101.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/1507_proje_sonuc_raporu_agy351.pdf",
+     "ad": "1507_proje_sonuc_raporu_agy351.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/1507_uygulama_esaslari.pdf",
+     "ad": "1507_uygulama_esaslari.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/1507_donemsel_izleme_raporu_hazirlama_kilavuzu_agy401.pdf",
+     "ad": "1507_donemsel_izleme_raporu_hazirlama_kilavuzu_agy401.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/teknoloji_hazirlik_seviyeleri_ve_oncelikli_teknoloji_alanlari_ar-ge_ve_yenilik_konulari.pdf",
+     "ad": "teknoloji_hazirlik_seviyeleri_ve_oncelikli_teknoloji_alanlari_ar-ge_ve_yenilik_konulari.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/yonetmelik_teydeb.pdf",
+     "ad": "yonetmelik_teydeb.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ticarilesme_izleme_sunumu.pdf",
+     "ad": "ticarilesme_izleme_sunumu.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ticarilesme_izleme_sureci_sonuclarinin_degerlendirilmesine_iliskin_yontem.pdf",
+     "ad": "ticarilesme_izleme_sureci_sonuclarinin_degerlendirilmesine_iliskin_yontem.pdf"
+    },
+    {
+     "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/1507_sss.pdf",
+     "ad": "1507_sss.pdf"
     }
    ]
   }
@@ -12433,6 +12736,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/f4e77887-4d4c-4cc7-8b4d-d46b31dd3bf6",
+   "formlar": [],
    "adimlar": [
     "Bakanlık yurtdışı temsilciliklerine yapılır. Bakanlık yurtdışı temsilciliğinin bulunmadığı ülkelerde yapılan harcamalara ilişkin yurtdışı ödemeleri, faaliyetin yapıldığı ülkeye akredite olan Bakanlık yurtdışı temsilciliklerince yapılır."
    ]
@@ -12443,7 +12747,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f4e77887-4d4c-4cc7-8b4d-d46b31dd3bf6",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12520,6 +12824,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/f5f1d3a3-8129-496b-a24f-aa076d510107",
+   "formlar": [],
    "adimlar": []
   },
   "kredi": null,
@@ -12528,7 +12833,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f5f1d3a3-8129-496b-a24f-aa076d510107",
    "guncelleme": "2026-03-24",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [],
    "belgeler": []
   }
@@ -12585,7 +12890,8 @@
   "basvuru": {
    "yontem": "online",
    "form": null,
-   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-",
+   "online": "https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi",
+   "formlar": [],
    "adimlar": [
     "İşbirliği kuruluşları, başvuru belgeleri ile birlikte program başlangıç tarihinden en az 1 (bir) ay önce DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü) onay başvurusunda bulunur. Ödeme için ise işbirliği kuruluşlarının, faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde gerekli belgelerle birlikte, DYS üzerinden Ticaret Bakanlığına (İhracat Genel Müdürlüğü)/incelemeci kuruluşa(İBGS) başvurması gerekmektedir.",
     "Link: https://www.ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri- hakkinda-karara-iliskin-genelgeler/sanal-ticaret-heyeti-destegi"
@@ -12597,7 +12903,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f774d310-9e2a-42ee-b9c6-760c847b44c7",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12694,6 +13000,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/f77a0bca-9bb1-4dba-aa49-0ecd41079537",
+   "formlar": [],
    "adimlar": [
     "Başvurular, Bilimsel Proje Sistemi (PROSİS) üzerinden yapılmaktadır. Bütünleşik Bilgi Sistemi’ne üye olmanız gerekmektedir."
    ]
@@ -12704,7 +13011,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f77a0bca-9bb1-4dba-aa49-0ecd41079537",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12791,6 +13098,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/f8540d98-0268-47dc-938a-f5d5a6d142fc",
+   "formlar": [],
    "adimlar": [
     "TÜBİTAK. Online başvuru yapılamamaktadır."
    ]
@@ -12801,7 +13109,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/f8540d98-0268-47dc-938a-f5d5a6d142fc",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12888,6 +13196,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://ufukavrupa.org.tr",
+   "formlar": [],
    "adimlar": [
     "Başvurular https://ufukavrupa.org.tr web adresinden yapılmaktadır."
    ]
@@ -12898,7 +13207,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/fa4ab389-caba-4470-be3b-4faec31527f5",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -12977,6 +13286,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/fc85b4fe-7999-4a9d-a911-feb369ca3769",
+   "formlar": [],
    "adimlar": [
     "Telif Hakları Genel Müdürlüğü, Proje ve Eğitim Daire Başkanlığı Telefon: 0 (312) 470 68 14 E-posta: proje@telifhaklari.gov.tr"
    ]
@@ -12987,7 +13297,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/fc85b4fe-7999-4a9d-a911-feb369ca3769",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
@@ -13066,6 +13376,7 @@
    "yontem": "online",
    "form": null,
    "online": "https://yatirimadestek.gov.tr/program/fe5df282-63c6-441a-b20a-3dbe6618440e",
+   "formlar": [],
    "adimlar": [
     "Yatırım İşletmeler Genel Müdürlüğü, Kültür Merkezleri Daire Başkanlığı yigm.ktb.gov.tr Telefon: 0 (312) 470 71 25 – 470 71 24"
    ]
@@ -13076,7 +13387,7 @@
    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
    "sayfa": "https://yatirimadestek.gov.tr/program/fe5df282-63c6-441a-b20a-3dbe6618440e",
    "guncelleme": "2025-12-25",
-   "kontrol": "2026-11-09",
+   "kontrol": "2026-11-16",
    "bolumler": [
     {
      "baslik": "Kimler yararlanabilir?",
