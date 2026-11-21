@@ -498,8 +498,8 @@ async function saveFile(filename, bytes) {
 /* ---------- PDF: form doldurma ve rapor ---------- */
 function loadScript(src) { return new Promise((res, rej) => { if ($$(`script[src="${src}"]`).length) return res(); const s = document.createElement("script"); s.src = src; s.onload = res; s.onerror = () => rej(new Error("Kütüphane yüklenemedi")); document.head.append(s); }); }
 async function pdfLibs() {
-  await loadScript("https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js");
-  await loadScript("https://cdn.jsdelivr.net/npm/@pdf-lib/fontkit@1.1.1/dist/fontkit.umd.min.js");
+  await loadScript("eklenti/lib/pdf-lib.min.js");
+  await loadScript("eklenti/lib/fontkit.umd.min.js");
   return window.PDFLib;
 }
 async function fonts(doc) {
@@ -548,7 +548,10 @@ async function formMotoru() {
 }
 const alanAdlari = () => Object.fromEntries(Object.entries(ALANLAR).map(([k, v]) => [k, v.e]));
 // bytes: ArrayBuffer; döner: { tur, blob, uzanti, dolan:[{alan, etiket, deger}], bos:[] }
-async function belgeDoldur(bytes, ad, values) { const FD = await formMotoru(); return FD.doldur(bytes, ad, values, alanAdlari()); }
+async function belgeDoldur(bytes, ad, values) { const FD = await formMotoru();
+  const base = String(ad).split("/").pop();
+  const map = /\.pdf$/i.test(base) && await assetJSON("forms/maps/" + encodeURIComponent(base.slice(0, -4)) + ".json");
+  return FD.doldur(bytes, ad, values, alanAdlari(), map || {}); }
 // Programın doldurulabilir başvuru belgeleri (toplayıcının indirdiği PDF/Word formları)
 function formlar(x) { return (x.basvuru && x.basvuru.formlar) || []; }
 
@@ -558,26 +561,27 @@ async function fillForm(x, values) {
   // Kısa belgelerde (gerçek formlar) etiketlerden doldurmayı dene; uzun belgeler (uygulama esasları, çağrı metni) form değildir
   try {
     const sayfa = (await PDFDocument.load(kaynak, { ignoreEncryption: true })).getPageCount();
-    if (sayfa <= 8) { const r = await belgeDoldur(kaynak.slice ? kaynak.slice(0) : kaynak, x.basvuru.form, { ...values }); if (r.dolan.length) return { bytes: new Uint8Array(await r.blob.arrayBuffer()), filled: r.dolan.length }; }
+    if (sayfa <= 8) { const r = await belgeDoldur(kaynak.slice ? kaynak.slice(0) : kaynak, x.basvuru.form, { ...values, bugun: today() }); if (r.dolan.length) return { bytes: new Uint8Array(await r.blob.arrayBuffer()), filled: r.dolan.length, alanlar: r.dolan.map(d => d.alan) }; }
   } catch (e) { console.warn("Form motoru:", e); }
   const doc = await PDFDocument.load(kaynak);
   const f = await fonts(doc); const form = doc.getForm();
   const base = x.basvuru.form.split("/").pop().replace(/\.pdf$/i, "");
   const map = (await assetJSON(`forms/maps/${base}.json`)) || {};
   const v = { ...values, bugun: today() };
-  let filled = 0;
+  const alanlar = [];
   for (const fld of form.getFields()) {
     if (!(fld instanceof PDFTextField)) continue;
     const name = fld.getName(); const key = map[name] || (GUESS.find(([w]) => ascii(name).includes(w)) || [])[1];
     let val = key && v[key]; if (val == null || val === "") continue;
     if (["ciro", "projeButcesi", "talepTutari"].includes(key) && num(val) != null) val = new Intl.NumberFormat("tr-TR").format(num(val));
-    fld.setText(String(val)); filled++;
+    if (fld.getText()) continue;
+    fld.setText(String(val)); alanlar.push(ALANLAR[key]?.e || name);
   }
   if (form.getFields().length) form.updateFieldAppearances(f.r);
   pdfImza(doc, false);  // kurumun resmi formu: yalnızca "üreten" bilgisi, yazar alanına dokunulmaz
   // Doldurulamayan (taranmış) formlarda bilgileri ek sayfa olarak ekle
-  if (!filled) await writePdf(doc, f, [{ h1: "Başvuru bilgileri (form eki)" }, { small: "Bu form otomatik doldurulamadı. Aşağıdaki bilgileri forma elle aktarın." }, { kv: x.alanlar.map(k => [ALANLAR[k]?.e || k, values[k]]) }], x.ad);
-  return { bytes: await doc.save(), filled };
+  if (!alanlar.length) await writePdf(doc, f, [{ h1: "Başvuru bilgileri (form eki)" }, { small: "Bu form otomatik doldurulamadı. Aşağıdaki bilgileri forma elle aktarın." }, { kv: x.alanlar.map(k => [ALANLAR[k]?.e || k, values[k]]) }], x.ad);
+  return { bytes: await doc.save(), filled: alanlar.length, alanlar };
 }
 
 /* Her program için doldurulmuş "Başvuru hazırlık formu" (resmi PDF formu olmayan programlar dahil).

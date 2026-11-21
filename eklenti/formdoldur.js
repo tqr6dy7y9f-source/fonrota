@@ -86,7 +86,7 @@
     return sonuc;
   }
 
-  async function pdfDoldur(bytes, profil, adlar) {
+  async function pdfDoldur(bytes, profil, adlar, esleme) {
     const { PDFDocument, PDFTextField, rgb } = window.PDFLib;
     const doc = await PDFDocument.load(bytes, { ignoreEncryption: true });
     doc.registerFontkit(window.fontkit);
@@ -96,14 +96,31 @@
     let form = null; try { form = doc.getForm(); } catch { /* form yok */ }
     const alanlar = form ? form.getFields().filter(f => f instanceof PDFTextField) : [];
     for (const fl of alanlar) {
-      const k = F().etiketten(fl.getName().replace(/[_\-.]+/g, " ")); if (!k) continue;
+      const k = (Object.hasOwn(esleme, fl.getName()) && esleme[fl.getName()]) || F().etiketten(fl.getName().replace(/[_\-.]+/g, " ")); if (!k) continue;
       const v = deger(profil, k); if (!v) { bos.add(ad(adlar, k)); continue; }
       if (fl.getText()) continue;
       fl.setText(v); dolan.push({ alan: ad(adlar, k), etiket: fl.getName(), deger: v });
     }
     if (alanlar.length) { try { form.updateFieldAppearances(font); } catch { } }
     // 2) Düz PDF: etiket konumlarından
-    if (!dolan.length) {
+    let konumlar = [];
+    if (!alanlar.length && Array.isArray(esleme.konumlar) && esleme.sha256) {
+      const hash = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
+      const hex = Array.from(hash, b => b.toString(16).padStart(2, "0")).join("");
+      if (hex === esleme.sha256) konumlar = esleme.konumlar;
+    }
+    for (const { alan, sayfa, x, y, genislik, punto = 10 } of konumlar) {
+      const pg = doc.getPages()[sayfa - 1];
+      if (!pg || ![x, y, genislik, punto].every(Number.isFinite) || x < 0 || y < 0 ||
+          genislik <= 0 || punto <= 0 || x + genislik > pg.getWidth() || y + punto > pg.getHeight()) continue;
+      const v = deger(profil, alan);
+      if (!v) { bos.add(ad(adlar, alan)); continue; }
+      const size = Math.min(punto, punto * genislik / font.widthOfTextAtSize(v, punto));
+      if (size < 6) continue;
+      pg.drawText(v, { x, y, size, font });
+      dolan.push({ alan: ad(adlar, alan), etiket: alan, deger: v, sayfa });
+    }
+    if (!alanlar.length && !konumlar.length) {
       const pd = await window.pdfjsLib.getDocument({ data: new Uint8Array(bytes.slice(0)), isEvalSupported: false, disableFontFace: true }).promise;
       const sayfalar = doc.getPages(), mavi = rgb(0.05, 0.16, 0.48), yazilan = new Set();
       for (let n = 1; n <= Math.min(pd.numPages, 40); n++) {
@@ -222,9 +239,9 @@
   window.FormDoldur = {
     kok: "",   // lib/ klasörünün bulunduğu adres (eklentide chrome.runtime.getURL(""), sitede "eklenti/")
     tur,
-    async doldur(bytes, dosyaAdi, profil, adlar) {
+    async doldur(bytes, dosyaAdi, profil, adlar, esleme = {}) {
       const t = tur(bytes, dosyaAdi);
-      if (t === "pdf") { window.pdfjsLib.GlobalWorkerOptions.workerSrc = FormDoldur.kok + "lib/pdf.worker.min.js"; return { tur: t, ...(await pdfDoldur(bytes, profil, adlar)) }; }
+      if (t === "pdf") { window.pdfjsLib.GlobalWorkerOptions.workerSrc = FormDoldur.kok + "lib/pdf.worker.min.js"; return { tur: t, ...(await pdfDoldur(bytes, profil, adlar, esleme)) }; }
       if (t === "docx") return { tur: t, ...(await docxDoldur(bytes, profil, adlar)) };
       if (t === "doc") throw new Error("Bu dosya eski Word biçiminde (.doc). Word’de açıp “Farklı Kaydet > Word Belgesi (.docx)” ile kaydedip yeniden dene.");
       throw new Error("Bu dosya PDF ya da Word (.docx) başvuru formu değil.");

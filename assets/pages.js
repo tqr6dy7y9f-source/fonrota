@@ -810,7 +810,7 @@ P.basvuru = async () => {
     $("#act").innerHTML = `<h3>${pdfOk ? "Doldurulmuş resmi form" : "Doldurulmuş başvuru hazırlık formu"}</h3>
       ${e.length ? `<p class="small missing">${e.length} alan boş: ${e.slice(0, 4).map(k => ALANLAR[k]?.e).join(", ")}${e.length > 4 ? "…" : ""}</p>` : `<p class="small" style="color:var(--ok)">Tüm alanlar dolu.</p>`}
       <div class="actions" style="flex-direction:column;margin:12px 0">
-        ${pdfOk ? `<button class="btn seal" type="button" id="dl-form">Formu doldur ve indir (PDF)</button>` : ""}
+        ${pdfOk ? `<button class="btn seal" type="button" id="dl-form">Formu doldur ve indir (PDF)</button><div class="small" id="pdf-sonuc" role="status"></div>` : ""}
         <button class="btn ${pdfOk ? "ghost" : "seal"}" type="button" id="dl-info">${pdfOk ? "Hazırlık formunu da indir (PDF)" : "Hazırlık formunu indir (PDF)"}</button>
         <button class="btn ghost" type="button" id="muhasebe">↗ Muhasebecime gönder (PDF ile)</button><div class="paylas-sec" id="muh-sec" hidden></div>
         ${mode !== "bilgi" ? (() => { const sis = D.basvuruSistemi(x); return `<div class="sistem-kutu"><b>Başvuru yeri:</b> ${esc(sis.ad)}${sis.giris ? ` <span class="small muted">(${esc(sis.giris)} ile giriş)</span>` : ""}
@@ -835,7 +835,7 @@ P.basvuru = async () => {
     };
     if ($("#dl-form")) $("#dl-form").onclick = async () => {
       const b = $("#dl-form"); b.disabled = true; b.textContent = "Form hazırlanıyor…";
-      try { await persist(); const { bytes, filled } = await D.fillForm(x, values); if (await D.saveFile(`${x.id}-basvuru-formu.pdf`, bytes)) { await persist("Form hazır"); app.durum = "Form hazır"; $("#durum").value = "Form hazır"; toast(filled ? `${filled} alan dolduruldu. İmzalayıp kuruma yükle.` : "Form doldurulamadı; bilgiler forma ek sayfa olarak eklendi."); } }
+      try { await persist(); const { bytes, filled, alanlar } = await D.fillForm(x, values); if (await D.saveFile(`${x.id}-basvuru-formu.pdf`, bytes)) { $("#pdf-sonuc").textContent = filled ? "PDF’ye aktarılan alanlar: " + [...new Set(alanlar)].join(", ") : "Bilgilerin ek sayfada. Kurumun formunu elle tamamla."; if (filled) { await persist("Form hazır"); app.durum = "Form hazır"; $("#durum").value = "Form hazır"; } toast(filled ? `${filled} alan dolduruldu. İmzalayıp kuruma yükle.` : "Form doldurulamadı; bilgiler forma ek sayfa olarak eklendi."); } }
       catch (err) { pdfOk = false; renderAct(); toast("Form şu an alınamadı. Online başvuru rehberine geçtik."); }
       finally { if ($("#dl-form")) { $("#dl-form").disabled = false; $("#dl-form").textContent = "Formu doldur ve indir (PDF)"; } }
     };
