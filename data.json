@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-16T13:08",
+ "guncelleme": "2026-11-23T14:40",
  "ornek": false,
  "destekler": [
   {
@@ -61,7 +61,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f217ccdd-737c-4039-8c39-4fb51e0ff62a",
     "guncelleme": "2026-11-12",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -162,7 +162,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/76813b4a-a2a6-4702-946a-49cf0e262b57",
     "guncelleme": "2026-11-12",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -239,7 +239,71 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/8a987028-c221-4223-956c-2456561968e8",
     "guncelleme": "2026-11-04",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
+    "bolumler": [],
+    "belgeler": []
+   }
+  },
+  {
+   "id": "yd-c887bbd5",
+   "ad": "Yeşil Sanayi Destek Programı",
+   "kurum": "KOSGEB",
+   "url": "https://yatirimadestek.gov.tr/program/c887bbd5-0246-4986-9fd6-49eecdd85480",
+   "tur": "hibe",
+   "ust_limit": null,
+   "destek_orani": null,
+   "geri_odemeli": false,
+   "oran_metin": null,
+   "amac": [
+    "yesil"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "son_basvuru": "2026-12-09",
+   "ozet": "Yeşil Sanayi Destek Programı",
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "kosullar": [],
+   "belgeler": [],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "form": null,
+    "online": "https://yatirimadestek.gov.tr/program/c887bbd5-0246-4986-9fd6-49eecdd85480",
+    "formlar": [],
+    "adimlar": []
+   },
+   "kredi": null,
+   "kaynak": "platform",
+   "resmi": {
+    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
+    "sayfa": "https://yatirimadestek.gov.tr/program/c887bbd5-0246-4986-9fd6-49eecdd85480",
+    "guncelleme": "2026-11-17",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -303,7 +367,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/052cc3c7-77e2-4056-b8fb-389c1449051d",
     "guncelleme": "2026-04-03",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -372,7 +436,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/0f2ffa7d-98eb-4c85-9e90-452cae2ad1b2",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -475,7 +539,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/3c193217-4953-4e13-aa4a-ef823e66337c",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -565,9 +629,90 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/56f4e239-e710-4dcf-9c3b-31b14d56e8ed",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
+   }
+  },
+  {
+   "id": "yd-5b1ab195",
+   "ad": "Rekabet Öncesi İşbirliği Projeleri Sanayi Uygulamaları İçin İnsansı Robot Geliştirme Çağrısı",
+   "kurum": "Sanayi ve Teknoloji Bakanlığı",
+   "url": "https://yatirimadestek.gov.tr/program/5b1ab195-31fb-4999-89c4-20b6a3f884be",
+   "tur": "hibe",
+   "ust_limit": null,
+   "destek_orani": null,
+   "geri_odemeli": false,
+   "oran_metin": null,
+   "amac": [
+    "yatirim"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "son_basvuru": "2026-12-31",
+   "ozet": "Rekabet Öncesi İşbirliği Projeleri Sanayi Uygulamaları İçin İnsansı Robot Geliştirme Çağrısı",
+   "firma_yasi_max": null,
+   "ihracat_gerekli": false,
+   "kosullar": [],
+   "belgeler": [],
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "online",
+    "form": null,
+    "online": "https://yatirimadestek.gov.tr/program/5b1ab195-31fb-4999-89c4-20b6a3f884be",
+    "formlar": [],
+    "adimlar": []
+   },
+   "kredi": null,
+   "kaynak": "platform",
+   "resmi": {
+    "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
+    "sayfa": "https://yatirimadestek.gov.tr/program/5b1ab195-31fb-4999-89c4-20b6a3f884be",
+    "guncelleme": "2026-11-23",
+    "kontrol": "2026-11-23",
+    "bolumler": [],
+    "belgeler": [
+     {
+      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/usul_ve_esaslar-rekabet_oncesi_isbirligi_projeleri_destegi.pdf",
+      "ad": "usul_ve_esaslar-rekabet_oncesi_isbirligi_projeleri_destegi.pdf"
+     },
+     {
+      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/yonetmelik-rekabet_oncesi_isbirligi_projeleri_destegi.pdf",
+      "ad": "yonetmelik-rekabet_oncesi_isbirligi_projeleri_destegi.pdf"
+     },
+     {
+      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/teblig-rekabet_oncesi_isbirligi_projeleri_destegidamga_vergisi.pdf",
+      "ad": "teblig-rekabet_oncesi_isbirligi_projeleri_destegidamga_vergisi.pdf"
+     },
+     {
+      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/teblig-rekabet_oncesi_isbirligi_projeleri_destegigelir_vergisi_stopaji.pdf",
+      "ad": "teblig-rekabet_oncesi_isbirligi_projeleri_destegigelir_vergisi_stopaji.pdf"
+     }
+    ]
    }
   },
   {
@@ -656,7 +801,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/87175d4c-e7e0-47f6-91c8-de1f3e4cac12",
     "guncelleme": "2026-03-18",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -752,7 +897,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/8a1cb3cb-ec59-42ab-b45d-3dcb5b8a55ff",
     "guncelleme": "2026-04-21",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -816,7 +961,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/ee93eb7d-dcf0-44f8-8c5c-f3c0ed2769d7",
     "guncelleme": "2026-10-27",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -884,7 +1029,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/62c07a76-138f-47ad-be0c-f293f540392b",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -990,7 +1135,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/1ab67b2c-eb6b-4261-a0ec-f60ffa6adb36",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -1079,7 +1224,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/821ba676-5f59-48bc-8c96-4826bc915e25",
     "guncelleme": "2026-03-15",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -1143,7 +1288,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/9606be0e-71fe-4381-a623-5697b8b28854",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -1200,7 +1345,7 @@
    "sayfa": {
     "kaynak": "KOSGEB",
     "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredisi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Teknoloji ve yenilik odaklı işletmelerin yapay zekâ teknolojilerini iş süreçlerinde etkin şekilde kullanmalarını sağlamak, dijital kapasitelerini ve üretim yetkinliklerini geliştirmek.\nYapay Zekâ Kredisi Taahhütnamesi Yapay Zekâ Kredisi Başvuru Formu Yapay Zekâ Kredisi Hizmet Giderleri Tablosu\nYapay Zekâ Kredisi Taahhütnamesi\nYapay Zekâ Kredisi Başvuru Formu\nYapay Zekâ Kredisi Hizmet Giderleri Tablosu\nYapay Zekâ Kredisi Hizmet Sağlayıcılar Listesi\nHangi işletmeler bu krediye başvuru yapabilir? Krediden yararlanabilmek için işletmenin aşağıdaki şartları taşıması gerekir: Türk Ticaret Kanunu’nda tanımlı gerçek veya tüzel kişi statüsünde KOBİ olması, KOSGEB sisteminde kayıtlı, işletme beyanının güncel ve aktif durumda bulunması, Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olması, GO Dijital Cüzdan hesabının bulunması. Başvuru nereden ve nasıl yapılır? Başvurular, KOSGEB bilgi sistemi (www.kosgeb.gov.tr ve/veya e-Devlet) üzerinden Yapay Zeka Kredi Başvurusu doldurularak elektronik ortamda yapılır. Yararlanma koşulları sistem tarafından otomatik kontrol edilir. Kredi tutar limitleri ne kadardır? İşletme başına kredi üst limiti 5.000.000 TL’dir. Kredi Türk Lirası cinsinden kullandırılır. Krediye faiz veya komisyon uygulanıyor mu? Hayır; kullandırılan kredi için herhangi bir faiz veya komisyon uygulanmaz. Kredi limitleri nasıl belirlenir ve işletmeye en fazla ne kadar kredi tanımlanabilir? İşletmelere, ücretsiz hizmet kullanım limitinden bağımsız olarak kesin teminat mektubu karşılığında en fazla 500.000 TL’ye kadar kredi limiti tanımlanır. İşletmenin onaylı bir ücretsiz hizmet kullanım limiti bulunuyorsa, bu limite ek olarak teminat karşılığı bu tutar kadar ilave kredi limiti de tanımlanabilir. Tanımlanan kredilerin toplam tutarı ise işletme başına 5.000.000 TL’yi aşamaz. Kredinin vadesi ve ödemesiz dönemi ne kadardır? Kredinin toplam vadesi 24 ay olup, kredi başlangıç tarihinden itibaren ilk 12 ayı ödemesiz dönemdir. Kredi kullanımı için teminat verilmesi zorunlu mudur? Evet; kredinin GO Dijital Cüzdan hesabına blokeli olarak aktarılabilmesi için bankadan Kesin Teminat Mektubu getirilmesi zorunludur. Teminat mektubunda aranacak özel şartlar nelerdir? Banka teminat mektubunda şu hususların bulunması gerekir: Kesin Teminat Mektubunun \"GO Dijital Teknoloji Hizmetleri Anonim Şirketi” hitaben alınması Üzerinde \"GO Dijital Yapay Zeka Kredisi\" ifadesinin yer alması, Vadesinin süresiz olması veya son geri ödeme tarihinin 6 ay sonrasını kapsaması (mümkün olmaması halinde en az 1 yıl süreli), \"GO Dijital Teknoloji Hizmetleri Anonim Şirketinin yazılı muvafakati alınmadan iş bu teminat mektubunun risk kapaması ve çıkışı yapılmayacaktır.\" ibaresinin bulunması Kredi hangi harcamalar için kullanılabilir? Kredi, www.kosgeb.gov.tr adresinde yayınlanan *\"Yapay Zeka Kredisi Hizmet Sağlayıcılar Listesi\"*nde yer alan hizmet sağlayıcılardan alınacak hizmet giderleri ödemelerinde GO Dijital Cüzdan üzerinden kullanılır. Fatura ödemeleri ve blokenin kaldırılması nasıl işler? İşletme hizmeti temin ettikten sonra faturayı GO Dijital Cüzdan hesabına yükler. Faturanın kredi kapsamına uygunluğu incelendikten sonra, uygun bulunan gider tutarı KDV hariç olarak GO Dijital Cüzdan hesabındaki blokeli tutardan serbest bırakılır. Kredi geri ödemeleri ne zaman ve nasıl yapılır? Geri ödemeler, 12 aylık ödemesiz dönemin bitimini takip eden ilk iş gününden itibaren başlar. Ödemeler dörder aylık dönemler halinde 4 eşit taksitte gerçekleştirilir."
    },
    "alanlar": [
@@ -1277,7 +1422,7 @@
    "sayfa": {
     "kaynak": "KOSGEB",
     "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Stratejik Ürün Destek Programı\nSanayi ve Teknoloji Bakanlığınca yürütülen Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında, Türkiye’de orta-yüksek ve yüksek teknoloji seviyeli sektörlerdeki katma değeri yüksek ürünlerin ve bu sektörlerin gelişimi için kritik önemi haiz ürünlerin üretimini artırmaya yönelik olarak yürütülecek yatırım projelerine ve/veya başvuruda bulunan projeler için Bakanlıkça yetkilendirilmiş bağımsız danışmanlık firması tarafından Bakanlığın belirlediği formatta hazırlanacak değerlendirme raporu giderlerini desteklemektir.\nBaşvuru yapacak işletmenin; Türkiye’de yerleşik sermaye şirketi statüsündeişletme olması, Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında yer alan ürünleri üretmek üzere Bakanlığa ön başvuruda bulunup kesin başvuru yapmaya davet edilerek Program Portali üzerinden KOSGEB’e yönlendirilmiş olması, KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması, gerekmektedir.\n• Türkiye’de yerleşik sermaye şirketi statüsündeişletme olması,\n• Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında yer alan ürünleri üretmek üzere Bakanlığa ön başvuruda bulunup kesin başvuru yapmaya davet edilerek Program Portali üzerinden KOSGEB’e yönlendirilmiş olması,\n• KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması,\nSTRATEJİK ÜRÜN DESTEK PROGRAMI DESTEK UNSURU DESTEK TUTARI DESTEK ORANI PROJE SÜRESİ Bağımsız Değerlendirme Desteği 50.000 TL %100 (Geri Ödemesiz) 24 Ay Personel Giderleri Desteği 10.000.000 TL %80 (Geri Ödemeli\n01.08.2024 ve sonrası başvurular için geçerli olan mevzuat Stratejik Ürün Destek Programı Uygulama Esasları 28 Aralık 2020 tarih ve sonrası başvurular için geçerli olan mevzuat (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) Stratejik Ürün Destek Programı Stratejik Ürün Destek Programı Uygulama Esasları Teknoloji Odaklı Sanayi Hamlesi Programı - 03.10.2019 Tarihli Makine Sektörü Çağrısı kapsamındaki başvurular için geçerli olan mevzuat Stratejik Ürün Destek Programı Stratejik Ürün Destek Programı Uygulama Esasları 31 Mart 2018 tarihi ve öncesi başvurular için geçerli olan mevzuat Stratejik Ürün Destek Programı Stratejik Ürün Destek Programı Uygulama Esasları Stratejik Ürüne İlişkin Bilgi Dökümanı"
    },
    "alanlar": [
@@ -1357,7 +1502,7 @@
    "sayfa": {
     "kaynak": "TÜBİTAK",
     "url": "https://www.tubitak.gov.tr/tr/burslar/lisans/mentorluk-destegi-programi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": ""
    },
    "alanlar": [
@@ -1423,7 +1568,7 @@
    "sayfa": {
     "kaynak": "TÜBİTAK",
     "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1612-bigg-1asama-uygulayici-kurulus-cagrisi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "2012 yılından itibaren TÜBİTAK, BiGG Programı kapsamında girişimcilerin teknoloji ve yenilik odaklı iş fikirlerini, kuracakları AR-GE potansiyeli olan firmalarda ticari değeri yüksek ürün ve hizmetlere dönüştürebilmeleri için, fikir aşamasından pazara kadar olan süreçleri desteklemektedir.\n2015 yılından bu yana BiGG Programının birinci aşaması Uygulayıcı Kuruluşlar tarafından yürütülmektedir.\nGirişimcilik ekosisteminde etkin rol alan teknoloji geliştirme bölgeleri ve teknoloji transfer ofislerinin yanı sıra finans kurumlarının, özel sektörün ve araştırma altyapılarının da girişimcilere destek olmak üzere, iş birliğine dayanan yenilikçi modeller geliştirmeleri teşvik edilmektedir. Bankaların, fonların ve yatırımcı ağlarının hızlandırma sürecine dahil olması ile girişimcilerin finansa erişiminin kolaylaşması ve BiGG desteği ile kurulan işletmelerin büyüme potansiyellerinin hızla hayata geçirilmesi hedeflenmektedir.\nYetkinliklerini birleştirerek girişimcilik ekosistemini geliştirmeyi amaçlayan ve 2026-2028 döneminde BiGG Programı 1. aşama süreçlerini yürütecek kuruluşlar, girişimcilerin teknoloji odaklı iş fikri başvurularını toplayarak değerlendirecek, uygun buldukları iş fikirlerini ön kuluçkaya alarak iş fikri doğrulama süreçlerinden geçirerek, nitelikli iş planı hazırlama hususunda girişimcilere destek olacaktır.\n1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde 2026-2028 döneminde 1. aşama faaliyetlerini yürütecek Uygulayıcı Kuruluşlar belirlenmiştir.\nBu çağrı ile belirlenen Hızlandırma Programında yer alan Uygulayıcı Kuruluşlardan, 1812 Yatırım Tabanlı Girişimcilik Destek Programı kapsamında açılan tüm çağrılarda belirlenen tematik alanlarda girişimcilerin iş fikri başvurularını toplaması ve değerlendirmesi, başarılı bir girişime dönüşme potansiyeli olan iş fikirleri için iş planı hazırlama desteği vermesi beklenmektedir.\nUygulayıcı kuruluşların yürüteceği hızlandırma programlarının çerçevesi, BiGG Yatırım Hızlandırma Programı Aşaması (Aşama 1) Uygulayıcı Kuruluş Kılavuzu ile belirlenmiştir. Bu çağrı sonucunda Uygulayıcı Kuruluşların, Kılavuzda belirtilen çerçevede girişimcilerin iş fikirlerini nitelikli iş planlarına dönüştürecekleri özgün, etkili ve uygulanabilir mekanizmalar ile hızlandırma programları yürütmeleri hedeflenmektedir."
    },
    "alanlar": [
@@ -1497,7 +1642,7 @@
    "sayfa": {
     "kaynak": "TÜBİTAK",
     "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1613-teknoloji-transferi-profesyoneli-cagrisi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "TÜBİTAK, 2012 yılından itibaren üniversitelerde yürütülen araştırma çıktılarının ekonomik değere dönüşmesi, üniversite-sanayi işbirliğinin sağlanması, üniversitelerin ulusal ve uluslararası destek mekanizmalarından faydalanması, üniversitelerde üretilen bilgiye dayalı akademik girişimciliğin geliştirilmesi ve üniversitelerde fikri sınai hakların ticarileştirilmesi hedeflerine yönelik olarak faaliyet gösteren Teknoloji Transfer Ofislerine (TTO) yönelik farklı destek programları yürütmektedir.\nTTO’ların performansı, üniversitelerin araştırma sonuçlarını ticarileştirilmesi ve kamu-üniversite-sanayi etkileşimi bağlamında ürettiği çıktılar üzerinden ölçülmektedir. Üniversitelerin farklı yapıları ve bölgesel faktörlerin yanı sıra TTO’ların kurumsal kapasiteleri de performanslarını etkilemektedir. TTO’ların kurumsal kapasitelerinin önemli bileşenlerinden birisi bünyelerinde çalışan Teknoloji Transferi Profesyonellerinin (TTP) yetkinlikleridir.\nTemel olarak aşağıdaki alanlarda yetkin TTP’lerin, TTO’ların performasına katkı sağlaması beklenmektedir:\n• Araştırma sonuçlarının ekonomik faydaya dönüştürülmesi\n1601-2023-1 çağrısının amacı, TTO’ların asgari düzeyde yukarıda belirtilen kapsamdaki faaliyetleri yürütebilecek yeni TTP’leri istihdam etmeleri veya bünyelerinde çalışmakta olan TTP’lerin sürekliliğini sağlamalarını teşvik etmektir.\nBaşvuru aşamasında 24 aylık proje süresi için sunulabilecek proje bütçesi üst sınırı aşağıdaki şekilde hesaplanır:\nA (Personel giderleri)=24x6xBaşvuru tarihindeki brüt asgari ücret\nB (Hizmet alımı giderleri)= Ax%5\nD (proje bütçesi üst sınırı)=A+B+C\nBu tutara genel giderler dahildir. Destekleme aşamasında personel maliyetlerindeki artışlar destek kapsamında değerlendirilecektir.\nTÜBİTAK tarafından ayrıca bir duyuru yapılana kadar Çağrı sürekli başvuruya açıktır. Aşağıda belirtilen zaman aralıklarındaki proje önerileri gruplandırılarak panel yöntemi ile değerlendirilecektir.\nAşağıda belirtilen zaman aralıklarındaki proje önerileri gruplandırılarak panel yöntemi ile değerlendirilecektir."
    },
    "alanlar": [
@@ -1573,7 +1718,7 @@
    "sayfa": {
     "kaynak": "İŞKUR",
     "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/isgucu-uyum-programi/",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "İşgücü Uyum Programı (İUP) nedir? Özel politika gerektiren gruplar başta olmak üzere işsizlerin işgücü piyasasına geçişini sağlayacak bilgi, beceri, çalışma alışkanlığı ve disiplinini kazandırmak üzere Türkiye İş Kurumu tarafından aktif işgücü hizmetleri kapsamında kamu kurum ve kuruluşları ile iş birliği yapılarak düzenlenen programlardır.\nİUP Katılım Şartları Nelerdir? a) Türkiye Cumhuriyeti vatandaşı olmak, b) Kuruma kayıtlı olmak, c) 18 yaşını tamamlamış olmak, ç) Yaşlılık veya malullük aylığı almamak, d) Program talep tarihinden önceki bir yıl içerisinde ve programın fiilen başlayacağı tarihe kadar yüklenicinin veya bağlı, ilgili, ilişkili ve yan kuruluşlarının çalışanı olmamak, e) Başvuru tarihinden önceki son bir aylık sürede 5510 sayılı Kanunun 4 üncü maddesi kapsamında sigortalı olarak bildirilmemiş olmak veya sigortalı sayılmamak, f) Başvuru tarihi itibarıyla 5510 sayılı Kanunun 5 inci maddesi kapsamında sigortalı olarak bildirilmemiş olmak veya sigortalı sayılmamak, g) Hane gelir şartını sağlamak, ğ) Kurum tarafından sunulan aktif işgücü veya işsizlik sigortası programlarının yararlanıcısı olmamak, şartları aranır. İUP Uygulanabilecek Faaliyet Alanları Nelerdir? a) Engelli, yaşlı ve hasta bakımına yönelik faaliyetlerin desteklenmesi, b) Çocuk bakım işlerine yönelik faaliyetlerin desteklenmesi, c) Tarımsal üretim uygulamalarının ve hayvancılık faaliyetlerinin desteklenmesi faaliyetleri, ç) Ağaçlandırma faaliyetlerinin desteklenmesi, d) Kamusal alanların temizlik, bakım ve onarım faaliyetlerinin desteklenmesi, e) Geri dönüşüm ve atık imha faaliyetlerinin desteklenmesi, f) Parkların ve yeşil alanların korunması ve geliştirilmesi faaliyetlerinin desteklenmesi, g) Biyolojik çeşitliliğin korunması ve doğal yaşam alanlarının restorasyon faaliyetlerinin desteklenmesi, ğ) Spor ve kültür faaliyetlerinin desteklenmesi, h) Kurum tarafından belirlenecek ve kamu kurum ve kuruluşlarıyla yürütülebilecek diğer faaliyetlerin desteklenmesi, İUP Katılımcılarına Verilecek Eğitimler Nelerdir? a) İş sağlığı ve güvenliği eğitimi b) Bağımlılıkla mücadele eğitimi c) İş arama becerisinin geliştirilmesi eğitimi ç)İş ahlakı, motivasyon ve stres yönetimi eğitimi d) Kişiler arası ilişkiler ve etkili iletişim eğitimi e) Finansal okuryazarlık eğitimi f) Genel Müdürlük tarafından Kurumun tanıtımı ve İUP hakkında katılımcıların bilgilendirilmesi başta olmak üzere katılımcıların niteliğinin geliştirilmesine yönelik olarak talebin uygun bulunması ve ödenek tahsis edilmesi aşamasında belirlenebilecek diğer eğitimler g) Yüklenici kamu kurumunun faaliyet alanına yönelik olarak belirleyeceği diğer eğitimler Katılımcılara Hangi Ödemeler Yapılmaktadır? Katılımcılara katılım sağladıkları günler için 01 Ocak 2026 tarihi itibari ile 1.375,00TL cep harçlığı ödenir."
    },
    "alanlar": [
@@ -1654,7 +1799,7 @@
    "sayfa": {
     "kaynak": "İŞKUR",
     "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/iskur-genclik-programi/",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "İŞKUR Gençlik Programı; Üniversite öğrencilerinin istihdam edilebilirliğini artıracak bilgi, beceri, çalışma alışkanlığı ve disiplinini kazandırmak üzere Türkiye İş Kurumu tarafından 10.12.2003 tarihli ve 25326 sayılı Resmî Gazete’de yayımlanan 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanununun ekli listesinde yer alan devlet üniversiteleri ile iş birliği yapılarak düzenlenen ve işgücü uyum programı uygulaması olan bir aktif işgücü programıdır.\nTürkiye İş Kurumu olarak, devlet üniversiteleri ile birlikte, öğrencilerimizin istihdam edilebilirliğinin artırılmasına katkı sağlamak, onlara bilgi, beceri, çalışma alışkanlığı ve disiplinini kazandırmak amacıyla İŞKUR Gençlik Programı’nı düzenliyoruz. Program kapsamında, katılımcılara hem iş gücü deneyimi hem de gelir desteği sağlıyoruz.\nAyrıca program kapsamında katılımcılara bireysel danışmanlığın yanı sıra iş arama, finansal okuryazarlık, öz geçmiş hazırlama, mülakat teknikleri gibi konularda eğitimler vererek iş gücüne katılmaları noktasında destekleyici faaliyetler gerçekleştiriyoruz.\nİŞKUR Gençlik Programı'ndan kimler faydalanabilir?\nDevlet üniversitelerinin ön lisans, lisans, yüksek lisans ve doktora örgün eğitimlerinde yer alan aktif öğrenciler yararlanabilir. (Açık öğretim ve uzaktan eğitim öğrencileri programdan faydalanamaz.)\nİŞKUR Gençlik Programı Katılım Şartları Nelerdir? a) Türkiye Cumhuriyeti vatandaşı olmak, b) Kuruma kayıtlı olmak, c) 18 yaşını tamamlamış olmak, ç) Yaşlılık veya malullük aylığı almamak, d) Program talep tarihinden önceki bir yıl içerisinde ve programın fiilen başlayacağı tarihe kadar yüklenicinin veya bağlı, ilgili, ilişkili ve yan kuruluşlarının çalışanı olmamak, e) Başvuru tarihinden önceki son bir aylık sürede 5510 sayılı Kanunun 4 üncü maddesi kapsamında sigortalı olarak bildirilmemiş olmak veya sigortalı sayılmamak, f) Başvuru tarihi itibarıyla 5510 sayılı Kanunun 5 inci maddesi kapsamında sigortalı olarak bildirilmemiş olmak veya sigortalı sayılmamak, g) Hane gelir şartını sağlamak, ğ) Kurum tarafından sunulan aktif işgücü veya işsizlik sigortası programlarının yararlanıcısı olmamak, h) Yüklenici üniversitenin öğrencisi olmak (açık öğretim veya uzaktan öğretim öğrencisi olmamak kaydını dondurmuş ve/veya pasif durumda olmamak)"
    },
    "alanlar": [
@@ -1735,7 +1880,7 @@
    "sayfa": {
     "kaynak": "İŞKUR",
     "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/nitelikli-isgucu-yetistirme-programi/",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "“İŞKUR ve TOBB iş birliğiyle hayata geçirilen Nitelikli İşgücü Yetiştirme Programı (NİYEP) ile işgücü piyasasına nitelikli işgücü kazandırıyoruz.”\n23 Eylül 2024 tarihinde Türkiye İş Kurumu (İŞKUR) ve Türkiye Odalar ve Borsalar Birliği (TOBB) arasında imzalanan Nitelikli İşgücü Yetiştirme Programı (NİYEP) İşbirliği Protokolü kapsamında hayata geçirilen mesleki eğitim kursları ile işgücü piyasasında ihtiyaç duyulan niteliklere sahip bireyleri yetiştirerek istihdamı artırmak ve işsizlerin mesleki yetkinliklerini geliştirmek amaçlanmaktadır. NİYEP Kurslarından Yararlanma Şartları\n• Genel Müdürlük tarafından belirlenecek usul ve esaslar kapsamında Kuruma kayıtlı işsiz olmak,\n• Kursa başlama tarihinden önceki son on beş günde adına uzun vadeli sigorta prim bildirimi yapılmamış olmak,\n• 15 yaşını tamamlamış ve Genel Müdürlük tarafından belirlenecek üst yaş sınırını aşmamış olmak,\n• Mesleğin gereklerine uygun olarak belirlenen özel şartlara sahip olmak,\n• Kurum tarafından aynı meslekte düzenlenen kursu tamamlamamış olmak,\n• İş ve meslek danışmanlığı hizmetlerinden faydalanmak,\n• İşverenin birinci veya ikinci derece kan hısımı veya eşi olmamak,\n• Kurslara katılmama yönünde yasaklılık uygulanmıyor olmak gerekmektedir.\nAyrıca düzenlenen mesleki eğitim kursundan veya işbaşı eğitim programından bir kişi en fazla ikişer kere yararlanabilmekte olup kişilerin kurs ve programlardan toplam yararlanma sayısı ise üçü geçemeyecektir. NİYEP Kurslarının Süresi\nNİYEP kursları, günlük en az beş en fazla sekiz saat ve haftada altı günü geçmemek üzere, haftalık en az otuz en fazla kırk beş saat olarak düzenlenmektedir. Eğitimler teorik eğitim ve pratik eğitim şeklinde iki aşamalı olarak gerçekleştirilmektedir. Teorik ve pratik eğitimlerin toplam süresi yüz altmış fiili günü geçememektedir. Teorik ve pratik eğitim, günde en az beş en fazla sekiz saati geçmeyecek şekilde aynı hafta içerisinde farklı günlerde verilebilir. Teorik ve pratik eğitim aynı gün içerisinde birlikte verilemez. NİYEP Kurslarında Karşılanabilecek Giderler"
    },
    "alanlar": [
@@ -1818,7 +1963,7 @@
    "sayfa": {
     "kaynak": "İŞKUR",
     "url": "https://www.iskur.gov.tr/is-arayan/aktif-isgucu-programlari/uretim-surecine-katilim-programi/",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Aradığınız Nitelikli İş Gücünü Yetiştirme İmkanı\nÜretim Sürecine Katılım Programı (ÜSKAP), işverenlerin ihtiyaç duydukları nitelikli iş gücünü herhangi bir maliyete katlanmaksızın iş yerinde yetiştirmelerine olanak tanıyan aktif bir iş gücü programıdır. Bu program sayesinde, istihdam sürecinde daha isabetli kararlar alabilir, işe almayı düşündüğünüz kişilerin mesleki yeterliliklerini doğrudan üretim ortamında gözlemleyebilirsiniz. Gerekli görülen durumlarda katılımcılara uygulamalı eğitimler vererek, nihai işe alım kararınızı daha sağlam bir zemine oturtabilirsiniz.\nÜretim Sürecine Katılım Programından Yararlanma Şartları Nelerdir?\nPrograma katılmak isteyen kişilerin aşağıdaki şartları sağlaması gerekmektedir:\nİşe giriş tarihi itibarıyla İŞKUR'a kayıtlı işsiz statüsünde olmak. Türkiye Cumhuriyeti vatandaşı olmak. Son bir ay içinde uzun vadeli sigorta kolları kapsamında herhangi bir sigortalı çalışması bulunmamak. İşe giriş tarihi itibarıyla 18 yaşından büyük ve 35 yaşından küçük olmak.\nProgram süresi azami üç ay ile sınırlıdır. Bu süre boyunca işverenlere, Sosyal Güvenlik Prim gün sayısı esas alınarak her bir katılımcı için aylık en fazla 32.500 TL tutarında ücret, vergi ve prim desteği sağlanmaktadır.\nProgram, 2026 yılı itibarıyla sadece Hatay ilinde uygulanmaktadır.\nÜretim Sürecine Katılım Programına başvuru şartlarını sağlayan tüm işverenler, Çalışma ve İş Kurumu İl Müdürlükleri, Hizmet Merkezleri ya da İŞKUR e-Şube aracılığıyla başvuruda bulunabilirler."
    },
    "alanlar": [
@@ -1896,7 +2041,7 @@
    "sayfa": {
     "kaynak": "İŞKUR",
     "url": "https://www.iskur.gov.tr/is-arayan/issizlik-sigortasi/ucret-garanti-fonu/",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Ücret Garanti Fonu, konkordato ilan edilmesi, aciz vesikası alınması, iflas veya iflasın ertelenmesi nedenleri ile işverenin ödeme güçlüğüne düştüğü hallerde işçilerin 3 aylık ödenmeyen ücret alacaklarını karşılamak amacıyla İşsizlik Sigortası Fonu kapsamında kurulan Fondur.\nÜcret Garanti Fonu, işverenlerce işsizlik sigortası primi olarak yapılan ödemelerin yıllık toplamının yüzde birinden oluşmaktadır.\nÖdeme güçlüğüne düşen işverenden ücret alacağı bulunan işçilerin, İŞKUR birimine şahsen başvurmaları gerekmektedir.\nÜcret Garanti Fonuna Başvuru İçin Gerekli Belgeler\nÖdeme güçlüğüne düşen işverenden ücret alacağı bulunan işçilerin,\n1- Ücret Garanti Fonu Talep Dilekçesi 2- İşverenin Ödeme Güçlüğüne Düştüğünü Gösteren Belge;\n• İşveren Hakkında Aciz Vesikası Alınması durumunda; İcra Dairesinden alınan Aciz Vesikası veya Aciz Vesikası hükmündeki Haciz Tutanağı,\n• İşverenin İflası Durumunda; mahkemece verilen iflas kararı veya iflas kararının ilan edildiğini gösteren belge,\n• İşverenin iflasının ertelenmesi durumunda, mahkemece verilen iflasın ertelenmesi kararı veya iflasın ertelenmesinin ilan edildiğini gösteren belge,\n• İşveren Hakkında Konkordato İlan Edilmesi durumunda; mahkemece verilen konkordato mühlet kararı veya konkordato mühlet kararının ilan edildiğini gösteren belge,\n3- İşçinin ücret alacağını aylar itibariyle gösteren İşçi Alacak Belgesi,\nile İŞKUR birimine şahsen başvurmaları gerekmektedir.\nÜcret Garanti Fonu Yararlanma Şartları İşçilerin ücret garanti fonu ödemelerinden yararlanılabilmesi için;\n• Ücret alacağının bulunduğu dönemde hizmet akdine tabi olarak çalışıyor olması,\n• İşverenin ödeme güçlüğüne düşmüş olması (konkordato, aciz vesikası, iflas, iflasın ertelenmesi nedenleriyle),\n• İşçinin, işverenin ödeme güçlüğüne düşmesinden önceki son bir yıl içinde aynı işyerinde 4447 sayılı İşsizlik Sigortası Kanunu kapsamında en az bir gün çalışmış olması,\n• 5 yıllık zaman aşımına uğramamış ödenmeyen ücret alacağının bulunması,\nÜcret Garanti Fonu Ödeme Miktarı\nÜcret garanti fonu kapsamında işçilere, 3 ayı geçmemek üzere işverenden olan temel ücret alacakları kadar ödeme yapılmaktadır. Ücret garanti fonu kapsamında yapılan ödemeler her halükarda sigorta primine esas günlük kazanç üst sınırını (9 katı) aşamaz."
    },
    "alanlar": [
@@ -1977,7 +2122,70 @@
    "sayfa": {
     "kaynak": "Türk Eximbank",
     "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alici-kredileri",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
+    "metin": "Bankamızın Yatırım Hizmet ve Faaliyet İzinleri"
+   },
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "form": null,
+    "online": "https://www.eximbank.gov.tr/",
+    "adimlar": []
+   },
+   "kredi": null,
+   "kaynak": "kurum-sitesi"
+  },
+  {
+   "id": "eximbank-b08cd2a7",
+   "ad": "IBRD Yeşil İhracat Destek Kredisi",
+   "kurum": "Türk Eximbank",
+   "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi",
+   "tur": "kredi",
+   "ust_limit": null,
+   "destek_orani": null,
+   "oran_metin": null,
+   "amac": [
+    "yatirim",
+    "ihracat",
+    "finansman",
+    "yesil"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "son_basvuru": null,
+   "ozet": "Bankamız, IBRD garantisiyle temin edilen fonla, Avrupa Birliği'nin 2026 yılında devreye alacağı Sınırda Karbon Düzenleme Mekanizması (CBAM) çerçevesinde, demir-çelik, hidrojen, gübre, alüminyum, elektrik, çimento gibi sektörlerde faaliyet gösteren ihracatçılarımızın olası olumsuz etkilerden korunmas",
+   "firma_yasi_max": null,
+   "ihracat_gerekli": true,
+   "kosullar": [],
+   "belgeler": [],
+   "sayfa": {
+    "kaynak": "Türk Eximbank",
+    "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi",
+    "kontrol": "2026-11-23",
     "metin": "Bankamızın Yatırım Hizmet ve Faaliyet İzinleri"
    },
    "alanlar": [
@@ -2038,7 +2246,7 @@
    "sayfa": {
     "kaynak": "Türk Eximbank",
     "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/avrupa-yatirim-bankasi-ayb-kredisi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Bankamızın Yatırım Hizmet ve Faaliyet İzinleri"
    },
    "alanlar": [
@@ -2098,7 +2306,7 @@
    "sayfa": {
     "kaynak": "Türk Eximbank",
     "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Bankamızın Yatırım Hizmet ve Faaliyet İzinleri"
    },
    "alanlar": [
@@ -2120,6 +2328,68 @@
     "projeSuresi",
     "projeButcesi",
     "talepTutari"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "form": null,
+    "online": "https://www.eximbank.gov.tr/",
+    "adimlar": []
+   },
+   "kredi": null,
+   "kaynak": "kurum-sitesi"
+  },
+  {
+   "id": "eximbank-bd2fdf4a",
+   "ad": "Spesifik İhracat Kredi Sigortası",
+   "kurum": "Türk Eximbank",
+   "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi",
+   "tur": "kredi",
+   "ust_limit": null,
+   "destek_orani": null,
+   "oran_metin": null,
+   "amac": [
+    "yatirim",
+    "ihracat",
+    "finansman"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "son_basvuru": null,
+   "ozet": "Spesifik İhracat Kredi Sigortası programının amacı ihracatçılarımızın tek bir satış sözleşmesine bağlı olarak ve azami vadesi OECD düzenlemelerine paralel olarak değerlendirilecek ihracatlarından doğacak alacaklarını, ticari ve politik risklere karşı teminat altına almak ve teminat altına alınan ihr",
+   "firma_yasi_max": null,
+   "ihracat_gerekli": true,
+   "kosullar": [],
+   "belgeler": [],
+   "sayfa": {
+    "kaynak": "Türk Eximbank",
+    "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi",
+    "kontrol": "2026-11-23",
+    "metin": "Bankamızın Yatırım Hizmet ve Faaliyet İzinleri"
+   },
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
    ],
    "basvuru": {
     "yontem": "bilgi",
@@ -2164,7 +2434,69 @@
    "sayfa": {
     "kaynak": "Türk Eximbank",
     "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alici-kredileri/uluslararasi-proje-kredileri",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
+    "metin": "Bankamızın Yatırım Hizmet ve Faaliyet İzinleri"
+   },
+   "alanlar": [
+    "firmaUnvani",
+    "vkn",
+    "vergiDairesi",
+    "yetkili",
+    "telefon",
+    "eposta",
+    "adres",
+    "il",
+    "kurulusYili",
+    "sirketTuru",
+    "naceKodu",
+    "calisan",
+    "ciro"
+   ],
+   "basvuru": {
+    "yontem": "bilgi",
+    "form": null,
+    "online": "https://www.eximbank.gov.tr/",
+    "adimlar": []
+   },
+   "kredi": null,
+   "kaynak": "kurum-sitesi"
+  },
+  {
+   "id": "eximbank-9db40df6",
+   "ad": "İhracat Destek Finansmanı",
+   "kurum": "Türk Eximbank",
+   "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani",
+   "tur": "kredi",
+   "ust_limit": null,
+   "destek_orani": null,
+   "oran_metin": null,
+   "amac": [
+    "yatirim",
+    "ihracat",
+    "finansman"
+   ],
+   "olcek": [
+    "mikro",
+    "kucuk",
+    "orta",
+    "buyuk"
+   ],
+   "sektor": [
+    "tumu"
+   ],
+   "il": [
+    "tumu"
+   ],
+   "son_basvuru": null,
+   "ozet": "İhracata yönelik nihai mal üreten imalatçıların, imalatçı-ihracatçıların, ihracatçıların ve döviz kazandırıcı hizmetlerde bulunan firmaların, temin edilen fon kaynağının koşullarına uygun olması kaydıyla faizsiz bankacılık ilke ve standartları çerçevesinde finansman ihtiyaçlarının karşılanması amacı",
+   "firma_yasi_max": null,
+   "ihracat_gerekli": true,
+   "kosullar": [],
+   "belgeler": [],
+   "sayfa": {
+    "kaynak": "Türk Eximbank",
+    "url": "https://www.eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani",
+    "kontrol": "2026-11-23",
     "metin": "Bankamızın Yatırım Hizmet ve Faaliyet İzinleri"
    },
    "alanlar": [
@@ -2227,7 +2559,7 @@
    "sayfa": {
     "kaynak": "Trakya Kalkınma Ajansı",
     "url": "https://www.trakyaka.org.tr/tr/33373/Proje-Teklif-Cagrisi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": ""
    },
    "alanlar": [
@@ -2295,7 +2627,7 @@
    "sayfa": {
     "kaynak": "Trakya Kalkınma Ajansı",
     "url": "https://www.trakyaka.org.tr/tr/35120/Dogrudan-Faaliyet-Destegi-Programi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": ""
    },
    "alanlar": [
@@ -2363,7 +2695,7 @@
    "sayfa": {
     "kaynak": "Güney Ege Kalkınma Ajansı",
     "url": "https://www.geka.gov.tr/tr/sayfa/aydin-yatirim-tesvikleri",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": ""
    },
    "alanlar": [
@@ -2426,7 +2758,7 @@
    "sayfa": {
     "kaynak": "Güney Ege Kalkınma Ajansı",
     "url": "https://www.geka.gov.tr/tr/sayfa/denizli-yatirim-tesvikleri",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": ""
    },
    "alanlar": [
@@ -2489,7 +2821,7 @@
    "sayfa": {
     "kaynak": "Güney Ege Kalkınma Ajansı",
     "url": "https://www.geka.gov.tr/tr/sayfa/mugla-yatirim-tesvikleri",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": ""
    },
    "alanlar": [
@@ -2551,7 +2883,7 @@
    "sayfa": {
     "kaynak": "Mevlana Kalkınma Ajansı",
     "url": "https://www.mevka.org.tr/tr/haberler/mevka-ve-icmpd-is-birligiyle-enhancer-pro-hibe-programlari-konya-da-tanitildi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "MEVKA ve ICMPD İş Birliğiyle ENHANCER PRO Hibe Programları Konya’da Tanıtıldı\nMevlana Kalkınma Ajansı ve Uluslararası Göç Politikaları Geliştirme Merkezi (ICMPD) iş birliği ile ENHANCER Pro Projesi kapsamında Hızlandırma Hibe ve Orta Ölçekli İşletme Hibe Programlarına yönelik olarak tanıtım ve bilgilendirme toplantısı düzenlendi.\nÇok sayıda davetlinin katılımıyla Dedeman Otel’de gerçekleştirilen programın açılışında konuşan Mevlana Kalkınma Ajansı Genel Sekreteri Dr. İhsan Bostancı, “ENHANCER PRO; tam adıyla Sürdürülebilir Sosyo-Ekonomik Uyum İçin Girişimcilik Kapasitelerinin İyileştirilmesi Projesi, Avrupa Birliği Türkiye’deki Mülteciler İçin Mali Yardım Programı kapsamında finanse edilmekte; Uluslararası Göç Politikaları Geliştirme Merkezi ICMPD tarafından, Sanayi ve Teknoloji Bakanlığı Kalkınma Ajansları Genel Müdürlüğü iş birliğiyle yürütülmektedir. ENHANCER PRO, Ocak 2020’den bu yana yürütülen ENHANCER projesinin birikimi üzerine inşa edilmiştir. Proje; geçici koruma altındaki Suriyeliler ve uluslararası koruma altındaki şahıslar ile ev sahibi toplulukların belirli alanlarda kapasite geliştirme programlarına tabi tutularak, kendilerine ait sürdürülebilir iş mecraları ve istihdam alanları oluşturmaları ve bu sayede iş hayatına dâhil olmalarını sağlamak amacıyla aralarında Konya’nın da yer aldığı 18 ilde uygulanmaktadır. Bu proje, bir yandan iş hacminin genişletilmesi aracılığıyla özel sektörün istihdam artışını ve ekonomik büyümesini desteklemeyi, diğer yandan da hedef kitlede girişimciliği özendirerek girişimcilerin yetkinlik, bilgi ve tecrübelerini geliştirmeyi hedeflemektedir. Genel çerçevede üç temel faaliyet alanı ekseninde şekillenen bu kapsamlı proje ile girişimcilik destekleri kapsamında yeni iş kurmak isteyen veya mevcut işletmesini geliştirmek isteyen girişimcilere yönelik mali destekler ve iş geliştirme hizmetleri, KOBİ ve kooperatif destekleri ile mevcut işletmelerin üretim, pazara erişim ve büyüme kapasitelerinin artırılmasına yönelik destekler, girişimcilik ekosisteminin güçlendirilmesi kapsamında ise yerel ortak kullanım tesisleri ve diğer ekosistem aktörleri ile iş birliği içinde eğitim, mentorluk, danışmanlık ve ağ oluşturma faaliyetleri gibi son derece kıymetli çalışmalar yürütülmektedir. Bugün bizleri bir araya getiren 2 destek programından ilki olan Hızlandırma Hibe Programı kapsamında sağlanacak mali destekle; kapasite artırımı, pazar geliştirme ve istihdam olanakları oluşturularak büyüme odaklı mikro işletmelerin desteklenmesi hedeflenmektedir. Toplam bütçesi 5 Milyon Euro olan hibe programı kapsamında desteklenecek her proje için asgari 40 Bin, azami ise 60 Bin Euro kaynak aktarılacaktır. Tanıtımı yapılacak bir diğer program olan ⁠Orta Ölçekli Hibe Programı kapsamında ise; orta ölçekli işletmelerin kurumsal ve üretim kapasitelerinin güçlendirilmesi, rekabet güçlerinin artırılması, yeni pazarlara erişimlerinin desteklenmesi ve istihdam olanaklarının geliştirilmesi yoluyla sürdürülebilir ekonomik büyümeye katkı sağlanması hedeflenmektedir. Toplam bütçesi 10 Milyon Euro olan hibe programı kapsamında desteklenecek her proje için asgari 70 Bin, azami ise 100 Bin Euro kaynak aktarılacak olup, projelerin uygulama sürelerinin en az 8 en fazla ise 12 ay olması gerekmektedir. Her iki hibe programının da son başvuru tarihinin 22 Aralık 2026 olduğunu, bu çerçevede bölgemizde yer alan uygun başvuru sahibi paydaşlarımızdan proje başvuruları beklediğimizi ve bu konuda elimizden geleni yapmaya hazır olduğumuzu da bu vesile ile dile getirmek istiyorum. Son olarak da Konya ilimizde bugüne kadar; ENHANCER projesi kapsamında, ortak kullanım tesisi hibeleri, girişimcilik ekosistem kurumu hibeleri ve istihdam yaratma odaklı KOBİ hibe programları başlıkları altında toplam 25 projeye güncel rakamlarla yaklaşık 70 Milyon TL destek sağlandığını da ifade ederek bu projelerin desteklenmesinde büyük çaba gösteren ICMPD ekibine ve tüm proje yürütücüsü paydaşlarımıza da teşekkür etmek istiyorum” dedi."
    },
    "alanlar": [
@@ -2619,7 +2951,7 @@
    "sayfa": {
     "kaynak": "Orta Anadolu Kalkınma Ajansı",
     "url": "https://www.oran.org.tr/tr/acik-destek-cagrilari/anadoludakiler-kirsal-kalkinma-teknik-destek-programi",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Anadoludakiler-Kırsal Kalkınma Teknik Destek Programı"
    },
    "alanlar": [
@@ -2687,7 +3019,7 @@
    "sayfa": {
     "kaynak": "Batı Karadeniz Kalkınma Ajansı",
     "url": "https://www.bakka.gov.tr/tr/destekler/sosyal-gelismeyi-destekleme-programi-sogep",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "Bölgesel Kalkınma ve Ülkemizde Bölgesel Kalkınma Politikalarının Gelişim Süreci\nBölgesel Kalkınmanın Yönetişiminde Kalkınma Ajansları\nKalkınma Planlamasında İstatistiki Bölge Birimleri Sınıflandırması"
    },
    "alanlar": [
@@ -2752,7 +3084,7 @@
    "sayfa": {
     "kaynak": "Dicle Kalkınma Ajansı",
     "url": "https://www.dika.org.tr/destekler/cazibe-merkezlerini-destekleme-programi-cmdp",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "metin": "• Ajans Destekleri Mali Destekler Teknik Destekler\n• Sosyal Gelişmeyi Destekleme Programı (SOGEP)\n• Cazibe Merkezlerini Destekleme Programı (CMDP)\nCazibe Merkezlerini Destekleme Programı (CMDP)\nProgramın hedefi; ülke sathında daha dengeli bir yerleşme düzeninin sağlanması ve göçün kademeli olarak yönlendirilebilmesi için nispeten geri kalmış ve göç veren bölgelerde, bölgesel çekim merkezi niteliğini haiz şehirlerin katma değeri yüksek üretim, ihracat, istihdam, verimlilik, teknoloji ve yenilikçilik kapasitelerinin artırılmasıdır. Program Ajans sorumluluk illerinden sadece Mardin ilinde uygulanmakta olup programın öncelikleri aşağıda yer almaktadır.\n1. İstihdam kapasitesinin artırılması\n• Organize Sanayi Bölgelerinde (OSB) ve uygun Küçük Sanayi Sitelerinde (KSS) mesleki eğitime yönelik uygulamalı eğitim merkezlerinin kurulması\n• Kentsel istihdamın artırılmasına hızla katkı sağlayabilecek yeni iş alanları (lojistik, eğitim ve sağlık hizmetleri gibi) veya üretim aşamalarının (düşük teknolojili imalat, operasyon hizmetleri, çağrı merkezleri gibi) geliştirilmesi\n2. Üretim kapasitesinin artırılması\n• Sanayileşmenin organize alanlara yönlendirilmesi\n• Yüksek katma değer yaratan sektörlerde gelişme gösteren kümelerin desteklenmesi\n• Kümelenme odaklı ihtisas OSB’lerin oluşturulması\n• Şehir içinde kalmış sanayi alanlarının yenilikçi işlevlerle yerinde dönüşümünün desteklenmesi\n• OSB elektrik, su, kanalizasyon, doğalgaz, arıtma tesisi, yol ihtiyaçlarına yönelik altyapıların geliştirilmesi\n• Endüstriyel simbiyoz faaliyetlerine ilişkin projeler\n• Verimlilik ve kalite artışı ile kişiye özel tasarım alanlarında model fabrikaların kurulması gibi üretim sürecinin iyileştirilmesine yönelik uygulamaların geliştirilmesi\n• KOBİ'lere yönelik iş destek hizmetlerinin, verimliliği artıracak yönde geliştirilmesi\n4. Teknoloji ve yenilikçiliğin desteklenmesi\n• Çekim merkezlerinin önceliklerine uygun olarak yeni teknolojilerin yaygınlaştırılması ve yenilik kapasitesinin artırılması amacıyla üniversite-özel sektör iş birliğinin güçlendirilmesi"
    },
    "alanlar": [
@@ -2855,7 +3187,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/036f0e8c-ada2-4b4f-ac9e-834bd4cd4a63",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -2952,7 +3284,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/04123fcb-56f1-4460-a5c3-15edd4c722e3",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3055,7 +3387,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/0543c637-bb5c-4988-b6ce-9a7edd80c22f",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3160,7 +3492,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/063c448b-2c81-478f-bfb8-af503caff1da",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3251,7 +3583,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/08d93dc5-754c-4577-b3e5-3e7106a6882e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3337,7 +3669,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/0a207d3a-3895-44e5-8552-819c368b69e9",
     "guncelleme": "2026-03-26",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -3405,7 +3737,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/0fe65745-0cbb-42da-8ced-1bd413d04029",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3504,7 +3836,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/10ccb0b2-7f22-4494-8d74-cb203bae1a03",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3607,7 +3939,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/1331d6ab-36b6-43dd-91b6-8cbafa08b9d5",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3705,7 +4037,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/14b9ffd9-90dc-4fe6-8025-10306174b0f8",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3815,7 +4147,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/1855e758-b50a-48a3-ad77-ccc3d340e21c",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -3920,7 +4252,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/1ab5875a-97f5-4169-b587-f489fa517bd8",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4019,7 +4351,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/1b4952f6-f686-4d0a-ae55-8318f85a7a91",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4060,17 +4392,16 @@
   },
   {
    "id": "yd-1cb09bf3",
-   "ad": "E-İhracat Destekleri",
+   "ad": "E-Ihracat Destekleri",
    "kurum": "Ticaret Bakanlığı",
    "url": "https://yatirimadestek.gov.tr/program/1cb09bf3-1c63-41be-96e3-ff0cabbc0a7e",
    "tur": "hibe",
    "ust_limit": null,
-   "destek_orani": 50,
+   "destek_orani": null,
    "geri_odemeli": false,
-   "oran_metin": "%50–%75",
+   "oran_metin": null,
    "amac": [
-    "dijital",
-    "ihracat"
+    "yatirim"
    ],
    "olcek": [
     "mikro",
@@ -4085,12 +4416,10 @@
     "tumu"
    ],
    "son_basvuru": null,
-   "ozet": "Şirketlerin, pazaryerlerinin ve perakende e-ticaret sitelerinin; e-ihracata hazırlanması, yurt dışı pazarlarda ve pazaryerlerinde Türk ürünlerinin ve markalarının çevrim içi sergilenmesi, tanıtılması, yurt dışı siparişlere ilişkin hızlı teslimatın sağlanması, şirketlerin e-ihracat gerçekleştirmeleri",
+   "ozet": "E-Ihracat Destekleri",
    "firma_yasi_max": null,
    "ihracat_gerekli": false,
-   "kosullar": [
-    "Şirketler, E-İhracat Konsorsiyumları, perakende e-ticaret siteleri, pazaryerleri ve B2B platformları ile işbirliği kuruluşları"
-   ],
+   "kosullar": [],
    "belgeler": [],
    "alanlar": [
     "firmaUnvani",
@@ -4110,64 +4439,19 @@
    "basvuru": {
     "yontem": "online",
     "form": null,
-    "online": "https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri",
+    "online": "https://yatirimadestek.gov.tr/program/1cb09bf3-1c63-41be-96e3-ff0cabbc0a7e",
     "formlar": [],
-    "adimlar": [
-     "Yararlanıcılar, ön onay ve destek ödeme başvurularını ilgili bilgi ve belgelerle birlikte incelemeci kuruluşa sunar. İşbirliği kuruluşları ise ön onay başvurularını ilgili bilgi ve belgelerle birlikte E-İhracat Sekretaryasına, destek ödeme başvurularını incelemeci kuruluşa yapar.",
-     "Link: https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri"
-    ]
+    "adimlar": []
    },
    "kredi": null,
    "kaynak": "platform",
    "resmi": {
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/1cb09bf3-1c63-41be-96e3-ff0cabbc0a7e",
-    "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
-    "bolumler": [
-     {
-      "baslik": "Kimler yararlanabilir?",
-      "metin": "Şirketler, E-İhracat Konsorsiyumları, perakende e-ticaret siteleri, pazaryerleri ve B2B platformları ile işbirliği kuruluşları"
-     },
-     {
-      "baslik": "Desteklenen alanlar ve destek unsurları",
-      "metin": "Şirketlerin, pazaryerlerinin ve perakende e-ticaret sitelerinin; e-ihracata hazırlanması, yurt dışı pazarlarda ve pazaryerlerinde Türk ürünlerinin ve markalarının çevrim içi sergilenmesi, tanıtılması, yurt dışı siparişlere ilişkin hızlı teslimatın sağlanması, şirketlerin e-ihracat gerçekleştirmelerine imkân sağlayacak E-İhracat Konsorsiyumları ile Türkiye E-İhracat Platformuna yönelik faaliyetlere ilişkin giderleri desteklenmektedir.\n• Yararlanıcılara Yönelik Destekler\n• Pazara giriş rapor desteği E-İhracat Konsorsiyumları, perakende e-ticaret siteleri ve pazaryerlerinin yurt dışında e-ticarete ilişkin pazara giriş stratejileri ile eylem planlarının oluşturulabilmesi amacıyla satın aldıkları sektör, ülke ve e-ihracat odaklı raporlara ilişkin giderleri %50 oranında ve yıllık 1.500.000 TL’ye kadar desteklenir.\n• Dijital pazaryeri tanıtım desteği Şirketlerin, E-İhracat Konsorsiyumlarının ve perakende e-ticaret sitelerinin; yurt dışı pazaryerleri üzerinden gerçekleştirdiği dijital reklam üzerinden dönen toplam satışlarının %20’sini aşmayan dijital pazaryeri tanıtım giderleri %50 oranında her pazaryeri için 3 (üç) yıl süresince desteklenir. Bu destek, şirketlerin kademelerine göre yıllık 7.500.000 TL’yi, perakende e-ticaret siteleri için yıllık 15.000.000 TL’yi, E- İhracat Konsorsiyumları için yıllık 25.000.000 TL’yi geçemez.\n• E-ihracat tanıtım desteği E-İhracat Konsorsiyumları, perakende e-ticaret siteleri, B2B platformları ve pazaryerlerinin, 4 üncü madde kapsamında belirtilen tanıtım faaliyetleri hariç, Bakanlıkça belirlenen diğer pazarlama faaliyetlerine ilişkin giderleri %50 oranında ve her ülke için 3 (üç) yıl süresince desteklenir. Bu destek, B2B platformları için yıllık 4.000.000 TL’yi, E-İhracat Konsorsiyumları için yıllık 15.000.000 TL’yi, perakende e- ticaret siteleri için yıllık 25.000. 000 TL’yi, pazaryerleri için yıllık 30.000.000 TL’yi geçemez.\n• Sipariş karşılama hizmeti ve depo kira desteği Şirketlerin, E-İhracat Konsorsiyumlarının, perakende e-ticaret sitelerinin ve pazaryerlerinin ilgili ülkedeki toplam e-ticaret satışlarının %10’unu aşmayan sipariş karşılama hizmetlerine ilişkin giderleri %50 oranında her bir ülke için en fazla 3 (üç) yıl olmak üzere desteklenir.\nE-İhracat Konsorsiyumu, perakende e-ticaret siteleri ve pazaryerlerinin, ürünlerin hızlı teslimatını sağlamak ve iade süreçlerini yönetmek üzere kiraladıkları yurt dışındaki depolarına ilişkin kira giderleri, her bir birim başına %50 oranında, her bir ülke için en fazla 3 (üç) yıl olmak üzere yıllık 5.000.000 TL’ye kadar desteklenir. Kira gideri desteğinden en fazla 25 (yirmi beş) birim için yararlanılabilir.\nSipariş karşılama hizmeti ve depo kira desteği, şirketlerin kademelerine göre yıllık 7.500.000 TL’yi, pazaryerleri için yıllık 15.000.000 TL’yi, perakende e-ticaret siteleri ve E-İhracat Konsorsiyumları için yıllık 25.000.000 TL’yi geçemez.\n• Yurt dışı pazaryeri entegrasyon desteği E-İhracat Konsorsiyumu, perakende e-ticaret siteleri ve pazaryerlerinin, yurt dışı pazaryerleri ve yurt dışı pazaryerlerine ilişkin yurt içinde yapacakları entegrasyon hizmetlerine ait giderleri, en fazla 6 (altı) pazaryeri entegrasyonu için %50 oranında ve pazaryeri başına 3 (üç) yıl süresince, bir entegrasyon için en fazla 200.000 TL’ye kadar desteklenir.\n• Çevrim içi mağaza ve hedef ülke e-ticaret paydaşlarından alınan hizmet desteği Şirketlerin, E-İhracat Konsorsiyumlarının ve perakende e-ticaret sitelerinin hedef ülkelerin yurt dışı pazaryerlerinde çevrim içi mağaza açılmasına, bu mağazaların yıllık ödemelerine ve ülkelerin e-ticaret paydaşlarından alacakları hizmetlere ilişkin giderleri, her ülke için 3 (üç) yıl süresince, %50 oranında olmak üzere E-İhracat Konsorsiyumları için yıllık en fazla 3.000.000 TL’ye, diğer yararlanıcılar yıllık en fazla 1.500.000 TL’ye kadar desteklenir.\n• Pazaryeri komisyon gideri desteği Şirketlerin, E-İhracat Konsorsiyumları ve perakende e-ticaret sitelerinin; yurt dışı pazaryerleri üzerinden gerçekleştirilen hedef ülkelerdeki pazaryeri komisyon giderleri 3 (üç) yıl süresince ve %50 oranında desteklenir. Bu destek, şirketlerin kademelerine göre yıllık 750.000 TL’yi, perakende e-ticaret siteleri için yıllık 2.500.000 TL’yi, E-İhracat Konsorsiyumları için yıllık 3.000.000 TL’yi geçemez.\n• Yararlanıcılara ilişkin üst limitler\n• Dijital pazaryeri tanıtım desteği, sipariş karşılama hizmeti ve depo kira desteği ile pazaryeri komisyon gideri desteklerine ilişkin destek oranının hesaplanmasında Türk ürünlerinin satış oranı ile Marka ve TURQUALITY® destek programı kapsamındaki markalı ürünlerin satış oranı esas alınır.\n• Yararlanıcılara yönelik desteklerden, şirketler kademelerine göre yıllık en fazla 15.000.000 TL’ye, E-İhracat Konsorsiyumları, perakende e-ticaret siteleri ve pazaryerleri yıllık en fazla 45.000.000 TL’ye, B2B platformları yıllık en fazla 4.000.000 TL’ye kadar desteklenir.\n• İşbirliği Kuruluşlarına Yönelik Destekler\n• Sektörel ticaret ve alım heyeti desteği İşbirliği kuruluşlarınca e-ticarete uygun genel perakende ürünlerini kapsayan sektörel ticaret heyeti faaliyetlerine ilişkin ulaşım, konaklama, tanıtım ve organizasyon giderleri %50 oranında ve faaliyet başına 1.500.000 TL’ye kadar desteklenir.\nİşbirliği kuruluşlarınca e-ticarete uygun genel perakende ürünlerini kapsayan sektörel alım heyeti faaliyetlerine ilişkin ulaşım, konaklama, tanıtım ve organizasyon giderleri %50 oranında ve faaliyet başına 1.250.000 TL’ye kadar desteklenir.\nBakanlık koordinasyonunda işbirliği kuruluşlarınca düzenlenen ve e-ticarete uygun genel perakende ürünlerini kapsayan sanal ticaret heyeti faaliyetlerine ilişkin giderler %50 oranında ve faaliyet başına 1.000.000 TL’ye kadar desteklenir.\n• E-ihracat tanıtım projesi desteği İşbirliği kuruluşlarının e-ticaret ve genel perakende ürünlerinin, Ticaret Bakanlığı tarafından uygun görülen yurt dışı pazaryerlerinde ve dijital platformlarda tanıtılması amacıyla Bakanlığa sunacakları proje kapsamında gerçekleştirecekleri tanıtım, danışmanlık, pazar araştırması çalışması ve raporlarına ilişkin giderleri, aynı anda en fazla 2 (iki) proje için, proje başına en az 1 (bir) en fazla 4 (dört) yıl süresince yıllık 4.000.000 TL’ye kadar %75 oranında desteklenir. E-ihracat tanıtım desteğinden işbirliği kuruluşları aynı ülkede en fazla 2 (iki) proje için yararlandırılır.\n• E-ihracatı geliştirme projesi desteği İşbirliği kuruluşlarının, üyelerinin e-ihracata yönelik olarak ortak hareket etmesine ve hedef ülkelerde pazara giriş koşullarının kolaylaştırılmasına yönelik olarak gerçekleştirecekleri, dijital pazaryeri tanıtımı, e-ihracat tanıtımı, sipariş karşılama hizmeti, depo kirası, yurt dışı pazaryeri entegrasyonu, çevrim içi mağaza açılması, e- ticaret paydaşlarından alınan hizmetler ve pazaryeri komisyon giderlerini içeren faaliyetlerinden oluşan projelerine ilişkin giderleri %75 oranında, aynı anda en fazla 2 (iki) projesi için ve proje başına 15.000.000 TL’ye kadar desteklenir.\n• Türkiye E-İhracat Platformu desteği Ticaret Bakanlığının koordinasyonunda ve Bakanlık tarafından görevlendirilecek işbirliği kuruluşu tarafından kurulacak olan ve Türkiye’nin ihracatçı envanterinin dijital ortama taşınmasına, ithalatçılar ile ihracatçıların buluşmasına, sipariş almalarına ve karşılamalarına, ihracat işlemlerinin dijitalleşmesine ve yeni nesil teknolojilerin kullanılmasına olanak sağlayacak Türkiye E-İhracat Platformunun kurulumu, işletilmesi ve tanıtımına ilişkin işbirliği kuruluşunun giderleri %75 oranında ve en fazla 5 (beş) yıl süresince, yıllık en fazla 150.000.000 TL’ye kadar desteklenir.\nBu kapsamda en fazla 1 (bir) proje desteklenir.\nBazı Önemli Hususlar\n• Desteklerden faydalanmak isteyen yararlanıcıların, ihracatçı birliğine üye olması gerekir.\n• Destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.\n• Destek oranları, Bakanlıkça e-ihracata yönelik belirlenen hedef ülkeler için 20 (yirmi) puana kadar artırılabilir. (Yurt dışı pazaryeri entegrasyon desteği ile çevrim içi mağaza ve hedef ülke e-ticaret paydaşlarından alınan hizmet desteği, Bakanlıkça belirlenen e-ihracata yönelik hedef ülkelerden pazara giriş şartlarına bağlı olarak Bakanlıkça belirlenen ülkelere yönelik verilir. Bu destekler için hedef ülke ilave puanı uygulanmaz.)"
-     },
-     {
-      "baslik": "Başvuru dönemi",
-      "metin": "Sürekli aktif"
-     },
-     {
-      "baslik": "Başvuru yeri",
-      "metin": "Yararlanıcılar, ön onay ve destek ödeme başvurularını ilgili bilgi ve belgelerle birlikte incelemeci kuruluşa sunar. İşbirliği kuruluşları ise ön onay başvurularını ilgili bilgi ve belgelerle birlikte E-İhracat Sekretaryasına, destek ödeme başvurularını incelemeci kuruluşa yapar.\nLink: https://www.ticaret.gov.tr/destekler/e-ihracat-destekleri"
-     }
-    ],
-    "belgeler": [
-     {
-      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/ozet_e-ihracat-destekleri.pdf",
-      "ad": "ozet_e-ihracat-destekleri.pdf"
-     },
-     {
-      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/e-ihracat-destekleri-hakkinda-karar.pdf",
-      "ad": "e-ihracat-destekleri-hakkinda-karar.pdf"
-     },
-     {
-      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/e-ihracat-desteklerine-iliskin-genelge.pdf",
-      "ad": "e-ihracat-desteklerine-iliskin-genelge.pdf"
-     },
-     {
-      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/genelge-ekleri_25042023.zip",
-      "ad": "genelge-ekleri_25042023.zip"
-     },
-     {
-      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/2023-yeniden-degerlendirme.xlsx",
-      "ad": "2023-yeniden-degerlendirme.xlsx"
-     },
-     {
-      "url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/2024-yili-e-ihracat-destekleri-ust-limitleri.xlsx",
-      "ad": "2024-yili-e-ihracat-destekleri-ust-limitleri.xlsx"
-     }
-    ]
+    "guncelleme": "2026-11-19",
+    "kontrol": "2026-11-23",
+    "bolumler": [],
+    "belgeler": []
    }
   },
   {
@@ -4230,7 +4514,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/1e49211f-8389-4928-ab28-a1c233b67b3a",
     "guncelleme": "2026-03-19",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -4328,7 +4612,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/21ed6aad-1bf1-42b4-bfee-cf32ef536766",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4422,7 +4706,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/220e65de-d957-4b50-9a43-afe2abbde3b5",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -4493,7 +4777,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/22fe7e4e-6045-4343-827f-b16223f2defc",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4583,7 +4867,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/266b42e1-7454-4222-9ce9-8bb462e6b35d",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4699,7 +4983,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/2ab98c68-451d-4ea8-84f2-bd9c879e59f6",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4792,7 +5076,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/2d26e987-4262-448b-99e6-99d290944325",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4883,7 +5167,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/2f124788-3459-495b-926e-851aace1c868",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -4981,7 +5265,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/3a2ad7af-3763-499e-a29d-0b205e1859aa",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5080,7 +5364,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/4163bebe-dc87-4f9c-9e49-a29139ebc945",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5183,7 +5467,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/418886e0-4f7e-47d3-86e9-c0286e46543a",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5284,7 +5568,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/43532d4b-e773-471c-a29c-dcb29e9bfc63",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5378,7 +5662,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/45f05725-b25f-49aa-a7dd-c8444c810761",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -5450,7 +5734,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/46d52585-d8df-4bf2-afa6-a6163d27f17f",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5550,7 +5834,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/46d56e27-8547-40e6-8700-c70f726ed113",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5660,7 +5944,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/4795c846-f108-4261-ad16-13dafeba34d7",
     "guncelleme": "2026-04-14",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -5741,7 +6025,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/479b35fa-d1b5-4a89-ab48-ca6689a2b229",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5833,7 +6117,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/4a73b72d-9d5c-400a-8f24-8c2fcebd7b7a",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -5948,7 +6232,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/4c0c104e-9977-4b6e-8760-cec0ad03d034",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6054,7 +6338,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/4c625408-9b61-43be-9483-4f766a896063",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -6122,7 +6406,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/508d186b-858e-4dd8-b9bc-8f874a2c7d21",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6227,7 +6511,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/519337fe-ca75-4a19-b4c8-ab0da4577a04",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -6324,7 +6608,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/54bfa568-6a69-47bf-8566-24a91ad21204",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6426,7 +6710,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/55191372-2f23-47cd-9b32-a9240a0e5ab2",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6526,7 +6810,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/551b993a-1395-4606-b250-6641de5826f1",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6625,7 +6909,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/5626ea68-ff17-4b56-ba7b-b76795ea6786",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6719,7 +7003,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/5719abc7-ac37-4356-b2b7-cec978774afe",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6813,7 +7097,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/5921d965-fb66-4af1-a922-67e201bba0d4",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -6899,7 +7183,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/596980c3-b112-4398-8b20-6a51b6a340fc",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -6973,7 +7257,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/59d00469-825d-4996-a4c1-61e9f36cea61",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7067,7 +7351,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/5cfe291c-49f4-4600-ae42-919ca13d8519",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7157,7 +7441,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/5fa8de23-4801-4b89-b0a0-853aee858bb1",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7252,7 +7536,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/60392673-d7ba-4b44-9139-f8af81204fff",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7356,7 +7640,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/610b6222-ddf0-4241-b7da-4985e9b716c0",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7463,7 +7747,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/683ee88e-c0d7-419a-bb0c-3cfbbbf2ee6e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7556,7 +7840,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/686210bb-0234-4171-a6d9-d3da7bbb1dbd",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7648,7 +7932,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/6982f936-ab42-4e8d-9537-af23dcf26a2b",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7738,7 +8022,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/6bc8450a-0e24-4d8c-92e6-2295041fec43",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7829,7 +8113,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/70150dee-d6bd-4bf7-bc36-f5f1d340fbd9",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -7934,7 +8218,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/71cab34b-baca-4ff4-a95d-5294d5d08e27",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8037,7 +8321,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/740d8e1d-fba0-4cfc-916c-df48636eac4d",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8149,7 +8433,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/74491580-2515-4962-98e5-a4fd31b6e659",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8242,7 +8526,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/7d6feed4-f458-4f39-b31d-069378dad9b1",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8334,7 +8618,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/7deff41e-2bb0-458a-bf35-5079bd4c3b2c",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8437,7 +8721,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/7e37a246-94dd-40dc-a64c-dfbc3d2ad5d7",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8539,7 +8823,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/816d5b90-4476-4b13-b1f8-0247c0383f12",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8642,7 +8926,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/83008980-ba18-447f-8bb8-470fde9f3bf7",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8745,7 +9029,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/8561cc8d-26dd-4720-ba29-8c2c2bc4990b",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8849,7 +9133,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/878f0f16-727e-44d6-88ab-3dec72bc3b14",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -8942,7 +9226,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/8b9044e5-657b-4bdd-a874-73423f26bafb",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9053,7 +9337,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/8d888b97-752f-44ea-91b8-1e188f6ae9af",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9150,7 +9434,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/8fbd6a12-82c4-43c6-951f-dc463d0b3f55",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9241,7 +9525,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/90928b40-f59e-4457-8a74-e9ececf64b8e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9344,7 +9628,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/9108afc3-4ba9-4283-bb6a-1c2cece4be83",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9442,7 +9726,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/91c37357-a562-44e2-88f2-b17660e48ef3",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -9520,7 +9804,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/968b118c-6650-43d3-be37-ae231aac025f",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9622,7 +9906,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/9bbb98cc-fed0-4cbc-92e6-5875102469e7",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9713,7 +9997,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/9d1a775a-e189-4b82-af29-01d8d8a40a23",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9843,7 +10127,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/a132ddd4-e744-4f9a-8498-29232c850057",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -9947,7 +10231,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/a1b1d75a-bde1-4644-84ef-32401658d904",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10056,7 +10340,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/a5569b5f-0cc2-446f-a9e0-2b8513a011c8",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10148,7 +10432,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/a624034b-da81-49ad-8c67-4632133f0f3e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10256,7 +10540,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/aa73efbf-dff8-4288-bc1f-aa32c4457d9e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10375,7 +10659,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/abddf672-5d01-4f2c-857b-e2fb52b0ecd9",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10465,7 +10749,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/adba4cd2-d2bd-46eb-ba22-d58622d4dbb6",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10565,7 +10849,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/b195854f-d2bf-43ee-821e-4a4a6d575ef2",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10656,7 +10940,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/b1b3882e-15bd-49bf-a860-b0bc1ff65c65",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10811,7 +11095,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/b3c9ded0-0b7c-4eda-9450-493e1c518003",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -10914,7 +11198,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/b6fb2892-1593-4562-beb1-cf2c45149f14",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11020,7 +11304,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/bac4d7f4-1d00-4490-9256-1a004d696333",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11106,7 +11390,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/c10fbf7c-d245-4696-a3f4-242fd96032c9",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -11178,7 +11462,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/c74eef87-5700-476a-ba58-4e550111b27d",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11276,7 +11560,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/c75f8085-705d-4440-8267-163497c395ac",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -11340,7 +11624,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/ccf28787-ae3a-4f5c-9af4-1daf86ca6589",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -11425,7 +11709,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/ce593411-7890-4dcc-b682-d300e3f3a512",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11519,7 +11803,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/d00a5b2f-7a9d-4695-9375-2c567c70de9e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11624,7 +11908,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/d0597974-a28b-497b-b584-933d093456a8",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11727,7 +12011,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/d14c839c-1c0f-47e6-93ab-74b5ef596c2c",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11823,7 +12107,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/d5b7898e-5caa-42f9-9e12-7a8cedea82f2",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -11914,7 +12198,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/d929c738-2665-4546-896e-a7dc0d51a4f7",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -12017,7 +12301,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/d9b98dc8-a7ca-4afd-8e4b-1cb3e74bc2a8",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -12132,7 +12416,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/da11b78f-733b-4852-bc43-856516c9b067",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -12235,7 +12519,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/daa0590a-f1c6-491a-a479-54ef22fc478e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -12337,7 +12621,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/dc172c71-a2d3-499e-aeb2-b6b3be2d93b5",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -12433,7 +12717,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/dd76316d-6ac8-480b-ad22-3db9371ef4e7",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -12540,7 +12824,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/dd93b103-6643-4a5c-b412-e1c2317fd2e2",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -12638,7 +12922,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e033ed4e-297a-4cbb-975a-1fd45d62b40f",
     "guncelleme": "2026-10-17",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -12703,7 +12987,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e1c64f7e-99db-4240-9614-67d8c709c60a",
     "guncelleme": "2026-03-19",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": [
      {
@@ -12797,7 +13081,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e2d7a435-14c7-4cda-88ac-af657ca79e35",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Özet bilgi formu",
@@ -12897,7 +13181,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e2e07cef-6986-4aad-a8ec-baac04b85427",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13020,7 +13304,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e3abe6c4-e233-46fd-a738-900e55c4ba4c",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13129,7 +13413,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e44bcab1-4474-4070-98bb-9041ebba4944",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13244,7 +13528,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e59440bb-5fe5-4952-ae00-a2668a5355be",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13347,7 +13631,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/e9e19357-1464-47b0-84fb-250f3568e330",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13461,7 +13745,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/ec76bcf6-2887-4a06-80a2-eaa0571b85cd",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13555,7 +13839,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/ee86a6c3-650e-4857-b7d5-f9a415678d30",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13650,7 +13934,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/eeac8332-3ee2-40ee-8fa3-b1f2bba3f9e1",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13757,7 +14041,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/ef00dc39-bab5-4127-8a55-44612adfbb44",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13848,7 +14132,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/efb89ac8-194a-4025-932f-46877528a5a6",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -13940,7 +14224,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/efc2d75d-ac19-4bd0-aeae-418e45a0c4a6",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14031,7 +14315,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f0015114-7875-4d30-bc0b-ca351e2aef5c",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14128,7 +14412,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f209bb25-3842-4bb2-9e28-b83e8423507d",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14231,7 +14515,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f4e77887-4d4c-4cc7-8b4d-d46b31dd3bf6",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14317,7 +14601,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f5f1d3a3-8129-496b-a24f-aa076d510107",
     "guncelleme": "2026-03-24",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [],
     "belgeler": []
    }
@@ -14387,7 +14671,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f774d310-9e2a-42ee-b9c6-760c847b44c7",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14495,7 +14779,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f77a0bca-9bb1-4dba-aa49-0ecd41079537",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14593,7 +14877,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/f8540d98-0268-47dc-938a-f5d5a6d142fc",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14691,7 +14975,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/fa4ab389-caba-4470-be3b-4faec31527f5",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14781,7 +15065,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/fc85b4fe-7999-4a9d-a911-feb369ca3769",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
@@ -14871,7 +15155,7 @@
     "kaynak": "T.C. Sanayi ve Teknoloji Bakanlığı – Destekler Platformu",
     "sayfa": "https://yatirimadestek.gov.tr/program/fe5df282-63c6-441a-b20a-3dbe6618440e",
     "guncelleme": "2025-12-25",
-    "kontrol": "2026-11-16",
+    "kontrol": "2026-11-23",
     "bolumler": [
      {
       "baslik": "Kimler yararlanabilir?",
